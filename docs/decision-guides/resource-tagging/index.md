@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd4d6e7a017c9a71c090110720c28701082ce792
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817554"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023662"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guida alle decisioni per la denominazione delle risorse e l'assegnazione di tag
 
@@ -26,7 +26,7 @@ L'organizzazione delle risorse basate sul cloud è una delle attività più impo
 
 ## <a name="tagging-decision-guide"></a>Guida relativa alle decisioni sui tag
 
-![Grafico delle opzioni relative ai tag, dalla meno complessa alla più complessa, allineato con i collegamenti sotto](../../_images/discovery-guides/discovery-guide-tagging.png)
+![Grafico delle opzioni relative ai tag, dalla meno complessa alla più complessa, allineato con i collegamenti sotto](../../_images/decision-guides/decision-guide-resource-tagging.png)
 
 Passare a: [Convenzioni di denominazione di base](#baseline-naming-conventions) | [Modelli di assegnazione di tag alle risorse](#resource-tagging-patterns) | [Altre informazioni](#learn-more)
 
@@ -74,7 +74,7 @@ I modelli di assegnazione di tag comuni elencati di seguito offrono alcuni esemp
 Per altre informazioni sulla denominazione e l'applicazione di tag in Azure, vedere:
 
 - [Convenzioni di denominazione per le risorse di Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Fare riferimento a queste linee guida per le convenzioni di denominazione consigliate per le risorse di Azure.
-- [Usare tag per organizzare le risorse di Azure](/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). È possibile applicare i tag in Azure sia a livello di singole risorse che di gruppo di risorse, ottenendo la flessibilità necessaria in termini di granularità per qualsiasi report di accounting in base ai tag applicati.
+- [Usare tag per organizzare le risorse di Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). È possibile applicare i tag in Azure sia a livello di singole risorse che di gruppo di risorse, ottenendo la flessibilità necessaria in termini di granularità per qualsiasi report di accounting in base ai tag applicati.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
