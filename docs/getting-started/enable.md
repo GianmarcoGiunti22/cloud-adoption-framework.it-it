@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829241"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023451"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Consenti successo in qualsiasi percorso di adozione del cloud
 
@@ -22,12 +22,12 @@ Il Framework di adozione Microsoft Cloud per Azure viene fornito come strumento 
 
 Nell'ambito di questo Framework, l'abilitazione è un tema di base. L'elenco di controllo seguente contiene una serie di argomenti che devono essere incorporati in qualsiasi tentativo di adozione del cloud per garantire che il percorso sia un successo per quanto riguarda l'IT e l'azienda:
 
-- **Piano** Definizione di [risultati aziendali](../business-strategy/business-outcomes/index.md)chiari, un piano di [Proprietà digitale](../digital-estate/index.md)definito e [backlog di adozione](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)ben noti.
+- **Piano** Definizione di [risultati aziendali](../strategy/business-outcomes/index.md)chiari, un piano di [Proprietà digitale](../digital-estate/index.md)definito e [backlog di adozione](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)ben noti.
 - **Pronta:** Verifica la conformità del personale attraverso [competenze e piani di studi](../ready/technical-skills.md).
 - **Operare** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
-  - **[Organizzazione](../organization/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
-  - **Governare** Allinea le [discipline di governance](../governance/index.md) appropriate per applicare in modo coerente la gestione dei costi, la mitigazione dei rischi, la conformità e le linee di base di sicurezza in tutta l'adozione cloud
-  - **Gestione:** [Operazioni](../operations/index.md) continue del portfolio it per ridurre al minimo le interruzioni dei processi aziendali e garantire la stabilità del portfolio it.
+  - **[Organizzazione](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
+  - **Governare** Allinea le [discipline di governance](../govern/index.md) appropriate per applicare in modo coerente la gestione dei costi, la mitigazione dei rischi, la conformità e le linee di base di sicurezza in tutta l'adozione cloud
+  - **Gestione:** [Gestione operativa](../manage/index.md) continuativa del portfolio it per ridurre al minimo le interruzioni dei processi aziendali e garantire la stabilità del portfolio it.
   - **Supporto** Allinea [le opzioni di collaborazione e supporto](../migrate/migration-considerations/assess/partnership-options.md)appropriate.
 
 ## <a name="additional-tools"></a>Strumenti aggiuntivi
@@ -38,7 +38,7 @@ Oltre al Framework di adozione del cloud, Microsoft copre argomenti aggiuntivi c
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
@@ -124,7 +124,7 @@ Oltre al Framework di adozione del cloud, Microsoft copre argomenti aggiuntivi c
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Centro architetture Azure</h3>
+                        <h3>Centro architetture di Azure</h3>
                         <p>Soluzioni di architettura, architetture di riferimento, scenari di esempio, procedure consigliate e modelli di progettazione cloud per facilitare l'architettura delle soluzioni in esecuzione in Azure.</p>
                     </div>
                 </div>

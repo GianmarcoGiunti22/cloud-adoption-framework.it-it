@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818132"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022579"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Strumenti di monitoraggio e gestione sicuri
 
@@ -26,7 +26,7 @@ Il *monitoraggio* è l'azione di raccolta e analisi dei dati per determinare le 
 - **Monitoraggio di base.** Il monitoraggio di base offre il monitoraggio essenziale delle diverse risorse di Azure. Questi servizi richiedono una configurazione minima e raccolgono i dati di telemetria principali usati dai servizi di monitoraggio Premium.
 - **Monitoraggio approfondito delle applicazioni e dell'infrastruttura.** I servizi di Azure seguenti offrono funzionalità avanzate per la raccolta e l'analisi dei dati di monitoraggio a un livello più profondo. Questi servizi sono basati sul monitoraggio di base e sfruttano alcune funzionalità comuni di Azure. Offrono potente analisi con i dati raccolti per fornire informazioni esclusive sulle applicazioni e sull'infrastruttura.
 
-Vedere ulteriori informazioni su [Monitoraggio di Azure](/azure/azure-monitor/overview) per il monitoraggio degli asset migrati.
+Vedere ulteriori informazioni su [Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/overview) per il monitoraggio degli asset migrati.
 
 ## <a name="security-monitoring"></a>Monitoraggio della protezione
 
@@ -39,7 +39,7 @@ Affidarsi al Centro sicurezza di Azure per una gestione unificata del monitoragg
 - **Avvisi ed eventi imprevisti classificati in ordine di priorità.** Concentrarsi per prima cosa sulle minacce principali con avvisi di sicurezza ed eventi imprevisti classificati in ordine di priorità.
 - **Soluzioni di sicurezza integrate.** Raccogliere, eseguire ricerche e analizzare i dati di sicurezza da diverse origini, incluse soluzioni partner connesse.
 
-Altre informazioni sul [Centro sicurezza di Azure](/azure/security-center) per la protezione degli asset migrati.
+Altre informazioni sul [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center) per la protezione degli asset migrati.
 
 ## <a name="protect-assets-and-data"></a>Proteggere gli asset e i dati
 
@@ -50,4 +50,4 @@ Backup di Azure offre una soluzione per proteggere le macchine virtuali, i file 
 - Backup dei database di SQL Server.
 - Recupero degli asset protetti.
 
-Vedere ulteriori informazioni su [Backup di Azure](/azure/backup) per la protezione degli asset migrati.
+Vedere ulteriori informazioni su [Backup di Azure](https://docs.microsoft.com/azure/backup) per la protezione degli asset migrati.

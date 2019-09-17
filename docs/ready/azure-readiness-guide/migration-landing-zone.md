@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8fccc60eb9944aca6801deb79310ebf07e10b109
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819465"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025211"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuire un'area di destinazione della migrazione
 
@@ -33,7 +33,7 @@ La figura seguente mostra il progetto relativo alla zona di destinazione per la 
 ![Allineamento del progetto](../../_images/ready/blueprint-overview.png)
 
 - La lettera A si trova all'interno di una linea curva che contrassegna l'ambito di questo progetto. L'ambito è concepito per indicare che il progetto copre una complessità limitata dal punto di vista dell'architettura, ma si basa su requisiti di conformità relativamente medi.
-- I clienti che hanno requisiti elevati di complessità e rigidi a livello di conformità potrebbero avere un servizio migliore usando il progetto esteso di un partner oppure uno dei [campioni del progetto basato su standard](/azure/governance/blueprints/samples/).
+- I clienti che hanno requisiti elevati di complessità e rigidi a livello di conformità potrebbero avere un servizio migliore usando il progetto esteso di un partner oppure uno dei [campioni del progetto basato su standard](https://docs.microsoft.com/azure/governance/blueprints/samples/).
 - Le esigenze della maggior parte dei clienti rientreranno tra questi due estremi. La lettera B rappresenta il processo descritto negli articoli di [considerazioni sulla zona di destinazione](../considerations/index.md). Per i clienti che si trovano in questo spazio, è possibile usare le guide alle decisioni disponibili in questi articoli per identificare i nodi da aggiungere al progetto relativo alla zona di destinazione per la migrazione di Cloud Adoption Framework. Questo approccio consente di personalizzare il progetto in base alle esigenze.
 
 ## <a name="use-this-blueprint"></a>Usare il progetto
@@ -67,8 +67,8 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 |Gruppi di risorse|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)         |
 |Data|N/D|[Scegliere l'opzione SQL Server più adatta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-guidance.md)         |
-|Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../considerations/name-and-tag.md)         |
-|Gestione costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|
+|Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../considerations/naming-and-tagging.md)         |
+|Gestione dei costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|
 |Calcolo|N/D|[Opzioni di calcolo](../considerations/compute-decisions.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personalizzare o distribuire una zona di destinazione da questo progetto

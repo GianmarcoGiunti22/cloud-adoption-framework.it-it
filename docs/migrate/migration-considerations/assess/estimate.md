@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819491"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025444"
 ---
 # <a name="estimate-cloud-costs"></a>Stimare i costi del cloud
 
@@ -23,7 +23,7 @@ Durante la migrazione, sono numerosi i fattori che influiscono sulle decisioni e
 
 La portata del digital estate influisce direttamente sulle decisioni di migrazione. Le migrazioni che coinvolgono meno di 250 macchine virtuali possono essere stimate molto più facilmente rispetto a una migrazione che interessa più di 10.000 macchine virtuali. È fortemente consigliabile selezionare un carico di lavoro più ridotto come prima migrazione. Questo consente al team di apprendere come stimare i costi di una semplice operazione di migrazione prima di provare a stimare migrazioni di carichi di lavoro più grandi e complesse.
 
-È opportuno notare, tuttavia, che le migrazioni più ridotte e a singolo carico di lavoro possono comunque coinvolgere una quantità molto variabile di risorse di supporto. Se la migrazione riguarda meno di 1.000 macchine virtuali, uno strumento come [Azure Migrate](/azure/migrate/migrate-overview) è probabilmente sufficiente per raccogliere dati sui costi di inventario e previsione. Le opzioni aggiuntive relative agli strumenti per la stima dei costi sono descritte nell'articolo sui [calcoli dei costi del digital estate](../../../digital-estate/calculate.md).
+È opportuno notare, tuttavia, che le migrazioni più ridotte e a singolo carico di lavoro possono comunque coinvolgere una quantità molto variabile di risorse di supporto. Se la migrazione riguarda meno di 1.000 macchine virtuali, uno strumento come [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) è probabilmente sufficiente per raccogliere dati sui costi di inventario e previsione. Le opzioni aggiuntive relative agli strumenti per la stima dei costi sono descritte nell'articolo sui [calcoli dei costi del digital estate](../../../digital-estate/calculate.md).
 
 Per oltre 1000 unità del digital estate, è comunque possibile suddividere una stima in quattro o cinque iterazioni eseguibili, rendendo gestibile il processo di stima. Per estate di dimensioni maggiori o quando è richiesto un livello superiore di accuratezza delle previsioni, sarà probabilmente necessario un approccio più completo, come quello illustrato nella sezione "[Digital estate](../../../digital-estate/index.md)" del framework di adozione del cloud.
 

@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829254"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023426"
 ---
 # <a name="rationalize-the-digital-estate"></a>Razionalizzare il digital estate
 
-La razionalizzazione del cloud è il processo di valutazione delle risorse per determinare l'approccio migliore per l’hosting delle risorse stesse nel cloud. Dopo aver determinato un [approccio](approach.md) e aver aggregato un [inventario](inventory.md), è possibile iniziare la razionalizzazione del cloud. La [razionalizzazione cloud](rationalize.md) illustra le opzioni di razionalizzazione più comuni.
+La razionalizzazione del cloud è il processo di valutazione delle risorse per determinare l'approccio migliore per l’hosting delle risorse stesse nel cloud. Dopo aver determinato un [approccio](./approach.md) e aver aggregato un [inventario](./inventory.md), è possibile iniziare la razionalizzazione del cloud. La [razionalizzazione cloud](./rationalize.md) illustra le opzioni di razionalizzazione più comuni.
 
 ## <a name="traditional-view-of-rationalization"></a>Visione tradizionale della razionalizzazione
 
@@ -30,7 +30,7 @@ La razionalizzazione del cloud è il processo di valutazione delle risorse per d
 
 **Analisi qualitativa:** Il set di decisioni successivo richiede l'intelligenza umana sotto forma di analisi qualitativa. Spesso le domande che si trovano qui sono univoche per la soluzione e possono essere fornite solo da stakeholder aziendali e utenti esperti. Queste decisioni ritardano in genere il processo, rallentando considerevolmente le attività. Questa analisi USA in genere da 40 a 80 ETP ore per applicazione.
 
-Per indicazioni sulla creazione di un elenco di domande relative all'analisi qualitativa, vedere [approcci alla pianificazione delle proprietà digitali](approach.md).
+Per indicazioni sulla creazione di un elenco di domande relative all'analisi qualitativa, vedere [approcci alla pianificazione delle proprietà digitali](./approach.md).
 
 **Decisione di razionalizzazione:** Nelle mani di un team di razionalizzazione esperto, i dati quantitativi e qualitativi consentono di prendere decisioni chiare. Sfortunatamente, i team con un elevato livello di esperienza sulla razionalizzazione sono costosi e il training richiede mesi.
 
@@ -60,7 +60,7 @@ In un processo di razionalizzazione incrementale, è possibile utilizzare una so
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Analisi quantitativa: Decisioni più semplici
 
-Indipendentemente dall'approccio all'individuazione dell'inventario, l'analisi quantitativa può condurre a decisioni e presupposti iniziali. Ciò vale soprattutto quando si tenta di identificare il primo carico di lavoro o quando l'obiettivo della razionalizzazione è un confronto dei costi di alto livello. In un processo di razionalizzazione incrementale, il team di strategia cloud e i team di adozione del cloud limitano i [cinque RS della razionalizzazione](5-rs-of-rationalization.md) a due decisioni concise e applicano solo questi fattori quantitativi. In questo modo si semplifica l'analisi e si riduce la quantità di dati iniziali necessaria per l'unità di modifica.
+Indipendentemente dall'approccio all'individuazione dell'inventario, l'analisi quantitativa può condurre a decisioni e presupposti iniziali. Ciò vale soprattutto quando si tenta di identificare il primo carico di lavoro o quando l'obiettivo della razionalizzazione è un confronto dei costi di alto livello. In un processo di razionalizzazione incrementale, il team di strategia cloud e i team di adozione del cloud limitano i [cinque RS della razionalizzazione](./5-rs-of-rationalization.md) a due decisioni concise e applicano solo questi fattori quantitativi. In questo modo si semplifica l'analisi e si riduce la quantità di dati iniziali necessaria per l'unità di modifica.
 
 Se, ad esempio, un'organizzazione si trova nel mezzo di una migrazione IaaS al cloud, è possibile presupporre che la maggior parte dei carichi di lavoro verrà ritirata o riallocata.
 
@@ -116,7 +116,7 @@ Il primo carico di lavoro è spesso distribuito in un ambiente sperimentale senz
 
 ### <a name="qualitative-analysis"></a>Analisi qualitativa
 
-I team di adozione del cloud e il team di strategia cloud possono collaborare per analizzare questo carico di lavoro ridotto. Questa collaborazione crea un'opportunità controllata per creare e testare criteri di analisi qualitativi. La popolazione più piccola crea un'opportunità per esaminare gli utenti interessati e per completare un'analisi qualitativa dettagliata in una settimana o meno. Per i fattori di analisi qualitativi comuni, vedere la destinazione di razionalizzazione specifica in [5 RS di razionalizzazione](5-rs-of-rationalization.md).
+I team di adozione del cloud e il team di strategia cloud possono collaborare per analizzare questo carico di lavoro ridotto. Questa collaborazione crea un'opportunità controllata per creare e testare criteri di analisi qualitativi. La popolazione più piccola crea un'opportunità per esaminare gli utenti interessati e per completare un'analisi qualitativa dettagliata in una settimana o meno. Per i fattori di analisi qualitativi comuni, vedere la destinazione di razionalizzazione specifica in [5 RS di razionalizzazione](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migrazione
 
@@ -161,4 +161,4 @@ In alcuni casi, il modello finanziario potrebbe essere troppo stretto per prende
 L'output di un lavoro di razionalizzazione è un backlog con priorità di tutti gli asset interessati dalla trasformazione scelta. Questo backlog sarà la base per i modelli di determinazione dei costi dei servizi cloud.
 
 > [!div class="nextstepaction"]
-> [Allineare i modelli di costo con il digital estate](calculate.md)
+> [Allineare i modelli di costo con il digital estate](./calculate.md)

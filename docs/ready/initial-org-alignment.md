@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819166"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021958"
 ---
 # <a name="initial-organization-alignment"></a>Allineamento iniziale dell'organizzazione
 
@@ -43,7 +43,7 @@ Ad esempio, un team per la strategia cloud potrebbe essere guidato dal CTO e cos
 
 È anche importante formare altri due team di alto livello: un team di governance e un team per la sicurezza. Questi sono responsabili della progettazione, dell'implementazione e del controllo continuo della governance e dei criteri di sicurezza aziendali. Il team di governance deve essere composto da membri che hanno lavorato con la protezione degli asset, la gestione dei costi, i criteri di gruppo e gli argomenti correlati. Il team per la sicurezza deve essere composto da membri abbastanza esperti di standard di sicurezza attuali del settore, nonché di requisiti di sicurezza aziendale.
 
-![Team di strategia cloud, di concerto con i team di governance e sicurezza](../_images/getting-started-overview-1.png)
+![Team di strategia cloud, di concerto con i team di governance e sicurezza](../_images/ready/getting-started-overview-1.png)
 
 Il team di governance è responsabile della progettazione e dell'implementazione di un modello di governance aziendale nel cloud, nonché della distribuzione e della manutenzione degli asset dell'infrastruttura condivisa che fanno parte della trasformazione digitale. Questi asset includono risorse hardware, software e cloud necessarie per connettere la rete locale alla rete virtuale nel cloud.
 
@@ -53,9 +53,9 @@ Il team per la sicurezza è responsabile della progettazione e dell'implementazi
 
 Il passaggio successivo nella trasformazione digitale dell'organizzazione è dedicato ai membri del team per la strategia cloud che apprenderanno in che modo la tecnologia cloud cambierà le attività aziendali dell'organizzazione. Consiste nella preparazione e nella pianificazione dei cambiamenti dell'azienda, del personale e delle tecnologie. È importante che i membri del team per la strategia cloud comprendano le novità e le differenze del cloud rispetto al sistema locale.
 
-![I team di strategia cloud, governance e sicurezza apprendono le procedure consigliate per il funzionamento nel cloud.](../_images/getting-started-overview-2.png)
+![I team di strategia cloud, governance e sicurezza apprendono le procedure consigliate per il funzionamento nel cloud.](../_images/ready/getting-started-overview-2.png)
 
-Il punto di partenza per comprendere il cloud consiste nell'imparare [come funziona Azure](../getting-started/what-is-azure.md) a livello elevato. Successivamente si apprendono le nozioni di base della [governance in Azure](../governance/resource-consistency/what-is-governance.md) per prepararsi a [capire la gestione dell'accesso alle risorse](../governance/resource-consistency/azure-resource-access.md).
+Il punto di partenza per comprendere il cloud consiste nell'imparare [come funziona Azure](../getting-started/what-is-azure.md) a livello elevato. Successivamente si apprendono le nozioni di base della [governance in Azure](../govern/resource-consistency/what-is-governance.md) per prepararsi a [capire la gestione dell'accesso alle risorse](../govern/resource-consistency/resource-access-management.md).
 
 Per informazioni approfondite, il team di governance deve esaminare i concetti e le guide di progettazione nella sezione relativa alla governance del sommario. Le sezioni dedicate all'infrastruttura e ai carichi di lavoro sono utili per apprendere le architetture tipiche e i carichi di lavoro nel cloud.
 
@@ -67,7 +67,7 @@ Le lacune della strategia aziendale possono essere classificate nelle categorie 
 
 | Category | Descrizione |
 | --- | --- |
-| Gestione costi | Rappresenta una lacuna nel modo in cui l'organizzazione paga per la tecnologia. |
+| Gestione dei costi | Rappresenta una lacuna nel modo in cui l'organizzazione paga per la tecnologia. |
 | Governance | Rappresenta una lacuna nei processi usati dall'azienda per proteggere i propri asset da un uso improprio che potrebbe generare costi eccessivi, problemi di sicurezza o di conformità. |
 | Conformità | Rappresenta una lacuna nel modo in cui l'organizzazione rispetta i propri processi e criteri interni, oltre a leggi, normative e standard esterni. |
 | Security | Rappresenta una lacuna nel modo in cui l'organizzazione protegge gli asset di dati e la tecnologia da minacce esterne. |
@@ -79,7 +79,7 @@ La tabella seguente illustra alcuni esempi:
 
 |Lacune della strategia aziendale|Categoria &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Soluzione &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |-----|-----|-----|
-| I servizi attualmente ospitati in locale riscontrano problemi di disponibilità, resilienza e scalabilità nella fase dei picchi della domanda, che rappresenta approssimativamente il 10% dell'uso. I server nel data center locale hanno raggiunto la fine del ciclo di vita. L'IT aziendale consiglia di acquistare un nuovo hardware locale per il data center con specifiche per gestire i picchi della domanda.| Gestione costi | Eseguire la migrazione dei carichi di lavoro locali esistenti interessati a risorse scalabili nel cloud, pagando solo per l'uso. |
+| I servizi attualmente ospitati in locale riscontrano problemi di disponibilità, resilienza e scalabilità nella fase dei picchi della domanda, che rappresenta approssimativamente il 10% dell'uso. I server nel data center locale hanno raggiunto la fine del ciclo di vita. L'IT aziendale consiglia di acquistare un nuovo hardware locale per il data center con specifiche per gestire i picchi della domanda.| Gestione dei costi | Eseguire la migrazione dei carichi di lavoro locali esistenti interessati a risorse scalabili nel cloud, pagando solo per l'uso. |
 | Le normative e le leggi sulla gestione dei dati esterni richiedono all'azienda di aderire a un insieme di controlli standard che prevedono la crittografia dei dati inattivi con un nuovo hardware e software. | Governance dei dati | Spostare i dati nella crittografia del servizio di archiviazione di Azure per dati inattivi. |
 | Per i servizi ospitati nel data center locale si verificano attacchi Distributed Denial of Service nei servizi pubblici. È difficile mitigare gli attacchi, sono necessari un nuovo hardware e un nuovo software oltre a personale di sicurezza per gestire la situazione in modo efficace. | Security | Eseguire la migrazione di servizi in Azure e sfruttare la protezione DDoS di Azure.|
 
@@ -93,7 +93,7 @@ Dopo aver enumerato e classificato gli obiettivi della trasformazione digitale e
 
 Prendendo in considerazione gli elenchi classificati, i team analizzano ogni soluzione di alto livello per eseguirne la progettazione. Il processo di progettazione comporta la specifica della nuova infrastruttura e dei nuovi carichi di lavoro. È anche possibile che vengano modificati i ruoli del personale e i processi che seguono. In questa fase è anche importante, per ogni team di progettazione, coinvolgere sia i team di governance che i team per la sicurezza, per analizzare ogni progetto. Tutti i progetti devono rispettare i criteri e le procedure definite dai team di governance e per la sicurezza, che dovranno essere coinvolti nell'approvazione di ciascun progetto.
 
-![Il team di strategia cloud fornisce soluzioni di alto livello ai team di progettazione e implementazione.](../_images/getting-started-overview-3.png)
+![Il team di strategia cloud fornisce soluzioni di alto livello ai team di progettazione e implementazione.](../_images/ready/getting-started-overview-3.png)
 
 La progettazione di ogni soluzione non è un'attività semplice. Quando vengono create, le progettazioni devono essere considerate nel contesto di altri progetti di soluzioni di altri team. Ad esempio, se molti di questi progetti comportano una migrazione di servizi e applicazioni locali esistenti nel cloud, potrebbe essere più efficiente raggrupparli e progettare una strategia di migrazione globale. In un altro esempio, potrebbe non essere possibile eseguire la migrazione di alcune applicazioni e servizi locali esistenti e la soluzione potrebbe consistere nel sostituirli con nuovi progetti di sviluppo o servizi di terze parti. In questo caso potrebbe essere più efficiente raggrupparli e determinarne la sovrapposizione per stabilire se un servizio di terze parti può essere usato per più di una soluzione.
 

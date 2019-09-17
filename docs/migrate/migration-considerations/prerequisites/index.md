@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818166"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022607"
 ---
 # <a name="prerequisites-for-migration"></a>Prerequisiti per la migrazione
 
@@ -25,10 +25,10 @@ Verificare la preparazione e l'idoneità a livello aziendale, culturale e tecnic
 
 ## <a name="review-business-drivers"></a>Esaminare le motivazioni aziendali
 
-Prima di avviare qualsiasi progetto di migrazione al cloud, vedere le linee guida per la [pianificazione](../../../business-strategy/index.md) e i [preparativi](../../../ready/index.md) in Cloud Adoption Framework per assicurarsi che l'organizzazione sia pronta per i processi di adozione del cloud e migrazione. In particolare, esaminare i requisiti aziendali e i risultati previsti alla base della scelta di procedere alla migrazione:
+Prima di avviare qualsiasi progetto di migrazione al cloud, vedere le linee guida per la [pianificazione](../../../strategy/index.md) e i [preparativi](../../../ready/index.md) in Cloud Adoption Framework per assicurarsi che l'organizzazione sia pronta per i processi di adozione del cloud e migrazione. In particolare, esaminare i requisiti aziendali e i risultati previsti alla base della scelta di procedere alla migrazione:
 
 - [Introduzione: migrazione](../../../getting-started/migrate.md)
-- [Why are we moving to the cloud?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md) (Motivi per passare al cloud)
+- [Why are we moving to the cloud?](../../../strategy/motivations.md) (Motivi per passare al cloud)
 
 ## <a name="definition-of-done"></a>Definizione di *completato*
 
@@ -56,7 +56,7 @@ Un singolo membro di ogni team deve essere identificato come responsabile per og
 
 Oltre alle responsabilità di alto livello, esistono azioni per cui un singolo utente o un gruppo deve essere direttamente responsabile. Di seguito vengono descritte alcune di tali responsabilità con effetti su queste attività:
 
-- **Assegnazione delle priorità aziendali.** Prendere decisioni aziendali relative ai carichi di lavoro di cui eseguire la migrazione e ai vincoli di tempo generali. Per altre informazioni, vedere [Motivazioni aziendali della migrazione al cloud](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Assegnazione delle priorità aziendali.** Prendere decisioni aziendali relative ai carichi di lavoro di cui eseguire la migrazione e ai vincoli di tempo generali. Per altre informazioni, vedere [Motivazioni aziendali della migrazione al cloud](../../../strategy/motivations.md).
 - **Idoneità per la gestione delle modifiche.** Definire e comunicare il piano per tenere traccia delle modifiche tecniche durante la migrazione. Altre informazioni su questo argomento saranno disponibili nel terzo trimestre del 2019.
 - **Allineamento degli utenti aziendali.** Elaborare un piano per preparare la comunità degli utenti aziendali per l'esecuzione della migrazione. Altre informazioni su questo argomento saranno disponibili nel terzo trimestre del 2019.
 - **Inventario e analisi del digital estate.** Esecuzione degli strumenti necessari per creare un inventario e analizzare il digital estate. Per altre informazioni, vedere gli articoli di Cloud Adoption Framework dedicati al [digital estate](../../../digital-estate/index.md).

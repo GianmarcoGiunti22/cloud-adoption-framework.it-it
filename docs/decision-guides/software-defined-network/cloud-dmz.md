@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6dfee69d20afac27c735f2ff77abbadc2816ca26
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828344"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023593"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Software Defined Networking: Reti perimetrali nel cloud
 
@@ -37,7 +37,7 @@ La distribuzione di una rete perimetrale Cloud include i presupposti seguenti:
 
 I team di adozione del cloud devono prendere in considerazione i seguenti problemi quando si esamina l'implementazione di un'architettura di rete virtuale DMZ cloud:
 
-- La connessione di reti locali a reti cloud aumenta la complessità dei requisiti di sicurezza. Anche se le connessioni tra le reti cloud e l'ambiente locale sono protette, è comunque necessario assicurarsi che le risorse cloud siano protette. Tutti gli indirizzi IP pubblici creati per accedere ai carichi di lavoro basati sul cloud devono essere protetti correttamente usando una rete perimetrale [pubblica](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) o un [firewall di Azure](/azure/firewall).
+- La connessione di reti locali a reti cloud aumenta la complessità dei requisiti di sicurezza. Anche se le connessioni tra le reti cloud e l'ambiente locale sono protette, è comunque necessario assicurarsi che le risorse cloud siano protette. Tutti gli indirizzi IP pubblici creati per accedere ai carichi di lavoro basati sul cloud devono essere protetti correttamente usando una rete perimetrale [pubblica](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) o un [firewall di Azure](https://docs.microsoft.com/azure/firewall).
 - L'architettura di rete perimetrale nel cloud viene generalmente usata come tappa in attesa che la connettività venga ulteriormente protetta e i criteri di sicurezza tra le reti locale e cloud vengano allineati, consentendo una più ampia adozione di un'architettura di rete ibrida completa. Tuttavia, può anche essere applicato a distribuzioni isolate con esigenze di sicurezza, identità e connettività specifiche che l'approccio alla rete perimetrale cloud soddisfa.
 
 ## <a name="learn-more"></a>Altre informazioni

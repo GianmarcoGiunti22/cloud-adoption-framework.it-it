@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833401"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025457"
 ---
 # <a name="business-change-plan"></a>Piano di modifiche aziendali
 
@@ -25,7 +25,7 @@ I piani di adozione di questo tipo si concentrano sul modo in cui gli utenti ado
 
 Anche se gli approcci possano variare, quasi tutti i piani di adozione da parte degli utenti hanno temi generali in comune. Questi temi si basano in genere su un approccio al controllo del rischio e alla facilitazione, in linea con il miglioramento incrementale. La matrice di Eason, illustrata nella figura seguente, rappresenta i fattori chiave associati a questi temi per una serie di tipi di adozione.
 
-![Matrice di Eason per l'adozione da parte degli utenti](../../../_images/eason-matrix.jpg)
+![Matrice di Eason per l'adozione da parte degli utenti](../../../_images/migrate/eason-matrix.jpg)
 
 *Matrice Eason dei tipi di adozione da parte degli utenti.*
 
@@ -37,8 +37,8 @@ Un piano di modifiche aziendali va ben oltre il semplice concetto di modifica te
 
 **Domande upstream.** Le domande upstream esaminano gli effetti o le modifiche prima dell'adozione da parte degli utenti:
 
-- I [risultati aziendali](../../../business-strategy/business-outcomes/index.md) previsti sono stati quantificati?
-- L'impatto aziendale è coerente con le [metriche di apprendimento](../../../business-strategy/learning-metrics.md) definite?
+- I [risultati aziendali](../../../strategy/business-outcomes/index.md) previsti sono stati quantificati?
+- L'impatto aziendale è coerente con le [metriche di apprendimento](../../../strategy/learning-metrics.md) definite?
 - Quali processi e team aziendali usufruiscono di questa soluzione tecnologica?
 - Quale persona in azienda può organizzare al meglio gli utenti esperti per il test e il feedback?
 - I responsabili aziendali interessati sono stati coinvolti nella definizione delle priorità e nella pianificazione della migrazione?

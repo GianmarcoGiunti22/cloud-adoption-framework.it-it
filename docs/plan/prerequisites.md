@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828682"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022328"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Elenco di controllo dei prerequisiti per un piano di adozione cloud efficace
 
@@ -21,7 +21,7 @@ Un piano è efficace solo per i dati inseriti. Affinché un piano di adozione de
 
 ## <a name="strategic-inputs"></a>Input strategici
 
-Gli input strategici accurati garantiscono che le attività eseguite contribuiscano al raggiungimento dei risultati aziendali. La [sezione strategia del Framework di adozione del cloud](../business-strategy/index.md) fornisce una serie di esercizi per sviluppare una strategia chiara. Gli output di questi esercizi si nutrono del piano di adozione del cloud. Prima di sviluppare il piano, verificare che gli elementi seguenti siano ben definiti in seguito a questi esercizi:
+Gli input strategici accurati garantiscono che le attività eseguite contribuiscano al raggiungimento dei risultati aziendali. La [sezione strategia del Framework di adozione del cloud](../strategy/index.md) fornisce una serie di esercizi per sviluppare una strategia chiara. Gli output di questi esercizi si nutrono del piano di adozione del cloud. Prima di sviluppare il piano, verificare che gli elementi seguenti siano ben definiti in seguito a questi esercizi:
 
 - **Motivazioni chiare**: Perché si sta adottando il cloud?
 - **Risultati aziendali definiti**: Quali risultati si prevede di adottare il cloud?

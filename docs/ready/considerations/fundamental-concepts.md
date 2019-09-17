@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905279"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025162"
 ---
 # <a name="azure-fundamental-concepts"></a>Concetti fondamentali di Azure
 
@@ -69,7 +69,7 @@ Quando si crea una sottoscrizione di Azure, è possibile associarla a un tenant 
 
 Un account di posta elettronica può essere associato a più sottoscrizioni di Azure. L'amministratore account può trasferire una sottoscrizione a un altro account.
 
-Per una descrizione dettagliata dei ruoli definiti in Azure, vedere [Ruoli di amministratore della sottoscrizione classica, ruoli Controllo degli accessi in base al ruolo di Azure e ruoli di amministratore di Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Per una descrizione dettagliata dei ruoli definiti in Azure, vedere [Ruoli di amministratore della sottoscrizione classica, ruoli Controllo degli accessi in base al ruolo di Azure e ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Sottoscrizioni e aree
 
@@ -84,13 +84,13 @@ Una sottoscrizione non è associata a una specifica area di Azure. Tuttavia, ogn
 
 Le risorse seguenti forniscono informazioni dettagliate sui concetti illustrati in questo articolo:
 
-- [Funzionamento di Azure](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Gestione dell'accesso alle risorse in Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Panoramica di Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [Controllo degli accessi in base al ruolo per le risorse di Azure](/azure/role-based-access-control/overview)
-- [Informazioni su Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Associare o aggiungere una sottoscrizione di Azure al tenant di Azure Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologie per Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Funzionamento di Azure](../../getting-started/what-is-azure.md)
+- [Gestione dell'accesso alle risorse in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Panoramica di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Controllo degli accessi in base al ruolo per le risorse di Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Informazioni su Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Associare o aggiungere una sottoscrizione di Azure al tenant di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologie per Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Sottoscrizioni, licenze, account e tenant per le offerte cloud di Microsoft](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Passaggi successivi

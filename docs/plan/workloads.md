@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833739"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022278"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Classificare in ordine di priorità e definire i carichi di lavoro per un piano di adozione cloud
 
@@ -44,7 +44,7 @@ Se si decide che la razionalizzazione di una proprietà digitale non è necessar
 
 Nell'articolo precedente, [piano di adozione del cloud e Azure DevOps](./template.md), è stato creato un piano di adozione del cloud in Azure DevOps.
 
-È ora possibile rappresentare i carichi di lavoro nella potenza di 10 elenchi nel piano di adozione del cloud. Il modo più semplice per eseguire questa operazione è tramite la modifica bulk in Microsoft Excel. Per preparare la workstation per la modifica bulk, vedere [aggiungere o modificare in blocco elementi di lavoro con Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+È ora possibile rappresentare i carichi di lavoro nella potenza di 10 elenchi nel piano di adozione del cloud. Il modo più semplice per eseguire questa operazione è tramite la modifica bulk in Microsoft Excel. Per preparare la workstation per la modifica bulk, vedere [aggiungere o modificare in blocco elementi di lavoro con Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 Il passaggio 5 dell'articolo indica di selezionare l' **elenco di input**. In alternativa, selezionare **elenco query**. Quindi, dall'elenco **a discesa selezionare una query** , selezionare la query **modello di carico di lavoro** . Tale query carica tutti gli sforzi correlati alla migrazione di un singolo carico di lavoro nel foglio di calcolo.
 
@@ -64,7 +64,7 @@ Una volta definite le priorità iniziali e i carichi di lavoro sono stati aggiun
 
 ### <a name="business-inputs"></a>Input aziendali
 
-| Punto dati | Descrizione | Input |
+| Punto dati | DESCRIZIONE | Input |
 |---|---|---|
 | Nome del carico di lavoro | Questo carico di lavoro viene chiamato? |         |
 | Descrizione del carico di lavoro | In una frase, cosa fa questo carico di lavoro? |         |
@@ -83,7 +83,7 @@ Una volta definite le priorità iniziali e i carichi di lavoro sono stati aggiun
 
 ### <a name="technical-inputs"></a>Input tecnici
 
-| Punto dati | Descrizione | Input |
+| Punto dati | DESCRIZIONE | Input |
 |---|---|---|
 | Approccio di adozione | Si tratta di un'adozione candidata per la migrazione o l'innovazione? |         |
 | Lead Ops applicazione | Elenca le parti responsabili delle prestazioni e della disponibilità di questo carico di lavoro. |         |
@@ -92,7 +92,7 @@ Una volta definite le priorità iniziali e i carichi di lavoro sono stati aggiun
 | Classificazione dei dati | Elenca la classificazione della riservatezza dei dati. |         |
 | Aree geografiche operative | Elencare le aree geografiche in cui il carico di lavoro è o deve essere ospitato. |         |
 | Applicazioni | Consente di specificare un elenco iniziale o un conteggio di tutte le applicazioni incluse in questo carico di lavoro. |         |
-| Macchine virtuali | Specificare un elenco iniziale o un numero di macchine virtuali o server inclusi nel carico di lavoro. |         |
+| VM | Specificare un elenco iniziale o un numero di macchine virtuali o server inclusi nel carico di lavoro. |         |
 | Origini dati | Consente di specificare un elenco iniziale o un conteggio di tutte le origini dati incluse nel carico di lavoro. |         |
 | Dependencies | Elencare tutte le dipendenze di asset non incluse nel carico di lavoro. |         |
 | Geografia del traffico utente | Elencare le aree geografiche con una raccolta significativa di traffico utente. |         |

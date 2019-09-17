@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f47bf0256e00eafe37ebf71ed2da9b64f0b07484
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2337ea5fdcd18fc2f56c60c64a35ee878710e65
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829540"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023560"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Software Defined Networking: Hub e spoke
 
 Il modello di rete hub-spoke organizza l'infrastruttura di rete cloud basata su Azure in più reti virtuali connesse. Questo modello consente di gestire in modo più efficiente i comuni requisiti di comunicazione o sicurezza e le potenziali limitazioni delle sottoscrizioni.
 
-Nel modello hub-spoke l'_hub_ è una rete virtuale che funge da posizione centrale per la gestione della connettività esterna e l'hosting dei servizi usati da più carichi di lavoro. Gli _spoke_ sono reti virtuali che ospitano i carichi di lavoro e si connettono all'hub centrale tramite il [peering di rete virtuale](/azure/virtual-network/virtual-network-peering-overview).
+Nel modello hub-spoke l'_hub_ è una rete virtuale che funge da posizione centrale per la gestione della connettività esterna e l'hosting dei servizi usati da più carichi di lavoro. Gli _spoke_ sono reti virtuali che ospitano i carichi di lavoro e si connettono all'hub centrale tramite il [peering di rete virtuale](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
 
 Tutto il traffico in ingresso o in uscita dalle reti spoke dei carichi di lavoro viene instradato tramite la rete hub dove può essere indirizzato, controllato o altrimenti gestito dalle regole o dai processi IT gestiti in modo centralizzato.
 
 Questo modello mira a risolvere i problemi seguenti:
 
 - **Risparmio sui costi e efficienza di gestione.** Centralizzando in un'unica posizione i servizi che possono essere condivisi da più carichi di lavoro, ad esempio appliance virtuali di rete e server DNS, l'IT può ridurre al minimo le risorse ridondanti e il lavoro richiesto dalla gestione in più carichi di lavoro.
-- **Limiti delle sottoscrizioni in uscita.** Per i carichi di lavoro di grandi dimensioni basati sul cloud, potrebbe essere necessario usare più risorse di quelle consentite in una singola sottoscrizione di Azure. Vedere [Limiti delle sottoscrizioni](/azure/azure-subscription-service-limits). Il peering delle reti virtuali dei carichi di lavoro da sottoscrizioni diverse a un hub centrale consente di superare tali limiti.
+- **Limiti delle sottoscrizioni in uscita.** Per i carichi di lavoro di grandi dimensioni basati sul cloud, potrebbe essere necessario usare più risorse di quelle consentite in una singola sottoscrizione di Azure. Vedere [Limiti delle sottoscrizioni](https://docs.microsoft.com/azure/azure-subscription-service-limits). Il peering delle reti virtuali dei carichi di lavoro da sottoscrizioni diverse a un hub centrale consente di superare tali limiti.
 - **Separazione delle problematiche.** Possibilità di distribuire singoli carichi di lavoro tra i team IT centrali e i team responsabili dei carichi di lavoro.
 
 Il diagramma seguente illustra un'architettura hub-spoke di esempio che include la connettività ibrida gestita in modo centralizzato.
@@ -47,7 +47,7 @@ L'implementazione di un'architettura di rete virtuale hub-spoke presuppone quant
 
 ## <a name="global-hub-and-spoke"></a>Hub-spoke globale
 
-Le architetture hub-spoke vengono comunemente implementate con le reti virtuali distribuite nella stessa area di Azure per ridurre al minimo la latenza tra le reti. Per le organizzazioni di grandi dimensioni con copertura globale potrebbe tuttavia essere necessario distribuire i carichi di lavoro tra più aree per soddisfare i requisiti di disponibilità, ripristino di emergenza o normativi. Il modello hub e spoke può usare il [peering di rete virtuale globale](/azure/virtual-network/virtual-network-peering-overview) di Azure per estendere la gestione centralizzata e i servizi condivisi tra aree e supportare i carichi di lavoro distribuiti in tutto il mondo.
+Le architetture hub-spoke vengono comunemente implementate con le reti virtuali distribuite nella stessa area di Azure per ridurre al minimo la latenza tra le reti. Per le organizzazioni di grandi dimensioni con copertura globale potrebbe tuttavia essere necessario distribuire i carichi di lavoro tra più aree per soddisfare i requisiti di disponibilità, ripristino di emergenza o normativi. Il modello hub e spoke può usare il [peering di rete virtuale globale](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) di Azure per estendere la gestione centralizzata e i servizi condivisi tra aree e supportare i carichi di lavoro distribuiti in tutto il mondo.
 
 ## <a name="learn-more"></a>Altre informazioni
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833726"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022316"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Piano di adozione del cloud e Azure DevOps
 
@@ -59,7 +59,7 @@ La visualizzazione più chiara del piano di adozione del cloud deriva dalla visu
 
 ## <a name="align-the-cloud-adoption-plan"></a>Allinea il piano di adozione del cloud
 
-Le pagine di panoramica per la strategia e le fasi di pianificazione del ciclo di vita dell'adozione del cloud fanno riferimento al [modello di pianificazione e strategia del Framework di adozione del cloud](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Questo modello organizza le decisioni e i punti dati che allineano il modello per il piano di adozione del cloud con i piani specifici per l'adozione. Se non è già stato fatto, potrebbe essere necessario completare gli esercizi correlati alla [strategia](../business-strategy/index.md) e alla [pianificazione](../plan/index.md) prima di allineare il nuovo progetto.
+Le pagine di panoramica per la strategia e le fasi di pianificazione del ciclo di vita dell'adozione del cloud fanno riferimento al [modello di pianificazione e strategia del Framework di adozione del cloud](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Questo modello organizza le decisioni e i punti dati che allineano il modello per il piano di adozione del cloud con i piani specifici per l'adozione. Se non è già stato fatto, potrebbe essere necessario completare gli esercizi correlati alla [strategia](../strategy/index.md) e alla [pianificazione](../plan/index.md) prima di allineare il nuovo progetto.
 
 Gli articoli seguenti supportano l'allineamento del piano di adozione del cloud:
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d3722028761adb70797fc9f654bfbdc7e697fb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7433ddd9a1c3bb6bd62f9d065c79bbb0b1f52f1b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825523"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022713"
 ---
 # <a name="replication-options"></a>Opzioni di replica
 
@@ -23,13 +23,13 @@ Il contenuto all'interno del framework di adozione del cloud presuppone che Azur
 
 ## <a name="azure-site-recovery-also-known-as-azure-migrate"></a>Azure Site Recovery (noto anche come Azure Migrate)
 
-[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) orchestra e gestisce il ripristino di emergenza per le Macchine virtuali di Azure, i server fisici e le macchine virtuali locali. È anche possibile usare Site Recovery per gestire la migrazione di computer locali e di altri provider di servizi cloud in Azure. Eseguire la replica dei computer locali in Azure o delle Macchine virtuali di Azure in un'area secondaria. Eseguire quindi il failover della VM dal sito primario al secondario e completare il processo di migrazione. Con Azure Site Recovery, è possibile realizzare diversi scenari di migrazione:
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) orchestra e gestisce il ripristino di emergenza per le Macchine virtuali di Azure, i server fisici e le macchine virtuali locali. È anche possibile usare Site Recovery per gestire la migrazione di computer locali e di altri provider di servizi cloud in Azure. Eseguire la replica dei computer locali in Azure o delle Macchine virtuali di Azure in un'area secondaria. Eseguire quindi il failover della VM dal sito primario al secondario e completare il processo di migrazione. Con Azure Site Recovery, è possibile realizzare diversi scenari di migrazione:
 
 - **Eseguire la migrazione da locale ad Azure.** Eseguire la migrazione da macchine virtuali VMware, macchine virtuali Hyper-V e server fisici locali ad Azure. A tale scopo, effettuare una procedura simile a quella che si esegue per un ripristino di emergenza completo. Semplicemente non si esegue il failback dei computer da Azure al sito locale.
 - **Eseguire la migrazione tra aree di Azure.** Migrare le Macchine virtuali di Azure da un'area di Azure a un'altra. Una volta completata la migrazione, configurare il ripristino di emergenza per le VM di Azure nell'area secondaria in cui è eseguita la migrazione.
 - **Eseguire la migrazione da un altro cloud ad Azure.** È possibile eseguire la migrazione delle istanze di calcolo di cui è stato effettuato il provisioning in altri provider di servizi cloud in Macchine virtuali di Azure. Ai fini della migrazione, Site Recovery gestisce queste istanze come i server fisici.
 
-![Azure Site Recovery](../../../_images/asr-replication-image.png)
+![Azure Site Recovery](../../../_images/migrate/asr-replication-image.png)
 *Azure Site Recovery trasferisce asset in Azure o in altri cloud*
 
 Dopo aver valutato l'infrastruttura locale e cloud per la migrazione, Azure Site Recovery contribuisce alla strategia di migrazione tramite la replica di computer locali. Con i semplici passaggi seguenti è possibile configurare la migrazione di macchine virtuali locali, server fisici e istanze di VM cloud in Azure:
@@ -42,9 +42,9 @@ Dopo aver valutato l'infrastruttura locale e cloud per la migrazione, Azure Site
 - Eseguire un failover di test per verificare che tutto funzioni correttamente.
 - Eseguire un unico failover in Azure.
 
-## <a name="azure-database-migration-service"></a>Servizio Migrazione del database di Azure
+## <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
-Questo servizio consente di ridurre la complessità della migrazione al cloud usando un singolo servizio completo invece di tanti strumenti diversi. Il [Servizio Migrazione del database di Azure](/azure/dms/dms-overview) è stato progettato come soluzione end-to-end senza problemi per il trasferimento di database di SQL Server locali sul cloud. È un servizio completamente gestito progettato per abilitare le migrazioni senza interruzioni da più origini di database alle piattaforme di dati di Azure con tempi di inattività minimi. Integra alcune funzionalità degli strumenti e dei servizi esistenti, offrendo ai clienti una soluzione completa e a disponibilità elevata.
+Questo servizio consente di ridurre la complessità della migrazione al cloud usando un singolo servizio completo invece di tanti strumenti diversi. Il [Servizio Migrazione del database di Azure](https://docs.microsoft.com/azure/dms/dms-overview) è stato progettato come soluzione end-to-end senza problemi per il trasferimento di database di SQL Server locali sul cloud. È un servizio completamente gestito progettato per abilitare le migrazioni senza interruzioni da più origini di database alle piattaforme di dati di Azure con tempi di inattività minimi. Integra alcune funzionalità degli strumenti e dei servizi esistenti, offrendo ai clienti una soluzione completa e a disponibilità elevata.
 
 Il servizio usa Data Migration Assistant per generare report di valutazione che offrono indicazioni utili in merito alle modifiche necessarie prima di eseguire una migrazione. È compito dell'utente eseguire le correzioni necessarie. Quando si è pronti per iniziare il processo di migrazione, il Servizio Migrazione del database di Azure esegue tutti i passaggi associati. È possibile avviare i progetti di migrazione con tranquillità sapendo che il processo si avvale delle procedure consigliate stabilite da Microsoft.
 

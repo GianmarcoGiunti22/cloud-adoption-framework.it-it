@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e0f83c51d3b335d4a4385fd39351d6ab6fa3a78d
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: a2186172248dcaf3006fc7fe0d55fa8174910c6a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906384"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025011"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>eseguire il rehosting di un'app Linux locale in macchine virtuali di Azure
 
@@ -69,8 +69,8 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Considerazioni** | **Dettagli**
 --- | ---
-**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift-and-shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure. <br/><br/> Le macchine virtuali dell'app eseguono Ubuntu 16.04-TLS, una distribuzione Linux approvata. [Altre informazioni](/azure/virtual-machines/linux/endorsed-distros)
-**Svantaggi** | I livelli Web e dati dell'app rimarranno come singolo punto di failover. <br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database di Azure per MySQL.<br/><br/> Contoso è consapevole del fatto che una semplice migrazione di macchine virtuali in modalità "lift and shift" non consente di sfruttare appieno le funzionalità offerte da [Database di Azure per MySQL](/azure/mysql/overview) (disponibilità elevata integrata, prestazioni prevedibili, scalabilità semplice, backup automatici e sicurezza integrata).
+**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift-and-shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure. <br/><br/> Le macchine virtuali dell'app eseguono Ubuntu 16.04-TLS, una distribuzione Linux approvata. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)
+**Svantaggi** | I livelli Web e dati dell'app rimarranno come singolo punto di failover. <br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database di Azure per MySQL.<br/><br/> Contoso è consapevole del fatto che una semplice migrazione di macchine virtuali in modalità "lift and shift" non consente di sfruttare appieno le funzionalità offerte da [Database di Azure per MySQL](https://docs.microsoft.com/azure/mysql/overview) (disponibilità elevata integrata, prestazioni prevedibili, scalabilità semplice, backup automatici e sicurezza integrata).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -79,16 +79,17 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 Contoso eseguirà la migrazione nel modo seguente:
 
 - In primo luogo, Contoso prepara e configura i componenti di Azure per Migrazione server di Azure Migrate e predispone l'infrastruttura VMware locale.
-- L'[infrastruttura di Azure](contoso-migration-infrastructure.md) è già presente, quindi Contoso deve semplicemente aggiungere e configurare la replica delle macchine virtuali tramite lo strumento Migrazione server di Azure Migrate. 
+- L'[infrastruttura di Azure](./contoso-migration-infrastructure.md) è già presente, quindi Contoso deve semplicemente aggiungere e configurare la replica delle macchine virtuali tramite lo strumento Migrazione server di Azure Migrate. 
 - Al termine delle attività di preparazione, Contoso può iniziare a replicare le macchine virtuali.
 - Non appena la replica è abilitata e operativa, Contoso esegue la migrazione della macchina eseguendone il failover in Azure.
 
-![Processo di migrazione](./media/contoso-migration-rehost-linux-vm/migraton-process-az-migrate.png)
+![Processo di migrazione](./media/contoso-migration-rehost-linux-vm/migration-process-az-migrate.png)
+
 ### <a name="azure-services"></a>Servizi di Azure
 
 **Servizio** | **Descrizione** | **Costii**
 --- | --- | ---
-[Migrazione server di Azure Migrate](/azure/migrate/contoso-migration-rehost-linux-vm) | Il servizio orchestra e gestisce la migrazione delle app e dei carichi di lavoro locali e delle istanze di macchine virtuali AWS/GCP. | Durante la replica in Azure vengono addebitati costi relativi all'archiviazione di Azure. In caso di failover vengono create macchine virtuali di Azure, le quali sono soggette a costi. [Altre informazioni](https://azure.microsoft.com/pricing/details/azure-migrate/) su addebiti e prezzi.
+[Migrazione server di Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Il servizio orchestra e gestisce la migrazione delle app e dei carichi di lavoro locali e delle istanze di macchine virtuali AWS/GCP. | Durante la replica in Azure vengono addebitati costi relativi all'archiviazione di Azure. In caso di failover vengono create macchine virtuali di Azure, le quali sono soggette a costi. [Altre informazioni](https://azure.microsoft.com/pricing/details/azure-migrate/) su addebiti e prezzi.
 
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -99,10 +100,10 @@ Ecco i requisiti che Contoso dovrà soddisfare per questo scenario.
 
 **Requisiti** | **Dettagli**
 --- | ---
-**Sottoscrizione di Azure** | Contoso ha creato le sottoscrizioni in un articolo precedente di questa serie. Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se si crea un account gratuito, si è l'amministratore della sottoscrizione e si possono eseguire tutte le azioni.<br/><br/> Se si usa una sottoscrizione esistente e non si ha il ruolo di amministratore, è necessario rivolgersi all'amministratore per l'assegnazione delle autorizzazioni di proprietario o collaboratore.<br/><br/> Se sono necessarie autorizzazioni più granulari, vedere [questo articolo](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruttura di Azure** |  [Informazioni](contoso-migration-infrastructure.md) sul modo in cui Contoso configura un'infrastruttura di Azure.<br/><br/> Altre informazioni sui [prerequisiti](/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) specifici per Migrazione server di Azure Migrate.
+**Sottoscrizione di Azure** | Contoso ha creato le sottoscrizioni in un articolo precedente di questa serie. Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se si crea un account gratuito, si è l'amministratore della sottoscrizione e si possono eseguire tutte le azioni.<br/><br/> Se si usa una sottoscrizione esistente e non si ha il ruolo di amministratore, è necessario rivolgersi all'amministratore per l'assegnazione delle autorizzazioni di proprietario o collaboratore.<br/><br/> Se sono necessarie autorizzazioni più granulari, vedere [questo articolo](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruttura di Azure** |  [Informazioni](./contoso-migration-infrastructure.md) sul modo in cui Contoso configura un'infrastruttura di Azure.<br/><br/> Altre informazioni sui [prerequisiti](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) specifici per Migrazione server di Azure Migrate.
 **Server locali** | Il server vCenter locale deve eseguire la versione 5.5, 6.0 o 6.5<br/><br/> Host ESXi che esegue la versione 5.5, 6.0 o 6.5.<br/><br/> Una o più macchine virtuali VMware in esecuzione nell'host ESXi.
-**VM locali** | [Esaminare i computer Linux](/azure/virtual-machines/linux/endorsed-distros) approvati per l'esecuzione in Azure.
+**VM locali** | [Esaminare i computer Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros) approvati per l'esecuzione in Azure.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -126,7 +127,7 @@ Ecco i componenti di Azure necessari a Contoso per la migrazione delle VM ad Azu
 
 Per configurare questi elementi, Contoso segue questa procedura:
 
-1. Configurare una rete. Contoso ha già configurato una rete che può usare Migrazione server di Azure Migrate quando ha [distribuito l'infrastruttura di Azure](contoso-migration-infrastructure.md).
+1. Configurare una rete. Contoso ha già configurato una rete che può usare Migrazione server di Azure Migrate quando ha [distribuito l'infrastruttura di Azure](./contoso-migration-infrastructure.md).
 
     - SmartHotel360 è un'app di produzione e le VM verranno migrate alla rete di produzione di Azure (VNET-PROD-EUS2) nell'area primaria degli Stati Uniti orientali 2.
     - Entrambe le VM verranno inserite nel gruppo di risorse ContosoRG, usato per le risorse di produzione.
@@ -140,7 +141,7 @@ Per configurare questi elementi, Contoso segue questa procedura:
 
 **Ulteriore assistenza?**
 
-[Informazioni](/azure/migrate/) su come configurare lo strumento Migrazione server di Azure Migrate. 
+[Informazioni](https://docs.microsoft.com/azure/migrate/) su come configurare lo strumento Migrazione server di Azure Migrate. 
 
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparare la connessione alle macchine virtuali di Azure dopo il failover
@@ -153,7 +154,7 @@ Dopo il failover in Azure, Contoso intende connettersi alle macchine virtuali di
 
 **Ulteriore assistenza?**
 
-- [Informazioni](/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) su come preparare le macchine virtuali per la migrazione
+- [Informazioni](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) su come preparare le macchine virtuali per la migrazione
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>Passaggio 3: Replicare le macchine virtuali locali
 
@@ -277,8 +278,8 @@ Come passaggio finale del processo di migrazione, gli amministratori di Contoso 
 
 **Ulteriore assistenza?**
 
-- Sono disponibili [informazioni](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) su come eseguire un failover di test.
-- [Informazioni](/azure/migrate/tutorial-migrate-vmware#migrate-vms) su come eseguire la migrazione delle macchine virtuali ad Azure. 
+- Sono disponibili [informazioni](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) su come eseguire un failover di test.
+- [Informazioni](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) su come eseguire la migrazione delle macchine virtuali ad Azure. 
 
 ## <a name="clean-up-after-migration"></a>Eseguire la pulizia dopo la migrazione
 
@@ -303,17 +304,17 @@ Il team di sicurezza di Contoso esamina le macchine virtuali OSTICKETWEB e OSTIC
 - Il team esamina i gruppi di sicurezza di rete (NSG) per le macchine virtuali per controllare l'accesso. I gruppi di sicurezza di rete vengono usati per assicurarsi che possa passare solo il traffico consentito all'applicazione.
 - Il team considera inoltre l'opportunità di proteggere i dati sui dischi delle macchine virtuali usando la crittografia dei dischi e Azure Key Vault.
 
-[Altre informazioni](/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le macchine virtuali.
+[Altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le macchine virtuali.
 
 ### <a name="bcdr"></a>BCDR
 
 Per la continuità aziendale e il ripristino di emergenza, Contoso esegue le azioni seguenti:
 
-- **Proteggere i dati.** Contoso esegue il backup dei dati nelle macchine virtuali usando il servizio Backup di Azure. [Altre informazioni](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
-- **Mantenere le app in esecuzione.** Contoso esegue la replica delle macchine virtuali dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](/azure/site-recovery/azure-to-azure-quickstart)
+- **Proteggere i dati.** Contoso esegue il backup dei dati nelle macchine virtuali usando il servizio Backup di Azure. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+- **Mantenere le app in esecuzione.** Contoso esegue la replica delle macchine virtuali dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ### <a name="licensing-and-cost-optimization"></a>Licenze e ottimizzazione dei costi
 
-- Dopo la distribuzione delle risorse, Contoso assegna tag di Azure, in base alle decisioni prese durante la [distribuzione dell'infrastruttura di Azure](contoso-migration-infrastructure.md#set-up-tagging).
+- Dopo la distribuzione delle risorse, Contoso assegna tag di Azure, in base alle decisioni prese durante la [distribuzione dell'infrastruttura di Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Contoso non ha problemi di licenza con i server Ubuntu.
-- Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](/azure/cost-management/overview) sulla Gestione costi di Azure.
+- Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](https://docs.microsoft.com/azure/cost-management/overview) sulla Gestione costi di Azure.

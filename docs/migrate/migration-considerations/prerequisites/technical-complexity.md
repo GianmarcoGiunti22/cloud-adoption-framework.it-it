@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825354"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025345"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Superare la complessità tecnica: gestione delle modifiche agile
 
@@ -46,7 +46,7 @@ Il backlog di migrazione consente di tenere traccia del portfolio di primo livel
 
 Inizialmente, è improbabile che i carichi di lavoro nel backlog di migrazione soddisfino i criteri INVEST descritti nella sezione precedente. Vengono invece usati come raggruppamento logico di asset da un inventario iniziale come segnaposto per il lavoro futuro. Questi segnaposto, benché possano non essere tecnicamente accurati, vengono usati come base per il coordinamento con l'azienda.
 
-![Relazione tra i backlog di migrazione, versione e iterazione usati durante il processo di migrazione](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Relazione tra i backlog di migrazione, versione e iterazione usati durante il processo di migrazione](../../../_images/migrate/backlog-relationships.png)
 
 *I backlog di migrazione, versione e iterazione tengono traccia dei diversi livelli di attività durante i processi di migrazione.*
 

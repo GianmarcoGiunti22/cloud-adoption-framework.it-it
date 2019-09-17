@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d4681f372038b5c78d4b0793aac1a2b47e9f2c91
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820323"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024199"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Eseguire il rehosting di un'app Linux in locale in macchine virtuali di Azure e Database di Azure per MySQL
 
@@ -79,8 +79,8 @@ Per eseguire la migrazione del database:
 
 **Servizio** | **Descrizione** | **Costii**
 --- | --- | ---
-[Azure Site Recovery](/azure/site-recovery) | Questo servizio orchestra e gestisce la migrazione e il ripristino di emergenza per le macchine virtuali di Azure e per le macchine virtuali e i server fisici locali. | Durante la replica in Azure vengono addebitati costi relativi all'archiviazione di Azure. In caso di failover vengono create macchine virtuali di Azure, le quali sono soggette a costi. [Altre informazioni](https://azure.microsoft.com/pricing/details/site-recovery) su addebiti e prezzi.
-[Database di Azure per MySQL](/azure/mysql) | Il database si basa sul motore del server MySQL open source. Offre un database MySQL come servizio completamente gestito, di livello aziendale e supportato dalla community per lo sviluppo e la distribuzione di app.
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Questo servizio orchestra e gestisce la migrazione e il ripristino di emergenza per le macchine virtuali di Azure e per le macchine virtuali e i server fisici locali. | Durante la replica in Azure vengono addebitati costi relativi all'archiviazione di Azure. In caso di failover vengono create macchine virtuali di Azure, le quali sono soggette a costi. [Altre informazioni](https://azure.microsoft.com/pricing/details/site-recovery) su addebiti e prezzi.
+[Database di Azure per MySQL](https://docs.microsoft.com/azure/mysql) | Il database si basa sul motore del server MySQL open source. Offre un database MySQL come servizio completamente gestito, di livello aziendale e supportato dalla community per lo sviluppo e la distribuzione di app.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -90,10 +90,10 @@ Ecco i requisiti che Contoso dovrà soddisfare per questo scenario.
 
 **Requisiti** | **Dettagli**
 --- | ---
-**Sottoscrizione di Azure** | Contoso ha creato le sottoscrizioni in un articolo precedente. Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se si crea un account gratuito, si è l'amministratore della sottoscrizione e si possono eseguire tutte le azioni.<br/><br/> Se si usa una sottoscrizione esistente e non si ha il ruolo di amministratore, è necessario rivolgersi all'amministratore per l'assegnazione delle autorizzazioni di proprietario o collaboratore.<br/><br/> Se sono necessarie autorizzazioni più granulari, vedere [questo articolo](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruttura di Azure** | Contoso configura l'infrastruttura di Azure come descritto in [Azure infrastructure for migration](contoso-migration-infrastructure.md) (Infrastruttura di Azure per la migrazione).<br/><br/> Altre informazioni sui requisiti specifici di [rete](/azure/site-recovery/vmware-physical-azure-support-matrix#network) e [archiviazione](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) per Site Recovery.
+**Sottoscrizione di Azure** | Contoso ha creato le sottoscrizioni in un articolo precedente. Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se si crea un account gratuito, si è l'amministratore della sottoscrizione e si possono eseguire tutte le azioni.<br/><br/> Se si usa una sottoscrizione esistente e non si ha il ruolo di amministratore, è necessario rivolgersi all'amministratore per l'assegnazione delle autorizzazioni di proprietario o collaboratore.<br/><br/> Se sono necessarie autorizzazioni più granulari, vedere [questo articolo](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruttura di Azure** | Contoso configura l'infrastruttura di Azure come descritto in [Azure infrastructure for migration](./contoso-migration-infrastructure.md) (Infrastruttura di Azure per la migrazione).<br/><br/> Altre informazioni sui requisiti specifici di [rete](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) e [archiviazione](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) per Site Recovery.
 **Server locali** | Il server vCenter locale deve eseguire la versione 5.5, 6.0 o 6.5<br/><br/> Host ESXi che esegue la versione 5.5, 6.0 o 6.5.<br/><br/> Una o più macchine virtuali VMware in esecuzione nell'host ESXi.
-**VM locali** | [Rivedere i requisiti delle macchine virtuali Linux](/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines) che sono supportati per la migrazione di Site Recovery.<br/><br/> Verificare il [file system e il sistema di archiviazione di Linux](/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage).<br/><br/> Le macchine virtuali devono soddisfare i [requisiti di Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
+**VM locali** | [Rivedere i requisiti delle macchine virtuali Linux](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines) che sono supportati per la migrazione di Site Recovery.<br/><br/> Verificare il [file system e il sistema di archiviazione di Linux](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage).<br/><br/> Le macchine virtuali devono soddisfare i [requisiti di Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -114,7 +114,7 @@ Ecco come gli amministratori di Contoso eseguiranno la migrazione:
 
 Contoso necessita di due componenti di Azure per Site Recovery:
 
-- Una rete virtuale in cui si trovano le risorse di cui è stato effettuato il failover. Contoso già creato la rete virtuale durante [distribuzione dell'infrastruttura di Azure](contoso-migration-infrastructure.md)
+- Una rete virtuale in cui si trovano le risorse di cui è stato effettuato il failover. Contoso già creato la rete virtuale durante [distribuzione dell'infrastruttura di Azure](./contoso-migration-infrastructure.md)
 - Un nuovo account di archiviazione di Azure per i dati replicati.
 - Un insieme di credenziali dei Servizi di ripristino in Azure.
 
@@ -133,7 +133,7 @@ Gli amministratori di Contoso creano un account di archiviazione e l'insieme di 
 
 **Ulteriore assistenza?**
 
-[Altre informazioni](/azure/site-recovery/tutorial-prepare-azure) sulla configurazione di Azure per Site Recovery.
+[Altre informazioni](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) sulla configurazione di Azure per Site Recovery.
 
 ## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Passaggio 2: Preparare l'ambiente VMware locale per Site Recovery
 
@@ -174,8 +174,8 @@ Dopo il failover in Azure, in Contoso si intende connettersi alle macchine virtu
 
 **Servono altre informazioni?**
 
-- [Altre informazioni](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) sulla creazione e sull'assegnazione di un ruolo per l'individuazione automatica.
-- [Altre informazioni](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) sulla creazione di un account per l'installazione push del servizio Mobility.
+- [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) sulla creazione e sull'assegnazione di un ruolo per l'individuazione automatica.
+- [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) sulla creazione di un account per l'installazione push del servizio Mobility.
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>Passaggio 3: eseguire il provisioning del database di Azure per MySQL
 
@@ -287,9 +287,9 @@ Dopo che l'origine e la destinazione sono impostate, gli amministratori di Conto
 
 **Ulteriore assistenza?**
 
-- Una procedura dettagliata completa di tutti questi passaggi è disponibile in [Configurare il ripristino di emergenza in Azure per le macchine virtuali VMware locali](/azure/site-recovery/vmware-azure-tutorial).
-- Sono disponibili istruzioni dettagliate per [configurare l'ambiente di origine](/azure/site-recovery/vmware-azure-set-up-source), [distribuire il server di configurazione](/azure/site-recovery/vmware-azure-deploy-configuration-server) e [configurare le impostazioni di replica](/azure/site-recovery/vmware-azure-set-up-replication).
-- [Altre informazioni](/azure/virtual-machines/extensions/agent-linux) sull'agente guest di Azure per Linux.
+- Una procedura dettagliata completa di tutti questi passaggi è disponibile in [Configurare il ripristino di emergenza in Azure per le macchine virtuali VMware locali](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- Sono disponibili istruzioni dettagliate per [configurare l'ambiente di origine](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuire il server di configurazione](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) e [configurare le impostazioni di replica](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux) sull'agente guest di Azure per Linux.
 
 ### <a name="enable-replication-for-the-web-vm"></a>Abilitare la replica per la macchina virtuale Web
 
@@ -317,7 +317,7 @@ A questo punto gli amministratori di Contoso possono iniziare a replicare la mac
 
 **Ulteriore assistenza?**
 
-È possibile leggere una procedura dettagliata completa di tutti questi passaggi in [Abilitare la replica](/azure/site-recovery/vmware-azure-enable-replication).
+È possibile leggere una procedura dettagliata completa di tutti questi passaggi in [Abilitare la replica](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-5-migrate-the-database"></a>Passaggio 5: Eseguire la migrazione del database
 
@@ -388,9 +388,9 @@ Per eseguire la migrazione della macchina virtuale, gli amministratori di Contos
 
 **Ulteriore assistenza?**
 
-- Sono disponibili [informazioni](/azure/site-recovery/tutorial-dr-drill-azure) su come eseguire un failover di test.
-- Sono disponibili [informazioni](/azure/site-recovery/site-recovery-create-recovery-plans) su come creare un piano di ripristino.
-- [Altre informazioni](/azure/site-recovery/site-recovery-failover) su come effettuare il failover in Azure.
+- Sono disponibili [informazioni](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) su come eseguire un failover di test.
+- Sono disponibili [informazioni](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) su come creare un piano di ripristino.
+- [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) su come effettuare il failover in Azure.
 
 ### <a name="connect-the-vm-to-the-database"></a>Connettere la macchina virtuale al database
 
@@ -446,17 +446,17 @@ Il team di sicurezza di Contoso esamina la macchina virtuale e il database per d
 - Il team considera di proteggere i dati sui dischi della macchina virtuale usando Crittografia dischi e Azure Key Vault.
 - La comunicazione tra la macchina virtuale e l'istanza del database non è configurata per SSL. Sarà necessario eseguire questa operazione per proteggere il traffico del database.
 
-[Altre informazioni](/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le macchine virtuali.
+[Altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le macchine virtuali.
 
 ### <a name="bcdr"></a>BCDR
 
 Per la continuità aziendale e il ripristino di emergenza, Contoso esegue le azioni seguenti:
 
-- **Proteggere i dati.** Contoso esegue il backup dei dati nell'app delle macchine virtuali usando il servizio Backup di Azure. [Altre informazioni](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) Non è necessario configurare il backup per il database. Database di Azure per MySQL crea e archivia automaticamente i backup del server. In Contoso è stato scelto di usare la ridondanza geografica per il database, in modo che sia resiliente e pronto per la produzione.
-- **Mantenere le app in esecuzione.** Contoso esegue la replica delle macchine virtuali dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](/azure/site-recovery/azure-to-azure-quickstart)
+- **Proteggere i dati.** Contoso esegue il backup dei dati nell'app delle macchine virtuali usando il servizio Backup di Azure. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) Non è necessario configurare il backup per il database. Database di Azure per MySQL crea e archivia automaticamente i backup del server. In Contoso è stato scelto di usare la ridondanza geografica per il database, in modo che sia resiliente e pronto per la produzione.
+- **Mantenere le app in esecuzione.** Contoso esegue la replica delle macchine virtuali dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ### <a name="licensing-and-cost-optimization"></a>Licenze e ottimizzazione dei costi
 
-- Dopo la distribuzione delle risorse, si assegnano tag di Azure, in base alle decisioni prese durante la distribuzione dell'[infrastruttura di Azure](contoso-migration-infrastructure.md#set-up-tagging).
+- Dopo la distribuzione delle risorse, si assegnano tag di Azure, in base alle decisioni prese durante la distribuzione dell'[infrastruttura di Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Non vi sono problemi di gestione delle licenze per i server Ubuntu di Contoso.
-- Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](/azure/cost-management/overview) sulla Gestione costi di Azure.
+- Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](https://docs.microsoft.com/azure/cost-management/overview) sulla Gestione costi di Azure.

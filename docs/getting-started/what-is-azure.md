@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829150"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023324"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ All'interno di ogni rack o cluster, la maggior parte dei server ha il compito di
 
 Ogni istanza del controller di infrastruttura è connessa a un altro set di server che eseguono il software di orchestrazione del cloud, in genere denominato **front-end**. Il front-end ospita i servizi Web, le API RESTful e i database interni di Azure usati per tutte le funzioni eseguite dal cloud.
 
-Ad esempio, il front-end ospita i servizi che gestiscono le richieste dei clienti per allocare risorse di Azure, ad esempio [macchine virtuali](/azure/virtual-machines), e servizi come [Cosmos DB](/azure/cosmos-db/introduction). Per prima cosa, il front-end convalida l'utente e verifica che sia autorizzato ad allocare le risorse richieste. In tal caso, il front-end controlla un database per individuare un rack server con capacità sufficiente e quindi indica al controller di infrastruttura su tale rack di allocare la risorsa.
+Ad esempio, il front-end ospita i servizi che gestiscono le richieste dei clienti per allocare risorse di Azure, ad esempio [macchine virtuali](https://docs.microsoft.com/azure/virtual-machines), e servizi come [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Per prima cosa, il front-end convalida l'utente e verifica che sia autorizzato ad allocare le risorse richieste. In tal caso, il front-end controlla un database per individuare un rack server con capacità sufficiente e quindi indica al controller di infrastruttura su tale rack di allocare la risorsa.
 
 Fondamentalmente, Azure è una vasta raccolta di server e componenti hardware di rete che eseguono un set complesso di applicazioni distribuite per orchestrare la configurazione e il funzionamento dell'hardware e del software virtualizzati su tali server. Si tratta di un'orchestrazione che rende Azure&mdash;così potenti utenti che non sono più responsabili della gestione e dell'aggiornamento dell'hardware poiché Azure esegue questa operazione dietro le quinte.
 
@@ -45,8 +45,4 @@ Fondamentalmente, Azure è una vasta raccolta di server e componenti hardware di
 Ora che si conoscono gli elementi interni di Azure, vedere informazioni sulla governance delle risorse cloud.
 
 > [!div class="nextstepaction"]
-> [Informazioni sulla governance delle risorse](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [Informazioni sulla governance delle risorse](../govern/resource-consistency/what-is-governance.md)

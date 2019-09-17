@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829371"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023610"
 ---
 # <a name="cloud-rationalization"></a>Razionalizzazione del cloud
 
-La razionalizzazione del cloud è il processo di valutazione degli asset per determinare il modo migliore per eseguire la migrazione o modernizzare ogni asset nel cloud. Per ulteriori informazioni sul processo di razionalizzazione, vedere [che cos'è un Digital estate?](index.md).
+La razionalizzazione del cloud è il processo di valutazione degli asset per determinare il modo migliore per eseguire la migrazione o modernizzare ogni asset nel cloud. Per ulteriori informazioni sul processo di razionalizzazione, vedere [che cos'è un Digital estate?](./index.md).
 
 ## <a name="rationalization-context"></a>Contesto di razionalizzazione
 
@@ -59,7 +59,7 @@ Fattori di analisi qualitativa:
 - Eventi aziendali critici
 - Dipendenze dei processi
 
-## <a name="refactor"></a>Refactoring
+## <a name="refactor"></a>Effettua il refactoring
 
 Le opzioni di piattaforma distribuita come servizio (PaaS) possono ridurre i costi operativi associati a molte applicazioni. È consigliabile effettuare leggermente il refactoring di un'applicazione per adattarla a un modello basato su PaaS.
 
@@ -84,7 +84,7 @@ Fattori di analisi qualitativa:
 - Aumento delle opzioni/sequenze temporali
 - Dipendenze dei processi aziendali
 
-## <a name="rearchitect"></a>Riprogettazione
+## <a name="rearchitect"></a>Riprogetta
 
 Alcune applicazioni obsolete non sono compatibili con i provider di servizi cloud a causa delle decisioni di architettura effettuate durante la compilazione dell'applicazione. In questi casi, potrebbe essere necessario riprogettare l'applicazione prima della trasformazione.
 
@@ -115,7 +115,7 @@ In alcuni scenari, il Delta che deve essere superato per portare avanti un'appli
 
 I driver comuni possono includere:
 
-- Accelerazione dell'innovazione
+- Accelera l'innovazione
 - Compilazione delle app più veloce
 - Riduzione dei costi operativi
 
@@ -161,4 +161,4 @@ Fattori di analisi qualitativa:
 Collettivamente, è possibile applicare queste cinque RS di razionalizzazione a una proprietà digitale per semplificare le decisioni di razionalizzazione relative allo stato futuro di ogni applicazione.
 
 > [!div class="nextstepaction"]
-> [Informazioni sul digital estate](index.md)
+> [Informazioni sul digital estate](./index.md)

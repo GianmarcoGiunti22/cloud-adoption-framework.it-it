@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905362"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025152"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Ridimensionamento con più sottoscrizioni di Azure
 
@@ -39,7 +39,7 @@ Altre situazioni possono richiedere l'uso di sottoscrizioni aggiuntive. Quando s
 
 - Le sottoscrizioni hanno limiti diversi per i diversi tipi di risorse. Il numero di reti virtuali in una sottoscrizione, ad esempio, è limitato. Quando una sottoscrizione si avvicina a uno qualsiasi dei relativi limiti, è necessario creare un'altra sottoscrizione e inserire nuove risorse.
 
-  Per altre informazioni, vedere [Sottoscrizione di Azure e limiti, quote e vincoli dei servizi](/azure/azure-subscription-service-limits).
+  Per altre informazioni, vedere [Sottoscrizione di Azure e limiti, quote e vincoli dei servizi](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Ogni sottoscrizione può implementare criteri propri per i tipi di risorse distribuibili e le aree supportate.
 
@@ -59,7 +59,7 @@ Altre situazioni possono richiedere l'uso di sottoscrizioni aggiuntive. Quando s
 
 È anche possibile scegliere di creare sottoscrizioni aggiuntive per altri motivi aziendali o tecnici specifici dell'organizzazione. Si potrebbe incorrere in costi aggiuntivi per i dati in ingresso e in uscita tra le sottoscrizioni,
 
-È possibile spostare molti tipi di risorse da una sottoscrizione a un'altra o usare distribuzioni automatizzate per eseguire la migrazione delle risorse a un'altra sottoscrizione. Per altre informazioni, vedere [Spostare le risorse di Azure in un altro gruppo di risorse o in un'altra sottoscrizione](/azure/azure-resource-manager/resource-group-move-resources).
+È possibile spostare molti tipi di risorse da una sottoscrizione a un'altra o usare distribuzioni automatizzate per eseguire la migrazione delle risorse a un'altra sottoscrizione. Per altre informazioni, vedere [Spostare le risorse di Azure in un altro gruppo di risorse o in un'altra sottoscrizione](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Gestione di più sottoscrizioni
 
@@ -76,7 +76,7 @@ Azure offre quattro livelli relativi all'ambito di gestione: gruppi di gestione,
 
 Basandosi su questo modello di ereditarietà, è possibile disporre le sottoscrizioni nella gerarchia in modo che ogni sottoscrizione segua i criteri e i controlli di sicurezza appropriati.
 
-![I quattro livelli di ambito per organizzare le risorse di Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![I quattro livelli di ambito per organizzare le risorse di Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Qualsiasi assegnazione di accesso o criteri nel gruppo di gestione radice viene applicata a tutte le risorse all'interno della directory. Valutare attentamente gli elementi definiti in questo ambito. Includere solo le assegnazioni che è necessario avere.
 
@@ -86,26 +86,26 @@ Quando si sposta una sottoscrizione in un gruppo di gestione esistente, i criter
 
 ![Esempio di gerarchia di gruppi di gestione](../../_images/ready/management-group-hierarchy.png)
 
-Per altre informazioni, vedere [Organizzare le risorse con i gruppi di gestione di Azure](/azure/governance/management-groups).
+Per altre informazioni, vedere [Organizzare le risorse con i gruppi di gestione di Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Suggerimenti per la creazione di nuove sottoscrizioni
 
 - Identificare chi sarà responsabile della creazione di nuove sottoscrizioni.
 - Decidere quali risorse saranno disponibili per impostazione predefinita in una sottoscrizione.
 - Decidere quali devono essere tutte le sottoscrizioni standard. Tra gli elementi da considerare sono inclusi l'accesso basato sul controllo degli accessi in base al ruolo, i criteri, i tag e le risorse dell'infrastruttura.
-- Se possibile, [usare un'entità servizio](/azure/azure-resource-manager/grant-access-to-create-subscription) per creare nuove sottoscrizioni. Definire un gruppo di sicurezza in grado di richiedere nuove sottoscrizioni tramite un flusso di lavoro automatizzato.
+- Se possibile, [usare un'entità servizio](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription) per creare nuove sottoscrizioni. Definire un gruppo di sicurezza in grado di richiedere nuove sottoscrizioni tramite un flusso di lavoro automatizzato.
 - Se si è un cliente Enterprise Agreement (EA), chiedere al supporto tecnico di Azure di bloccare la creazione di sottoscrizioni non EA per l'organizzazione.
 
 ## <a name="related-resources"></a>Risorse correlate
 
 - [Concetti fondamentali di Azure](./fundamental-concepts.md).
-- [Organizzare le risorse con i gruppi di gestione di Azure](/azure/governance/management-groups).
-- [Elevare i privilegi di accesso per gestire tutte le sottoscrizioni e i gruppi di gestione di Azure](/azure/role-based-access-control/elevate-access-global-admin).
-- [Spostare le risorse di Azure in un altro gruppo di risorse o in un'altra sottoscrizione](/azure/azure-resource-manager/resource-group-move-resources).
+- [Organizzare le risorse con i gruppi di gestione di Azure](https://docs.microsoft.com/azure/governance/management-groups).
+- [Elevare i privilegi di accesso per gestire tutte le sottoscrizioni e i gruppi di gestione di Azure](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin).
+- [Spostare le risorse di Azure in un altro gruppo di risorse o in un'altra sottoscrizione](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Esaminare le [convenzioni di denominazione e assegnazione di tag consigliate](./name-and-tag.md) da seguire durante la distribuzione delle risorse di Azure.
+Esaminare le [convenzioni di denominazione e assegnazione di tag consigliate](./naming-and-tagging.md) da seguire durante la distribuzione delle risorse di Azure.
 
 > [!div class="nextstepaction"]
-> [Convenzioni di denominazione e assegnazione di tag consigliate](./name-and-tag.md)
+> [Convenzioni di denominazione e assegnazione di tag consigliate](./naming-and-tagging.md)

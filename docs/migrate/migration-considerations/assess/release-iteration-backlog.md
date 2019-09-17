@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833479"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025409"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Gestire le modifiche in un lavoro richiesto di migrazione incrementale
 
-Questo articolo presuppone che i processi di migrazione siano di natura incrementale e che vengano eseguiti parallelamente al [processo di governance](../../../governance/index.md). Tuttavia, le stesse informazioni aggiuntive possono essere usate per popolare le attività iniziali in una struttura di suddivisione del lavoro per gli approcci tradizionali alla gestione delle modifiche a cascata.
+Questo articolo presuppone che i processi di migrazione siano di natura incrementale e che vengano eseguiti parallelamente al [processo di governance](../../../govern/index.md). Tuttavia, le stesse informazioni aggiuntive possono essere usate per popolare le attività iniziali in una struttura di suddivisione del lavoro per gli approcci tradizionali alla gestione delle modifiche a cascata.
 
 ## <a name="release-backlog"></a>Backlog di rilascio
 

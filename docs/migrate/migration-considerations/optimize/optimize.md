@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825497"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022656"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Valutare e ridimensionare gli asset nel cloud
 
@@ -36,7 +36,7 @@ Durante la migrazione, formulare ipotesi ragionate e sperimentare varie soluzion
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Valutare e ottimizzare con Gestione costi di Azure
 
-Il servizio [Gestione costi di Azure](/azure/cost-management/overview), concesso in licenza da Cloudyn, una società affiliata di Microsoft, consente di gestire la spesa per il cloud in modo preciso e trasparente. Questo servizio esegue il monitoraggio, la valutazione, l'allocazione e l'ottimizzazione dei costi del cloud.
+Il servizio [Gestione costi di Azure](https://docs.microsoft.com/azure/cost-management/overview), concesso in licenza da Cloudyn, una società affiliata di Microsoft, consente di gestire la spesa per il cloud in modo preciso e trasparente. Questo servizio esegue il monitoraggio, la valutazione, l'allocazione e l'ottimizzazione dei costi del cloud.
 
 I dati cronologici possono aiutare a gestire i costi analizzando l'utilizzo e i costi nel tempo in modo da identificare le tendenze, che vengono quindi usate per prevedere la spesa futura. La gestione dei costi comprende anche utili report sui costi previsti. L'allocazione dei costi consente di gestire i costi analizzandoli in base a criteri di assegnazione di tag. L'allocazione dei costi può essere usata per lo showback/chargeback in modo da visualizzare l'uso delle risorse e i costi associati allo scopo di influenzare i comportamenti di consumo o addebitare i costi ai clienti tenant. Il controllo di accesso consente di gestire i costi assicurando che gli utenti e i team accedano unicamente ai dati di Gestione costi necessari. Gli avvisi consentono di gestire i costi tramite l'invio di una notifica automatica nel caso di spese insolite o eccessive. Gli avvisi possono inviare una notifica automaticamente anche ad altre parti interessate per le anomalie di spesa e i rischi di spesa eccessiva. Vari report supportano gli avvisi basati su soglie di budget e di costi.
 

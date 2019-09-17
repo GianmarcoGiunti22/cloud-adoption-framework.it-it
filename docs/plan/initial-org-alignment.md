@@ -8,20 +8,20 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a485428cb188c0b1d6cfd7862c17a5b76284ddeb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833856"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022501"
 ---
 # <a name="initial-organization-alignment"></a>Allineamento iniziale dell'organizzazione
 
 L'aspetto più importante di qualsiasi piano di adozione del cloud è l'allineamento degli utenti che faranno il piano in realtà. Nessun piano è completo fino a comprendere gli aspetti correlati agli utenti.
 
-Il vero allineamento dell'organizzazione richiede tempo. Diventerà importante per stabilire un allineamento a lungo termine dell'organizzazione, soprattutto per quanto riguarda l'adozione del cloud in termini di business e cultura IT. L'allineamento è così importante che [un'intera sezione](../organization/index.md) sia stata dedicata alla sezione opera del Framework di adozione del cloud.
+Il vero allineamento dell'organizzazione richiede tempo. Diventerà importante per stabilire un allineamento a lungo termine dell'organizzazione, soprattutto per quanto riguarda l'adozione del cloud in termini di business e cultura IT. L'allineamento è così importante che [un'intera sezione](../organize/index.md) sia stata dedicata alla sezione opera del Framework di adozione del cloud.
 
-L'allineamento completo dell'organizzazione non è un componente obbligatorio del piano di adozione del cloud. Tuttavia, è necessario un allineamento iniziale dell'organizzazione. Questo articolo descrive un punto di partenza ottimale per l'allineamento dell'organizzazione. Il materiale sussidiario qui può essere utile per completare il piano e preparare i team per l'adozione del cloud. Quando si è pronti, è possibile usare la sezione [allineamento organizzazione](../organization/index.md) per personalizzare le linee guida per adattarle alla propria organizzazione.
+L'allineamento completo dell'organizzazione non è un componente obbligatorio del piano di adozione del cloud. Tuttavia, è necessario un allineamento iniziale dell'organizzazione. Questo articolo descrive un punto di partenza ottimale per l'allineamento dell'organizzazione. Il materiale sussidiario qui può essere utile per completare il piano e preparare i team per l'adozione del cloud. Quando si è pronti, è possibile usare la sezione [allineamento organizzazione](../organize/index.md) per personalizzare le linee guida per adattarle alla propria organizzazione.
 
 ## <a name="initial-best-practice-structure"></a>Struttura delle procedure consigliate iniziale
 
@@ -31,7 +31,7 @@ Per creare un equilibrio tra la velocità e il controllo, è consigliabile che, 
 
 È piuttosto intuitivo che le attività di adozione del cloud richiedano agli utenti di eseguire tali attività. Quindi, poche persone si stupiscono che un team di adozione del cloud sia un requisito. Tuttavia, gli utenti che non hanno familiarità con il cloud potrebbero non apprezzare completamente l'importanza di un team di governance del cloud. Questo problema si verifica spesso nelle fasi iniziali del ciclo di adozione. Il team di governance del cloud fornisce i controlli e i saldi necessari per garantire che l'adozione del cloud non esponga l'azienda a nuovi rischi. Quando è necessario considerare i rischi, questo team garantisce che i processi e i controlli appropriati vengano implementati per attenuare o gestire tali rischi.
 
-Per ulteriori informazioni sull'adozione del cloud, sulla governance del cloud e su altre funzionalità di questo tipo, vedere la breve sezione relativa alla [comprensione delle funzionalità cloud richieste](../organization/index.md?#understand-required-cloud-capabilities).
+Per ulteriori informazioni sull'adozione del cloud, sulla governance del cloud e su altre funzionalità di questo tipo, vedere la breve sezione relativa alla [comprensione delle funzionalità cloud richieste](../organize/index.md?#understand-required-cloud-capabilities).
 
 ## <a name="map-people-to-capabilities"></a>Mappare le persone alle funzionalità
 

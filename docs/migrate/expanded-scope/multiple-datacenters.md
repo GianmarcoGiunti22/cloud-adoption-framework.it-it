@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e58dd50417ec6377774f07ee613a5fc69f74f0ea
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833570"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024797"
 ---
 # <a name="multiple-datacenters"></a>Più data center
 
@@ -37,7 +37,7 @@ La modifica più importante del processo di valutazione quando si espande l'ambi
 
 ### <a name="suggested-action-during-the-assess-process"></a>Azione suggerita durante il processo di valutazione
 
-**Valutare le dipendenze tra data center:** gli [strumenti di visualizzazione delle dipendenze in Azure Migrate](/azure/migrate/concepts-dependency-visualization) consentono di individuare le dipendenze. L'uso di questo set di strumenti prima della migrazione è un'ottima procedura consigliata generale. Questo set di strumenti diventa tuttavia un passaggio necessario del processo di valutazione quando si gestiscono complessità globali. Tramite il [raggruppamento delle dipendenze](/azure/migrate/how-to-create-group-machine-dependencies), la visualizzazione consente di identificare gli indirizzi IP e le porte di tutti gli asset necessari per supportare il carico di lavoro.
+**Valutare le dipendenze tra data center:** gli [strumenti di visualizzazione delle dipendenze in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) consentono di individuare le dipendenze. L'uso di questo set di strumenti prima della migrazione è un'ottima procedura consigliata generale. Questo set di strumenti diventa tuttavia un passaggio necessario del processo di valutazione quando si gestiscono complessità globali. Tramite il [raggruppamento delle dipendenze](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), la visualizzazione consente di identificare gli indirizzi IP e le porte di tutti gli asset necessari per supportare il carico di lavoro.
 
 > [!IMPORTANT]
 > Due note importanti: in primo luogo, è necessario un esperto con una conoscenza degli schemi di posizionamento degli asset e degli indirizzi IP per identificare gli asset che si trovano in un data center secondario. In secondo luogo, è importante valutare i client e le dipendenze downstream per comprendere le dipendenze bidirezionali.

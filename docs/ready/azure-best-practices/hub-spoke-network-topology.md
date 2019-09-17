@@ -11,19 +11,19 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 48f73d7c7f2e7f3bba8183464c786a3e0744807c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905499"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022398"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia di rete hub-spoke
 
 *Hub-spoke* è un modello di rete per la gestione efficiente dei comuni requisiti di comunicazione o sicurezza. Consente anche di evitare le limitazioni delle sottoscrizioni di Azure. Questo modello consente di risolvere i problemi seguenti:
 
 - **Risparmio sui costi ed efficienza della gestione.** Centralizzando in un'unica posizione i servizi che possono essere condivisi da più carichi di lavoro, ad esempio appliance virtuali di rete e server DNS, l'IT può ridurre al minimo le risorse ridondanti e l'impegno richiesto dalla gestione.
-- **Superamento dei limiti delle sottoscrizioni.** Per i carichi di lavoro di grandi dimensioni basati sul cloud, potrebbe essere necessario usare più risorse di quelle consentite in una singola sottoscrizione di Azure. Vedere [Limiti delle sottoscrizioni][Limits]. Il peering delle reti virtuali dei carichi di lavoro da sottoscrizioni diverse a un hub centrale consente di superare tali limiti.
+- **Superamento dei limiti delle sottoscrizioni.** Per i carichi di lavoro di grandi dimensioni basati sul cloud, potrebbe essere necessario usare più risorse di quelle consentite in una singola sottoscrizione di Azure. Il peering delle reti virtuali dei carichi di lavoro da sottoscrizioni diverse a un hub centrale consente di superare tali limiti. Per ulteriori informazioni, vedere [limiti della sottoscrizione](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Separazione delle attività**. È possibile distribuire singoli carichi di lavoro tra i team IT centrali e i team responsabili dei carichi di lavoro.
 
 Gli ambienti cloud di dimensioni più piccole potrebbero non trarre vantaggio dalla struttura e dalle funzionalità aggiuntive offerte da questo modello. Tuttavia, per la maggior parte delle attività di adozione del cloud dovrebbe essere presa in considerazione l'implementazione di un'architettura di rete hub-spoke se vengono riscontrati alcuni dei problemi elencati in precedenza.
@@ -31,8 +31,8 @@ Gli ambienti cloud di dimensioni più piccole potrebbero non trarre vantaggio da
 > [!NOTE]
 > Il sito Architetture di riferimento di Azure contiene modelli di esempio che è possibile usare come base per implementare reti hub-spoke:
 >
-> - [Implementare una topologia di rete hub-spoke in Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementare una topologia di rete hub-spoke con servizi condivisi in Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementare una topologia di rete hub-spoke in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementare una topologia di rete hub-spoke con servizi condivisi in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Panoramica
 
@@ -45,7 +45,7 @@ L'hub è una zona della rete centrale che controlla e ispeziona il traffico in i
 L'hub contiene spesso i componenti dei servizi comuni utilizzati dagli spoke. Di seguito sono riportati alcuni esempi di servizi centrali comuni:
 
 - Infrastruttura di Windows Server Active Directory, necessaria per l'autenticazione utente delle terze parti che accedono da reti non attendibili prima di ottenere l'accesso ai carichi di lavoro nello spoke. Include il componente correlato Active Directory Federation Services (AD FS).
-- Servizio DNS per risolvere la denominazione per il carico di lavoro negli spoke, per accedere alle risorse in locale e in Internet se non viene usato [DNS di Azure][DNS].
+- Servizio DNS per risolvere la denominazione per il carico di lavoro negli spoke, per accedere alle risorse in locale e in Internet se non viene usato [DNS di Azure](https://docs.microsoft.com/azure/dns/dns-overview).
 - Infrastruttura a chiave pubblica (PKI) per implementare Single Sign-On nei carichi di lavoro.
 - Controllo di flusso del traffico TCP e UDP tra le zone della rete degli spoke e Internet.
 - Controllo di flusso tra gli spoke e le zone locali.
@@ -61,7 +61,7 @@ Gli spoke possono anche essere usati per isolare e consentire gruppi diversi all
 
 In Azure ogni componente, indipendentemente dal tipo, viene distribuito in una sottoscrizione di Azure. L'isolamento dei componenti di Azure in diverse sottoscrizioni di Azure può soddisfare i requisiti di diverse line-of-business, come la configurazione di livelli differenziati di accesso e autorizzazione.
 
-Una singola implementazione di rete hub-spoke può essere ridimensionata fino a raggiungere un numero elevato di spoke. Tuttavia, come per ogni sistema IT, esistono limiti a livello di piattaforma. La distribuzione dell'hub è associata a una specifica sottoscrizione di Azure, che ha restrizioni e limiti, ad esempio un numero massimo di peering di rete virtuale. Per informazioni dettagliate, vedere [Sottoscrizione di Azure e limiti, quote e vincoli dei servizi][Limits].
+Una singola implementazione di rete hub-spoke può essere ridimensionata fino a raggiungere un numero elevato di spoke. Tuttavia, come per ogni sistema IT, esistono limiti a livello di piattaforma. La distribuzione dell'hub è associata a una specifica sottoscrizione di Azure, che ha restrizioni e limiti, ad esempio un numero massimo di peering di rete virtuale. Per informazioni dettagliate, vedere [sottoscrizione di Azure e limiti, quote e vincoli dei servizi] [limiti].
 
 Nei casi in cui i limiti possono costituire un problema, è possibile aumentare ulteriormente le prestazioni per l'architettura estendendo il modello da una singola rete hub-spoke a un cluster di hub e spoke. Più hub in una o più aree di Azure possono essere interconnessi usando il peering di rete virtuale, Azure ExpressRoute, una rete WAN virtuale o una VPN da sito a sito.
 
@@ -83,53 +83,48 @@ Gli spoke possono anche essere interconnessi a uno spoke che funge da hub. Quest
 
 <!-- images -->
 
-[0]: ./images/network-redundant-equipment.png "Esempi di sovrapposizione di componenti"
-[1]: ./images/network-hub-spoke-high-level.png "Esempio generale di hub e spoke"
-[2]: ./images/network-hub-spokes-cluster.png "Cluster di hub e spoke"
-[3]: ./images/network-spoke-to-spoke.png "Da spoke a spoke"
-[4]: ./images/network-hub-spoke-block-level-diagram.png "Diagramma a blocchi di hub e spoke"
-[5]: ./images/network-users-groups-subsciptions.png "Utenti, gruppi, sottoscrizioni e progetti"
-[6]: ./images/network-infrastructure-high-level.png "Diagramma dell'infrastruttura generale"
-[7]: ./images/network-highlevel-perimeter-networks.png "Diagramma dell'infrastruttura generale"
-[8]: ./images/network-vnet-peering-perimeter-neworks.png "Peering di rete virtuale e reti perimetrali"
-[9]: ./images/network-high-level-diagram-monitoring.png "Diagramma generale per il monitoraggio"
-[10]: ./images/network-high-level-workloads.png "Diagramma generale per il carico di lavoro"
+[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Esempi di sovrapposizione di componenti"
+[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Esempio generale di hub e spoke"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Cluster di hub e spoke"
+[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Da spoke a spoke"
+[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagramma a blocchi di hub e spoke"
+[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Utenti, gruppi, sottoscrizioni e progetti"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagramma dell'infrastruttura generale"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagramma dell'infrastruttura generale"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Peering di rete virtuale e reti perimetrali"
+[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagramma generale per il monitoraggio"
+[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagramma generale per il carico di lavoro"
 
 <!-- links -->
 
-[Limits]: /azure/azure-subscription-service-limits
-[Roles]: /azure/role-based-access-control/built-in-roles
-[VNet]: /azure/virtual-network/virtual-networks-overview
-[network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[DNS]: /azure/dns/dns-overview
-[PrivateDNS]: /azure/dns/private-dns-overview
-[VNetPeering]: /azure/virtual-network/virtual-network-peering-overview
-[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: /azure/role-based-access-control/overview
-[azure-ad]: /azure/active-directory/active-directory-whatis
-[VPN]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: /azure/expressroute/expressroute-introduction
-[ExRD]: /azure/expressroute/expressroute-erdirect-about
-[vWAN]: /azure/virtual-wan/virtual-wan-about
-[NVA]: /azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: /azure/firewall/overview
-[SubMgmt]: /azure/architecture/cloud-adoption/appendix/azure-scaffold
-[RGMgmt]: /azure/azure-resource-manager/resource-group-overview
-[DMZ]: /azure/best-practices-network-security
-[ALB]: /azure/load-balancer/load-balancer-overview
-[PIP]: /azure/virtual-network/resource-groups-networking#public-ip-address
-[AFD]: /azure/frontdoor/front-door-overview
-[AppGW]: /azure/application-gateway/application-gateway-introduction
-[WAF]: /azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: /azure/monitoring-and-diagnostics/
-[ActLog]: /azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: /azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: /azure/operations-management-suite/operations-management-suite-overview
-[NPM]: /azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: /azure/app-service/
-[HDI]: /azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: /azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: /azure/traffic-manager/traffic-manager-overview
+[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
+[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
+[user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
+[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
+[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
+[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
+[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
+[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
+[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
+[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[SubMgmt]: ../../reference/azure-scaffold.md
+[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
+[DMZ]: https://docs.microsoft.com/azure/best-practices-network-security
+[ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
+[PIP]: https://docs.microsoft.com/azure/virtual-network/resource-groups-networking#public-ip-address
+[AFD]: https://docs.microsoft.com/azure/frontdoor/front-door-overview
+[AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
+[WAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
+[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
+[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
+[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
+[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
+[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
+[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
+[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
+[WebApps]: https://docs.microsoft.com/azure/app-service/
+[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
+[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
+[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

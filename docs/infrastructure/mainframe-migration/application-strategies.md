@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906321"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024420"
 ---
 # <a name="mainframe-application-migration"></a>Migrazione delle applicazioni mainframe
 
@@ -51,7 +51,7 @@ Gli ambienti batch basati sul cloud usano soluzioni di calcolo parallele e reti 
 
 ### <a name="data-ingestion-systems"></a>Sistemi di inserimento dati
 
-I mainframe eseguono l'inserimento di batch di dati di grandi dimensioni da soluzioni per la vendita al dettaglio, i servizi finanziari, la produzione e di altro tipo. Con Azure è possibile usare semplici utilità della riga di comando, come [AzCopy](/azure/storage/common/storage-use-azcopy), per copiare dati da e verso una posizione di archiviazione. È anche possibile usare il servizio [Azure Data Factory](/azure/data-factory/introduction), che consente di inserire dati da archivi dati eterogenei per creare e pianificare flussi di lavoro basati sui dati.
+I mainframe eseguono l'inserimento di batch di dati di grandi dimensioni da soluzioni per la vendita al dettaglio, i servizi finanziari, la produzione e di altro tipo. Con Azure è possibile usare semplici utilità della riga di comando, come [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy), per copiare dati da e verso una posizione di archiviazione. È anche possibile usare il servizio [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction), che consente di inserire dati da archivi dati eterogenei per creare e pianificare flussi di lavoro basati sui dati.
 
 Oltre agli ambienti di emulazione, Azure fornisce funzionalità di piattaforma distribuita come servizio (PaaS) e servizi di analisi che possono migliorare gli ambienti mainframe esistenti.
 
@@ -63,9 +63,9 @@ Soluzioni di monitoraggio dell'elaborazione delle transazioni sono disponibili d
 
 ![Migrazione in modalità Lift-and-Shift di un ambiente mainframe in Azure tramite il software di emulazione](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-In Azure vengono usati ambienti di emulazione per eseguire la gestione dell'elaborazione delle transazioni e i processi batch che usano JCL. Nel livello dati, DB2 viene sostituito dal [database SQL di Azure](/azure/sql-database/sql-database-technical-overview), sebbene sia possibile usare anche Microsoft SQL Server, DB2 LUW o Oracle Database. Un emulatore supporta IMS, VSAM e SEQ. Gli strumenti di gestione dei sistemi del mainframe vengono sostituiti da servizi di Azure e software di altri fornitori, che vengono eseguiti in macchine virtuali.
+In Azure vengono usati ambienti di emulazione per eseguire la gestione dell'elaborazione delle transazioni e i processi batch che usano JCL. Nel livello dati, DB2 viene sostituito dal [database SQL di Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), sebbene sia possibile usare anche Microsoft SQL Server, DB2 LUW o Oracle Database. Un emulatore supporta IMS, VSAM e SEQ. Gli strumenti di gestione dei sistemi del mainframe vengono sostituiti da servizi di Azure e software di altri fornitori, che vengono eseguiti in macchine virtuali.
 
-Le funzionalità di gestione delle schermate e immissione nei moduli è solitamente implementata mediante server Web, che possono essere combinati con API di database, ad esempio ADO, ODBC e JDBC per l'accesso ai dati e le transazioni. L'esatta gamma di componenti IaaS di Azure da usare dipende dal sistema operativo preferito. Ad esempio:
+Le funzionalità di gestione delle schermate e immissione nei moduli è solitamente implementata mediante server Web, che possono essere combinati con API di database, ad esempio ADO, ODBC e JDBC per l'accesso ai dati e le transazioni. L'esatta gamma di componenti IaaS di Azure da usare dipende dal sistema operativo preferito. Esempio:
 
 - Macchine virtuali basate su Windows: Internet Information Server (IIS) con ASP.NET per la gestione delle schermate e la logica di business. Usare ADO.NET per l'accesso ai dati e le transazioni.
 
@@ -75,7 +75,7 @@ Le funzionalità di gestione delle schermate e immissione nei moduli è solitame
 
 Le operazioni batch in Azure sono diverse dal tipico ambiente batch nei mainframe. I processi batch mainframe sono generalmente di natura seriale e dipendono dalle operazioni di I/O al secondo fornite dal backbone del mainframe per le prestazioni. Gli ambienti batch basati sul cloud usano soluzioni di calcolo parallele e reti ad alta velocità per le prestazioni.
 
-Per ottimizzare le prestazioni batch con Azure, valutare le opzioni di [calcolo](/azure/virtual-machines/windows/overview), [archiviazione](/azure/storage/blobs/storage-blobs-introduction), [rete](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux) e [monitoraggio](/azure/azure-monitor/overview) indicate di seguito.
+Per ottimizzare le prestazioni batch con Azure, valutare le opzioni di [calcolo](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [archiviazione](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [rete](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux) e [monitoraggio](https://docs.microsoft.com/azure/azure-monitor/overview) indicate di seguito.
 
 ### <a name="compute"></a>Calcolo
 
@@ -93,7 +93,7 @@ Utilizza:
 
 Utilizza:
 
-- [Unità SSD Premium di Azure](/azure/virtual-machines/windows/premium-storage) o [Azure ultra SSD](/azure/virtual-machines/windows/disks-ultra-ssd) per il numero massimo di IOPS disponibili.
+- [Unità SSD Premium di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) o [Azure ultra SSD](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) per il numero massimo di IOPS disponibili.
 
 - Striping con più dischi per un aumento delle operazioni di I/O al secondo per ogni dimensione di archiviazione.
 
@@ -101,11 +101,11 @@ Utilizza:
 
 ### <a name="networking"></a>Rete
 
-- Usare [Rete accelerata di Azure](/azure/virtual-network/create-vm-accelerated-networking-powershell) per ridurre al minimo la latenza.
+- Usare [Rete accelerata di Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) per ridurre al minimo la latenza.
 
 ### <a name="monitoring"></a>Monitoraggio
 
-- Gli strumenti di monitoraggio, [Monitoraggio di Azure](/azure/azure-monitor/overview), [Azure Application Insights](/azure/application-insights/app-insights-overview) e anche i log di Azure consentono agli amministratori di monitorare le prestazioni delle esecuzioni batch ed eliminare i colli di bottiglia.
+- Gli strumenti di monitoraggio, [Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) e anche i log di Azure consentono agli amministratori di monitorare le prestazioni delle esecuzioni batch ed eliminare i colli di bottiglia.
 
 ## <a name="migrate-development-environments"></a>Migrazione degli ambienti di sviluppo
 
@@ -125,7 +125,7 @@ Le architetture distribuite del cloud sono basate su un diverso set di strumenti
 
 ## <a name="migrate-databases-and-data"></a>Migrazione di database e dati
 
-La migrazione delle applicazioni in genere comporta il rehosting del livello dati. È possibile eseguire la migrazione di SQL Server, open source e altri database relazionali a soluzioni completamente gestite in Azure, ad esempio [istanza gestita di database SQL di Azure](/azure/sql-database/sql-database-managed-instance), [servizio di database di Azure per PostgreSQL](/azure/postgresql/overview)e [database di Azure per MySQL](/azure/mysql/overview) con [ Servizio migrazione del database di Azure](/azure/dms/dms-overview).
+La migrazione delle applicazioni in genere comporta il rehosting del livello dati. È possibile eseguire la migrazione di SQL Server, open source e altri database relazionali a soluzioni completamente gestite in Azure, ad esempio [istanza gestita di database SQL di Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [servizio di database di Azure per PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)e [database di Azure per MySQL](https://docs.microsoft.com/azure/mysql/overview) con [ Servizio migrazione del database di Azure](https://docs.microsoft.com/azure/dms/dms-overview).
 
 È ad esempio possibile eseguire la migrazione se il livello dati del mainframe utilizza:
 
@@ -159,7 +159,7 @@ Inoltre, ogni livello può anche fornire servizi di ripristino di emergenza appr
 
 La figura seguente illustra una possibile distribuzione di Azure usando un sito primario e uno secondario. Nel sito primario, le VM di produzione, di staging e di testing vengono distribuite con disponibilità elevata. Il sito secondario è destinato al backup e al ripristino di emergenza.
 
-![Una possibile distribuzione di Azure usando un sito primario e uno secondario](../../_images/mainframe-migration/migration-backup-DR.png)
+![Una possibile distribuzione di Azure usando un sito primario e uno secondario](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Eseguire una migrazione in diverse fasi di un mainframe in Azure
 
@@ -167,7 +167,7 @@ Lo spostamento di soluzioni da un mainframe in Azure può comportare una migrazi
 
 Uno scenario comune consiste nello spostare un'applicazione in Azure, mantenendo i dati usati dall'applicazione sul mainframe. Viene usato software specifico per abilitare le applicazioni in Azure per l'accesso ai dati dal mainframe. Fortunatamente, una vasta gamma di soluzioni garantisce l'integrazione tra Azure e gli ambienti mainframe esistenti, il supporto per gli scenari ibridi e la migrazione nel corso del tempo. Numerosi partner Microsoft, fornitori di software indipendenti e integratori di sistemi possono offrire tutta l'assistenza necessaria.
 
-Un'opzione è [Microsoft Host Integration Server](/host-integration-server), una soluzione che fornisce l'architettura del database relazionale distribuito (DRDA) necessario per le applicazioni in Azure per accedere ai dati in DB2 che rimangono nel mainframe. Altre opzioni per l'integrazione dei mainframe in Azure includono soluzioni di IBM, Attunity, Codit, altri fornitori e opzioni open source.
+Un'opzione è [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), una soluzione che fornisce l'architettura del database relazionale distribuito (DRDA) necessario per le applicazioni in Azure per accedere ai dati in DB2 che rimangono nel mainframe. Altre opzioni per l'integrazione dei mainframe in Azure includono soluzioni di IBM, Attunity, Codit, altri fornitori e opzioni open source.
 
 ## <a name="partner-solutions"></a>Soluzioni partner
 
@@ -179,8 +179,8 @@ Azure fornisce un'infrastruttura scalabile, collaudata e a disponibilità elevat
 
 Per altre informazioni, vedere le seguenti risorse:
 
-- [Inizia a usare Azure](/azure)
+- [Inizia a usare Azure](https://docs.microsoft.com/azure)
 
 - [Distribuire IBM DB2 pureScale in Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Documentazione di Host Integration Server](/host-integration-server)
+- [Documentazione di Host Integration Server](https://docs.microsoft.com/host-integration-server)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d98d24e6b2645adf03a94a41b0391b89d5eb2852
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821168"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025138"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ricompilare un'app locale in Azure
 
@@ -98,7 +98,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 [servizio Azure Kubernetes](/sql/dma/dma-overview?view=ssdt-18vs2017) | Semplifica la gestione, la distribuzione e le operazioni di Kubernetes. Offre un servizio di orchestrazione di contenitori Kubernetes completamente gestito. | servizio Azure Kubernetes è un servizio gratuito. Si paga solo per le macchine virtuali e le risorse di archiviazione e di rete associate usate. [Altre informazioni](https://azure.microsoft.com/pricing/details/kubernetes-service)
 [Funzioni di Azure](https://azure.microsoft.com/services/functions) | Accelera lo sviluppo con un'esperienza di elaborazione senza server basata su eventi. Scalabilità su richiesta. | Si paga solo per le risorse usate. Il piano viene fatturato in base al consumo di risorse e di esecuzioni al secondo. [Altre informazioni](https://azure.microsoft.com/pricing/details/functions)
 [Registro Azure Container](https://azure.microsoft.com/services/container-registry) | Archivia le immagini per tutti i tipi di distribuzioni di contenitori. | Costo in base a funzionalità, archiviazione e durata dell'uso. [Altre informazioni](https://azure.microsoft.com/pricing/details/container-registry)
-[Servizio app di Azure](https://azure.microsoft.com/services/app-service/containers) | È possibile creare, distribuire e ridimensionare rapidamente app Web, dispositivi mobili e API di livello aziendale in esecuzione su qualsiasi piattaforma. | I piani di servizio app vengono fatturati al secondo. [Altre informazioni](https://azure.microsoft.com/pricing/details/app-service/windows)
+[Servizio app di Azure](https://azure.microsoft.com/services/app-service/containers) | Crea, distribuisci e ridimensiona rapidamente app Web, per dispositivi mobili e per le API di livello aziendale in esecuzione su qualsiasi piattaforma. | I piani di servizio app vengono fatturati al secondo. [Altre informazioni](https://azure.microsoft.com/pricing/details/app-service/windows)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -109,7 +109,7 @@ Di seguito vengono indicati i requisiti che Contoso deve soddisfare per questo s
 **Requisiti** | **Dettagli**
 --- | ---
 **Sottoscrizione di Azure** | Contoso ha creato le sottoscrizioni in un articolo precedente. Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se si crea un account gratuito, si è l'amministratore della sottoscrizione e si possono eseguire tutte le azioni.<br/><br/> Se si usa una sottoscrizione esistente e non si ha il ruolo di amministratore, è necessario rivolgersi all'amministratore per l'assegnazione delle autorizzazioni di proprietario o collaboratore.
-**Infrastruttura di Azure** | [Informazioni](contoso-migration-infrastructure.md) sul modo in cui Contoso configura un'infrastruttura di Azure.
+**Infrastruttura di Azure** | [Informazioni](./contoso-migration-infrastructure.md) sul modo in cui Contoso configura un'infrastruttura di Azure.
 **Prerequisiti per gli sviluppatori** | Contoso necessita dei seguenti strumenti in una workstation per sviluppatori:<br/><br/> - [Visual Studio 2017 Community Edition: versione 15.5](https://www.visualstudio.com)<br/><br/> Abilitazione al carico di lavoro .NET.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfaccia della riga di comando di Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) o Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) impostato per l'uso dei Contenitori di Windows.
 
 <!-- markdownlint-enable MD033 -->
@@ -150,7 +150,7 @@ Gli amministratori di Contoso effettuano il provisioning come indicato di seguit
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks2.png)
 4. In Visual Studio Code selezionano **Visualizza** > **Terminale integrato** per aprire il terminale integrato di Visual Studio Code.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks3.png)
-5. Nel terminale integrato di PowerShell, Contoso accede ad Azure tramite il comando Connect-AzureRmAccount. [Altre informazioni](/powershell/azure/get-started-azureps) per muovere i primi passi con PowerShell.
+5. Nel terminale integrato di PowerShell, Contoso accede ad Azure tramite il comando Connect-AzureRmAccount. [Altre informazioni](https://docs.microsoft.com/powershell/azure/get-started-azureps) per muovere i primi passi con PowerShell.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks4.png)
 6. Viene autenticata l'interfaccia della riga di comando di Azure eseguendo il comando **az login** e seguendo le istruzioni per l'autenticazione tramite browser Web. [Altre informazioni](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks5.png)
@@ -585,22 +585,22 @@ Al termine della migrazione delle risorse in Azure, Contoso deve rendere piename
 
 ### <a name="security"></a>Security
 
-- Contoso deve garantire che i nuovi database siano sicuri. [Altre informazioni](/azure/sql-database/sql-database-security-overview)
+- Contoso deve garantire che i nuovi database siano sicuri. [Altre informazioni](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)
 - L'app deve essere aggiornata per usare SSL con certificati. L'istanza di contenitore deve essere ridistribuita per rispondere sulla porta 443.
-- Contoso deve considerare l'uso dell'insieme di credenziali delle chiavi per proteggere i segreti delle app di Service Fabric. [Altre informazioni](/azure/service-fabric/service-fabric-application-secret-management)
+- Contoso deve considerare l'uso dell'insieme di credenziali delle chiavi per proteggere i segreti delle app di Service Fabric. [Altre informazioni](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)
 
 ### <a name="backups-and-disaster-recovery"></a>Backup e ripristino di emergenza
 
-- Contoso deve esaminare i requisiti di backup per il database SQL di Azure. [Altre informazioni](/azure/sql-database/sql-database-automated-backups)
-- Contoso deve considerare l'implementazione di gruppi di failover di SQL per fornire un failover al database a livello di area. [Altre informazioni](/azure/sql-database/sql-database-geo-replication-overview)
-- Contoso può usare la replica geografica per lo SKU premium di Registro Azure Container. [Altre informazioni](/azure/container-registry/container-registry-geo-replication)
-- Cosmos DB esegue automaticamente il backup. Sono disponibili [altre informazioni](/azure/cosmos-db/online-backup-and-restore) su questo processo.
+- Contoso deve esaminare i requisiti di backup per il database SQL di Azure. [Altre informazioni](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
+- Contoso deve considerare l'implementazione di gruppi di failover di SQL per fornire un failover al database a livello di area. [Altre informazioni](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)
+- Contoso può usare la replica geografica per lo SKU premium di Registro Azure Container. [Altre informazioni](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)
+- Cosmos DB esegue automaticamente il backup. Sono disponibili [altre informazioni](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) su questo processo.
 
 ### <a name="licensing-and-cost-optimization"></a>Licenze e ottimizzazione dei costi
 
-- Dopo che tutte le risorse vengono distribuite, Contoso deve assegnare i tag di Azure in base alla [pianificazione dell'infrastruttura](contoso-migration-infrastructure.md#set-up-tagging).
+- Dopo che tutte le risorse vengono distribuite, Contoso deve assegnare i tag di Azure in base alla [pianificazione dell'infrastruttura](./contoso-migration-infrastructure.md#set-up-tagging).
 - Tutte le licenze includono il costo dei servizi PaaS di cui si serve Contoso. Questo verrà dedotto dal contratto Enterprise.
-- Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](/azure/cost-management/overview) sulla Gestione costi di Azure.
+- Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](https://docs.microsoft.com/azure/cost-management/overview) sulla Gestione costi di Azure.
 
 ## <a name="conclusion"></a>Conclusione
 

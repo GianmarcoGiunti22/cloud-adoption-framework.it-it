@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829293"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023492"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Raccogliere i dati di inventario per un digital estate
 
-Lo sviluppo di un inventario è il primo passaggio della [pianificazione delle proprietà digitali](index.md). In questo processo, un elenco di asset IT che supportano funzioni aziendali specifiche viene raccolto per un'analisi e una razionalizzazione successive. In questo articolo si presuppone che un approccio di analisi dal basso verso l'alto sia più appropriato per la pianificazione. Per altre informazioni, consultare [Approcci per la pianificazione del digital estate](./approach.md).
+Lo sviluppo di un inventario è il primo passaggio della [pianificazione delle proprietà digitali](./index.md). In questo processo, un elenco di asset IT che supportano funzioni aziendali specifiche viene raccolto per un'analisi e una razionalizzazione successive. In questo articolo si presuppone che un approccio di analisi dal basso verso l'alto sia più appropriato per la pianificazione. Per altre informazioni, consultare [Approcci per la pianificazione del digital estate](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Raccogliere i dati di inventario per un digital estate
 
@@ -38,4 +38,4 @@ Un inventario viene raramente completato nella prima iterazione. Si consiglia vi
 Dopo che un inventario è stato compilato e convalidato, è possibile razionalizzarlo. La razionalizzazione dell'inventario è il passaggio successivo per la pianificazione delle proprietà digitali.
 
 > [!div class="nextstepaction"]
-> [Razionalizzare il digital estate](rationalize.md)
+> [Razionalizzare il digital estate](./rationalize.md)

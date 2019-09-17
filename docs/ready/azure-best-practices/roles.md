@@ -11,59 +11,59 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 897b6f3f5d3c506cc79050dd3453e30b677382b1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833700"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025259"
 ---
 # <a name="role-based-access-control"></a>Controllo degli accessi in base al ruolo
 
-La definizione di privilegi e diritti di accesso basati su gruppo è una procedura consigliata. La definizione di gruppi, anziché di singoli utenti, consente di gestire più facilmente i criteri di accesso, mantenere la coerenza degli accessi tra i team e ridurre gli errori di configurazione. L'assegnazione e la rimozione di utenti nei gruppi appropriati sono inoltre utili per mantenere aggiornati i privilegi di utenti specifici. Il [controllo degli accessi in base al ruolo (RBAC)](/azure/role-based-access-control/overview) di Azure consente una gestione degli accessi con granularità fine per le risorse organizzate in base ai ruoli utente.
+La definizione di privilegi e diritti di accesso basati su gruppo è una procedura consigliata. La definizione di gruppi, anziché di singoli utenti, consente di gestire più facilmente i criteri di accesso, mantenere la coerenza degli accessi tra i team e ridurre gli errori di configurazione. L'assegnazione e la rimozione di utenti nei gruppi appropriati sono inoltre utili per mantenere aggiornati i privilegi di utenti specifici. Il [controllo degli accessi in base al ruolo (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) di Azure consente una gestione degli accessi con granularità fine per le risorse organizzate in base ai ruoli utente.
 
-Per una panoramica delle procedure di controllo degli accessi in base al ruolo consigliate come parte di una strategia di sicurezza e gestione delle identità, vedere [Procedure consigliate per la sicurezza con il controllo di accesso e la gestione delle identità di Azure](/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
+Per una panoramica delle procedure di controllo degli accessi in base al ruolo consigliate come parte di una strategia di sicurezza e gestione delle identità, vedere [Procedure consigliate per la sicurezza con il controllo di accesso e la gestione delle identità di Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
 
 ## <a name="overview-of-role-based-access-control"></a>Panoramica del controllo degli accessi in base al ruolo
 
-Usando il [controllo degli accessi in base al ruolo](/azure/role-based-access-control/overview), è possibile separare i compiti all'interno del team e concedere a utenti, gruppi, entità servizio o identità gestite specifiche di Azure Active Directory (Azure AD) solo l'accesso sufficiente per eseguire le loro attività. Invece di concedere a tutti l'accesso senza restrizioni alla sottoscrizione o alle risorse di Azure, è possibile limitare le autorizzazioni per ogni set di risorse.
+Usando il [controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control/overview), è possibile separare i compiti all'interno del team e concedere a utenti, gruppi, entità servizio o identità gestite specifiche di Azure Active Directory (Azure AD) solo l'accesso sufficiente per eseguire le loro attività. Invece di concedere a tutti l'accesso senza restrizioni alla sottoscrizione o alle risorse di Azure, è possibile limitare le autorizzazioni per ogni set di risorse.
 
-Le [definizioni di ruolo Controllo degli accessi in base al ruolo](/azure/role-based-access-control/role-definitions) elencano le operazioni consentite o non consentite agli utenti o ai gruppi assegnati a un determinato ruolo. L'[ambito](/azure/role-based-access-control/overview#scope) di un ruolo specifica le risorse a cui si applicano queste autorizzazioni definite. Gli ambiti possono essere definiti a più livelli: gruppo di gestione, sottoscrizione, gruppo di risorse o risorsa. Gli ambiti sono strutturati in una relazione di tipo padre/figlio.
+Le [definizioni di ruolo Controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) elencano le operazioni consentite o non consentite agli utenti o ai gruppi assegnati a un determinato ruolo. L'[ambito](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope) di un ruolo specifica le risorse a cui si applicano queste autorizzazioni definite. Gli ambiti possono essere definiti a più livelli: gruppo di gestione, sottoscrizione, gruppo di risorse o risorsa. Gli ambiti sono strutturati in una relazione di tipo padre/figlio.
 
-![Gerarchia degli ambiti del controllo degli accessi in base al ruolo](./images/rbac-scope.png)
+![Gerarchia degli ambiti del controllo degli accessi in base al ruolo](../../_images/azure-best-practices/rbac-scope.png)
 
-Per istruzioni dettagliate per l'assegnazione di utenti e gruppi a ruoli specifici e l'assegnazione di ruoli ad ambiti, vedere [Gestire l'accesso alle risorse di Azure usando il controllo degli accessi in base al ruolo](/azure/role-based-access-control/role-assignments-portal).
+Per istruzioni dettagliate per l'assegnazione di utenti e gruppi a ruoli specifici e l'assegnazione di ruoli ad ambiti, vedere [Gestire l'accesso alle risorse di Azure usando il controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
 Quando si pianifica una strategia di controllo di accesso, usare un modello di accesso con privilegi minimi che conceda agli utenti solo le autorizzazioni necessarie per eseguire le loro attività. Il diagramma seguente mostra uno schema consigliato per l'uso del controllo degli accessi in base al ruolo in base a questo approccio.
 
-![Modello consigliato per l'uso del controllo degli accessi in base al ruolo](./images/rbac-least-privilege.png)
+![Modello consigliato per l'uso del controllo degli accessi in base al ruolo](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Quanto più specifiche o dettagliate sono le autorizzazioni definite dall'utente, tanto più probabile è che i controlli di accesso diventino complessi e difficili da gestire. Questo è particolarmente vero man mano che aumentano le dimensioni dell'ambiente cloud. Evitare di definire autorizzazioni specifiche per le risorse. In alternativa, [usare gruppi di gestione](/azure/governance/management-groups) per il controllo di accesso a livello aziendale e [gruppi di risorse](/azure/azure-resource-manager/resource-group-overview#resource-groups) per il controllo di accesso nell'ambito di sottoscrizioni. Evitare anche di definire autorizzazioni specifiche per gli utenti. In alternativa, assegnare l'accesso a [gruppi in Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups).
+> Quanto più specifiche o dettagliate sono le autorizzazioni definite dall'utente, tanto più probabile è che i controlli di accesso diventino complessi e difficili da gestire. Questo è particolarmente vero man mano che aumentano le dimensioni dell'ambiente cloud. Evitare di definire autorizzazioni specifiche per le risorse. In alternativa, [usare gruppi di gestione](https://docs.microsoft.com/azure/governance/management-groups) per il controllo di accesso a livello aziendale e [gruppi di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) per il controllo di accesso nell'ambito di sottoscrizioni. Evitare anche di definire autorizzazioni specifiche per gli utenti. In alternativa, assegnare l'accesso a [gruppi in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
 ## <a name="using-built-in-rbac-roles"></a>Uso dei ruoli predefiniti del controllo degli accessi in base al ruolo
 
 In Azure sono disponibili molte definizioni di ruolo predefinite, con tre ruoli principali per concedere l'accesso:
 
-- Il ruolo [Proprietario](/azure/role-based-access-control/built-in-roles#owner) può gestire qualsiasi cosa, incluso l'accesso alle risorse.
-- Il ruolo [Collaboratore](/azure/role-based-access-control/built-in-roles#contributor) può gestire qualsiasi cosa, tranne l'accesso alle risorse.
-- Il ruolo [Lettore](/azure/role-based-access-control/built-in-roles#reader) può visualizzare qualsiasi cosa, ma senza apportare modifiche.
+- Il ruolo [Proprietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) può gestire qualsiasi cosa, incluso l'accesso alle risorse.
+- Il ruolo [Collaboratore](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) può gestire qualsiasi cosa, tranne l'accesso alle risorse.
+- Il ruolo [Lettore](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) può visualizzare qualsiasi cosa, ma senza apportare modifiche.
 
 A partire da questi livelli di accesso di base, i ruoli predefiniti aggiuntivi forniscono controlli più dettagliati per accedere a specifici tipi di risorse o funzionalità di Azure. È ad esempio possibile gestire l'accesso alle macchine virtuali usando i ruoli predefiniti seguenti:
 
-- Il ruolo [Accesso amministratore alle macchine virtuali](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) può visualizzare le macchine virtuali nel portale e accedere come _amministratore_.
-- Il ruolo [Collaboratore Macchina virtuale](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) può gestire le macchine virtuali, ma non può accedere né a tali macchine né alla rete virtuale o all'account di archiviazione a cui sono connesse.
-- Il ruolo [Accesso utente alle macchine virtuali](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) può visualizzare le macchine virtuali nel portale e accedere come normale utente.
+- Il ruolo [Accesso amministratore alle macchine virtuali](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) può visualizzare le macchine virtuali nel portale e accedere come _amministratore_.
+- Il ruolo [Collaboratore Macchina virtuale](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) può gestire le macchine virtuali, ma non può accedere né a tali macchine né alla rete virtuale o all'account di archiviazione a cui sono connesse.
+- Il ruolo [Accesso utente alle macchine virtuali](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) può visualizzare le macchine virtuali nel portale e accedere come normale utente.
 
 Per un altro esempio d'uso dei ruoli predefiniti per gestire l'accesso a particolari funzionalità, vedere le informazioni relative al controllo dell'accesso alle funzionalità di rilevamento dei costi in [Tenere traccia dei costi tra business unit, ambienti o progetti](./track-costs.md#provide-the-right-level-of-cost-access).
 
-Per un elenco completo dei ruoli predefiniti disponibili, vedere [Ruoli predefiniti per le risorse di Azure](/azure/role-based-access-control/built-in-roles).
+Per un elenco completo dei ruoli predefiniti disponibili, vedere [Ruoli predefiniti per le risorse di Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
 ## <a name="using-custom-roles"></a>Uso dei ruoli personalizzati
 
 Anche se i ruoli predefiniti di Azure supportano un'ampia gamma di scenari di controllo di accesso, possono non soddisfare tutte le esigenze dell'organizzazione o del team. Se, ad esempio, un gruppo di utenti è responsabile della gestione delle macchine virtuali e delle risorse del database SQL di Azure, può essere necessario creare un ruolo personalizzato per ottimizzare la gestione dei controlli di accesso necessari.
 
-La documentazione relativa al controllo degli accessi in base al ruolo di Azure contiene istruzioni sulla [creazione di ruoli personalizzati](/azure/role-based-access-control/custom-roles) oltre a informazioni dettagliate sul [funzionamento delle definizioni di ruolo](/azure/role-based-access-control/role-definitions).
+La documentazione relativa al controllo degli accessi in base al ruolo di Azure contiene istruzioni sulla [creazione di ruoli personalizzati](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) oltre a informazioni dettagliate sul [funzionamento delle definizioni di ruolo](https://docs.microsoft.com/azure/role-based-access-control/role-definitions).
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>Separazione di responsabilità e ruoli per le organizzazioni di grandi dimensioni
 

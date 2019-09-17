@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906017"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023406"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introduzione a un percorso di migrazione cloud
 
@@ -70,7 +70,7 @@ Le migrazioni cloud sono spesso considerate un singolo progetto all'interno di u
 
 La strategia e la pianificazione del cloud sono una metodologia incentrata sull'allineamento di risultati aziendali, priorità e vincoli per definire una strategia e un piano di migrazione chiari. Il piano risultante (o backlog di migrazione) delinea l'approccio alla migrazione e alla modernizzazione nel portfolio IT, che può estendersi a interi Data Center, più carichi di lavoro o raccolte varie di infrastruttura, applicazioni e dati. Una gestione corretta del portfolio IT attraverso le attività di implementazione del cloud aiuterà i risultati aziendali desiderati.
 
-![Panoramica di Cloud Adoption Framework (CAF)](../_images/cloud-adoption-framework-overview.png)
+![Panoramica di Cloud Adoption Framework (CAF)](../_images/caf-overview.png)
 
 **Guida introduttiva:** Il resto di questo articolo prepara il lettore per l'applicazione corretta della metodologia di pianificazione e strategia cloud di adozione del cloud. Vengono inoltre descritte risorse e collegamenti aggiuntivi che consentono al lettore di adottare questo approccio per guidare le attività di implementazione del cloud.
 
@@ -80,14 +80,14 @@ La metodologia di pianificazione e strategia cloud di adozione del cloud si basa
 
 Come illustrato nell'immagine precedente, questo framework allinea le decisioni strategiche a un numero ridotto di processi contenuti che operano all'interno di un modello iterativo. Sebbene venga descritta in un documento lineare, è previsto che ognuno dei processi seguenti venga maturo in parallelo con le iterazioni dell'implementazione del cloud. I collegamenti per ogni processo consentiranno di definire lo stato finale e i mezzi di maturazione verso lo stato finale desiderato:
 
-- **[Piano](../business-strategy/index.md):** Quando l'implementazione tecnica è allineata con obiettivi aziendali chiari, è molto più facile misurare e allineare il successo tra più attività di implementazione del cloud, indipendentemente dalle decisioni tecniche.
+- **[Piano](../strategy/index.md):** Quando l'implementazione tecnica è allineata con obiettivi aziendali chiari, è molto più facile misurare e allineare il successo tra più attività di implementazione del cloud, indipendentemente dalle decisioni tecniche.
 - **[Preparazione](../ready/index.md):** Preparare l'azienda, la cultura, le persone e l'ambiente per le modifiche in arrivo comportano un successo in ogni sforzo e accelerano l'implementazione e i progetti di modifica.
 - **Adozione:** Garantire la corretta implementazione delle modifiche desiderate, nei processi IT e aziendali, per ottenere risultati aziendali.
   - **[Esegui migrazione](../migrate/index.md):** Esecuzione iterativa della [metodologia di implementazione del cloud](#cloud-implementation) che rispetta il processo testato di valutazione, migrazione, ottimizzazione e sicurezza & gestire per creare un processo ripetibile per la migrazione dei carichi di lavoro.
 - **[Funzionamento](../operating-model/index.md):** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
-  - **[Organizzazione](../organization/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
-  - **[Governance](../governance/index.md):** Allinea i criteri aziendali ai rischi tangibili, attenuati tramite i criteri, i processi e gli strumenti di governance basati sul cloud.
-  - **[Gestione](../operations/index.md):** Espandi le operazioni IT per garantire che le soluzioni basate sul cloud possano essere gestite tramite processi sicuri e convenienti usando strumenti operativi moderni e basati sul cloud.
+  - **[Organizzazione](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
+  - **[Governance](../govern/index.md):** Allinea i criteri aziendali ai rischi tangibili, attenuati tramite i criteri, i processi e gli strumenti di governance basati sul cloud.
+  - **[Gestione](../manage/index.md):** Espandi le operazioni IT per garantire che le soluzioni basate sul cloud possano essere gestite tramite processi sicuri e convenienti usando strumenti operativi moderni e basati sul cloud.
 
 In questa esperienza di migrazione questo Framework verrà usato per risolvere le ambiguità, gestire le modifiche e guidare i team interfunzionali attraverso la realizzazione di risultati aziendali.
 
@@ -140,6 +140,6 @@ Il Framework di adozione del cloud è una soluzione del ciclo di vita. È proget
 >
 > [Migrazione](../migrate/index.md)
 >
-> [Operare](../operations/index.md)
+> [Manage](../manage/index.md)
 >
-> [Governare](../governance/index.md)
+> [Governare](../govern/index.md)

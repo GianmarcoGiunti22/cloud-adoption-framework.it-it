@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833297"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022605"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Elenco di controllo per la pianificazione dell'ambiente di migrazione - Convalidare l'idoneità dell'ambiente prima della migrazione
 
@@ -33,7 +33,7 @@ La prima decisione e anche la più importante relativa a un ambiente pronto per 
 
 Che si scelga o meno di allinearsi a una strategia di governance del cloud più ampia per la migrazione iniziale, sarà necessario assicurarsi che l'ambiente di distribuzione cloud sia configurato per supportare i carichi di lavoro.
 
-Se si prevede di allineare la migrazione a una strategia di governance del cloud dall'inizio, sarà necessario applicare le [cinque discipline di governance del cloud](../../../governance/governance-disciplines.md) per fornire informazioni sulle decisioni relative a criteri, toolchain e meccanismi di alineamento dell'ambiente cloud a requisiti aziendali complessivi. Consultare le [guide di progettazione per la governance di utilità pratica](../../../governance/journeys/index.md) di Cloud Adoption Framework per gli esempi di implementazione di questo modello con i servizi di Azure.
+Se si prevede di allineare la migrazione a una strategia di governance del cloud dall'inizio, sarà necessario applicare le [cinque discipline di governance del cloud](../../../govern/governance-disciplines.md) per fornire informazioni sulle decisioni relative a criteri, toolchain e meccanismi di alineamento dell'ambiente cloud a requisiti aziendali complessivi. Consultare le [guide di progettazione per la governance di utilità pratica](../../../govern/guides/index.md) di Cloud Adoption Framework per gli esempi di implementazione di questo modello con i servizi di Azure.
 
 Se le migrazioni iniziali non sono strettamente allineate a una strategia di governance del cloud più ampia, sarà ancora necessario gestire i problemi generali di organizzazione, accesso e pianificazione dell'infrastruttura. Consultare la [guida all'idoneità di Azure](../../../ready/azure-readiness-guide/index.md) per assistenza per queste decisioni sull'idoneità per il cloud.
 
@@ -64,7 +64,7 @@ I servizi di identità basati sul cloud sono un prerequisito per offrire la gest
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se l'ambiente soddisfa i requisiti minimi, può essere considerato approvato per l'idoneità per la migrazione. La [complessità culturale e la gestione del cambiamento](./culture-complexity.md) consentono di allineare i ruoli e le responsabilità per garantire aspettative appropriate durante l'esecuzione del piano.
+Se l'ambiente soddisfa i requisiti minimi, può essere considerato approvato per l'idoneità per la migrazione. La [complessità culturale e la gestione del cambiamento](./cultural-complexity.md) consentono di allineare i ruoli e le responsabilità per garantire aspettative appropriate durante l'esecuzione del piano.
 
 > [!div class="nextstepaction"]
-> [Complessità culturale e gestione del cambiamento](./culture-complexity.md)
+> [Complessità culturale e gestione del cambiamento](./cultural-complexity.md)

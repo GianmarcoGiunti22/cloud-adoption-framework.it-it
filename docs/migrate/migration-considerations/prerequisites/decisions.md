@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825380"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025426"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decisioni che influiscono sulle migrazioni
 
@@ -49,7 +49,7 @@ Questa sezione del Cloud Adoption Framework definisce gli aspetti teorici per ai
 
 ## <a name="effort"></a>Lavoro richiesto
 
-Il lavoro di migrazione richiesto può variare notevolmente a seconda delle dimensioni e delle complessità dei carichi di lavoro. La migrazione di carichi di lavoro più piccoli che coinvolge alcune centinaia di macchine virtuali è un processo tattico, potenzialmente implementato con strumenti automatici come [Azure Migrate](/azure/migrate/migrate-overview). Viceversa, una grande migrazione aziendale di decine di migliaia di carichi di lavoro richiede un processo altamente strategico e può comportare un refactoring esteso, così come la ricompilazione e la sostituzione di applicazioni esistenti attraverso l'integrazione di una piattaforma PaaS e software SaaS. [L'identificazione e il bilanciamento dell'ambito](../../expanded-scope/balance-the-portfolio.md) delle migrazioni pianificate sono essenziali.
+Il lavoro di migrazione richiesto può variare notevolmente a seconda delle dimensioni e delle complessità dei carichi di lavoro. La migrazione di carichi di lavoro più piccoli che coinvolge alcune centinaia di macchine virtuali è un processo tattico, potenzialmente implementato con strumenti automatici come [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Viceversa, una grande migrazione aziendale di decine di migliaia di carichi di lavoro richiede un processo altamente strategico e può comportare un refactoring esteso, così come la ricompilazione e la sostituzione di applicazioni esistenti attraverso l'integrazione di una piattaforma PaaS e software SaaS. [L'identificazione e il bilanciamento dell'ambito](../../expanded-scope/balance-the-portfolio.md) delle migrazioni pianificate sono essenziali.
 
 Prima di prendere decisioni che potrebbero avere un impatto a lungo termine sul programma di migrazione corrente, è fondamentale raggiungere un consenso sulle decisioni seguenti.
 

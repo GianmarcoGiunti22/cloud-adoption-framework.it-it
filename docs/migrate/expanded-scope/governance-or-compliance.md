@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5becd757d1bca3f10b30297f4c502b49a659c4
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905605"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022727"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia di governance o di conformità
 
@@ -27,11 +27,11 @@ Nei casi in cui si richieda governance o conformità, le attività più interess
 
 La configurazione dell'ambiente Azure di base potrebbe cambiare in modo significativo quando si integrano i requisiti di governance o conformità. Per comprendere come cambiano i prerequisiti, è importante conoscere la natura dei requisiti. Prima di iniziare qualsiasi migrazione che richieda governance o conformità, è necessario scegliere un approccio e implementarlo nell'ambiente cloud. Di seguito sono riportati alcuni approcci generali comunemente usati durante le migrazioni:
 
-**Approccio di governance comune.** Per la maggior parte delle organizzazioni, il [modello di governance Cloud Adoption Framework](../../governance/journeys/index.md) è un approccio sufficiente costituito dall'implementazione di un prodotto minimo funzionante, seguita da iterazioni mirate di maturità di governance per la gestione di rischi tangibili identificati nel piano di adozione. Questo approccio fornisce gli strumenti minimi necessari per stabilire una governance coerente, in modo che il team possa comprendere gli strumenti. Illustra quindi questi strumenti per risolvere i problemi comuni di governance.
+**Approccio di governance comune.** Per la maggior parte delle organizzazioni, il [modello di governance Cloud Adoption Framework](../../govern/guides/index.md) è un approccio sufficiente costituito dall'implementazione di un prodotto minimo funzionante, seguita da iterazioni mirate di maturità di governance per la gestione di rischi tangibili identificati nel piano di adozione. Questo approccio fornisce gli strumenti minimi necessari per stabilire una governance coerente, in modo che il team possa comprendere gli strumenti. Illustra quindi questi strumenti per risolvere i problemi comuni di governance.
 
-**Progetti di conformità ISO 27001.** Per i clienti che devono rispettare gli standard di conformità ISO, gli [esempi di progetti di servizi condivisi ISO 27001](/azure/governance/blueprints/samples/iso27001-shared/index) possono fungere da prodotto minimo funzionante più efficace per produrre vincoli di governance più completi all'inizio del processo iterativo. L'[esempio di ambiente del servizio app/database SQL ISO 27001](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) illustra il progetto per il mapping dei controlli e la distribuzione di un'architettura comune per l'ambiente di un'applicazione. Man mano che verranno rilasciati, gli altri progetti di conformità verranno riportati come riferimento anche in questo articolo.
+**Progetti di conformità ISO 27001.** Per i clienti che devono rispettare gli standard di conformità ISO, gli [esempi di progetti di servizi condivisi ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) possono fungere da prodotto minimo funzionante più efficace per produrre vincoli di governance più completi all'inizio del processo iterativo. L'[esempio di ambiente del servizio app/database SQL ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) illustra il progetto per il mapping dei controlli e la distribuzione di un'architettura comune per l'ambiente di un'applicazione. Man mano che verranno rilasciati, gli altri progetti di conformità verranno riportati come riferimento anche in questo articolo.
 
-**Data center virtuale.** Talvolta può essere necessario definire un punto di partenza più solido per il percorso di governance. In tal caso, prendere in considerazione il [data center virtuale di Azure](https://docs.microsoft.com/azure/architecture/vdc). Questo approccio è in genere consigliabile per le adozioni su scala aziendale, in particolare se la quantità di asset interessati è superiore a 10.000. Rappresenta anche la scelta standard per gli scenari di governance complessi, quando deve essere soddisfatto uno dei requisiti seguenti: conformità completa a soluzioni di terze parti, esperienza approfondita del settore o adeguamento a requisiti di conformità e criteri di governance IT consolidati.
+**Data center virtuale.** Talvolta può essere necessario definire un punto di partenza più solido per il percorso di governance. In tal caso, prendere in considerazione il [data center virtuale di Azure](../../reference/vdc.md). Questo approccio è in genere consigliabile per le adozioni su scala aziendale, in particolare se la quantità di asset interessati è superiore a 10.000. Rappresenta anche la scelta standard per gli scenari di governance complessi, quando deve essere soddisfatto uno dei requisiti seguenti: conformità completa a soluzioni di terze parti, esperienza approfondita del settore o adeguamento a requisiti di conformità e criteri di governance IT consolidati.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Opzione di partnership per il completamento dei prerequisiti
 
@@ -49,19 +49,19 @@ Durante la valutazione, è necessario prendere decisioni aggiuntive per allinear
 
 I requisiti di valutazione di governance e conformità sono troppo specifici del cliente per fornire indicazioni generali sui passaggi effettivi eseguiti durante la valutazione. È tuttavia preferibile che il processo includa attività e allocazioni di tempo per l'"allineamento ai requisiti di conformità/governance". Per altre informazioni su questi requisiti, vedere i collegamenti seguenti:
 
-Per una conoscenza più approfondita della governance, esaminare la [panoramica delle cinque discipline sulla governance del cloud](/azure/architecture/cloud-adoption/governance/governance-disciplines). Questa sezione di Cloud Adoption Framework include anche modelli per documentare i criteri, le indicazioni e i requisiti per ognuna delle cinque sezioni:
+Per una conoscenza più approfondita della governance, esaminare la [panoramica delle cinque discipline sulla governance del cloud](../../govern/governance-disciplines.md). Questa sezione di Cloud Adoption Framework include anche modelli per documentare i criteri, le indicazioni e i requisiti per ognuna delle cinque sezioni:
 
-- [Gestione dei costi](/azure/architecture/cloud-adoption/governance/cost-management/template)
-- [Baseline di sicurezza](/azure/architecture/cloud-adoption/governance/security-baseline/template)
-- [Coerenza delle risorse](/azure/architecture/cloud-adoption/governance/resource-consistency/template)
-- [Baseline di identità](/azure/architecture/cloud-adoption/governance/identity-baseline/template)
-- [Accelerazione della distribuzione](/azure/architecture/cloud-adoption/governance/deployment-acceleration/template)
+- [Gestione dei costi](../../govern/cost-management/template.md)
+- [Baseline di sicurezza](../../govern/security-baseline/template.md)
+- [Coerenza delle risorse].. /.. /govern/resource-consistency/template.md)
+- [Baseline di identità].. /.. /govern/identity-baseline/template.md)
+- [Accelerazione della distribuzione](../../govern/deployment-acceleration/template.md)
 
-Per indicazioni sullo sviluppo di linee guida sulla governance basate sul modello di governance di Cloud Adoption Framework, vedere [Implementazione di una strategia di governance del cloud](/azure/architecture/cloud-adoption/governance/corporate-policy).
+Per indicazioni sullo sviluppo di linee guida sulla governance basate sul modello di governance di Cloud Adoption Framework, vedere [Implementazione di una strategia di governance del cloud](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Modifiche dei processi di ottimizzazione e promozione
 
-Durante i processi di ottimizzazione e promozione, si consiglia al team di governance del cloud di investire tempo per testare e convalidare l'adesione agli standard di governance e conformità. Questo passaggio inoltre è il momento giusto per inserire i processi che consentono al team di governance del cloud di gestire i modelli che potrebbero fornire un'ulteriore [accelerazione della distribuzione](/azure/architecture/cloud-adoption/governance/deployment-acceleration) per progetti futuri.
+Durante i processi di ottimizzazione e promozione, si consiglia al team di governance del cloud di investire tempo per testare e convalidare l'adesione agli standard di governance e conformità. Questo passaggio inoltre è il momento giusto per inserire i processi che consentono al team di governance del cloud di gestire i modelli che potrebbero fornire un'ulteriore [accelerazione della distribuzione](../../govern/deployment-acceleration/index.md) per progetti futuri.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Azione suggerita durante il processo di ottimizzazione e promozione
 

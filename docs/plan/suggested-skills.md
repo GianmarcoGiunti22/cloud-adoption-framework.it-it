@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828695"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025312"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introduzione a un percorso di preparazione delle competenze
 
@@ -24,7 +24,7 @@ cloud ospitato*Figura 1-mapping delle competenze ai ruoli it in un ambiente ospi
 
 Il Framework di adozione del cloud guida i lettori attraverso il ciclo di vita di adozione completo. In questo Framework, i lettori hanno la possibilità di creare le competenze necessarie. Per iniziare a usare questo percorso, gli articoli relativi alla conformità delle competenze sono inclusi nella struttura seguente per semplificare l'accesso. Ognuno dei collegamenti seguenti esegue il mapping alle competenze necessarie per avere esito positivo in ognuna di queste fasi di adozione.
 
-- **[Strategia](../business-strategy/suggested-skills.md):** Sviluppare le competenze necessarie per preparare un piano di migrazione praticabile. Sono incluse le motivazioni aziendali e le altre competenze necessarie per la pianificazione aziendale.
+- **[Strategia](../strategy/suggested-skills.md):** Sviluppare le competenze necessarie per preparare un piano di migrazione praticabile. Sono incluse le motivazioni aziendali e le altre competenze necessarie per la pianificazione aziendale.
 - **[Piano](./suggested-skills.md):** Sviluppare le competenze necessarie per preparare un piano di migrazione praticabile. Sono incluse le motivazioni aziendali e le altre competenze necessarie per la pianificazione aziendale.
 - **[Preparazione](../ready/suggested-skills.md):** Sviluppare le competenze necessarie per preparare l'azienda, la cultura, le persone e l'ambiente per le modifiche imminenti.
 

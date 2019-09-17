@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 060672fb65b983c4ba520dab24097508ba78367d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 96eb90f5761fd53ab0c4e6b128c77e441c7b36cd
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833895"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025327"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Adatta i ruoli, le competenze e i processi esistenti per il cloud
 
@@ -54,7 +54,7 @@ Tenere traccia delle dipendenze e prendere nota dei processi che li supporterann
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Assicurare il supporto appropriato per i ruoli tradotti è un impegno del team. Per agire su queste linee guida, esaminare l' [Introduzione alla conformità organizzativa](../organization/index.md) per identificare le strutture e i partecipanti appropriati del team.
+Assicurare il supporto appropriato per i ruoli tradotti è un impegno del team. Per agire su queste linee guida, esaminare l' [Introduzione alla conformità organizzativa](../organize/index.md) per identificare le strutture e i partecipanti appropriati del team.
 
 > [!div class="nextstepaction"]
 > [Identificare le strutture del team corrette](./index.md)
