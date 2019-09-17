@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817656"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023706"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guida decisionale di imposizione dei criteri
 
 La definizione di criteri dell'organizzazione non è efficace a meno che possa essere applicata all'interno dell'organizzazione. Un aspetto fondamentale della pianificazione di qualsiasi migrazione cloud consiste nel determinare il modo migliore di combinare gli strumenti implementati dalla piattaforma cloud con i processi IT esistenti, per ottimizzare la conformità ai criteri dell'intero gruppo di cloud.
 
-![Grafico delle opzioni di imposizione dei criteri dalla meno alla più complessa, allineato con i collegamenti sotto](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Grafico delle opzioni di imposizione dei criteri dalla meno alla più complessa, allineato con i collegamenti sotto](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Passare a: [Procedure di base consigliate](#baseline-recommended-practices) | [Monitoraggio della conformità ai criteri](#policy-compliance-monitoring) | [Imposizione dei criteri](#policy-enforcement) | [Criteri tra organizzazioni](#cross-organization-policy) | [Imposizione automatizzata](#automated-enforcement)
 
@@ -28,7 +28,7 @@ Con l'espansione del cloud risulterà necessario mantenere e applicare criteri p
 
 I meccanismi di applicazione dei criteri forniti dalla piattaforma a livello di risorse o di sottoscrizione sono in genere sufficienti per gli ambienti cloud più piccoli. Per le distribuzioni più grandi è giustificato un ambito di applicazione più esteso e potrebbe essere necessario sfruttare i vantaggi di meccanismi di applicazione più sofisticati che coinvolgono gli standard di distribuzione, il raggruppamento e l'organizzazione delle risorse, nonché l'integrazione dell'applicazione dei criteri con i sistemi esistenti di registrazione e creazione di report.
 
-I fattori principali per determinare l'ambito dei processi di applicazione dei criteri sono i [requisiti di governance del cloud](/azure/architecture/cloud-adoption/governance/overview) dell'organizzazione, le dimensioni e la natura dell'ambiente cloud e il modo in cui l'organizzazione è rispecchiata nella [progettazione delle sottoscrizioni](../subscriptions/index.md). Un aumento delle dimensioni dell'ambiente o la maggiore esigenza di gestire centralmente l'applicazione dei criteri possono entrambi giustificare l'estensione dell'ambito di applicazione.
+I fattori principali per determinare l'ambito dei processi di applicazione dei criteri sono i [requisiti di governance del cloud](../../govern/index.md) dell'organizzazione, le dimensioni e la natura dell'ambiente cloud e il modo in cui l'organizzazione è rispecchiata nella [progettazione delle sottoscrizioni](../subscriptions/index.md). Un aumento delle dimensioni dell'ambiente o la maggiore esigenza di gestire centralmente l'applicazione dei criteri possono entrambi giustificare l'estensione dell'ambito di applicazione.
 
 ## <a name="baseline-recommended-practices"></a>Procedure di base consigliate
 
@@ -43,15 +43,15 @@ La pianificazione dell'imposizione dei criteri del cloud si avvia esaminando com
 
 ## <a name="policy-compliance-monitoring"></a>Monitoraggio della conformità ai criteri
 
-Un primo passaggio, oltre al semplice basarsi sui meccanismi di applicazione dei criteri forniti dalla piattaforma Azure, consiste nel garantire la capacità di verificare che le applicazioni e i servizi basati sul cloud siano conformi ai criteri dell'organizzazione. Ciò include l'implementazione di funzionalità di notifica per avvisare i responsabili se una risorsa diventa non conforme. La [creazione di log e report](../log-and-report/index.md) efficaci sullo stato di conformità dei carichi di lavoro nel cloud è una parte essenziale della strategia di imposizione dei criteri aziendali.
+Un primo passaggio, oltre al semplice basarsi sui meccanismi di applicazione dei criteri forniti dalla piattaforma Azure, consiste nel garantire la capacità di verificare che le applicazioni e i servizi basati sul cloud siano conformi ai criteri dell'organizzazione. Ciò include l'implementazione di funzionalità di notifica per avvisare i responsabili se una risorsa diventa non conforme. La [creazione di log e report](../logging-and-reporting/index.md) efficaci sullo stato di conformità dei carichi di lavoro nel cloud è una parte essenziale della strategia di imposizione dei criteri aziendali.
 
-Se un gruppo di cloud aumenta, strumenti aggiuntivi, ad esempio il [Centro sicurezza di Azure](/azure/security-center), garantiscono la sicurezza integrata e il rilevamento delle minacce e consentono di applicare la gestione centralizzata dei criteri e degli avvisi per entrambe le risorse locali e cloud.
+Se un gruppo di cloud aumenta, strumenti aggiuntivi, ad esempio il [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center), garantiscono la sicurezza integrata e il rilevamento delle minacce e consentono di applicare la gestione centralizzata dei criteri e degli avvisi per entrambe le risorse locali e cloud.
 
 ## <a name="policy-enforcement"></a>Imposizione dei criteri
 
 In Azure è possibile applicare le impostazioni di configurazione e le regole per la creazione di risorse a livello di gruppo di gestione, sottoscrizione o gruppo di risorse per assicurare l'allineamento dei criteri.
 
-[Criteri di Azure](/azure/governance/policy/overview) è un servizio di Azure per la creazione, l'assegnazione e la gestione dei criteri. Questi criteri applicano regole ed effetti diversi alle risorse, in modo che le risorse rimangano conformi ai contratti di servizio e agli standard dell'azienda. Criteri di Azure valuta le risorse per la mancata conformità con i criteri assegnati. Ad esempio, è possibile limitare le dimensioni SKU di macchine virtuali nell'ambiente in uso. Dopo aver implementato i criteri corrispondenti, le risorse nuove ed esistenti vengono valutate per la conformità. Con i criteri corretti, le risorse esistenti possono essere rese conformi.
+[Criteri di Azure](https://docs.microsoft.com/azure/governance/policy/overview) è un servizio di Azure per la creazione, l'assegnazione e la gestione dei criteri. Questi criteri applicano regole ed effetti diversi alle risorse, in modo che le risorse rimangano conformi ai contratti di servizio e agli standard dell'azienda. Criteri di Azure valuta le risorse per la mancata conformità con i criteri assegnati. Ad esempio, è possibile limitare le dimensioni SKU di macchine virtuali nell'ambiente in uso. Dopo aver implementato i criteri corrispondenti, le risorse nuove ed esistenti vengono valutate per la conformità. Con i criteri corretti, le risorse esistenti possono essere rese conformi.
 
 ## <a name="cross-organization-policy"></a>Criteri tra organizzazioni
 
@@ -61,7 +61,7 @@ La [progettazione di una sottoscrizione](../subscriptions/index.md) dovrà prend
 
 ## <a name="automated-enforcement"></a>Imposizione automatizzata
 
-Anche se i modelli di distribuzione sono validi in scala ridotta, [Azure Blueprints](/azure/governance/blueprints/overview) consente di effettuare il provisioning e l'orchestrazione della distribuzione su larga scala e in maniera standard delle soluzioni di Azure. I carichi di lavoro tra più sottoscrizioni possono essere distribuiti con impostazioni dei criteri coerenti per tutte le risorse create.
+Anche se i modelli di distribuzione sono validi in scala ridotta, [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) consente di effettuare il provisioning e l'orchestrazione della distribuzione su larga scala e in maniera standard delle soluzioni di Azure. I carichi di lavoro tra più sottoscrizioni possono essere distribuiti con impostazioni dei criteri coerenti per tutte le risorse create.
 
 Per gli ambienti IT che integrano risorse cloud e locali, potrebbe essere necessario usare sistemi di log e di report per offrire funzionalità di monitoraggio ibrido. I sistemi di monitoraggio operativi di terze parti o personalizzati possono offrire funzionalità aggiuntive di imposizione dei criteri. Per gli ambienti cloud più estesi e maturi, prendere in considerazione il modo migliore per integrare questi sistemi con gli asset cloud.
 
