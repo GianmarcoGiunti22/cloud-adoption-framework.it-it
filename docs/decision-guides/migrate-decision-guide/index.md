@@ -1,0 +1,46 @@
+---
+title: Guida alle decisioni relative agli strumenti di migrazione
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: Guida alle decisioni relative agli strumenti di migrazione
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 04/04/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: decision-guide
+ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023820"
+---
+# <a name="migration-tools-decision-guide"></a>Guida alle decisioni relative agli strumenti di migrazione
+
+La strategia e gli strumenti usati per eseguire la migrazione di un'applicazione in Azure dipenderanno in gran parte dalle motivazioni aziendali, dalle strategie per la tecnologia e dalla tempistica, nonché da una conoscenza approfondita del carico di lavoro e degli asset effettivi (infrastruttura, app e dati) di cui verrà eseguita la migrazione. L'albero delle decisioni seguente può essere usato come guida di alto livello per la selezione degli strumenti migliori da usare in base alle decisioni prese per la migrazione. Considerare questo albero delle decisioni come punto di partenza.
+
+La scelta di usare le tecnologie per piattaforme come servizio (PaaS) o infrastrutture distribuite come servizio (IaaS) per la migrazione si basa sull'equilibrio tra costi, tempi, debito tecnico esistente e rendimento a lungo termine. IaaS è spesso il percorso più veloce per il cloud, richiedendo la minima quantità di modifiche al carico di lavoro. PaaS potrebbe richiedere modifiche alle strutture di dati o al codice sorgente, ma garantisce rendimenti notevoli a lungo termine sotto forma di riduzione dei costi operativi e una maggiore flessibilità tecnica. Nel diagramma seguente il termine _modernizzazione_ viene usato per indicare la decisione di modernizzare un asset durante la migrazione ed eseguire la migrazione dell'asset modernizzato a una piattaforma PaaS.
+
+![Albero delle decisioni di esempio per gli strumenti di migrazione.](../../_images/migrate/migration-tools-decision-tree.png)
+
+## <a name="key-questions"></a>Domande principali
+
+Rispondere alle domande seguenti consentirà di prendere decisioni basate sull'albero precedente.
+
+- **La modernizzazione della piattaforma delle applicazioni durante la migrazione rappresenta un valido investimento di tempo, energia e denaro?** Le tecnologie PaaS, ad esempio Servizio app di Azure o Funzioni di Azure possono aumentare la flessibilità della distribuzione e ridurre la complessità della gestione delle macchine virtuali per ospitare le applicazioni. Tuttavia, è possibile che le applicazioni richiedano il refactoring prima di poter sfruttare queste funzionalità native del cloud, con costi e tempi per la migrazione potenzialmente maggiori. Se l'applicazione supporta la migrazione a tecnologie PaaS con modifiche minime, è probabilmente un buon candidato per la modernizzazione. Se risulta necessario il refactoring esteso, la migrazione con macchine virtuali basate su IaaS potrebbe essere una scelta migliore.
+- **La modernizzazione della piattaforma dei dati durante la migrazione rappresenta un valido investimento di tempo, energia e denaro?** Come per la migrazione delle applicazioni, le opzioni di archiviazione gestita PaaS di Azure, come database SQL di Azure, Cosmos DB e Archiviazione di Azure, offrono notevoli vantaggi a livello di gestione e flessibilità, ma la migrazione a questi servizi potrebbe richiedere il refactoring dei dati esistenti e delle applicazioni che usano tali dati. Le piattaforme dei dati richiedono spesso interventi di refactoring decisamente più contenuti di quelli potenzialmente necessari per la piattaforma dell'applicazione. Di conseguenza, la modernizzazione della piattaforma dei dati è molto comune, anche se la piattaforma delle applicazioni rimane invariata. Se è possibile eseguire la migrazione dei dati a un servizio dati gestito con modifiche minime, i dati rappresentano un buon candidato per la modernizzazione. Per i dati che richiederebbero interventi di refactoring costosi o lunghi per usare questi servizi PaaS, potrebbe essere preferibile eseguire la migrazione con macchine virtuali basate su IaaS per rimanere in linea con le capacità di hosting esistenti.
+- **L'applicazione viene attualmente eseguita su macchine virtuali dedicate o tramite hosting condiviso con altre applicazioni?** La migrazione di un'applicazione in esecuzione su macchine virtuali dedicate potrebbe essere più semplice verso opzioni con hosting PaaS, rispetto alle applicazioni eseguite in server condivisi.
+- **La migrazione dei dati potrebbe causare il superamento della larghezza di banda di rete disponibile?** La capacità di rete tra le origini dati locali e Azure può essere un collo di bottiglia per la migrazione dei dati. Se esistono limitazioni della larghezza di banda che impediscono la migrazione efficiente o tempestiva dei dati da trasferire, potrebbe essere necessario prendere in considerazione meccanismi di trasferimento alternativi o offline. Nell'[articolo sulla replica della migrazione](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) di Cloud Adoption Framework viene illustrato come i limiti di replica possono influire sulle attività di migrazione. Nell'ambito del processo di valutazione della migrazione, consultarsi con il team IT per controllare che la larghezza di banda locale e WAN sia in grado di gestire i requisiti di migrazione. Vedere anche lo [scenario di migrazione con ambito esteso per i casi in cui i requisiti di archiviazione superano la capacità della rete durante una migrazione](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
+- **L'applicazione usa una pipeline DevOps esistente?** In molti casi è possibile procedere facilmente al refactoring di Azure Pipelines per distribuire applicazioni in ambienti di hosting basati sul cloud.
+- **I dati hanno requisiti complessi per l'archiviazione?** Le applicazioni di produzione richiedono in genere che l'archiviazione dei dati offra disponibilità elevata, funzionalità Always On e funzionalità simili per i tempi di attività e la continuità del servizio. Le opzioni di database gestito basate su PaaS, ad esempio database SQL di Azure, Database di Azure per MySQL e Azure Cosmos DB offrono tutte contratti di servizio con tempi di attività pari al 99,99%. Viceversa, le opzioni con SQL Server basate su IaaS su macchine virtuali di Azure offrono contratti di servizio per istanze singole del 99,95%. Se i dati non possono essere modernizzati per l'uso delle opzioni di archiviazione PaaS, per garantire tempi di attività IaaS maggiori sarà necessario implementare scenari di archiviazione dei dati più complessi, come l'esecuzione di cluster SQL Server AlwaysOn e la sincronizzazione dei dati tra le istanze. Ciò può implicare costi significativi per hosting e manutenzione, quindi è importante trovare un equilibrio tra requisiti per il tempo di attività, impegno per la modernizzazione e impatto finanziario complessivo quando si valutano le opzioni per la migrazione dei dati.
+
+## <a name="innovation-and-migration"></a>Innovazione e migrazione
+
+In linea con l'accento posto sugli interventi di [migrazione incrementale](../../migrate/index.md#migration-implementation) nel contesto di Cloud Adoption Framework, la decisione iniziale per la strategia di migrazione e gli strumenti non esclude impegni futuri per l'aggiornamento di un'applicazione per sfruttare le opportunità offerte dalla piattaforma Azure. Anche se un progetto di migrazione iniziale può essere incentrato principalmente sul rehosting con un approccio IaaS, è consigliabile pianificare una revisione regolare del portfolio di applicazioni ospitate nel cloud per esaminare eventuali opportunità di ottimizzazione.
+
+## <a name="learn-more"></a>Altre informazioni
+
+- **[Concetti fondamentali sul cloud: Panoramica delle opzioni di calcolo di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Informazioni sulle funzionalità delle opzioni di calcolo PaaS e IaaS di Azure.
+- **[Concetti fondamentali sul cloud: Scegliere l'archivio dati corretto](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Presentazione delle opzioni di archiviazione PaaS disponibili per la piattaforma Azure.
+- **[Migrazione con ambito esteso: I requisiti di archiviazione superano la capacità di rete durante una migrazione](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Presentazione di meccanismi di migrazione dei dati alternativi per gli scenari in cui la migrazione dei dati viene ostacolata dalla larghezza di banda disponibile.
+- **[Database SQL: Scegliere l'opzione SQL Server più adatta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Descrizione delle opzioni e delle motivazioni aziendali per scegliere di ospitare i carichi di lavoro di SQL Server in un ambiente con infrastruttura ospitata (IaaS) o con servizi ospitati (PaaS).

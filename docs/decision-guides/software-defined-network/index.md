@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817962"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023742"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guida alle decisioni per le reti definite dal software
 
@@ -22,9 +22,9 @@ La rete definita dal software (SDN, Software Defined Networking) è un'architett
 
 ## <a name="networking-decision-guide"></a>Guida decisionale di rete
 
-![Grafico delle opzioni di rete dalla meno alla più complessa, allineato con i collegamenti sotto](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Grafico delle opzioni di rete dalla meno alla più complessa, allineato con i collegamenti sotto](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Passare a: [Solo PaaS](paas-only.md) | [Reti cloud native](cloud-native.md) | [Reti perimetrali nel cloud](cloud-dmz.md) [Ambiente ibrido](hybrid.md) | [Modello hub-spoke](hub-spoke.md) | [Altre informazioni](#learn-more)
+Passare a: [Solo PaaS](./paas-only.md) | [Reti cloud native](./cloud-native.md) | [Reti perimetrali nel cloud](./cloud-dmz.md) [Ambiente ibrido](./hybrid.md) | [Modello hub-spoke](./hub-spoke.md) | [Altre informazioni](#learn-more)
 
 LSDN offre diverse opzioni con vari livelli di prezzo e complessità. La guida di individuazione sopra riportata rappresenta un riferimento per personalizzare rapidamente queste opzioni per allinearsi al meglio con le specifiche strategie aziendali e tecnologiche.
 
@@ -53,18 +53,18 @@ Quando si pianifica quale architettura di rete virtuale o combinazione di archit
 
 Altre informazioni sulle architetture di rete primarie definite dal software:
 
-- **[Solo PaaS](paas-only.md):** la maggior parte dei prodotti PaaS (piattaforma distribuita come servizio) supporta un set limitato di funzionalità di rete predefinite e può non essere necessaria una rete definita dal software definita in modo esplicito per supportare i requisiti del carico di lavoro.
-- **[Nativa del cloud](cloud-native.md):** un'architettura cloud nativa supporta i carichi di lavoro basati sul cloud tramite reti virtuali realizzate sulla base delle funzionalità di rete definita dal software predefinite della piattaforma cloud, senza dipendenze da risorse locali o altre risorse esterne.
-- **[Reti perimetrali nel cloud](cloud-dmz.md):** supportano connettività limitata tra la rete locale e quella cloud protetta tramite l'implementazione di una zona demilitarizzata con stretto controllo del traffico tra i due ambienti.
-- **[Ibrido](hybrid.md)** : l'architettura di rete del cloud ibrida consente alle reti virtuali in ambienti cloud attendibili di accedere alle risorse in locale e viceversa.
-- **[Hub-spoke](hub-spoke.md):** l'architettura hub-spoke consente di gestire la connettività esterna e i servizi condivisi, di isolare singoli carichi di lavoro e di superare i limiti potenziali della sottoscrizione in modo centralizzato.
+- **[Solo PaaS](./paas-only.md):** la maggior parte dei prodotti PaaS (piattaforma distribuita come servizio) supporta un set limitato di funzionalità di rete predefinite e può non essere necessaria una rete definita dal software definita in modo esplicito per supportare i requisiti del carico di lavoro.
+- **[Nativa del cloud](./cloud-native.md):** un'architettura cloud nativa supporta i carichi di lavoro basati sul cloud tramite reti virtuali realizzate sulla base delle funzionalità di rete definita dal software predefinite della piattaforma cloud, senza dipendenze da risorse locali o altre risorse esterne.
+- **[Reti perimetrali nel cloud](./cloud-dmz.md):** supportano connettività limitata tra la rete locale e quella cloud protetta tramite l'implementazione di una zona demilitarizzata con stretto controllo del traffico tra i due ambienti.
+- **[Ibrido](./hybrid.md)** : l'architettura di rete del cloud ibrida consente alle reti virtuali in ambienti cloud attendibili di accedere alle risorse in locale e viceversa.
+- **[Hub-spoke](./hub-spoke.md):** l'architettura hub-spoke consente di gestire la connettività esterna e i servizi condivisi, di isolare singoli carichi di lavoro e di superare i limiti potenziali della sottoscrizione in modo centralizzato.
 
 ## <a name="learn-more"></a>Altre informazioni
 
 Per altre informazioni sulle reti definite dal software in Azure, vedere:
 
-- [Rete virtuale di Azure](/azure/virtual-network/virtual-networks-overview). In Azure la funzionalità chiave di SDN viene fornita dalla rete virtuale di Azure che agisce come un cloud analogo alle reti locali fisiche. Le reti virtuali fungono anche da limite di isolamento predefinito tra le risorse della piattaforma.
-- [Procedure consigliate di Azure per la sicurezza di rete](/azure/security/azure-security-network-security-best-practices). Indicazioni del team di sicurezza di Azure su come configurare le reti virtuali per ridurre al minimo le vulnerabilità di sicurezza.
+- [Rete virtuale di Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). In Azure la funzionalità chiave di SDN viene fornita dalla rete virtuale di Azure che agisce come un cloud analogo alle reti locali fisiche. Le reti virtuali fungono anche da limite di isolamento predefinito tra le risorse della piattaforma.
+- [Procedure consigliate di Azure per la sicurezza di rete](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). Indicazioni del team di sicurezza di Azure su come configurare le reti virtuali per ridurre al minimo le vulnerabilità di sicurezza.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

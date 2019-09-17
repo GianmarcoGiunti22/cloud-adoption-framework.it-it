@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1d4423e230d2eeff524a864f163e0cb13dc065b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 275342d452c3f9c47c004014d6e2831c88aa91df
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818268"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022245"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Procedure consigliate per l'idoneità per Azure
 
@@ -24,7 +24,7 @@ Gran parte della preparazione al cloud consiste nel dotare il personale delle co
 Per l'organizzazione e la distribuzione degli asset nell'ambiente di Azure, usare le indicazioni seguenti:
 
 - [Concetti fondamentali di Azure](../considerations/fundamental-concepts.md). Informazioni sui termini e i concetti fondamentali usati in Azure e sulla correlazione tra questi concetti.
-- [Convenzioni consigliate per l'assegnazione di nomi e tag](../considerations/name-and-tag.md). Esaminare le raccomandazioni dettagliate per l'assegnazione di nomi e tag alle risorse. Queste raccomandazioni sono state appositamente studiate per supportare le attività di adozione del cloud in ambito aziendale.
+- [Convenzioni consigliate per l'assegnazione di nomi e tag](../considerations/naming-and-tagging.md). Esaminare le raccomandazioni dettagliate per l'assegnazione di nomi e tag alle risorse. Queste raccomandazioni sono state appositamente studiate per supportare le attività di adozione del cloud in ambito aziendale.
 - [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md). Informazioni sulle strategie per il ridimensionamento con più sottoscrizioni di Azure.
 - [Organizzare le risorse con i gruppi di gestione di Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json). Informazioni su come i gruppi di gestione di Azure consentono di gestire risorse, ruoli, criteri, nonché la distribuzione tra più sottoscrizioni.
 - [Creare coerenza del cloud ibrido](../../infrastructure/misc/hybrid-consistency.md). Creare soluzioni cloud ibride che offrono i vantaggi dell'innovazione cloud, pur mantenendo molte delle caratteristiche della gestione locale.

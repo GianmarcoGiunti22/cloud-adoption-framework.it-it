@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef608f27f75d5a47e3e23a568e576310b8962ea8
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817095"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023904"
 ---
 # <a name="encryption-decision-guide"></a>Guida alle decisioni relative alla crittografia
 
@@ -120,9 +120,9 @@ La crittografia dei dati in uso implica la protezione dei dati in una risorsa di
 
 Per altre informazioni sulla crittografia e sulla gestione delle chiavi in Azure, vedere:
 
-- [Panoramica della crittografia di Azure](/azure/security/security-azure-encryption-overview). Descrizione dettagliata del modo in cui Azure usa la crittografia per proteggere i dati inattivi e i dati in transito.
-- [Azure Key Vault](/azure/key-vault/key-vault-overview). Key Vault è il principale sistema di gestione delle chiavi per l'archiviazione e la gestione di chiavi, segreti e certificati di crittografia in Azure.
-- [Procedure consigliate per la sicurezza dei dati e la crittografia in Azure](/azure/security/azure-security-data-encryption-best-practices). Presentazione delle procedure consigliate per la sicurezza dei dati e la crittografia in Azure.
+- [Panoramica della crittografia di Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). Descrizione dettagliata del modo in cui Azure usa la crittografia per proteggere i dati inattivi e i dati in transito.
+- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault è il principale sistema di gestione delle chiavi per l'archiviazione e la gestione di chiavi, segreti e certificati di crittografia in Azure.
+- [Procedure consigliate per la sicurezza dei dati e la crittografia in Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). Presentazione delle procedure consigliate per la sicurezza dei dati e la crittografia in Azure.
 - [Confidential computing in Azure](https://azure.microsoft.com/solutions/confidential-compute/). L'iniziativa Confidential computing di Azure offre strumenti e tecnologie per creare ambienti di esecuzione affidabili o altri meccanismi di crittografia per la protezione dei dati in uso.
 
 ## <a name="next-steps"></a>Passaggi successivi

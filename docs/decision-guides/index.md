@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817979"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023852"
 ---
 # <a name="architectural-decision-guides"></a>Guide all'architettura decisionale
 
@@ -42,11 +42,11 @@ Ognuna delle categorie seguenti rappresenta una tecnologia di base di tutte le d
 
 [Crittografia](./encryption/index.md): proteggere i dati sensibili con crittografia in modo da allinearsi ai requisiti di conformità e dei criteri di sicurezza dell'organizzazione.
 
-[Log e report](./log-and-report/index.md): monitorare i dati di log generati dalle risorse basate sul cloud. L'analisi dei dati fornisce informazioni dettagliate correlate all'integrità per le operazioni, la manutenzione e lo stato di conformità dei carichi di lavoro.
+[Log e report](./logging-and-reporting/index.md): monitorare i dati di log generati dalle risorse basate sul cloud. L'analisi dei dati fornisce informazioni dettagliate correlate all'integrità per le operazioni, la manutenzione e lo stato di conformità dei carichi di lavoro.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Informazioni su come le sottoscrizioni e gli account servono da base di una distribuzione cloud.
 
 > [!div class="nextstepaction"]
-> [Progettazione delle sottoscrizioni](subscriptions/index.md)
+> [Progettazione delle sottoscrizioni](./subscriptions/index.md)

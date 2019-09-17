@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817843"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023456"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ Per determinare le attività di adozione del cloud è necessaria un'analisi del 
 
 Per completare l'analisi del digital estate, procedere come segue:
 
-1. [Determinare l'approccio di analisi](approach.md).
-1. [Raccogliere l'inventario dello stato corrente](inventory.md).
-1. [Razionalizzare gli asset nel digital estate](rationalize.md).
-1. [Allineare gli asset alle offerte cloud per calcolare i prezzi](calculate.md).
+1. [Determinare l'approccio di analisi](./approach.md).
+1. [Raccogliere l'inventario dello stato corrente](./inventory.md).
+1. [Razionalizzare gli asset nel digital estate](./rationalize.md).
+1. [Allineare gli asset alle offerte cloud per calcolare i prezzi](./calculate.md).
 
 I modelli finanziari e i backlog di migrazione possono essere modificati per riflettere la razionalizzazione e i prezzi del digital estate.
 
@@ -56,4 +56,4 @@ I modelli finanziari e i backlog di migrazione possono essere modificati per rif
 Prima di iniziare la pianificazione del digital estate, è necessario determinare l'approccio da usare.
 
 > [!div class="nextstepaction"]
-> [Approcci per la pianificazione del digital estate](approach.md)
+> [Approcci per la pianificazione del digital estate](./approach.md)
