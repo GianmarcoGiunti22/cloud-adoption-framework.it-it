@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819153"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025107"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Percorso di idoneità a livello di competenze durante la fase Ready di un processo di migrazione
 
@@ -24,7 +24,7 @@ Durante la fase Ready di un processo di migrazione, l'obiettivo è quello di pre
 A seconda delle motivazioni e dei risultati aziendali associati a un impegno di adozione del cloud, è possibile che i responsabili debbano definire nuove strutture organizzative o team virtuali (V-Team) per facilitare diverse funzioni. Gli articoli seguenti consentono di sviluppare le competenze necessarie per strutturare i team in base ai risultati desiderati:
 
 - [Allineamento iniziale dell'organizzazione](./index.md): panoramica dell'allineamento dell'organizzazione e di varie strutture di team per facilitare il raggiungimento di obiettivi specifici.
-- [Suddivisione di silos e feudi](../organization/fiefdoms-silos.md): informazioni su due antimodelli organizzativi comuni e soluzioni per indirizzare il team alla collaborazione produttiva.
+- [Suddivisione di silos e feudi](../organize/fiefdoms-silos.md): informazioni su due antimodelli organizzativi comuni e soluzioni per indirizzare il team alla collaborazione produttiva.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Percorsi di apprendimento per l'idoneità (tecnica) a livello ambientale
 
