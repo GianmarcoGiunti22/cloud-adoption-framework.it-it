@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818643"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025253"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, sicurezza e conformità in Azure
 
-Quando si definiscono i criteri aziendali e si pianificano le strategie di governance, è possibile usare strumenti e servizi come Criteri di Azure, Azure Blueprints e Centro sicurezza di Azure per applicare e automatizzare le decisioni di governance dell'organizzazione. Prima di iniziare la pianificazione della governance, usare lo [strumento di benchmark della governance](http://aka.ms/caf/gov/assess) per identificare le potenziali lacune nell'approccio di governance del cloud dell'organizzazione. Per altre informazioni su come sviluppare i processi di governance, vedere le [indicazioni sulla governance di Cloud Adoption Framework for Azure](../../governance/index.md).
+Quando si definiscono i criteri aziendali e si pianificano le strategie di governance, è possibile usare strumenti e servizi come Criteri di Azure, Azure Blueprints e Centro sicurezza di Azure per applicare e automatizzare le decisioni di governance dell'organizzazione. Prima di iniziare la pianificazione della governance, usare lo [strumento di benchmark della governance](http://aka.ms/caf/gov/assess) per identificare le potenziali lacune nell'approccio di governance del cloud dell'organizzazione. Per altre informazioni su come sviluppare i processi di governance, vedere le [indicazioni sulla governance di Cloud Adoption Framework for Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Per pubblicare gli artefatti di un progetto in una sottoscrizione:
 
 Per altre informazioni, vedere:
 
-- [Azure Blueprint](/azure/governance/blueprints)
+- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Guida relativa alle decisioni di coerenza delle risorse](../../decision-guides/resource-consistency/index.md)
-- [Esempi di progetti basati su standard](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Esempi di progetti basati su standard](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Per applicare criteri a un gruppo di risorse:
 
 Per altre informazioni, vedere:
 
-- [Criteri di Azure](/azure/azure-policy)
+- [Criteri di Azure](https://docs.microsoft.com/azure/azure-policy)
 - [Cloud Adoption Framework: Guida relativa alle decisioni di applicazione dei criteri](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Per esplorare il Centro sicurezza di Azure, accedere al [portale di Azure](https
 
 Per altre informazioni, vedere:
 
-- [Centro sicurezza di Azure](/azure/security-center)
-- [Accesso JIT alle macchine virtuali](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center)
+- [Accesso JIT alle macchine virtuali](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Piani tariffari Standard e Gratuito a confronto](https://azure.microsoft.com/pricing/details/security-center)
-- [Cloud Adoption Framework: Disciplina di governance Baseline di sicurezza](../../governance/security-baseline/index.md)
+- [Cloud Adoption Framework: Disciplina di governance Baseline di sicurezza](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

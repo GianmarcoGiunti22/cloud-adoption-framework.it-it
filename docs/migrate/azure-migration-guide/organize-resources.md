@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818745"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022764"
 ---
 # <a name="organize-your-azure-resources"></a>Organizzare le risorse di Azure
 
@@ -76,9 +76,9 @@ Creare un gruppo di risorse per contenere le risorse come app Web, database e ac
 
 Per altre informazioni, vedere:
 
-- [Informazioni sulla gestione dell'accesso alle risorse in Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organizzare le risorse con i gruppi di gestione di Azure ](/azure/azure-resource-manager/management-groups-overview)
-- [Limiti del servizio di sottoscrizione](/azure/azure-subscription-service-limits)
+- [Informazioni sulla gestione dell'accesso alle risorse in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organizzare le risorse con i gruppi di gestione di Azure ](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Limiti del servizio di sottoscrizione](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Uno standard di denominazione ben progettato consente di identificare le risorse
 
 ::: zone target="docs"
 
-È consigliabile esaminare le [linee guida su modelli e procedure](/azure/architecture/best-practices/naming-conventions) e adottarle dove possibile.
+È consigliabile esaminare le [linee guida su modelli e procedure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) e adottarle dove possibile.
 
 >[!TIP]
 >Evitare i caratteri speciali, `-` o `_`, come primo o ultimo carattere in qualsiasi nome. Questi caratteri impediscono la riuscita della maggior parte delle regole di convalida.
@@ -151,7 +151,7 @@ Dopo aver applicato i tag, è possibile recuperare tutte le risorse nella sottos
 
 Ogni risorsa o gruppo di risorse può avere un massimo di 15 coppie nome-valore di tag. Questo limite vale tuttavia solo per i tag applicati direttamente al gruppo di risorse o alla risorsa.
 
-Per altre informazioni sull'assegnazione di tag, vedere le [convenzioni di denominazione per le risorse di Azure del Centro architetture di Azure](../../ready/considerations/name-and-tag.md#metadata-tags)
+Per altre informazioni sull'assegnazione di tag, vedere le [convenzioni di denominazione per le risorse di Azure del Centro architetture di Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Per applicare un tag a un gruppo di risorse:
 
 ## <a name="learn-more"></a>Altre informazioni
 
-Per altre informazioni, vedere [Usare tag per organizzare le risorse di Azure](/azure/azure-resource-manager/resource-group-using-tags).
+Per altre informazioni, vedere [Usare tag per organizzare le risorse di Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

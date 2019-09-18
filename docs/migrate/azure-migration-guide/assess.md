@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818830"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022827"
 ---
 # <a name="assess-the-digital-estate"></a>Valutare il digital estate
 
@@ -58,8 +58,8 @@ Per iniziare a usare una valutazione della migrazione dei server con Azure Migra
 
 ### <a name="read-more"></a>Altre informazioni
 
-- [Panoramica di Azure Migrate](/azure/migrate/migrate-services-overview)
-- [Eseguire la migrazione di server fisici o virtuali ad Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Panoramica di Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [Eseguire la migrazione di server fisici o virtuali ad Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure Migrate nel portale di Azure](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Per iniziare a usare una valutazione della migrazione dei server con Azure Migra
 
 Mapping dei servizi individua automaticamente i componenti delle applicazioni nei sistemi Windows e Linux ed esegue la mappatura della comunicazione fra i servizi. Il Mapping dei servizi consente di visualizzare i server nel modo in cui si pensa a essi, ovvero come sistemi interconnessi che forniscono servizi critici. Il Mapping dei servizi visualizza le connessioni fra i server, i processi, la latenza di connessione in ingresso e in uscita e le porte di tutte le architetture connesse via TCP senza il bisogno di alcuna configurazione a parte l'installazione di un agente.
 
-Azure Migrate usa Mapping dei servizi per migliorare le funzionalità di creazione di report e le dipendenze all'interno dell'ambiente. I dettagli completi di questa integrazione sono descritti nella [Visualizzazione dipendenze](/azure/migrate/concepts-dependency-visualization). Se si usa il servizio migrazione di Azure, non sono necessari passaggi aggiuntivi per configurare e ottenere i vantaggi di Mapping dei servizi. Le istruzioni seguenti sono fornite per il riferimento se si vuole utilizzare Mapping dei servizi per altri scopi o progetti.
+Azure Migrate usa Mapping dei servizi per migliorare le funzionalità di creazione di report e le dipendenze all'interno dell'ambiente. I dettagli completi di questa integrazione sono descritti nella [Visualizzazione dipendenze](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Se si usa il servizio migrazione di Azure, non sono necessari passaggi aggiuntivi per configurare e ottenere i vantaggi di Mapping dei servizi. Le istruzioni seguenti sono fornite per il riferimento se si vuole utilizzare Mapping dei servizi per altri scopi o progetti.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Abilitare la visualizzazione delle dipendenze usando Mapping dei servizi
 
 Per usare la visualizzazione delle dipendenze, è necessario scaricare e installare gli agenti in ogni computer locale che si vuole analizzare.
 
-- [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) deve essere installato in ogni computer.
-- [Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) deve essere installato in ogni computer.
+- [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) deve essere installato in ogni computer.
+- [Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) deve essere installato in ogni computer.
 - Se vi sono computer senza accesso a Internet, è necessario scaricare e installare il gateway di Log Analytics.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Altre informazioni
 
-- [Uso della soluzione Mapping dei servizi in Azure](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate e Mapping dei servizi: Visualizzazione delle dipendenze](/azure/migrate/concepts-dependency-visualization)
+- [Uso della soluzione Mapping dei servizi in Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate e Mapping dei servizi: Visualizzazione delle dipendenze](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenari e stakeholder](#tab/Scenarios)

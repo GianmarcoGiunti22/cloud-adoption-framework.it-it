@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f16380af623a6d9cd01e5064599f2688f5136df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818660"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022099"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Gestire l'accesso all'ambiente di Azure con controlli degli accessi in base al ruolo
 
@@ -87,7 +87,7 @@ Per concedere l'accesso utente a una sottoscrizione:
 
 Per altre informazioni, vedere:
 
-- [Che cos'è il controllo degli accessi in base al ruolo?](/azure/role-based-access-control/overview)
+- [Che cos'è il controllo degli accessi in base al ruolo?](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Cloud Adoption Framework: Usare il controllo degli accessi in base al ruolo](../azure-best-practices/roles.md)
 
 ::: zone-end

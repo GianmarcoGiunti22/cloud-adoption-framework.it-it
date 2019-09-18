@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7d742242f2639708914927aedbf45d1c59020c7d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818728"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022749"
 ---
 # <a name="secure-and-manage"></a>Protezione e gestione
 
@@ -41,7 +41,7 @@ Monitoraggio di Azure ottimizza la disponibilità e le prestazioni delle applica
 
 ## <a name="read-more"></a>Altre informazioni
 
-- [Panoramica di Monitoraggio di Azure](/azure/azure-monitor/overview)
+- [Panoramica di Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/overview)
 
 ::: zone-end
 
@@ -72,7 +72,7 @@ Combinate, queste esperienze offrono una panoramica completa dell'integrità di 
 
 ## <a name="read-more"></a>Altre informazioni
 
-Per altre informazioni, vedere [Documentazione di Integrità dei servizi di Azure](/azure/service-health).
+Per altre informazioni, vedere [Documentazione di Integrità dei servizi di Azure](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Azure Advisor è un consulente cloud personalizzato che illustra come seguire le
 
 ## <a name="read-more"></a>Altre informazioni
 
-[Panoramica](/azure/advisor/advisor-overview)
+[Panoramica](https://docs.microsoft.com/azure/advisor/advisor-overview)
 
 ::: zone-end
 
@@ -118,7 +118,7 @@ Centro sicurezza di Azure è un sistema di gestione della sicurezza delle infras
 
 ## <a name="read-more"></a>Altre informazioni
 
-[Overview](/azure/security-center/security-center-intro)
+[Overview](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ::: zone-end
 
@@ -144,7 +144,7 @@ Backup di Azure è il servizio basato su Azure che consente di eseguire il backu
 
 ::: zone target="docs"
 
-[Overview](/azure/backup/backup-introduction-to-azure-backup)
+[Overview](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
 
 ::: zone-end
 
@@ -194,7 +194,7 @@ Al termine del processo di replica, è possibile controllare lo stato della repl
 
 ## <a name="learn-more"></a>Altre informazioni
 
-- [Panoramica di Azure Site Recovery](/azure/site-recovery/site-recovery-overview)
-- [Replicare una macchina virtuale di Azure in un'altra area](/azure/site-recovery/azure-to-azure-quickstart)
+- [Panoramica di Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+- [Replicare una macchina virtuale di Azure in un'altra area](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ::: zone-end
