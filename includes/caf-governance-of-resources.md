@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
->In caso di modifiche dei requisiti aziendali, i gruppi di gestione di Azure consentono di riorganizzare facilmente la gerarchia di gestione e le assegnazioni dei gruppi di sottoscrizioni. Tenere presente, tuttavia, che le assegnazioni di criteri e ruoli applicate a un gruppo di gestione vengono ereditate da tutte le sottoscrizioni al di sotto di tale gruppo nella gerarchia. Se si prevede di riassegnare le sottoscrizioni tra i gruppi di gestione, assicurarsi di essere a conoscenza di eventuali modifiche di assegnazione dei criteri e dei ruoli che potrebbero derivarne. Per altre informazioni, vedere la [documentazione dei gruppi di gestione di Azure](/azure/governance/management-groups).
+>In caso di modifiche dei requisiti aziendali, i gruppi di gestione di Azure consentono di riorganizzare facilmente la gerarchia di gestione e le assegnazioni dei gruppi di sottoscrizioni. Tenere presente, tuttavia, che le assegnazioni di criteri e ruoli applicate a un gruppo di gestione vengono ereditate da tutte le sottoscrizioni al di sotto di tale gruppo nella gerarchia. Se si prevede di riassegnare le sottoscrizioni tra i gruppi di gestione, assicurarsi di essere a conoscenza di eventuali modifiche di assegnazione dei criteri e dei ruoli che potrebbero derivarne. Per altre informazioni, vedere la [documentazione dei gruppi di gestione di Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ### <a name="governance-of-resources"></a>Governance delle risorse
 
@@ -19,15 +19,15 @@ Le definizioni di criteri personalizzate vengono salvate in un gruppo di gestion
 
 Dal momento che i criteri richiesti per supportare l'MVP per la governance sono progettati per l'applicazione a tutte le sottoscrizioni correnti, i requisiti aziendali seguenti verranno implementati usando una combinazione di definizioni predefinite e definizioni personalizzate create nel gruppo di gestione radice:
 
-1. Limitare l'elenco delle assegnazioni di ruolo disponibili a un set di ruoli predefiniti di Azure autorizzato dal team di governance del cloud. A questo scopo, sarà necessaria una [definizione di criteri personalizzata](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions). 
+1. Limitare l'elenco delle assegnazioni di ruolo disponibili a un set di ruoli predefiniti di Azure autorizzato dal team di governance del cloud. A questo scopo, sarà necessaria una [definizione di criteri personalizzata](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
 2. Richiedere l'uso dei tag seguenti per tutte le risorse: *reparto/unità di fatturazione*, *area geografica*, *classificazione dei dati*, *criticità*, *contratto di servizio*, *ambiente*, *archetipo di applicazione*, *applicazione* e *proprietario dell'applicazione*. Per gestire questa situazione, è possibile usare la definizione predefinita "Richiedi tag specificato".
 3. È necessario che il tag *applicazione* per le risorse abbia un nome corrispondente a quello del gruppo di risorse rilevante. Per gestire questa situazione, è possibile usare la definizione predefinita "Richiedi tag e relativo valore".
 
-Per informazioni sulla definizione di criteri personalizzati, vedere la [documentazione di Criteri di Azure](/azure/governance/policy/tutorials/create-custom-policy-definition). Per istruzioni ed esempi di criteri personalizzati, vedere il [sito degli esempi di criteri di Azure](/azure/governance/policy/samples) e il [repository di GitHub](https://github.com/Azure/azure-policy) associato.
+Per informazioni sulla definizione di criteri personalizzati, vedere la [documentazione di Criteri di Azure](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Per istruzioni ed esempi di criteri personalizzati, vedere il [sito degli esempi di criteri di Azure](https://docs.microsoft.com/azure/governance/policy/samples) e il [repository di GitHub](https://github.com/Azure/azure-policy) associato.
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>Assegnare criteri di Azure e ruoli di controllo degli accessi in base al ruolo tramite Azure Blueprints
 
-È possibile assegnare i criteri di Azure a livello di gruppo di risorse, sottoscrizione e gruppo di gestione e includerli nelle definizioni di [Azure Blueprints](/azure/governance/blueprints/overview). Anche se i requisiti dei criteri definiti in questo MVP per la governance si applicano a tutte le sottoscrizioni correnti, è molto probabile che le distribuzioni future richiedano eccezioni o criteri alternativi. Di conseguenza, l'assegnazione di criteri tramite i gruppi di gestione, con tutte le sottoscrizioni figlio che ereditano queste assegnazioni, potrebbe non essere sufficientemente flessibile per supportare questi scenari.
+È possibile assegnare i criteri di Azure a livello di gruppo di risorse, sottoscrizione e gruppo di gestione e includerli nelle definizioni di [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview). Anche se i requisiti dei criteri definiti in questo MVP per la governance si applicano a tutte le sottoscrizioni correnti, è molto probabile che le distribuzioni future richiedano eccezioni o criteri alternativi. Di conseguenza, l'assegnazione di criteri tramite i gruppi di gestione, con tutte le sottoscrizioni figlio che ereditano queste assegnazioni, potrebbe non essere sufficientemente flessibile per supportare questi scenari.
 
 I progetti Azure Blueprints consentono l'assegnazione coerente di criteri e ruoli, l'applicazione di modelli di Resource Manager e la distribuzione di gruppi di risorse tra più sottoscrizioni. Come per le definizioni dei criteri, le definizioni di progetto vengono salvate nei gruppi di gestione o nelle sottoscrizioni e sono disponibili tramite ereditarietà per qualsiasi elemento figlio nella gerarchia dei gruppi di gestione.
 
@@ -41,7 +41,7 @@ Il team di governance del cloud ha deciso che l'applicazione delle assegnazioni 
 3. Pubblicare la definizione del progetto.
 4. Assegnare la definizione del progetto `governance-baseline` a tutte le sottoscrizioni.
 
-Vedere le [documentazione di Azure Blueprints](/azure/governance/blueprints/overview) per altre informazioni sulla creazione e l'uso delle definizioni di progetto.
+Vedere le [documentazione di Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) per altre informazioni sulla creazione e l'uso delle definizioni di progetto.
 
 ### <a name="secure-hybrid-vnet"></a>Rete virtuale ibrida protetta
 
@@ -50,9 +50,9 @@ Accade spesso che specifiche sottoscrizioni richiedano un certo livello di acces
 Fino a quando non viene stabilita l'attendibilità completa nell'ambiente cloud, è importante controllare e monitorare con grande attenzione qualsiasi comunicazione tra l'ambiente locale e i carichi di lavoro nel cloud e assicurarsi che la rete locale sia protetta da possibili accessi non autorizzati da risorse basate sul cloud. Per supportare questi scenari, l'MVP per la governance aggiunge le procedure consigliate seguenti:
 
 1. Creare una rete virtuale ibrida protetta cloud.
-    1. L'[architettura di riferimento di una VPN nel cloud](/azure/architecture/reference-architectures/hybrid-networking/vpn) definisce un modello di distribuzione per la creazione di un gateway VPN in Azure.
+    1. L'[architettura di riferimento di una VPN nel cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) definisce un modello di distribuzione per la creazione di un gateway VPN in Azure.
     2. Verificare che i meccanismi di gestione della sicurezza e del traffico locali considerino le reti cloud connesse come non attendibili. Le risorse e i servizi ospitati nel cloud devono avere accesso solo a servizi locali autorizzati.
-    3. Verificare che il dispositivo perimetrale locale nel data center locale sia compatibile con i [requisiti del gateway VPN di Azure](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) e sia configurato per l'accesso a Internet pubblico.
+    3. Verificare che il dispositivo perimetrale locale nel data center locale sia compatibile con i [requisiti del gateway VPN di Azure](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) e sia configurato per l'accesso a Internet pubblico.
 1. Nel gruppo di gestione radice creare una seconda definizione di progetto denominata `secure-hybrid-vnet`.
     1. Aggiungere il modello di Resource Manager per Gateway VPN come artefatto della definizione del progetto.
     2. Aggiungere il modello di Resource Manager per la rete virtuale come artefatto della definizione del progetto.
