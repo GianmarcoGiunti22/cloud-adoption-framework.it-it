@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 375631e516163dd1c0ea4832033c68bf17aad515
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818490"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022023"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Tenersi aggiornati con Microsoft Azure
 
@@ -25,7 +25,7 @@ Le piattaforme cloud come Microsoft Azure cambiano più velocemente di quanto si
 
 Le risorse seguenti possono aiutare a rimanere aggiornati su Azure:
 
-- [Integrità dei servizi di Azure](/azure/service-health/service-health-overview)
+- [Integrità dei servizi di Azure](https://docs.microsoft.com/azure/service-health/service-health-overview)
   - Integrità dei servizi e gli avvisi forniscono notifiche tempestive per i problemi dei servizi in corso, la manutenzione pianificata e alcuni consigli sull'integrità. Tale risorsa include anche informazioni sulle funzionalità che vengono rimosse da Azure.
 - [Aggiornamenti di Azure](https://azure.microsoft.com/updates)
   - Sottoscrivere gli aggiornamenti di Azure per ricevere annunci sugli aggiornamenti del prodotto. Brevi riepiloghi collegati ad altri dettagli, per seguire facilmente gli aggiornamenti.
