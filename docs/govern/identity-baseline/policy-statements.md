@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Istruzioni dei criteri di esempio della Baseline di identità
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030088"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222125"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Istruzioni dei criteri di esempio della Baseline di identità
 
@@ -67,11 +67,11 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 
 **Definizione dei criteri**: per la distribuzione di applicazioni che richiedono l'autenticazione del cliente è necessario usare un provider di identità approvato compatibile con il provider di identità primario per gli utenti interni.
 
-**Possibili opzioni di progettazione:** Implementare [Federazione con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) tra i provider di identità interni e dei clienti.
+**Possibili opzioni di progettazione:** Implementare la [Federazione con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) tra i provider di identità interni e dei clienti o sfruttare [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Revisione di identità
 
-**Rischio tecnico:** le modifiche aziendali, l'aggiunta di nuove distribuzioni cloud o altri problemi di sicurezza possono aumentare nel tempo i rischi di accesso non autorizzato per proteggere le risorse.
+**Rischio tecnico:** Con il passare del tempo, l'aggiunta di nuove distribuzioni cloud o altri problemi di sicurezza può comportare un aumento dei rischi di accesso non autorizzato alle risorse protette.
 
 **Definizione dei criteri**: i processi di Governance cloud devono includere un esame trimestrale condotto con i team che si occupano della gestione dell'identità, al fine di identificare gli attori dannosi o i modelli di uso da evitare nella configurazione degli asset del cloud.
 

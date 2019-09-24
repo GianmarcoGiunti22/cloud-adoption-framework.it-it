@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025029"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221458"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Valutare i carichi di lavoro locali per la migrazione in Azure
 
@@ -71,7 +71,7 @@ Il team dedicato al cloud di Contoso ha identificato alcuni obiettivi per le val
 
 Contoso usa gli strumenti Microsoft per la valutazione della migrazione. Questi strumenti sono in linea con gli obiettivi aziendali prefissati e devono offrire a Contoso tutte le informazioni necessarie.
 
-Tecnologia | DESCRIZIONE | Costi
+Tecnologia | Descrizione | Costo
 --- | --- | ---
 [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso usa Data Migration Assistant per valutare e rilevare i problemi di compatibilità che potrebbero compromettere le funzionalità del database in Azure. Data Migration Assistant valuta la parità delle funzionalità tra origini e destinazioni SQL e consiglia miglioramenti per le prestazioni e l'affidabilità. | Data Migration Assistant è uno strumento gratuito e scaricabile.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso usa il servizio Azure Migrate per valutare le proprie macchine virtuali VMware. Azure Migrate valuta l'idoneità alla migrazione delle macchine. Fornisce stime di dimensioni e costi per l'esecuzione in Azure. | A partire da maggio 2018, Azure Migrate è un servizio gratuito.
@@ -208,7 +208,7 @@ Contoso deve creare un account VMware che può essere usato da Azure Migrate per
 L'individuazione delle macchine virtuali richiede un account di sola lettura nel server vCenter, con le proprietà seguenti:
 
 - **Tipo di utente:** Almeno un utente di sola lettura.
-- **Autorizzazioni:** per l'oggetto data center selezionare la casella di controllo **Propagate to Child Objects** (Propaga a oggetti figlio). Per **Ruolo** selezionare **Sola lettura**.
+- **Permissions** (Autorizzazioni): per l'oggetto data center selezionare la casella di controllo **Propagate to Child Objects** (Propaga a oggetti figlio). Per **Ruolo** selezionare **Sola lettura**.
 - **Dettagli:** l'utente viene assegnato a livello di data center, con accesso a tutti gli oggetti nel data center.
 - Per limitare l'accesso, assegnare il ruolo **No access** (Nessun accesso) con **Propagate to Child Objects** (Propaga a oggetti figlio) agli oggetti figlio (host vSphere, archivi dati, macchine virtuali e reti).
 
@@ -224,7 +224,7 @@ La valutazione di Contoso usa il mapping delle dipendenze. Il mapping delle dipe
 
 Per individuare le macchine virtuali in Contoso, si crea un progetto di Azure Migrate. Contoso Scarica e configura la macchina virtuale dell'agente di raccolta. Contoso esegue quindi l'agente di raccolta per individuare le macchine virtuali in locale.
 
-### <a name="create-a-project"></a>Creare un progetto
+### <a name="create-a-project"></a>Crea un progetto
 
 Per configurare un nuovo progetto di Azure Migrate, seguire questa procedura.
 
@@ -242,8 +242,8 @@ Per configurare un nuovo progetto di Azure Migrate, seguire questa procedura.
 
 6. In **Dettagli del progetto* specificare il nome del progetto e l'area geografica in cui lo si vuole creare. Sono supportati Stati Uniti, Asia, Europa, Australia, Regno Unito, Canada, India e Giappone.
 
-    * L'area geografica del progetto viene usata solo per archiviare i metadati raccolti dalle macchine virtuali locali.
-    * Per la migrazione è possibile selezionare qualsiasi area di destinazione.
+    - L'area geografica del progetto viene usata solo per archiviare i metadati raccolti dalle macchine virtuali locali.
+    - Per la migrazione è possibile selezionare qualsiasi area di destinazione.
 
 7. Fare clic su **Avanti**.
 
@@ -312,14 +312,13 @@ A questo punto, Contoso esegue l'agente di raccolta per individuare le macchine 
 
     ![Agente di raccolta di Azure Migrate - Verificare i prerequisiti](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Accedere all'account **Azure** e selezionare la sottoscrizione e il progetto di Migrate creato in precedenza. Immettere anche un nome per l' **appliance** per poterla identificare nel portale di Azure. 
-7. In **Specificare i dettagli del server vCenter** Contoso immette il nome (FQDN) o l'indirizzo IP dell'istanza del server vCenter e le credenziali di sola lettura usate per l'individuazione.
-8. Contoso seleziona un ambito per l'individuazione delle macchine virtuali. L'agente di raccolta può individuare solo le macchine virtuali all'interno dell'ambito specificato. L'ambito può essere impostato su una cartella, un data center o un cluster specifici, 
+5. Accedere all'account **Azure** e selezionare la sottoscrizione e il progetto di Migrate creato in precedenza. Immettere anche un nome per il **dispositivo** in modo che sia possibile identificarlo nell'portale di Azure.
+6. In **Specificare i dettagli del server vCenter** Contoso immette il nome (FQDN) o l'indirizzo IP dell'istanza del server vCenter e le credenziali di sola lettura usate per l'individuazione.
+7. Contoso seleziona un ambito per l'individuazione delle macchine virtuali. L'agente di raccolta può individuare solo le macchine virtuali all'interno dell'ambito specificato. L'ambito può essere impostato su una cartella, un data center o un cluster specifici,
 
     ![Specificare i dettagli del server vCenter](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. L'agente di raccolta avvierà ora l'individuazione e raccoglierà informazioni sull'ambiente Contoso. 
+8. L'agente di raccolta avvierà ora l'individuazione e raccoglierà informazioni sull'ambiente Contoso.
 
     ![Visualizzare lo stato della raccolta](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,7 +348,7 @@ Per conservare una copia delle macchine virtuali prima della modifica, Contoso a
 
 1. In **Macchine** Contoso seleziona la macchina. Nella colonna **Dipendenze** Contoso seleziona **Richiede l'installazione**.
 2. Nel riquadro **Individua macchine virtuali** Contoso:
-    - Scarica Microsoft Monitoring Agent (MMA) e Dependency Agent per ogni macchina virtuale Windows.
+    - Scarica il Microsoft Monitoring Agent (MMA) e Microsoft Dependency Agent per ogni macchina virtuale Windows.
     - Scarica MMA e Dependency Agent per ogni macchina virtuale Linux.
 3. Contoso copia l'ID e la chiave dell'area di lavoro. L'ID e la chiave dell'area di lavoro sono richieste durante l'installazione di MMA.
 
@@ -375,10 +374,10 @@ Contoso esegue l'installazione in ogni macchina virtuale.
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Installare Dependency Agent in VM Windows
 
-1. Contoso fa doppio clic sul file di Dependency Agent scaricato.
+1. Contoso fa doppio clic sull'agente di dipendenza scaricato.
 2. Contoso accetta le condizioni di licenza e attende il completamento dell'installazione.
 
-    ![Installazione di Dependency Agent - Installazione](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Installazione di Dependency Agent-installazione](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Installare gli agenti nelle macchine virtuali Linux
 
@@ -389,9 +388,11 @@ Contoso esegue l'installazione in ogni macchina virtuale.
 1. Contoso installa la libreria ctypes Python in ogni macchina virtuale usando il comando seguente:
 
     `sudo apt-get install python-ctypeslib`
+
 2. Contoso deve eseguire il comando per installare l'agente MMA come root. Per diventare root, Contoso esegue il comando seguente e immette la password per l'utente root:
 
     `sudo -i`
+
 3. Contoso installa MMA:
     - Contoso immette l'ID e la chiave dell'area di lavoro nel comando.
     - I comandi sono per la versione a 64 bit.
@@ -404,11 +405,11 @@ Contoso esegue l'installazione in ogni macchina virtuale.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Installare Dependency Agent nelle macchine virtuali Linux
 
-Dopo aver installato MMA, Contoso installa Dependency Agent nelle macchine virtuali Linux:
+Dopo l'installazione di MMA, Contoso installa Dependency Agent nelle VM Linux:
 
-1. Dependency Agent viene installato nei computer Linux usando InstallDependencyAgent-Linux64.bin, uno script della shell con un file binario autoestraente. Contoso esegue il file usando sh oppure aggiunge autorizzazioni di esecuzione al file stesso.
+1. Dependency Agent viene installato nei computer Linux con Installdependencyagent-linux64. bin, uno script della shell con un file binario autoestraente. Contoso esegue il file usando sh oppure aggiunge autorizzazioni di esecuzione al file stesso.
 
-2. Contoso installa Dependency Agent per Linux come root:
+2. Contoso installa Linux Dependency Agent come radice:
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s
@@ -513,7 +514,7 @@ Questa visualizzazione mostra il costo totale di calcolo e di archiviazione asso
 - Contoso conserva il progetto **ContosoMigration** in Azure. Il progetto è attualmente distribuito nel gruppo di risorse **ContosoFailoverRG** nell'area di Azure Stati Uniti orientali.
 - La macchina virtuale dell'agente di raccolta ha una licenza di valutazione di 180 giorni. Se questo limite scade, Contoso dovrà scaricare e configurare di nuovo l'agente di raccolta.
 
-## <a name="conclusion"></a>Conclusioni
+## <a name="conclusion"></a>Conclusione
 
 In questo scenario, Contoso valuta il database dell'app SmartHotel360 tramite lo strumento Data Migration Assessment. Usa il servizio Azure Migrate per valutare le macchine virtuali in locale. Contoso esamina quindi le valutazioni per verificare l'idoneità delle risorse locali per la migrazione ad Azure.
 

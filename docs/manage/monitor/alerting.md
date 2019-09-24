@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221388"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>Guida al monitoraggio del cloud: Avvisi
+# <a name="cloud-monitoring-guide-alerting"></a>Guida al monitoraggio del cloud: Creazione di avvisi
 
 Per anni, le organizzazioni IT hanno faticato a combattere la fatica degli avvisi creata dagli strumenti di monitoraggio distribuiti nell'organizzazione. Molti sistemi generano un volume elevato di avvisi spesso considerati irrilevanti, mentre altri sono rilevanti, ma sono trascurati o ignorati. Di conseguenza, le operazioni di IT e sviluppatori hanno avuto difficoltà a soddisfare la qualità del livello di servizio promessa ai clienti interni o esterni. È essenziale comprendere lo stato dell'infrastruttura e delle applicazioni per garantire l'affidabilità. È necessario identificare rapidamente le cause, ridurre al minimo la riduzione del servizio e l'interferenza oppure ridurre l'effetto o ridurre il numero di eventi imprevisti.
 
@@ -94,7 +94,7 @@ Detto questo, vi sono alcune note importanti a questa regola.
 
 I dati di telemetria del sistema **operativo guest** hanno diversi percorsi per accedere al sistema.
 
-- Il modo più rapido per inviare avvisi su questi dati consiste nell'importarlo come metrica personalizzata. A tale scopo, utilizzare l'estensione Diagnostica di Azure e quindi utilizzare un avviso per la metrica. Tuttavia, le metriche personalizzate sono attualmente in anteprima e sono [più costose di altre opzioni](https://azure.microsoft.com/pricing/details/monitor/).
+- Il modo più rapido per inviare avvisi su questi dati consiste nell'importarlo come metrica personalizzata. A tale scopo, utilizzare l'estensione Diagnostica di Azure e quindi utilizzare un avviso per la metrica. Tuttavia, le metriche personalizzate sono attualmente in anteprima e sono [più costose di altre opzioni](https://azure.microsoft.com/pricing/details/monitor).
 
 - Il metodo più economico ma più lento consiste nell'inviarlo all'archivio kusto dei log di Azure. L'esecuzione dell'agente di Log Analytics nella macchina virtuale rappresenta il modo migliore per ottenere tutte le metriche del sistema operativo guest e i dati di log in questo archivio.
 
@@ -113,9 +113,9 @@ Se non si usa Monitoraggio di Azure per le macchine virtuali, esplorare le funzi
 
 - [Soglie dinamiche](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Le soglie dinamiche esaminano l'attività della risorsa in un periodo di tempo e creano soglie di "comportamento normale" superiori e inferiori. Quando la metrica monitorata non rientra in queste soglie, viene generato un avviso.
 
-- [Avvisi multifirmati](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). È possibile creare un avviso di metrica che usa la combinazione di due input diversi di due diversi tipi di risorse. Ad esempio, se si vuole generare un avviso quando la CPU di una macchina virtuale è superiore al 90% e il numero di messaggi in una determinata coda del bus di servizio di Azure che invia tale macchina virtuale supera una certa quantità, è possibile farlo senza creare una query di log. Questa operazione funziona solo per due segnali. Se si dispone di una query più complessa, inserire i dati delle metriche nell'archivio dei log di monitoraggio di Azure e usare una query di log.
+- [Avvisi multifirmati](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). È possibile creare un avviso di metrica che usa la combinazione di due input diversi di due diversi tipi di risorse. Ad esempio, se si vuole generare un avviso quando la CPU di una macchina virtuale è superiore al 90% e il numero di messaggi in una determinata coda del bus di servizio di Azure che invia tale macchina virtuale supera una certa quantità, è possibile farlo senza creare una query di log. Questa operazione funziona solo per due segnali. Se si dispone di una query più complessa, inserire i dati delle metriche nell'archivio dei log di monitoraggio di Azure e usare una query di log.
 
-- [Avvisi multirisorsa](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Monitoraggio di Azure consente una singola regola di avviso metrica che si applica a tutte le risorse della macchina virtuale. Questa funzionalità consente di risparmiare tempo perché non è necessario creare singoli avvisi per ogni macchina virtuale. I prezzi per questo tipo di avviso sono gli stessi. Se sono stati creati 50 avvisi per il monitoraggio dell'utilizzo della CPU per le VM 50 o 1 avviso che monitora l'utilizzo della CPU per tutte le VM 50, il costo è lo stesso. È possibile utilizzare questi tipi di avvisi anche in combinazione con le soglie dinamiche.
+- [Avvisi multirisorsa](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Monitoraggio di Azure consente una singola regola di avviso metrica che si applica a tutte le risorse della macchina virtuale. Questa funzionalità consente di risparmiare tempo perché non è necessario creare singoli avvisi per ogni macchina virtuale. I prezzi per questo tipo di avviso sono gli stessi. Se sono stati creati 50 avvisi per il monitoraggio dell'utilizzo della CPU per le VM 50 o 1 avviso che monitora l'utilizzo della CPU per tutte le VM 50, il costo è lo stesso. È possibile utilizzare questi tipi di avvisi anche in combinazione con le soglie dinamiche.
 
 Utilizzate insieme, queste funzionalità possono risparmiare tempo riducendo al minimo le notifiche di avviso e la gestione degli avvisi sottostanti.
 

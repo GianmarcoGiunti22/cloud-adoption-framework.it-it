@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021922"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224214"
 ---
 # <a name="storage-design-decisions"></a>Decisioni per la progettazione dell'archiviazione
 
@@ -39,7 +39,7 @@ Rispondere alle domande seguenti sui carichi di lavoro per prendere decisioni in
 - **Sarà necessario supportare i carichi di lavoro di analisi dei Big Data?** [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) è realizzato a partire da Archiviazione BLOB di Azure. Data Lake Storage Gen2 può supportare funzionalità data lake di grandi dimensioni. Può anche gestire l'archiviazione di petabyte di informazioni e allo stesso tempo sostenere una velocità effettiva di centinaia di gigabit.
 - **Sarà necessario fornire condivisioni file native nel cloud?** Azure offre due servizi principali che forniscono condivisioni file ospitate nel cloud: Azure NetApp Files e File di Azure. [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) fornisce condivisioni NFS dalle prestazioni elevate, adatte per i carichi di lavoro aziendali più comuni come SAP. [File di Azure](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) fornisce file accessibili su SMB 3.0 e HTTPS.
 - **Sarà necessario supportare l'archiviazione cloud ibrida per carichi di lavoro HPC (High Performance Computing) locali?** [Avere vFXT per Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) è una soluzione di memorizzazione nella cache ibrida che è possibile usare per espandere le funzionalità di archiviazione locale usando l'archiviazione basata sul cloud. Avere vFXT per Azure è ottimizzato per i carichi di lavoro HPC con intensa attività di lettura che coinvolgono farm di calcolo con un numero di core della CPU compreso tra 1.000 e 40.000. Avere vFXT per Azure può integrasi con dispositivi NAS hardware locali, Archiviazione BLOB di Azure o entrambi.
-- **Sarà necessario eseguire archiviazione e sincronizzazione su larga scala dei dati locali nel cloud?** I prodotti [Azure Data Box](https://docs.microsoft.com/azure/databox-family/) sono progettati per consentire lo spostamento di grandi quantità di dati dall'ambiente locale al cloud. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) è un dispositivo virtuale che risiede in locale. Data Box Gateway consente di gestire la migrazione dei dati su larga scala al cloud. Se è necessario analizzare, trasformare o filtrare i dati prima di spostarli nel cloud, è possibile usare [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview), un dispositivo di elaborazione Edge fisico abilitato per l'intelligenza artificiale che viene distribuito all'ambiente locale. Data Box Edge accelera l'elaborazione e il trasferimento sicuro dei dati ad Azure.
+- **Sarà necessario eseguire archiviazione e sincronizzazione su larga scala dei dati locali nel cloud?** I prodotti [Azure Data Box](https://docs.microsoft.com/azure/databox-family) sono progettati per consentire lo spostamento di grandi quantità di dati dall'ambiente locale al cloud. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) è un dispositivo virtuale che risiede in locale. Data Box Gateway consente di gestire la migrazione dei dati su larga scala al cloud. Se è necessario analizzare, trasformare o filtrare i dati prima di spostarli nel cloud, è possibile usare [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview), un dispositivo di elaborazione Edge fisico abilitato per l'intelligenza artificiale che viene distribuito all'ambiente locale. Data Box Edge accelera l'elaborazione e il trasferimento sicuro dei dati ad Azure.
 - **Si desidera espandere una condivisione file locale esistente per usare l'archiviazione cloud?** [Sincronizzazione file di Azure](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) consente di usare il servizio File di Azure come estensione di condivisioni file ospitate nei computer Windows Server locali. Il servizio di sincronizzazione trasforma Windows Server in una cache rapida della condivisione file di Azure. Consente ai computer locali che accedono alla condivisione di usare qualsiasi protocollo disponibile in Windows Server.
 
 ## <a name="common-storage-scenarios"></a>Scenari di archiviazione comuni

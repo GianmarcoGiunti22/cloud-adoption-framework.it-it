@@ -1,26 +1,26 @@
 ---
-title: Guida sulla sicurezza in Azure
+title: Materiale sussidiario sulla sicurezza in Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Quale materiale sussidiario fornisce Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028195"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222906"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Quale materiale sussidiario fornisce Microsoft?
+# <a name="microsoft-security-guidance"></a>Guida alla sicurezza Microsoft
 
-## <a name="security-guidance-and-tools"></a>Materiale sussidiario sulla sicurezza e strumenti
+## <a name="tools"></a>Strumenti
 
 Microsoft ha introdotto la [Service Trust Platform](https://servicetrust.microsoft.com) e il Compliance Manager per fornire assistenza con gli elementi seguenti:
 
@@ -52,7 +52,7 @@ Questi strumenti sono progettati per aiutare le organizzazioni a soddisfare gli 
 
 ## <a name="unique-intelligent-insights"></a>Informazioni dettagliate univoche
 
-Man mano che aumentano il volume e la complessità dei segnali di sicurezza, determinare se quei segnali sono minacce credibili, e quindi agire, richiede troppo tempo. Microsoft offre un'ampiezza impareggiabile di informazioni di sicurezza distribuite su scala del cloud per aiutare a rilevare e rimediare con rapidità alle minacce.
+Man mano che aumentano il volume e la complessità dei segnali di sicurezza, determinare se quei segnali sono minacce credibili, e quindi agire, richiede troppo tempo. Microsoft offre un'ampiezza impareggiabile di informazioni di sicurezza distribuite su scala del cloud per aiutare a rilevare e rimediare con rapidità alle minacce. [Altre informazioni](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Informazioni sulle minacce di Azure
 
@@ -78,6 +78,6 @@ Gli utenti malintenzionati sono sempre più automatizzati e sofisticati. Inoltre
 
 Prendere decisioni di sicurezza efficaci non è facile. Servono conoscenze ed esperienza nella sicurezza. Alcune organizzazioni di grandi dimensioni hanno esperti in questo campo tra il personale, ma la maggior parte delle aziende non ha questa possibilità. Azure Machine Learning consente ai clienti di beneficiare delle conoscenze di altre organizzazioni per prendere decisioni di sicurezza.
 
-## <a name="behavioral-analytics"></a>Analisi comportamentali
+## <a name="behavioral-analytics"></a>Analisi del comportamento
 
 L'analisi del comportamento è una tecnica che analizza e confronta i dati con una raccolta di modelli noti. Tuttavia, questi modelli non sono semplici firme. Sono determinati usando algoritmi di apprendimento automatico complessi che vengono applicati a set di dati di grandi dimensioni. Sono anche definiti tramite l'attento esame di comportamenti dannosi da parte di analisti esperti. Il Centro sicurezza di Azure può usare le analisi del comportamento per identificare le risorse compromesse in base all'analisi dei log delle macchine virtuali, dei dispositivi di rete virtuale, dell'infrastruttura, nonché dei dump di arresto anomalo del sistema e di altre origini.

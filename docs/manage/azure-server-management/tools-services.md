@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029622"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221415"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Strumenti e servizi di gestione del server di Azure
 
@@ -96,4 +96,4 @@ Per informazioni sui prezzi per i servizi di gestione di Azure, vedere le pagine
 - [Servizio Sincronizzazione file di Azure](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> La soluzione Azure Gestione aggiornamenti è gratuita, ma c'è un piccolo costo correlato all'inserimento di dati. Come regola generale, i primi 5 GB al mese di inserimento dei dati sono gratuiti. Si osserva generalmente che ogni computer utilizza circa 25 MB al mese. Circa 200 computer al mese sono coperti gratuitamente. Per ogni server aggiuntivo, moltiplicare il numero di server aggiuntivi di 25 MB al mese. Moltiplicare questo per il costo di archiviazione per la quantità totale di spazio di archiviazione necessario. [I costi di archiviazione sono disponibili qui](https://azure.microsoft.com/pricing/details/storage/). Ogni server aggiuntivo deve avere un impatto nominale sul costo.
+> La soluzione Azure Gestione aggiornamenti è gratuita, ma c'è un piccolo costo correlato all'inserimento di dati. Come regola generale, i primi 5 GB al mese di inserimento dei dati sono gratuiti. Si osserva generalmente che ogni computer utilizza circa 25 MB al mese. Circa 200 computer al mese sono coperti gratuitamente. Per ogni server aggiuntivo, moltiplicare il numero di server aggiuntivi di 25 MB al mese. Moltiplicare questo per il costo di archiviazione per la quantità totale di spazio di archiviazione necessario. [I costi di archiviazione sono disponibili qui](https://azure.microsoft.com/pricing/details/storage). Ogni server aggiuntivo deve avere un impatto nominale sul costo.

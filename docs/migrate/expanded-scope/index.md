@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Elenco di controllo per l'ambito esteso della migrazione al cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817333"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224363"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Ambito esteso per la migrazione al cloud
 
@@ -27,7 +27,7 @@ L'elenco di controllo seguente presenta alcune aree comuni di complessità che p
 
 - **Modifiche di ambito dettate da necessità aziendali:**
   - [Bilanciamento del portfolio](./balance-the-portfolio.md)
-  - [Supporto dei mercati globali](./multiple-regions.md)
+  - [Supporto dei mercati globali](../../decision-guides/regions/index.md)
   - Consapevolezza dei costi durante una migrazione *(disponibile nel terzo trimestre del 2019)*
 - **Modifiche di ambito determinate da esigenze culturali:**
   - Processi di gestione delle modifiche e di approvazione *(disponibile nel terzo trimestre del 2019)*

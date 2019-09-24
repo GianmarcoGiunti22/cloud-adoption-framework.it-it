@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023406"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223066"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introduzione a un percorso di migrazione cloud
 
@@ -84,7 +84,7 @@ Come illustrato nell'immagine precedente, questo framework allinea le decisioni 
 - **[Preparazione](../ready/index.md):** Preparare l'azienda, la cultura, le persone e l'ambiente per le modifiche in arrivo comportano un successo in ogni sforzo e accelerano l'implementazione e i progetti di modifica.
 - **Adozione:** Garantire la corretta implementazione delle modifiche desiderate, nei processi IT e aziendali, per ottenere risultati aziendali.
   - **[Esegui migrazione](../migrate/index.md):** Esecuzione iterativa della [metodologia di implementazione del cloud](#cloud-implementation) che rispetta il processo testato di valutazione, migrazione, ottimizzazione e sicurezza & gestire per creare un processo ripetibile per la migrazione dei carichi di lavoro.
-- **[Funzionamento](../operating-model/index.md):** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
+- **[Funzionamento](../operate/index.md):** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
   - **[Organizzazione](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
   - **[Governance](../govern/index.md):** Allinea i criteri aziendali ai rischi tangibili, attenuati tramite i criteri, i processi e gli strumenti di governance basati sul cloud.
   - **[Gestione](../manage/index.md):** Espandi le operazioni IT per garantire che le soluzioni basate sul cloud possano essere gestite tramite processi sicuri e convenienti usando strumenti operativi moderni e basati sul cloud.

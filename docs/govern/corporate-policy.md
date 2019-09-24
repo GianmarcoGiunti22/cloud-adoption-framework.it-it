@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Valutare i criteri aziendali come parte della strategia di governance del cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/03/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d3a93a47508b68a42a88d18c30c3b3fae0319f2a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4f9258095fa0002848bfe88ae43195c369221cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028466"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221174"
 ---
 # <a name="evaluate-corporate-policy"></a>Valutare i criteri aziendali
 
@@ -108,7 +108,7 @@ La definizione di criteri aziendali si concentra sull'identificazione e sulla mi
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Procedure</h3>
+                        <h3>Processi</h3>
                         <p>Il ritmo delle attività di adozione e innovazione crea naturalmente violazioni ai criteri. L'esecuzione di processi pertinenti contribuisce al monitoraggio e all'imposizione del rispetto dei criteri.</p>
                     </div>
                 </div>

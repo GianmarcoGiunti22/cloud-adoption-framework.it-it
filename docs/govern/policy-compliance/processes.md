@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Definire i processi per garantire la conformità ai criteri aziendali.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030513"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222054"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Stabilire processi di conformità ai criteri
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Dopo la definizione delle istruzioni dei criteri cloud e l'elaborazione di una guida di progettazione, è necessario creare una strategia per garantire che la distribuzione cloud sia conforme ai requisiti dei criteri. Questa strategia dovrà includere i processi di revisione e comunicazione continui del team di governance del cloud, definire i criteri per il momento in cui le violazioni dei criteri richiedono un'azione e definire i requisiti per i sistemi di monitoraggio e conformità automatici che faranno rilevare le violazioni e attivare le azioni correttive.
 
@@ -57,6 +53,8 @@ Pianificare la valutazione di nuovi rischi potenziali e aggiornare le istruzioni
 La conformità ai criteri richiede che il personale e gli sviluppatori IT comprendano i requisiti dei criteri che influiscono sulle proprie aree di responsabilità. Pianificare di riservare risorse per documentare le decisioni e i requisiti e formare tutti i team pertinenti sulle guide di progettazione che supportano i requisiti dei criteri.
 
 Quando i criteri cambiano, è necessario aggiornare regolarmente la documentazione e i materiali di formazione e assicurarsi che gli sforzi di formazione comunichino requisiti e materiale sussidiario aggiornati al personale IT pertinente.
+
+In diverse fasi del percorso Cloud, può essere opportuno consultare i partner e i programmi di formazione professionale per migliorare l'istruzione del team, sia tecnicamente che procedurale. Inoltre, molti ritengono che le certificazioni formali siano un'aggiunta preziosa al portfolio di formazione e che debbano essere prese in considerazione.
 
 ### <a name="establish-escalation-paths"></a>Stabilire percorsi di escalation
 

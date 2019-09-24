@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: "Spiegazione dei costrutti di gestione dell'accesso alle risorse in Azure: Azure Resource Manager, sottoscrizioni, gruppi di risorse e risorse"
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223032"
 ---
 # <a name="resource-access-management-in-azure"></a>gestione dell'accesso alle risorse in Azure
 
@@ -33,7 +33,7 @@ In Azure il termine _risorsa_ si riferisce a un'entità gestita da Azure. Ad ese
 
 ## <a name="what-is-an-azure-resource-group"></a>Informazioni sul gruppo di risorse di Azure
 
-Ogni risorsa in Azure deve appartenere a un [gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Un gruppo di risorse è semplicemente un costrutto logico che raggruppa più risorse in modo che possano essere gestite come singola entità. Ad esempio, le risorse che condividono un ciclo di vita simile, come le risorse per un'[applicazione a più livelli](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), possono essere create o eliminate come gruppo.
+Ogni risorsa in Azure deve appartenere a un [gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Un gruppo di risorse è semplicemente un costrutto logico che raggruppa più risorse in modo che possano essere gestite come una singola entità _in base al ciclo di vita e alla sicurezza_. Ad esempio, le risorse che condividono un ciclo di vita simile, come le risorse per un'[applicazione a più livelli](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), possono essere create o eliminate come gruppo. Un altro modo: tutto ciò che è nato insieme, viene gestito insieme e deprecato insieme, viene riunito in un gruppo di risorse.
 
 ![Diagramma di un gruppo di risorse contenente una](../../_images/govern/design/governance-1-10.png)
 risorsa*Figura 2. un gruppo di risorse contiene una risorsa.*
@@ -42,7 +42,7 @@ I gruppi di risorse e le risorse in essi contenute sono associati a una **sottos
 
 ## <a name="what-is-an-azure-subscription"></a>Informazioni sulla sottoscrizione di Azure
 
-Una sottoscrizione di Azure è simile a un gruppo di risorse, in quanto si tratta di un costrutto logico che raggruppa i gruppi di risorse e le loro risorse. Una sottoscrizione di Azure è tuttavia anche associata ai controlli usati da Azure Resource Manager. Che cosa significa? Esaminare Azure Resource Manager per comprendere la sua relazione con una sottoscrizione di Azure.
+Una sottoscrizione di Azure è simile a un gruppo di risorse, in quanto si tratta di un costrutto logico che raggruppa i gruppi di risorse e le loro risorse. Una sottoscrizione di Azure è tuttavia anche associata ai controlli usati da Azure Resource Manager. Esaminare Azure Resource Manager per comprendere la sua relazione con una sottoscrizione di Azure.
 
 ![Diagramma di una sottoscrizione](../../_images/govern/design/governance-1-11.png)
 di Azure*Figura 3: una sottoscrizione di Azure.*

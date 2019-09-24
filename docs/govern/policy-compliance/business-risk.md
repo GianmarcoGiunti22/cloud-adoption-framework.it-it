@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sui rischi aziendali durante la migrazione del cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220390"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Durante una trasformazione sono presenti gli stessi rischi relativi.
 
 - Durante la sperimentazione iniziale alcune risorse vengono distribuite con pochi dati o con dati irrilevanti. I rischi sono minimi.
 - Quando viene distribuito il primo carico di lavoro, il rischio aumenta leggermente. Questo rischio è facilmente monitorabile scegliendo un'applicazione a basso rischio intrinsecamente con una base utente di piccole dimensioni.
-- Man mano che sempre più carichi di lavoro sono online, i rischi mutano a ogni rilascio. Con sempre più app operative, il rischio cambia.
+- Man mano che sempre più carichi di lavoro sono online, i rischi mutano a ogni rilascio. Le nuove app sono attive e i rischi cambiano.
 - Quando un'azienda porta online le prime 10-20 applicazioni, il profilo di rischio è molto diverso rispetto a quando la millesima applicazione va in produzione nel cloud.
 
 Gli asset che si sono accumulati in un patrimonio locale tradizionale accumulato probabilmente nel tempo. Il livello di maturità dell'azienda e dei team IT con molta probabilità è cresciuto in modo analogo. Questa crescita parallela può tendere a creare un bagaglio di criteri superflui.
@@ -54,10 +54,10 @@ Viceversa, un approccio MVP può consentire al team di definire un punto di part
 
 Di seguito sono riportati alcuni esempi di base dei rischi aziendali che possono essere inclusi come parte di un MVP:
 
-- Tutti gli asset sono al rischio di essere terminati (tramite errori, errori o manutenzione).
+- Tutti gli asset sono al rischio di essere eliminati (tramite errori, errori o manutenzione).
 - Tutti gli asset sono a rischio di generare una spesa troppo lunga.
-- Tutti gli asset potrebbero essere compromessi da password vulnerabili.
-- Qualsiasi asset con tutte le porte aperte esposte a Internet è a rischio di compromissione.
+- Tutte le risorse potrebbero essere compromesse da password vulnerabili o da impostazioni non sicure.
+- Qualsiasi asset con porte aperte esposte a Internet è a rischio di compromissione.
 
 Gli esempi precedenti sono intesi a stabilire un MVP per i rischi aziendali in linea teorica. L'elenco effettivo sarà specifico per ogni ambiente.
 Una volta stabilito il MVP per i rischi aziendali, questi possono essere convertiti in [criteri](./index.md) per correggere ogni rischio.

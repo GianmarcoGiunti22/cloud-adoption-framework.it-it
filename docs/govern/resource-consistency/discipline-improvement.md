@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Miglioramento della disciplina Coerenza delle risorse
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029796"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223016"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Miglioramento della disciplina Coerenza delle risorse
 
@@ -101,7 +101,7 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 - Determinare se l'organizzazione richiede un allineamento al conto Profitti e perdite più chiaro da un punto di vista finanziario per la business unit di riferimento.
 - Per le organizzazioni globali, implementare i requisiti di sovranità o conformità al contratto di servizio.
 - Per l'aggregazione al cloud, distribuire una soluzione gateway a un provider di servizi cloud.
-- Per gli strumenti che non consentono opzioni ibride o gateway, accoppiare perfettamente il monitoraggio con uno strumento di monitoraggio operativo.
+- Per gli strumenti che non consentono opzioni ibride o del gateway, è strettamente associato al monitoraggio con uno strumento di monitoraggio operativo che si estende su tutti i Data Center e cloud.
 
 ## <a name="operate-and-post-implementation"></a>Operazione e post-implementazione
 

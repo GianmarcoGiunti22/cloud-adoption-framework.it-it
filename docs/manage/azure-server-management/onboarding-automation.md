@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027788"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221360"
 ---
 # <a name="automate-onboarding"></a>Automatizzare il caricamento
 
@@ -21,7 +21,7 @@ Per migliorare l'efficienza della distribuzione dei servizi di gestione del serv
 
 ## <a name="onboarding-by-using-automation"></a>Onboarding tramite automazione
 
-Questa guida include un repository GitHub di esempio di codice di esempio, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), che fornisce script di esempio e modelli di Azure Resource Manager che consentono di automatizzare la distribuzione dei servizi di gestione del server di Azure.
+Questa guida include un repository GitHub di esempio di codice di esempio, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), che fornisce script di esempio e modelli di Azure Resource Manager che consentono di automatizzare la distribuzione dei servizi di gestione del server di Azure.
 
 Questi file di esempio illustrano come usare i cmdlet di Azure PowerShell per automatizzare le attività seguenti:
 
@@ -33,13 +33,13 @@ Questi file di esempio illustrano come usare i cmdlet di Azure PowerShell per au
 
 4. Abilitare Gestione aggiornamenti e Rilevamento modifiche e l'inventario per l'area di lavoro.
 
-5. Caricare le macchine virtuali di Azure con criteri di Azure. un criterio consente di installare l'agente Log Analytics e Dependency Agent nelle VM di Azure.
+5. Caricare le macchine virtuali di Azure con criteri di Azure. i criteri installano l'agente Log Analytics e Dependency Agent nelle VM di Azure.
 
 6. Eseguire l'onboarding dei server locali installando l'agente di Log Analytics su di essi.
 
 In questo esempio vengono usati i file descritti nella tabella seguente ed è possibile personalizzarli in modo da supportare scenari di distribuzione personalizzati.
 
-| Nome file | DESCRIZIONE |
+| Nome file | Descrizione |
 |-----------|-------------|
 | New-AMSDeployment.ps1 | Script di orchestrazione principale che automatizza l'onboarding. Questo script di PowerShell richiede una sottoscrizione esistente, ma creerà gruppi di risorse, percorso, area di lavoro e account di automazione, se non esistono. |
 | Workspace-AutomationAccount.json | Modello di Gestione risorse che distribuisce l'area di lavoro e le risorse dell'account di automazione. |

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduzione alla conformità alle normative
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030280"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222037"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introduzione alla conformità alle normative
 
-Si tratta di un articolo introduttivo sulla conformità alle normative, di conseguenza non è destinato all'implementazione di una strategia di conformità. Lo scopo è quello di offrire una consapevolezza generale. Informazioni più dettagliate sulle [offerte di conformità di Azure](https://aka.ms/allcompliance) sono disponibili nel [Centro protezione Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Inoltre, tutte le documentazioni scaricabili sono disponibili per determinati clienti di Azure dal [portale di attendibilità dei servizi Microsoft](https://servicetrust.microsoft.com).
+Si tratta di un articolo introduttivo sulla conformità alle normative, di conseguenza non è destinato all'implementazione di una strategia di conformità. Informazioni più dettagliate sulle [offerte di conformità di Azure](https://aka.ms/allcompliance) sono disponibili nel [Centro protezione Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Inoltre, tutte le documentazioni scaricabili sono disponibili per determinati clienti di Azure dal [portale di attendibilità dei servizi Microsoft](https://servicetrust.microsoft.com).
 
 La conformità alle normative si riferisce alla disciplina e al processo di garantire che un'azienda segua le leggi applicate da enti che disciplinano la loro geografia o le regole richieste dagli standard di settore adottati volontariamente. Per quanto riguarda la conformità alle normative IT, le persone e i processi monitorano i sistemi aziendali nel tentativo di rilevare e prevenire le violazioni di criteri e procedure stabilite da tali leggi, normative e standard. Si applica a sua volta a un'ampia gamma di processi di monitoraggio e applicazione. A seconda del settore e della geografia, questi processi possono diventare lunghi e complessi.
 
@@ -42,7 +42,7 @@ I dati personali sono informazioni che possono essere usate per identificare un 
 
 ## <a name="gdpr"></a>GDPR
 
-Uno degli sviluppi più importanti in questo ambito è la recente promulgazione del Regolamento generale sulla protezione dei dati (GDPR) della Commissione europea, progettato per rafforzare la protezione dei dati degli utenti nell'Unione Europea. GDPR richiede che i dati relativi a singoli utenti (ad esempio "un nome, un indirizzo di casa, una foto, un indirizzo di posta elettronica, dettagli della banca, post su siti Web di social networking, informazioni mediche o un indirizzo IP del computer") vengano mantenuti nei server all'interno dell'Unione europea e non trasferiti di esso. Inoltre, richiede che le aziende inviino notifiche a singoli utenti di eventuali violazioni dei dati e che le aziende dispongano di un responsabile della protezione dei dati (DPO). Gli altri paesi hanno già (o stanno sviluppando) normative analoghe.
+Uno degli sviluppi più importanti in quest'area è la Regolamento generale sulla protezione dei dati (GDPR), progettato per rafforzare la protezione dei dati per i singoli utenti all'interno dell'Unione europea. GDPR richiede che i dati relativi a singoli utenti (ad esempio "un nome, un indirizzo di casa, una foto, un indirizzo di posta elettronica, dettagli della banca, post su siti Web di social networking, informazioni mediche o un indirizzo IP del computer") vengano mantenuti nei server all'interno dell'Unione europea e non trasferiti di esso. Inoltre, richiede che le aziende inviino notifiche a singoli utenti di eventuali violazioni dei dati e che le aziende dispongano di un responsabile della protezione dei dati (DPO). Gli altri paesi hanno già (o stanno sviluppando) normative analoghe.
 
 ## <a name="compliant-foundation-in-azure"></a>Conformità in Azure
 

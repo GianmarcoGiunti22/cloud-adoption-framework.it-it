@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Definizioni dei criteri di esempio per la coerenza delle risorse
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030952"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221977"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Definizioni dei criteri di esempio per la coerenza delle risorse
 
@@ -33,7 +33,7 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 **Definizione dei criteri**: verranno implementati i criteri seguenti:
 
 - Agli asset distribuiti devono essere assegnati tag con i valori seguenti:
-  - Costi
+  - Costo
   - Criticità
   - Contratto di servizio
   - Ambiente
@@ -74,8 +74,8 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 
 **Definizione dei criteri**: verranno implementati i criteri seguenti:
 
-- Gli strumenti di governance devono convalidare che tutti gli asset correlati alle applicazioni cruciali o ai dati protetti siano inclusi nel monitoraggio per l'esaurimento e l'ottimizzazione delle risorse.
-- Gli strumenti di governance devono convalidare che venga raccolto il livello appropriato di dati di registrazione per tutti i dati protetti o le applicazioni cruciali.
+- Gli strumenti di governance devono verificare che tutte le risorse siano incluse nel monitoraggio per l'esaurimento delle risorse, la sicurezza, la conformità e l'ottimizzazione.
+- Gli strumenti di governance devono verificare che venga raccolto il livello appropriato di dati di registrazione per tutte le applicazioni e i dati.
 
 **Possibili opzioni di progettazione:** Monitoraggio di [Azure](https://docs.microsoft.com/azure/azure-monitor/overview) è il servizio di monitoraggio predefinito in Azure e il monitoraggio coerente può essere applicato tramite i [progetti di Azure](https://docs.microsoft.com/azure/governance/blueprints) durante la distribuzione delle risorse.
 
@@ -85,7 +85,7 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 
 **Definizione dei criteri**: è necessario implementare soluzioni di backup e ripristino per tutte le applicazioni cruciali e tutti i dati protetti per ridurre al minimo l'impatto aziendale di interruzioni o errori di sistema.
 
-**Possibili opzioni di progettazione:** il servizio [Azure Site Recovery] offre funzionalità di backup, ripristino e replica progettate per ridurre al minimo la durata di un'interruzione in scenari di continuità aziendale e ripristino di emergenza (BCDR).
+**Possibili opzioni di progettazione:** Il servizio [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) fornisce funzionalità di backup, ripristino e replica che consentono di ridurre al minimo la durata delle interruzioni negli scenari di continuità aziendale e ripristino di emergenza (BCdR).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

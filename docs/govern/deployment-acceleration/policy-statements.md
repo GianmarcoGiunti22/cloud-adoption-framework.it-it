@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Esempi di istruzioni dei criteri di Accelerazione della distribuzione
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a2b1666332ca884dfb95b2b2372f3b5518bd635
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028180"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222656"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Esempi di istruzioni dei criteri di Accelerazione della distribuzione
 
@@ -32,7 +32,7 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 
 **Definizione dei criteri**: Tutte le risorse distribuite nel cloud devono essere distribuite tramite modelli o script di automazione laddove possibile.
 
-**Possibili opzioni di progettazione:** [I modelli di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) forniscono un approccio di infrastruttura come codice alla distribuzione delle risorse in Azure. [Blocchi predefiniti di Azure](https://github.com/mspnp/template-building-blocks/wiki) fornisce uno strumento da riga di comando e set di modelli di Resource Manager progettati per semplificare la distribuzione delle risorse di Azure.
+**Possibili opzioni di progettazione:** [I modelli di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) forniscono un approccio di infrastruttura come codice alla distribuzione delle risorse in Azure. È anche possibile usare la funzione di [bonifica](https://docs.microsoft.com/azure/terraform/terraform-overview) come strumento di distribuzione locale coerente e basato sul cloud.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Mancanza di visibilità per problemi di sistema
 
@@ -43,21 +43,21 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 - Misure di diagnostica e metriche chiave saranno identificate per tutti i componenti e sistemi di produzione, gli strumenti di monitoraggio e diagnostica verranno applicati a questi sistemi e monitorati regolarmente dal personale operativo.
 - Le operazioni considereranno l'utilizzo degli strumenti di monitoraggio e diagnostica in ambienti non di produzione, ad esempio staging e QA, per identificare i problemi di sistema prima che si verifichino nell'ambiente di produzione.
 
-**Possibili opzioni di progettazione:** [Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor), che include anche Log Analytics e Application Insights, fornisce strumenti per la raccolta e l'analisi dei dati di telemetria per agevolare la comprensione delle prestazioni delle applicazioni e identificare in modo proattivo i problemi che li interessano e le risorse da cui dipendono.
+**Possibili opzioni di progettazione:** [Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor), che include anche Log Analytics e Application Insights, fornisce strumenti per la raccolta e l'analisi dei dati di telemetria per agevolare la comprensione delle prestazioni delle applicazioni e identificare in modo proattivo i problemi che li interessano e le risorse da cui dipendono. Inoltre, il [log attività di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) segnala tutte le modifiche apportate a livello di piattaforma e deve essere monitorato/controllato per le modifiche non conformi.
 
 ## <a name="configuration-security-reviews"></a>Verifiche di protezione della configurazione
 
 **Rischio tecnico:** Nel corso del tempo, nuovi problemi o minacce di sicurezza possono aumentare i rischi di accesso non autorizzato a risorse sicure.
 
-**Definizione dei criteri**: I processi di governance del cloud devono includere un esame trimestrale condotto con i team che si occupano della gestione della configurazione per identificare gli attori dannosi o i modelli di uso da evitare nella configurazione degli asset del cloud.
+**Definizione dei criteri**: I processi di governance del cloud devono includere la revisione mensile con i team di gestione della configurazione per identificare gli attori dannosi o i modelli di utilizzo che devono essere evitati dalla configurazione delle
 
-**Possibili opzioni di progettazione:** Stabilire una riunione di revisione trimestrale per la sicurezza che includa i membri del team governance e il personale IT responsabile della configurazione delle risorse e delle applicazioni cloud. Esaminare i dati e le metriche di sicurezza esistenti per stabilire i gap nei criteri e negli strumenti di accelerazione della distribuzione corrente e aggiornare i criteri per correggere eventuali nuovi rischi.
+**Possibili opzioni di progettazione:** Stabilire una riunione di revisione della sicurezza mensile che includa i membri del team di governance e il personale IT responsabile della configurazione delle applicazioni e delle risorse cloud. Esaminare i dati e le metriche di sicurezza esistenti per stabilire i gap nei criteri e negli strumenti di accelerazione della distribuzione corrente e aggiornare i criteri per correggere eventuali nuovi rischi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Usare gli esempi citati in questo articolo come punto di partenza per sviluppare criteri che consentano di risolvere rischi aziendali specifici, che si allineano con i piani di adozione del cloud.
 
-Per iniziare a sviluppare le proprie istruzioni di criteri personalizzate correlate alla gestione delle identità, scaricare [Identity Baseline template](./template.md) (modello di Baseline di identità).
+Per iniziare a sviluppare le proprie istruzioni di criteri personalizzate correlate alla gestione delle identità, scaricare [Identity Baseline template](../identity-baseline/template.md) (modello di Baseline di identità).
 
 Per accelerare l'adozione di questa disciplina, scegliere la [Guida alla governance](../guides/index.md) che si allinea maggiormente all'ambiente. Modificare quindi la progettazione per incorporare le decisioni relative a criteri aziendali specifici.
 

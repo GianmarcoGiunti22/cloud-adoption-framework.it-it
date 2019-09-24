@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Baseline di identità: metriche, indicatori e tolleranza ai rischi'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029811"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220425"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Baseline di identità: metriche, indicatori e tolleranza ai rischi
 
-Questo articolo è concepito per aiutare l'utente a quantificare la tolleranza ai rischi aziendale in relazione alla baseline di identità. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Baseline di identità.
+Questo articolo consente di quantificare la tolleranza ai rischi aziendali in relazione alla baseline dell'identità. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Baseline di identità.
 
 ## <a name="metrics"></a>metrics
 
@@ -28,13 +28,13 @@ Di seguito sono riportati esempi di metriche utili che è necessario raccogliere
 
 - **Dimensioni dei sistemi di identità.** Numero totale di utenti, gruppi o altri oggetti gestiti tramite i sistemi di gestione delle identità.
 - **Dimensioni complessive dell'infrastruttura dei servizi di directory.** Numero di foreste di directory, domini e tenant usati dall'organizzazione.
-- **Dipendenza da meccanismi di autenticazione legacy o locali.** Numero di carichi di lavoro che dipendono da meccanismi di autenticazione legacy o da servizi di autenticazione a più fattori di terze parti.
+- **Dipendenza da meccanismi di autenticazione legacy o locali.** Numero di carichi di lavoro che dipendono da meccanismi legacy o di terze parti o di autenticazione a più fattori.
 - **Extent dei servizi directory distribuiti nel cloud.** Numero di foreste di directory, domini e tenant distribuiti nel cloud.
 - **Server Active Directory distribuiti nel cloud.** Numero di server Active Directory distribuiti nel cloud.
 - **Unità organizzative distribuite nel cloud.** Numero di unità organizzative Active Directory distribuite nel cloud.
 - **Extent della Federazione.** Numero di sistemi per la baseline di identità federati con i sistemi dell'organizzazione.
 - **Utenti con privilegi elevati.** Numero di account utente che dispongono di accesso con privilegi elevati a risorse o strumenti di gestione.
-- **Uso del controllo degli accessi in base al ruolo.** Numero di sottoscrizioni, gruppi di risorse o singole risorse non gestite tramite il controllo degli accessi in base al ruolo.
+- **Uso del controllo degli accessi in base al ruolo.** Numero di sottoscrizioni, gruppi di risorse o singole risorse non gestite tramite il controllo degli accessi in base al ruolo (RBAC) tramite i gruppi.
 - **Attestazioni di autenticazione.** Numero di tentativi di autenticazione utente riusciti e non riusciti.
 - **Attestazioni di autorizzazione.** Numero di tentativi riusciti e falliti di accedere alle risorse da parte degli utenti.
 - **Account compromessi.** Numero di account utente che sono stati compromessi.
@@ -56,7 +56,7 @@ Dopo aver creato una baseline, è necessario stabilire i benchmark minimi che ra
 - **Trigger RBAC.** Per identificare le modalità ottimizzate per l'assegnazione dell'accesso degli utenti alle risorse, un'azienda con meno di _%_ di risorse che usano metodi di controllo degli accessi in base al ruolo deve considerare l'investimento nella disciplina di base di identità.
 - **Trigger di errore di autenticazione.** Un'azienda in cui gli errori di autenticazione rappresentano più dell' _x%_ dei tentativi deve investire nella disciplina della linea di base di identità per assicurarsi che i metodi di autenticazione non siano sotto attacco esterno e che gli utenti siano in grado di usare i metodi di autenticazione correttamente.
 - **Trigger di errore di autorizzazione.** Una società in cui i tentativi di accesso vengono rifiutati più dell' _x%_ del tempo deve investire nella disciplina della linea di base di identità per migliorare l'applicazione e l'aggiornamento dei controlli di accesso e identificare i tentativi di accesso potenzialmente dannosi.
-- **Trigger account compromesso.** Una società con più di _x_ account compromessi deve investire nella disciplina della linea di base di identità per migliorare la forza e la sicurezza dei meccanismi di autenticazione e migliorare i meccanismi per correggere i rischi correlati agli account compromessi.
+- **Trigger account compromesso.** Una società con più di un account compromesso deve investire nella disciplina della linea di base di identità per migliorare la forza e la sicurezza dei meccanismi di autenticazione e migliorare i meccanismi per correggere i rischi correlati agli account compromessi.
 
 Le metriche e i trigger esatti usati per misurare la tolleranza ai rischi e il livello di investimento nella disciplina della linea di base di identità saranno specifici per l'organizzazione, ma gli esempi precedenti dovrebbero fungere da base utile per discutere nel team di governance del cloud.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029614"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220174"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina di gestione dei costi
 
@@ -66,14 +66,14 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 Questa sezione dell'articolo consentirà di migliorare la progettazione degli MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove istruzioni dei criteri aziendali.
 
 1. Apportare modifiche nel Enterprise Portal di Azure per fatturare l'amministratore del reparto per la distribuzione canadese.
-1. Implementare Gestione costi di Azure.
+2. Implementare Gestione costi di Azure.
     1. Stabilire il livello corretto dell'ambito di accesso in linea con il modello di sottoscrizione e il modello di raggruppamento delle risorse. Supponendo l'allineamento con il MVP di governance definito negli articoli precedenti, questo richiederebbe l'accesso all' **ambito dell'account di registrazione** per il team di governance del cloud in esecuzione su report di alto livello. Altri team esterni alla governance, come quello di approvvigionamento della filiale canadese, avranno bisogno dell'accesso all'**ambito del gruppo di risorse**.
-    1. Stabilire un budget in Gestione costi di Azure.
-    1. Esaminare e implementare i consigli iniziali. È consigliabile pianificare l'esecuzione ricorrente di un processo per la creazione di report.
-    1. Configurare ed eseguire la funzionalità per la creazione di report di Gestione costi di Azure, sia nella fase iniziale sia con frequenza periodica.
-1. Aggiornare Criteri di Azure.
+    2. Stabilire un budget in Gestione costi di Azure.
+    3. Esaminare e implementare i consigli iniziali. È consigliabile pianificare l'esecuzione ricorrente di un processo per la creazione di report.
+    4. Configurare ed eseguire la funzionalità per la creazione di report di Gestione costi di Azure, sia nella fase iniziale sia con frequenza periodica.
+3. Aggiornare Criteri di Azure.
     1. Aggiungere valori per tag di controllo, gruppo di gestione, sottoscrizione e gruppo di risorse per identificare tutte le deviazioni.
-    1. Definire le opzioni relative alle dimensioni di SKU per limitare le distribuzioni agli SKU elencati nella documentazione relativa alla pianificazione della distribuzione.
+    2. Definire le opzioni relative alle dimensioni di SKU per limitare le distribuzioni agli SKU elencati nella documentazione relativa alla pianificazione della distribuzione.
 
 ## <a name="conclusion"></a>Conclusione
 

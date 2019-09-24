@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della coerenza delle risorse'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030535"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223822"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina della coerenza delle risorse
 
@@ -65,7 +65,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 5. Gli strumenti di governance devono convalidare che venga raccolto il livello appropriato di dati di registrazione per tutti i dati protetti o le applicazioni cruciali.
 6. Il processo di governance deve convalidare che il backup, il ripristino e il rispetto dei contratti di servizio vengano implementati correttamente per le applicazioni cruciali e i dati protetti.
 7. Gli strumenti di governance devono limitare la distribuzione di macchine virtuali solo alle immagini approvate.
-8. Gli strumenti di governance devono soddisfare il requisito in base al quale gli aggiornamenti automatici **non** devono essere applicati a tutti gli asset distribuiti che supportano applicazioni cruciali. Le violazioni devono essere esaminate con i team di gestione operativa e risolte in base ai criteri relativi alle operazioni. Gli asset che non vengono aggiornati automaticamente devono essere inclusi in processi di proprietà del team responsabile delle operazioni IT.
+8. Gli strumenti di governance devono soddisfare il requisito in base al quale gli aggiornamenti automatici **non** devono essere applicati a tutti gli asset distribuiti che supportano applicazioni cruciali. Le violazioni devono essere esaminate con i team di gestione operativa e risolte in base ai criteri relativi alle operazioni. Gli asset che non vengono aggiornati automaticamente devono essere inclusi nei processi di proprietà delle operazioni IT per aggiornare i server in modo rapido ed efficace.
 9. Gli strumenti di governance devono convalidare l'assegnazione di tag correlati a costo, criticità, contratto di servizio, applicazione e classificazione dei dati. Tutti i valori devono essere allineati ai valori predefiniti gestiti dal team di governance del cloud.
 10. I processi di governance devono includere controlli in fase di distribuzione e in base a cicli regolari per garantire la coerenza tra tutti gli asset.
 11. Tendenze ed exploit che possono influire sulle distribuzioni cloud devono essere esaminati regolarmente dal team responsabile della sicurezza in modo da fornire aggiornamenti per gli strumenti della baseline di sicurezza usati nel cloud.
@@ -85,25 +85,25 @@ Seguendo l'esperienza di questo esempio fittizio, si presuppone che le modifiche
 
 1. Come dipendenza esterna, il team operativo cloud dovrà definire gli strumenti per il monitoraggio operativo, la continuità aziendale e il ripristino di emergenza (BCDR) e gli strumenti per la correzione automatica. Il team di governance del cloud può quindi supportare i processi di individuazione necessari.
     1. In questo caso di utilizzo, il team operativo cloud ha scelto monitoraggio di Azure come strumento principale per il monitoraggio di applicazioni cruciali.
-    1. Il team ha inoltre scelto Azure Site Recovery come strumento BCDR primario.
-1. Implementazione di Azure Site Recovery.
-    1. Definire e distribuire l'insieme di credenziali di Azure per i processi di backup e ripristino.
-    1. Creare un modello di gestione risorse di Azure per la creazione di un insieme di credenziali in ogni sottoscrizione.
-1. Implementazione di monitoraggio di Azure.
-    1. Una volta identificata una sottoscrizione cruciale, è possibile creare un'area di lavoro di Log Analytics tramite PowerShell. Si tratta di un processo di pre-distribuzione.
+    2. Il team ha inoltre scelto Azure Site Recovery come strumento BCDR primario.
+2. Implementazione di Azure Site Recovery.
+    1. Definire e distribuire Azure Site Recovery insieme di credenziali per i processi di backup e ripristino.
+    2. Creare un modello di gestione risorse di Azure per la creazione di un insieme di credenziali in ogni sottoscrizione.
+3. Implementazione di monitoraggio di Azure.
+    1. Una volta identificata una sottoscrizione di importanza critica, è possibile creare un'area di lavoro di log Analytics.
 
 **Sottoscrizione per l'adozione di singoli cloud:** gli elementi seguenti assicurano che ogni sottoscrizione sia individuabile dalla soluzione di monitoraggio e pronta per essere inclusa nelle procedure BCDR.
 
 1. Criteri di Azure per i nodi mission-critical:
     1. Controllare e imporre l'uso solo dei ruoli standard.
-    1. Controllare e imporre l'applicazione della crittografia per tutti gli account di archiviazione.
-    1. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
-    1. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
-    1. Controllare e imporre la distribuzione di agenti di Log Analytics per macchine virtuali Windows e Linux.
+    2. Controllare e imporre l'applicazione della crittografia per tutti gli account di archiviazione.
+    3. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
+    4. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
+    5. Controllare e imporre la distribuzione di agenti di Log Analytics per macchine virtuali Windows e Linux.
 2. Azure Blueprints:
     1. Creare un progetto denominato `mission-critical-workloads-and-protected-data`. Questo progetto applicherà gli asset oltre al progetto per i dati protetti.
-    1. Aggiungere i nuovi criteri di Azure al progetto.
-    1. Applicare il progetto a qualsiasi sottoscrizione che si prevede ospiti un'applicazione cruciale.
+    2. Aggiungere i nuovi criteri di Azure al progetto.
+    3. Applicare il progetto a qualsiasi sottoscrizione che si prevede ospiti un'applicazione cruciale.
 
 ## <a name="conclusion"></a>Conclusione
 

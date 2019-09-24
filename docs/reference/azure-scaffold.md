@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223977"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffolding aziendale Azure: Governance prescrittiva per le sottoscrizioni
 
@@ -168,7 +168,7 @@ Una delle prime e più cruciali domande che ci si pone quando si inizia a usare 
 
 Per proteggere l'accesso alle risorse, è necessario innanzitutto configurare il provider di identità e quindi configurare i ruoli e l'accesso. Azure Active Directory (Azure AD), connesso ad Active Directory locale, è la base dell'identità di Azure. Ciò premesso, Azure AD *non* è lo stesso Active Directory locale ed è importante comprendere che cos'è un tenant di Azure ad e in che modo è correlato alla registrazione di Azure. Esaminare le [informazioni](../govern/resource-consistency/resource-access-management.md) disponibili per ottenere una solida base su Azure AD e Active Directory locali. Per connettere e sincronizzare il Active Directory Azure AD, installare e configurare lo [strumento di Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) in locale.
 
-![Diagramma dell'architettura](../_images/reference/ad-architecture.png)
+![Diagramma dell'architettura di AD](../_images/reference/ad-architecture.png)
 
 Al momento del rilascio iniziale di Azure, i controlli di accesso per una sottoscrizione prevedevano solo amministratore e coamministratore. L'accesso a una sottoscrizione nel modello classico implicava l'accesso a tutte le risorse del portale. Questa mancanza di un controllo granulare ha portato alla proliferazione di sottoscrizioni per fornire un livello ragionevole di controllo degli accessi per un'iscrizione ad Azure. La proliferazione di sottoscrizioni non è più necessaria. Con il controllo degli accessi in base al ruolo, è possibile assegnare utenti a ruoli standard che forniscono accesso comune, ad esempio "proprietario", "collaboratore" o "lettore", o persino creare ruoli personalizzati.
 
@@ -265,7 +265,7 @@ Queste informazioni possono essere visualizzate e gestite a più livelli e vengo
 > [!TIP]
 > Prima di creare singoli avvisi, creare e gestire un insieme di gruppi di azioni condivisi che possano essere usati negli avvisi di Azure. Questo consentirà di gestire a livello centrale il ciclo di vita degli elenchi di destinatari, i metodi di recapito delle notifiche (indirizzi di posta elettronica, numeri di telefono per gli SMS) e i webhook per le azioni esterne (runbook di Automazione di Azure, Funzioni di Azure/App per la logica, Gestione dei servizi IT).
 
-## <a name="cost-management"></a>Gestione dei costi
+## <a name="cost-management"></a>Gestione costi
 
 Una delle principali modifiche che si dovranno affrontare al momento del passaggio dal cloud locale al cloud pubblico è il passaggio da CAPEX (acquisto dell'hardware) a OPEX (pagamento per il servizio in base all'uso). Questa opzione richiede anche una gestione più attenta dei costi. Il vantaggio del cloud consiste nel fatto che è possibile influire in modo sostanziale e positivo sul costo di un servizio utilizzato semplicemente chiudendo o ridimensionando il servizio quando non è necessario. La gestione deliberata dei costi nel cloud è una procedura consigliata che i clienti più accorti svolgono ogni giorno.
 
@@ -295,7 +295,7 @@ I clienti che sono utenti cloud a lungo termine e maturi seguono alcune procedur
 
 La gestione costi è una disciplina fondamentale per eseguire un cloud pubblico in modo efficiente ed efficace. Le aziende che riescono a raggiungere il successo possono controllare i loro costi e associarle alla propria richiesta effettiva, invece di sovraacquistare e sperare che venga richiesta.
 
-## <a name="automate"></a>Automatizzare
+## <a name="automate"></a>Automatizza
 
 Una delle molte funzionalità che distinguono la familiarità delle organizzazioni con l'uso di provider cloud è il livello di automazione incorporato. L'automazione è un processo che non finisce mai e, man mano che l'organizzazione passa al cloud, richiede un investimento di risorse e denaro. L'automazione svolge molti scopi, inclusa l'implementazione coerente delle risorse (in cui si collega direttamente a un altro concetto di impalcatura principale, modelli e DevOps) alla correzione dei problemi. L'automazione è il tessuto connettivo dello scaffold Azure e tiene insieme ogni area.
 

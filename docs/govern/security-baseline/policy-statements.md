@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Definizioni dei criteri di esempio per la baseline di sicurezza
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027575"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221664"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Definizioni dei criteri di esempio per la baseline di sicurezza
 
@@ -34,13 +34,13 @@ Le istruzioni dei criteri di esempio seguenti affrontano i rischi aziendali comu
 
 **Possibili opzioni di progettazione:** stabilire [standard di applicazione di tag alle risorse](../../decision-guides/resource-tagging/index.md) e assicurarsi che il personale IT li applichi in modo coerente alle risorse distribuite usando i [tag delle risorse di Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
-## <a name="data-encryption"></a>Crittografia dei dati
+## <a name="data-encryption"></a>Crittografia dati
 
 **Rischio tecnico:** esiste il rischio che i dati protetti vengano esposti durante l'archiviazione.
 
 **Definizione dei criteri**: tutti i dati protetti devono essere crittografati quando inattivi.
 
-**Possibili opzioni di progettazione:** vedere l'articolo [Panoramica della crittografia di Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) per informazioni su come viene eseguita la crittografia dei dati inattivi nella piattaforma Azure.
+**Possibili opzioni di progettazione:** vedere l'articolo [Panoramica della crittografia di Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) per informazioni su come viene eseguita la crittografia dei dati inattivi nella piattaforma Azure. Devono essere considerati anche controlli aggiuntivi come la crittografia dei dati dell'account e il controllo della modifica delle impostazioni dell'account di archiviazione.
 
 ## <a name="network-isolation"></a>Isolamento rete
 
@@ -54,17 +54,17 @@ Le istruzioni dei criteri di esempio seguenti affrontano i rischi aziendali comu
 
 **Rischio tecnico:** consentire l'accesso ai carichi di lavoro dalla rete Internet pubblica introduce un rischio di intrusione con conseguente esposizione non autorizzata dei dati e interruzione delle attività aziendali.
 
-**Definizione dei criteri**: alle subnet contenenti dati protetti non deve essere possibile accedere direttamente tramite la rete Internet pubblica o tra data center. L'accesso a tali subnet deve essere instradato tramite una subnet intermedia. Tutti gli accessi a tali subnet devono passare attraverso una soluzione firewall in grado di eseguire la scansione dei pacchetti e applicare funzioni di blocco.
+**Definizione dei criteri**: alle subnet contenenti dati protetti non deve essere possibile accedere direttamente tramite la rete Internet pubblica o tra data center. L'accesso a tali subnet deve essere instradato tramite subnet intermedie. Tutti gli accessi a tali subnet devono passare attraverso una soluzione firewall in grado di eseguire la scansione dei pacchetti e applicare funzioni di blocco.
 
-**Possibili opzioni di progettazione:** in Azure proteggere gli endpoint pubblici distribuendo una [rete perimetrale tra la rete Internet pubblica e la rete basata sul cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Possibili opzioni di progettazione:** in Azure proteggere gli endpoint pubblici distribuendo una [rete perimetrale tra la rete Internet pubblica e la rete basata sul cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Prendere in considerazione la distribuzione, la configurazione e l'automazione del [firewall di Azure](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>Protezione da attacchi DDoS
+## <a name="ddos-protection"></a>Protezione DDoS
 
 **Rischio tecnico:** gli attacchi Distributed Denial of Service (DDoS) possono comportare un'interruzione delle attività aziendali.
 
-**Definizione dei criteri**: distribuire meccanismi automatizzati di mitigazione degli attacchi DDoS in tutti gli endpoint di rete accessibili pubblicamente.
+**Definizione dei criteri**: distribuire meccanismi automatizzati di mitigazione degli attacchi DDoS in tutti gli endpoint di rete accessibili pubblicamente. Nessun sito Web pubblico supportato da IaaS dovrebbe essere esposto a Internet senza DDoS.
 
-**Possibili opzioni di progettazione:** usare [Protezione DDoS di Azure](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) per ridurre al minimo le interruzioni causate dagli attacchi DDoS.
+**Possibili opzioni di progettazione:** Usare la [protezione DDoS di Azure](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) standard per ridurre al minimo le rotture dovute ad attacchi DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Proteggere la connettività locale
 
@@ -88,7 +88,7 @@ Le istruzioni dei criteri di esempio seguenti affrontano i rischi aziendali comu
 
 **Definizione dei criteri**: tendenze e potenziali exploit che possono influire sulle distribuzioni cloud devono essere esaminati regolarmente dal team responsabile della sicurezza in modo da fornire aggiornamenti per gli strumenti della baseline di sicurezza usati nel cloud.
 
-**Possibili opzioni di progettazione:** pianificare riunioni periodiche con i membri principali dei team responsabili dell'IT e della governance al fine di verificare la sicurezza. Esaminare i dati di sicurezza e le metriche esistenti per stabilire i gap nei criteri correnti e gli strumenti di base della sicurezza e aggiornare i criteri per correggere eventuali nuovi rischi.
+**Possibili opzioni di progettazione:** pianificare riunioni periodiche con i membri principali dei team responsabili dell'IT e della governance al fine di verificare la sicurezza. Esaminare i dati di sicurezza e le metriche esistenti per stabilire i gap nei criteri correnti e gli strumenti di base della sicurezza e aggiornare i criteri per correggere eventuali nuovi rischi. Sfrutta [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) e il [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) per ottenere informazioni dettagliate di utilità pratica sulle minacce emergenti specifiche per le distribuzioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modello di coerenza delle risorse
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029949"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221914"
 ---
 # <a name="resource-consistency-template"></a>Modello di coerenza delle risorse
 
-Il primo passaggio per attuare la modifica è comunicare la modifica desiderata. Lo stesso vale quando si modificano le pratiche di governance. Il modello riportato di seguito funge da punto di partenza per documentare e comunicare istruzioni dei criteri che regolano le operazioni e la gestione IT nel cloud.
+Il primo passaggio per l'implementazione della modifica è la comunicazione di ciò che si desidera. Lo stesso vale quando si modificano le pratiche di governance. Il modello riportato di seguito funge da punto di partenza per documentare e comunicare istruzioni dei criteri che regolano le operazioni e la gestione IT nel cloud.
 
 Con l'avanzamento della discussione, utilizzare la struttura del modello come modello per acquisire i rischi aziendali, le tolleranze di rischio, i processi di conformità e gli strumenti necessari per definire le istruzioni dei criteri di coerenza delle risorse dell'organizzazione.
 

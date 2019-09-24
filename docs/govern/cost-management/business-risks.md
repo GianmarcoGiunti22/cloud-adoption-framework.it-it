@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivazioni e rischi aziendali della gestione dei costi
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027765"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223615"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Motivazioni e rischi aziendali della gestione dei costi
 
@@ -37,9 +37,9 @@ La disciplina Gestione costi affronta i rischi aziendali di base correlati alle 
 I rischi si differenziano per l'organizzazione, ma i rischi correlati ai costi comuni che è possibile usare come punto di partenza per le discussioni all'interno del team di governance del cloud sono i seguenti:
 
 - **Controllo budget:** Il mancato controllo del budget può portare a una spesa eccessiva con un fornitore di servizi cloud.
-- **Perdita di utilizzo:** I preacquisti o i preimpegni che non vengono usati possono causare investimenti inutili.
+- **Perdita di utilizzo:** I preacquisti o i preimpegni che non vengono usati possono causare investimenti persi.
 - **Anomalie di spesa:** Picchi imprevisti in entrambe le direzioni possono indicare un utilizzo improprio.
-- **Asset con provisioning eccessivo:** Se le risorse vengono distribuite in una configurazione che supera le esigenze di un'applicazione o di una macchina virtuale (VM, Virtual Machine), i costi possono aumentare e si possono creare sprechi.
+- **Asset con provisioning eccessivo:** Quando le risorse vengono distribuite in una configurazione che supera le esigenze di un'applicazione o di una macchina virtuale (VM), possono creare degli sprechi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

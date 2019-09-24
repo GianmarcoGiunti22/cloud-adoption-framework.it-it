@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030295"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223826"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Guida aziendale standard: Informazioni aggiuntive sulla descrizione
 
@@ -61,7 +61,7 @@ La decisione sulla progettazione di sottoscrizioni da usare determina il modo in
 
 Le decisioni relative alla coerenza delle risorse determinano gli strumenti, i processi e gli sforzi necessari per garantire la distribuzione, la configurazione e la gestione delle risorse di Azure in una sottoscrizione. In questa descrizione, la **[coerenza della distribuzione](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** è stata scelta come modello di coerenza delle risorse primario.
 
-- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita: tutti gli elementi creati insieme vengono mantenuti insieme e i ritiri possono risiedere in un singolo gruppo di risorse.
+- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita: tutto ciò che viene creato, mantenuto e ritirato insieme dovrebbe risiedere in un singolo gruppo di risorse. Per ulteriori informazioni sui gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - A tutte le sottoscrizioni nel gruppo di gestione associato è necessario applicare Criteri di Azure.
 - Come parte del processo di distribuzione, i modelli di coerenza delle risorse di Azure per tutti i gruppi di risorse devono essere archiviati nel controllo del codice sorgente.
 - Ogni gruppo di risorse è associato a un carico di lavoro specifico o a un'applicazione basata sull'approccio del ciclo di vita descritto in precedenza.
@@ -116,7 +116,7 @@ Se uno qualsiasi dei modelli selezionati in questa guida alla governance non è 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver implementato queste linee guida, ogni team di adozione del cloud può contare su una solida base di conoscenze relative alla governance. Il team di governance del cloud collaborerà in parallelo per aggiornare continuamente i criteri aziendali e le discipline di governance.
+Dopo aver implementato queste linee guida, ogni team di adozione del cloud può contare su una solida base di conoscenze relative alla governance. Allo stesso tempo, il team di governance del cloud si impegna a aggiornare continuamente i criteri aziendali e le discipline di governance.
 
 I due team utilizzeranno gli indicatori di tolleranza per identificare il set successivo di miglioramenti necessari per continuare a supportare l'adozione del cloud. Per la società fittizia in questa guida, il passaggio successivo consiste nel migliorare la linea di base di sicurezza per supportare lo stato di trasferimento dei dati protetti nel cloud.
 

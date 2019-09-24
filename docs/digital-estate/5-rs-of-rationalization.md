@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Esaminare le opzioni disponibili per la razionalizzazione di un digital estate.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023610"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223862"
 ---
 # <a name="cloud-rationalization"></a>Razionalizzazione del cloud
 
@@ -59,7 +59,7 @@ Fattori di analisi qualitativa:
 - Eventi aziendali critici
 - Dipendenze dei processi
 
-## <a name="refactor"></a>Effettua il refactoring
+## <a name="refactor"></a>Refactoring
 
 Le opzioni di piattaforma distribuita come servizio (PaaS) possono ridurre i costi operativi associati a molte applicazioni. È consigliabile effettuare leggermente il refactoring di un'applicazione per adattarla a un modello basato su PaaS.
 
@@ -69,7 +69,7 @@ I driver comuni possono includere:
 
 - Aggiornamenti più veloci e più brevi
 - Portabilità del codice
-- Maggiore efficienza del cloud (risorse, velocità, costo)
+- Maggiore efficienza del cloud (risorse, velocità, costi, operazioni gestite)
 
 Fattori di analisi quantitativa:
 
@@ -77,6 +77,7 @@ Fattori di analisi quantitativa:
 - Dipendenze (traffico di rete)
 - Traffico utente (visualizzazioni pagina, tempo su una pagina, tempo di caricamento)
 - Piattaforma di sviluppo (linguaggi, piattaforma dati, servizi di livello intermedio)
+- Database (CPU, memoria, archiviazione, versione)
 
 Fattori di analisi qualitativa:
 
@@ -84,7 +85,7 @@ Fattori di analisi qualitativa:
 - Aumento delle opzioni/sequenze temporali
 - Dipendenze dei processi aziendali
 
-## <a name="rearchitect"></a>Riprogetta
+## <a name="rearchitect"></a>Riprogettazione
 
 Alcune applicazioni obsolete non sono compatibili con i provider di servizi cloud a causa delle decisioni di architettura effettuate durante la compilazione dell'applicazione. In questi casi, potrebbe essere necessario riprogettare l'applicazione prima della trasformazione.
 
@@ -102,6 +103,7 @@ Fattori di analisi quantitativa:
 - Dipendenze (traffico di rete)
 - Traffico utente (visualizzazioni pagina, tempo su una pagina, tempo di caricamento)
 - Piattaforma di sviluppo (linguaggi, piattaforme di dati, servizi di livello intermedio)
+- Database (CPU, memoria, archiviazione, versione)
 
 Fattori di analisi qualitativa:
 
@@ -115,7 +117,7 @@ In alcuni scenari, il Delta che deve essere superato per portare avanti un'appli
 
 I driver comuni possono includere:
 
-- Accelera l'innovazione
+- Accelerazione dell'innovazione
 - Compilazione delle app più veloce
 - Riduzione dei costi operativi
 
@@ -125,6 +127,7 @@ Fattori di analisi quantitativa:
 - Dipendenze (traffico di rete)
 - Traffico utente (visualizzazioni pagina, tempo su una pagina, tempo di caricamento)
 - Piattaforma di sviluppo (linguaggi, piattaforme di dati, servizi di livello intermedio)
+- Database (CPU, memoria, archiviazione, versione)
 
 Fattori di analisi qualitativa:
 
@@ -148,6 +151,7 @@ Fattori di analisi quantitativa:
 - Dimensioni della macchina virtuale (CPU, memoria, archiviazione)
 - Dipendenze (traffico di rete)
 - Asset da ritirare
+- Database (CPU, memoria, archiviazione, versione)
 
 Fattori di analisi qualitativa:
 

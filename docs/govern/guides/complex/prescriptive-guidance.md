@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027142"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220660"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Guida alla governance per le aziende complesse: Informazioni aggiuntive sulla descrizione
 
@@ -59,13 +59,17 @@ La decisione sulla progettazione di sottoscrizioni da usare determina il modo in
 
 ### <a name="resource-consistency"></a>Coerenza delle risorse
 
-Le decisioni relative alla coerenza delle risorse determinano gli strumenti, i processi e gli sforzi necessari per garantire la distribuzione, la configurazione e la gestione delle risorse di Azure in una sottoscrizione. In questa descrizione, è stata scelta la **[coerenza gerarchica](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** come modello di coerenza delle risorse primario.
+Le decisioni relative alla coerenza delle risorse determinano gli strumenti, i processi e gli sforzi necessari per garantire la distribuzione, la configurazione e la gestione delle risorse di Azure in una sottoscrizione. In questa descrizione, la **[coerenza della distribuzione](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** è stata scelta come modello di coerenza delle risorse primario.
 
-- Per ogni applicazione è necessario creare gruppi di risorse. Per ogni archetipo di applicazione è necessario creare gruppi di gestione. A tutte le sottoscrizioni nel gruppo di gestione associato è necessario applicare Criteri di Azure.
-- Come parte del processo di distribuzione, i modelli di coerenza delle risorse per tutti gli asset devono essere archiviati nel controllo del codice sorgente.
-- Ogni gruppo di risorse deve essere allineato a un'applicazione o a un carico di lavoro specifico.
-- La gerarchia dei gruppi di gestione di Azure definita deve rappresentare la responsabilità di fatturazione e la proprietà delle applicazioni in base a gruppi nidificati.
-- Un'implementazione estesa di Criteri di Azure può richiedere al team più tempo del previsto e non offrire particolare valore a questo punto. È tuttavia opportuno creare e applicare semplici criteri predefiniti per imporre le prime definizioni dei criteri di governance del cloud. Ciò consente di definire l'implementazione di requisiti di governance specifici che può quindi essere applicata a tutti gli asset distribuiti.
+- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita: tutto ciò che viene creato, mantenuto e ritirato insieme dovrebbe risiedere in un singolo gruppo di risorse. Per ulteriori informazioni sui gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- A tutte le sottoscrizioni nel gruppo di gestione associato è necessario applicare Criteri di Azure.
+- Come parte del processo di distribuzione, i modelli di coerenza delle risorse di Azure per tutti i gruppi di risorse devono essere archiviati nel controllo del codice sorgente.
+- Ogni gruppo di risorse è associato a un carico di lavoro specifico o a un'applicazione basata sull'approccio del ciclo di vita descritto in precedenza.
+- I gruppi di gestione di Azure consentono l'aggiornamento delle progettazioni di governance man mano che maturano i criteri aziendali.
+- Un'implementazione estesa di Criteri di Azure può richiedere al team più tempo del previsto e non offrire particolari vantaggi a questo punto. È tuttavia opportuno creare e applicare semplici criteri predefiniti per imporre le poche definizioni dei criteri di governance del cloud. Questi criteri consentono di definire l'implementazione di requisiti di governance specifici che può quindi essere applicata a tutti gli asset distribuiti.
+
+>[!IMPORTANT]
+>Ogni volta che una risorsa in un gruppo di risorse non condivide più lo stesso ciclo di vita, deve essere spostata in un altro gruppo di risorse. Tra gli esempi sono inclusi i database comuni e i componenti di rete. Sebbene possano gestire l'applicazione in fase di sviluppo, possono anche essere utilizzati per altri scopi e devono pertanto esistere in altri gruppi di risorse.
 
 ### <a name="resource-tagging"></a>Tag delle risorse
 
@@ -122,7 +126,7 @@ Se uno qualsiasi dei modelli scelti in questa guida alla governance non è allin
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver implementato queste linee guida, ogni team di adozione del cloud può contare su una solida base di conoscenze relative alla governance. Il team di governance del cloud collaborerà in parallelo per aggiornare continuamente i criteri aziendali e le discipline di governance.
+Dopo aver implementato queste linee guida, ogni team di adozione del cloud può contare su una solida base di conoscenze relative alla governance. Allo stesso tempo, il team di governance del Cloud funzionerà per aggiornare continuamente i criteri aziendali e le discipline di governance.
 
 Entrambi i team utilizzeranno gli indicatori di tolleranza per identificare il set successivo di miglioramenti necessari per continuare a supportare l'adozione del cloud. Il passaggio successivo per questa società è il miglioramento incrementale della linea di base di governance per supportare le applicazioni con requisiti di autenticazione a più fattori legacy o di terze parti.
 

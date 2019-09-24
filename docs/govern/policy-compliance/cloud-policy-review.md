@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni su come condurre una revisione dei criteri cloud.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 167613bd304505bc53128c2864250e5cae80b281
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028977"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223844"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Man mano che le organizzazioni maturano i propri criteri IT aziendali, le dipend
 Le trasformazioni cloud creano un punto di flessione naturale per riconsiderare le decisioni relative ai criteri legacy del passato. Le funzionalità tecniche e i processi predefiniti cambiano notevolmente nel cloud, così come i rischi ereditati. Utilizzando l'esempio precedente, il criterio di backup su nastro è stato associato al rischio di un singolo punto di errore mantenendo i dati in un'unica posizione e la necessità di ridurre al minimo il profilo di rischio mitigando questo rischio. In una distribuzione cloud sono disponibili diverse opzioni per la stessa mitigazione dei rischi, con obiettivi del tempi di ripristino (RTO, Recovery Time Objective) molto inferiori. Esempio:
 
 - Una soluzione nativa del cloud potrebbe abilitare la replica geografica del database SQL di Azure.
-- Una soluzione ibrida può usare Azure Site Recovery per replicare un carico di lavoro IaaS in più data center.
+- Una soluzione ibrida può usare Azure Site Recovery per replicare un carico di lavoro IaaS in Azure.
 
 Quando si esegue una trasformazione per il cloud, spesso i criteri determinano molti degli strumenti, dei servizi e dei processi disponibili per i team di adozione del cloud. Se questi criteri si basano su tecnologie legacy, possono intralciare gli sforzi del team mirati all'attuazione delle modifiche. Nel peggiore dei casi i criteri importanti vengono completamente ignorati dal team di migrazione per abilitare soluzioni alternative. Nessuno dei due è un risultato accettabile.
 
@@ -43,8 +43,8 @@ Per ognuna di queste discipline, il processo di revisione segue questi passaggi:
 
 1. Rivedere i criteri locali esistenti correlati alla disciplina specifica, prestando particolare attenzione a due punti dati chiave: dipendenze legacy e rischi aziendali identificati.
 2. Valutare ogni rischio aziendale ponendo una semplice domanda: "Il rischio aziendale sussiste ancora in un modello di cloud?"
-3. Se il rischio persiste, riscrivere il criterio documentando la mitigazione necessaria e non la soluzione tecnica.
-4. Rivedere i criteri aggiornati con i team di adozione del cloud per comprendere le potenziali soluzioni per la mitigazione richiesta.
+3. Se il rischio persiste, riscrivere il criterio documentando la mitigazione aziendale necessaria, non la soluzione tecnica.
+4. Esaminare i criteri aggiornati con i team di adozione del cloud per comprendere le soluzioni tecniche potenziali per la mitigazione richiesta.
 
 ## <a name="example-of-a-policy-review-for-a-legacy-policy"></a>Esempio di una revisione dei criteri per un criterio legacy
 
@@ -55,6 +55,7 @@ Per fornire un esempio del processo, è possibile usare nuovamente il criterio d
   - Rischio aziendale presunto associato all'archiviazione dei backup nella stessa posizione fisica delle attrezzature di produzione.
 - Il rischio sussiste ancora? Sì. Anche nel cloud una dipendenza da una singola funzionalità crea un rischio. Ci sono minori probabilità che interessi l'azienda rispetto alla soluzione in locale, ma tale rischio esiste comunque.
 - Riscrivere il criterio. In caso di emergenza a livello di data center, deve esistere un modo per ripristinare i sistemi di produzione entro 24 ore dall'interruzione del servizio in un altro data center e in un'area geografica diversa.
+  - È anche importante tenere presente che la sequenza temporale specificata nel requisito precedente potrebbe essere stata impostata da vincoli tecnici che non sono più presenti nel cloud. Assicurarsi di comprendere i vincoli tecnici e le funzionalità del cloud prima di applicare semplicemente un RTO/RPO legacy.
 - Procedere alla revisione con i team di adozione del cloud. A seconda della soluzione implementata, ci sono più modi per rispettare questo criterio di Coerenza delle risorse.
 
 ## <a name="next-steps"></a>Passaggi successivi

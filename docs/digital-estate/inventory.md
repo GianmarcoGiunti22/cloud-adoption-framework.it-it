@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023492"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222613"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Raccogliere i dati di inventario per un digital estate
 
@@ -28,6 +28,9 @@ L'inventario che supporta un'area digitale cambia a seconda della trasformazione
 - **Innovazione dell'applicazione:** L'inventario durante un tentativo di innovazione di applicazioni abilitate per il cloud inizia con il cliente. L'esecuzione il mapping dell'esperienza del cliente dall'inizio alla fine è un buon punto di partenza. L'allineamento di tale mappa ad applicazioni, API, dati e altre risorse consente di creare un inventario dettagliato per l'analisi.
 
 - **Innovazione dei dati:** Gli sforzi di innovazione dei dati abilitati per il cloud si concentrano sul prodotto o sul servizio. Un inventario include anche un mapping delle opportunità per l'interferenza del mercato, oltre alle funzionalità necessarie.
+
+- **Sicurezza:** L'inventario garantisce la sicurezza della comprensione per la valutazione, la protezione e il monitoraggio delle risorse dell'organizzazione.
+
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Accuratezza e completezza di un inventario
 

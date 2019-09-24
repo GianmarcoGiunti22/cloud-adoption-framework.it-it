@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guida aziendale standard: Migliorare la disciplina della linea di base di sicurezza'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223776"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Guida aziendale standard: Migliorare la disciplina della linea di base di sicurezza
 
@@ -71,7 +71,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dal proprietario dell'applicazione prima della distribuzione nel cloud.
 2. Le applicazioni che archiviano o accedono ai dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo fanno. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
-3. Tutti i dati protetti devono essere crittografati quando inattivi.
+3. tutti i dati protetti devono essere crittografati quando inattivi. Anche se questa è l'impostazione predefinita per tutti gli account di archiviazione di Azure, potrebbero essere necessarie strategie di crittografia aggiuntive, inclusa la crittografia dei dati nell'account di archiviazione, la crittografia delle VM e la crittografia a livello di database se si usa SQL in una VM (Transparent Data Encryption e colonna) crittografia).
 4. Le autorizzazioni con privilegi elevati in qualsiasi segmento contenente dati protetti devono essere un'eccezione. Tali eccezioni verranno registrate con il team di governance del cloud e controllate regolarmente.
 5. le subnet di rete contenenti dati protetti devono essere isolate dalle altre subnet. Il traffico di rete tra le subnet di dati protetti verrà controllato regolarmente.
 6. Alle subnet contenenti dati protetti non deve essere possibile accedere direttamente tramite la rete Internet pubblica o tra data center. L'accesso a tali subnet deve essere instradato tramite subnet intermedie. Tutti gli accessi a tali subnet devono passare attraverso una soluzione firewall in grado di eseguire la scansione dei pacchetti e applicare funzioni di blocco.
@@ -93,35 +93,35 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 La progettazione degli MVP di governance cambierà in modo da includere i nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove istruzioni dei criteri aziendali.
 
 1. I team responsabili della rete e della sicurezza IT definiranno i requisiti di rete. Il team di governance del cloud supporterà la conversazione.
-1. I team responsabili delle identità e della sicurezza IT definiranno i requisiti di identità e apporteranno le eventuali modifiche necessarie all'implementazione di Active Directory locale. Il team di governance del cloud verificherà le modifiche.
-1. Creare un archivio in Azure DevOps per l'archiviazione e il controllo delle versioni di tutti i modelli di Azure Resource Manager e le configurazioni tramite script pertinenti.
-1. Implementazione del Centro sicurezza di Azure:
+2. I team responsabili delle identità e della sicurezza IT definiranno i requisiti di identità e apporteranno le eventuali modifiche necessarie all'implementazione di Active Directory locale. Il team di governance del cloud verificherà le modifiche.
+3. Creare un archivio in Azure DevOps per l'archiviazione e il controllo delle versioni di tutti i modelli di Azure Resource Manager e le configurazioni tramite script pertinenti.
+4. Implementazione del Centro sicurezza di Azure:
     1. Configurare il Centro sicurezza di Azure per qualsiasi gruppo di gestione che contiene le classificazioni dei dati protetti.
-    1. Attivare il provisioning automatico per impostazione predefinita per garantire la conformità delle patch.
-    1. Definire configurazioni di sicurezza del sistema operativo. La configurazione verrà definita dal team responsabile della sicurezza IT.
-    1. Supportare il team responsabile della sicurezza IT per l'uso iniziale del Centro sicurezza. Passare la responsabilità dell'uso del Centro sicurezza al team responsabile della sicurezza IT, ma mantenere l'accesso allo scopo di migliorare continuamente la governance.
-    1. Creare un modello di Resource Manager che riflette le modifiche necessarie per la configurazione del Centro sicurezza all'interno di una sottoscrizione.
-1. Aggiornare i criteri di Azure per tutte le sottoscrizioni:
+    2. Attivare il provisioning automatico per impostazione predefinita per garantire la conformità delle patch.
+    3. Definire configurazioni di sicurezza del sistema operativo. La configurazione verrà definita dal team responsabile della sicurezza IT.
+    4. Supportare il team responsabile della sicurezza IT per l'uso iniziale del Centro sicurezza. Passare la responsabilità dell'uso del Centro sicurezza al team responsabile della sicurezza IT, ma mantenere l'accesso allo scopo di migliorare continuamente la governance.
+    5. Creare un modello di Resource Manager che riflette le modifiche necessarie per la configurazione del Centro sicurezza all'interno di una sottoscrizione.
+5. Aggiornare i criteri di Azure per tutte le sottoscrizioni:
     1. Controllare e applicare la criticità e la classificazione dei dati in tutti i gruppi di gestione e le sottoscrizioni per identificare quelle con classificazioni di dati protetti.
-    1. Controllare e imporre l'uso delle sole immagini approvate.
-1. Aggiornare i criteri di Azure per tutte le sottoscrizioni che contengono classificazioni di dati protetti:
+    2. Controllare e imporre l'uso delle sole immagini approvate.
+6. Aggiornare i criteri di Azure per tutte le sottoscrizioni che contengono classificazioni di dati protetti:
     1. Controllare e imporre l'uso dei soli ruoli di controllo degli accessi in base al ruolo di Azure.
-    1. Controllo e imporre la crittografia per tutti gli account di archiviazione e i file inattivi nei singoli nodi.
-    1. Controllare e imporre l'applicazione di un gruppo di sicurezza di rete per tutte le schede di interfaccia di rete e subnet. I team responsabili della rete e della sicurezza IT definiranno il gruppo di sicurezza di rete.
-    1. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
-    1. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
-    1. Applicare i criteri predefiniti per la configurazione guest come indicato di seguito:
+    2. Controllo e imporre la crittografia per tutti gli account di archiviazione e i file inattivi nei singoli nodi.
+    3. Controllare e imporre l'applicazione di un gruppo di sicurezza di rete per tutte le schede di interfaccia di rete e subnet. I team responsabili della rete e della sicurezza IT definiranno il gruppo di sicurezza di rete.
+    4. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
+    5. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
+    6. Applicare i criteri predefiniti per la configurazione guest come indicato di seguito:
         1. Controllare che i server Web Windows usino protocolli di comunicazione sicuri.
-        1. Controllare che le impostazioni di sicurezza della password siano configurate correttamente nelle macchine virtuali Linux e Windows.
-1. Configurazione del firewall:
+        2. Controllare che le impostazioni di sicurezza della password siano configurate correttamente nelle macchine virtuali Linux e Windows.
+7. Configurazione del firewall:
     1. Identificare una configurazione di Firewall di Azure che soddisfi i requisiti di sicurezza necessari. In alternativa, identificare un'appliance di terze parti compatibile con Azure.
-    1. Creare un modello di Resource Manager per distribuire il firewall con le configurazioni necessarie.
-1. Azure Blueprints:
+    2. Creare un modello di Resource Manager per distribuire il firewall con le configurazioni necessarie.
+8. Azure Blueprints:
     1. Creare un nuovo progetto denominato `protected-data`.
-    1. Aggiungere il firewall e i modelli del Centro sicurezza di Azure al progetto.
-    1. Aggiungere i nuovi criteri per le sottoscrizioni con dati protetti.
-    1. Pubblicare il progetto in un gruppo di gestione che attualmente prevede l'hosting dei dati protetti.
-    1. Applicare il nuovo progetto a ogni sottoscrizione interessata, nonché ai progetti esistenti.
+    2. Aggiungere il firewall e i modelli del Centro sicurezza di Azure al progetto.
+    3. Aggiungere i nuovi criteri per le sottoscrizioni con dati protetti.
+    4. Pubblicare il progetto in un gruppo di gestione che attualmente prevede l'hosting dei dati protetti.
+    5. Applicare il nuovo progetto a ogni sottoscrizione interessata, nonché ai progetti esistenti.
 
 ## <a name="conclusion"></a>Conclusione
 

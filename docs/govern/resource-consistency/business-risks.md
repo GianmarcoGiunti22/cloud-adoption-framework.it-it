@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivazioni e rischi aziendali correlati alla coerenza delle risorse
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030078"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222009"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motivazioni e rischi aziendali correlati alla coerenza delle risorse
 
@@ -22,7 +22,7 @@ Questo articolo illustra i motivi per cui i clienti in genere adottano una disci
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>La coerenza delle risorse è pertinente?
+## <a name="resource-consistency-relevancy"></a>Pertinenza della coerenza delle risorse
 
 Quando si tratta di distribuire risorse e carichi di lavoro, il cloud offre un'agilità e una flessibilità maggiori rispetto ai tradizionali data center locali. Questi potenziali vantaggi del cloud, tuttavia, vengono compensati dai potenziali svantaggi di gestione che possono compromettere seriamente il successo di un processo di adozione del cloud. Quali asset sono stati distribuiti? Quali sono i team proprietari degli asset? Si dispone di risorse sufficienti per supportare un carico di lavoro? Come si può sapere se i carichi di lavoro sono integri?
 

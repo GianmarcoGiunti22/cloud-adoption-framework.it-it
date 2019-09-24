@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027967"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222322"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di identità
 
@@ -79,14 +79,14 @@ Ecco le nuove procedure consigliate:
 - **Progetto VNet ibrido sicuro:** Il lato locale della rete ibrida deve essere configurato per consentire la comunicazione tra la soluzione seguente e i server Active Directory locali. La procedura consigliata richiede una rete perimetrale per abilitare Active Directory Domain Services attraverso i limiti di rete.
 - **Modelli di Azure Resource Manager:**
     1. Definire un NSG per bloccare il traffico esterno e consentire il traffico interno.
-    1. Distribuire due macchine virtuali Active Directory in una coppia con carico bilanciato in base a un'immagine dorata. Al primo avvio, l'immagine esegue uno script di PowerShell per eseguire l'aggiunta al dominio e la registrazione con i servizi di dominio. Per altre informazioni, vedere [Estendere Active Directory Domain Services in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Distribuire due macchine virtuali Active Directory in una coppia con carico bilanciato in base a un'immagine dorata. Al primo avvio, l'immagine esegue uno script di PowerShell per eseguire l'aggiunta al dominio e la registrazione con i servizi di dominio. Per altre informazioni, vedere [Estendere Active Directory Domain Services in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Criteri di Azure: Applicare il gruppo di sicurezza a tutte le risorse.
 - Azure Blueprints:
     1. Creare un progetto denominato `active-directory-virtual-machines`.
-    1. Aggiungere tutti i modelli e i criteri di Active Directory al progetto.
-    1. Pubblicare il progetto in qualsiasi gruppo di gestione applicabile.
-    1. Applicare il progetto a qualsiasi sottoscrizione che richiede l'autenticazione a più fattori legacy o di terze parti.
-    1. È ora possibile usare l'istanza di Active Directory in esecuzione in Azure come estensione della soluzione Active Directory locale, in modo da consentire l'integrazione con lo strumento di autenticazione a più fattori esistente e fornire l'autenticazione basata sulle attestazioni, tramite funzionalità di Active Directory esistente.
+    2. Aggiungere tutti i modelli e i criteri di Active Directory al progetto.
+    3. Pubblicare il progetto in qualsiasi gruppo di gestione applicabile.
+    4. Applicare il progetto a qualsiasi sottoscrizione che richiede l'autenticazione a più fattori legacy o di terze parti.
+    5. È ora possibile usare l'istanza di Active Directory in esecuzione in Azure come estensione della soluzione Active Directory locale, in modo da consentire l'integrazione con lo strumento di autenticazione a più fattori esistente e fornire l'autenticazione basata sulle attestazioni, tramite funzionalità di Active Directory esistente.
 
 ## <a name="conclusion"></a>Conclusione
 

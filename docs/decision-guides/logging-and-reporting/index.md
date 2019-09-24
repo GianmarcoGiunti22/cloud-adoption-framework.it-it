@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026410"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223621"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guida alle decisioni relative a registrazione e creazione di report
 
@@ -69,7 +69,7 @@ Presupposti relativi solo all'ambiente locale:
 
 ### <a name="gateway-aggregation"></a>Aggregazione tramite il gateway
 
-Per gli scenari in cui la quantità di dati di telemetria basati sul cloud è elevata o in cui i sistemi di monitoraggio locali esistenti devono modificare i dati dei log prima di poterli elaborare, potrebbe essere necessario un servizio di [aggregazione tramite il gateway](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md) dei dati del log.
+Per gli scenari in cui la quantità di dati di telemetria basati sul cloud è elevata o in cui i sistemi di monitoraggio locali esistenti devono modificare i dati dei log prima di poterli elaborare, potrebbe essere necessario un servizio di [aggregazione tramite il gateway](/azure/architecture/patterns/gateway-aggregation) dei dati del log.
 
 Un servizio gateway viene distribuito al provider di servizi cloud. Le applicazioni e i servizi pertinenti vengono quindi configurati per inviare i dati di telemetria al gateway invece che a un sistema di registrazione predefinito. Il gateway può quindi elaborare i dati: prima li aggrega, li combina o li formatta in altro modo, quindi li invia al servizio di monitoraggio per l'inserimento e l'analisi.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028448"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222295"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guida alla governance per le aziende complesse: Più livelli di governance
 
@@ -57,4 +57,3 @@ L'aspetto importante di ogni strumento è la capacità di applicare più progett
 - **Team di adozione del cloud:** Le decisioni dettagliate e l'implementazione delle applicazioni o dei carichi di lavoro possono essere eseguite da ogni team di adozione del cloud, entro il contesto dei requisiti di governance. A volte il team può anche richiedere ulteriori modelli di coerenza di Azure Resource per accelerare le attività di adozione.
 
 I dettagli relativi all'attuazione della governance a ogni livello richiederanno un coordinamento tra i vari gruppi di lavoro. I miglioramenti apportati alla governance MVP e alla governance descritti in questa guida consentono di allineare il coordinamento.
-

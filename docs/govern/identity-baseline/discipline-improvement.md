@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Miglioramento della disciplina Baseline di identità
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030291"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220477"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Miglioramento della disciplina Baseline di identità
 
@@ -46,7 +46,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 - Definire i ruoli e le assegnazioni che regolano l'identità e la gestione dell'accesso nel cloud.
 - Definire i gruppi in locale ed associarli ai ruoli corrispondenti basati sul cloud.
 - Provider di identità di inventario (incluse le identità basate su database usate da applicazioni personalizzate).
-- Prendere in considerazione il consolidamento o l'integrazione di provider di identità in cui è presente la duplicazione, al fine di semplificare la soluzione di identità complessiva.
+- Consolidare e integrare i provider di identità laddove esiste la duplicazione, per semplificare la soluzione di identità complessiva e ridurre i rischi.
 - Valutare la compatibilità ibrida di provider di identità esistenti.
 - Per i provider di identità che non sono ibrido compatibili, valutare le opzioni di sostituzione o di consolidamento.
 
@@ -98,7 +98,7 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 - Convalidare e perfezionare la [strategia di identità ibrida](../../decision-guides/identity/index.md).
 - Assicurarsi che ogni applicazione o carico di lavoro continui l'allineamento alla strategia di identità prima del rilascio.
 - Verificare che Single Sign-On (SSO) e l'accesso SSO facile funzionino come previsto dalle applicazioni.
-- Se possibile, ridurre o eliminare il numero di archivi identità alternativi.
+- Ridurre o eliminare il numero di archivi di identità alternativi.
 - Esaminare la necessità per ogni archivio identità nell'app o nel database. Le identità che si trovano all'esterno di un provider di identità appropriato (proprio o di terze parti) possono rappresentare rischi per l'applicazione e gli utenti.
 - Abilitare l'accesso condizionale per le [Applicazioni federate locali](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Distribuire identità tra le aree globali in più hub con sincronizzazione tra le aree.
@@ -120,6 +120,7 @@ Al termine della trasformazione, la governance e le operazioni devono continuare
 **Attività potenziali:**
 
 - Eseguire controlli periodici dei criteri di identità e delle prassi di conformità.
+- Assicurarsi che gli account utente sensibili (CEO, CFO, VP e così via) siano sempre abilitati per l'autenticazione a più fattori e il rilevamento anomalo degli accessi.
 - Analizzare regolarmente gli attori malintenzionati e le violazioni dei dati, in particolare quelli correlati a furti di identità, ad esempio potenziali acquisizioni di account amministratore.
 - Configurare uno strumento di monitoraggio e creazione di report.
 - Prendere in considerazione minuziosamente l'integrazione con sistemi di prevenzione delle frodi e sicurezza.

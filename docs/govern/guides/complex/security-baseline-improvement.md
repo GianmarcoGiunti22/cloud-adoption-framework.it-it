@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030732"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220547"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di sicurezza
 
@@ -105,26 +105,26 @@ Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e 
 **Creazione di un hub IT aziendale e di una sottoscrizione spoke per centralizzare le basi di riferimento per la sicurezza:** In questa procedura consigliata, la capacità di governance esistente è incapsulata in una [topologia hub-spoke con servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), con alcune aggiunte chiave dal team di governance del cloud.
 
 1. Archivio di Azure DevOps. Creare un archivio in Azure DevOps per l'archiviazione e il controllo delle versioni di tutti i modelli di Azure Resource Manager e le configurazioni tramite script pertinenti.
-1. Modello hub e spoke:
+2. Modello hub e spoke:
     1. Le linee guida nella [topologia hub e spoke con architettura di riferimento dei servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) possono essere usate per generare modelli di gestione risorse per le risorse necessarie in un hub it aziendale.
-    1. Usando questi modelli, questa struttura può essere resa ripetibile, come parte di una strategia di governance centrale.
-    1. Oltre all'architettura di riferimento corrente, è consigliabile creare un modello di gruppo di sicurezza di rete che acquisisca i requisiti di blocco o di elenco elementi consentiti per il VNet per ospitare il firewall. Questo gruppo di sicurezza di rete è diverso dai gruppi precedenti, perché sarà il primo gruppo di sicurezza di rete a consentire il traffico pubblico in una VNet.
-1. Creare i criteri di Azure. Creare un criterio denominato `Hub NSG Enforcement` per applicare la configurazione del gruppo di sicurezza di rete assegnato a qualsiasi VNet creato in questa sottoscrizione. Applicare i criteri predefiniti per la configurazione guest come indicato di seguito:
+    2. Usando questi modelli, questa struttura può essere resa ripetibile, come parte di una strategia di governance centrale.
+    3. Oltre all'architettura di riferimento corrente, è consigliabile creare un modello di gruppo di sicurezza di rete che acquisisca i requisiti di blocco o di elenco elementi consentiti per il VNet per ospitare il firewall. Questo gruppo di sicurezza di rete è diverso dai gruppi precedenti, perché sarà il primo gruppo di sicurezza di rete a consentire il traffico pubblico in una VNet.
+3. Creare i criteri di Azure. Creare un criterio denominato `Hub NSG Enforcement` per applicare la configurazione del gruppo di sicurezza di rete assegnato a qualsiasi VNet creato in questa sottoscrizione. Applicare i criteri predefiniti per la configurazione guest come indicato di seguito:
     1. Controllare che i server Web Windows usino protocolli di comunicazione sicuri.
-    1. Controllare che le impostazioni di sicurezza della password siano configurate correttamente nelle macchine virtuali Linux e Windows.
-1. Progetto IT aziendale
+    2. Controllare che le impostazioni di sicurezza della password siano configurate correttamente nelle macchine virtuali Linux e Windows.
+4. Progetto IT aziendale
     1. Creare un progetto di Azure denominato `corporate-it-subscription`.
-    1. Aggiungere i criteri e `Hub NSG Enforcement` i modelli hub e spoke.
-1. Ampliamento della gerarchia dei gruppi di gestione iniziale.
+    2. Aggiungere i criteri e `Hub NSG Enforcement` i modelli hub e spoke.
+5. Ampliamento della gerarchia dei gruppi di gestione iniziale.
     1. Per ogni gruppo di gestione che ha richiesto il supporto per i dati protetti, il progetto `corporate-it-subscription-blueprint` offre una soluzione hub accelerata.
-    1. Poiché i gruppi di gestione in questo esempio fittizio comprendono una gerarchia a livello di area oltre a una gerarchia di business unit, questo progetto verrà distribuito in ogni area.
-    1. Per ogni area nella gerarchia dei gruppi di gestione, creare una sottoscrizione denominata `Corporate IT Subscription`.
-    1. Applicare il progetto `corporate-it-subscription-blueprint` a ogni istanza a livello di area.
-    1. In questo modo verrà stabilito un hub per ogni business unit in ogni area. Nota: è possibile ottenere ulteriori risparmi sui costi, condividendo gli hub tra business unit in ogni area.
-1. Integrare gli oggetti Criteri di gruppo tramite Desired State Configuration (DSC):
+    2. Poiché i gruppi di gestione in questo esempio fittizio comprendono una gerarchia a livello di area oltre a una gerarchia di business unit, questo progetto verrà distribuito in ogni area.
+    3. Per ogni area nella gerarchia dei gruppi di gestione, creare una sottoscrizione denominata `Corporate IT Subscription`.
+    4. Applicare il progetto `corporate-it-subscription-blueprint` a ogni istanza a livello di area.
+    5. In questo modo verrà stabilito un hub per ogni business unit in ogni area. Nota: è possibile ottenere ulteriori risparmi sui costi, condividendo gli hub tra business unit in ogni area.
+6. Integrare gli oggetti Criteri di gruppo tramite Desired State Configuration (DSC):
     1. Convertire l'oggetto Criteri di gruppo in DSC: il [progetto di gestione Baseline Microsoft](https://github.com/Microsoft/BaselineManagement) in GitHub può accelerare questa operazione. * Assicurarsi di archiviare la configurazione DSC nell'archivio in parallelo con i modelli di Resource Manager.
-    1. Distribuire la configurazione dello stato di Automazione di Azure in tutte le istanze della sottoscrizione IT aziendale. È possibile usare Automazione di Azure per applicare la configurazione DSC alle macchine virtuali distribuite nelle sottoscrizioni supportate all'interno del gruppo di gestione.
-    1. La roadmap corrente prevede l'abilitazione di criteri di configurazione guest personalizzati. Dopo il rilascio di questa funzionalità, non sarà più necessario usare Automazione di Azure per questa procedura consigliata.
+    2. Distribuire la configurazione dello stato di Automazione di Azure in tutte le istanze della sottoscrizione IT aziendale. È possibile usare Automazione di Azure per applicare la configurazione DSC alle macchine virtuali distribuite nelle sottoscrizioni supportate all'interno del gruppo di gestione.
+    3. La roadmap corrente prevede l'abilitazione di criteri di configurazione guest personalizzati. Dopo il rilascio di questa funzionalità, non sarà più necessario usare Automazione di Azure per questa procedura consigliata.
 
 **Applicazione della governance aggiuntiva a una sottoscrizione di adozione cloud:** `Corporate IT Subscription`La creazione di modifiche minime all'MVP di governance applicato a ogni sottoscrizione dedicata al supporto degli archetipi delle applicazioni può produrre un miglioramento rapido.
 
@@ -132,38 +132,38 @@ Nelle modifiche iterative precedenti alla procedura consigliata, sono stati defi
 
 1. Modello di peering di rete. Questo modello consentirà il peering della rete virtuale in ogni sottoscrizione con la rete virtuale dell'hub nella sottoscrizione IT aziendale.
     1. L'architettura di riferimento dalla sezione precedente, la [topologia hub e spoke con servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), ha generato un modello di gestione risorse per l'abilitazione del peering VNet.
-    1. Questo modello può essere usato come guida per modificare il modello di rete perimetrale dall'iterazione governance precedente.
-    1. Essenzialmente, si aggiunge ora il peering reti virtuali alla rete virtuale perimetrale connessa in precedenza al dispositivo perimetrale locale tramite VPN.
-    1. *** È anche consigliabile rimuovere la VPN dal modello e assicurarsi che il traffico non venga instradato direttamente al data center locale, senza passare attraverso la soluzione di firewall e la sottoscrizione IT aziendale.
-    1. Sarà necessaria una [configurazione di rete](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) aggiuntiva in Automazione di Azure per applicare la configurazione DSC alle macchine virtuali ospitate.
-1. Modificare il gruppo di sicurezza di rete. Bloccare tutto il traffico locale pubblico **e** diretto nel gruppo di sicurezza di rete. Il traffico in ingresso deve arrivare solo attraverso il peering reti virtuali nella sottoscrizione IT aziendale.
+    2. Questo modello può essere usato come guida per modificare il modello di rete perimetrale dall'iterazione governance precedente.
+    3. Verrà ora aggiunto il peering VNet alla rete perimetrale VNet che in precedenza era connessa al dispositivo perimetrale locale tramite VPN.
+    4. *** È anche consigliabile rimuovere la VPN dal modello e assicurarsi che il traffico non venga instradato direttamente al data center locale, senza passare attraverso la soluzione di firewall e la sottoscrizione IT aziendale. È anche possibile impostare questa VPN come circuito di failover in caso di outge del circuito ExpressRoute.
+    5. Sarà necessaria una [configurazione di rete](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) aggiuntiva in Automazione di Azure per applicare la configurazione DSC alle macchine virtuali ospitate.
+2. Modificare il gruppo di sicurezza di rete. Bloccare tutto il traffico locale pubblico **e** diretto nel gruppo di sicurezza di rete. Il traffico in ingresso deve arrivare solo attraverso il peering reti virtuali nella sottoscrizione IT aziendale.
     1. Nell'iterazione precedente è stato creato un gruppo di sicurezza di rete che blocca tutto il traffico pubblico e l'inserimento nell'elenco elementi consentiti del traffico interno. A questo punto si vuole spostare il gruppo di sicurezza di rete.
-    1. La nuova configurazione del gruppo di sicurezza di rete dovrebbe bloccare tutto il traffico pubblico, insieme a tutto il traffico dal Data Center locale.
-    1. Il traffico in ingresso nella rete virtuale deve provenire solo dalla rete virtuale sull'altro lato del peering reti virtuali.
-1. Implementazione del Centro sicurezza di Azure:
+    2. La nuova configurazione del gruppo di sicurezza di rete dovrebbe bloccare tutto il traffico pubblico, insieme a tutto il traffico dal Data Center locale.
+    3. Il traffico in ingresso nella rete virtuale deve provenire solo dalla rete virtuale sull'altro lato del peering reti virtuali.
+3. Implementazione del Centro sicurezza di Azure:
     1. Configurare il Centro sicurezza di Azure per qualsiasi gruppo di gestione che contiene le classificazioni dei dati protetti.
-    1. Attivare il provisioning automatico per impostazione predefinita per garantire la conformità delle patch.
-    1. Definire configurazioni di sicurezza del sistema operativo. La configurazione verrà definita dal team responsabile della sicurezza IT.
-    1. Supportare il team responsabile della sicurezza IT nell'uso iniziale del Centro sicurezza di Azure. Transizione dell'uso del Centro sicurezza alla sicurezza IT, mantenendo tuttavia l'accesso ai fini del miglioramento continuo della governance.
-    1. Creare un modello di Resource Manager che riflette le modifiche necessarie per la configurazione del Centro sicurezza di Azure all'interno di una sottoscrizione.
-1. Aggiornare Criteri di Azure per tutte le sottoscrizioni.
+    2. Attivare il provisioning automatico per impostazione predefinita per garantire la conformità delle patch.
+    3. Definire configurazioni di sicurezza del sistema operativo. La configurazione verrà definita dal team responsabile della sicurezza IT.
+    4. Supportare il team responsabile della sicurezza IT nell'uso iniziale del Centro sicurezza di Azure. Transizione dell'uso del Centro sicurezza alla sicurezza IT, mantenendo tuttavia l'accesso ai fini del miglioramento continuo della governance.
+    5. Creare un modello di Resource Manager che riflette le modifiche necessarie per la configurazione del Centro sicurezza di Azure all'interno di una sottoscrizione.
+4. Aggiornare Criteri di Azure per tutte le sottoscrizioni.
     1. Controllare e applicare la criticità e la classificazione dei dati in tutti i gruppi di gestione e le sottoscrizioni per identificare eventuali sottoscrizioni con classificazioni di dati protetti.
-    1. Controllare e imporre l'uso delle sole immagini del sistema operativo approvate.
-    1. Controllare e applicare le configurazioni guest basate sui requisiti di sicurezza per ogni nodo.
-1. Aggiornare Criteri di Azure per tutte le sottoscrizioni che contengono classificazioni di dati protetti.
+    2. Controllare e imporre l'uso delle sole immagini del sistema operativo approvate.
+    3. Controllare e applicare le configurazioni guest basate sui requisiti di sicurezza per ogni nodo.
+5. Aggiornare Criteri di Azure per tutte le sottoscrizioni che contengono classificazioni di dati protetti.
     1. Controllare e imporre l'uso solo dei ruoli standard.
-    1. Controllare e imporre l'uso della crittografia per tutti gli account di archiviazione e i file inattivi nei singoli nodi.
-    1. Controllare e applicare l'applicazione della nuova versione del gruppo di sicurezza di rete DMZ.
-    1. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
-    1. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
-1. Azure Blueprints:
+    2. Controllare e imporre l'uso della crittografia per tutti gli account di archiviazione e i file inattivi nei singoli nodi.
+    3. Controllare e applicare l'applicazione della nuova versione del gruppo di sicurezza di rete DMZ.
+    4. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
+    5. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
+6. Azure Blueprints:
     1. Creare un progetto di Azure denominato `protected-data`.
-    1. Aggiungere il peer VNet, il gruppo di sicurezza di rete e i modelli del Centro sicurezza di Azure al progetto.
-    1. Verificare che il modello per Active Directory dall'iterazione precedente **non** sia incluso nel progetto. Eventuali dipendenze in Active Directory verranno fornite dalla sottoscrizione IT aziendale.
-    1. Terminare le macchine virtuali Active Directory esistenti distribuite nell'iterazione precedente.
-    1. Aggiungere i nuovi criteri per le sottoscrizioni con dati protetti.
-    1. Pubblicare il progetto in qualsiasi gruppo di gestione destinato a ospitare dati protetti.
-    1. Applicare il nuovo progetto a ogni sottoscrizione interessata, nonché ai progetti esistenti.
+    2. Aggiungere il peer VNet, il gruppo di sicurezza di rete e i modelli del Centro sicurezza di Azure al progetto.
+    3. Verificare che il modello per Active Directory dall'iterazione precedente **non** sia incluso nel progetto. Eventuali dipendenze in Active Directory verranno fornite dalla sottoscrizione IT aziendale.
+    4. Terminare le macchine virtuali Active Directory esistenti distribuite nell'iterazione precedente.
+    5. Aggiungere i nuovi criteri per le sottoscrizioni con dati protetti.
+    6. Pubblicare il progetto in qualsiasi gruppo di gestione che ospiterà i dati protetti.
+    7. Applicare il nuovo progetto a ogni sottoscrizione interessata, nonché ai progetti esistenti.
 
 ## <a name="conclusion"></a>Conclusione
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Miglioramento della disciplina Accelerazione della distribuzione
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026743"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220758"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Miglioramento della disciplina Accelerazione della distribuzione
 
@@ -52,6 +52,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 
 - Per le nuove applicazioni basate sul cloud, introdurre distribuzioni completamente automatizzate nelle prime fasi del processo di sviluppo. Questo investimento migliorerà l'affidabilità dei processi di testing e garantirà la coerenza tra gli ambienti di sviluppo, di controllo qualità e di produzione.
 - Conservare tutti gli artefatti di distribuzione come i modelli di distribuzione o gli script di configurazione usando una piattaforma di controllo delle fonti come GitHub o Azure DevOps.
+- Archiviare tutti i segreti, le password, i certificati e le stringhe di connessione in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - Considerare un test pilota prima di implementare la [toolchain di Accelerazione della distribuzione](./toolchain.md), in modo da ottimizzare il più possibile le distribuzioni. Applicare il feedback dei test pilota durante la fase di pre-distribuzione, ripetendo in base alle esigenze.
 - Valutare l'architettura logica e fisica delle applicazioni e identificare le possibilità di automatizzare la distribuzione delle risorse applicative o di migliorare parti dell'architettura usando altre risorse basate sul cloud.
 - Aggiornare il documento sulle linee guida dell'architettura per includere piani di distribuzione e adozione da parte degli utenti e distribuirlo ai principali stakeholder.

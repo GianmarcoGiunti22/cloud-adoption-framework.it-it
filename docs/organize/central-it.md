@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b99fbeca1d9761d16c780bf8329572e5b84fffe9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029646"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224024"
 ---
 # <a name="central-it-capabilities"></a>Funzionalità IT centrali
 
@@ -111,7 +111,7 @@ Tuttavia, uno dei team di adozione del cloud ora richiede un ambiente con una co
 
 **Negoziazione** Solo la classificazione non è sufficiente. I servizi condivisi sono stati implementati per operare in modo coerente con asset sensibili e cruciali. La modifica delle regole comprometterebbe i criteri di governance e conformità progettati per gli asset che necessitano di una maggiore protezione. Il potenziamento dell'adozione non può avvenire a scapito della stabilità, della sicurezza o della governance. Ciò ha portato a una negoziazione con il team di adozione per rispondere a domande specifiche. Un team di DevOps guidato dall'azienda può fornire la gestione delle operazioni per questo ambiente? Questa soluzione richiede l'accesso diretto ad altre risorse interne? Se il team di adozione del cloud ha dimestichezza con questi compromessi, il traffico in ingresso potrebbe essere possibile.
 
-**Isolamento** Poiché l'azienda può fornire la propria gestione operativa in corso e poiché la soluzione non dipende dal traffico diretto ad altre risorse interne, può essere isolata in una nuova sottoscrizione. Tale sottoscrizione viene inoltre aggiunta a un nodo separato della nuova gerarchia del gruppo di gestione.
+**Isolamento** Poiché l'azienda può fornire la propria gestione operativa in corso e poiché la soluzione non si basa sul traffico diretto ad altre risorse interne, può essere isolata in una nuova sottoscrizione. Tale sottoscrizione viene inoltre aggiunta a un nodo separato della nuova gerarchia del gruppo di gestione.
 
 **Automazione:** Un altro segno di maturità in questo team è costituito dai principi di automazione. Il team USA criteri di Azure per automatizzare l'applicazione dei criteri. Usano anche i progetti di Azure per automatizzare la distribuzione di componenti della piattaforma comuni e applicare la conformità alla baseline di identità definita. Per questa sottoscrizione e per gli altri utenti del nuovo gruppo di gestione, i criteri e i modelli sono leggermente diversi. I criteri che bloccano la larghezza di banda in ingresso sono stati rimossi. Sono stati sostituiti dai requisiti per instradare il traffico attraverso la sottoscrizione ai servizi condivisi, ad esempio il traffico in ingresso, per applicare l'isolamento del traffico. Poiché gli strumenti di gestione delle operazioni locali non possono accedere a questa sottoscrizione, gli agenti per tale strumento non sono più necessari. Tutti gli altri Guardrails di governance richiesti da altre sottoscrizioni nella gerarchia del gruppo di gestione vengono ancora applicati, garantendo un numero sufficiente di Guardrails.
 

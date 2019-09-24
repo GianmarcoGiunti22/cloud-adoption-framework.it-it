@@ -4,25 +4,25 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sulla disciplina Accelerazione della distribuzione come parte di una strategia di governance del cloud.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030742"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220726"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivazioni e rischi aziendali di Accelerazione della distribuzione
 
-Questo articolo illustra i motivi per cui i clienti in genere adottano la disciplina Accelerazione della distribuzione all'interno di una strategia di governance del cloud. Offre inoltre alcuni esempi di rischi aziendali che determinano le definizioni sui criteri.
+Questo articolo illustra i motivi per cui i clienti in genere adottano la disciplina Accelerazione della distribuzione all'interno di una strategia di governance del cloud. Offre anche alcuni esempi di rischi aziendali che determinano le informative sui criteri.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>È rilevante l'accelerazione della distribuzione?
+## <a name="deployment-acceleration-relevancy"></a>Pertinenza accelerazione della distribuzione
 
 I sistemi locali spesso sono distribuiti usando immagini di base o script di installazione. Di solito è necessaria una configurazione aggiuntiva, che può comportare più fasi o l'intervento dell'utente. Questi processi manuali sono soggetti a errori e spesso generano una "deviazione della configurazione", che richiede attività di correzione e risoluzione dei problemi dispendiose in termini di tempo.
 

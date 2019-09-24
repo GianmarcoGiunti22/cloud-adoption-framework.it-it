@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030727"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222230"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guida aziendale standard: Miglioramento della coerenza delle risorse
 
@@ -84,31 +84,31 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 In questa sezione dell'articolo verrà modificata la progettazione degli MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove istruzioni dei criteri aziendali.
 
 1. Il team operativo cloud definisce gli strumenti di monitoraggio operativo e gli strumenti di correzione automatici. Il team di governance del cloud supporterà tali processi di individuazione. In questo caso di utilizzo, il team operativo cloud ha scelto monitoraggio di Azure come strumento principale per il monitoraggio di applicazioni cruciali.
-1. Creare un archivio in Azure DevOps per l'archiviazione e il controllo delle versioni di tutti i modelli di Resource Manager e le configurazioni tramite script pertinenti.
-1. Implementazione dell'insieme di credenziali di Azure:
-    1. Definire e distribuire l'insieme di credenziali di Azure per i processi di backup e ripristino.
-    1. Creare un modello di Resource Manager per la creazione di un insieme di credenziali in ogni sottoscrizione.
-1. Aggiornare Criteri di Azure per tutte le sottoscrizioni:
+2. Creare un archivio in Azure DevOps per l'archiviazione e il controllo delle versioni di tutti i modelli di Resource Manager e le configurazioni tramite script pertinenti.
+3. Implementazione dell'insieme di credenziali di servizi di ripristino di Azure:
+    1. Definire e distribuire l'insieme di credenziali di servizi di ripristino di Azure per i processi di backup e ripristino.
+    2. Creare un modello di Resource Manager per la creazione di un insieme di credenziali in ogni sottoscrizione.
+4. Aggiornare Criteri di Azure per tutte le sottoscrizioni:
     1. Controllare e applicare la criticità e la classificazione dei dati in tutte le sottoscrizioni per identificare quelle con asset cruciali.
-    1. Controllare e imporre l'uso delle sole immagini approvate.
-1. Implementazione di Monitoraggio di Azure:
-    1. Una volta identificata una sottoscrizione cruciale, creare un'area di lavoro di Monitoraggio di Azure tramite PowerShell. Si tratta di un processo di pre-distribuzione.
-    1. Durante i test di distribuzione, il team operativo cloud distribuisce gli agenti necessari e i test di individuazione.
-1. Aggiornare Criteri di Azure per tutte le sottoscrizioni che contengono applicazioni cruciali.
+    2. Controllare e imporre l'uso delle sole immagini approvate.
+5. Implementazione di Monitoraggio di Azure:
+    1. Una volta identificato un carico di lavoro di importanza critica, creare un'area di lavoro di monitoraggio di Azure.
+    2. Durante i test di distribuzione, il team operativo cloud distribuisce gli agenti necessari e i test di individuazione.
+6. Aggiornare Criteri di Azure per tutte le sottoscrizioni che contengono applicazioni cruciali.
     1. Controllare e imporre l'applicazione di un gruppo di sicurezza di rete per tutte le schede di interfaccia di rete e subnet. I team responsabili delle reti e della sicurezza IT definiscono il gruppo di sicurezza di rete.
-    1. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
-    1. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
-    1. Controllare e applicare la distribuzione degli agenti di Monitoraggio di Azure per tutte le macchine virtuali.
-    1. Controllare e imporre la presenza dell'insieme di credenziali di Azure nella sottoscrizione.
-1. Configurazione del firewall:
+    2. Controllare e imporre l'uso di reti virtuali e subnet di rete approvate per ogni interfaccia di rete.
+    3. Controllare e imporre la limitazione delle tabelle di routing definite dall'utente.
+    4. Controllare e applicare la distribuzione degli agenti di Monitoraggio di Azure per tutte le macchine virtuali.
+    5. Controllare e applicare che gli insiemi di credenziali dei servizi di ripristino di Azure esistano nella sottoscrizione.
+7. Configurazione del firewall:
     1. Identificare una configurazione di Firewall di Azure che soddisfi i requisiti di sicurezza. In alternativa, identificare un dispositivo di terze parti compatibile con Azure.
     1. Creare un modello di Resource Manager per distribuire il firewall con le configurazioni necessarie.
-1. Azure Blueprints:
+8. Azure Blueprints:
     1. Creare un progetto Azure Blueprints denominato `protected-data`.
-    1. Aggiungere il firewall e i modelli dell'insieme di credenziali di Azure al progetto.
-    1. Aggiungere i nuovi criteri per le sottoscrizioni con dati protetti.
-    1. Pubblicare il progetto in qualsiasi gruppo di gestione destinato a ospitare applicazioni cruciali.
-    1. Applicare il nuovo progetto a ogni sottoscrizione interessata, nonché ai progetti esistenti.
+    2. Aggiungere il firewall e i modelli dell'insieme di credenziali di Azure al progetto.
+    3. Aggiungere i nuovi criteri per le sottoscrizioni con dati protetti.
+    4. Pubblicare il progetto in qualsiasi gruppo di gestione che ospiterà le applicazioni cruciali.
+    5. Applicare il nuovo progetto a ogni sottoscrizione interessata, nonché ai progetti esistenti.
 
 ## <a name="conclusion"></a>Conclusione
 

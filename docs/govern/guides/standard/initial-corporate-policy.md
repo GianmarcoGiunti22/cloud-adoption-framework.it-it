@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027963"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223654"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Guida aziendale standard: Criteri aziendali iniziali per la strategia di governance
 
@@ -33,7 +33,7 @@ In questo racconto, il team di governance del cloud è costituito da due amminis
 
 L'attuale tolleranza ai rischi è elevata e il desiderio di investire nella governance cloud è basso. Di conseguenza, gli indicatori di tolleranza agiscono come un sistema di avviso preventivo per attivare più investimenti di tempo ed energia. Se e quando vengono osservati gli indicatori seguenti, è necessario migliorare in modo iterativo la strategia di governance.
 
-- **Gestione dei costi:** La scala di distribuzione supera le 100 risorse nel cloud oppure la spesa mensile supera i 1.000 USD al mese.
+- **Gestione dei costi:** La scalabilità della distribuzione supera i limiti predeterminati per il numero di risorse o il costo mensile.
 - **Baseline di sicurezza:** inclusione dei dati protetti nei piani di adozione definiti per il cloud.
 - **Coerenza delle risorse:** inclusione di tutte le applicazioni di importanza cruciale nei piani di adozione definiti per il cloud.
 

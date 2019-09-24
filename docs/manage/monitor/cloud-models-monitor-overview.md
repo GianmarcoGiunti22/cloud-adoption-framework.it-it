@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3659f5e965e5a80c3b490f8b106a4cc30f1711a9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: badf03f3616de8e6612221282aa24996f0b6e8f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030760"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221122"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guida al monitoraggio del cloud: Strategia di monitoraggio per i modelli di distribuzione cloud
 
@@ -35,7 +35,7 @@ La tabella seguente riepiloga l'approccio consigliato per il monitoraggio di ogn
 
 <!-- markdownlint-disable MD033 -->
 
-Livello | Risorsa | Ambito | Metodo
+Livello | Resource | `Scope` | Metodo
 ---|---|---|----
 Applicazione | Applicazione basata sul Web in esecuzione su .NET, .NET Core, Java, JavaScript e piattaforma node. js in una VM di Azure, app Azure Services, Azure Service Fabric, funzioni di Azure e servizi cloud di Azure | Monitorare un'applicazione Web Live per rilevare automaticamente le anomalie delle prestazioni, identificare le eccezioni e i problemi del codice e raccogliere dati di telemetria sull'usabilità. |  Application Insights
 Contenitori | Azure Kubernetes Service/istanze di contenitore di Azure | Monitoraggio della capacità, della disponibilità e delle prestazioni dei carichi di lavoro in esecuzione su contenitori e istanze di contenitore. | Monitoraggio di Azure per i contenitori
@@ -50,7 +50,7 @@ Tenant di Azure|Azure Active Directory || Abilitare la registrazione diagnostica
 
 ## <a name="hybrid-cloud-monitoring"></a>Monitoraggio del cloud ibrido
 
-Questa sezione è attualmente in fase di sviluppo per offrire un set completo di consigli destinati a soddisfare l'interesse per questo modello cloud e sarà disponibile a breve.  
+Questa sezione è attualmente in fase di sviluppo per offrire un set completo di raccomandazioni che risolvono l'interesse per questo modello cloud e saranno rese disponibili a breve.  
 
 ## <a name="private-cloud-monitoring"></a>Monitoraggio del cloud privato
 

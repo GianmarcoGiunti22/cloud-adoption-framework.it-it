@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 055c50ca2a934000b7e8d11927bc5ba1d4f95494
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029584"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224183"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Creare una motivazione aziendale per la migrazione al cloud
 
@@ -22,7 +22,7 @@ Le migrazioni cloud possono generare un ritorno sugli investimenti (ROI) anticip
 
 ## <a name="dispelling-cloud-migration-myths"></a>Miti sulla migrazione cloud
 
-**Mito: il cloud è sempre più economico.** Si ritiene comunemente che la gestione di un Data Center nel cloud sia sempre più economica rispetto alla gestione di un Data Center locale. Sebbene questo presupposto possa essere in genere vero, non è sempre il caso. A volte i costi operativi del cloud sono maggiori. Questi costi più elevati sono spesso causati da una governance dei costi scadente, da architetture di sistema non allineate, dalla duplicazione dei processi, da configurazioni di sistema atipiche o da costi di personale maggiori. Fortunatamente, è possibile mitigare molti di questi problemi per creare il ROI iniziale. Seguendo le istruzioni riportate in [creazione della motivazione aziendale](#building-the-business-justification) , è possibile rilevare ed evitare questi problemi di allineamento. La digitazione degli altri miti descritti qui può essere utile.
+**Mito: Il cloud è sempre più economico.** Si ritiene comunemente che la gestione di un Data Center nel cloud sia sempre più economica rispetto alla gestione di un Data Center locale. Sebbene questo presupposto possa essere in genere vero, non è sempre il caso. A volte i costi operativi del cloud sono maggiori. Questi costi più elevati sono spesso causati da una governance dei costi scadente, da architetture di sistema non allineate, dalla duplicazione dei processi, da configurazioni di sistema atipiche o da costi di personale maggiori. Fortunatamente, è possibile mitigare molti di questi problemi per creare il ROI iniziale. Seguendo le istruzioni riportate in [creazione della motivazione aziendale](#building-the-business-justification) , è possibile rilevare ed evitare questi problemi di allineamento. La digitazione degli altri miti descritti qui può essere utile.
 
 **Mito: bisogna passare completamente al cloud.** Infatti, alcuni driver aziendali potrebbero consentire di scegliere una soluzione ibrida. Prima di finalizzare un modello aziendale, è possibile completare un'analisi quantitativa per la prima volta, come descritto negli articoli relativi alle [Proprietà digitali](../digital-estate/5-rs-of-rationalization.md). Per ulteriori informazioni sui singoli driver quantitativi associati alla razionalizzazione, vedere la pagina relativa [alla razionalizzazione di 5](../digital-estate/5-rs-of-rationalization.md). Entrambi gli approcci usano i dati di inventario facilmente ottenuti e una breve analisi quantitativa per identificare i carichi di lavoro o applicazioni che potrebbero causare un aumento dei costi nel cloud. Questi approcci possono anche identificare le dipendenze o i modelli di traffico che richiedono una soluzione ibrida.
 

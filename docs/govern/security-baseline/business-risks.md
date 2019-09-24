@@ -4,25 +4,25 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivazioni e rischi aziendali della Baseline di sicurezza
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027774"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222288"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motivazioni e rischi aziendali della Baseline di sicurezza
 
-Questo articolo illustra i motivi per cui i clienti in genere adottano la disciplina Baseline di sicurezza all'interno di una strategia di governance del cloud. Offre inoltre alcuni esempi di rischi aziendali potenziali che possono determinare le istruzioni dei criteri.
+Questo articolo illustra i motivi per cui i clienti in genere adottano la disciplina Baseline di sicurezza all'interno di una strategia di governance del cloud. L'articolo offre anche alcuni esempi di potenziali rischi aziendali che possono determinare le definizioni dei criteri.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>È rilevante per la Baseline di sicurezza?
+## <a name="security-baseline-relevancy"></a>Pertinenza della linea di base di sicurezza
 
 La sicurezza è un aspetto chiave per qualsiasi organizzazione IT. Le distribuzioni cloud affrontano molti degli stessi rischi per la sicurezza dei carichi di lavoro ospitati nei data center locali tradizionali. Tuttavia, la natura delle piattaforme cloud pubbliche che non sono direttamente proprietarie dell'hardware fisico che archivia ed esegue i carichi di lavoro, fa sì che che la sicurezza del cloud necessiti di criteri e processi propri.
 

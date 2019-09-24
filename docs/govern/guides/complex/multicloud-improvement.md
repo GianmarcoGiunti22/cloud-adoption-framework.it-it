@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guida aziendale di grandi dimensioni: Miglioramento del cloud'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029613"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220619"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>Guida aziendale di grandi dimensioni: Miglioramento del cloud
 
 ## <a name="advancing-the-narrative"></a>Avanzamento della descrizione
 
-Microsoft è consapevole che i clienti stanno adottando più cloud per scopi specifici. La società fittizia in questa guida non è un'eccezione. Parallelamente al percorso di adozione di Azure, il successo aziendale ha portato all'acquisizione di un'altra azienda, di piccole dimensioni ma complementare. La nuova azienda gestisce tutte le operazioni IT con un provider di servizi cloud diverso.
+Microsoft riconosce che i clienti possono adottare più cloud per scopi specifici. La società fittizia in questa guida non è un'eccezione. In parallelo con il percorso di adozione di Azure, il successo aziendale ha portato all'acquisizione di una piccola ma complementare. La nuova azienda gestisce tutte le operazioni IT con un provider di servizi cloud diverso.
 
 Questo articolo descrive i cambiamenti introdotti dall'integrazione della nuova organizzazione. Ai fini della descrizione, si presuppone che questa società abbia completato ogni iterazione di governance descritta in questa guida alla governance.
 
@@ -64,23 +64,23 @@ Questa sezione dell'articolo migliora la progettazione degli MVP di governance p
 
 1. Connettere le reti. Eseguita da rete e sicurezza IT, supportata dalla governance.
     1. L'aggiunta di una connessione dal provider MPLS o a linea in lease al nuovo Cloud integrerà le reti. L'aggiunta di tabelle di routing e di configurazioni del firewall consentirà di controllare l'accesso e il traffico tra gli ambienti.
-1. Consolidare i provider di identità. A seconda dei carichi di lavoro ospitati nel cloud secondario, esistono diverse opzioni per il consolidamento dei provider di identità. Di seguito sono riportati alcuni esempi:
+2. Consolidare i provider di identità. A seconda dei carichi di lavoro ospitati nel cloud secondario, esistono diverse opzioni per il consolidamento dei provider di identità. Di seguito sono riportati alcuni esempi:
     1. Per le applicazioni che eseguono l'autenticazione tramite OAuth 2, gli utenti in Active Directory nel cloud secondario possono essere semplicemente replicati nel tenant di Azure AD esistente.
-    1. Nel caso opposto, la federazione tra i due provider di identità in locale consentirebbe la replica degli utenti dai nuovi domini di Active Directory in Azure.
-1. Aggiungere asset ad Azure Site Recovery.
+    2. Nel caso opposto, la federazione tra i due provider di identità in locale consentirebbe la replica degli utenti dai nuovi domini di Active Directory in Azure.
+3. Aggiungere asset ad Azure Site Recovery.
     1. Azure Site Recovery è stato creato come strumento ibrido e multicloud sin dall'inizio.
-    1. Potrebbe essere possibile proteggere le macchine virtuali nel cloud secondario con gli stessi processi di Azure Site Recovery usati per proteggere gli asset locali.
-1. Aggiungere asset a gestione costi di Azure.
+    2. Potrebbe essere possibile proteggere le macchine virtuali nel cloud secondario con gli stessi processi di Azure Site Recovery usati per proteggere gli asset locali.
+4. Aggiungere asset a gestione costi di Azure.
     1. Gestione costi di Azure è stato creato come strumento multicloud sin dall'inizio.
-    1. Le macchine virtuali nel cloud secondario potrebbero essere compatibili con Gestione costi di Azure per alcuni provider di servizi cloud. Si potrebbe incorrere in costi aggiuntivi.
-1. Aggiungere asset a Monitoraggio di Azure.
+    2. Le macchine virtuali nel cloud secondario potrebbero essere compatibili con Gestione costi di Azure per alcuni provider di servizi cloud. Si potrebbe incorrere in costi aggiuntivi.
+5. Aggiungere asset a Monitoraggio di Azure.
     1. Monitoraggio di Azure è stato concepito sin dall'inizio come strumento cloud ibrido.
-    1. Le macchine virtuali nel cloud secondario potrebbero essere compatibili con gli agenti di Monitoraggio di Azure, permettendo così di includerle in Monitoraggio di Azure per il monitoraggio operativo.
-1. Strumenti di applicazione della governance.
+    2. Le macchine virtuali nel cloud secondario potrebbero essere compatibili con gli agenti di Monitoraggio di Azure, permettendo così di includerle in Monitoraggio di Azure per il monitoraggio operativo.
+6. Strumenti di applicazione della governance.
     1. L'applicazione della governance è specifica del cloud,
-    1. I criteri aziendali stabiliti nella Guida alla governance non sono specifici del cloud. Anche se l'implementazione può variare da cloud a cloud, le definizioni dei criteri possono essere applicate al provider secondario.
+    2. I criteri aziendali stabiliti nella Guida alla governance non sono specifici del cloud. Anche se l'implementazione può variare da cloud a cloud, le definizioni dei criteri possono essere applicate al provider secondario.
 
-Man mano che l'adozione di più cloud aumenta, la progettazione della governance precedente continuerà a maturare.
+L'adozione di più cloud deve essere contenuta nel punto in cui è necessario in base alle esigenze tecniche o ai requisiti aziendali specifici. Man mano che l'adozione di più cloud aumenta, comporta rischi di complessità e sicurezza.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

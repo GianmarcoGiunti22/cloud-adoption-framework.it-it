@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 56a989e975625c9d8f0f3db80dab9043dca3a479
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028202"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221507"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Configurare i servizi di gestione di Azure su larga scala
 
@@ -30,7 +30,7 @@ Il caricamento dei servizi di gestione di Azure nei server implica due attività
 
 Tutte le soluzioni di gestione illustrate in [strumenti e servizi di gestione di Azure](./tools-services.md) richiedono l'installazione dell'agente di log Analytics in macchine virtuali di Azure e server locali. È possibile caricare le macchine virtuali di Azure su larga scala usando criteri di Azure. Assegnare i criteri per assicurarsi che l'agente sia installato in tutte le macchine virtuali di Azure e connesso all'area di lavoro Log Analytics corretta.
 
-Criteri di Azure prevede un'iniziativa di [criteri](https://docs.microsoft.com/azure/governance/policy/index.md#initiative-definition) incorporata che include l'agente di log Analytics e [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), necessario per monitoraggio di Azure per le macchine virtuali.
+Criteri di Azure prevede un'iniziativa di [criteri](/azure/governance/policy/index#initiative-definition) incorporata che include l'agente di log Analytics e [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), necessario per monitoraggio di Azure per le macchine virtuali.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -40,7 +40,7 @@ Criteri di Azure prevede un'iniziativa di [criteri](https://docs.microsoft.com/a
 > [!NOTE]
 > Per altre informazioni sui vari agenti per il monitoraggio di Azure, vedere [Panoramica degli agenti di monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview).
 
-### <a name="assign-policies"></a>Assegnare criteri
+### <a name="assign-policies"></a>Assegna criteri
 
 Per assegnare i criteri elencati nella sezione precedente:
 
@@ -89,7 +89,7 @@ In questa sezione sono descritte le soluzioni seguenti:
 - [Monitoraggio di Azure per le macchine virtuali](#azure-monitor-for-vms)
 - [Centro sicurezza di Azure](#azure-security-center)
 
-### <a name="update-management"></a>Gestione degli aggiornamenti
+### <a name="update-management"></a>Gestione aggiornamenti
 
 Gestione aggiornamenti, Rilevamento modifiche e le soluzioni di inventario richiedono sia un'area di lavoro Log Analytics che un account di automazione. Per assicurarsi che queste risorse siano configurate correttamente, è consigliabile eseguire l'onboarding tramite l'account di automazione. Per altre informazioni, vedere [onboarding gestione aggiornamenti, rilevamento modifiche e Inventory Solutions](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 

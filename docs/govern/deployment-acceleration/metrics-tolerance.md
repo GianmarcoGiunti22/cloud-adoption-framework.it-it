@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Accelerazione della distribuzione: metriche, indicatori e tolleranza ai rischi'
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029616"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220698"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Accelerazione della distribuzione: metriche, indicatori e tolleranza ai rischi
 
-Questo articolo è stato progettato per aiutare a quantificare la tolleranza ai rischi aziendali in relazione all'accelerazione della distribuzione. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Accelerazione della distribuzione.
+Questo articolo consente di quantificare la tolleranza ai rischi aziendali in relazione all'accelerazione della distribuzione. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Accelerazione della distribuzione.
 
 ## <a name="metrics"></a>metrics
 
@@ -34,7 +34,7 @@ I rischi dell'accelerazione della distribuzione sono in gran parte correlati al 
 
 <!-- "en-us" location is required for the URL below. -->
 
-Valutare l'opportunità di adottare una cultura organizzativa basata su DevOps o [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) sin dalle prime fasi del percorso di adozione del cloud. Le organizzazioni IT aziendali tradizionali hanno spesso operazioni silo, sicurezza e team di sviluppo che spesso non collaborano bene o sono addirittura conflittuali o ostili. Se si identificano questi problemi in anticipo e si favorisce l'integrazione degli stakeholder principali di ogni team, sarà più facile assicurare un'adozione del cloud più agile mantenendo al tempo stesso un ambiente sicuro e gestito in modo efficiente.
+Le organizzazioni IT aziendali tradizionali hanno spesso operazioni silo, sicurezza e team di sviluppo che spesso non collaborano bene o sono addirittura conflittuali o ostili. Se si identificano questi problemi in anticipo e si favorisce l'integrazione degli stakeholder principali di ogni team, sarà più facile assicurare un'adozione del cloud più agile mantenendo al tempo stesso un ambiente sicuro e gestito in modo efficiente. Pertanto, è consigliabile adottare una cultura aziendale DevOps o [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) all'inizio del percorso di adozione del cloud. 
 
 Collaborare con il team di DevSecOps e con gli stakeholder aziendali per identificare i [rischi aziendali](./business-risks.md) correlati alla configurazione e definire quindi una baseline accettabile per la tolleranza ai rischi di configurazione. Questa sezione delle linee guida per l'adozione del cloud fornisce esempi, ma i rischi e le basi di riferimento dettagliati per la società o le distribuzioni saranno probabilmente diversi.
 

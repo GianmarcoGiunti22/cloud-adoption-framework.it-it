@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivazioni e rischi aziendali della Baseline di identità
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030972"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222183"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivazioni e rischi aziendali della Baseline di identità
 
@@ -22,11 +22,11 @@ Questo articolo illustra i motivi per cui i clienti in genere adottano la discip
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>La Baseline di identità è rilevante?
+## <a name="identity-baseline-relevancy"></a>Pertinenza della linea di base di identità
 
 Le directory locali tradizionali sono progettate per consentire alle aziende di controllare accuratamente le autorizzazioni e i criteri per gli utenti, i gruppi e i ruoli all'interno delle reti interne e dei datacenter. Questo avviene per supportare le implementazioni di singoli tenant, con servizi applicabili solo all'interno dell'ambiente locale.
 
-I servizi di gestione delle identità cloud sono progettati per espandere le funzionalità di autenticazione e controllo di accesso a Internet di un'organizzazione. Supportano il multitenant e possono essere usati per gestire gli utenti e i criteri di accesso tra le applicazioni e le distribuzioni cloud. Le piattaforme cloud pubbliche hanno una qualche forma di servizi di gestione delle identità cloud nativa che supporta le attività di gestione e distribuzione e sono in grado di [variare i livelli di integrazione](../../decision-guides/identity/index.md) con le soluzioni di gestione delle identità locali esistenti. Tutte queste caratteristiche possono rendere i criteri di identità cloud più complicati di quanto richiesto dalle tradizionali soluzioni locali.
+I servizi di gestione delle identità cloud espandono le funzionalità di autenticazione e controllo di accesso di un'organizzazione su Internet. Supportano il multitenant e possono essere usati per gestire gli utenti e i criteri di accesso tra le applicazioni e le distribuzioni cloud. Le piattaforme cloud pubbliche includono servizi di identità nativi del cloud che supportano attività di gestione e distribuzione e sono in grado di [variare i livelli di integrazione](../../decision-guides/identity/index.md) con le soluzioni di identità locali esistenti. Tutte queste caratteristiche possono rendere i criteri di identità cloud più complicati di quanto richiesto dalle tradizionali soluzioni locali.
 
 L'importanza della disciplina Baseline di identità per la distribuzione cloud, dipenderà dalle dimensioni del team e dalla necessità di integrare la soluzione di gestione delle identità basata su cloud con un servizio di gestione delle identità locale esistente. Le distribuzione dei test iniziali possono non richiedere molto in termini di organizzazione utente o di gestione, ma con la maturazione della struttura cloud, è probabile che sia necessario supportare un'integrazione organizzativa più complessa e una gestione centralizzata.
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriche di Coerenza delle risorse, indicatori e tolleranza al rischio
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027123"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222956"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriche di Coerenza delle risorse, indicatori e tolleranza al rischio
 
-Questo articolo è concepito per aiutare l'utente a quantificare la tolleranza ai rischi aziendali in relazione alla Coerenza delle risorse. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Coerenza delle risorse.
+Questo articolo consente di quantificare la tolleranza ai rischi aziendali in relazione alla coerenza delle risorse. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Coerenza delle risorse.
 
 ## <a name="metrics"></a>metrics
 
@@ -33,7 +33,7 @@ Ogni organizzazione dispone di diversi scenari operativi, ma gli elementi seguen
 - **Tempo di risorse.** Tempo trascorso dall'ultima implementazione o modifica della risorsa.
 - **Macchine virtuali in condizioni critiche.** Numero di macchine virtuali distribuite dove sono stati rilevati uno o più problemi critici che devono essere risolti per ripristinarne il normale funzionamento.
 - **Avvisi in base alla gravità.** Numero totale di avvisi su un asset distribuito, suddivisi per livello di gravità.
-- **Collegamenti subnet non integri.** Numero di risorse con problemi di connettività di rete.
+- **Collegamenti di rete non integri.** Numero di risorse con problemi di connettività di rete.
 - **Endpoint di servizio non integri.** Numero di problemi con gli endpoint di rete esterni.
 - **Eventi imprevisti di integrità del servizio del provider cloud.** Numero di interruzioni o problemi di prestazione causati dal provider cloud.
 - **Contratti di servizio.** Possono includere gli impegni di Microsoft in termini di tempo di attività e connettività dei servizi di Azure e gli impegni dell'azienda nei confronti di clienti interni ed esterni.

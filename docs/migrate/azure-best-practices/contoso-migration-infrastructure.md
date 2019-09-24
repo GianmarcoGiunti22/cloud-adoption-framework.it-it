@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024352"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224158"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuire un'infrastruttura di migrazione
 
@@ -496,7 +496,7 @@ Le reti virtuali negli Stati Uniti centrali sono riepilogate nella tabella segue
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Subnet nella rete di produzione degli Stati Uniti centrali (VNET-PROD-CUS)
 
-Parallelamente alla rete di produzione nell'area primaria degli Stati Uniti orientali 2, è presente una rete di produzione nell'area secondaria degli Stati Uniti centrali.
+In parallelo con la rete di produzione nell'area primaria Stati Uniti orientali 2, è presente una rete di produzione nell'area Stati Uniti centrali secondari.
 
 **Subnet** | **CIDR** | **Indirizzi** | **Nella subnet**
 --- | --- | --- | ---
@@ -716,7 +716,7 @@ ServiceManager | Alias di posta elettronica dell'ITIL Service Manager per la ris
 COBPriority | Priorità impostata dall'azienda per BCDR. Valori da 1 a 5.
 ENV | I valori possibili sono DEV, STG, PROD, che rappresentano sviluppo, gestione temporanea e produzione.
 
-Ad esempio:
+Esempio:
 
  ![Tag di Azure](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -778,7 +778,7 @@ Contoso ha creato un modello che riflette l'aspetto di questa condizione per le 
 
 I gruppi di sicurezza di rete associati ai gruppi di sicurezza delle applicazioni verranno configurati con privilegi minimi per garantire che solo i pacchetti consentiti possano essere trasmessi da una parte della rete alla destinazione.
 
-**Azione** | **Nome** | **Origine** | **Destinazione** | **Porta**
+**Azione** | **Name** | **Origine** | **Destinazione** | **Porta**
 --- | --- | --- | --- | ---
 Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443

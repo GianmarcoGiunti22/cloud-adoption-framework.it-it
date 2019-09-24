@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cos'è la classificazione dei dati?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027131"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223576"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ Di seguito è riportato un elenco delle classificazioni usate da Microsoft. A se
 
 ## <a name="tagging-data-classification-in-azure"></a>Assegnazione di tag alla classificazione di dati in Azure
 
-Ogni provider di servizi cloud deve offrire un meccanismo per la registrazione dei metadati relativi a qualsiasi asset. Nel caso di Azure, i tag delle risorse rappresentano l'approccio consigliato per l'archiviazione di metadati e questi tag possono essere usati per applicare le informazioni di classificazione dei dati alle risorse distribuite. Sebbene l'assegnazione di tag alle risorse cloud in base alla classificazione non sia una sostituzione per un processo formale di classificazione dei dati, fornisce uno strumento utile per la gestione delle risorse e l'applicazione dei criteri.
+I tag delle risorse rappresentano l'approccio consigliato per l'archiviazione di metadati e questi tag possono essere usati per applicare le informazioni di classificazione dei dati alle risorse distribuite. Sebbene l'assegnazione di tag alle risorse cloud in base alla classificazione non sia una sostituzione per un processo formale di classificazione dei dati, fornisce uno strumento utile per la gestione delle risorse e l'applicazione dei criteri. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) è una soluzione eccellente che consente di classificare _i dati_ indipendentemente dalla posizione in cui si trova (in locale, in Azure, altrove) e deve essere considerata come parte di una strategia di classificazione complessiva.
 
 Per altre informazioni sull'assegnazione di tag alle risorse, vedere l'articolo [Usare tag per organizzare le risorse di Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

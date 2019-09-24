@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processi di conformità ai criteri per la coerenza delle risorse
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027377"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223714"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processi di conformità ai criteri per la coerenza delle risorse
 
@@ -60,6 +60,7 @@ I trigger seguenti e le azioni di applicazione forniscono esempi a cui è possib
 - **Rilevata risorsa sottoposta a provisioning.** le risorse rilevate che risultano usare più dell'80% della capacità della CPU o di memoria devono essere aumentate automaticamente o è necessario effettuare il provisioning di risorse aggiuntive per ottenere capacità aggiuntiva.
 - **Creazione di risorse senza tag.** qualsiasi richiesta di creare una risorsa senza i tag META richiesti verrà rifiutata automaticamente.
 - **È stata rilevata un'interruzione critica delle risorse.** il personale IT riceve notifica per tutte le interruzioni rilevate per le risorse cruciali. Se l'interruzione non è immediatamente risolvibile, lo staff escalace il problema e invia una notifica ai proprietari del carico di lavoro e al team di governance del cloud. Il team di governance del cloud tiene traccia del problema fino a quando la revisione del criterio è necessaria per impedire interventi futuri.
+- **Drift della configurazione.** Le risorse rilevate che non sono conformi alle linee di base stabilite devono attivare avvisi ed essere corretti automaticamente usando strumenti di gestione della configurazione come automazione di Azure, chef, Puppet, Ansible e così via.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Linee guida per la configurazione dei controlli di governance di Azure per più team, più carichi di lavoro e più ambienti.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029190"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223948"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Progettazione di governance per più team
 
@@ -26,16 +26,17 @@ I requisiti sono:
   - L'utente dell'organizzazione responsabile della proprietà delle **sottoscrizioni**.
   - L'utente dell'organizzazione responsabile delle **risorse dell'infrastruttura condivisa** usate per connettere la rete locale a una rete virtuale di Azure.
   - Due utenti dell'organizzazione responsabili della gestione di un **carico di lavoro**.
-- Supporto di più **ambienti**. Un ambiente è un raggruppamento logico di risorse, ad esempio macchine virtuali, reti virtuali e servizi di routing del traffico di rete. Questi gruppi di risorse hanno requisiti di sicurezza e gestione simili e vengono in genere usati per uno scopo specifico, ad esempio test o produzione. In questo esempio il requisito riguarda tre ambienti:
+- Supporto di più **ambienti**. Un ambiente è un raggruppamento logico di risorse, ad esempio macchine virtuali, reti virtuali e servizi di routing del traffico di rete. Questi gruppi di risorse hanno requisiti di sicurezza e gestione simili e vengono in genere usati per uno scopo specifico, ad esempio test o produzione. In questo esempio il requisito è per quattro ambienti:
   - Un **ambiente di infrastruttura condivisa** che include risorse condivise dai carichi di lavoro in altri ambienti. Ad esempio, una rete virtuale con una subnet gateway che fornisce connettività all'ambiente locale.
   - Un **ambiente di produzione** con i criteri di sicurezza più restrittivi. Può includere carichi di lavoro interni o rivolti all'esterno.
-  - Un **ambiente di sviluppo** per la verifica e i test. Questo ambiente ha criteri di sicurezza, conformità e costi diversi da quelli dell'ambiente di produzione.
+  - Un **ambiente non di produzione** per il lavoro di sviluppo e test. Questo ambiente ha criteri di sicurezza, conformità e costi diversi da quelli dell'ambiente di produzione. In Azure il formato di una sottoscrizione Sviluppo/test Enterprise.
+  - **Ambiente sandbox** a scopo di prova e istruzione. Questo ambiente viene in genere assegnato a ogni dipendente che partecipa alle attività di sviluppo e dispone di controlli di sicurezza operativi e procedurali rigorosi per impedire l'atterraggio dei dati aziendali. In Azure, le sottoscrizioni di Visual Studio sono di tipo. Queste sottoscrizioni _non_ devono inoltre essere associate all'Azure Active Directory aziendale.
 - Un **modello di autorizzazione con privilegi minimi** in cui gli utenti non hanno autorizzazioni predefinite. Il modello deve supportare quanto segue:
-  - Un singolo utente attendibile nell'ambito della sottoscrizione con l'autorizzazione ad assegnare i diritti di accesso alle risorse.
-  - Per impostazione predefinita, a ogni proprietario del carico di lavoro viene negato l'accesso alle risorse. I diritti di accesso alle risorse vengono concessi esplicitamente dal singolo utente attendibile nell'ambito della sottoscrizione.
-  - Accesso di gestione per le risorse dell'infrastruttura condivisa limitato al proprietario dell'infrastruttura condivisa.
-  - Accesso di gestione per ogni carico di lavoro limitato al proprietario del carico di lavoro.
-  - L'azienda non vuole dover gestire i ruoli in modo indipendente in ognuno dei tre ambienti e pertanto richiede l'uso dei soli [ruoli predefiniti](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponibili nel controllo degli accessi in base al ruolo (RBAC) di Azure. Se l'azienda ha utilizzato ruoli RBAC personalizzati, sarebbe necessario un processo aggiuntivo per sincronizzare i ruoli personalizzati nei tre ambienti.
+  - Un singolo utente attendibile (un account del servizio quasi) nell'ambito della sottoscrizione con l'autorizzazione per assegnare i diritti di accesso alle risorse.
+  - Per impostazione predefinita, a ogni proprietario del carico di lavoro viene negato l'accesso alle risorse. I diritti di accesso alle risorse vengono concessi in modo esplicito dal singolo utente attendibile nell'ambito del gruppo di risorse.
+  - Accesso di gestione per le risorse dell'infrastruttura condivisa limitate ai proprietari dell'infrastruttura condivisa.
+  - Accesso di gestione per ogni carico di lavoro limitato al proprietario del carico di lavoro (in produzione) e livelli di controllo crescenti, perché lo sviluppo aumenta da sviluppo a test fino alla fase di produzione.
+  - L'azienda non vuole avere la necessità di gestire i ruoli in modo indipendente in ognuno dei tre ambienti principali e pertanto richiede l'uso dei soli [ruoli predefiniti](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponibili nel controllo degli accessi in base al ruolo (RBAC) di Azure. Se l'azienda richiede assolutamente ruoli RBAC personalizzati, saranno necessari processi aggiuntivi per sincronizzare i ruoli personalizzati nei tre ambienti.
 - Monitoraggio dei costi in base al nome del proprietario del carico di lavoro, all'ambiente o a entrambi.
 
 ## <a name="identity-management"></a>Gestione delle identità
@@ -54,7 +55,7 @@ Quando l'organizzazione si è iscritta a un account Azure, è stato assegnato al
 Le identità dell'utente sia per il proprietario dell'account Azure che per l'amministratore globale di Azure AD sono archiviate in un sistema di identità altamente sicuro gestito da Microsoft. Il proprietario dell'account Azure è autorizzato a creare, aggiornare ed eliminare sottoscrizioni. L'amministratore globale di Azure AD è autorizzato a eseguire molte azioni in Azure AD, ma questa guida alla progettazione si concentrerà sulla creazione e sull'eliminazione dell'identità utente.
 
 > [!NOTE]
-> L'organizzazione potrebbe già avere un tenant di Azure AD se all'account è associata una licenza Office 365 o Intune esistente.
+> È possibile che l'organizzazione disponga già di un tenant di Azure AD esistente se è presente una licenza di Office 365, Intune o Dynamics associata all'account.
 
 Il proprietario dell'account Azure è autorizzato a creare, aggiornare ed eliminare sottoscrizioni:
 
@@ -134,11 +135,11 @@ Se si confronta ogni esempio con i requisiti definiti, entrambi gli esempi suppo
 
 Ora che è stato progettato un modello di autorizzazioni con privilegi minimi, verranno esaminate alcune applicazioni pratiche di questi modelli di governance. Secondo i requisiti definiti, è necessario supportare i tre ambienti seguenti:
 
-1. **Infrastruttura condivisa:** Un singolo gruppo di risorse condivise da tutti i carichi di lavoro. Si tratta di risorse quali gateway di rete, firewall e servizi di sicurezza.
-2. **Sviluppo** Più gruppi di risorse che rappresentano più carichi di lavoro pronti per la produzione. Queste risorse vengono usate per verifiche, test e altre attività di sviluppo. Possono avere un modello di governance meno rigido per aumentare la flessibilità degli sviluppatori.
-3. **Produzione** Più gruppi di risorse che rappresentano più carichi di lavoro di produzione. Queste risorse vengono usate per ospitare elementi privati e pubblici delle applicazioni. Queste risorse hanno in genere i modelli di governance e sicurezza più rigorosi per proteggere le risorse, il codice delle applicazioni e i dati da accessi non autorizzati.
+1. **Infrastruttura condivisa:** Gruppo di risorse condivise da tutti i carichi di lavoro. Si tratta di risorse quali gateway di rete, firewall e servizi di sicurezza.
+2. **Produzione** Più gruppi di risorse che rappresentano più carichi di lavoro di produzione. Queste risorse vengono usate per ospitare elementi privati e pubblici delle applicazioni. Queste risorse hanno in genere i modelli di governance e sicurezza più rigorosi per proteggere le risorse, il codice delle applicazioni e i dati da accessi non autorizzati.
+3. **Non produzione:** Più gruppi di risorse che rappresentano più carichi di lavoro pronti per la produzione. Queste risorse vengono usate per lo sviluppo e il test di queste risorse possono avere un modello di governance più rilassato per consentire una maggiore agilità degli sviluppatori. La sicurezza all'interno di questi gruppi dovrebbe aumentare il più vicino alla "produzione" per ottenere un processo di sviluppo di applicazioni.
 
-Per ognuno di questi tre ambienti è necessario tenere traccia dei dati sui costi per **proprietario del carico di lavoro**, **ambiente** o entrambi. In altre parole, è necessario conoscere il costo corrente dell'**infrastruttura condivisa**, i costi sostenuti dai singoli utenti negli ambienti di **sviluppo** e **produzione** e infine il costo complessivo dello **sviluppo** e della **produzione**.
+Per ognuno di questi tre ambienti è necessario tenere traccia dei dati sui costi per **proprietario del carico di lavoro**, **ambiente** o entrambi. In altre termini, sarà necessario ottenere informazioni sui costi in corso dell' **infrastruttura condivisa**, i costi sostenuti da singoli utenti negli ambienti di produzione **e di** **produzione** e, infine, il costo complessivo di **non produzione** e  **produzione**.
 
 Si è già appreso che le risorse sono suddivise in due livelli: **sottoscrizione** e **gruppo di risorse**. La prima decisione da prendere è quindi come organizzare gli ambienti per **sottoscrizione**. Sono disponibili solo due opzioni: una singola sottoscrizione o più sottoscrizioni.
 

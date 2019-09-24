@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Spiegazione dei rischi aziendali associati a una trasformazione cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027540"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223550"
 ---
 # <a name="evaluate-risk-tolerance"></a>Valutare la tolleranza ai rischi
 
@@ -47,7 +47,7 @@ L'identificazione dei rischi è un processo abbastanza diretto. I rischi correla
 Per conoscere la tolleranza ai rischi, verranno esaminati i dati dei clienti. Se una società di qualsiasi settore pubblica i dati dei clienti in un server non protetto, il rischio tecnico di tali dati viene compromesso o rubato è approssimativamente lo stesso. Tuttavia, la tolleranza di tale rischio può variare a seconda della natura e del potenziale valore dei dati.
 
 - Le società che operano nei settori sanitario e finanziario negli Stati Uniti sono regolate da rigidi requisiti di conformità di terze parti. Si presuppone che i dati personali o i dati correlati all'assistenza sanitaria siano estremamente riservati. Questi tipi di società, se coinvolti nello scenario di rischio precedente, incorrono in gravi conseguenze. La loro tolleranza sarà estremamente bassa. I dati dei clienti pubblicati all'interno o all'esterno della rete dovranno essere regolati da tali criteri di conformità di terze parti.
-- Una società di giochi i cui dati del cliente sono limitati a un nome utente, a tempi di riproduzione e a punteggi elevati non ha la probabilità di subire conseguenze significative, se coinvolgono il comportamento rischioso riportato sopra. Sebbene i dati non protetti siano a rischio, l'effetto di tale rischio è ridotto. Pertanto, in questo caso la tolleranza per il rischio è elevata.
+- Una società di giochi i cui dati del cliente sono limitati a un nome utente, a tempi di riproduzione e a punteggi elevati non ha la stessa probabilità di subire conseguenze significative oltre la perdita della reputazione, se coinvolgono il comportamento rischioso precedente. Sebbene i dati non protetti siano a rischio, l'effetto di tale rischio è ridotto. Pertanto, in questo caso la tolleranza per il rischio è elevata.
 - Un'azienda di medie dimensioni che fornisce servizi di pulizia di tappeti a migliaia di clienti entrerebbe tra questi due estremi di tolleranza. Qui, i dati dei clienti possono essere più affidabili, contenenti dettagli come l'indirizzo o il numero di telefono. Entrambi possono essere considerati dati personali e devono essere protetti. Potrebbe tuttavia non essere previsto alcun requisito di governance specifico che imponga di proteggere i dati. Dal punto di vista dell'IT, la risposta è semplice: proteggere i dati. Dal punto di vista dell'azienda, potrebbe non essere così semplice. L'azienda avrà bisogno di altre informazioni prima di poter determinare un livello di tolleranza a questo rischio.
 
 Nella sezione successiva vengono riportate alcune domande di esempio che possono aiutare le aziende a determinare un livello di tolleranza di rischio per il caso di utilizzo precedente o per altri.
@@ -56,12 +56,13 @@ Nella sezione successiva vengono riportate alcune domande di esempio che possono
 
 Questa sezione elenca le conversazioni che provocano le domande in tre categorie: conseguenze della perdita, probabilità di perdita e costi di correzione. Quando l'azienda e il partner IT devono affrontare ciascuna di queste aree, è possibile determinare facilmente la decisione di impegnarsi per la gestione dei rischi e la tolleranza complessiva a un particolare rischio.
 
-**Perdita di conseguenze:** domande per determinare l'impatto di un rischio. Può essere difficile (talvolta impossibile) rispondere a queste domande. Quantificare l'impatto è l'ideale, ma in alcuni casi la discussione da sola è sufficiente a comprendere la tolleranza. Anche gli intervalli sono accettabili, soprattutto se includono i presupposti che li hanno determinati.
+**Perdita di conseguenze:** domande per determinare l'impatto di un rischio. Queste domande possono risultare difficili da rispondere. Quantificare l'impatto è l'ideale, ma in alcuni casi la discussione da sola è sufficiente a comprendere la tolleranza. Anche gli intervalli sono accettabili, soprattutto se includono i presupposti che li hanno determinati.
 
 - Questo rischio viola i requisiti di conformità di terze parti?
 - Questo rischio viola i criteri aziendali interni?
+- Questo rischio può causare la perdita di vita, membro o proprietà?
 - Questo rischio potrebbe comportare la perdita di clienti o della quota di mercato? In tal caso, è possibile quantificare questo costo?
-- Questo rischio potrebbe comportare esperienze negative per i clienti? È probabile che queste esperienze influiscano sulla realizzazione di vendite o ricavi?
+- Questo rischio potrebbe comportare esperienze negative per i clienti? È probabile che queste esperienze influiscano sulle vendite o sui ricavi?
 - Questo rischio potrebbe comportare nuove responsabilità legali? In tal caso, esiste una precedenza per il risarcimento dei danni in questi tipi di casi?
 - Questo rischio potrebbe arrestare le operazioni aziendali? In questo caso, per quanto tempo le operazioni sarebbero ferme?
 - Questo rischio potrebbe rallentare le operazioni aziendali? In tal caso, quanto è lento e quanto tempo?
@@ -74,7 +75,7 @@ Queste domande di base ne susciteranno molte altre. Dopo aver avuto un dialogo c
 
 **Costi di correzione del rischio:** Domande per determinare il costo della rimozione o ridurre al minimo il rischio. Queste domande possono essere piuttosto dirette, soprattutto se poste in successione.
 
-- È disponibile una soluzione definitiva? Quanto costa?
+- Esiste una soluzione chiara e qual è il costo?
 - Sono disponibili opzioni per prevenire o ridurre al minimo questo rischio? Qual è la fascia di costo di tali soluzioni?
 - Che cosa serve all'azienda per scegliere la migliore soluzione definiva?
 - Che cosa serve all'azienda per convalidare i costi?
