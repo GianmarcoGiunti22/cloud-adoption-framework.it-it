@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023989"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224090"
 ---
 # <a name="scale-a-migration-to-azure"></a>Passare a una migrazione completa in Azure
 
@@ -270,7 +270,7 @@ Contoso ha deciso di usare Managed Disks per tutte le macchine virtuali distribu
 
 <!--markdownlint-enable MD033 -->
 
-#### <a name="azure-database-migration-service"></a>Azure Database Migration Service
+#### <a name="azure-database-migration-service"></a>Servizio Migrazione del database di Azure
 
 Il Servizio Migrazione del database di Azure è un servizio completamente gestito che consente migrazioni senza problemi da più origini di database alle piattaforme dati di Azure con tempi di inattività minimi.
 
@@ -298,7 +298,7 @@ Oltre al servizio Migrazione del database, Contoso può usare altri strumenti e 
 - L'azienda dispone di script per facilitare la migrazione manuale. Tali script sono disponibili nel repository GitHub.
 - È anche possibile usare vari [strumenti dei partner](https://azure.microsoft.com/migration/partners) per la migrazione.
 
-## <a name="phase-3-optimize"></a>Fase 3: Ottimizzare
+## <a name="phase-3-optimize"></a>Fase 3: Ottimizza
 
 Dopo aver spostato le risorse in Azure, Contoso deve razionalizzarle in modo da migliorare le prestazioni e ottimizzare il ritorno sugli investimenti con strumenti di gestione dei costi. Poiché Azure è un servizio con pagamento in base al consumo, per Contoso è fondamentale conoscere le prestazioni dei sistemi e assicurarsi che siano dimensionati correttamente.
 
@@ -311,7 +311,7 @@ Per sfruttare al meglio il proprio investimento per il cloud, Contoso userà lo 
 - La gestione dei costi consente di ottimizzare la spesa per il cloud individuando le risorse scarsamente usate che Contoso può quindi gestire e adattare.
 - [Altre informazioni](https://docs.microsoft.com/azure/cost-management/overview) sulla Gestione costi di Azure.
 
-![Gestione dei costi](./media/contoso-migration-scale/cost-management.png)
+![Gestione costi](./media/contoso-migration-scale/cost-management.png)
 
 ### <a name="native-tools"></a>Strumenti nativi
 

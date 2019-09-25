@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024199"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224305"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Eseguire il rehosting di un'app Linux in locale in macchine virtuali di Azure e Database di Azure per MySQL
 
@@ -420,7 +420,7 @@ Il passaggio finale del processo di migrazione consiste nell'aggiornamento della
 
 4. Si aggiornano infine i record DNS per **OSTICKETWEB**, in uno dei controller di dominio Contoso.
 
-    ![Aggiorna DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
+    ![Aggiornare il DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
 ## <a name="clean-up-after-migration"></a>Eseguire la pulizia dopo la migrazione
 
@@ -432,7 +432,7 @@ Occorre a questo punto eseguire le operazioni seguenti:
 - Rimuovere le macchine virtuali in locale dai processi di backup locali.
 - Aggiornare la documentazione interna in modo da mostrare i nuovi percorsi e gli indirizzi IP.
 - Esaminare le risorse che interagiscono con le macchine virtuali locali e aggiornare eventuali impostazioni o documenti pertinenti in modo che riflettano la nuova configurazione.
-- In Contoso è stato usato il servizio Azure Migrate con il mapping delle dipendenze per valutare la macchina virtuale **OSTICKETWEB** per la migrazione. Occorre ora rimuovere dalla macchina virtuale gli agenti (Microsoft Monitoring Agent/Dependency Agent) installati per questo scopo.
+- In Contoso è stato usato il servizio Azure Migrate con il mapping delle dipendenze per valutare la macchina virtuale **OSTICKETWEB** per la migrazione. Devono ora rimuovere gli agenti (il Microsoft Monitoring Agent e Microsoft Dependency Agent) installati a questo scopo dalla macchina virtuale.
 
 ## <a name="review-the-deployment"></a>Esaminare la distribuzione
 
