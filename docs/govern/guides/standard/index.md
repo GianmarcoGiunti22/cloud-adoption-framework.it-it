@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222408"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guida alla governance per aziende standard
 
@@ -41,8 +41,9 @@ Tutte le applicazioni devono essere distribuite nell'area appropriata della gera
 
 1. Un gruppo di gestione per ogni tipo di ambiente (ad esempio produzione, sviluppo e test).
 2. Due sottoscrizioni, una per la produzione e un'altra non per la produzione.
-3. Gruppi di risorse appropriati con controllo degli accessi in base al ruolo applicato all'interno di queste sottoscrizioni.
-4. È necessario applicare una [nomenclatura coerente](../../../ready/considerations/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
+3. È necessario applicare una [nomenclatura coerente](../../../ready/considerations/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
+4. I gruppi di risorse dovrebbero essere distribuiti in modo da tenere conto del ciclo di vita dei relativi contenuti: tutti quelli sviluppati, gestiti e ritirati insieme devono stare insieme. Per altre informazioni sulle procedure consigliate per i gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md).
+5. La [scelta dell'area](../../../decision-guides/regions/index.md) è particolarmente importante, perché bisogna considerare la possibilità di implementare procedure di rete, monitoraggio e controllo per il failover/failback, oltre alla disponibilità [degli SKU necessari](https://azure.microsoft.com/global-infrastructure/services).
 
 Ecco un esempio di questo modello in uso:
 

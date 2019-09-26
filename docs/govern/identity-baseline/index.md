@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Spiegazione su Baseline di identità in relazione alla governance del cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025960"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222254"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Panoramica sulla disciplina Baseline di identità
 
@@ -26,7 +26,7 @@ La Baseline di identità è una delle [cinque discipline della governance del cl
 
 Questa sezione di Cloud Adoption Framework delinea l'approccio allo sviluppo della disciplina Baseline di identità come parte della strategia di governance del cloud. I principali destinatari di queste linee guida sono gli architetti dell'infrastruttura cloud delle organizzazioni e gli altri membri del team di governance del cloud. Tuttavia, le decisioni, i criteri e processi che emergono da questa disciplina dovrebbero coinvolgere anche i membri pertinenti dei team IT, responsabili dell'implementazione e della gestione delle soluzioni di gestione dell'identità dell'organizzazione.
 
-Se l'organizzazione non dispone di competenze interne in materia di Baseline di identità e sicurezza, prendere in considerazione il ricorso a consulenti esterni come parte di questa disciplina. Prendere in considerazione anche la possibilità di coinvolgere [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), il servizio di adozione cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack), o altri esperti esterni di adozione cloud per discutere i problemi relativi a questa disciplina.
+Se l'organizzazione non dispone di competenze interne in materia di Baseline di identità e sicurezza, prendere in considerazione il ricorso a consulenti esterni come parte di questa disciplina. Valutare anche la possibilità di coinvolgere [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), il servizio di adozione cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) o altri partner esterni esperti di adozione del cloud per discutere i problemi relativi a questa disciplina.
 
 ## <a name="policy-statements"></a>Policy statements
 
@@ -72,7 +72,7 @@ Le sei fasi seguenti offrono esempi e potenziali opzioni da considerare nello sv
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Rischi aziendali</h3>
-                        <p class="x-hidden-focus">Comprendere le motivazioni e i rischi comunemente associati alla disciplina Baseline di identità.</p>
+                        <p class="x-hidden-focus">Motivazioni e rischi comunemente associati alla disciplina Baseline di identità.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ Le sei fasi seguenti offrono esempi e potenziali opzioni da considerare nello sv
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indicatori e metriche</h3>
-                        <p class="x-hidden-focus">Definire indicatori per capire se è il momento giusto di investire nella disciplina Baseline di identità.</p>
+                        <p class="x-hidden-focus">Indicatori per capire se è il momento giusto per investire nella disciplina Baseline di identità.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ Le sei fasi seguenti offrono esempi e potenziali opzioni da considerare nello sv
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Processi di adesione ai criteri</h3>
-                        <p class="x-hidden-focus">Seguire i suggerimenti per creare processi che consentono di assicurare la conformità ai criteri della disciplina Baseline di identità.</p>
+                        <p class="x-hidden-focus">Processi consigliati per supportare la conformità ai criteri della disciplina Baseline di identità.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ Le sei fasi seguenti offrono esempi e potenziali opzioni da considerare nello sv
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Toolchain</h3>
-                        <p class="x-hidden-focus">Implementare i servizi di Azure che possono supportare la disciplina Baseline di identità.</p>
+                        <p class="x-hidden-focus">Servizi di Azure che è possibile implementare per supportare la disciplina Baseline di identità.</p>
                     </div>
                 </div>
             </div>

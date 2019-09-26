@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816398"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224370"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migrazione al cloud in Cloud Adoption Framework
 
-Qualsiasi [piano di adozione del cloud](../plan/index.md) a livello aziendale includerà carichi di lavoro che non implicano investimenti significativi per la creazione della nuova logica di business. Per il trasferimento di questi carichi di lavoro è possibile adottare diversi approcci, ovvero lift-and-shift, lift-and-optimize oppure modernizzazione, ognuno dei quali viene considerato una migrazione. Gli esercizi seguenti consentiranno di definire i processi iterativi per valutare, ottimizzare, proteggere e gestire i carichi di lavoro, nonché eseguirne la migrazione.
+Qualsiasi [piano di adozione del cloud](../plan/index.md) a livello aziendale includerà carichi di lavoro che non implicano investimenti significativi per la creazione della nuova logica di business. Per il trasferimento di questi carichi di lavoro è possibile adottare diversi approcci, ovvero lift-and-shift, lift-and-optimize oppure modernizzazione, ognuno dei quali è considerato una migrazione. Gli esercizi seguenti consentiranno di definire i processi iterativi per valutare, ottimizzare, proteggere e gestire i carichi di lavoro, nonché eseguirne la migrazione.
 
 ## <a name="getting-started"></a>Introduzione
 
@@ -126,7 +126,7 @@ La migrazione è un'attività che implica un notevole carico dal punto di vista 
 
 ## <a name="iterative-migration-process"></a>Processo di migrazione iterativo
 
-In sostanza, la migrazione al cloud si articola in quattro semplici fasi: valutazione, migrazione, ottimizzazione e sicurezza e gestione. Questa sezione di Cloud Adoption Framework spiega ai lettori come massimizzare il valore restituito da ogni fase del processo e allineare tali fasi al piano di adozione del cloud. L'immagine seguente illustra queste fasi in un approccio iterativo:
+In sostanza, la migrazione al cloud si articola in quattro semplici fasi: valutazione, migrazione, ottimizzazione e sicurezza e gestione. Questa sezione di Cloud Adoption Framework spiega come massimizzare il valore restituito da ogni fase del processo e allineare tali fasi al piano di adozione del cloud. L'immagine seguente illustra queste fasi in un approccio iterativo:
 
 ![Modello di migrazione di Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 

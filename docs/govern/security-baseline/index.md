@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Panoramica sulla disciplina Baseline di sicurezza
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3d193a2fd71ffcda2b117d722603b08c27144aa3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025968"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221760"
 ---
 # <a name="security-baseline-discipline-overview"></a>Panoramica sulla disciplina Baseline di sicurezza
 
@@ -54,7 +54,7 @@ I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Modello di baseline di sicurezza</h3>
-                        <p class="x-hidden-focus">Scaricare il modello per documentare una disciplina Baseline di sicurezza.</p>
+                        <p class="x-hidden-focus">Scaricare il modello per documentare una disciplina Baseline di sicurezza</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Rischi aziendali</h3>
-                        <p class="x-hidden-focus">Comprendere le motivazioni e i rischi comunemente associati alla disciplina Baseline di sicurezza.</p>
+                        <p class="x-hidden-focus">Motivazioni e rischi comunemente associati alla disciplina Baseline di sicurezza.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indicatori e metriche</h3>
-                        <p class="x-hidden-focus">Definire indicatori per capire se è il momento giusto di investire nella disciplina Baseline di sicurezza.</p>
+                        <p class="x-hidden-focus">Indicatori per capire se è il momento giusto per investire nella disciplina Baseline di sicurezza.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Processi di adesione ai criteri</h3>
-                        <p class="x-hidden-focus">Seguire i suggerimenti per creare processi che consentono di assicurare la conformità ai criteri della disciplina Baseline di sicurezza.</p>
+                        <p class="x-hidden-focus">Processi consigliati per supportare la conformità ai criteri nella disciplina Baseline di sicurezza.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Toolchain</h3>
-                        <p class="x-hidden-focus">Implementare i servizi di Azure che possono supportare la disciplina Baseline di sicurezza.</p>
+                        <p class="x-hidden-focus">Servizi di Azure che è possibile implementare per supportare la disciplina Baseline di sicurezza.</p>
                     </div>
                 </div>
             </div>

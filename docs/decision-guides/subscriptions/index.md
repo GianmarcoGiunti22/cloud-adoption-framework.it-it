@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sulle sottoscrizioni di piattaforme cloud come servizio di base nelle migrazioni di Azure.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023642"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221017"
 ---
 # <a name="subscription-decision-guide"></a>Guida alle decisioni relative alle sottoscrizioni
 
@@ -67,13 +67,8 @@ Con l'aumento del footprint cloud di un'organizzazione, vengono in genere create
 Ogni organizzazione classificherà le applicazioni in modo diverso, spesso separandole in base a specifiche applicazioni o servizi oppure alle caratteristiche degli archetipi delle applicazioni. Questa categorizzazione spesso è progettata per supportare carichi di lavoro che probabilmente utilizzano la maggior parte dei limiti delle risorse di una sottoscrizione o per separare carichi di lavoro cruciali e assicurarsi che non entrino in competizione con altri carichi di lavoro a cui si applicano tali limiti. Alcuni carichi di lavoro che possano giustificare una sottoscrizione separata in questo modello includono:
 
 - Carichi di lavoro cruciali.
-- Applicazioni con dati protetti.
-- Applicazioni sperimentali.
-- Applicazioni soggette a requisiti normativi (ad esempio, HIPAA o FedRAMP).
-- Carichi di lavoro di Batch.
-- Carichi di lavoro di Big Data, ad esempio Hadoop.
-- Carichi di lavoro in contenitori che usano agenti di orchestrazione di distribuzione, ad esempio Kubernetes.
-- Carichi di lavoro di Analytics.
+- Applicazioni che fanno parte dei costi del venduto nell'azienda. Esempio: ogni istanza del widget dell'azienda X contiene un modulo IoT di Azure che invia dati di telemetria. In questo caso può essere necessaria una sottoscrizione dedicata a scopi di contabilità/governance come parte dei costi del venduto.
+- Applicazioni soggette a requisiti normativi, come HIPAA o FedRAMP.
 
 ### <a name="functional-pattern"></a>Modello funzionale
 
@@ -97,7 +92,7 @@ Le gerarchie dei gruppi di gestione possono supportare fino a sei livelli di pro
 
 - [Gestione dell'accesso alle risorse in Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Più livelli di governance nelle aziende di grandi dimensioni](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Più aree geografiche](../../migrate/expanded-scope/multiple-regions.md)
+- [Più aree geografiche](../regions/index.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

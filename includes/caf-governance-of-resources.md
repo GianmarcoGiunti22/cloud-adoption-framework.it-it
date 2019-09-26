@@ -53,6 +53,7 @@ Fino a quando non viene stabilita l'attendibilità completa nell'ambiente cloud,
     1. L'[architettura di riferimento di una VPN nel cloud](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) definisce un modello di distribuzione per la creazione di un gateway VPN in Azure.
     2. Verificare che i meccanismi di gestione della sicurezza e del traffico locali considerino le reti cloud connesse come non attendibili. Le risorse e i servizi ospitati nel cloud devono avere accesso solo a servizi locali autorizzati.
     3. Verificare che il dispositivo perimetrale locale nel data center locale sia compatibile con i [requisiti del gateway VPN di Azure](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) e sia configurato per l'accesso a Internet pubblico.
+    4. Si noti che i tunnel VPN non devono essere considerati circuiti pronti per la produzione per tutto tranne i carichi di lavoro più semplici. Per qualsiasi esigenza che vada oltre alcuni semplici carichi di lavoro con connettività locale, è consigliabile usare Azure ExpressRoute.
 1. Nel gruppo di gestione radice creare una seconda definizione di progetto denominata `secure-hybrid-vnet`.
     1. Aggiungere il modello di Resource Manager per Gateway VPN come artefatto della definizione del progetto.
     2. Aggiungere il modello di Resource Manager per la rete virtuale come artefatto della definizione del progetto.

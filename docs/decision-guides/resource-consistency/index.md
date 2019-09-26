@@ -2,19 +2,19 @@
 title: Guida alle decisioni relative alla coerenza delle risorse
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sulla coerenza delle risorse nell'ambito della pianificazione di una migrazione ad Azure.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023775"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221119"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guida alle decisioni relative alla coerenza delle risorse
 
@@ -32,16 +32,22 @@ Man mano che questi fattori acquisiscono maggiore importanza, diventano più ril
 
 In Azure i [gruppi di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) sono un meccanismo principale di organizzazione delle risorse che consente di raggruppare le risorse in modo logico all'interno di una sottoscrizione.
 
-I gruppi di risorse fungono da contenitori per le risorse con un ciclo di vita comune o vincoli di gestione condivisi, ad esempio criteri o requisiti di controllo degli accessi in base al ruolo. I gruppi di risorse non possono essere nidificati e le risorse possono appartenere a un solo gruppo di risorse. Alcune azioni possono essere applicate a tutte le risorse di un gruppo di risorse. Ad esempio, l'eliminazione di un gruppo di risorse comporta la rimozione di tutte le risorse all'interno di quel gruppo. La creazione di gruppi di risorse prevede degli schemi comuni, generalmente divisi in due categorie:
+I gruppi di risorse fungono da contenitori per le risorse con un ciclo di vita comune e vincoli di gestione condivisi, ad esempio requisiti di criteri o di controllo degli accessi in base al ruolo. I gruppi di risorse non possono essere annidati e le risorse possono appartenere a un solo gruppo. Tutte le azioni del piano di controllo si applicano a tutte le risorse di un gruppo. Con l'eliminazione di un gruppo di risorse, ad esempio, vengono eliminate anche tutte le risorse al suo interno. Per scegliere il modello di gestione dei gruppi di risorse, valutare quanto segue:
 
-- **Carichi di lavoro IT tradizionali:** sono più comunemente raggruppati in base agli elementi all'interno di uno stesso ciclo di vita, ad esempio un'applicazione. Il raggruppamento in base all'applicazione consente la gestione di singole applicazioni.
-- **Carichi di lavoro IT Agile:** sono incentrati sulle applicazioni cloud orientate ai clienti esterni. Questi gruppi di risorse spesso riflettono i livelli funzionali di distribuzione (ad esempio livello Web o livello app) e gestione.
+1. I contenuti del gruppo di risorse vengono sviluppati insieme?
+1. I contenuti del gruppo di risorse vengono gestiti, aggiornati e monitorati insieme e queste attività vengono svolte dalle stesse persone o dagli stessi team?
+1. I contenuti del gruppo di risorse vengono ritirati insieme?
+
+Se la risposta è _NO_ a una di queste domande, la risorsa in questione dovrebbe essere inserita altrove, in un altro gruppo di risorse.
+
+> [!IMPORTANT]
+> I gruppi di risorse sono anche specifici per area, però spesso le risorse si trovano in aree diverse all'interno dello stesso gruppo, perché vengono gestite insieme, come descritto sopra. Per altre informazioni sulla scelta dell'area, vedere [qui](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Coerenza di distribuzione
 
 La piattaforma Azure offre un sistema, basato sul meccanismo di raggruppamento delle risorse di base, che consente di usare modelli per distribuire le risorse nell'ambiente cloud. È possibile usare i modelli per creare convenzioni di denominazione e organizzazione coerenti per distribuire i carichi di lavoro, applicando i vari aspetti della progettazione della distribuzione e gestione delle risorse.
 
-I [modelli di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) consentono di distribuire ripetutamente le risorse in uno stato coerente usando una configurazione e una struttura dei gruppi di risorse predeterminate. Con questi modelli è possibile definire facilmente un set di standard come base delle distribuzioni.
+I [modelli di Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) consentono di distribuire ripetutamente le risorse in uno stato coerente usando una configurazione e una struttura dei gruppi di risorse predeterminate. Con questi modelli è possibile definire facilmente un set di standard come base delle distribuzioni.
 
 Ad esempio, si può usare un modello standard per distribuire un carico di lavoro di server Web che contiene due macchine virtuali come server Web combinati con un servizio di bilanciamento del carico per distribuire il traffico tra i server. È quindi possibile riutilizzare questo modello per creare set di macchine virtuali e bilanciamento del carico strutturalmente identici ogni volta che è necessario questo tipo di carico di lavoro, cambiando solo il nome e l'indirizzo IP della distribuzione.
 

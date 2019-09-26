@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816228"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224244"
 ---
 # <a name="landing-zone-considerations"></a>Considerazioni sulle aree di destinazione
 
@@ -48,5 +48,5 @@ Gli articoli seguenti possono essere utili per prendere decisioni correlate alla
 - **Requisiti relativi ai costi**. In base alla motivazione di un'organizzazione per l'adozione del cloud e gli impegni operativi assunti in relazione a questo ambiente, potrebbe essere necessario modificare diverse configurazioni di gestione dei costi per l'area di destinazione.
 - **Decisioni relative al monitoraggio**. A seconda dei requisiti operativi di un'area di destinazione, è possibile distribuire diversi strumenti di monitoraggio. L'articolo sulle decisioni relative al monitoraggio può essere utile per determinare gli strumenti più appropriati da distribuire.
 - **Uso del controllo degli accessi in base al ruolo**. Il [controllo degli accessi in base al ruolo (RBAC)](../azure-best-practices/roles.md) di Azure consente una gestione degli accessi specifica, basata su gruppi, per risorse organizzate in base ai ruoli utente.
-- **Decisioni relative ai criteri**. Gli esempi di progetto di Azure includono progetti di conformità già pronti, ognuno con iniziative di criteri predefinite. Le decisioni relative ai criteri sono utili per orientare la scelta del migliore progetto o della migliore iniziativa di criteri in base ai requisiti e ai vincoli indicati.
+- **Decisioni relative ai criteri**. Gli [esempi di Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples) includono progetti di conformità già pronti, ognuno con iniziative predefinite per i criteri. Le decisioni relative ai criteri sono utili per orientare la scelta del migliore progetto o della migliore iniziativa di criteri in base ai requisiti e ai vincoli indicati.
 - **[Creare coerenza del cloud ibrido](../../infrastructure/misc/hybrid-consistency.md)** . Creare soluzioni cloud ibride che offrono all'organizzazione i vantaggi dell'innovazione cloud, pur mantenendo molte delle caratteristiche della gestione locale.
