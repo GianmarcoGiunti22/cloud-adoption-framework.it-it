@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025253"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224281"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, sicurezza e conformità in Azure
 
@@ -69,7 +69,7 @@ Per pubblicare gli artefatti di un progetto in una sottoscrizione:
 1. Passare a **Progetti - Definizioni di progetto**.
 1. Selezionare il progetto creato nei passaggi precedenti.
 1. Esaminare la definizione del progetto e selezionare **Pubblica progetto**.
-1. Specificare un valore in **Versione** (ad esempio 1.0) e in **Modifica le note**, quindi selezionare **Pubblica**.
+1. Specificare un valore in **Versione** (ad esempio _1.0_) e in **Modifica le note**, quindi selezionare **Pubblica**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Per pubblicare gli artefatti di un progetto in una sottoscrizione:
 1. Passare a [Progetti - Definizioni di progetto](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Selezionare il progetto creato nei passaggi precedenti.
 1. Esaminare la definizione del progetto e selezionare **Pubblica progetto**.
-1. Specificare un valore in **Versione** (ad esempio 1.0) e in **Modifica le note**, quindi selezionare **Pubblica**.
+1. Specificare un valore in **Versione** (ad esempio _1.0_) e in **Modifica le note**, quindi selezionare **Pubblica**.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Per altre informazioni, vedere:
 
 - [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Guida relativa alle decisioni di coerenza delle risorse](../../decision-guides/resource-consistency/index.md)
-- [Esempi di progetti basati su standard](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [Esempi di progetti basati su standard](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
