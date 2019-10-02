@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni su come distribuire una zona di destinazione della migrazione in Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223930"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811097"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuire un'area di destinazione della migrazione
 
@@ -75,7 +75,7 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 
 Scopri di più e Scarica un esempio di riferimento del Framework di adozione cloud migrazione del progetto di area di destinazione per la distribuzione o la personalizzazione dagli [esempi di progetti di Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Gli esempi di progetti sono disponibili anche nel portale. Per informazioni dettagliate su come distribuire un progetto, vedere [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Gli esempi di progetti sono disponibili anche nel portale. Per informazioni dettagliate su come creare un progetto, vedere [progetti di Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Per indicazioni sulla personalizzazione da apportare al progetto o alla zona di destinazione risultante, vedere gli articoli di [considerazioni sulla zona di destinazione](../considerations/index.md).
 
