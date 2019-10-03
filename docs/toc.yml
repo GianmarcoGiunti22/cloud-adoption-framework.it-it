@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: Stabilire una verifica dell'idoneità operativa
               href: manage/operational-fitness-review.md
+            - name: Centralizzare le operazioni di gestione
+              href: manage/centralize-operations.md
     - name: riferimento
       items:
         - name: Roadmap di Cloud Adoption Framework

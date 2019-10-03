@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni su come configurare la governance, la sicurezza e la conformità per l'ambiente di Azure.
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224281"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804474"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, sicurezza e conformità in Azure
 
-Quando si definiscono i criteri aziendali e si pianificano le strategie di governance, è possibile usare strumenti e servizi come Criteri di Azure, Azure Blueprints e Centro sicurezza di Azure per applicare e automatizzare le decisioni di governance dell'organizzazione. Prima di iniziare la pianificazione della governance, usare lo [strumento di benchmark della governance](http://aka.ms/caf/gov/assess) per identificare le potenziali lacune nell'approccio di governance del cloud dell'organizzazione. Per altre informazioni su come sviluppare i processi di governance, vedere le [indicazioni sulla governance di Cloud Adoption Framework for Azure](../../govern/index.md).
+Quando si definiscono i criteri aziendali e si pianificano le strategie di governance, è possibile usare strumenti e servizi come Criteri di Azure, Azure Blueprints e Centro sicurezza di Azure per applicare e automatizzare le decisioni di governance dell'organizzazione. Prima di iniziare la pianificazione della governance, usare lo [strumento di benchmark della governance](https://cafbaseline.com) per identificare le potenziali lacune nell'approccio di governance del cloud dell'organizzazione. Per altre informazioni su come sviluppare i processi di governance, vedere le [indicazioni sulla governance di Cloud Adoption Framework for Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -38,7 +38,7 @@ Per creare un progetto:
 
 ::: zone target="chromeless"
 
-1. Passare a **Progetti - Introduzione**.
+1. Passare a **Blueprints - Guida introduttiva**.
 1. Nella sezione **Crea un progetto** selezionare **Crea**.
 1. Filtrare l'elenco di progetti per selezionare quello appropriato.
 1. Immettere un valore in **Nome progetto** e selezionare la posizione appropriata in  **Località della definizione**.
@@ -78,7 +78,7 @@ Per pubblicare gli artefatti di un progetto in una sottoscrizione:
 ::: zone target="docs"
 
 1. Passare a [Progetti - Definizioni di progetto](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
-1. Selezionare il progetto creato nei passaggi precedenti.
+1. Selezionare la definizione di progetto creata nei passaggi precedenti.
 1. Esaminare la definizione del progetto e selezionare **Pubblica progetto**.
 1. Specificare un valore in **Versione** (ad esempio _1.0_) e in **Modifica le note**, quindi selezionare **Pubblica**.
 
@@ -165,6 +165,7 @@ Per altre informazioni, vedere:
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>Azione
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
