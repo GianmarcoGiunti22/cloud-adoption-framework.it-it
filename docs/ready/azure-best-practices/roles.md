@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 98f456bf9af0ab5a7533acf9a9d49f445b7fe37b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 62d6ab27e127f9d954989465838cd7c328db0573
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224322"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967767"
 ---
 # <a name="role-based-access-control"></a>Controllo degli accessi in base al ruolo
 
@@ -28,7 +28,7 @@ Per una panoramica delle procedure di controllo degli accessi in base al ruolo c
 
 Usando il [controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control/overview), è possibile separare i compiti all'interno del team e concedere a utenti, gruppi, entità servizio o identità gestite specifiche di Azure Active Directory (Azure AD) solo l'accesso sufficiente per eseguire le loro attività. Invece di concedere a tutti l'accesso senza restrizioni alla sottoscrizione o alle risorse di Azure, è possibile limitare le autorizzazioni per ogni set di risorse.
 
-Le [definizioni di ruolo Controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) elencano le operazioni consentite o non consentite agli utenti o ai gruppi assegnati a un determinato ruolo. L'[ambito](/azure/role-based-access-control/index#scope) di un ruolo specifica le risorse a cui si applicano queste autorizzazioni definite. Gli ambiti possono essere definiti a più livelli: gruppo di gestione, sottoscrizione, gruppo di risorse o risorsa. Gli ambiti sono strutturati in una relazione di tipo padre/figlio.
+Le [definizioni di ruolo Controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) elencano le operazioni consentite o non consentite agli utenti o ai gruppi assegnati a un determinato ruolo. L'[ambito](/azure/role-based-access-control/overview#scope) di un ruolo specifica le risorse a cui si applicano queste autorizzazioni definite. Gli ambiti possono essere definiti a più livelli: gruppo di gestione, sottoscrizione, gruppo di risorse o risorsa. Gli ambiti sono strutturati in una relazione di tipo padre/figlio.
 
 ![Gerarchia degli ambiti del controllo degli accessi in base al ruolo](../../_images/azure-best-practices/rbac-scope.png)
 

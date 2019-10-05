@@ -1,7 +1,7 @@
 ---
-title: 'Guida aziendale standard: Miglioramento del cloud'
+title: 'Guida alla governance aziendale standard: Miglioramento del cloud'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida aziendale standard: Miglioramento del cloud'
+description: 'Guida alla governance aziendale standard: Miglioramento del cloud'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223796"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967317"
 ---
-# <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Guida per le aziende di piccole e medie dimensioni: Miglioramento del cloud
+# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guida alla governance aziendale standard: Miglioramento del cloud
 
 In questo articolo viene avanzata la descrizione tramite l'aggiunta di controlli per l'adozione di più cloud.
 

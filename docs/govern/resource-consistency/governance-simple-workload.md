@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: df33e9f7f1c591d9de286b0a2c646bb009fc2775
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223045"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967352"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>progettazione della governance per un carico di lavoro semplice
 
@@ -34,8 +34,7 @@ Prima di iniziare a progettare il modello di governance, è importante capire co
 
 Quando Azure è stato aggiunto al Contratto Enterprise dell'organizzazione, a questa è stato chiesto di creare un **account Azure**. Durante il processo di creazione dell'account, sono stati creati un **proprietario dell'account Azure** e un tenant di Azure Active Directory (Azure AD) con un account di **amministratore globale**. Un tenant di Azure AD è un costrutto logico che rappresenta un'istanza sicura e dedicata di Azure AD.
 
-![Account Azure con gestione account di Azure e Azure ad amministratore](../../_images/govern/design/governance-3-0.png)
-globale*Figura 1: un account Azure con un account manager e Azure ad amministratore globale.*
+account ![Azure con Azure account manager e Azure AD amministratore globale @ no__t-1*Figura 1-un account Azure con un account manager e Azure ad amministratore globale.*
 
 ## <a name="identity-management"></a>Gestione delle identità
 
@@ -45,8 +44,7 @@ Il requisito è la gestione delle identità per un singolo **proprietario del ca
 
 L'amministratore globale di Azure AD creerà l'account del **proprietario del carico di lavoro** per il proprietario del carico di lavoro:
 
-![Il Azure ad amministratore globale crea l'account](../../_images/govern/design/governance-1-2.png)
-proprietario del carico di lavoro*Figura 2: l'amministratore globale di Azure ad crea l'account utente del proprietario del carico di lavoro.*
+![The Azure AD amministratore globale crea l'account proprietario del carico di lavoro @ no__t-1*Figura 2-l'amministratore di Azure ad globale crea l'account utente del proprietario del carico di lavoro.*
 
 Non è possibile assegnare autorizzazioni di accesso alle risorse fino a quando questo utente non viene aggiunto a una **sottoscrizione**, quindi questa operazione verrà eseguita nelle prossime due sezioni.
 
@@ -56,27 +54,23 @@ Con l'aumento del numero di risorse distribuite dall'organizzazione, cresce anch
 
 Il livello massimo dell'ambito di gestione delle risorse è il livello **sottoscrizione**. La sottoscrizione viene creata dal **proprietario dell'account** Azure, che stabilisce l'impegno finanziario ed è responsabile del pagamento di tutte le risorse di Azure associate alla sottoscrizione:
 
-![Il proprietario dell'account Azure crea una](../../_images/govern/design/governance-1-3.png)
-sottoscrizione*Figura 3: il proprietario dell'account Azure crea una sottoscrizione.*
+Il proprietario dell'account di Azure ![The crea una sottoscrizione @ no__t-1*Figura 3: il proprietario dell'account Azure crea una sottoscrizione.*
 
 Quando viene creata la sottoscrizione, il **proprietario dell'account Azure** associa alla sottoscrizione un tenant di Azure AD che viene usato per l'autenticazione e l'autorizzazione degli utenti:
 
-![Il proprietario dell'account Azure associa il tenant Azure ad alla sottoscrizione](../../_images/govern/design/governance-1-4.png)
-*Figura 4: il proprietario dell'account Azure associa il tenant Azure ad alla sottoscrizione.*
+il proprietario dell'account di Azure ![The associa il tenant Azure AD alla sottoscrizione @ no__t-1*Figura 4: il proprietario dell'account Azure associa il tenant Azure ad alla sottoscrizione.*
 
 Si sarà notato che attualmente non c'è alcun utente associato alla sottoscrizione; ciò significa che nessuno è autorizzato a gestire le risorse. In realtà, il **proprietario dell'account** è il proprietario della sottoscrizione ed è autorizzato a eseguire qualsiasi azione su una risorsa della sottoscrizione. In termini pratici, il **proprietario dell'account** sarà tuttavia molto probabilmente un responsabile della divisione finanziaria dell'organizzazione e non si occuperà delle operazioni di creazione, lettura, aggiornamento ed eliminazione delle risorse; tali attività saranno svolte dal **proprietario del carico di lavoro**. È quindi necessario aggiungere il **proprietario del carico di lavoro** alla sottoscrizione e assegnare le autorizzazioni.
 
 Essendo l'unico utente attualmente autorizzato ad aggiungere il **proprietario del carico di lavoro** alla sottoscrizione, il **proprietario dell'account** aggiungerà il **proprietario del carico di lavoro** alla sottoscrizione:
 
-![Il proprietario dell'account Azure aggiunge il * * proprietario del carico di lavoro *](../../_images/govern/design/governance-1-5.png)
-* alla sottoscrizione*Figura 5: il proprietario dell'account Azure aggiunge il proprietario del carico di lavoro alla sottoscrizione.*
+il proprietario dell'account di Azure ![The aggiunge il * * proprietario del carico di lavoro * * alla sottoscrizione @ no__t-1*Figura 5: il proprietario dell'account Azure aggiunge il proprietario del carico di lavoro alla sottoscrizione.*
 
 Il **proprietario dell'account** Azure concede le autorizzazioni al **proprietario del carico di lavoro** assegnando un [ruolo di controllo degli accessi in base al ruolo](https://docs.microsoft.com/azure/role-based-access-control). Il ruolo di controllo degli accessi in base al ruolo specifica un insieme di autorizzazioni assegnate al **proprietario del carico di lavoro** per un singolo tipo di risorsa o un insieme di tipi di risorsa.
 
 Si noti che in questo esempio il **proprietario dell'account** ha assegnato il ruolo di [proprietario **predefinito**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner):
 
-![Al * * proprietario del carico di lavoro * * è stato assegnato il ruolo](../../_images/govern/design/governance-1-6.png)
-proprietario predefinito*Figura 6: al proprietario del carico di lavoro è stato assegnato il ruolo proprietario predefinito.*
+![The * * proprietario del carico di lavoro * * è stato assegnato il ruolo proprietario predefinito @ no__t-1*Figura 6-al proprietario del carico di lavoro è stato assegnato il ruolo proprietario predefinito.*
 
 Il ruolo di **proprietario** predefinito concede tutte le autorizzazioni al **proprietario del carico di lavoro** nell'ambito della sottoscrizione.
 
@@ -87,15 +81,13 @@ Il livello successivo dell'ambito di gestione è il livello **risorsa di gruppo*
 
 Per spiegare questo concetto, di seguito è illustrato cosa accade quando il **proprietario del carico di lavoro** crea un gruppo di risorse:
 
-![Il * * proprietario del carico di lavoro * * crea](../../_images/govern/design/governance-1-7.png)
-un gruppo di risorse*Figura 7: il proprietario del carico di lavoro crea un gruppo di risorse ed eredita il ruolo predefinito del proprietario nell'ambito del gruppo di risorse.*
+![The * * proprietario del carico di lavoro * * crea un gruppo di risorse @ no__t-1*Figura 7-il proprietario del carico di lavoro crea un gruppo di risorse ed eredita il ruolo proprietario predefinito nell'ambito del gruppo di risorse.*
 
 Il ruolo di **proprietario** predefinito concede tutte le autorizzazioni al **proprietario del carico di lavoro** nell'ambito del gruppo di risorse. Come accennato in precedenza, questo ruolo viene ereditato dal livello di sottoscrizione. Se a questo utente è assegnato un ruolo diverso in questo ambito, questo ruolo sarà applicabile solo a questo ambito.
 
 Il livello più basso dell'ambito di gestione è il livello **risorsa**. Le operazioni a livello di risorsa si applicano solo alla risorsa stessa. Le autorizzazioni a livello di risorsa vengono ereditate dall'ambito del gruppo di risorse. Se ad esempio il **proprietario del carico di lavoro** distribuisce una [rete virtuale](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) nel gruppo di risorse:
 
-![* * Proprietario del carico di lavoro * * crea](../../_images/govern/design/governance-1-8.png)
-una risorsa*Figura 8: il proprietario del carico di lavoro crea una risorsa ed eredita il ruolo proprietario incorporato nell'ambito della risorsa.*
+![The * * proprietario del carico di lavoro * * crea una risorsa @ no__t-1*Figura 8-il proprietario del carico di lavoro crea una risorsa ed eredita il ruolo proprietario incorporato nell'ambito della risorsa.*
 
 Il **proprietario del carico di lavoro** eredita il ruolo di proprietario nell'ambito della risorsa, ovvero ha tutte le autorizzazioni per la rete virtuale.
 
@@ -109,7 +101,7 @@ Quando viene creato l'account Azure, è necessario specificare una persona dell'
 
 Il **proprietario dell'account** Azure deve quindi [creare una sottoscrizione](https://docs.microsoft.com/partner-center/create-a-new-subscription) alla quale dovrà essere [associato il tenant Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
-Dopo aver creato la sottoscrizione e aver associato il tenant Azure AD, è possibile [aggiungere il **proprietario del carico di lavoro** alla sottoscrizione con il ruolo di **proprietario** predefinito](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
+Dopo aver creato la sottoscrizione e aver associato il tenant Azure AD, è possibile [aggiungere il **proprietario del carico di lavoro** alla sottoscrizione con il ruolo di **proprietario** predefinito](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

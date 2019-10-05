@@ -1,5 +1,5 @@
 ---
-title: 'Guida aziendale standard: Informazioni aggiuntive sulla descrizione'
+title: 'Guida alla governance aziendale standard: Informazioni aggiuntive sulla descrizione'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sulle linee guida prescrittiva per la governance nelle aziende standard.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223826"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967503"
 ---
-# <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Guida aziendale standard: Informazioni aggiuntive sulla descrizione
+# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Guida alla governance aziendale standard: Informazioni aggiuntive sulla descrizione
 
 La guida alla governance inizia con un set di [criteri aziendali](./initial-corporate-policy.md)iniziali. Questi criteri vengono usati per stabilire un MVP di governance che riflette le [procedure consigliate](./index.md).
 

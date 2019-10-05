@@ -1,7 +1,7 @@
 ---
-title: 'Guida aziendale standard: Miglioramento della coerenza delle risorse'
+title: 'Guida alla governance aziendale standard: Miglioramento della coerenza delle risorse'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida aziendale standard: Miglioramento della coerenza delle risorse'
+description: 'Guida alla governance aziendale standard: Miglioramento della coerenza delle risorse'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222230"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967455"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guida aziendale standard: Miglioramento della coerenza delle risorse
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guida alla governance aziendale standard: Miglioramento della coerenza delle risorse
 
 In questo articolo viene avanzata la descrizione tramite l'aggiunta di controlli di coerenza delle risorse per supportare app mission-critical.
 

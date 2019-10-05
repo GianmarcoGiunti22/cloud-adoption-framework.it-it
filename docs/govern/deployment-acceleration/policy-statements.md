@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222656"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967679"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Esempi di istruzioni dei criteri di Accelerazione della distribuzione
 
@@ -32,7 +32,7 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 
 **Definizione dei criteri**: Tutte le risorse distribuite nel cloud devono essere distribuite tramite modelli o script di automazione laddove possibile.
 
-**Possibili opzioni di progettazione:** [I modelli di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) forniscono un approccio di infrastruttura come codice alla distribuzione delle risorse in Azure. È anche possibile usare la funzione di [bonifica](https://docs.microsoft.com/azure/terraform/terraform-overview) come strumento di distribuzione locale coerente e basato sul cloud.
+**Possibili opzioni di progettazione:** [I modelli di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) forniscono un approccio di infrastruttura come codice alla distribuzione delle risorse in Azure. È anche possibile usare la funzione di [bonifica](https://docs.microsoft.com/azure/terraform/terraform-overview) come strumento di distribuzione locale coerente e basato sul cloud.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Mancanza di visibilità per problemi di sistema
 

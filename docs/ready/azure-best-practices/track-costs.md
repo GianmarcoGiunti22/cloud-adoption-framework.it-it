@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022175"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967747"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Tenere traccia dei costi tra business unit, ambienti o progetti
 
@@ -40,7 +40,7 @@ Il primo passaggio per tenere traccia in modo accurato delle informazioni sui co
 
 ### <a name="resource-organization"></a>Organizzazione delle risorse
 
-Esistono diversi approcci per organizzare gli asset. Questa sezione descrive una procedura consigliata in base alle esigenze di un'azienda di grandi dimensioni, con strutture di costo distribuite tra business unit, geografie e organizzazioni IT. Una procedura consigliata simile per un'organizzazione più piccola e meno complessa è illustrata nell'articolo [Percorso di governance per piccole e medie imprese](../../govern/guides/standard/index.md).
+Esistono diversi approcci per organizzare gli asset. Questa sezione descrive una procedura consigliata in base alle esigenze di un'azienda di grandi dimensioni, con strutture di costo distribuite tra business unit, geografie e organizzazioni IT. Una procedura consigliata simile per un'organizzazione più piccola e meno complessa è disponibile nella [Guida alla governance aziendale standard](../../govern/guides/standard/index.md).
 
 Per un'azienda di grandi dimensioni, il modello seguente per i gruppi di gestione, le sottoscrizioni e i gruppi di risorse permette di creare una gerarchia che consenta a ogni team di disporre del livello di visibilità appropriato per svolgere le proprie mansioni. Quando l'azienda necessita di controlli dei costi per impedire il superamento del budget, può applicare alle sottoscrizioni presenti all'interno di questa struttura alcuni strumenti di governance come Azure Blueprints o Criteri di Azure, in modo da evitare rapidamente eventuali errori di costo futuri.
 
@@ -83,7 +83,7 @@ Gestione costi di Azure supporta i seguenti ruoli predefiniti per ogni ambito:
 
 Come procedura consigliata generale, ai membri di tutti i team deve essere assegnato il ruolo di Collaboratore di Gestione costi. Questo ruolo concede l'accesso per creare e gestire i budget e le esportazioni, in modo da monitorare i costi e creare report in modo più efficace. Tuttavia, i membri del [team di strategia cloud](../../organize/cloud-strategy.md) devono essere impostati solo come Lettore per Gestione costi. Questo perché non sono interessati a impostare i budget nell'ambito dello strumento di Gestione costi di Azure.
 
-### <a name="scope"></a>Ambito
+### <a name="scope"></a>`Scope`
 
 Le impostazioni seguenti relative all'ambito e ai ruoli permettono di creare la visibilità necessaria per la gestione dei costi. Questa procedura consigliata potrebbe richiedere modifiche minime per allinearsi alle decisioni dell'organizzazione in merito agli asset.
 

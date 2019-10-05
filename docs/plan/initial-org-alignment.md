@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022501"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967781"
 ---
 # <a name="initial-organization-alignment"></a>Allineamento iniziale dell'organizzazione
 
@@ -25,7 +25,7 @@ L'allineamento completo dell'organizzazione non è un componente obbligatorio de
 
 ## <a name="initial-best-practice-structure"></a>Struttura delle procedure consigliate iniziale
 
-Per creare un equilibrio tra la velocità e il controllo, è consigliabile che, durante l'adozione del cloud, siano disponibili almeno gli utenti responsabili dell' *adozione del cloud* e della governance del *cloud*. Potrebbe trattarsi di un team di persone che condividono responsabilità per ognuna di queste aree o *funzionalità*. Potrebbe anche trattarsi di singoli utenti che sono responsabili dei risultati e del lavoro. In entrambi gli scenari, l'adozione del cloud e la governance del cloud sono due funzionalità che comportano un attrito naturale tra il passaggio rapido e la riduzione Ecco il modo in cui i due team si adattano:
+Per creare un equilibrio tra la velocità e il controllo, è consigliabile che, durante l'adozione del cloud, siano disponibili almeno gli utenti responsabili dell' *adozione del cloud* e della *governance del cloud*. Potrebbe trattarsi di un team di persone che condividono responsabilità per ognuna di queste aree o *funzionalità*. Potrebbe anche trattarsi di singoli utenti che sono responsabili dei risultati e del lavoro. In entrambi gli scenari, l'adozione del cloud e la governance del cloud sono due funzionalità che comportano un attrito naturale tra il passaggio rapido e la riduzione Ecco il modo in cui i due team si adattano:
 
 ![Adozione del cloud con un centro cloud di eccellenza](../_images/ready/org-ready-best-practice.png)
 
@@ -43,9 +43,11 @@ Supponendo che la struttura suggerita sia allineata al piano di adozione del clo
 - Quale persona sarà responsabile per la definizione di questi controlli di governance?
 - Sono presenti altre funzionalità o persone che avranno responsabilità o responsabilità nel piano di adozione del cloud?
 
+Una volta documentate le risposte a queste domande, è possibile stabilire [piani per](./adapt-roles-skills-processes.md) la preparazione delle competenze per definire i piani per preparare tali utenti per il lavoro imminente.
+
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver documentato le risposte a queste domande, continuare con l' [articolo](./adapt-roles-skills-processes.md) sulla preparazione delle competenze per definire i piani per la preparazione di queste persone per il lavoro.
+Informazioni su come pianificare l'adozione del cloud.
 
 > [!div class="nextstepaction"]
-> [Definire un piano di conformità delle competenze](./adapt-roles-skills-processes.md)
+> [Pianificare l'adozione del cloud](./plan-intro.md)

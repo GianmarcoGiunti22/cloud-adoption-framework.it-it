@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7144e772da10cd6c7d581fba61c11677524b60c2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221507"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967289"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Configurare i servizi di gestione di Azure su larga scala
 
@@ -30,7 +30,7 @@ Il caricamento dei servizi di gestione di Azure nei server implica due attività
 
 Tutte le soluzioni di gestione illustrate in [strumenti e servizi di gestione di Azure](./tools-services.md) richiedono l'installazione dell'agente di log Analytics in macchine virtuali di Azure e server locali. È possibile caricare le macchine virtuali di Azure su larga scala usando criteri di Azure. Assegnare i criteri per assicurarsi che l'agente sia installato in tutte le macchine virtuali di Azure e connesso all'area di lavoro Log Analytics corretta.
 
-Criteri di Azure prevede un'iniziativa di [criteri](/azure/governance/policy/index#initiative-definition) incorporata che include l'agente di log Analytics e [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), necessario per monitoraggio di Azure per le macchine virtuali.
+Criteri di Azure prevede un'iniziativa di [criteri](/azure/governance/policy/concepts/definition-structure#initiatives) incorporata che include l'agente di log Analytics e [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), necessario per monitoraggio di Azure per le macchine virtuali.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -44,7 +44,7 @@ Criteri di Azure prevede un'iniziativa di [criteri](/azure/governance/policy/ind
 
 Per assegnare i criteri elencati nella sezione precedente:
 
-1. Nella portale di Azure passare ad **Azure Policy** > **assegnations** > **assign Initiative**.
+1. Nella portale di Azure passare ad **Azure Policy** > **assegnazioni** > **assign Initiative**.
 
     ![Screenshot dell'interfaccia dei criteri del portale](./media/onboarding-at-scale1.png)
 
@@ -71,7 +71,7 @@ Al termine della procedura guidata, l'assegnazione dei criteri verrà distribuit
 > [!NOTE]
 > Creare l' [area di lavoro log Analytics richiesta e l'account di automazione di Azure](./prerequisites.md#create-a-workspace-and-automation-account) prima di caricare i server nei servizi di gestione di Azure.
 
-Per i server locali, è necessario scaricare e installare manualmente l'agente di [log Analytics e Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) e configurarli per connettersi all'area di lavoro corretta. A tale scopo, specificare l'ID dell'area di lavoro e le informazioni sulla chiave, che è possibile trovare accedendo all'area di lavoro log Analytics nel portale di Azure e selezionando **Impostazioni** > **Impostazioni avanzate**.
+Per i server locali, è necessario scaricare e installare manualmente l'agente di [log Analytics e Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) e configurarli per connettersi all'area di lavoro corretta. A tale scopo, specificare l'ID dell'area di lavoro e le informazioni sulla chiave, che è possibile trovare accedendo all'area di lavoro Log Analytics nel portale di Azure e selezionando **settings** > **Advanced Settings**.
 
 ![Screenshot delle impostazioni avanzate dell'area di lavoro Log Analytics nel portale di Azure](./media/onboarding-on-premises.png)
 
@@ -95,13 +95,13 @@ Gestione aggiornamenti, Rilevamento modifiche e le soluzioni di inventario richi
 
 Si consiglia di abilitare la soluzione Gestione aggiornamenti per tutti i server. Gestione aggiornamenti è gratuita per le macchine virtuali di Azure e i server locali. Se si Abilita Gestione aggiornamenti tramite l'account di automazione, viene creata una [configurazione dell'ambito](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) nell'area di lavoro. È necessario aggiornare manualmente l'ambito per includere i computer coperti dal servizio di aggiornamento.
 
-Per coprire tutti i server esistenti, nonché i server futuri, è necessario rimuovere la configurazione dell'ambito. A tale scopo, visualizzare l'account di automazione nella portale di Azure e selezionare **Gestione aggiornamenti** > Gestisci Abilita**computer** > **in tutti i computer disponibili e futuri**. L'abilitazione di questa impostazione consente a tutte le macchine virtuali di Azure connesse all'area di lavoro di usare Gestione aggiornamenti.
+Per coprire tutti i server esistenti, nonché i server futuri, è necessario rimuovere la configurazione dell'ambito. A tale scopo, visualizzare l'account di automazione nel portale di Azure e selezionare **Gestione aggiornamenti** > **gestisci computer** > **Abilita in tutti i computer disponibili e futuri**. L'abilitazione di questa impostazione consente a tutte le macchine virtuali di Azure connesse all'area di lavoro di usare Gestione aggiornamenti.
 
 ![Screenshot del Gestione aggiornamenti nel portale di Azure](./media/onboarding-configuration1.png)
 
 ### <a name="change-tracking-and-inventory-solutions"></a>Soluzioni di Rilevamento modifiche e inventario
 
-Per eseguire l'onboarding delle soluzioni di Rilevamento modifiche e inventario, seguire la stessa procedura illustrata Gestione aggiornamenti. Per ulteriori informazioni sull'onboarding di queste soluzioni dall'account di automazione, vedere onboarding [Gestione aggiornamenti, rilevamento modifiche e Inventory Solutions](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
+Per eseguire l'onboarding delle soluzioni di Rilevamento modifiche e inventario, seguire la stessa procedura illustrata Gestione aggiornamenti. Per ulteriori informazioni sull'onboarding di queste soluzioni dall'account di automazione, vedere [onboarding gestione aggiornamenti, rilevamento modifiche e Inventory Solutions](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
 La soluzione Rilevamento modifiche è gratuita per le macchine virtuali di Azure e costa $6 per nodo al mese per i server locali. Questo costo copre Rilevamento modifiche, l'inventario e la configurazione dello stato desiderato. Se si desidera registrare solo server locali specifici, è possibile optare per questi server. Si consiglia di eseguire l'onboarding di tutti i server di produzione.
 
@@ -148,7 +148,7 @@ Il [log attività di Azure](https://docs.microsoft.com/azure/azure-monitor/platf
 
 Per aggiungere la soluzione:
 
-1. Nella portale di Azure aprire **tutti i servizi** e selezionare **gestione +**  > **soluzioni**di governance.
+1. Nella portale di Azure aprire **tutti i servizi** e selezionare **gestione e governance** > **soluzioni**.
 2. Nella visualizzazione **soluzioni** selezionare **Aggiungi**.
 3. Cercare **analisi log attività** e selezionarlo.
 4. Selezionare **Create**.
@@ -161,14 +161,14 @@ La soluzione Azure Log Analytics Integrità agente offre informazioni dettagliat
 
 Per aggiungere la soluzione:
 
-1. Nella portale di Azure aprire **tutti i servizi** e selezionare **gestione +**  > **soluzioni**di governance.
+1. Nella portale di Azure aprire **tutti i servizi** e selezionare **gestione e governance** > **soluzioni**.
 2. Nella visualizzazione **soluzioni** selezionare **Aggiungi**.
 3. Cercare **Azure log Analytics Health Agent** e selezionarlo.
 4. Selezionare **Create**.
 
 È necessario specificare il nome dell' **area** di lavoro creata nella sezione precedente in cui la soluzione è abilitata.
 
-Al termine della creazione, l'istanza della risorsa dell'area di lavoro Visualizza **AgentHealthAssessment** quando si seleziona **Visualizza** > **soluzioni**.
+Al termine della creazione, l'istanza della risorsa dell'area di lavoro Visualizza **AgentHealthAssessment** quando si seleziona **Visualizza** **soluzioni** > .
 
 ### <a name="antimalware-assessment"></a>Antimalware Assessment
 
@@ -176,14 +176,14 @@ La soluzione Valutazione antimalware consente di identificare i server che sono 
 
 Per aggiungere la soluzione:
 
-1. Nella portale di Azure aprire **tutti i servizi** e selezionare **gestione +**  > **soluzioni**di governance.
+1. Nella portale di Azure aprire **tutti i servizi** e selezionare **gestione e governance** > **soluzioni**.
 2. Nella visualizzazione **soluzioni** selezionare **Aggiungi**.
 3. Cercare **valutazione antimalware** e selezionarlo.
 4. Selezionare **Create**.
 
 È necessario specificare il nome dell' **area** di lavoro creata nella sezione precedente in cui la soluzione è abilitata.
 
-Al termine della creazione, l'istanza della risorsa dell' area di lavoro Visualizza antimalware quando si seleziona **Visualizza** > **soluzioni**.
+Al termine della creazione, l'istanza della risorsa dell'area di lavoro Visualizza **antimalware** quando si seleziona **Visualizza** **soluzioni** > .
 
 ### <a name="azure-monitor-for-vms"></a>Monitoraggio di Azure per le macchine virtuali
 

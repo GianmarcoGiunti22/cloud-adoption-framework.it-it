@@ -1,5 +1,5 @@
 ---
-title: 'Guida aziendale standard: Presentazione dello scenario per la strategia di governance'
+title: 'Guida alla governance aziendale standard: Presentazione dello scenario per la strategia di governance'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Questa descrizione stabilisce un caso d'uso per la governance durante un percorso di adozione cloud aziendale standard.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026553"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967463"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>Guida aziendale standard: Presentazione dello scenario per la strategia di governance
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guida alla governance aziendale standard: Presentazione dello scenario per la strategia di governance
 
 La descrizione seguente descrive il caso d'uso per la governance durante un [percorso di adozione del cloud aziendale standard](./index.md). Prima di implementare il percorso, è importante comprendere i presupposti e la logica che si riflettono in questa descrizione. Sarà quindi possibile allineare più facilmente la strategia di governance al percorso specifico per la propria organizzazione.
 
@@ -52,7 +52,7 @@ Sono previste le modifiche seguenti per gli anni successivi:
 - Il CIO sta esaminando i criteri sui dati personali e sui dati finanziari per consentire gli obiettivi di stato futuri.
 - I team di sviluppo delle applicazioni e di business intelligence intendono rilasciare soluzioni basate sul cloud in produzione nel corso dei 24 mesi successivi, in linea con la visione aziendale per l'engagement dei clienti e i nuovi prodotti.
 - Nel corso dell'anno, il team IT terminerà il ritiro dei carichi di lavoro di ripristino di emergenza del data center DR con la migrazione di 2.000 macchine virtuali nel cloud. È previsto che questa misura consenta risparmi sui costi stimati per 25 milioni di dollari USA nel corso dei prossimi cinque anni.
-    ![Costi locali rispetto ai costi di Azure che dimostrano un ritorno di $25M USD nei prossimi cinque anni](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    costi ![On-locali rispetto ai costi di Azure che dimostrano un ritorno di $25M USD nei prossimi cinque anni @ no__t-1
 - La società intende modificare il modo in cui rende gli investimenti IT riposizionando le spese di capitale vincolate come una spesa operativa al suo interno. Questa modifica consentirà un maggiore controllo dei costi e permetterà al reparto IT di accelerare altri progetti pianificati.
 
 ## <a name="next-steps"></a>Passaggi successivi
