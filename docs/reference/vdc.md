@@ -9,26 +9,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 39cb6ac3c31873431206d8c6c525c9ce3467653f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
+ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029443"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72001863"
 ---
-# <a name="azure-virtual-datacenter-and-the-enterprise-control-plane"></a>Data center virtuale di Azure e piano di controllo aziendale
+# <a name="azure-virtual-datacenter"></a>Data center virtuale di Azure
 
-Il data center virtuale di Azure rappresenta un approccio per ottenere il massimo dalle funzionalità delle piattaforme cloud di Azure, rispettando al tempo stesso i criteri di sicurezza e di rete esistenti. Quando le organizzazioni IT e le business unit distribuiscono carichi di lavoro aziendali sul cloud, devono bilanciare la governance con la flessibilità degli sviluppatori. Il data center virtuale di Azure offre modelli per raggiungere questo equilibrio, soffermandosi in particolare sulla governance.
+> [!WARNING]
+> Il data center virtuale di Azure è stato integrato nel Framework di adozione Microsoft Cloud per Azure. Questo materiale sussidiario funge da parte significativa della base per le metodologie pronte e di governance all'interno del Framework di adozione del cloud. Per supportare i clienti che effettuano questa transizione, le risorse seguenti sono state archiviate e verranno mantenute in un repository GitHub separato.
 
-## <a name="resources"></a>Risorse
+## <a name="archived-resources"></a>Risorse archiviate
 
 <!-- markdownlint-disable MD033 -->
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://aka.ms/VDC/Concepts"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
     <td>
-        <h3><a href="https://aka.ms/VDC/Concepts">Data center virtuale di Azure: concetti</a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Data center virtuale di Azure: concetti</a></h3>
         <p>Questo e-book illustra come distribuire carichi di lavoro aziendali nella piattaforma cloud di Azure, rispettando comunque i criteri di sicurezza e di rete esistenti.</p>
     </td>
 </tr>
@@ -40,37 +41,12 @@ Il data center virtuale di Azure rappresenta un approccio per ottenere il massim
     </td>
 </tr>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://aka.ms/VDC/Lift"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://aka.ms/VDC/Lift">Data center virtuale di Azure: guida al trasferimento in modalità lift-and-shift</a></h3>
-        <p>Questo white paper illustra il processo che il personale IT e i decision maker aziendali possono usare per identificare e pianificare la migrazione delle applicazioni e dei server ad Azure servendosi del metodo lift and shift, riducendo al minimo eventuali costi di sviluppo aggiuntivi e ottimizzando al tempo stesso le opzioni di hosting nel cloud.</p>
-    </td>
-</tr>
-<tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://aka.ms/VDC/Deck"><img src="../_images/vdc/vdc-deck.png" alt="Presentation Deck" /></a></td>
-    <td>
-        <h3><a href="https://aka.ms/VDC/Deck">Data center virtuale di Azure: Presentation Deck </a></h3>
-        <p>Questo gruppo di presentazioni illustra gli strumenti e le linee guida del data center virtuale di Azure. Descrive gli obiettivi del data center virtuale, i driver di clienti, le aree di Azure, gli elementi di automazione di un data center virtuale, i data center virtuali di Azure più industrializzati e attendibili e termina con un piano di azione sulle linee guida del CIO. Contiene anche informazioni di supporto tecnico e formazione.</p>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Data center virtuale di Azure: guida al trasferimento in modalità lift-and-shift</a></h3>
+        <p>Questo white paper illustra il processo che il personale IT e i decisori IT possono usare per identificare e pianificare la migrazione di applicazioni e server in Azure usando un approccio "Lift-and-Shift", riducendo al minimo eventuali costi di sviluppo aggiuntivi durante l'ottimizzazione del cloud opzioni di hosting.</p>
     </td>
 </tr>
 </table>
 
 <!-- markdownlint-enable MD033 -->
-
-<!-- markdownlint-disable MD026 -->
-
-## <a name="what-is-the-azure-virtual-datacenter"></a>Definizione di data center virtuale di Azure
-
-La distribuzione dei carichi di lavoro nel cloud introduce la necessità di sviluppare e mantenere l'attendibilità del cloud allo stesso livello di quella dei data center esistenti. Il primo modello di linee guida per il data center virtuale di Azure è progettato per soddisfare questa necessità tramite un approccio bloccato alle infrastrutture virtuali. Questo approccio non è adatto a tutti gli utenti. In particolare è progettato per guidare i gruppi IT aziendali nell'estensione della propria infrastruttura locale al cloud pubblico di Azure. Questo approccio viene definito modello di estensione attendibile del data center. Nel corso del tempo verranno proposti molti altri modelli, inclusi quelli che consentono un accesso sicuro a Internet direttamente da un data center virtuale.
-
-<!-- markdownlint-disable MD033 -->
-
-<img src="../_images/vdc/vdc-components.svg" alt="Virtual Datacenter components" style="max-width:700px;"/>
-
-<!-- markdownlint-enable MD033 -->
-
-Il data center virtuale di Azure è possibile grazie a questi quattro componenti: identità, crittografia, rete software-defined e conformità, inclusi i log e la creazione di report.
-
-Nel modello di data center virtuale di Azure è possibile applicare i criteri di isolamento, rendere il cloud più simile ai data center fisici conosciuti e raggiungere i livelli di sicurezza e attendibilità necessari. Tutto ciò è realizzabile grazie a quattro componenti che qualsiasi team IT aziendale riconoscerebbe: rete software-defined, crittografia, gestione dell'identità e standard e certificazioni di conformità alla base della piattaforma di Azure. Queste quattro componenti sono fondamentali per fare in modo che un data center virtuale diventi un'estensione attendibile degli investimenti dell'infrastruttura esistente.
-
-Continuare con la lettura dell'eBook sui [concetti del data center virtuale di Azure](https://azure.microsoft.com/resources/azure-virtual-datacenter).
