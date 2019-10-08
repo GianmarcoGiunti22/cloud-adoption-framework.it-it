@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025730"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967598"
 ---
 # <a name="cloud-governance-guides"></a>Guide di governance del cloud
 
@@ -76,27 +76,27 @@ Per iniziare un percorso di governance, scegliere una delle due opzioni seguenti
 
 ### <a name="business-characteristics"></a>Caratteristiche dell'azienda
 
-| Caratteristica | Organizzazione standard                                                                              | Azienda complessa                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Geografia (paese o area geopolitica) | I clienti o il personale si trovano in gran parte in un'unica area geografica                                                      | I clienti o il personale si trovano in più aree geografiche o richiedono cloud sovrani.                                                             |
-| Business unit interessate                    | Business unit che condividono un'infrastruttura IT comune                                                                                    | Più business unit che non condividono un'infrastruttura IT comune                                                                                        |
-| Budget IT                                  | Singolo budget IT                                                                                        | Budget allocato tra più business unit e in diverse valute                                                                         |
-| Investimenti IT                             | Gli investimenti come spese in conto capitale sono pianificati su base annua e riguardano in genere solo la manutenzione di base. | Gli investimenti come spese in conto capitale sono pianificati su base annua e spesso includono la manutenzione e un ciclo di aggiornamento di 3-5 anni. |
+| Caratteristica | Organizzazione standard | Azienda complessa |
+|---|---|---|
+| Geografia (paese o area geopolitica) | I clienti o il personale si trovano in gran parte in un'unica area geografica | I clienti o il personale si trovano in più aree geografiche o richiedono cloud sovrani. |
+| Business unit interessate | Business unit che condividono un'infrastruttura IT comune | Più business unit che non condividono un'infrastruttura IT comune |
+| Budget IT | Singolo budget IT | Budget allocato tra più business unit e in diverse valute |
+| Investimenti IT | Gli investimenti come spese in conto capitale sono pianificati su base annua e riguardano in genere solo la manutenzione di base. | Gli investimenti come spese in conto capitale sono pianificati su base annua e spesso includono la manutenzione e un ciclo di aggiornamento di 3-5 anni. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>Stato corrente prima di adottare la governance del cloud
 
-| Stato | Azienda standard                                                                               | Azienda complessa                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Data center o provider di hosting di terze parti | Meno di cinque data center                                                                                  | Più di cinque data center                                                                                                   |
-| Rete                                  | Nessuna rete WAN o 1-2 provider WAN                                                                             | Rete complessa o WAN globale                                                                                             |
-| Identità                                    | Foresta singola, dominio singolo. | Struttura complessa, più foreste, più domini.  |
+| Stato | Azienda standard | Azienda complessa |
+|---|---|---|
+| Data center o provider di hosting di terze parti | Meno di cinque data center | Più di cinque data center |
+| Rete | Nessuna rete WAN o 1-2 provider WAN | Rete complessa o WAN globale |
+| Identità | Foresta singola, dominio singolo. | Struttura complessa, più foreste, più domini. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Stato futuro desiderato dopo il miglioramento incrementale della governance del cloud
 
-| Stato | Organizzazione standard                                                                        | Azienda complessa                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Gestione dei costi - Cloud accounting           | Modello di showback. La fatturazione è centralizzata tramite IT.                                                | Modello di chargeback. La fatturazione potrebbe essere distribuita tramite approvvigionamento IT.                                  |
-| Baseline di sicurezza - Dati protetti           | Dati finanziari e proprietà intellettuale dell'azienda. Dati sui clienti limitati. Nessun requisito di conformità di terze parti.     | Più raccolte di dati finanziari e personali dei clienti. Potrebbe essere necessario tenere conto della conformità di terze parti. |
+| Stato | Organizzazione standard | Azienda complessa |
+|---|---|---|
+| Gestione dei costi - Cloud accounting | Modello di showback. La fatturazione è centralizzata tramite IT. | Modello di chargeback. La fatturazione potrebbe essere distribuita tramite approvvigionamento IT. |
+| Baseline di sicurezza - Dati protetti | Dati finanziari e proprietà intellettuale dell'azienda. Dati sui clienti limitati. Nessun requisito di conformità di terze parti. | Più raccolte di dati finanziari e personali dei clienti. Potrebbe essere necessario tenere conto della conformità di terze parti. |
 
 ## <a name="azure-virtual-datacenter"></a>Data center virtuale di Azure
 
@@ -124,6 +124,6 @@ Per altre informazioni, visitare la sezione relativa al [data center virtuale di
 Scegliere una di queste guide:
 
 > [!div class="nextstepaction"]
-> [Guida alla governance standard](./standard/index.md)
+> [Guida alla governance per aziende standard](./standard/index.md)
 >
 > [Guida alla governance per aziende complesse](./complex/index.md)

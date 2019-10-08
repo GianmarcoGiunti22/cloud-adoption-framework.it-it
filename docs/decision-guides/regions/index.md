@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224593"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967702"
 ---
 # <a name="azure-regions"></a>Aree di Azure
 
@@ -110,7 +110,7 @@ Questo approccio è basato su informazioni quantificabili. Di conseguenza, l'app
 Quando l'ambito di una migrazione include più aree, il team di adozione del cloud deve tenere conto delle considerazioni seguenti sulla conformità:
 
 - La sovranità dei dati potrebbe richiedere la localizzazione di alcune risorse, ma ne sono presenti molte che potrebbero non essere regolate da tali vincoli di conformità. Registrazione, creazione di report, routing di rete, identità e altri servizi IT centrali possono essere ospitati come servizi condivisi tra più sottoscrizioni o più aree. Si consiglia al team di adozione del cloud di valutare un modello di servizio di condivisione per tali servizi, come descritto nell'[architettura di riferimento per una topologia hub-spoke con servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
-- Quando si distribuiscono più istanze di ambienti simili, una factory di ambiente potrebbe creare coerenza, migliorare la governance e accelerare la distribuzione. Il [percorso di governance per grandi imprese](../../govern/guides/complex/index.md) stabilisce un approccio che consente di creare un ambiente scalabile in più aree.
+- Quando si distribuiscono più istanze di ambienti simili, una factory di ambiente potrebbe creare coerenza, migliorare la governance e accelerare la distribuzione. La [guida alla governance per imprese complesse](../../govern/guides/complex/index.md) stabilisce un approccio che consente di creare un ambiente scalabile in più aree.
 
 Una volta che la conformità è allineata e il team ha acquisito familiarità con l'approccio di base, bisogna considerare alcuni prerequisiti basati sui dati:
 
