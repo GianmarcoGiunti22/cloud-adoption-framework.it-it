@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024802"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967203"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Meccanismi di controllo dei costi incentrati sulla migrazione
 
@@ -71,7 +71,7 @@ La stima risultante, illustrata di seguito, identifica i costi mensili di calcol
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
 - [Configurare ed esaminare una valutazione con Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Per un piano più completo sulla gestione dei costi in un numero maggiore di asset (infrastruttura, app e dati), vedere il [modello di governance di Cloud Adoption Framework](../../govern/guides/index.md). In particolare, le indicazioni relative alla [disciplina Gestione costi](../../govern/cost-management/index.md) e al [miglioramento di Gestione costi nella guida per grandi imprese](../../govern/guides/complex/cost-management-improvement.md).
+- Per un piano più completo sulla gestione dei costi in un numero maggiore di asset (infrastruttura, app e dati), vedere il [modello di governance di Cloud Adoption Framework](../../govern/guides/index.md). In particolare, vedere le indicazioni relative alla [disciplina Gestione costi](../../govern/cost-management/index.md) e al [miglioramento di Gestione costi nella guida alla governance per aziende complesse](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Stimare e ottimizzare i costi delle macchine virtuali durante e dopo la migrazione](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Questa analisi consentirà di esaminare i costi totali, il budget (se disponibil
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-- Per un piano più completo sulla gestione dei costi in un numero maggiore di asset (infrastruttura, app e dati), vedere il [modello di governance di Cloud Adoption Framework](../../govern/guides/index.md). In particolare, le indicazioni relative alla [disciplina Gestione costi](../../govern/cost-management/index.md) e al [miglioramento incrementale di Gestione costi nella guida per grandi imprese](../../govern/guides/complex/cost-management-improvement.md).
+- Per un piano più completo sulla gestione dei costi in un numero maggiore di asset (infrastruttura, app e dati), vedere il [modello di governance di Cloud Adoption Framework](../../govern/guides/index.md). In particolare, vedere le indicazioni relative alla [disciplina Gestione costi](../../govern/cost-management/index.md) e al [miglioramento incrementale di Gestione costi nella guida alla governance per aziende complesse](../../govern/guides/complex/cost-management-improvement.md).
 - Per altre informazioni su Azure Advisor, vedere [Ridurre i costi del servizio con Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Per altre informazioni su Gestione costi di Azure, vedere [Comprendere e utilizzare gli ambiti](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) ed [Esplorare e analizzare i costi con l'analisi dei costi](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
@@ -142,4 +142,4 @@ Per i processi in background con priorità più bassa, Batch consente di gestire
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-Per un piano più completo sulla gestione dei costi in un numero maggiore di asset (infrastruttura, app e dati), vedere il [modello di governance di Cloud Adoption Framework](../../govern/guides/index.md). In particolare, le indicazioni relative alla [disciplina Gestione costi](../../govern/cost-management/index.md) e al [miglioramento incrementale di Gestione costi nella guida alla governance per grandi imprese](../../govern/guides/complex/cost-management-improvement.md).
+Per un piano più completo sulla gestione dei costi in un numero maggiore di asset (infrastruttura, app e dati), vedere il [modello di governance di Cloud Adoption Framework](../../govern/guides/index.md). In particolare, vedere le indicazioni relative alla [disciplina Gestione costi](../../govern/cost-management/index.md) e al [miglioramento incrementale di Gestione costi nella guida alla governance per aziende complesse](../../govern/guides/complex/cost-management-improvement.md).
