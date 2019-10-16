@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024431"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72377935"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework per Azure
 
@@ -159,7 +159,7 @@ Cloud Adoption Framework è attualmente disponibile come anteprima pubblica. Il 
 - [Migrazione al cloud](./migrate/index.md)
 - [Governance cloud](./govern/guides/index.md)
 
-Cloud Adoption Framework verrà ampliato di frequente, man mano che ci si avvicina alla versione prevista per la disponibilità generale. L'espansione includerà approfondimenti per ogni sezione di contenuto e l'aggiunta di nuove sezioni. Per altre informazioni, vedere la [roadmap per Cloud Adoption Framework](./reference/roadmap.md).
+Cloud Adoption Framework verrà ampliato di frequente, man mano che ci si avvicina alla versione prevista per la disponibilità generale. L'espansione includerà approfondimenti per ogni sezione di contenuto e l'aggiunta di nuove sezioni. Per altre informazioni, vedere la [roadmap per Cloud Adoption Framework](./reference/index.md).
 
 ## <a name="intent"></a>Finalità
 
