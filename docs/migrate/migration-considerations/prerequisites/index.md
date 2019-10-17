@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022607"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378403"
 ---
 # <a name="prerequisites-for-migration"></a>Prerequisiti per la migrazione
 
@@ -60,7 +60,7 @@ Oltre alle responsabilità di alto livello, esistono azioni per cui un singolo u
 - **Idoneità per la gestione delle modifiche.** Definire e comunicare il piano per tenere traccia delle modifiche tecniche durante la migrazione. Altre informazioni su questo argomento saranno disponibili nel terzo trimestre del 2019.
 - **Allineamento degli utenti aziendali.** Elaborare un piano per preparare la comunità degli utenti aziendali per l'esecuzione della migrazione. Altre informazioni su questo argomento saranno disponibili nel terzo trimestre del 2019.
 - **Inventario e analisi del digital estate.** Esecuzione degli strumenti necessari per creare un inventario e analizzare il digital estate. Per altre informazioni, vedere gli articoli di Cloud Adoption Framework dedicati al [digital estate](../../../digital-estate/index.md).
-- **Idoneità del cloud.** Valutare l'ambiente di distribuzione di destinazione per assicurarsi che sia conforme ai requisiti dei primi carichi di lavoro candidati. Vedere la [guida all'idoneità per Azure](../../../ready/azure-readiness-guide/index.md) per altre informazioni.
+- **Idoneità del cloud.** Valutare l'ambiente di distribuzione di destinazione per assicurarsi che sia conforme ai requisiti dei primi carichi di lavoro candidati. Vedere la [Guida alla configurazione di Azure](../../../ready/azure-setup-guide/index.md) per altre informazioni.
 
 Gli articoli rimanenti di questa serie sono utili per l'esecuzione di ognuna di queste attività.
 

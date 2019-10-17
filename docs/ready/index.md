@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816160"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378330"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Gli esercizi seguenti illustrano le varie fasi del processo di creazione di un'a
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Gli esercizi seguenti illustrano le varie fasi del processo di creazione di un'a
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Guida all'idoneità per Azure</h3>
-Vedere la Guida all'idoneità per Azure per acquisire familiarità con gli strumenti e gli approcci necessari per la creazione di un'area di destinazione.
+                            <h3>Guida alla configurazione di Azure</h3>
+Vedere la Guida alla configurazione di Azure per acquisire familiarità con gli strumenti e gli approcci necessari per la creazione di un'area di destinazione.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Vedere la Guida all'idoneità per Azure per acquisire familiarità con gli strum
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Convalidare le modifiche dell'area di destinazione in base alle sezioni delle pr
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per prepararsi all'adozione del cloud, vedere la [Guida all'idoneità per Azure](./azure-readiness-guide/index.md).
+Per prepararsi all'adozione del cloud, vedere la [Guida alla configurazione di Azure](./azure-setup-guide/index.md).
 
 > [!div class="nextstepaction"]
-> [Guida all'idoneità per Azure](./azure-readiness-guide/index.md)
+> [Guida alla configurazione di Azure](./azure-setup-guide/index.md)

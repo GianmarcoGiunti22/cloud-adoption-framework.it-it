@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967203"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378422"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Meccanismi di controllo dei costi incentrati sulla migrazione
 
@@ -91,7 +91,7 @@ La procedura seguente fornisce consigli sui costi per gli asset (infrastruttura,
 
 Gestione costi di Azure può offrire una panoramica più olistica delle abitudini di spesa, tra cui la vista dettagliata dei costi e delle tendenze di spesa nel tempo. Per le migrazioni complesse o di grandi dimensioni, questa vista può fornire le informazioni necessarie per prendere decisioni di ampia portata sulla gestione dei costi.
 
-Prerequisiti: il resto di questa scheda presuppone che il lettore abbia completato la configurazione di Gestione costi di Azure durante il completamento della guida all'idoneità per Azure. Per altri dettagli sulla configurazione di Gestione costi di Azure, vedere questo [articolo nella guida all'idoneità per Azure](../../ready/azure-readiness-guide/manage-costs.md). Dopo aver inserito i dati, seguire i passaggi successivi per stimare i costi mensili in base ai dati raccolti.
+Prerequisiti: il resto di questa scheda presuppone che il lettore abbia completato la configurazione di Gestione costi di Azure durante il completamento della guida alla configurazione di Azure. Per altri dettagli sulla configurazione di Gestione costi di Azure, vedere questo [articolo nella guida alla configurazione di Azure](../../ready/azure-setup-guide/manage-costs.md). Dopo aver inserito i dati, seguire i passaggi successivi per stimare i costi mensili in base ai dati raccolti.
 
 La procedura seguente consentirà di caricare i dati di analisi dei costi di Gestione costi di Azure per le sottoscrizioni:
 
