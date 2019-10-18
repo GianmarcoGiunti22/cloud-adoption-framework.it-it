@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221119"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547876"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guida alle decisioni relative alla coerenza delle risorse
 
@@ -32,7 +32,7 @@ Man mano che questi fattori acquisiscono maggiore importanza, diventano più ril
 
 In Azure i [gruppi di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) sono un meccanismo principale di organizzazione delle risorse che consente di raggruppare le risorse in modo logico all'interno di una sottoscrizione.
 
-I gruppi di risorse fungono da contenitori per le risorse con un ciclo di vita comune e vincoli di gestione condivisi, ad esempio requisiti di criteri o di controllo degli accessi in base al ruolo. I gruppi di risorse non possono essere annidati e le risorse possono appartenere a un solo gruppo. Tutte le azioni del piano di controllo si applicano a tutte le risorse di un gruppo. Con l'eliminazione di un gruppo di risorse, ad esempio, vengono eliminate anche tutte le risorse al suo interno. Per scegliere il modello di gestione dei gruppi di risorse, valutare quanto segue:
+I gruppi di risorse fungono da contenitori per le risorse con un ciclo di vita comune e vincoli di gestione condivisi, ad esempio requisiti di criteri o di controllo degli accessi in base al ruolo. I gruppi di risorse non possono essere nidificati e le risorse possono appartenere a un solo gruppo di risorse. Tutte le azioni del piano di controllo si applicano a tutte le risorse di un gruppo. Con l'eliminazione di un gruppo di risorse, ad esempio, vengono eliminate anche tutte le risorse al suo interno. Per scegliere il modello di gestione dei gruppi di risorse, valutare quanto segue:
 
 1. I contenuti del gruppo di risorse vengono sviluppati insieme?
 1. I contenuti del gruppo di risorse vengono gestiti, aggiornati e monitorati insieme e queste attività vengono svolte dalle stesse persone o dagli stessi team?
@@ -47,7 +47,7 @@ Se la risposta è _NO_ a una di queste domande, la risorsa in questione dovrebbe
 
 La piattaforma Azure offre un sistema, basato sul meccanismo di raggruppamento delle risorse di base, che consente di usare modelli per distribuire le risorse nell'ambiente cloud. È possibile usare i modelli per creare convenzioni di denominazione e organizzazione coerenti per distribuire i carichi di lavoro, applicando i vari aspetti della progettazione della distribuzione e gestione delle risorse.
 
-I [modelli di Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) consentono di distribuire ripetutamente le risorse in uno stato coerente usando una configurazione e una struttura dei gruppi di risorse predeterminate. Con questi modelli è possibile definire facilmente un set di standard come base delle distribuzioni.
+I [modelli di Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) consentono di distribuire ripetutamente le risorse in uno stato coerente usando una configurazione e una struttura dei gruppi di risorse predeterminate. Con questi modelli è possibile definire facilmente un set di standard come base delle distribuzioni.
 
 Ad esempio, si può usare un modello standard per distribuire un carico di lavoro di server Web che contiene due macchine virtuali come server Web combinati con un servizio di bilanciamento del carico per distribuire il traffico tra i server. È quindi possibile riutilizzare questo modello per creare set di macchine virtuali e bilanciamento del carico strutturalmente identici ogni volta che è necessario questo tipo di carico di lavoro, cambiando solo il nome e l'indirizzo IP della distribuzione.
 
