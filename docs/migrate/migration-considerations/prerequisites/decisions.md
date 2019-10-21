@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025426"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548301"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decisioni che influiscono sulle migrazioni
 
@@ -55,7 +55,7 @@ Prima di prendere decisioni che potrebbero avere un impatto a lungo termine sul 
 
 ### <a name="effort-type"></a>Tipo di lavoro richiesto
 
-In qualsiasi migrazione di portata significativa (oltre 250 macchine virtuali), la migrazione degli asset avviene usando un'ampia gamma di opzioni di transizione, illustrate nella pagina relativa ai cinque pilastri della razionalizzazione: *Rehosting*, *refactoring*, *riprogettazione*, *ricompilazione* e *sostituzione*.
+In qualsiasi migrazione di una scala significativa (> macchine virtuali da 250), viene eseguita la migrazione degli asset usando un'ampia gamma di opzioni di transizione, illustrate nella pagina relativa alla razionalizzazione, ovvero la *rehost*, il *refactoring* *, la riprogettazione, la* *ricompilazione*e la *sostituzione*.
 
 Alcuni carichi di lavoro vengono modernizzati tramite un processo di *ricompilazione* o *riprogettazione*, creando applicazioni più moderne con nuove funzioni e funzionalità tecniche. Altri asset vengono sottoposti a un processo di *refactoring*, ad esempio un passaggio a contenitori o altri approcci operativi e di hosting più moderni che non influiscono necessariamente sulla codebase delle soluzioni. In genere, le macchine virtuali e altri asset definiti in modo più adeguato vengono sottoposti a un processo di *rehosting*, passando le risorse dal data center al cloud. Alcuni carichi di lavoro possono essere potenzialmente migrati nel cloud, ma devono essere *sostituiti* con servizi cloud basati su servizi (basati su SaaS) che soddisfino le stesse esigenze aziendali, ad esempio usando Office 365 come alternativa alla migrazione di istanze di Exchange Server.
 
@@ -88,9 +88,9 @@ Prima di procedere, documentare i presupposti seguenti e condividerli con i team
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Una volta compreso il processo all'interno del team, è possibile esaminare i prerequisiti tecnici. L'[elenco di controllo per la pianificazione dell'ambiente di migrazione](./planning-checklist.md) consente di assicurarsi che la base tecnica sia pronta per la migrazione.
+Una volta compreso il processo tra il team, è possibile esaminare i prerequisiti tecnici. L'[elenco di controllo per la pianificazione dell'ambiente di migrazione](./planning-checklist.md) consente di assicurarsi che la base tecnica sia pronta per la migrazione.
 
-Una volta compreso il processo all'interno del team è il momento di esaminare i prerequisiti tecnici per cui [elenco di controllo per la pianificazione della migrazione] contribuirà a garantire che la base tecnica sia pronta per la migrazione.
+Una volta che il processo è stato compreso tra il team, il suo tempo per esaminare i prerequisiti tecnici di [elenco di controllo per la pianificazione della migrazione] contribuirà a garantire che la base tecnica sia pronta per la migrazione.
 
 > [!div class="nextstepaction"]
 > [Rivedere l'elenco di controllo per la pianificazione della migrazione](./planning-checklist.md)

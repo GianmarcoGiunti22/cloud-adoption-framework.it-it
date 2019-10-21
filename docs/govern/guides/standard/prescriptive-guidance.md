@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance aziendale standard: Informazioni aggiuntive sulla descrizione'
+title: 'Guida alla governance aziendale standard: procedure consigliate illustrate'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Informazioni sulle linee guida prescrittiva per la governance nelle aziende standard.
+description: Informazioni sulle procedure consigliate per la governance nelle aziende standard.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967503"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547474"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Guida alla governance aziendale standard: Informazioni aggiuntive sulla descrizione
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Guida alla governance aziendale standard: procedure consigliate illustrate
 
-La guida alla governance inizia con un set di [criteri aziendali](./initial-corporate-policy.md)iniziali. Questi criteri vengono usati per stabilire un MVP di governance che riflette le [procedure consigliate](./index.md).
+La guida alla governance inizia con un set di [criteri aziendali](./initial-corporate-policy.md)iniziali. Questi criteri vengono usati per stabilire un MVP per la governance che rifletta le [procedure consigliate](./index.md).
 
 Questo articolo illustra le strategie di alto livello necessarie per creare un MVP per la governance. L'elemento centrale dell'MVP per la governance è la disciplina [Accelerazione della distribuzione](../../deployment-acceleration/index.md). Gli strumenti e i modelli applicati in questa fase consentiranno di migliorare i miglioramenti incrementali necessari per espandere la governance in futuro.
 
@@ -38,7 +38,7 @@ L'implementazione dell'MVP per la governance dipende direttamente da identità, 
 
 Questa implementazione può essere descritta anche usando un semplice elenco di controllo:
 
-1. Sollecitare decisioni relative alle dipendenze principali: Identità, rete, monitoraggio e crittografia.
+1. Sollecitare le decisioni relative alle dipendenze principali: identità, rete, monitoraggio e crittografia.
 2. Determinare il modello da usare durante l'imposizione dei criteri aziendali.
 3. Determinare i modelli di governance appropriati per la coerenza delle risorse, l'assegnazione di tag alle risorse e le discipline per la registrazione e la creazione di report.
 4. Implementare gli strumenti di governance conformi al modello di imposizione dei criteri scelto per applicare decisioni dipendenti e di governance.
@@ -61,12 +61,12 @@ La decisione sulla progettazione di sottoscrizioni da usare determina il modo in
 
 Le decisioni relative alla coerenza delle risorse determinano gli strumenti, i processi e gli sforzi necessari per garantire la distribuzione, la configurazione e la gestione delle risorse di Azure in una sottoscrizione. In questa descrizione, la **[coerenza della distribuzione](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** è stata scelta come modello di coerenza delle risorse primario.
 
-- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita: tutto ciò che viene creato, mantenuto e ritirato insieme dovrebbe risiedere in un singolo gruppo di risorse. Per ulteriori informazioni sui gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita. Tutto ciò che viene creato, mantenuto e ritirato insieme dovrebbe risiedere in un singolo gruppo di risorse. Per ulteriori informazioni sui gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - A tutte le sottoscrizioni nel gruppo di gestione associato è necessario applicare Criteri di Azure.
 - Come parte del processo di distribuzione, i modelli di coerenza delle risorse di Azure per tutti i gruppi di risorse devono essere archiviati nel controllo del codice sorgente.
 - Ogni gruppo di risorse è associato a un carico di lavoro specifico o a un'applicazione basata sull'approccio del ciclo di vita descritto in precedenza.
 - I gruppi di gestione di Azure consentono l'aggiornamento delle progettazioni di governance man mano che maturano i criteri aziendali.
-- Un'implementazione estesa di Criteri di Azure può richiedere al team più tempo del previsto e non offrire particolari vantaggi a questo punto. È tuttavia opportuno creare e applicare semplici criteri predefiniti per imporre le poche definizioni dei criteri di governance del cloud. Questi criteri consentono di definire l'implementazione di requisiti di governance specifici che può quindi essere applicata a tutti gli asset distribuiti.
+- Una vasta implementazione di criteri di Azure può superare gli impegni in termini di tempo del team e potrebbe non fornire al momento una grande quantità di valore. È tuttavia opportuno creare e applicare semplici criteri predefiniti per imporre le poche definizioni dei criteri di governance del cloud. Questi criteri consentono di definire l'implementazione di requisiti di governance specifici che può quindi essere applicata a tutti gli asset distribuiti.
 
 >[!IMPORTANT]
 >Ogni volta che una risorsa in un gruppo di risorse non condivide più lo stesso ciclo di vita, deve essere spostata in un altro gruppo di risorse. Tra gli esempi sono inclusi i database comuni e i componenti di rete. Sebbene possano gestire l'applicazione in fase di sviluppo, possono anche essere utilizzati per altri scopi e devono pertanto esistere in altri gruppi di risorse.

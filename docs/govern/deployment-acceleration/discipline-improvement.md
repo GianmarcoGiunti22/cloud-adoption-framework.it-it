@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220758"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547772"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Miglioramento della disciplina Accelerazione della distribuzione
 
 La disciplina di Accelerazione della distribuzione si concentra sulla definizione di criteri che garantiscano che le risorse siano distribuite e configurate in modo coerente e ripetibile e rimangano conformi per tutto il loro ciclo di vita. Nell'ambito delle cinque discipline della governance del cloud, l'accelerazione della distribuzione include decisioni riguardanti l'automazione delle distribuzioni, il controllo alla fonte degli artefatti di distribuzione, il monitoraggio delle risorse distribuite per mantenere lo stato desiderato e la verifica di eventuali problemi di conformità.
 
-Questo articolo delinea alcuni potenziali compiti che l'azienda può svolgere per sviluppare e maturare al meglio la disciplina di accelerazione della distribuzione. Queste attività possono essere suddivise nelle fasi di pianificazione, costruzione, adozione e funzionamento dell'implementazione di una soluzione cloud, che vengono poi ripetute per consentire lo sviluppo di un [approccio incrementale alla governance del cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Questo articolo delinea alcuni potenziali compiti che l'azienda può svolgere per sviluppare e maturare al meglio la disciplina di accelerazione della distribuzione. Queste attività possono essere suddivise nelle fasi di pianificazione, costruzione, adozione e funzionamento dell'implementazione di una soluzione cloud, che vengono poi ripetute per consentire lo sviluppo di un [incremental approach to cloud governance (approccio incrementale alla governance del cloud)](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quattro fasi di adozione](../../_images/govern/adoption-phases.png)
 
@@ -38,7 +38,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 **Attività minime suggerite:**
 
 - Valutare la [toolchain per di Accelerazione della distribuzione](./toolchain.md) e implementare una strategia ibrida adatta alla propria organizzazione.
-- Sviluppare una bozza di linee guida sull'architettura e distribuirla ai principali stakeholder.
+- Sviluppare una bozza di documento relativo alle linee guida sull'architettura e distribuirla ai principali stakeholder.
 - Educare e coinvolgere le persone e i team interessati dallo sviluppo delle linee guida sull'architettura.
 - Eseguire il training dei team di sviluppo e del personale IT per riconoscere i principi e le strategie di DevSecOps e l'importanza di distribuzioni completamente automatizzate nella disciplina di accelerazione della distribuzione.
 
@@ -55,8 +55,8 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 - Archiviare tutti i segreti, le password, i certificati e le stringhe di connessione in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - Considerare un test pilota prima di implementare la [toolchain di Accelerazione della distribuzione](./toolchain.md), in modo da ottimizzare il più possibile le distribuzioni. Applicare il feedback dei test pilota durante la fase di pre-distribuzione, ripetendo in base alle esigenze.
 - Valutare l'architettura logica e fisica delle applicazioni e identificare le possibilità di automatizzare la distribuzione delle risorse applicative o di migliorare parti dell'architettura usando altre risorse basate sul cloud.
-- Aggiornare il documento sulle linee guida dell'architettura per includere piani di distribuzione e adozione da parte degli utenti e distribuirlo ai principali stakeholder.
-- Continuare a formare le persone e i team più interessati dalle linee guida dell'architettura.
+- Aggiornare il documento sulle linee guida dell'architettura per includere piani di distribuzione e adozione da parte degli utenti e per distribuirlo ai principali stakeholder.
+- Continuare a formare le persone e i team più interessati alle linee guida dell'architettura.
 
 **Attività potenziali:**
 
@@ -77,16 +77,16 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 - Verificare che le procedure consigliate definite durante le fasi di compilazione e di pre-distribuzione siano eseguite correttamente.
 - Assicurarsi che ogni applicazione o carico di lavoro si allinei alla strategia di accelerazione della distribuzione prima del rilascio.
 
-## <a name="operate-and-post-implementation"></a>Operazione e post-implementazione
+## <a name="operate-and-post-implementation"></a>Operazioni e post-implementazione
 
 Al termine della trasformazione, la governance e le operazioni devono continuare a funzionare per il ciclo di vita naturale di un'applicazione o di un carico di lavoro. Questa fase di maturità della governance si basa principalmente sulle attività che vengono svolte in genere dopo che la soluzione è stata implementata e il ciclo di trasformazione ha iniziato a stabilizzarsi.
 
 **Attività minime suggerite:**
 
-- Personalizzare la [toolchain di Accelerazione della distribuzione](./toolchain.md) in base alle modifiche delle mutevoli esigenze di identità dell'organizzazione.
+- Personalizzare l' [accelerazione della distribuzione](./toolchain.md) in base alle modifiche apportate alle esigenze di identità mutevoli dell'organizzazione.
 - Automatizzare le notifiche e i report in modo che possano avvisare in merito a potenziali problemi di configurazione o minacce dannose.
 - Monitorare e creare report sull'utilizzo delle applicazioni e delle risorse.
-- Creare report sulle metriche di post-distribuzione e distribuirle alle parti interessate.
+- Creare report sulle metriche di post-distribuzione e distribuirle agli stakeholder.
 - Rivedere le linee guida sull'architettura per guidare i futuri processi di adozione.
 - Continuare a comunicare ed eseguire il training alle persone e ai team interessati per garantire la continua osservanza delle linee guida sull'architettura.
 

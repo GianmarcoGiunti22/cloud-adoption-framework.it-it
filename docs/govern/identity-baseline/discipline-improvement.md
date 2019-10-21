@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 265365d2064349f53d61b10af4af053c418c871a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220477"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547458"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Miglioramento della disciplina Baseline di identità
 
@@ -52,7 +52,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 
 ## <a name="build-and-predeployment"></a>Compilazione e pre-distribuzione
 
-Per eseguire correttamente la migrazione di un ambiente, sono necessari diversi prerequisiti tecnici e non tecnici. Questo processo è incentrato sulle decisioni, sulla conformità e sull'infrastruttura di base che consente una migrazione.
+Per eseguire correttamente la migrazione di un ambiente, sono necessari diversi prerequisiti tecnici e non tecnici. Questo processo riguarda principalmente le decisioni, la conformità e l'infrastruttura di base preliminari a una migrazione.
 
 **Attività minime suggerite:**
 
@@ -104,13 +104,13 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 - Distribuire identità tra le aree globali in più hub con sincronizzazione tra le aree.
 - Stabilire la federazione di controllo centrale degli accessi in base al ruolo (RBAC).
 
-## <a name="operate-and-post-implementation"></a>Operazione e post-implementazione
+## <a name="operate-and-post-implementation"></a>Operazioni e post-implementazione
 
 Al termine della trasformazione, la governance e le operazioni devono continuare a funzionare per il ciclo di vita naturale di un'applicazione o di un carico di lavoro. Questa fase di maturità della governance si basa principalmente sulle attività che vengono svolte in genere dopo che la soluzione è stata implementata e il ciclo di trasformazione ha iniziato a stabilizzarsi.
 
 **Attività minime suggerite:**
 
-- Personalizzare la [Identity Baseline toolchain (Tolchain della baseline di identità)](./toolchain.md), in base alle modifiche delle mutevoli esigenze di identità della propria organizzazione.
+- Personalizzare la [linea di base di riferimento](./toolchain.md) per le identità in base alle modifiche apportate alle esigenze di identità mutevoli dell'organizzazione.
 - Automatizzare le notifiche e i report in modo che possano avvisare su potenziali minacce.
 - Monitorare e creare report sullo stato di uso del sistema e di adozione da parte dell'utente.
 - Creare report sulle metriche di post-distribuzione e distribuirle agli stakeholder.

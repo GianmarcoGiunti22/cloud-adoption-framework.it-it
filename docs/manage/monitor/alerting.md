@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221388"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548610"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>Guida al monitoraggio del cloud: Creazione di avvisi
+# <a name="cloud-monitoring-guide-alerting"></a>Guida al monitoraggio del cloud: avviso
 
 Per anni, le organizzazioni IT hanno faticato a combattere la fatica degli avvisi creata dagli strumenti di monitoraggio distribuiti nell'organizzazione. Molti sistemi generano un volume elevato di avvisi spesso considerati irrilevanti, mentre altri sono rilevanti, ma sono trascurati o ignorati. Di conseguenza, le operazioni di IT e sviluppatori hanno avuto difficoltà a soddisfare la qualità del livello di servizio promessa ai clienti interni o esterni. È essenziale comprendere lo stato dell'infrastruttura e delle applicazioni per garantire l'affidabilità. È necessario identificare rapidamente le cause, ridurre al minimo la riduzione del servizio e l'interferenza oppure ridurre l'effetto o ridurre il numero di eventi imprevisti.
 
@@ -81,7 +81,7 @@ Le [soluzioni di gestione](https://docs.microsoft.com/azure/azure-monitor/insigh
 
 Soluzione| Tipo di dati | Comportamento degli avvisi
 :---|:---|:---
-Monitoraggio di Azure per i contenitori | I dati relativi alle prestazioni medie calcolati da nodi e Pod vengono scritti nell'archivio di metriche. | Creare avvisi delle metriche se si desidera ricevere avvisi in base alla variazione delle prestazioni di utilizzo misurato, aggregato in un periodo di tempo.
+Monitoraggio di Azure per contenitori | I dati relativi alle prestazioni medie calcolati da nodi e Pod vengono scritti nell'archivio di metriche. | Creare avvisi delle metriche se si vuole ricevere un avviso in base alla variazione delle prestazioni di utilizzo misurato, aggregato nel tempo.
 || I dati sulle prestazioni calcolati che usano percentile da nodi, controller, contenitori e Pod vengono scritti nell'archivio dei log. Anche i log del contenitore e le informazioni di inventario vengono scritti nell'archivio dei log. | Creare avvisi di query di log se si desidera ricevere avvisi in base a variazioni di utilizzo misurato da cluster e contenitori. Gli avvisi di query di log possono anche essere configurati in base ai conteggi delle fasi pod e ai conteggi dei nodi di stato.
 Monitoraggio di Azure per le macchine virtuali | I criteri di integrità sono metriche scritte nell'archivio di metriche. | Gli avvisi vengono generati quando lo stato di integrità passa da integro a condizione non integro. Supporta solo gruppi di azioni configurati per l'invio di notifiche SMS o di posta elettronica.
 || I dati del log delle prestazioni del sistema operativo guest e mappa vengono scritti nell'archivio dei log. | Creare avvisi per le query di log.
@@ -92,7 +92,7 @@ La latenza è una delle decisioni più importanti che guidano gli avvisi e la ri
 
 Detto questo, vi sono alcune note importanti a questa regola.
 
-I dati di telemetria del sistema **operativo guest** hanno diversi percorsi per accedere al sistema.
+**I dati di telemetria del sistema operativo guest** hanno diversi percorsi per accedere al sistema.
 
 - Il modo più rapido per inviare avvisi su questi dati consiste nell'importarlo come metrica personalizzata. A tale scopo, utilizzare l'estensione Diagnostica di Azure e quindi utilizzare un avviso per la metrica. Tuttavia, le metriche personalizzate sono attualmente in anteprima e sono [più costose di altre opzioni](https://azure.microsoft.com/pricing/details/monitor).
 
@@ -106,7 +106,7 @@ I dati di telemetria del sistema **operativo guest** hanno diversi percorsi per 
 
 Se si usa una soluzione come Monitoraggio di Azure per le macchine virtuali e si individuano i criteri di integrità predefiniti che controllano l'utilizzo delle prestazioni accettabile, non creare avvisi di metrica o di query di log sovrapposti in base agli stessi contatori delle prestazioni.
 
-Se non si usa Monitoraggio di Azure per le macchine virtuali, esplorare le funzionalità seguenti per semplificare la creazione di avvisi e la gestione delle notifiche:  
+Se non si usa Monitoraggio di Azure per le macchine virtuali, esplorare le funzionalità seguenti per semplificare la creazione di avvisi e la gestione delle notifiche:
 
 > [!NOTE]
 > Queste funzionalità si applicano solo agli avvisi delle metriche; ovvero gli avvisi basati sui dati inviati al database delle metriche di monitoraggio di Azure. Non si applicano agli altri tipi di avvisi. Come indicato in precedenza, l'obiettivo principale degli avvisi delle metriche è la velocità. Se ricevere un avviso in meno di 5 minuti non è un problema principale, è invece possibile usare un avviso di query di log.

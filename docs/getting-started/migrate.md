@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduzione a un percorso di migrazione cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223066"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547835"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introduzione a un percorso di migrazione cloud
 
 Informazioni sull'uso del Framework di adozione Microsoft Cloud per Azure per iniziare un percorso di migrazione cloud. Questo Framework fornisce indicazioni complete per la transizione dei carichi di lavoro delle applicazioni legacy tramite tecnologie innovative basate su cloud.
 
-## <a name="executive-summary"></a>Riepilogo esecutivo
+## <a name="executive-summary"></a>Riepilogo
 
 Il Framework di adozione del cloud consente ai clienti di adottare un percorso semplificato di adozione del cloud. Questo Framework contiene informazioni dettagliate su un percorso di adozione cloud end-to-end, a partire da risultati aziendali mirati e allineando la preparazione al cloud e le valutazioni con obiettivi aziendali chiaramente definiti. Questi risultati vengono realizzati tramite un percorso definito per l'adozione del cloud. Con l'adozione basata sulla migrazione, il percorso definito è incentrato principalmente sul completamento di una migrazione di carichi di lavoro locali nel cloud. In alcuni casi questo percorso include la modernizzazione dei carichi di lavoro per aumentare il ritorno sugli investimenti dal lavoro di migrazione.
 
@@ -52,7 +52,7 @@ Preparare tutti i partecipanti attraverso l'impegno di migrazione con la consape
 
 Il Framework di adozione del cloud stabilisce un costrutto di alto livello di piano, pronto, adozione per raggruppare i tipi di lavoro richiesto per qualsiasi adozione del cloud. Questo riepilogo esecutivo si basa su tale flusso di alto livello per stabilire processi iterativi che consentono di semplificare le attività di sviluppo/spostamento/ottimizzazione **e** l'impegno di modernizzazione in un unico approccio tra tutte le attività di migrazione nel cloud.
 
-Questo approccio è costituito da due metodologie o aree di interesse: Strategia cloud & la pianificazione e l'implementazione cloud. La [motivazione](#motivations) o il risultato aziendale desiderato per una migrazione cloud determina spesso quanto un team deve investire in [strategia e pianificazione](#cloud-strategy-and-planning) e [implementazione](#cloud-implementation). Queste motivazioni possono anche influenzare le decisioni di esecuzione in sequenza o in parallelo.
+Questo approccio è costituito da due metodologie o aree di interesse: strategia cloud & pianificazione e implementazione cloud. La [motivazione](#motivations) o il risultato aziendale desiderato per una migrazione cloud determina spesso quanto un team deve investire in [strategia e pianificazione](#cloud-strategy-and-planning) e [implementazione](#cloud-implementation). Queste motivazioni possono anche influenzare le decisioni di esecuzione in sequenza o in parallelo.
 
 ## <a name="cloud-implementation"></a>Implementazione cloud
 
@@ -64,7 +64,7 @@ L'obiettivo di questo sforzo è la migrazione o la modernizzazione dei carichi d
 
 Le migrazioni cloud sono spesso considerate un singolo progetto all'interno di un programma più ampio per semplificare le operazioni IT, i costi o la complessità. La metodologia di implementazione del cloud consente di allineare le attività tecniche all'interno di una serie di migrazioni del carico di lavoro a valori di business di livello superiore descritti nella strategia e nel piano cloud.
 
-**Guida introduttiva:** Per iniziare a usare un'implementazione cloud, la [Guida alla migrazione di Azure](../migrate/azure-migration-guide/index.md) e la [Guida alla conformità di Azure](../ready/azure-readiness-guide/index.md) descrivono gli strumenti e i processi di alto livello necessari per la corretta esecuzione di un'implementazione cloud. La migrazione del primo carico di lavoro con queste guide consentirà al team di superare le curve di apprendimento iniziali prima del processo di pianificazione. Successivamente, è opportuno considerare altre considerazioni sull' [elenco di controllo dell'ambito espanso](../migrate/expanded-scope/index.md), le [procedure consigliate](../migrate/azure-best-practices/index.md) per la migrazione e la [valutazione della migrazione](../migrate/migration-considerations/index.md), per allineare le linee guida di base ai vincoli, ai processi e ai team univoci del proprio lavoro. strutture e obiettivi.
+**Guida introduttiva:** Per iniziare a usare un'implementazione cloud, la [Guida alla migrazione di Azure](../migrate/azure-migration-guide/index.md) e la [Guida all'installazione di Azure](../ready/azure-setup-guide/index.md) descrivono gli strumenti e i processi di alto livello necessari per la corretta esecuzione di un'implementazione cloud. La migrazione del primo carico di lavoro con queste guide consentirà al team di superare le curve di apprendimento iniziali prima del processo di pianificazione. Successivamente, è opportuno considerare altre considerazioni sull' [elenco di controllo dell'ambito espanso](../migrate/expanded-scope/index.md), le [procedure consigliate](../migrate/azure-best-practices/index.md) per la migrazione e la [valutazione della migrazione](../migrate/migration-considerations/index.md), per allineare le linee guida di base ai vincoli, ai processi e ai team univoci del proprio lavoro. strutture e obiettivi.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategia e pianificazione cloud
 
@@ -81,13 +81,13 @@ La metodologia di pianificazione e strategia cloud di adozione del cloud si basa
 Come illustrato nell'immagine precedente, questo framework allinea le decisioni strategiche a un numero ridotto di processi contenuti che operano all'interno di un modello iterativo. Sebbene venga descritta in un documento lineare, è previsto che ognuno dei processi seguenti venga maturo in parallelo con le iterazioni dell'implementazione del cloud. I collegamenti per ogni processo consentiranno di definire lo stato finale e i mezzi di maturazione verso lo stato finale desiderato:
 
 - **[Piano](../strategy/index.md):** Quando l'implementazione tecnica è allineata con obiettivi aziendali chiari, è molto più facile misurare e allineare il successo tra più attività di implementazione del cloud, indipendentemente dalle decisioni tecniche.
-- **[Preparazione](../ready/index.md):** Preparare l'azienda, la cultura, le persone e l'ambiente per le modifiche in arrivo comportano un successo in ogni sforzo e accelerano l'implementazione e i progetti di modifica.
-- **Adozione:** Garantire la corretta implementazione delle modifiche desiderate, nei processi IT e aziendali, per ottenere risultati aziendali.
-  - **[Esegui migrazione](../migrate/index.md):** Esecuzione iterativa della [metodologia di implementazione del cloud](#cloud-implementation) che rispetta il processo testato di valutazione, migrazione, ottimizzazione e sicurezza & gestire per creare un processo ripetibile per la migrazione dei carichi di lavoro.
-- **[Funzionamento](../operate/index.md):** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
-  - **[Organizzazione](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
-  - **[Governance](../govern/index.md):** Allinea i criteri aziendali ai rischi tangibili, attenuati tramite i criteri, i processi e gli strumenti di governance basati sul cloud.
-  - **[Gestione](../manage/index.md):** Espandi le operazioni IT per garantire che le soluzioni basate sul cloud possano essere gestite tramite processi sicuri e convenienti usando strumenti operativi moderni e basati sul cloud.
+- **[Pronto](../ready/index.md):** Preparare l'azienda, la cultura, le persone e l'ambiente per le modifiche in arrivo comportano un successo in ogni sforzo e accelerano l'implementazione e i progetti di modifica.
+- **Adottare:** Garantire la corretta implementazione delle modifiche desiderate, nei processi IT e aziendali, per ottenere risultati aziendali.
+  - **[Migrate](../migrate/index.md):** esecuzione iterativa della [metodologia di implementazione del cloud](#cloud-implementation) che rispetta il processo testato di valutazione, migrazione, ottimizzazione e sicurezza & gestire per creare un processo ripetibile per la migrazione dei carichi di lavoro.
+  - **[Innovazione](../innovate/index.md):** Valorizza le attività aziendali attraverso attività di innovazione che sbloccano nuove competenze tecniche e funzionalità aziendali espanse.
+- **[Regola](../govern/index.md):** Allinea i criteri aziendali ai rischi tangibili, attenuati tramite i criteri, i processi e gli strumenti di governance basati sul cloud.
+- **[Gestione](../manage/index.md):** Espandi le operazioni IT per garantire che le soluzioni basate sul cloud possano essere gestite tramite processi sicuri e convenienti usando strumenti operativi moderni e basati sul cloud.
+- **[Organizzare](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
 
 In questa esperienza di migrazione questo Framework verrà usato per risolvere le ambiguità, gestire le modifiche e guidare i team interfunzionali attraverso la realizzazione di risultati aziendali.
 
@@ -129,17 +129,23 @@ Le tecnologie migrate nel cloud si espandono costantemente quando i provider di 
 - SAP in Azure
 - Analytics (data warehouse, Data Lake)
 
-## <a name="next-steps-lifecycle-solution"></a>Passaggi successivi: Soluzione ciclo di vita
+## <a name="next-steps-lifecycle-solution"></a>Passaggi successivi: soluzione ciclo di vita
 
 Il Framework di adozione del cloud è una soluzione del ciclo di vita. È progettato per aiutare i lettori a iniziare a eseguire il proprio viaggio e ai lettori che si trovano a fondo nella migrazione. Di conseguenza, il contenuto è molto contesto e specifico del pubblico. I passaggi successivi sono più allineati al processo di alto livello che il lettore desidera migliorare successivamente.
 
 > [!div class="nextstepaction"]
+> [Strategia](../strategy/index.md)
+>
 > [Pianificare](../plan/index.md)
 >
 > [Pronto](../ready/index.md)
 >
 > [Migrazione](../migrate/index.md)
 >
-> [Manage](../manage/index.md)
+> [Innovazione](../innovate/index.md)
 >
 > [Governare](../govern/index.md)
+>
+> [Manage](../manage/index.md)
+>
+> [Organizzare](../organize/index.md)

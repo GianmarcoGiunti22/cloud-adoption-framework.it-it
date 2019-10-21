@@ -1,25 +1,25 @@
 ---
 title: Requisiti per promuovere alla produzione una risorsa migrata
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Processo nell'ambito della migrazione nel cloud che è incentrato sulle attività di migrazione dei carichi di lavoro nel cloud.
+description: Processo nell'ambito della migrazione al cloud che è incentrato sulle attività di migrazione dei carichi di lavoro nel cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb025eacb7743f470b15e2714ed65a05c21034a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0c5606c0081e01cd20456ec6490b4d6fcd7bd914
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825471"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548411"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>Requisiti per promuovere alla produzione una risorsa migrata
 
-La promozione alla produzione rappresenta il completamento della migrazione di un carico di lavoro nel cloud. Dopo la promozione dell'asset e di tutte le relative dipendenze, il traffico di produzione viene reindirizzato. Il reindirizzamento del traffico rende obsoleti gli asset locali, consentendone la rimozione.
+La promozione alla produzione contrassegna il completamento della migrazione di un carico di lavoro nel cloud. Dopo la promozione dell'asset e di tutte le relative dipendenze, il traffico di produzione viene reindirizzato. Il reindirizzamento del traffico rende obsoleti gli asset locali, consentendone la rimozione.
 
 Il processo di promozione varia in base all'architettura del carico di lavoro. Esistono tuttavia diversi prerequisiti coerenti e alcune attività comuni. Questo articolo li descrive tutti e serve come elenco di controllo di pre-promozione.
 
@@ -27,13 +27,13 @@ Il processo di promozione varia in base all'architettura del carico di lavoro. E
 
 Ognuno dei processi seguenti deve essere eseguito, documentato e convalidato prima della distribuzione in produzione:
 
-- **[Valutazione](../assess/index.md):** è stata valutata la compatibilità del carico di lavoro con il cloud.
-- **[Progettazione](../assess/architect.md):** la struttura del carico di lavoro è stata progettata correttamente per essere allineata al provider di servizi cloud scelto.
-- **[Replica](../migrate/replicate.md):** gli asset sono stati replicati nell'ambiente cloud.
-- **[Processo di gestione temporanea](../migrate/stage.md):** gli asset replicati sono stati ripristinati in un'istanza dell'ambiente cloud con gestione temporanea.
-- **[Test aziendali](./business-test.md):** il carico di lavoro è stato completamente testato e convalidato dagli utenti aziendali.
-- **[Piano per le modifiche aziendali](./business-change-plan.md):** l'azienda ha condiviso un piano per le modifiche da apportare in conformità con la promozione alla produzione. Tale piano deve includere un piano di adozione da parte degli utenti, modifiche dei processi aziendali, utenti che richiedono training e sequenze temporali per varie attività.
-- **[Preparazione](./ready.md):** in genere, è necessario apportare una serie di modifiche tecniche prima della promozione.
+- **[Valuta](../assess/index.md):** Il carico di lavoro è stato valutato per la compatibilità con il cloud.
+- **[Progettista](../assess/architect.md):** La struttura del carico di lavoro è stata progettata correttamente per essere allineata al provider di servizi cloud scelto.
+- **[Replica](../migrate/replicate.md):** Gli asset sono stati replicati nell'ambiente cloud.
+- **[Fase](../migrate/stage.md):** Gli asset replicati sono stati ripristinati in un'istanza di gestione temporanea dell'ambiente cloud.
+- **[Test aziendali](./business-test.md):** Il carico di lavoro è stato completamente testato e convalidato dagli utenti aziendali.
+- **[Piano di modifica aziendale](./business-change-plan.md):** L'azienda ha condiviso un piano per le modifiche da apportare in conformità con la promozione di produzione; Questo deve includere un piano di adozione da parte degli utenti, modifiche ai processi aziendali, utenti che richiedono il training e sequenze temporali per varie attività.
+- **[Pronto](./ready.md):** In genere, è necessario apportare una serie di modifiche tecniche prima della promozione.
 
 ## <a name="best-practices-to-execute-prior-to-promotion"></a>Procedure consigliate da eseguire prima della promozione
 
@@ -47,7 +47,7 @@ Le modifiche tecniche seguenti probabilmente dovranno essere completate e docume
 - **Classificazione dei dati.** Convalidare la classificazione dei dati per assicurarsi che siano stati implementati criteri e protezioni appropriati.
 - **Verifica del Chief Information Security Officer (CISO).** Verificare che il responsabile della sicurezza delle informazioni abbia esaminato il carico di lavoro, i rischi aziendali, la tolleranza ai rischi e le strategie di prevenzione.
 
-## <a name="final-step-promote"></a>Passaggio finale: Promozione
+## <a name="final-step-promote"></a>Passaggio finale: Promote
 
 I carichi di lavoro richiederanno livelli diversi di processi dettagliati di revisione e promozione. Tuttavia, il riallineamento delle reti rappresenta il passaggio finale comune per tutte le versioni di promozione. Quando tutto il resto è pronto, aggiornare i record DNS o gli indirizzi IP per instradare il traffico al carico di lavoro migrato.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024183"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548157"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>eseguire il rehosting di un'app locale in una macchina virtuale di Azure e in Istanza gestita di database SQL
 
@@ -25,12 +25,12 @@ Questo articolo illustra come la società fittizia Contoso esegue la migrazione 
 
 L'app SmartHotel360 usata in questo esempio viene fornita come open source. È possibile scaricarla da [GitHub](https://github.com/Microsoft/SmartHotel360) per usarla a scopi di test personalizzati.
 
-## <a name="business-drivers"></a>Driver di business
+## <a name="business-drivers"></a>Fattori chiave per lo sviluppo aziendale
 
 Il team dei responsabili IT di Contoso ha collaborato attivamente con i partner commerciali dell'azienda per comprendere gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita del business.** Contoso è in crescita. Di conseguenza, la pressione è aumentata sui sistemi locali e l'infrastruttura dell'azienda.
-- **Aumentare l'efficienza.** Occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un reparto IT rapido ed efficiente in termini di tempo e costi, per consentire di soddisfare più velocemente le esigenze dei clienti.
+- **Stare al passo con la crescita aziendale:** Contoso è in crescita. Di conseguenza, la pressione è aumentata sui sistemi locali e l'infrastruttura dell'azienda.
+- **Aumentare l'efficienza:** Occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un reparto IT rapido ed efficiente in termini di tempo e costi, per consentire di soddisfare più velocemente le esigenze dei clienti.
 - **Aumentare l'agilità.** il settore IT di Contoso deve essere più reattivo alle esigenze dell'azienda. Deve essere in grado di reagire più rapidamente dei cambiamenti nel marketplace, in modo da consentire all'azienda di raggiungere risultati positivi in un'economia globale. Il reparto IT di Contoso non deve rappresentare un ostacolo per le attività aziendali.
 - **Scalabilità.** Il reparto IT di Contoso deve mettere a punto sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 
@@ -39,7 +39,7 @@ Il team dei responsabili IT di Contoso ha collaborato attivamente con i partner 
 Il team dedicato al cloud di Contoso ha identificato alcuni obiettivi per la migrazione. L'azienda usa gli obiettivi della migrazione per determinare il metodo di migrazione migliore.
 
 - Dopo la migrazione, l'app in Azure dovrà avere le stesse caratteristiche di prestazioni di cui dispone attualmente nell'ambiente VMware locale di Contoso. Lo spostamento nel cloud non significa che le prestazioni delle app siano meno critiche.
-- Contoso non intende investire nell'app. È importante per l'azienda, ma Contoso intende semplicemente spostarla nella sua forma corrente nel cloud.
+- Contoso non vuole investire nell'app. È importante per l'azienda, ma Contoso intende semplicemente spostarla nella sua forma corrente nel cloud.
 - Le attività amministrative del database devono essere ridotte al minimo dopo la migrazione dell'app.
 - Contoso non vuole usare un database SQL di Azure per questa app e sta cercando possibili alternative.
 
@@ -81,7 +81,7 @@ Nell'ambito del processo di progettazione della soluzione, Contoso ha eseguito u
 - Contoso può semplicemente eseguire una migrazione "lift-and-shift" all'istanza gestita mediante Servizio Migrazione del database di Azure completamente automatizzato. Contoso potrà anche riusare questo servizio per le migrazioni di database future.
 - L'istanza gestita di SQL supporta SQL Server Agent, un elemento essenziale per l'app SmartHotel360. Contoso ha bisogno di questa compatibilità, per non dover riprogettare i piani di manutenzione necessari per l'app.
 - Con Software Assurance, Contoso può scambiare le licenze esistenti con tariffe scontate per un'istanza gestita di database SQL tramite il Vantaggio Azure Hybrid per SQL Server. In questo modo Contoso può risparmiare fino al 30% sull'istanza gestita.
-- Un'istanza gestita di SQL è interamente indipendente nella rete virtuale e offre quindi un isolamento e una sicurezza maggiori per i dati di Contoso. Contoso può ottenere i vantaggi del cloud pubblico, mantenendo al contempo l'ambiente isolato dalla rete Internet pubblica.
+- SQL Istanza gestita è completamente contenuto nella rete virtuale, pertanto fornisce maggiore isolamento e sicurezza per i dati di contoso. Contoso può ottenere i vantaggi del cloud pubblico, mantenendo al contempo l'ambiente isolato dalla rete Internet pubblica.
 - L'istanza gestita supporta numerose funzionalità di sicurezza, tra cui funzionalità Always Encrypted, maschera dati dinamica, sicurezza a livello di riga e rilevamento di minacce.
 
 ### <a name="solution-review"></a>Revisione della soluzione
@@ -93,7 +93,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 **Considerazioni** | **Dettagli**
 --- | ---
 **Vantaggi** | WEBVM verrà spostata in Azure senza modifiche, semplificando così la migrazione.<br/><br/> L'istanza gestita di SQL supporta i requisiti tecnici e gli obiettivi di Contoso.<br/><br/> Fornirà il 100% di compatibilità con la distribuzione corrente, portando l'azienda ad abbandonare SQL Server 2008 R2.<br/><br/> Contoso può sfruttare i propri investimenti in Software Assurance e usare l'offerta Vantaggio Azure Hybrid per SQL Server e Windows Server.<br/><br/> Può riusare Servizio Migrazione del database di Azure per altre migrazioni future.<br/><br/> L'istanza gestita di SQL include la tolleranza di errore integrata, pertanto Contoso non dovrà configurare questa funzionalità. Ciò garantisce che il livello dati non sia più un singolo punto di failover.
-**Svantaggi** | WEBVM esegue Windows Server 2008 R2. Anche se questo sistema operativo è supportato da Azure, non è più una piattaforma supportata. [Altre informazioni](https://support.microsoft.com/help/956893)<br/><br/> Il livello Web rimane un singolo punto di failover con servizi forniti solo da WEBVM.<br/><br/> Contoso dovrà continuare a supportare il livello Web dell'app come VM anziché passare a un servizio gestito come Servizio app di Azure.<br/><br/> Per il livello dati, l'istanza gestita potrebbe non essere la soluzione ideale se Contoso intende personalizzare il sistema operativo o il server di database oppure se vuole eseguire app di terze parti con SQL Server. L'esecuzione di SQL Server in una VM IaaS potrebbe garantire questa flessibilità.
+**Svantaggi** | WEBVM esegue Windows Server 2008 R2. Anche se questo sistema operativo è supportato da Azure, non è più una piattaforma supportata. [Altre informazioni](https://support.microsoft.com/help/956893).<br/><br/> Il livello Web rimane un singolo punto di failover con servizi forniti solo da WEBVM.<br/><br/> Contoso dovrà continuare a supportare il livello Web dell'app come VM anziché passare a un servizio gestito come Servizio app di Azure.<br/><br/> Per il livello dati, l'istanza gestita potrebbe non essere la soluzione ideale se Contoso intende personalizzare il sistema operativo o il server di database oppure se vuole eseguire app di terze parti con SQL Server. L'esecuzione di SQL Server in una VM IaaS potrebbe garantire questa flessibilità.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -109,7 +109,7 @@ Contoso eseguirà la migrazione dei livelli Web e dati dell'app SmartHotel360 in
 
 ### <a name="azure-services"></a>Servizi di Azure
 
-Service | Descrizione | Costi
+Servizio | Description | Costo
 --- | --- | ---
 [Servizio Migrazione del database di Azure](https://docs.microsoft.com/azure/dms/dms-overview) | Servizio Migrazione del database di Azure consente di eseguire facilmente la migrazione di più origini di database a piattaforme dati di Azure, con tempi di inattività minimi. | Altre informazioni sulle [aree supportate](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) e sui [prezzi del Servizio Migrazione del database](https://azure.microsoft.com/pricing/details/database-migration).
 [Istanza gestita di database SQL di Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | L'istanza gestita è un servizio di database gestito che rappresenta un'istanza completamente gestita di SQL Server nel cloud di Azure. Usa lo stesso codice della versione più recente del motore di database di SQL Server e dispone delle funzionalità, dei miglioramenti delle prestazioni e delle patch di sicurezza più recenti. | L'esecuzione di Istanza gestita di database SQL di Azure è soggetta a costi in base alla capacità. Altre informazioni sui [prezzi dell'istanza gestita](https://azure.microsoft.com/pricing/details/sql-database/managed).
@@ -137,15 +137,15 @@ Ecco come Contoso intende configurare la distribuzione:
 
 > [!div class="checklist"]
 >
-> - **Passaggio 1: Configurare un'Istanza gestita di database SQL.** Contoso deve disporre di un'istanza gestita esistente in cui eseguire la migrazione del database di SQL Server locale.
-> - **Passaggio 2: Preparare Servizio Migrazione del database di Azure.** Contoso deve registrare il provider di migrazione del database, creare un'istanza e quindi creare un progetto di Servizio Migrazione del database di Azure. Contoso deve anche configurare un URI (Uniform Resource Identifier) di firma di accesso condiviso (SAS) per Servizio Migrazione del database di Azure. Un URI di firma di accesso condiviso fornisce l'accesso delegato alle risorse dell'account di archiviazione di Contoso, in modo che Contoso possa concedere autorizzazioni limitate per gli oggetti di archiviazione. Contoso configura un URI di firma di accesso condiviso per consentire a Servizio Migrazione del database di Azure di accedere al contenitore dell'account di archiviazione in cui il servizio carica i file di backup di SQL Server.
-> - **Passaggio 3: Preparare Azure per Site Recovery.** Contoso deve creare un account di archiviazione per contenere i dati replicati per Site Recovery. Deve anche creare un insieme di credenziali di Servizi di ripristino di Azure.
-> - **Passaggio 4: Preparare l'ambiente VMware locale per Site Recovery.** Contoso prepara gli account per l'individuazione delle macchine virtuali e l'installazione dell'agente per la connessione alle macchine virtuali di Azure dopo il failover.
-> - **Passaggio 5: Replicare le macchine virtuali.** Per impostare la replica, Contoso configura l'ambiente di origine e di destinazione di Site Recovery, imposta i criteri di replica e avvia la replica delle macchine virtuali in Archiviazione di Azure.
-> - **Passaggio 6: Eseguire la migrazione del database usando Servizio Migrazione del database.** Contoso esegue la migrazione del database.
-> - **Passaggio 7: Eseguire la migrazione delle macchine virtuali con Site Recovery.** Contoso esegue un failover di test per verificare che tutto funzioni correttamente. Esegue quindi un failover completo per la migrazione delle macchine virtuali in Azure.
+> - **Passaggio 1: configurare un Istanza gestita di database SQL.** Contoso deve disporre di un'istanza gestita esistente in cui eseguire la migrazione del database di SQL Server locale.
+> - **Passaggio 2: preparare il servizio migrazione del database di Azure.** Contoso deve registrare il provider di migrazione del database, creare un'istanza e quindi creare un progetto di Servizio Migrazione del database di Azure. Contoso deve anche configurare un URI (Uniform Resource Identifier) di firma di accesso condiviso (SAS) per Servizio Migrazione del database di Azure. Un URI di firma di accesso condiviso fornisce l'accesso delegato alle risorse dell'account di archiviazione di Contoso, in modo che Contoso possa concedere autorizzazioni limitate per gli oggetti di archiviazione. Contoso configura un URI di firma di accesso condiviso per consentire a Servizio Migrazione del database di Azure di accedere al contenitore dell'account di archiviazione in cui il servizio carica i file di backup di SQL Server.
+> - **Passaggio 3: preparare Azure per Site Recovery.** Contoso deve creare un account di archiviazione per contenere i dati replicati per Site Recovery. Deve anche creare un insieme di credenziali di Servizi di ripristino di Azure.
+> - **Passaggio 4: preparare VMware locale per Site Recovery.** Contoso prepara gli account per l'individuazione delle macchine virtuali e l'installazione dell'agente per la connessione alle macchine virtuali di Azure dopo il failover.
+> - **Passaggio 5: replicare le macchine virtuali.** Per impostare la replica, Contoso configura l'ambiente di origine e di destinazione di Site Recovery, imposta i criteri di replica e avvia la replica delle macchine virtuali in Archiviazione di Azure.
+> - **Passaggio 6: eseguire la migrazione del database usando il servizio migrazione del database di Azure.** Contoso esegue la migrazione del database.
+> - **Passaggio 7: eseguire la migrazione delle macchine virtuali usando Site Recovery.** Contoso esegue un failover di test per verificare che tutto funzioni correttamente. Esegue quindi un failover completo per la migrazione delle macchine virtuali in Azure.
 
-## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Passaggio 1: Preparare un'Istanza gestita di database SQL
+## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Passaggio 1: Configurare un'Istanza gestita di database SQL
 
 Per configurare un'Istanza gestita di database SQL di Azure, Contoso ha bisogno di una subnet che soddisfi i requisiti seguenti:
 
@@ -153,7 +153,7 @@ Per configurare un'Istanza gestita di database SQL di Azure, Contoso ha bisogno 
 - Dopo la creazione dell'istanza gestita, Contoso non deve aggiungere risorse alla subnet.
 - Alla subnet non deve essere associato alcun gruppo di sicurezza di rete.
 - La subnet deve avere una tabella di route definita dall'utente. L'unica route assegnata deve essere con hop successivo su Internet 0.0.0.0/0.
-- DNS personalizzato facoltativo: se per la rete virtuale di Azure sono specificate impostazioni DNS personalizzate, è necessario aggiungere all'elenco l'indirizzo IP dei resolver ricorsivi di Azure, ad esempio 168.63.129.16. Altre informazioni su come [configurare il DNS personalizzato per un'istanza gestita](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- DNS personalizzato facoltativo: se per la rete virtuale di Azure sono specificate impostazioni DNS personalizzate, è necessario aggiungere all'elenco l'indirizzo IP dei resolver ricorsivi di Azure (ad esempio 168.63.129.16). Altre informazioni su come [configurare il DNS personalizzato per un'istanza gestita](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Alla subnet non deve essere associato alcun endpoint di servizio (archiviazione o SQL). Gli endpoint di servizio devono essere disabilitati nella rete virtuale.
 - La subnet deve avere un minimo di 16 indirizzi IP. Altre informazioni su come [dimensionare la subnet dell'istanza gestita](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
 - Nell'ambiente ibrido di Contoso sono necessarie impostazioni DNS personalizzate. Contoso configura le impostazioni DNS per l'uso di uno o più server DNS di Azure aziendali. Altre informazioni sulla [personalizzazione del DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
@@ -182,7 +182,7 @@ Gli amministratori di Contoso configurano la rete virtuale come segue:
     - Nella subnet **PROD-DC-EUS2**, nella rete di produzione degli Stati Uniti orientali 2 (**VNET-PROD-EUS2**)
     - Indirizzo **CONTOSODC3**: 10.245.42.4
     - Indirizzo **CONTOSODC4**: 10.245.42.5
-    - Resolver DNS di Azure: 168.63.129.16
+    - Risoluzione DNS di Azure: 168.63.129.16
 
       ![Server DNS di rete](media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
@@ -242,7 +242,7 @@ Ora gli amministratori Contoso possono effettuare il provisioning di un'istanza 
 
 Altre informazioni su come [effettuare il provisioning di un'istanza gestita](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
 
-## <a name="step-2-prepare-the-azure-database-migration-service"></a>Passaggio 2: Preparare Servizio Migrazione del database di Azure
+## <a name="step-2-prepare-the-azure-database-migration-service"></a>Passaggio 2: preparare il servizio migrazione del database di Azure
 
 Per preparare Servizio Migrazione del database di Azure, gli amministratori Contoso devono eseguire alcune operazioni:
 
@@ -420,9 +420,9 @@ Una volta impostate l'origine e la destinazione, gli amministratori Contoso crea
 
 1. In **Preparare l'infrastruttura** > **Impostazioni della replica** > **Criteri di replica** >  **Crea e associa** creano i criteri **ContosoMigrationPolicy**.
 2. Usa le impostazioni predefinite:
-    - **Soglia RPO.** Il valore predefinito è 60 minuti. Questo valore definisce la frequenza con cui vengono creati punti di ripristino. Se la replica continua supera questo limite, viene generato un avviso.
-    - **Conservazione del punto di ripristino.** Impostazione predefinita di 24 ore. Questo valore specifica il periodo di conservazione per ogni punto di ripristino. Le VM replicate possono essere ripristinate in qualsiasi punto all'interno di un intervallo.
-    - **Frequenza snapshot coerenti con l'app:** il valore predefinito è un'ora. Questo valore specifica la frequenza di creazione di snapshot coerenti con l'applicazione.
+    - **Soglia RPO:** Il valore predefinito è 60 minuti. Questo valore definisce la frequenza con cui vengono creati punti di ripristino. Se la replica continua supera questo limite, viene generato un avviso.
+    - **Conservazione dei punti di ripristino:** Il valore predefinito è 24 ore. Questo valore specifica il periodo di conservazione per ogni punto di ripristino. Le VM replicate possono essere ripristinate in qualsiasi punto all'interno di un intervallo.
+    - **Frequenza snapshot coerenti con l'app:** Il valore predefinito è 1 ora. Questo valore specifica la frequenza di creazione di snapshot coerenti con l'applicazione.
 
     ![Criteri di replica: creazione](./media/contoso-migration-rehost-vm-sql-managed-instance/replication-policy.png)
 
@@ -435,7 +435,7 @@ Una volta impostate l'origine e la destinazione, gli amministratori Contoso crea
 - Una procedura dettagliata completa di questi passaggi è disponibile in [Configurare il ripristino di emergenza in Azure per le macchine virtuali VMware locali](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
 - Sono disponibili istruzioni dettagliate per [configurare l'ambiente di origine](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuire il server di configurazione](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) e [configurare le impostazioni di replica](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 
-### <a name="enable-replication"></a>Abilita replica
+### <a name="enable-replication"></a>Abilitare la replica
 
 Ora gli amministratori Contoso possono iniziare a replicare WebVM.
 
@@ -452,7 +452,7 @@ Ora gli amministratori Contoso possono iniziare a replicare WebVM.
 
     ![Abilitare la replica: selezione della macchina virtuale](./media/contoso-migration-rehost-vm-sql-managed-instance/enable-replication3.png)
 
-5. Controllano che siano selezionati i criterio di replica corretti e abilitano la replica per **WEBVM**. Contoso tiene traccia dell'avanzamento della replica in **Processi**. Dopo l'esecuzione del processo **Finalizza protezione** la macchina virtuale è pronta per il failover.
+5. Controllano che siano selezionati i criterio di replica corretti e abilitano la replica per **WEBVM**. Tiene traccia dello stato di avanzamento della replica in **Processi**. Dopo l'esecuzione del processo **Finalizza protezione** la macchina virtuale è pronta per il failover.
 
 6. In **Informazioni di base** nel portale di Azure possono visualizzare lo stato per le VM con replica in Azure:
 
@@ -578,7 +578,7 @@ A questo punto Contoso deve eseguire le operazioni di pulizia seguenti:
 
 Al termine della migrazione delle risorse in Azure, Contoso deve rendere pienamente operativa la nuova infrastruttura e proteggerla.
 
-### <a name="security"></a>Security
+### <a name="security"></a>Sicurezza
 
 Il team responsabile della sicurezza di Contoso esamina le macchine virtuali di Azure e l'istanza gestita di database SQL per determinare eventuali problemi di sicurezza con l'implementazione:
 
@@ -594,8 +594,8 @@ Per altre informazioni sulle procedure di sicurezza per le macchine virtuali, ve
 
 Per la continuità aziendale e il ripristino di emergenza (BCDR), Contoso esegue le azioni seguenti:
 
-- Proteggere i dati: Contoso esegue il backup dei dati nelle macchine virtuali usando il servizio Backup di Azure. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
-- Mantenere le app in esecuzione: Contoso esegue la replica delle macchine virtuali dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
+- Mantiene i dati al sicuro: Contoso esegue il backup dei dati nelle VM usando il servizio Backup di Azure. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Mantiene operative le app: Contoso esegue la replica delle VM dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 - Apprende maggiori informazioni sulla gestione dell'istanza gestita di SQL, inclusi i [backup di database](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 
 ### <a name="licensing-and-cost-optimization"></a>Licenze e ottimizzazione dei costi

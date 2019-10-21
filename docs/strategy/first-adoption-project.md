@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224145"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378085"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,15 +49,15 @@ Per supportare i criteri precedenti, questo elenco fornisce un esempio di un pri
 
 - **Eventi aziendali critici:** Quando un evento di business critico è la motivazione principale, l'implementazione di uno strumento come [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) potrebbe essere un primo progetto valido. Durante la migrazione è possibile usare questo strumento per eseguire rapidamente la migrazione delle risorse del Data Center. Tuttavia, durante il primo progetto, è possibile utilizzarlo esclusivamente come strumento di ripristino di emergenza, riducendo le dipendenze dalle risorse di ripristino di emergenza nel Data Center.
 
-- **Motivazioni della migrazione:** Quando la migrazione è la motivazione principale, è consigliabile iniziare con la migrazione di un carico di lavoro non critico. La guida alla [conformità di Azure](../ready/azure-readiness-guide/index.md) e la guida alla [migrazione di Azure](../migrate/azure-migration-guide/index.md) possono fornire linee guida per la migrazione del primo carico di lavoro.
+- **Motivazioni della migrazione:** Quando la migrazione è la motivazione principale, è consigliabile iniziare con la migrazione di un carico di lavoro non critico. La Guida all' [installazione di Azure](../ready/azure-setup-guide/index.md) e la guida alla [migrazione di Azure](../migrate/azure-migration-guide/index.md) possono fornire linee guida per la migrazione del primo carico di lavoro.
 
 - **Motivazioni dell'innovazione:** Quando l'innovazione è la motivazione principale, la creazione di un ambiente di sviluppo/test mirato può essere un ottimo primo progetto.
 
 Altri esempi di progetti di adozione sono i seguenti:
 
 - **Ripristino di emergenza e continuità aziendale (DRBC):** Oltre Azure Site Recovery, è possibile implementare più strategie DRBC come primo progetto.
-- **Produzione** Distribuire un'istanza di non produzione di un carico di lavoro.
-- **Archivio** L'archiviazione a freddo può applicare un ceppo alle risorse del Data Center. Lo stato di trasferimento dei dati nel cloud è una rapida vittoria.
+- Non **produzione:** Distribuire un'istanza di non produzione di un carico di lavoro.
+- **Archivio:** L'archiviazione a freddo può applicare un ceppo alle risorse del Data Center. Lo stato di trasferimento dei dati nel cloud è una rapida vittoria.
 - **Fine del supporto (EOS):** La migrazione degli asset che hanno raggiunto la fine del supporto è un'altra rapida vittoria che crea competenze tecniche. Potrebbe inoltre garantire una riduzione dei costi rispetto ai contratti di supporto costosi o ai costi di licenza.
 - **Interfaccia desktop virtuale (VDI):** La creazione di desktop virtuali per i dipendenti remoti può offrire una rapida vittoria. In alcuni casi, questo primo progetto di adozione può anche ridurre la dipendenza da reti private costose a favore della connettività Internet pubblica.
 - **Sviluppo/test:** Rimuovi sviluppo/test da ambienti locali per offrire agli sviluppatori controllo, agilità e capacità self-service.

@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2bb94c18833ccfd8594088da29b63f8006b6fa94
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1c546512b2b9407d9edf54648e704209f8d460ea
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222701"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547788"
 ---
 # <a name="cost-management-discipline-improvement"></a>Miglioramento della disciplina Gestione costi
 
 La disciplina Gestione costi affronta i rischi aziendali di base correlati alle spese che si sostengono quando si ospitano carichi di lavoro basati sul cloud. All'interno delle cinque discipline della governance del cloud, gestione costi è responsabile del controllo dei costi e dell'utilizzo delle risorse cloud con l'obiettivo di creare e gestire un ciclo di costo pianificato.
 
-Questo articolo illustra le attività che un'azienda può eseguire per sviluppare e maturare la disciplina Gestione costi. Queste attività possono essere suddivise nelle fasi di pianificazione, costruzione, adozione e funzionamento dell'implementazione di una soluzione cloud, che vengono poi ripetute per consentire lo sviluppo di un [approccio incrementale alla governance del cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Questo articolo illustra le attività che un'azienda può eseguire per sviluppare e maturare la disciplina Gestione costi. Queste attività possono essere suddivise nelle fasi di pianificazione, costruzione, adozione e funzionamento dell'implementazione di una soluzione cloud, che vengono poi ripetute per consentire lo sviluppo di un [incremental approach to cloud governance (approccio incrementale alla governance del cloud)](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quattro fasi di adozione](../../_images/govern/adoption-phases.png)
 
@@ -53,7 +53,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 
 ## <a name="build-and-predeployment"></a>Compilazione e pre-distribuzione
 
-Per eseguire correttamente la migrazione di un ambiente, sono necessari diversi prerequisiti tecnici e non tecnici. Questo processo è incentrato sulle decisioni, sulla conformità e sull'infrastruttura di base che consente una migrazione.
+Per eseguire correttamente la migrazione di un ambiente, sono necessari diversi prerequisiti tecnici e non tecnici. Questo processo riguarda principalmente le decisioni, la conformità e l'infrastruttura di base preliminari a una migrazione.
 
 **Attività minime suggerite:**
 
@@ -85,13 +85,13 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 - Monitorare le modifiche nei piani di budget e verificare con gli stakeholder se sono necessarie altre approvazioni.
 - Aggiornare le modifiche al documento delle linee guida sull'architettura in modo da riflettere i costi effettivi.
 
-## <a name="operate-and-post-implementation"></a>Operazione e post-implementazione
+## <a name="operate-and-post-implementation"></a>Operazioni e post-implementazione
 
 Al termine della trasformazione, la governance e le operazioni devono continuare a funzionare per il ciclo di vita naturale di un'applicazione o di un carico di lavoro. Questa fase di maturità della governance si basa principalmente sulle attività che vengono svolte in genere dopo che la soluzione è stata implementata e il ciclo di trasformazione ha iniziato a stabilizzarsi.
 
 **Attività minime suggerite:**
 
-- Personalizzare la [toolchain per la gestione dei costi](./toolchain.md) in base alle nuove esigenze di gestione dei costi dell'organizzazione.
+- Personalizzare la [gestione dei costi](./toolchain.md) in base alle modifiche apportate alle esigenze di gestione dei costi dell'organizzazione.
 - Valutare l'opportunità di automatizzare le notifiche e i report in modo da riflettere la spesa effettiva.
 - Perfezionare le linee guida sull'architettura per fornire indicazioni precise sui processi di adozione futuri.
 - Dedicarsi periodicamente alla formazione dei team interessati per assicurarsi che vengano costantemente rispettate le linee guida sull'architettura.

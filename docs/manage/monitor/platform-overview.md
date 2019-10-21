@@ -1,7 +1,7 @@
 ---
-title: Guida al monitoraggio del cloud-panoramica sulle piattaforme di monitoraggio
+title: 'Guida al monitoraggio del cloud: Panoramica delle piattaforme di monitoraggio'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Scegliere quando usare monitoraggio di Azure o System Center Operations Manager in Microsoft Azure
+description: Scegliere quando usare monitoraggio di Azure o System Center Operations Manager in Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33d9647a0804859a611d45e130c753cab89a6ef6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 668710d38fe6d3aa03761580f530f484133df792
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029215"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547255"
 ---
-# <a name="cloud-monitoring-guide-overview-of-our-monitoring-platforms"></a>Guida al monitoraggio del cloud: Panoramica delle piattaforme di monitoraggio
+# <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guida al monitoraggio del cloud: Panoramica delle piattaforme di monitoraggio
 
-Microsoft offre una gamma di funzionalità di monitoraggio di due prodotti: System Center Operations Manager progettato per l'ambiente locale e quindi esteso al cloud e monitoraggio di Azure, progettato per il cloud, ma anche per il monitoraggio dei sistemi locali. Queste due offerte offrono servizi di monitoraggio di base, ad esempio avvisi, monitoraggio del tempo di esecuzione del servizio, monitoraggio dell'integrità delle applicazioni e dell'infrastruttura, diagnostica e analisi.
+Microsoft offre una gamma di funzionalità di monitoraggio di due prodotti: System Center Operations Manager progettata per l'ambiente locale e quindi estesa al cloud e monitoraggio di Azure, progettato per il cloud, ma anche per monitorare i sistemi locali . Queste due offerte offrono servizi di monitoraggio di base, ad esempio avvisi, monitoraggio del tempo di esecuzione del servizio, monitoraggio dell'integrità delle applicazioni e dell'infrastruttura, diagnostica e analisi.
 
 Molte organizzazioni adottano le procedure più recenti per l'agilità DevOps e le innovazioni cloud per gestire gli ambienti eterogeneo. Tuttavia, sono anche preoccupati della loro capacità di prendere decisioni appropriate e responsabili in merito al monitoraggio di tali carichi di lavoro.
 
@@ -34,7 +34,7 @@ Quando Azure è stato rilasciato in 2010, il monitoraggio dei servizi cloud è s
 
 Application Insights è stato introdotto per passare con le modifiche apportate al settore in cui la proliferazione dei dispositivi cloud, mobile e Internet è cresciuta e l'introduzione delle procedure DevOps. È cresciuta da Application Performance Monitoring in Operations Manager a un servizio in Azure, dove offre un monitoraggio completo delle applicazioni Web scritte in un'ampia gamma di linguaggi. In 2015, l'anteprima di Application Insights per Visual Studio è stata annunciata e in seguito è diventata nota come Application Insights. Raccoglie informazioni dettagliate sulle prestazioni dell'applicazione, sulle richieste, sulle eccezioni e sulle tracce.
 
-In 2015 Azure Operational Insights è stato reso disponibile a livello generale. Ha fornito il servizio di analisi Log Analytics che ha raccolto e cercato i dati da computer in Azure, locali o altri ambienti cloud e connessi a System Center Operations Manager. Sono stati offerti Intelligence Pack che hanno fornito diverse configurazioni di gestione e monitoraggio predefinite che contenevano una raccolta di regole di query e logica analitica, visualizzazioni e regole di raccolta dati per scenari come il controllo della sicurezza, l'integrità valutazioni e gestione degli avvisi.  In seguito Operational Insights di Azure è stato noto come Log Analytics.  
+In 2015 Azure Operational Insights è stato reso disponibile a livello generale. Ha fornito il servizio di analisi Log Analytics che ha raccolto e cercato i dati da computer in Azure, locali o altri ambienti cloud e connessi a System Center Operations Manager. Sono stati offerti Intelligence Pack che hanno fornito diverse configurazioni di gestione e monitoraggio predefinite che contenevano una raccolta di regole di query e logica analitica, visualizzazioni e regole di raccolta dati per scenari come il controllo della sicurezza, l'integrità valutazioni e gestione degli avvisi. In seguito Operational Insights di Azure è stato noto come Log Analytics.  
 
 In 2016, l'anteprima di monitoraggio di Azure è stata annunciata Ignite. Ha fornito un Framework comune per raccogliere le metriche della piattaforma, i log di diagnostica delle risorse e gli eventi del log attività a livello di sottoscrizione da qualsiasi servizio di Azure che ha iniziato a usare il Framework. In precedenza, ogni servizio di Azure aveva un proprio metodo di monitoraggio.
 
@@ -54,7 +54,7 @@ Da 2015 fino al 2018 aprile, Operations Management Suite (OMS) era un bundle dei
 - Automazione di Azure
 - Backup di Azure
 - Operational Insights (in seguito il Log Analytics rimarchiato)
-- Site Recovery
+- Ripristino sito
 
 La funzionalità dei servizi che facevano parte di OMS non è stata modificata quando OMS è stata sospesa, sono stati riallineati in monitoraggio di Azure.
 
@@ -166,7 +166,7 @@ Monitoraggio di Azure consente di creare avvisi in base a una metrica che supera
 
 Mentre le soluzioni di monitoraggio possono includere regole di avviso, in genere vengono create in base ai propri requisiti.
 
-## <a name="workflows"></a>Workflows
+## <a name="workflows"></a>Flussi di lavoro
 
 ### <a name="operations-manager"></a>Operations Manager
 

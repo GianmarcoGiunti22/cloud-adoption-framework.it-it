@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4e095dd90711f201935e88ea5f2712e881a8574b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828734"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549021"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Sequenze temporali in un piano di adozione del cloud
 
-Nell'articolo precedente di questa serie, i carichi di lavoro e le attività sono stati assegnati alle [versioni e](./iteration-paths.md)alle iterazioni. Queste assegnazioni inseriscono le stime della sequenza temporale in questo articolo.
+Nell'articolo precedente di questa serie, i carichi di lavoro e le attività sono stati assegnati alle [versioni e alle iterazioni](./iteration-paths.md). Queste assegnazioni inseriscono le stime della sequenza temporale in questo articolo.
 
-Le strutture di suddivisione dei lavori (WBS) sono comunemente usate negli strumenti sequenziali di gestione dei progetti. Rappresentano il modo in cui le attività dipendenti verranno completate in un determinato periodo di tempo. Tali strutture funzionano correttamente quando le attività sono di natura sequenziale. Le interdipendenze nelle attività individuate nell'adozione del cloud rendono difficili la gestione di tali strutture. Per colmare questo gap, è possibile stimare le sequenze temporali in base alle assegnazioni di percorsi di iterazione nascondendo la complessità.
+Le strutture di suddivisione dei lavori (WBS) sono comunemente usate negli strumenti sequenziali di gestione dei progetti. Rappresentano il modo in cui le attività dipendenti verranno completate nel tempo. Tali strutture funzionano correttamente quando le attività sono di natura sequenziale. Le interdipendenze nelle attività individuate nell'adozione del cloud rendono difficili la gestione di tali strutture. Per colmare questo gap, è possibile stimare le sequenze temporali in base alle assegnazioni di percorsi di iterazione nascondendo la complessità.
 
 ## <a name="estimate-timelines"></a>Stime temporali
 

@@ -8,24 +8,24 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 61acef963538ec7fc4e4c11432f2c2ddc64a738b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bc880e3bb27492b18a8e577911527978c7a4e0d2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027334"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548343"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Prepararsi alla complessità culturale: allineamento di ruoli e responsabilità
 
 La conoscenza della cultura aziendale necessaria per il funzionamento dei data center esistenti è importante per il successo di qualsiasi migrazione. In alcune organizzazioni la gestione dei data center è affidata a team operativi IT centralizzati, nell'ambito dei quali i ruoli e le responsabilità tendono a essere ben definiti e riconosciuti. Per le aziende di maggiori dimensioni, soprattutto se vincolate a requisiti di conformità di terze parti, la cultura aziendale tende a essere più complessa e ad avere contorni meno definiti. La complessità culturale può presentare ostacoli difficili da comprendere e impegnativi in termini di tempo.
 
-In entrambi gli scenari, è una valida idea investire nella documentazione dei ruoli e delle responsabilità necessari per completare una migrazione. Questo articolo illustra alcuni ruoli e responsabilità osservati nella migrazione di un data center, da usare come modello per la documentazione in modo da rendere più comprensibili i vari passaggi dell'esecuzione.
+In entrambi gli scenari è opportuno investire nella documentazione relativa ai ruoli e alle responsabilità necessari per completare una migrazione. Questo articolo illustra alcuni ruoli e responsabilità osservati nella migrazione di un data center, da usare come modello per la documentazione in modo da rendere più comprensibili i vari passaggi dell'esecuzione.
 
 ## <a name="business-functions"></a>Funzioni aziendali
 
 Qualsiasi migrazione include alcune funzioni chiave che vengono eseguite in modo più efficace dalle persone coinvolte nei processi aziendali, quando possibile. Spesso il personale IT è in grado di eseguire le attività seguenti, ma il personale coinvolto nei processi aziendali può contribuire a ridurre le barriere più avanti nel percorso di adozione. Questa integrazione dei ruoli garantisce anche un investimento reciproco dalle principali parti interessate nel corso del processo di migrazione.
 
-| Process | Attività | Descrizione |
+| Processo | Attività | Description |
 |---------|---------|---------|
 | Valuta | Obiettivi aziendali | Definire i risultati aziendali da raggiungere con l'impegno di migrazione. |
 | Valuta | Priorità | Garantire l'allineamento alle mutevoli priorità aziendali e condizioni di mercato. |
@@ -46,11 +46,11 @@ Ogni processo nell'ambito della trattazione dei principi di migrazione di Cloud 
 > [!NOTE]
 > Nella tabella seguente, un'entità responsabile deve iniziare l'allineamento dei ruoli. Per un'esecuzione efficiente, tale colonna deve essere personalizzata in base ai processi esistenti. In teoria, sarebbe opportuno nominare una singola persona come entità responsabile.
 
-| Process | Attività | DESCRIZIONE | Entità responsabile |
+| Processo | Attività | Description | Entità responsabile |
 |---------|---------|---------|---------|
 | Prerequisito | Digital estate | Allineare l'inventario esistente ai presupposti fondamentali, in base ai risultati aziendali. | Team di strategia del cloud |
 | Prerequisito | Backlog di migrazione | Definire la priorità per la sequenza dei carichi di lavoro di cui eseguire la migrazione. | Team di strategia del cloud |
-| Valuta | Architettura | Sfidare i presupposti iniziali per definire l'architettura di destinazione in base alle metriche di utilizzo. | Team di adozione del cloud |
+| Valuta | Architecture | Sfidare i presupposti iniziali per definire l'architettura di destinazione in base alle metriche di utilizzo. | Team di adozione del cloud |
 | Valuta | Approvazione | Approvare l'architettura proposta. | Team di strategia del cloud |
 | Migrazione | Accesso per la replica | Accedere agli host e agli asset locali esistenti per stabilire i processi di replica. | Team di adozione del cloud |
 | Ottimizzare | Preparazione | Verificare che il sistema soddisfi i requisiti di prestazioni e costi prima della promozione. | Team di adozione del cloud |
@@ -62,7 +62,7 @@ Ogni processo nell'ambito della trattazione dei principi di migrazione di Cloud 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Quando il team ha acquisito una conoscenza generale dei ruoli e delle responsabilità, è il momento di iniziare a preparare i dettagli tecnici della migrazione. La comprensione [della complessità tecnica e della gestione del cambiamento](./technical-complexity.md) può essere utile per preparare il team di adozione del cloud agli aspetti tecnici complessi della migrazione tramite l'allineamento a un processo di gestione incrementale del cambiamento.
+Quando il team ha una conoscenza generale dei ruoli e delle responsabilità, è il momento di iniziare a preparare i dettagli tecnici della migrazione. La comprensione [della complessità tecnica e della gestione del cambiamento](./technical-complexity.md) può essere utile per preparare il team di adozione del cloud agli aspetti tecnici complessi della migrazione tramite l'allineamento a un processo di gestione incrementale del cambiamento.
 
 > [!div class="nextstepaction"]
 > [Complessità tecnica e gestione del cambiamento](./technical-complexity.md)

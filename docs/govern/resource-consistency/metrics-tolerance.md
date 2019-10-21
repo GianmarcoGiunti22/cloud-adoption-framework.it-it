@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222956"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548060"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriche di Coerenza delle risorse, indicatori e tolleranza al rischio
 
 Questo articolo consente di quantificare la tolleranza ai rischi aziendali in relazione alla coerenza delle risorse. La definizione di metriche e indicatori consente di creare un business case per effettuare un investimento riguardo alla disciplina Coerenza delle risorse.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Metriche
 
 La disciplina Coerenza delle risorse è incentrata sulla capacità di affrontare i rischi correlati alla gestione operativa delle distribuzioni cloud. Nell'ambito dell'analisi dei rischi è necessario raccogliere i dati relativi alle operazioni IT per determinare l'entità dei rischi e l'importanza degli investimenti nella Coerenza delle risorse per le distribuzioni cloud pianificate.
 
@@ -36,7 +36,7 @@ Ogni organizzazione dispone di diversi scenari operativi, ma gli elementi seguen
 - **Collegamenti di rete non integri.** Numero di risorse con problemi di connettività di rete.
 - **Endpoint di servizio non integri.** Numero di problemi con gli endpoint di rete esterni.
 - **Eventi imprevisti di integrità del servizio del provider cloud.** Numero di interruzioni o problemi di prestazione causati dal provider cloud.
-- **Contratti di servizio.** Possono includere gli impegni di Microsoft in termini di tempo di attività e connettività dei servizi di Azure e gli impegni dell'azienda nei confronti di clienti interni ed esterni.
+- **Contratti di servizio.** Questo può includere sia gli impegni di Microsoft per il tempo di attività che la connettività dei servizi di Azure, nonché gli impegni effettuati dall'azienda ai clienti esterni e interni.
 - **Disponibilità del servizio.** Percentuale del tempo effettivo dei carichi di lavoro ospitati nel cloud rispetto al tempo di attività previsto.
 - **Obiettivo del tempo di ripristino (RTO).** Il tempo massimo accettabile in cui un'applicazione può rimanere non disponibile dopo un evento imprevisto.
 - **Obiettivo del punto di ripristino (RPO).** La durata massima di perdita dei dati accettabile durante un'emergenza. Per esempio, se si archiviano i dati in un singolo database, senza replica in altri database, e si eseguono backup orari, si potrebbero perdere fino a un'ora di dati.
@@ -70,7 +70,7 @@ Le metriche e i trigger esatti usati per misurare la tolleranza ai rischi e il l
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Usare il [modello di gestione del cloud](./template.md) per documentare le metriche e gli indicatori di tolleranza in linea con il piano di adozione del cloud attuale.
+Usare il [Cloud Management template (modello di Gestione cloud)](./template.md), documentare le metriche e gli indicatori di tolleranza al rischio che si allineano al piano di adozione del cloud attuale.
 
 Esaminare i criteri di coerenza delle risorse di esempio come punto di partenza per sviluppare criteri che risolvono i rischi aziendali specifici che si allineano ai piani di adozione del cloud.
 

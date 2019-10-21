@@ -1,5 +1,5 @@
 ---
-title: 'Migrazione dei mainframe: Migrazione delle applicazioni mainframe'
+title: 'Migrazione del mainframe: migrazione di applicazioni mainframe'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni su come eseguire la migrazione di applicazioni da ambienti mainframe ad Azure, un'infrastruttura scalabile, collaudata e a disponibilità elevata per i sistemi attualmente in esecuzione su mainframe.
 author: njray
@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024420"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547952"
 ---
 # <a name="mainframe-application-migration"></a>Migrazione delle applicazioni mainframe
 
@@ -21,15 +21,15 @@ Per la migrazione delle applicazioni da ambienti mainframe ad Azure, la maggior 
 
 La migrazione delle applicazioni in genere prevede una o più delle seguenti strategie:
 
-- **Rehosting:** è possibile spostare dal mainframe il codice, i programmi e le applicazioni esistenti e quindi ricompilare il codice per l'esecuzione in un emulatore mainframe ospitato in un'istanza cloud. Questo approccio in genere inizia con lo spostamento delle applicazioni in un emulatore basato sul cloud e quindi con la migrazione del database in un database basato sul cloud. Sono necessarie alcune operazioni di progettazione e refactoring, oltre che conversioni di dati e file.
+- **Rehost:** È possibile spostare il codice, i programmi e le applicazioni esistenti dal mainframe, quindi ricompilare il codice per l'esecuzione in un emulatore mainframe ospitato in un'istanza cloud. Questo approccio in genere inizia con lo spostamento delle applicazioni in un emulatore basato sul cloud e quindi con la migrazione del database in un database basato sul cloud. Sono necessarie alcune operazioni di progettazione e refactoring, oltre che conversioni di dati e file.
 
     In alternativa, è possibile eseguire il rehosting mediante un provider di hosting tradizionale. Uno dei principali vantaggi del cloud è l'outsourcing della gestione dell'infrastruttura. È possibile trovare un provider di data center che ospiterà i carichi di lavoro del mainframe. Questo modello può consentire di risparmiare tempo, ridurre la dipendenza dal fornitore e produrre temporanee riduzioni dei costi.
 
-- **Ritirare** tutte le applicazioni che non sono più necessarie devono essere ritirate prima della migrazione.
+- **Ritira:** Tutte le applicazioni che non sono più necessarie devono essere ritirate prima della migrazione.
 
-- **Ricostruzione:** alcune organizzazioni scelgono di riscrivere completamente i programmi usando tecniche moderne. Dato il costo aggiunto e la complessità di questo approccio, non è così comune come un approccio "Lift-and-Shift". Spesso dopo questo tipo di migrazione è opportuno iniziare a sostituire i moduli e il codice tramite motori di trasformazione del codice.
+- **Ricompilazione:** Alcune organizzazioni scelgono di riscrivere completamente programmi usando tecniche moderne. Dato il costo aggiunto e la complessità di questo approccio, non è così comune come un approccio "Lift-and-Shift". Spesso dopo questo tipo di migrazione è opportuno iniziare a sostituire i moduli e il codice tramite motori di trasformazione del codice.
 
-- **Sostituzione:** Questo approccio sostituisce le funzionalità del mainframe con funzionalità equivalenti nel cloud. Un'opzione è il software come un servizio (SaaS), che usa una soluzione creata in modo specifico per un problema aziendale, ad esempio in ambito finanziario, delle risorse umane, della produzione o ERP (Enterprise Resource Planning). Inoltre, ora sono disponibili molte app specifiche del settore per risolvere i problemi che in precedenza venivano risolti tramite soluzioni mainframe personalizzate.
+- **Sostituisci:** Questo approccio sostituisce la funzionalità mainframe con funzionalità equivalenti nel cloud. Un'opzione è il software come un servizio (SaaS), che usa una soluzione creata in modo specifico per un problema aziendale, ad esempio in ambito finanziario, delle risorse umane, della produzione o ERP (Enterprise Resource Planning). Inoltre, ora sono disponibili molte app specifiche del settore per risolvere i problemi che in precedenza venivano risolti tramite soluzioni mainframe personalizzate.
 
 È consigliabile valutare se partire dalla pianificazione dei carichi di lavoro di cui eseguire la migrazione inizialmente e quindi determinare i requisiti per lo spostamento delle applicazioni, delle basi di codice legacy e dei database associati.
 
@@ -63,13 +63,13 @@ Soluzioni di monitoraggio dell'elaborazione delle transazioni sono disponibili d
 
 ![Migrazione in modalità Lift-and-Shift di un ambiente mainframe in Azure tramite il software di emulazione](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-In Azure vengono usati ambienti di emulazione per eseguire la gestione dell'elaborazione delle transazioni e i processi batch che usano JCL. Nel livello dati, DB2 viene sostituito dal [database SQL di Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), sebbene sia possibile usare anche Microsoft SQL Server, DB2 LUW o Oracle Database. Un emulatore supporta IMS, VSAM e SEQ. Gli strumenti di gestione dei sistemi del mainframe vengono sostituiti da servizi di Azure e software di altri fornitori, che vengono eseguiti in macchine virtuali.
+In Azure vengono usati ambienti di emulazione per eseguire la gestione dell'elaborazione delle transazioni e i processi batch che usano JCL. Nel livello dati, DB2 viene sostituito dal [database SQL di Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), sebbene sia possibile usare anche Microsoft SQL Server, DB2 LUW o Oracle Database. Un emulatore supporta IMS, VSAM e SEQ. Gli strumenti di gestione del sistema del mainframe sono sostituiti dai servizi di Azure e dal software di altri fornitori che vengono eseguiti in macchine virtuali.
 
-Le funzionalità di gestione delle schermate e immissione nei moduli è solitamente implementata mediante server Web, che possono essere combinati con API di database, ad esempio ADO, ODBC e JDBC per l'accesso ai dati e le transazioni. L'esatta gamma di componenti IaaS di Azure da usare dipende dal sistema operativo preferito. Esempio:
+Le funzionalità di gestione delle schermate e immissione nei moduli è solitamente implementata mediante server Web, che possono essere combinati con API di database, ad esempio ADO, ODBC e JDBC per l'accesso ai dati e le transazioni. L'esatta gamma di componenti IaaS di Azure da usare dipende dal sistema operativo preferito. ad esempio:
 
-- Macchine virtuali basate su Windows: Internet Information Server (IIS) con ASP.NET per la gestione delle schermate e la logica di business. Usare ADO.NET per l'accesso ai dati e le transazioni.
+- Macchine virtuali basate su Windows: Internet Information Server (IIS) insieme a ASP.NET per la gestione dello schermo e la logica di business. Usare ADO.NET per l'accesso ai dati e le transazioni.
 
-- Macchine virtuali basate su Linux: i server applicazioni basati su Java disponibili, ad esempio Apache Tomcat per la gestione delle schermate e le funzionalità aziendali basate su Java. Usare JDBC per l'accesso ai dati e le transazioni.
+- VM basate su Linux: i server applicazioni basati su Java disponibili, ad esempio Apache Tomcat per la gestione dello schermo e le funzionalità aziendali basate su Java. Usare JDBC per l'accesso ai dati e le transazioni.
 
 ## <a name="migrate-batch-workloads-to-azure"></a>Migrazione dei carichi di lavoro batch ad Azure
 
@@ -79,7 +79,7 @@ Per ottimizzare le prestazioni batch con Azure, valutare le opzioni di [calcolo]
 
 ### <a name="compute"></a>Calcolo
 
-Utilizza:
+Usare:
 
 - Macchine virtuali con la massima velocità di clock. Le applicazioni mainframe sono spesso a thread singolo e le CPU dei mainframe hanno una velocità di clock molto elevata.
 
@@ -91,7 +91,7 @@ Utilizza:
 
 ### <a name="storage"></a>Archiviazione
 
-Utilizza:
+Usare:
 
 - [Unità SSD Premium di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) o [Azure ultra SSD](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) per il numero massimo di IOPS disponibili.
 
@@ -103,13 +103,13 @@ Utilizza:
 
 - Usare [Rete accelerata di Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) per ridurre al minimo la latenza.
 
-### <a name="monitoring"></a>Monitoraggio
+### <a name="monitoring"></a>Monitorare
 
 - Gli strumenti di monitoraggio, [Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) e anche i log di Azure consentono agli amministratori di monitorare le prestazioni delle esecuzioni batch ed eliminare i colli di bottiglia.
 
 ## <a name="migrate-development-environments"></a>Migrazione degli ambienti di sviluppo
 
-Le architetture distribuite del cloud sono basate su un diverso set di strumenti di sviluppo, che offrono i vantaggi delle procedure e dei linguaggi di programmazione moderni. Per facilitare la transizione, è possibile usare un ambiente di sviluppo con altri strumenti progettati per emulare gli ambienti IBM z/OS. L'elenco seguente illustra le opzioni offerte da Microsoft e altri fornitori:
+Le architetture distribuite del cloud si basano su un diverso set di strumenti di sviluppo che offrono il vantaggio di procedure moderne e linguaggi di programmazione. Per facilitare la transizione, è possibile usare un ambiente di sviluppo con altri strumenti progettati per emulare gli ambienti IBM z/OS. L'elenco seguente illustra le opzioni offerte da Microsoft e altri fornitori:
 
 | Componente        | Opzioni di Azure                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,21 +139,21 @@ Il livello dati IBM include diversi altri componenti chiave di cui è necessario
 
 La migrazione del database include anche questi componenti:
 
-- **Gestione database:** fornisce l'accesso ai dati nel database. La funzionalità di gestione database viene eseguita in una specifica partizione in un ambiente z/OS.
-- **Richiedente applicazione:** accetta le richieste dalle applicazioni prima di passarle a un server applicazioni.
-- **Scheda risorse online:** include i componenti del richiedente applicazioni per l'uso nelle transazioni CICS.
-- **Adapter risorse batch:** implementa i componenti del richiedente applicazioni per le applicazioni batch z/OS.
-- **Interactive SQL (ISQL):** viene eseguito come un'applicazione CICS e un'interfaccia che consente agli utenti di immettere istruzioni SQL o comandi dell'operatore.
-- **Applicazione CICS:** viene eseguita sotto il controllo di CICS, usando le risorse e le origini dati disponibili in CICS.
-- **Applicazione batch:** esegue la logica di elaborazione senza una comunicazione interattiva con gli utenti, ad esempio per produrre aggiornamenti dei dati in blocco o generare report da un database.
+- **Gestione database:** Consente di accedere ai dati nel database. La funzionalità di gestione database viene eseguita in una specifica partizione in un ambiente z/OS.
+- **Richiedente applicazione:** Accetta le richieste dalle applicazioni prima di passarle a un server applicazioni.
+- **Scheda risorse online:** Include i componenti del richiedente dell'applicazione da utilizzare nelle transazioni CICS.
+- **Adapter risorse batch:** Implementa i componenti del richiedente dell'applicazione per le applicazioni batch z/OS.
+- **Interactive SQL (ISQL):** Viene eseguito come applicazione e interfaccia CICS che consente agli utenti di immettere istruzioni SQL o comandi di operatore.
+- **Applicazione CICS:** Viene eseguito sotto il controllo di CICS, usando le risorse disponibili e le origini dati in CICS.
+- **Applicazione batch:** Esegue la logica di processo senza comunicazione interattiva con gli utenti, ad esempio, produce aggiornamenti bulk dei dati o genera report da un database.
 
 ## <a name="optimize-scale-and-throughput-for-azure"></a>Ottimizzare la scalabilità e la velocità effettiva per Azure
 
-In generale, i mainframe impiegano la scalabilità verticale, mentre nel cloud viene usata la scalabilità orizzontale. Per ottimizzare la scalabilità e la velocità effettiva delle applicazioni di tipo mainframe in esecuzione in Azure, è importante comprendere in che modo i mainframe possono separare e isolare le applicazioni. Un mainframe z/OS usa una funzionalità denominata partizioni logiche (LPAR) per isolare e gestire le risorse per un'applicazione specifica in una singola istanza.
+In generale, i mainframe aumentano, mentre il cloud si ridimensiona. Per ottimizzare la scalabilità e la velocità effettiva delle applicazioni in stile mainframe eseguite in Azure, è importante comprendere in che modo i mainframe possono separare e isolare le applicazioni. Un mainframe z/OS usa una funzionalità denominata partizioni logiche (LPAR) per isolare e gestire le risorse per un'applicazione specifica in una singola istanza.
 
 Ad esempio, un mainframe potrebbe usare una partizione logica (LPAR) per un'area CICS con i programmi COBOL associati e una LPAR distinta per DB2. LPAR aggiuntive vengono spesso usate per attività di sviluppo, test e ambienti di gestione temporanea.
 
-In Azure è più comune l'uso di macchine virtuali distinte per lo stesso scopo. In genere, nelle architetture di Azure vengono distribuiti un set di macchine virtuali per il livello applicazione, un altro set di macchine virtuali per il livello dati, un ulteriore set per lo sviluppo e così via. Ogni livello di elaborazione può essere ottimizzato usando il tipo più adatto di macchine virtuali e funzionalità per tale ambiente.
+In Azure è più comune usare macchine virtuali separate per soddisfare questo scopo. In genere, nelle architetture di Azure vengono distribuiti un set di macchine virtuali per il livello applicazione, un altro set di macchine virtuali per il livello dati, un ulteriore set per lo sviluppo e così via. Ogni livello di elaborazione può essere ottimizzato usando il tipo più adatto di macchine virtuali e funzionalità per tale ambiente.
 
 Inoltre, ogni livello può anche fornire servizi di ripristino di emergenza appropriati. Ad esempio, le macchine virtuali di produzione e dei database possono richiedere il ripristino a caldo, mentre le macchine virtuali di test e sviluppo supportano il ripristino a freddo.
 
@@ -175,7 +175,7 @@ Se si sta valutando la migrazione di un mainframe, è disponibile un vasto ecosi
 
 Azure fornisce un'infrastruttura scalabile, collaudata e a disponibilità elevata per i sistemi attualmente in esecuzione su mainframe. La migrazione di alcuni carichi di lavoro può essere eseguita con relativa facilità. Per altri carichi di lavoro che dipendono dal software di sistemi legacy, come CICS e IMS, è possibile eseguire il rehosting tramite le soluzioni dei partner ed effettuare la migrazione ad Azure nel corso del tempo. Indipendentemente dall'opzione scelta, Microsoft e i relativi partner sono disponibili per semplificare l'ottimizzazione di Azure mantenendo le funzionalità del software del sistema mainframe.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Altre informazioni.
 
 Per altre informazioni, vedere le seguenti risorse:
 

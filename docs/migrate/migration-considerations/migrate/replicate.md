@@ -1,19 +1,19 @@
 ---
 title: Ruolo della replica e della sincronizzazione nel processo di migrazione
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Processo nell'ambito della migrazione nel cloud che è incentrato sulle attività di migrazione dei carichi di lavoro nel cloud.
+description: Processo nell'ambito della migrazione al cloud che è incentrato sulle attività di migrazione dei carichi di lavoro nel cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e65631f0adf2584bbf0ee24b10d20df73ece715
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833414"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549134"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Per eseguire e gestire i processi di replica e sincronizzazione, è necessario i
 Quando si pianifica la replica di un'origine di dati binari in una nuova destinazione, è necessario prendere in considerazione alcune leggi fondamentali per la pianificazione e l'esecuzione.
 
 - **Velocità della luce.** Quando si trasferiscono volumi elevati di dati, la fibra ottica è ancora l'opzione più rapida. I cavi in fibra ottica però possono spostare i dati solo a una velocità pari a due terzi della velocità della luce. Ciò significa che non esiste alcun metodo per la replica immediata o illimitata di dati.
-- **Velocità della pipeline WAN.** La larghezza di banda del collegamento è più significativa della velocità di spostamento dei dati. Definisce il volume di dati che possono essere trasferiti al secondo sulla rete WAN esistente di una società verso il data center di destinazione.
+- **Velocità della pipeline WAN.** Una maggiore consistenza della velocità di spostamento dei dati è la larghezza di banda uplink, che definisce il volume di dati al secondo che può essere trasferito sulla rete WAN esistente di una società nel Data Center di destinazione.
 - **Espansione della velocità della WAN.** Se il budget lo consente, è possibile aggiungere altra larghezza di banda alla soluzione WAN di una società. Tuttavia, l'approvvigionamento, il provisioning e l'integrazione di connessioni in fibra ottica aggiuntive possono richiedere settimane o addirittura mesi.
 - **Velocità dei dischi.** Se i dati potessero essere spostarsi più velocemente e non esistesse alcun limite di larghezza di banda tra i dati binari di origine e la destinazione, la fisica rappresenterebbe ancora un limite. I dati possono essere replicati solo con la stessa velocità con cui possono essere letti dai dischi di origine. La lettura di ogni 1 o 0 da ogni disco di un data center richiede tempo.
 - **Velocità dei calcoli umani.** I dischi e la luce si muovono più velocemente dei processi decisionali umani. Quando viene richiesto a un gruppo di persone di collaborare e prendere decisioni congiunte, i risultati sono ancora più lenti. La replica non può mai superare i ritardi correlati all'intelligenza umana.

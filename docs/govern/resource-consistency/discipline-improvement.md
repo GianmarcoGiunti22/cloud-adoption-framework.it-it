@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223016"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548092"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Miglioramento della disciplina Coerenza delle risorse
 
 La disciplina Coerenza delle risorse riguarda le modalità di definizione dei criteri di gestione operativa di un ambiente, applicazione o carico di lavoro. All'interno delle cinque discipline della governance del cloud, la coerenza delle risorse include il monitoraggio delle prestazioni dell'applicazione, del carico di lavoro e degli asset. Comprende inoltre le attività necessarie per soddisfare le esigenze di scalabilità e correggere e prevenire dinamicamente le violazioni dei contratti di servizio tramite una procedura di correzione automatizzata.
 
-Questo articolo delinea alcune attività potenziali che l'azienda può svolgere al fine di sviluppare ed evolvere al meglio la disciplina Coerenza delle risorse. Queste attività possono essere suddivise nelle fasi di pianificazione, costruzione, adozione e funzionamento dell'implementazione di una soluzione cloud, che vengono poi ripetute per consentire lo sviluppo di un [approccio incrementale alla governance del cloud](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Questo articolo delinea alcune attività potenziali che l'azienda può svolgere al fine di sviluppare ed evolvere al meglio la disciplina Coerenza delle risorse. Queste attività possono essere suddivise nelle fasi di pianificazione, costruzione, adozione e funzionamento dell'implementazione di una soluzione cloud, che vengono poi ripetute per consentire lo sviluppo di un [incremental approach to cloud governance (approccio incrementale alla governance del cloud)](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quattro fasi di adozione](../../_images/govern/adoption-phases.png)
 
@@ -39,7 +39,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 
 - Valutare le opzioni della [toolchain di Coerenza delle risorse](./toolchain.md).
 - Comprendere i requisiti di licenza per la strategia cloud.
-- Sviluppare una bozza di linee guida sull'architettura e distribuirla ai principali stakeholder.
+- Sviluppare una bozza di documento relativo alle linee guida sull'architettura e distribuirla ai principali stakeholder.
 - Acquisire familiarità con la gestione delle risorse usata per distribuire, gestire e monitorare tutte le risorse per la soluzione come gruppo.
 - Formare e coinvolgere le persone e i team interessati allo sviluppo delle linee guida sull'architettura.
 - Aggiungere attività di distribuzione delle risorse con priorità al backlog di migrazione.
@@ -54,7 +54,7 @@ Questa fase di maturità della governance colma il divario tra i risultati azien
 
 ## <a name="build-and-predeployment"></a>Compilazione e pre-distribuzione
 
-Per eseguire correttamente la migrazione di un ambiente, sono necessari diversi prerequisiti tecnici e non tecnici. Questo processo è incentrato sulle decisioni, sulla conformità e sull'infrastruttura di base che consente una migrazione.
+Per eseguire correttamente la migrazione di un ambiente, sono necessari diversi prerequisiti tecnici e non tecnici. Questo processo riguarda principalmente le decisioni, la conformità e l'infrastruttura di base preliminari a una migrazione.
 
 **Attività minime suggerite:**
 
@@ -103,13 +103,13 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 - Per l'aggregazione al cloud, distribuire una soluzione gateway a un provider di servizi cloud.
 - Per gli strumenti che non consentono opzioni ibride o del gateway, è strettamente associato al monitoraggio con uno strumento di monitoraggio operativo che si estende su tutti i Data Center e cloud.
 
-## <a name="operate-and-post-implementation"></a>Operazione e post-implementazione
+## <a name="operate-and-post-implementation"></a>Operazioni e post-implementazione
 
 Al termine della trasformazione, la governance e le operazioni devono continuare a funzionare per il ciclo di vita naturale di un'applicazione o di un carico di lavoro. Questa fase di maturità della governance si basa principalmente sulle attività che vengono svolte in genere dopo che la soluzione è stata implementata e il ciclo di trasformazione ha iniziato a stabilizzarsi.
 
 **Attività minime suggerite:**
 
-- Personalizzare la [toolchain di Coerenza delle risorse](./toolchain.md) in base ai mutevoli aggiornamenti delle esigenze di Gestione costi della tua organizzazione.
+- Personalizzare la gestione [delle risorse di coerenza delle risorse](./toolchain.md) in base agli aggiornamenti delle esigenze di gestione dei costi mutevoli dell'organizzazione.
 - Valutare l'opportunità di automatizzare le notifiche e i report in modo da riflettere l'utilizzo effettivo.
 - Perfezionare le linee guida sull'architettura per fornire indicazioni precise sui processi di adozione futuri.
 - Dedicarsi periodicamente alla formazione dei team interessati per assicurarsi che vengano costantemente rispettate le linee guida sull'architettura.
@@ -130,6 +130,6 @@ Al termine della trasformazione, la governance e le operazioni devono continuare
 Ora che si è appreso il concetto di governance delle risorse cloud, si approfondirà [come viene gestito l'accesso alle risorse](./resource-access-management.md) in Azure, quindi come progettare un modello di governance per un [carico di lavori semplice ](./governance-simple-workload.md) o per [più team](./governance-multiple-teams.md).
 
 > [!div class="nextstepaction"]
-> [Informazioni sulla gestione dell'accesso alle risorse in Azure](./resource-access-management.md)
-> informazioni[sui contratti di servizio per Azure](https://azure.microsoft.com/support/legal/sla)
-> informazioni[su registrazione, creazione di report e monitoraggio](../../decision-guides/logging-and-reporting/index.md)
+> Informazioni sulla [gestione dell'accesso alle risorse in azure](./resource-access-management.md) 
+>  informazioni[sui contratti di servizio per Azure](https://azure.microsoft.com/support/legal/sla) 
+>  informazioni[su registrazione, creazione di report e monitoraggio](../../decision-guides/logging-and-reporting/index.md)

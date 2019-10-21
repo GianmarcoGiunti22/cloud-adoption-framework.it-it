@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025345"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548269"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Superare la complessità tecnica: gestione delle modifiche agile
 
@@ -31,16 +31,16 @@ Il termine _carico di lavoro_ viene visualizzato spesso nel Cloud Adoption Frame
 
 INVEST è un acronimo comune in molte metodologie agili per la scrittura di storie utente o elementi del backlog del prodotto, entrambi unità di output in strumenti di gestione dei progetti agili. L'unità di output misurabile in una migrazione è un carico di lavoro migrato. Il Cloud Adoption Framework modifica leggermente l'acronimo INVEST per creare un costrutto per la definizione dei carichi di lavoro:
 
-- **Independent (indipendente):** Un carico di lavoro non deve avere dipendenze inaccessibili. Per prendere in considerazione la migrazione di un carico di lavoro, è necessario che tutte le dipendenze siano accessibili e incluse nell'operazione di migrazione.
-- **Negotiable (negoziabile):** Quando viene eseguita un'individuazione aggiuntiva, la definizione di un carico di lavoro cambia. Gli architetti che pianificano la migrazione possono negoziare fattori relativi alle dipendenze. Esempi di punti di negoziazione includono la creazione di una versione provvisoria di funzionalità, l'accessibilità di funzionalità tramite una rete ibrida o la creazione di un pacchetto contenente tutte le dipendenze in una singola versione.
-- **Valuable (importante):** L'importanza di un carico di lavoro viene misurata in base alla possibilità di fornire agli utenti l'accesso a un carico di lavoro di produzione.
-- **Estimable (stimabile):** Le dipendenze, gli asset, i tempi di migrazione, le prestazioni e i costi cloud devono essere tutti stimabili e devono essere stimati prima della migrazione.
-- **Small (ridotto):** L'obiettivo consiste nel creare un pacchetto dei carichi di lavoro in un unico sprint. Tuttavia, questo potrebbe non essere sempre fattibile. Al contrario, i team sono invitati a pianificare sprint e versioni per ridurre al minimo il tempo necessario per spostare un carico di lavoro nell'ambiente di produzione.
-- **Testable (testabile):** Deve essere sempre definito un metodo di test o convalida del completamento della migrazione di un carico di lavoro.
+- **Indipendente:** Un carico di lavoro non deve avere dipendenze inaccessibili. Per prendere in considerazione la migrazione di un carico di lavoro, è necessario che tutte le dipendenze siano accessibili e incluse nell'operazione di migrazione.
+- **Negoziabile:** Quando viene eseguita un'individuazione aggiuntiva, la definizione di un carico di lavoro cambia. Gli architetti che pianificano la migrazione possono negoziare fattori relativi alle dipendenze. Esempi di punti di negoziazione includono la creazione di una versione provvisoria di funzionalità, l'accessibilità di funzionalità tramite una rete ibrida o la creazione di un pacchetto contenente tutte le dipendenze in una singola versione.
+- **Prezioso:** Il valore in un carico di lavoro viene misurato in base alla possibilità di fornire agli utenti l'accesso a un carico di lavoro di produzione.
+- **Stimabile:** Le dipendenze, gli asset, i tempi di migrazione, le prestazioni e i costi cloud dovrebbero essere tutti stimabili e devono essere stimati prima della migrazione.
+- **Piccolo:** L'obiettivo consiste nel creare un pacchetto dei carichi di lavoro in un unico Sprint. Tuttavia, questo potrebbe non essere sempre fattibile. Al contrario, i team sono invitati a pianificare sprint e versioni per ridurre al minimo il tempo necessario per spostare un carico di lavoro nell'ambiente di produzione.
+- Verificabile **:** Deve essere sempre definito un metodo di test o convalida del completamento della migrazione di un carico di lavoro.
 
 Questo acronimo non deve essere seguito in modo rigido, ma è volto a semplificare la definizione del termine _carico di lavoro_.
 
-## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Backlog di migrazione: Allineamento di priorità e tempistiche aziendali
+## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Backlog migrazione: allineamento di priorità e tempistiche aziendali
 
 Il backlog di migrazione consente di tenere traccia del portfolio di primo livello dei carichi di lavoro di cui è possibile eseguire la migrazione. Prima della migrazione, il team di strategia del cloud e il team di adozione del cloud sono invitati a effettuare una verifica del [digital estate](../../../digital-estate/index.md) corrente e a concordare un elenco con priorità dei carichi di lavoro di cui eseguire la migrazione. Questo elenco costituisce la base del backlog di migrazione iniziale.
 
@@ -63,7 +63,7 @@ In qualsiasi backlog di migrazione, il team di gestione delle modifiche deve ten
 - **Nome del carico di lavoro.**
 - **Inventario iniziale.** Tutte le risorse necessarie per garantire la funzionalità del carico di lavoro, tra cui macchine virtuali, appliance IT, dati, applicazioni, pipeline di distribuzione e altro ancora. Queste informazioni potrebbero non essere accurate.
 
-## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Backlog versione: Allineamento delle modifiche aziendali e del coordinamento tecnico
+## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Backlog versione: allineamento delle modifiche aziendali e coordinamento tecnico
 
 Nel contesto di una migrazione, una _versione_ indica un'attività che distribuisce uno o più carichi di lavoro nell'ambiente di produzione. Una versione in genere copre diverse iterazioni o lavori tecnici. Tuttavia, rappresenta una singola iterazione della modifica aziendale. Quando uno o più carichi di lavoro sono preparati per la promozione in produzione, si ha una versione. La decisione di creare un pacchetto di una versione viene presa quando i carichi di lavoro migrati rappresentano un valore aziendale sufficiente a giustificare l'inserimento delle modifiche in un ambiente aziendale. Le versioni vengono eseguite assieme a un [piano di modifica aziendale](../optimize/business-change-plan.md), dopo il completamento di [test aziendali](../optimize/business-test.md). Il team di strategia del cloud è responsabile della pianificazione e della supervisione dell'esecuzione di una versione per garantire che la modifica aziendale desiderata venga rilasciata.
 
@@ -90,9 +90,9 @@ Nelle migrazioni avanzate, le versioni vengono rilasciate con cadenza regolare. 
 
 Per stabilizzare l'impatto aziendale, il team di strategia del cloud deve stabilire un processo di rilascio mensile con l'azienda per mantenere un dialogo regolare, ma deve anche chiarire che passeranno diversi mesi prima che possa essere prevista una cadenza di rilascio regolare.
 
-## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Backlog di iterazione o sprint: allineamento delle modifiche tecniche e del lavoro richiesto
+## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Backlog di iterazione o Sprint: allineamento di modifiche tecniche e impegno
 
-Uno *sprint*, o *iterazione*, è un'unità di lavoro coerente con vincoli di tempo. Nel processo di migrazione, viene spesso misurata in incrementi di due settimane. Tuttavia, non sono rare le iterazioni di una settimana o di quattro settimane. La creazione di iterazioni con vincoli di tempo impone intervalli coerenti di completamento del lavoro richiesto e consente una maggiore regolarizzazione dei piani, in base alle nuove informazioni. Durante uno sprint specifico, in genere sono presenti attività per la valutazione, la migrazione e l'ottimizzazione dei carichi di lavoro definiti nel backlog di migrazione. Queste unità di lavoro devono essere rilevate e gestite nello stesso strumento di gestione dei progetti del backlog di migrazione e versione, per garantire coerenza tra ogni livello di gestione del cambiamento.
+Uno *sprint*, o *iterazione*, è un'unità di lavoro coerente con vincoli di tempo. Nel processo di migrazione, viene spesso misurata in incrementi di due settimane. Tuttavia, non si è mai sentito di avere iterazioni di una settimana o di quattro settimane. La creazione di iterazioni con vincoli di tempo impone intervalli coerenti di completamento del lavoro richiesto e consente una maggiore regolarizzazione dei piani, in base alle nuove informazioni. Durante uno sprint specifico, in genere sono presenti attività per la valutazione, la migrazione e l'ottimizzazione dei carichi di lavoro definiti nel backlog di migrazione. Queste unità di lavoro devono essere rilevate e gestite nello stesso strumento di gestione dei progetti del backlog di migrazione e versione, per garantire coerenza tra ogni livello di gestione del cambiamento.
 
 Un *backlog sprint*, o *backlog di iterazione*, è costituito dal lavoro tecnico da completare in un singolo sprint o in una singola iterazione, che riguarda la migrazione di singoli asset. Tale operazione deve essere derivata dall'elenco dei carichi di lavoro di cui viene eseguita la migrazione. Quando si usano strumenti come Azure DevOps (in precedenza Visual Studio Online) per la gestione dei progetti, gli elementi di lavoro presenti in uno sprint sono figli degli elementi del backlog di prodotto in un backlog versione e delle epiche in un backlog di migrazione. Questa relazione padre-figlio consente di chiarire tutti i livelli di gestione del cambiamento.
 

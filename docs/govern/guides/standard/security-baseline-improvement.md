@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance aziendale standard: Migliorare la disciplina della linea di base di sicurezza'
+title: 'Guida alla governance aziendale standard: migliorare la disciplina della linea di base di sicurezza'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida alla governance aziendale standard: Migliorare la disciplina della linea di base di sicurezza'
+description: 'Guida alla governance aziendale standard: migliorare la disciplina della linea di base di sicurezza'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: b1f43bdf0e0d58c40f11e45caf0221f7983c9624
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967335"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547530"
 ---
-# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guida alla governance aziendale standard: Migliorare la disciplina della linea di base di sicurezza
+# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guida alla governance aziendale standard: migliorare la disciplina della linea di base di sicurezza
 
 Questo articolo fa avanzare il racconto aggiungendo controlli di sicurezza che supportano lo spostare dati protetti nel cloud.
 
@@ -28,7 +28,7 @@ I responsabili IT e aziendali sono soddisfatti dei risultati della sperimentazio
 
 Dato l'effetto della modifica della descrizione e del supporto offerti finora, il team di governance del cloud viene ora visualizzato in modo diverso. I due amministratori di sistema che hanno avviato il team vengono ora considerati cloud architect esperti. Con lo sviluppo dello scenario, verranno percepiti inizialmente come custodi del cloud e infine più come guardiani del cloud.
 
-Sebbene la differenza sia sottile, si tratta di una distinzione importante per lo sviluppo di una cultura IT orientata alla governance. Un custode del cloud mette a posto i pasticci di cloud architect innovativi. I due ruoli hanno obiettivi naturalmente in conflitto e opposti. Lo scopo di un guardiano del cloud è invece quello di mantenere sicuro il cloud, in modo che altri cloud architect possano procedere rapidamente, senza troppi pasticci. Inoltre, un tutore cloud è impegnato nella creazione di modelli che accelerano la distribuzione e l'adozione, rendendoli un acceleratore di innovazione e un difensore delle cinque discipline della governance del cloud.
+Sebbene la differenza sia impercettibile, si tratta di una distinzione importante quando si crea una cultura IT incentrata sulla governance. Un custode del cloud mette a posto i pasticci di cloud architect innovativi. I due ruoli hanno obiettivi naturalmente in conflitto e opposti. Lo scopo di un guardiano del cloud è invece quello di mantenere sicuro il cloud, in modo che altri cloud architect possano procedere rapidamente, senza troppi pasticci. Inoltre, un tutore cloud è impegnato nella creazione di modelli che accelerano la distribuzione e l'adozione, rendendoli un acceleratore di innovazione e un difensore delle cinque discipline della governance del cloud.
 
 ### <a name="changes-in-the-current-state"></a>Modifiche nello stato corrente
 
@@ -36,7 +36,7 @@ All'inizio di questo scenario, i team di sviluppo delle applicazioni lavoravano 
 
 Da allora, sono avvenuti alcuni cambiamenti che influiranno sulla governance:
 
-- Il team di sviluppo di applicazioni ha implementato una pipeline CI/CD per distribuire un'applicazione nativa del cloud con un'esperienza utente migliorata. L'app interagisce ancora con i dati protetti, pertanto non è pronta per l'ambiente di produzione.
+- Il team di sviluppo di applicazioni ha implementato una pipeline CI/CD per distribuire un'applicazione nativa del cloud con un'esperienza utente migliorata. L'app non è ancora in grado di interagire con i dati protetti, quindi non è pronta per la produzione.
 - Il team di business intelligence al suo interno ha curato attivamente i dati nel cloud dalla logistica, dall'inventario e dalle fonti di terze parti. Questi dati vengono usati per effettuare nuove stime, che possono influire sui processi aziendali. Tuttavia, queste stime e informazioni dettagliate non hanno utilità pratica fino a quando i dati finanziari e dei clienti non possono essere integrati nella piattaforma di dati.
 - Il team IT sta procedendo con i piani del CIO e del CFO per il ritiro del data center DR. Più di 1.000 dei 2.000 asset nel data center DR sono stati ritirati o migrati.
 - Sono stati modernizzati i criteri definiti in termini di dati personali e finanziari. Tuttavia, i nuovi criteri aziendali dipendono dall'implementazione dei criteri di governance e sicurezza correlati. I team sono ancora bloccati.
@@ -51,7 +51,7 @@ I cambiamenti che riguardano lo stato attuale e quello futuro creano nuovi risch
 
 ## <a name="changes-in-tangible-risks"></a>Modifiche ai rischi tangibili
 
-**Violazione dei dati:** quando si adotta qualsiasi nuova piattaforma di dati, si verifica un aumento intrinseco delle responsabilità correlate alle potenziali violazioni dei dati. I tecnici che adottano le tecnologie cloud hanno maggiori responsabilità di implementare soluzioni in grado di ridurre questo rischio. È necessario implementare una solida strategia di governance e sicurezza per fare in modo che i tecnici adempiano a queste responsabilità.
+**Violazione dei dati:** Quando si adotta una nuova piattaforma dati, si verifica un aumento intrinseco delle passività correlate alle potenziali violazioni dei dati. I tecnici che adottano le tecnologie cloud hanno maggiori responsabilità di implementare soluzioni in grado di ridurre questo rischio. È necessario implementare una solida strategia di governance e sicurezza per fare in modo che i tecnici adempiano a queste responsabilità.
 
 Questo rischio aziendale può comportare alcuni rischi tecnici:
 
@@ -70,7 +70,7 @@ Questo rischio aziendale può comportare alcuni rischi tecnici:
 Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi rischi e l'implementazione della guida. L'elenco può sembrare lungo, ma l'adozione di questi criteri può essere più semplice di quanto non sembri.
 
 1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dal proprietario dell'applicazione prima della distribuzione nel cloud.
-2. Le applicazioni che archiviano o accedono ai dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo fanno. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
+2. Le applicazioni che archiviano o accedono a dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo sono. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
 3. tutti i dati protetti devono essere crittografati quando inattivi. Anche se questa è l'impostazione predefinita per tutti gli account di archiviazione di Azure, potrebbero essere necessarie strategie di crittografia aggiuntive, inclusa la crittografia dei dati nell'account di archiviazione, la crittografia delle VM e la crittografia a livello di database se si usa SQL in una VM (Transparent Data Encryption e colonna) crittografia).
 4. Le autorizzazioni con privilegi elevati in qualsiasi segmento contenente dati protetti devono essere un'eccezione. Tali eccezioni verranno registrate con il team di governance del cloud e controllate regolarmente.
 5. le subnet di rete contenenti dati protetti devono essere isolate dalle altre subnet. Il traffico di rete tra le subnet di dati protetti verrà controllato regolarmente.

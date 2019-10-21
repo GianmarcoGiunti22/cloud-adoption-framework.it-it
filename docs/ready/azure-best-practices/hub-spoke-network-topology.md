@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022398"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549020"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia di rete hub-spoke
 
@@ -75,7 +75,7 @@ L'introduzione di più hub aumenta il costo e l'impegno di gestione del sistema.
 
 Un architetto potrebbe voler distribuire un carico di lavoro multilivello in più reti virtuali. Usando il peering di rete virtuale, gli spoke possono connettersi ad altri spoke nello stesso hub o in hub diversi.
 
-Un esempio tipico di questo scenario è quello in cui i server di elaborazione delle applicazioni sono in uno spoke o rete virtuale, mentre il database viene distribuito in un altro spoke o rete virtuale. In questo caso, è facile interconnettere gli spoke con il peering di rete virtuale ed evitare in tal modo il transito dall'hub. Una soluzione è quella di eseguire un'attenta revisione dell'architettura e della sicurezza per assicurarsi che l'esclusione dell'hub non comporti anche quella di importanti punti di sicurezza e di controllo che potrebbero esistere solo nell'hub.
+Un esempio tipico di questo scenario è quello in cui i server di elaborazione delle applicazioni sono in uno spoke o rete virtuale, mentre il database viene distribuito in un altro spoke o rete virtuale. In questo caso, è facile interconnettere gli spoke con il peering di rete virtuale ed evitare in tal modo il transito dall'hub. La soluzione consiste nell'eseguire un'attenta analisi della sicurezza e dell'architettura per evitare che il bypass dell'hub ignori importanti punti di sicurezza o di controllo che potrebbero esistere solo nell'hub.
 
 ![Spoke interconnessi e connessi a un hub][3]
 

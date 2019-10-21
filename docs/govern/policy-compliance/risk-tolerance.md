@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223550"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547182"
 ---
 # <a name="evaluate-risk-tolerance"></a>Valutare la tolleranza ai rischi
 
@@ -30,7 +30,7 @@ I veri rischi aziendali sono basati sui dettagli delle trasformazioni specifiche
 > [!IMPORTANT]
 > Prima di leggere quanto segue, tenere presente che ognuno di questi rischi può essere gestito. L'obiettivo di questo articolo è informare e preparare i lettori per le discussioni più produttive sulla gestione dei rischi.
 
-- **Violazione dei dati:** il rischio più grave associato a qualsiasi trasformazione è quello relativo alla protezione dei dati. Le perdite di dati possono causare danni significativi all'azienda, causando la perdita di clienti, la riduzione delle attività aziendali o anche la responsabilità legale. Qualsiasi modifica al modo in cui i dati vengono archiviati, elaborati o usati comporta un rischio. Le trasformazioni cloud creano un elevato livello di modifica rispetto alla gestione dei dati, quindi il rischio non dovrebbe essere preso in considerazione. La [linea di base di sicurezza](../security-baseline/index.md), la [classificazione dei dati](./data-classification.md)e la [razionalizzazione incrementale](../../digital-estate/rationalize.md#incremental-rationalization) possono aiutare a gestire questo rischio.
+- **Violazione dei dati:** Il primo rischio associato a una trasformazione è la violazione dei dati. Le perdite di dati possono causare danni significativi all'azienda, causando la perdita di clienti, la riduzione delle attività aziendali o anche la responsabilità legale. Qualsiasi modifica al modo in cui i dati vengono archiviati, elaborati o usati comporta un rischio. Le trasformazioni cloud creano un elevato livello di modifica rispetto alla gestione dei dati, quindi il rischio non dovrebbe essere preso in considerazione. La [linea di base di sicurezza](../security-baseline/index.md), la [classificazione dei dati](./data-classification.md)e la [razionalizzazione incrementale](../../digital-estate/rationalize.md#incremental-rationalization) possono aiutare a gestire questo rischio.
 
 - **Interrompi servizio:** Le operazioni aziendali e le esperienze dei clienti si basano principalmente sulle operazioni tecniche. Le trasformazioni cloud creeranno modifiche nelle operazioni IT. In alcune organizzazioni, la modifica è ridotta e facilmente adattabile. In altre organizzazioni, queste modifiche potrebbero richiedere la ricreazione degli strumenti, la ripetizione del training o nuovi approcci per supportare le operazioni cloud. Maggiore è il cambiamento, più grande è il potenziale impatto sulle operazioni aziendali e sull'esperienza dei clienti. La gestione di questo rischio richiederà il coinvolgimento dell'azienda nella pianificazione della trasformazione. Pianificazione della versione e prima selezione del carico di lavoro nell'articolo sulla [razionalizzazione incrementale](../../digital-estate/rationalize.md#incremental-rationalization) discutere i modi per scegliere i carichi di lavoro per i progetti di trasformazione. Il ruolo dell'azienda in questa attività consiste nel comunicare il rischio per le operazioni aziendali di modificare i carichi di lavoro con priorità. La scelta dei carichi di lavoro con un minore effetto sulle operazioni ridurrà il rischio complessivo.
 
@@ -56,7 +56,7 @@ Nella sezione successiva vengono riportate alcune domande di esempio che possono
 
 Questa sezione elenca le conversazioni che provocano le domande in tre categorie: conseguenze della perdita, probabilità di perdita e costi di correzione. Quando l'azienda e il partner IT devono affrontare ciascuna di queste aree, è possibile determinare facilmente la decisione di impegnarsi per la gestione dei rischi e la tolleranza complessiva a un particolare rischio.
 
-**Perdita di conseguenze:** domande per determinare l'impatto di un rischio. Queste domande possono risultare difficili da rispondere. Quantificare l'impatto è l'ideale, ma in alcuni casi la discussione da sola è sufficiente a comprendere la tolleranza. Anche gli intervalli sono accettabili, soprattutto se includono i presupposti che li hanno determinati.
+**Perdita di conseguenze:** Domande per determinare l'effetto di un rischio. Queste domande possono risultare difficili da rispondere. Quantificare l'impatto è l'ideale, ma in alcuni casi la discussione da sola è sufficiente a comprendere la tolleranza. Anche gli intervalli sono accettabili, soprattutto se includono i presupposti che li hanno determinati.
 
 - Questo rischio viola i requisiti di conformità di terze parti?
 - Questo rischio viola i criteri aziendali interni?
@@ -66,7 +66,7 @@ Questa sezione elenca le conversazioni che provocano le domande in tre categorie
 - Questo rischio potrebbe comportare nuove responsabilità legali? In tal caso, esiste una precedenza per il risarcimento dei danni in questi tipi di casi?
 - Questo rischio potrebbe arrestare le operazioni aziendali? In questo caso, per quanto tempo le operazioni sarebbero ferme?
 - Questo rischio potrebbe rallentare le operazioni aziendali? In tal caso, quanto è lento e quanto tempo?
-- In questa fase della trasformazione, si tratta di un rischio occasionale o si ripeterà?
+- In questa fase della trasformazione si tratta di un rischio occasionale o si ripete?
 - La frequenza di questo rischio aumenta o diminuisce con l'avanzamento della trasformazione?
 - La probabilità di questo rischio aumenta o diminuisce nel corso del tempo?
 - Il rischio è per natura soggetto a variazioni nel tempo? Il rischio passerà o peggiorerà, se non viene affrontato?
@@ -83,7 +83,7 @@ Queste domande di base ne susciteranno molte altre. Dopo aver avuto un dialogo c
 
 Queste domande su come semplificare le soluzioni tecniche necessarie per gestire o rimuovere i rischi. ma comunicano tali soluzioni in modo che l'azienda possa integrarle rapidamente in un processo decisionale.
 
-**Probabilità di perdita:** domande per determinare la probabilità che il rischio diventi reale. Questa è la parte più difficile quantificare. È invece consigliabile che il team di governance del cloud crei categorie per la comunicazione della probabilità, in base ai dati di supporto. Le domande seguenti consentono di creare categorie significative per il team.
+**Probabilità di perdita:** Domande per determinare la probabilità con cui il rischio diventerà realtà. Questa è la parte più difficile quantificare. È invece consigliabile che il team di governance del cloud crei categorie per la comunicazione della probabilità, in base ai dati di supporto. Le domande seguenti consentono di creare categorie significative per il team.
 
 - Sono state eseguite ricerche riguardanti la probabilità che questo rischio diventi reale?
 - Il fornitore può fornire riferimenti o statistiche sulla probabilità di un effetto?

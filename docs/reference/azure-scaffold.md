@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223977"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548774"
 ---
-# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffolding aziendale Azure: Governance prescrittiva per le sottoscrizioni
+# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffold Azure enterprise: governance prescrittiva per le sottoscrizioni
 
 > [!NOTE]
-> Azure Enterprise ponteggi è stato integrato nel Framework di adozione Microsoft Cloud. Il contenuto di questo articolo è ora rappresentato nella sezione [Ready](../ready/index.md) del nuovo Framework. Questo articolo verrà deprecato nelle prime 2020. Per iniziare a usare il nuovo processo, vedere la [Panoramica pronta](../ready/index.md), [creazione della prima area di destinazione](../ready/azure-readiness-guide/migration-landing-zone.md)e/o [considerazioni sulla zona di destinazione](../ready/considerations/index.md).
+> Azure Enterprise ponteggi è stato integrato nel Framework di adozione Microsoft Cloud. Il contenuto di questo articolo è ora rappresentato nella sezione [Ready](../ready/index.md) del nuovo Framework. Questo articolo verrà deprecato nelle prime 2020. Per iniziare a usare il nuovo processo, vedere la [Panoramica pronta](../ready/index.md), [creazione della prima area di destinazione](../ready/azure-setup-guide/migration-landing-zone.md)e/o [considerazioni sulla zona di destinazione](../ready/considerations/index.md).
 
 Le organizzazioni stanno adottando sempre di più il cloud pubblico per la sua agilità e la sua flessibilità. Si basano sui punti di forza del cloud per generare ricavi e ottimizzare l'utilizzo delle risorse per l'azienda. Microsoft Azure fornisce numerosi servizi e funzionalità che le organizzazioni assemblano come blocchi predefiniti per affrontare le esigenze di una vasta gamma di applicazioni e carichi di lavoro.
 
@@ -34,7 +34,7 @@ Questo articolo offre un punto di partenza per i professionisti tecnici, in modo
 
 ## <a name="need-for-governance"></a>Esigenza di governance
 
-Durante il passaggio ad Azure, è necessario affrontare in anticipo l'argomento della governance per garantire il corretto uso del cloud all'interno dell'organizzazione. Purtroppo, il tempo necessario e le procedure per creare un sistema di governance completo implicano che alcuni gruppi aziendali si rivolgano direttamente ai provider senza coinvolgere l'IT aziendale. Se le risorse non vengono gestite correttamente, questo approccio rischia di lasciare l'azienda in balia dei compromessi. Le caratteristiche dell'agilità,&mdash;della flessibilità e dei prezzi&mdash;basati sul consumo del cloud pubblico sono importanti per i gruppi aziendali che devono soddisfare rapidamente le esigenze dei clienti (sia interni che esterni). Ma è necessario garantire che i dati e i sistemi siano protetti in modo efficace.
+Durante il passaggio ad Azure, è necessario affrontare in anticipo l'argomento della governance per garantire il corretto uso del cloud all'interno dell'organizzazione. Purtroppo, il tempo necessario e le procedure per creare un sistema di governance completo implicano che alcuni gruppi aziendali si rivolgano direttamente ai provider senza coinvolgere l'IT aziendale. Se le risorse non vengono gestite correttamente, questo approccio rischia di lasciare l'azienda in balia dei compromessi. Le caratteristiche del cloud pubblico &mdash;agility, la flessibilità e i prezzi basati sul consumo &mdash;are importante per i gruppi aziendali che devono soddisfare rapidamente le esigenze dei clienti (sia interni che esterni). Ma è necessario garantire che i dati e i sistemi siano protetti in modo efficace.
 
 Quando si costruisce un edificio, viene usata un'impalcatura (in inglese scaffold) per creare l'intelaiatura della struttura. Questa impalcatura descrive la struttura generale e fornisce punti di ancoraggio per il montaggio di sistemi più permanenti. Un scaffold enterprise è lo stesso: un set di controlli flessibili e funzionalità di Azure che forniscono la struttura per l'ambiente e punti di ancoraggio per servizi basati su cloud pubblico. Fornisce ai generatori (IT e gruppi aziendali) una base per creare e collegare nuovi servizi, tenendo a mente l'importanza della velocità di distribuzione.
 
@@ -79,7 +79,7 @@ Anche se ognuno di questi modelli ha un suo posto, il modello **business unit** 
 
 ### <a name="azure-management-groups"></a>Gruppi di gestione di Azure
 
-Microsoft offre ora un altro modo per modellare la gerarchia: i [gruppi di gestione di Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). I gruppi di gestione sono molto più flessibili dei reparti e degli account e possono essere annidati fino a sei livelli. I gruppi di gestione consentono di creare una gerarchia separata dalla gerarchia di fatturazione, esclusivamente per una gestione efficiente delle risorse. I gruppi di gestione possono eseguire il mirroring della gerarchia di fatturazione e spesso le aziende iniziano in questo modo. Tuttavia, la potenza dei gruppi di gestione è quando vengono usati per modellare l'organizzazione, raggruppando le sottoscrizioni correlate (indipendentemente dalla loro posizione nella gerarchia di fatturazione) e assegnando ruoli, criteri e iniziative comuni. Di seguito sono riportati alcuni esempi:
+Microsoft offre ora un altro modo per modellare la gerarchia, ovvero i [gruppi di gestione di Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). I gruppi di gestione sono molto più flessibili dei reparti e degli account e possono essere annidati fino a sei livelli. I gruppi di gestione consentono di creare una gerarchia separata dalla gerarchia di fatturazione, esclusivamente per una gestione efficiente delle risorse. I gruppi di gestione possono eseguire il mirroring della gerarchia di fatturazione e spesso le aziende iniziano in questo modo. Tuttavia, la potenza dei gruppi di gestione è quando vengono usati per modellare l'organizzazione, raggruppando le sottoscrizioni correlate (indipendentemente dalla loro posizione nella gerarchia di fatturazione) e assegnando ruoli, criteri e iniziative comuni. Di seguito sono riportati alcuni esempi:
 
 - **Produzione e non produzione.** Alcune aziende creano gruppi di gestione per identificare le sottoscrizioni di produzione e non di produzione. I gruppi di gestione consentono a questi clienti di gestire più facilmente ruoli e criteri. Ad esempio, la sottoscrizione non di produzione può consentire agli sviluppatori di accedere "collaboratore", ma in produzione hanno solo l'accesso "Reader".
 - **Servizi interni rispetto ai servizi esterni.** Le aziende hanno spesso requisiti, criteri e ruoli diversi per i servizi interni rispetto ai servizi rivolte ai clienti.
@@ -90,11 +90,11 @@ I gruppi di gestione ben progettati sono, insieme alle iniziative e ai criteri d
 
 Quando si prendono decisioni su reparti e account (o gruppi di gestione), principalmente si cerca di capire come dividere l'ambiente di Azure per farlo corrispondere all'organizzazione. Tuttavia, le sottoscrizioni sono il luogo in cui si verifica il lavoro reale e le decisioni in questo caso influiscono su sicurezza, scalabilità e fatturazione. Molte organizzazioni cercano come guide i criteri seguenti:
 
-- **Applicazione/servizio:** le sottoscrizioni rappresentano un'applicazione o un servizio (ossia un portfolio di applicazioni).
-- **Vita** le sottoscrizioni rappresentano un ciclo di vita di un servizio, ad esempio produzione o sviluppo.
-- **Reparto:** le sottoscrizioni rappresentano i reparti dell'organizzazione.
+- **Applicazione/servizio:** Le sottoscrizioni rappresentano un'applicazione o un servizio (portfolio di applicazioni)
+- **Ciclo** di vita: Le sottoscrizioni rappresentano un ciclo di vita di un servizio, ad esempio produzione o sviluppo.
+- **Reparto:** Le sottoscrizioni rappresentano i reparti all'interno dell'organizzazione.
 
-I primi due criteri, quelli più usati, sono entrambi vivamente consigliati. L'approccio "ciclo di vita" è appropriato per la maggior parte delle organizzazioni. In questo caso, la raccomandazione generale consiste nell'usare due sottoscrizioni di `Production` base `Nonproduction`, e e quindi usare i gruppi di risorse per separare ulteriormente gli ambienti.
+I primi due criteri, quelli più usati, sono entrambi vivamente consigliati. L'approccio "ciclo di vita" è appropriato per la maggior parte delle organizzazioni. In questo caso, la raccomandazione generale consiste nell'usare due sottoscrizioni di base, `Production` e `Nonproduction` e quindi usare i gruppi di risorse per separare ulteriormente gli ambienti.
 
 ### <a name="resource-groups"></a>Gruppi di risorse
 
@@ -127,7 +127,7 @@ Il primo pilastro dello scaffolding è uno standard di denominazione coerente. S
 I tag delle risorse sono strettamente allineati agli standard di denominazione. Man mano che le risorse vengono aggiunte alle sottoscrizioni, diventa sempre più importante categorizzarle in maniera logica a scopo di fatturazione, gestione e svolgimento delle operazioni. Per altre informazioni, vedere [Usare tag per organizzare le risorse di Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 > [!IMPORTANT]
-> I tag possono contenere informazioni personali ed essere sottoposti alle normative del GDPR. Pianificare con attenzione la gestione dei tag. Per informazioni generali su GDPR, vedere la sezione GDPR del portale di attendibilità del [servizio](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> I tag possono contenere informazioni personali ed essere sottoposti alle normative del GDPR. Pianificare con attenzione la gestione dei tag. Per informazioni generali su GDPR, vedere la sezione GDPR del [portale di attendibilità del servizio](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 I tag vengono usati in molti modi, oltre a fatturazione e gestione. Spesso vengono usati nell'ambito dell'automazione (vedere la sezione successiva). Se non affrontati in anticipo, possono verificarsi conflitti. La procedura consigliata consiste nell'identificare tutti i tag comuni a livello aziendale, ad esempio ApplicationOwner e CostCenter, e applicarli in modo coerente durante la distribuzione delle risorse tramite l'automazione.
 
@@ -139,7 +139,7 @@ I criteri e le iniziative sono ancora più potenti se usati con i gruppi di gest
 
 ### <a name="common-uses-of-resource-manager-policies"></a>Uso comune dei criteri di Resource Manager
 
-I criteri e le iniziative sono uno strumento potente nel Toolkit di Azure. I criteri consentono alle aziende di fornire controlli per i carichi di lavoro "it tradizionali" che consentono la stabilità necessaria per le applicazioni line-of-business, consentendo allo stesso&mdash;tempo i carichi di lavoro "agile", ad esempio lo sviluppo di applicazioni dei clienti senza esporre l'azienda a rischi aggiuntivi. I modelli più comuni per i criteri sono:
+I criteri e le iniziative sono uno strumento potente nel Toolkit di Azure. I criteri consentono alle aziende di fornire controlli per i carichi di lavoro "IT tradizionali" che consentono la stabilità necessaria per le applicazioni line-of-business, consentendo allo stesso tempo i carichi di lavoro "agile" &mdash;for esempio, lo sviluppo di applicazioni dei clienti senza esposizione dell'azienda a rischi aggiuntivi. I modelli più comuni per i criteri sono:
 
 - **Conformità geografica e sovranità dei dati.** Azure dispone di un elenco sempre crescente di aree geografiche in tutto il mondo. Le aziende hanno spesso la necessità di garantire che le risorse in un ambito specifico rimangano in un'area geografica per soddisfare i requisiti normativi.
 - **Evitare di esporre i server pubblicamente.** Criteri di Azure può impedire la distribuzione di determinati tipi di risorse. È comune creare un criterio per negare la creazione di un indirizzo IP pubblico all'interno di un ambito specifico, evitando l'esposizione involontaria di un server a Internet.
@@ -162,7 +162,7 @@ Dopo aver creato i criteri e averli raggruppati in iniziative logiche, è necess
 
 Sono disponibili diversi esempi di criteri che mostrano come iniziative e criteri possono essere applicati a varie risorse all'interno di Azure in questo repository [GitHub](https://github.com/Azure/azure-policy).
 
-## <a name="identity-and-access-management"></a>Gestione delle identità e dell'accesso
+## <a name="identity-and-access-management"></a>Gestione degli accessi e delle identità
 
 Una delle prime e più cruciali domande che ci si pone quando si inizia a usare il cloud pubblico è chi deve avere accesso alle risorse e come è possibile controllare tale accesso. Il controllo dell'accesso alla portale di Azure e alle risorse nel portale è essenziale per la sicurezza a lungo termine degli asset nel cloud.
 
@@ -170,7 +170,7 @@ Per proteggere l'accesso alle risorse, è necessario innanzitutto configurare il
 
 ![Diagramma dell'architettura di AD](../_images/reference/ad-architecture.png)
 
-Al momento del rilascio iniziale di Azure, i controlli di accesso per una sottoscrizione prevedevano solo amministratore e coamministratore. L'accesso a una sottoscrizione nel modello classico implicava l'accesso a tutte le risorse del portale. Questa mancanza di un controllo granulare ha portato alla proliferazione di sottoscrizioni per fornire un livello ragionevole di controllo degli accessi per un'iscrizione ad Azure. La proliferazione di sottoscrizioni non è più necessaria. Con il controllo degli accessi in base al ruolo, è possibile assegnare utenti a ruoli standard che forniscono accesso comune, ad esempio "proprietario", "collaboratore" o "lettore", o persino creare ruoli personalizzati.
+Quando Azure è stato originariamente rilasciato, i controlli degli accessi a una sottoscrizione erano elementari: Amministratore o Coamministratore. L'accesso a una sottoscrizione nel modello classico implicava l'accesso a tutte le risorse del portale. Questa mancanza di un controllo granulare ha portato alla proliferazione di sottoscrizioni per fornire un livello ragionevole di controllo degli accessi per un'iscrizione ad Azure. La proliferazione di sottoscrizioni non è più necessaria. Con il controllo degli accessi in base al ruolo, è possibile assegnare utenti a ruoli standard che forniscono accesso comune, ad esempio "proprietario", "collaboratore" o "lettore", o persino creare ruoli personalizzati.
 
 Quando si implementa l'accesso in base al ruolo, è consigliabile tenere presente gli aspetti seguenti:
 
@@ -180,15 +180,15 @@ Quando si implementa l'accesso in base al ruolo, è consigliabile tenere present
 - Seguire il principio di concedere il **privilegio minimo** necessario per svolgere il lavoro previsto.
 
 > [!IMPORTANT]
->È consigliabile usare le funzionalità di [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) e [accesso condizionale](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) per offrire migliore protezione e maggiore visibilità sulle azioni amministrative nelle sottoscrizioni di Azure. Queste funzionalità provengono da una licenza Azure AD Premium valida (a seconda della funzione) per proteggere e gestire ulteriormente l'identità. Azure AD PIM fornisce all'accesso amministrativo "JIT" il flusso di lavoro di approvazione, oltre al controllo completo delle attività e delle attivazioni dell'amministratore. Autenticazione a più fattori di Azure è un'altra funzionalità fondamentale e consente la verifica in due passaggi per l'accesso al portale di Azure. In combinazione con i controlli per l'accesso condizionale, consente di gestire efficacemente il rischio di compromissione.
+>È consigliabile usare le funzionalità di [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) e [accesso condizionale](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) per offrire migliore protezione e maggiore visibilità sulle azioni amministrative nelle sottoscrizioni di Azure. Queste funzionalità provengono da una licenza Azure AD Premium valida (a seconda della funzione) per proteggere e gestire ulteriormente l'identità. Azure AD PIM fornisce all'accesso amministrativo "JIT" il flusso di lavoro di approvazione, oltre al controllo completo delle attività e delle attivazioni dell'amministratore. Azure Multi-Factor Authentication è un'altra funzionalità fondamentale e consente la verifica in due passaggi per l'accesso al portale di Azure. In combinazione con i controlli per l'accesso condizionale, consente di gestire efficacemente il rischio di compromissione.
 
 Una delle migliori strategie per mitigare i rischi che è possibile adottare ed è consigliabile considerare obbligatoria per ogni distribuzione consiste nel pianificare e preparare l'identità e i controlli degli accessi e seguire la procedura consigliata di Azure Identity Management ([collegamento](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)).
 
-## <a name="security"></a>Security
+## <a name="security"></a>Sicurezza
 
 Uno dei principali ostacoli per l'adozione del cloud è generalmente rappresentato dalle preoccupazioni legate alla sicurezza. I responsabili della gestione dei costi dell'IT e i reparti della sicurezza devono assicurarsi che le risorse in Azure siano al sicuro e protette per impostazione predefinita. Azure fornisce le funzionalità che è possibile usare per proteggere le risorse durante il rilevamento e l'eliminazione di minacce da tali risorse.
 
-### <a name="azure-security-center"></a>Centro sicurezza di Azure
+### <a name="azure-security-center"></a>Centro sicurezza Azure
 
 Il [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) offre una visualizzazione unificata dello stato della sicurezza delle risorse nell'intero ambiente oltre alla protezione avanzata dalle minacce. Il Centro sicurezza di Azure è una piattaforma aperta che consente ai partner Microsoft di creare un software che si inserisce al suo interno e ne migliora le funzionalità. Le funzionalità di base del Centro sicurezza di Azure (livello gratuito) forniscono valutazioni e consigli che migliorano il comportamento di sicurezza. I livelli a pagamento consentono funzionalità aggiuntive e utili, ad esempio l'accesso di amministratore JIT e i controlli delle applicazioni adattivi (whitelist).
 
@@ -228,23 +228,23 @@ La raccolta e l'analisi dei dati di telemetria che forniscono informazioni detta
 
 Queste informazioni possono essere visualizzate e gestite a più livelli e vengono continuamente migliorate. Azure offre funzionalità di monitoraggio **condivise**, di **base**e **complete** delle risorse di Azure tramite i servizi descritti nella figura seguente.
 
-![monitoraggio](../_images/reference/monitoring.png)
+![monitoring](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Funzionalità condivise
 
-- **Avvisi** È possibile raccogliere tutti i log, gli eventi e le metriche dalle risorse di Azure, ma senza la possibilità di ricevere notifiche relative a condizioni e azioni critiche, questi dati sono utili solo per scopi cronologici e forensi. Gli avvisi di Azure comunicano in modo proattivo le condizioni definite dall'utente in tutte le applicazioni e nell'infrastruttura. È possibile creare regole di avviso tra log, eventi e metriche che usano i gruppi di azioni per notificare set di destinatari. I gruppi di azioni offrono anche la possibilità di automatizzare la correzione tramite azioni esterne, ad esempio i webhook per eseguire i runbook di Automazione di Azure e Funzioni di Azure.
+- **Avvisi:** È possibile raccogliere tutti i log, gli eventi e le metriche dalle risorse di Azure, ma senza la possibilità di ricevere notifiche relative a condizioni e azioni critiche, questi dati sono utili solo per scopi cronologici e forensi. Gli avvisi di Azure comunicano in modo proattivo le condizioni definite dall'utente in tutte le applicazioni e nell'infrastruttura. È possibile creare regole di avviso tra log, eventi e metriche che usano i gruppi di azioni per notificare set di destinatari. I gruppi di azioni offrono anche la possibilità di automatizzare la correzione tramite azioni esterne, ad esempio i webhook per eseguire i runbook di Automazione di Azure e Funzioni di Azure.
 
-- **Dashboard** i dashboard consentono di aggregare le viste di monitoraggio e combinare i dati di diverse risorse e sottoscrizioni per offrire una visualizzazione a livello aziendale dei dati di telemetria delle risorse di Azure. È possibile creare e configurare le proprie visualizzazioni e condividerle con altri utenti. Ad esempio, è possibile creare un dashboard costituito da diversi riquadri per gli amministratori di database per fornire informazioni su tutti i servizi di database di Azure, tra cui il database SQL di Azure, il database di Azure per PostgreSQL e il database di Azure per MySQL.
+- **Dashboard:** I dashboard consentono di aggregare le visualizzazioni di monitoraggio e combinare i dati tra le risorse e le sottoscrizioni per offrire una visualizzazione a livello aziendale dei dati di telemetria delle risorse di Azure. È possibile creare e configurare le proprie visualizzazioni e condividerle con altri utenti. Ad esempio, è possibile creare un dashboard costituito da diversi riquadri per gli amministratori di database per fornire informazioni su tutti i servizi di database di Azure, tra cui il database SQL di Azure, il database di Azure per PostgreSQL e il database di Azure per MySQL.
 
 - **Esplora metriche:** Le metriche sono valori numerici generati dalle risorse di Azure, ad esempio% CPU o I/O del disco, che forniscono informazioni approfondite sul funzionamento e sulle prestazioni delle risorse. Utilizzando Esplora metriche, è possibile definire e inviare le metriche che interessano Log Analytics per l'aggregazione e l'analisi.
 
 ### <a name="core-monitoring"></a>Monitoraggio di base
 
-- **Monitoraggio di Azure:** Monitoraggio di Azure è il servizio di piattaforma di base che offre un'unica origine per il monitoraggio delle risorse di Azure. L'interfaccia portale di Azure di monitoraggio di Azure offre un punto di partenza centralizzato per tutte le funzionalità di monitoraggio in Azure, incluse le funzionalità di monitoraggio approfondite di Application Insights, Log Analytics, monitoraggio della rete, soluzioni di gestione e Mappe del servizio. Con monitoraggio di Azure è possibile visualizzare, eseguire query, indirizzare, archiviare ed eseguire operazioni sulle metriche e sui log provenienti dalle risorse di Azure nell'intera area cloud. Oltre al portale è possibile recuperare i dati tramite i cmdlet di monitoraggio PowerShell, l'interfaccia della riga di comando multipiattaforma o le API REST di monitoraggio di Azure.
+- **Monitoraggio di Azure:** Monitoraggio di Azure è il servizio principale della piattaforma che fornisce un'unica origine per il monitoraggio delle risorse di Azure. L'interfaccia portale di Azure di monitoraggio di Azure offre un punto di partenza centralizzato per tutte le funzionalità di monitoraggio in Azure, incluse le funzionalità di monitoraggio approfondite di Application Insights, Log Analytics, monitoraggio della rete, soluzioni di gestione e Mappe del servizio. Con monitoraggio di Azure è possibile visualizzare, eseguire query, indirizzare, archiviare ed eseguire operazioni sulle metriche e sui log provenienti dalle risorse di Azure nell'intera area cloud. Oltre al portale è possibile recuperare i dati tramite i cmdlet di monitoraggio PowerShell, l'interfaccia della riga di comando multipiattaforma o le API REST di monitoraggio di Azure.
 
 - **Azure Advisor:** Azure Advisor monitora costantemente i dati di telemetria tra le sottoscrizioni e gli ambienti e fornisce consigli sulle procedure consigliate per l'ottimizzazione delle risorse di Azure per ridurre i costi e migliorare le prestazioni, la sicurezza e la disponibilità delle risorse che costituiscono le applicazioni.
 
-- **Integrità dei servizi:** Integrità dei servizi di Azure identifica eventuali problemi con i servizi di Azure che possono influire sulle applicazioni, oltre a facilitare la pianificazione per le finestre di manutenzione pianificata.
+- **Integrità del servizio:** Integrità dei servizi di Azure identifica eventuali problemi con i servizi di Azure che possono influire sulle applicazioni, oltre a facilitare la pianificazione per le finestre di manutenzione pianificata.
 
 - **Log attività:** Il log attività descrive tutte le operazioni sulle risorse nelle sottoscrizioni. Offre un audit trail per determinare il cosa, il chi e il quando di qualsiasi operazione di creazione, aggiornamento ed eliminazione effettuata sulle risorse. Gli eventi del log attività vengono archiviati nella piattaforma e sono disponibili per eseguire query per 90 giorni. È possibile inserire i log attività in Log Analytics per periodi di conservazione più lunghi e per eseguire query e analisi più approfondite su più risorse.
 
@@ -254,7 +254,7 @@ Queste informazioni possono essere visualizzate e gestite a più livelli e vengo
 
 ### <a name="deep-infrastructure-monitoring"></a>Monitoraggio avanzato dell'infrastruttura
 
-- **Log Analytics:** Log Analytics svolge un ruolo essenziale nel monitoraggio di Azure raccogliendo dati di telemetria e di altro tipo da diverse origini e fornendo un linguaggio di query e un motore di analisi che offrono informazioni dettagliate sul funzionamento delle applicazioni e delle risorse. È possibile interagire direttamente con i dati Log Analytics tramite le ricerche e le visualizzazioni log veloci oppure è possibile usare gli strumenti di analisi in altri servizi di Azure che archiviano i dati in Log Analytics, ad esempio Application Insights o il Centro sicurezza di Azure.
+- **Log Analytics:** Log Analytics svolge un ruolo centrale nel monitoraggio di Azure raccogliendo dati di telemetria e altri dati da diverse origini e fornendo un linguaggio di query e un motore di analisi che offrono informazioni dettagliate sul funzionamento delle applicazioni e delle risorse. È possibile interagire direttamente con i dati Log Analytics tramite le ricerche e le visualizzazioni log veloci oppure è possibile usare gli strumenti di analisi in altri servizi di Azure che archiviano i dati in Log Analytics, ad esempio Application Insights o il Centro sicurezza di Azure.
 
 - **Monitoraggio della rete:** I servizi di monitoraggio di rete di Azure consentono di ottenere informazioni sul flusso del traffico di rete, le prestazioni, la sicurezza, la connettività e i colli di bottiglia. Una rete ben progettata deve includere la configurazione di servizi di monitoraggio di rete di Azure, ad esempio Network Watcher ed ExpressRoute Monitor.
 
@@ -265,9 +265,9 @@ Queste informazioni possono essere visualizzate e gestite a più livelli e vengo
 > [!TIP]
 > Prima di creare singoli avvisi, creare e gestire un insieme di gruppi di azioni condivisi che possano essere usati negli avvisi di Azure. Questo consentirà di gestire a livello centrale il ciclo di vita degli elenchi di destinatari, i metodi di recapito delle notifiche (indirizzi di posta elettronica, numeri di telefono per gli SMS) e i webhook per le azioni esterne (runbook di Automazione di Azure, Funzioni di Azure/App per la logica, Gestione dei servizi IT).
 
-## <a name="cost-management"></a>Gestione costi
+## <a name="cost-management"></a>Gestione dei costi
 
-Una delle principali modifiche che si dovranno affrontare al momento del passaggio dal cloud locale al cloud pubblico è il passaggio da CAPEX (acquisto dell'hardware) a OPEX (pagamento per il servizio in base all'uso). Questa opzione richiede anche una gestione più attenta dei costi. Il vantaggio del cloud consiste nel fatto che è possibile influire in modo sostanziale e positivo sul costo di un servizio utilizzato semplicemente chiudendo o ridimensionando il servizio quando non è necessario. La gestione deliberata dei costi nel cloud è una procedura consigliata che i clienti più accorti svolgono ogni giorno.
+Una delle principali modifiche che si dovranno affrontare al momento del passaggio dal cloud locale al cloud pubblico è il passaggio da CAPEX (acquisto dell'hardware) a OPEX (pagamento per il servizio in base all'uso). Questa opzione richiede anche una gestione più attenta dei costi. Il vantaggio del cloud consiste nel fatto che è possibile influire in modo sostanziale e positivo sul costo di un servizio utilizzato semplicemente chiudendo o ridimensionando il servizio quando non è necessario. Gestire deliberatamente i costi nel cloud è una procedura consigliata e una che i clienti maturi eseguono quotidianamente.
 
 Microsoft offre diversi strumenti per poter visualizzare, tenere traccia e gestire i costi. Viene inoltre offerto un set completo di API per personalizzare e integrare la gestione dei costi negli strumenti e nei dahsboard degli utenti. Questi strumenti sono raggruppati in senso libero in portale di Azure funzionalità e funzionalità esterne.
 
@@ -282,7 +282,7 @@ Si tratta di strumenti per fornire informazioni immediate sui costi, oltre alla 
 
 ### <a name="external-cost-management-tools"></a>Strumenti esterni per la gestione dei costi
 
-- **Informazioni dettagliate sul consumo di Azure Power BI:** Se si desidera creare visualizzazioni personalizzate per l'organizzazione, In tal caso, il pacchetto di contenuto Informazioni dettagliate sul consumo di Azure per Power BI è lo strumento preferito. Usando questo pacchetto di contenuto e Power BI è possibile creare visualizzazioni personalizzate per rappresentare l'organizzazione, eseguire un'analisi più approfondita sui costi e aggiungere altre origini dati per un ulteriore arricchimento.
+- **Informazioni dettagliate sul consumo di Azure Power bi:** Si desidera creare visualizzazioni personalizzate per la propria organizzazione? In tal caso, il pacchetto di contenuto Informazioni dettagliate sul consumo di Azure per Power BI è lo strumento preferito. Usando questo pacchetto di contenuto e Power BI è possibile creare visualizzazioni personalizzate per rappresentare l'organizzazione, eseguire un'analisi più approfondita sui costi e aggiungere altre origini dati per un ulteriore arricchimento.
 
 - **API a consumo:** Le [API a consumo](/rest/api/consumption) consentono di accedere a livello di codice ai dati relativi a costi e utilizzo oltre alle informazioni sui budget, le istanze riservate e gli addebiti per il Marketplace. Queste API sono accessibili solo per le iscrizioni Enterprise e alcune sottoscrizioni dirette sul Web, tuttavia offrono la possibilità di integrare i dati dei costi nei propri strumenti e data warehouse. È possibile [accedere a queste API anche tramite l'interfaccia della riga di comando di Azure](/cli/azure/consumption?view=azure-cli-latest).
 
@@ -295,7 +295,7 @@ I clienti che sono utenti cloud a lungo termine e maturi seguono alcune procedur
 
 La gestione costi è una disciplina fondamentale per eseguire un cloud pubblico in modo efficiente ed efficace. Le aziende che riescono a raggiungere il successo possono controllare i loro costi e associarle alla propria richiesta effettiva, invece di sovraacquistare e sperare che venga richiesta.
 
-## <a name="automate"></a>Automatizza
+## <a name="automate"></a>Automatizzare
 
 Una delle molte funzionalità che distinguono la familiarità delle organizzazioni con l'uso di provider cloud è il livello di automazione incorporato. L'automazione è un processo che non finisce mai e, man mano che l'organizzazione passa al cloud, richiede un investimento di risorse e denaro. L'automazione svolge molti scopi, inclusa l'implementazione coerente delle risorse (in cui si collega direttamente a un altro concetto di impalcatura principale, modelli e DevOps) alla correzione dei problemi. L'automazione è il tessuto connettivo dello scaffold Azure e tiene insieme ogni area.
 
@@ -329,12 +329,12 @@ Il componente finale del modello di riferimento dello scaffold Azure è la base 
 
 - **Reti virtuali**, cioè oggetti contenitore per le subnet. Sebbene non sia strettamente necessario, vengono spesso usate per la connessione delle applicazioni alle risorse aziendali interne.
 - Le **route definite dall'utente** consentono di modificare la tabella di route all'interno di una subnet consentendo di inviare il traffico attraverso un'appliance virtuale di rete o a un gateway remoto in una rete virtuale con peering.
-- Il peering di **rete virtuale** consente di connettere facilmente due o più reti virtuali di Azure, creando progettazioni Hub e spoke più complesse o reti di servizi condivisi.
+- Il **peering di rete virtuale** consente di connettere facilmente due o più reti virtuali di Azure, creando progettazioni Hub e spoke più complesse o reti di servizi condivisi.
 - **Endpoint di servizio.** In passato, i servizi PaaS si basavano sui diversi metodi per proteggere l'accesso a queste risorse dalle reti virtuali. Gli endpoint di servizio consentono di proteggere l'accesso ai servizi PaaS abilitati **solo** da endpoint connessi, aumentando la sicurezza complessiva.
 - I **gruppi di sicurezza** sono un ampio set di regole che consentono o negano il traffico in ingresso e in uscita verso/dalle risorse di Azure. I [gruppi di sicurezza](https://docs.microsoft.com/azure/virtual-network/security-overview) sono costituiti da regole di sicurezza che possono essere aumentate con i tag del **servizio** (che definiscono i servizi di Azure comuni, ad esempio Azure Key Vault o il database SQL di Azure) e i gruppi di **sicurezza delle applicazioni** (che definiscono l'applicazione struttura, ad esempio server Web o server applicazioni.
 
 > [!TIP]
-> Usare i tag di servizio e i gruppi di sicurezza delle applicazioni nei gruppi di sicurezza di rete non solo per migliorare&mdash;la leggibilità delle regole che è&mdash;fondamentale per comprendere l'effetto, ma anche per abilitare una microsegmentazione efficace in un subnet più grande, riduzione dell'espansione e maggiore flessibilità.
+> Usare i tag di servizio e i gruppi di sicurezza delle applicazioni nei gruppi di sicurezza di rete non solo per migliorare la leggibilità delle regole &mdash;which è fondamentale per comprendere l'effetto &mdash;but anche per abilitare una microsegmentazione efficace all'interno di una subnet più grande, riduzione dell'espansione e maggiore flessibilità.
 
 ### <a name="azure-virtual-datacenter"></a>Data center virtuale di Azure
 

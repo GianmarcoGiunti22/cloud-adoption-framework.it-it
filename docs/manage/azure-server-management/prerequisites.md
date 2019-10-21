@@ -8,14 +8,14 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac4ece6c5daec788d116e67c79429572722fc618
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221475"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548234"
 ---
-# <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: Pianificazione dei prerequisiti per i servizi di gestione del server di Azure
+# <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: pianificazione dei prerequisiti per i servizi di gestione del server di Azure
 
 In questa fase si acquisirà familiarità con la suite di servizi di gestione del server di Azure e si pianifica come distribuire le risorse necessarie per implementare queste soluzioni di gestione.
 
@@ -48,10 +48,10 @@ Gli esempi illustrati in questa guida presuppongono una distribuzione che non di
 
 Quando si preparano le aree di lavoro e gli account creati per i servizi di gestione di onboarding, consultare le seguenti discussioni sui problemi:
 
-- **Aree geografiche di Azure e conformità alle normative**. Le aree di Azure sonoorganizzate in aree geografiche. Una [geografia di Azure](https://azure.microsoft.com/global-infrastructure/geographies) garantisce che i requisiti di residenza dei dati, sovranità, conformità e resilienza siano rispettati entro i limiti geografici. Se i carichi di lavoro sono soggetti alla sovranità dei dati o ad altri requisiti di conformità, gli account di area di lavoro e di automazione devono essere distribuiti nelle aree all'interno della stessa area geografica di Azure delle risorse del carico di lavoro
+- **Aree geografiche di Azure e conformità alle normative**. Le aree di Azure sono organizzate in aree *geografiche*. Una [geografia di Azure](https://azure.microsoft.com/global-infrastructure/geographies) garantisce che i requisiti di residenza dei dati, sovranità, conformità e resilienza siano rispettati entro i limiti geografici. Se i carichi di lavoro sono soggetti alla sovranità dei dati o ad altri requisiti di conformità, gli account di area di lavoro e di automazione devono essere distribuiti nelle aree all'interno della stessa area geografica di Azure delle risorse del carico di lavoro
 - **Numero di aree di lavoro**. Come principio di guida, creare il numero minimo di aree di lavoro necessarie per ogni area geografica di Azure. Si consiglia almeno un'area di lavoro per ogni area geografica di Azure in cui si trovano le risorse di calcolo o di archiviazione. Questo allineamento iniziale aiuta a evitare futuri problemi di regolamentazione durante la migrazione dei dati in aree geografiche diverse.
 - **Conservazione e limitazione dei dati**. Per la creazione di aree di lavoro o di account di automazione, potrebbe essere necessario prendere in considerazione i criteri di conservazione dei dati o i requisiti di riduzione dei dati. Per ulteriori informazioni su questi principi e considerazioni aggiuntive quando si pianificano le aree di lavoro, vedere [gestire i dati di log e le aree di lavoro in monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
-- **Mapping dell'area**. Il collegamento di un'area di lavoro Log Analytics e di un account di automazione di Azure è supportato solo tra determinate aree di Azure. Se ad esempio l'area di lavoro Log Analytics è ospitata nell'area eastus, è necessario creare l'account di automazione collegato nell'area *EastUS2* per poter essere utilizzato con i servizi di gestione. Se si dispone di un account di automazione creato in un'altra area, non sarà in grado di collegarsi a un'areadi lavoro di eastus. La scelta dell'area di distribuzione può influire significativamente sui requisiti della geografia di Azure. Consultare la [tabella mapping regione](https://docs.microsoft.com/azure/automation/how-to/region-mappings) per decidere quale area deve ospitare le aree di lavoro e gli account di automazione.
+- **Mapping dell'area**. Il collegamento di un'area di lavoro Log Analytics e di un account di automazione di Azure è supportato solo tra determinate aree di Azure. Se ad esempio l'area di lavoro Log Analytics è ospitata nell'area *eastus* , è necessario creare l'account di automazione collegato nell'area *EastUS2* per poter essere utilizzato con i servizi di gestione. Se si dispone di un account di automazione creato in un'altra area, non sarà in grado di collegarsi a un'area di lavoro di *eastus*. La scelta dell'area di distribuzione può influire significativamente sui requisiti della geografia di Azure. Consultare la [tabella mapping regione](https://docs.microsoft.com/azure/automation/how-to/region-mappings) per decidere quale area deve ospitare le aree di lavoro e gli account di automazione.
 - **Multihoming dell'area di lavoro**. Log Analytics Agent supporta multihoming in alcuni scenari, ma l'agente affronta diverse limitazioni e problemi durante l'esecuzione in questa configurazione. A meno che Microsoft non abbia consigliato di usare multihoming per lo scenario in uso, non è consigliabile configurare multihoming nell'agente di Log Analytics.
 
 ## <a name="resource-placement-examples"></a>Esempi di posizionamento delle risorse

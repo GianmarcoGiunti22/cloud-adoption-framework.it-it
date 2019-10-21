@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024361"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548098"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Distribuire un carico di lavoro di base in Azure
 
@@ -41,7 +41,7 @@ Per un'applicazione Web di base, selezionare una delle guide introduttive di 5 m
 > [!NOTE]
 > Alcune delle guide introduttive distribuiscono un gruppo di risorse per impostazione predefinita. In questo caso non è necessario creare un gruppo di risorse in modo esplicito. In caso contrario, distribuire l'applicazione Web nel gruppo di risorse creato in precedenza.
 
-Dopo aver distribuito un carico di lavoro semplice, è possibile ottenere altre informazioni sulle procedure collaudate per la distribuzione di un'[applicazione Web di base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) in Azure.
+Quando si distribuisce un carico di lavoro semplice, è possibile ottenere altre informazioni sulle procedure consigliate per la distribuzione di un' [applicazione Web di base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) in Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Singola VM Windows o Linux (IaaS)
 
@@ -49,7 +49,7 @@ Per un carico di lavoro semplice che viene eseguito in una VM, il primo passo è
 
 Il passo successivo è decidere se distribuire una singola VM Windows o Linux. Per una VM Windows, seguire i passaggi per [distribuire una VM Windows in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Anche in questo caso, quando si specificano le impostazioni per la macchina virtuale nel portale di Azure, indicare il nome del gruppo di risorse creato in precedenza.
 
-Dopo aver seguito la procedura e distribuito la macchina virtuale, è possibile apprendere [procedure consolidate per l'esecuzione di una macchina virtuale Windows in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). Per una macchina virtuale Linux, seguire i passaggi per [distribuire una macchina virtuale Linux in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). È anche possibile ottenere altre informazioni su [procedure consolidate per l'esecuzione di una macchina virtuale Linux in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Dopo aver seguito i passaggi e aver distribuito la VM, è possibile ottenere informazioni sulle [procedure consigliate per l'esecuzione di una VM Windows in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). Per una macchina virtuale Linux, seguire i passaggi per [distribuire una macchina virtuale Linux in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). È anche possibile ottenere altre informazioni sulle [procedure consigliate per l'esecuzione di una VM Linux in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

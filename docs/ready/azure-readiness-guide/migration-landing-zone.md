@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811097"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548917"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuire un'area di destinazione della migrazione
 
-*Zona di destinazione della migrazione* è un termine usato per indicare un ambiente sottoposto a provisioning e preparato per ospitare carichi di lavoro in fase di migrazione da un ambiente locale ad Azure. Una zona di destinazione della migrazione è il risultato finale della Guida all'idoneità per Azure. Questo articolo associa tutti gli argomenti relativi all'idoneità illustrati in questa guida e applica le decisioni alla distribuzione della prima zona di destinazione della migrazione.
+*Zona di destinazione della migrazione* è un termine usato per indicare un ambiente sottoposto a provisioning e preparato per ospitare carichi di lavoro in fase di migrazione da un ambiente locale ad Azure. Una zona di destinazione della migrazione è il risultato finale della Guida all'installazione di Azure. Questo articolo associa tutti gli argomenti relativi all'idoneità illustrati in questa guida e applica le decisioni alla distribuzione della prima zona di destinazione della migrazione.
 
 Le sezioni seguenti descrivono una zona di destinazione comunemente usata per stabilire un ambiente adatto all'uso durante una migrazione. L'ambiente o la zona di destinazione descritti in questo articolo vengono acquisiti anche in un progetto di Azure. È possibile usare il progetto relativo alla zona di destinazione della migrazione di Cloud Adoption Framework per distribuire l'ambiente definito con un solo clic.
 
@@ -44,10 +44,10 @@ Prima di usare il progetto relativo alla zona di destinazione per la migrazione 
 
 Quando è stata definita questa zona di destinazione iniziale, sono stati usati i presupposti o i vincoli seguenti. Se i presupposti sono allineati ai vincoli, è possibile usare il progetto per creare la prima zona di destinazione. Il progetto può anche essere esteso per creare un progetto relativo alla zona di destinazione che soddisfi vincoli univoci.
 
-- **Limiti di sottoscrizioni:** Questa operazione di adozione non deve superare i [limiti di sottoscrizioni](https://docs.microsoft.com/azure/azure-subscription-service-limits). Due indicatori comuni sono il superamento di 25.000 macchine virtuali o 10.000 vCPU.
-- **Conformità:** Non ci sono requisiti di conformità di terze parti in questa zona di destinazione.
-- **Complessità dell'architettura:** La complessità dell'architettura non richiede altre sottoscrizioni di produzione.
-- **Servizi condivisi:** Nessun servizio condiviso esistente in Azure richiede che la sottoscrizione venga trattata come spoke in un'architettura hub-and-spoke.
+- **Limiti della sottoscrizione:** Questa operazione di adozione non prevede il superamento dei [limiti della sottoscrizione](https://docs.microsoft.com/azure/azure-subscription-service-limits). Due indicatori comuni sono il superamento di 25.000 macchine virtuali o 10.000 vCPU.
+- **Conformità:** In questa area di destinazione non sono necessari requisiti di conformità di terze parti.
+- **Complessità dell'architettura:** La complessità dell'architettura non richiede sottoscrizioni di produzione aggiuntive.
+- **Servizi condivisi:** In Azure non sono presenti servizi condivisi esistenti che richiedono che questa sottoscrizione venga trattata come una spoke in un'architettura hub-spoke.
 
 Se questi presupposti sembrano allineati all'ambiente corrente, il progetto potrebbe essere un punto ideale per iniziare a realizzare la zona di destinazione.
 
@@ -60,15 +60,15 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 |Strumenti di migrazione|Verrà distribuito Azure Site Recovery e verrà creato un progetto Azure Migrate.|[Guida alle decisioni relative agli strumenti di migrazione](../../decision-guides/migrate-decision-guide/index.md)|
 |Registrazione e monitoraggio|Verrà eseguito il provisioning dell'area di lavoro Operational Insights e dell'account di archiviazione di diagnostica.|         |
 |Rete|Verrà creata una rete virtuale con subnet per gateway, firewall, jumpbox e zona di destinazione.|[Decisioni relative alla rete](../considerations/network-decisions.md)|
-|identità|Si presuppone che la sottoscrizione sia già associata a un'istanza di Azure Active Directory.|[Procedure consigliate per la gestione delle identità](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
-|Criteri|Questo progetto presuppone attualmente che non venga applicato alcun criterio di Azure.|         |
+|Identità|Si presuppone che la sottoscrizione sia già associata a un'istanza di Azure Active Directory.|[Procedure consigliate per la gestione delle identità](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
+|Policy|Questo progetto presuppone attualmente che non venga applicato alcun criterio di Azure.|         |
 |Progettazione della sottoscrizione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)|
 |Gruppi di gestione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)         |
 |Gruppi di risorse|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)         |
-|Data|N/D|[Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Dati|N/D|[Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-guidance.md)         |
 |Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../considerations/naming-and-tagging.md)         |
-|Gestione costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|
+|Gestione dei costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|
 |Calcolo|N/D|[Opzioni di calcolo](../considerations/compute-decisions.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personalizzare o distribuire una zona di destinazione da questo progetto

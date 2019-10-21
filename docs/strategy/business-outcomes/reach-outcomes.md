@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 89c3e17dcc1a76e46eabb0155b9dc9bee7c7ea93
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dda348b5e0707a949df0171d718b8615918d9dff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028206"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548653"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Esempi di risultati REACH globali
 
@@ -27,13 +27,13 @@ Soluzioni cloud consente di spostare il costo della globalizzazione nel provider
 
 L'espansione in un nuovo mercato può essere uno dei risultati aziendali più importanti durante una trasformazione. La possibilità di distribuire rapidamente le risorse sul mercato senza un impegno a lungo termine consente alle vendite e ai responsabili operativi di esplorare le opzioni che non sarebbero state considerate in passato.
 
-- **Esempio**: Un produttore di cosmetici ha identificato una tendenza. Alcuni prodotti vengono spediti all'area Asia Pacifico anche se nessun team di vendita opera in tale area. I sistemi minimi richiesti da una forza di vendita remota sono di piccole dimensioni, ma la latenza impedisce una soluzione di accesso remoto. Per sfruttare questa tendenza, il VICEPRESIDEnte delle vendite desidera sperimentare i team di vendita in Giappone e Corea. Poiché la società è stata sottoposta a migrazione nel cloud, è stata in grado di distribuire i sistemi necessari in Giappone e in Corea entro pochi giorni. In questo modo, il VICEPRESIDEnte delle vendite può aumentare i ricavi nell'area della _x per cento_ entro tre mesi. Questi due mercati continuano a superare le prestazioni di altre parti del mondo, ottenendo operazioni di vendita nell'intera area.
+- **Esempio**: un produttore di cosmetici ha identificato una tendenza. Alcuni prodotti vengono spediti all'area Asia Pacifico anche se nessun team di vendita opera in tale area. I sistemi minimi richiesti da una forza di vendita remota sono di piccole dimensioni, ma la latenza impedisce una soluzione di accesso remoto. Per sfruttare questa tendenza, il VICEPRESIDEnte delle vendite desidera sperimentare i team di vendita in Giappone e Corea. Poiché la società è stata sottoposta a migrazione nel cloud, è stata in grado di distribuire i sistemi necessari in Giappone e in Corea entro pochi giorni. In questo modo, il VICEPRESIDEnte delle vendite può aumentare i ricavi nell'area della _x per cento_ entro tre mesi. Questi due mercati continuano a superare le prestazioni di altre parti del mondo, ottenendo operazioni di vendita nell'intera area.
 
 ## <a name="data-sovereignty"></a>Sovranità dei dati
 
 Il funzionamento dei nuovi mercati introduce vincoli di governance aggiuntivi. GDPR è un esempio di criteri di governance che possono causare significativi ricorsi finanziari. Azure fornisce offerte di conformità che consentono ai clienti di soddisfare gli obblighi di conformità nei settori regolamentati e nei mercati globali. Per ulteriori informazioni, vedere la [Panoramica della conformità Microsoft Azure](https://aka.ms/AzureCompliance).
 
-- **Esempio**: A un provider di utilità basate sugli Stati Uniti è stato concesso un contratto per fornire utilità in Canada. La legge sulla sovranità dei dati canadesi richiede che i dati canadesi siano in Canada. Questa società si è occupata di un'attività di innovazione di applicazioni abilitata per il cloud per anni. Di conseguenza, il software è stato in grado di essere distribuito tramite processi DevOps completamente scritti. Con alcune piccole modifiche alla codebase, è stato possibile distribuire una copia funzionante del codice in un Data Center di Azure in Canada, rispettando la conformità alla sovranità dei dati e mantenendo il cliente.
+- **Esempio**: un provider di utilità basate sugli Stati Uniti ha ottenuto un contratto per fornire utilità in Canada. La legge sulla sovranità dei dati canadesi richiede che i dati canadesi siano in Canada. Questa società si è occupata di un'attività di innovazione di applicazioni abilitata per il cloud per anni. Di conseguenza, il software è stato in grado di essere distribuito tramite processi DevOps completamente scritti. Con alcune piccole modifiche alla codebase, è stato possibile distribuire una copia funzionante del codice in un Data Center di Azure in Canada, rispettando la conformità alla sovranità dei dati e mantenendo il cliente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

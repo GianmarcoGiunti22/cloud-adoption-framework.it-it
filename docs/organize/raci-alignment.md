@@ -1,6 +1,6 @@
 ---
 title: Allineamento delle responsabilità tra i team
-titleSuffix: Microsoft Cloud adoption Framework for Azure
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Scopri come allineare le responsabilità tra i team.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 818d2fa74c480b8aee36c4d268ae7a83cb93fab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027589"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549085"
 ---
 # <a name="align-responsibilities-across-teams"></a>Allinea le responsabilità tra i team
 
@@ -51,7 +51,7 @@ L'ultima riga di ogni tabella, ad eccezione della prima, contiene un collegament
 |Team di adozione del cloud|Responsabili|Responsabili|Responsabili|Responsabili|Consultato|Consultato|Consultato|Informate|
 |Team di governance del cloud|Consultato|Informate|Informate|Informate|Responsabili|Responsabili|Responsabili|Responsabili|
 ||||||||||
-|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[Governance del cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automazione cloud](./cloud-automation.md)|
+|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governance cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[automazione del cloud](./cloud-automation.md)|
 
 ## <a name="central-it"></a>IT centrale
 
@@ -71,7 +71,7 @@ L'ultima riga di ogni tabella, ad eccezione della prima, contiene un collegament
 |Team di adozione del cloud  |Responsabili|Consultato  |Responsabile|Responsabili|Informate   |Informate   |Informate   |Informate   |
 |Modello CCoE RACI      |Consultato  |Informate   |Informate   |Informate   |Responsabili|Responsabili|Responsabili|Responsabili|
 ||||||||||
-|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[Governance del cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automazione cloud](./cloud-automation.md)|
+|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governance cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[automazione del cloud](./cloud-automation.md)|
 
 ## <a name="operational-alignment"></a>Allineamento operativo
 
@@ -82,7 +82,7 @@ L'ultima riga di ogni tabella, ad eccezione della prima, contiene un collegament
 |Team operativo cloud|Consultato  |Consultato  |Responsabile|Responsabili|Consultato  |Informate   |Responsabili|Consultato  |
 |Modello CCoE RACI      |Consultato  |Informate   |Informate   |Informate   |Responsabili|Responsabili|Responsabile|Responsabili|
 ||||||||||
-|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[Governance del cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automazione cloud](./cloud-automation.md)|
+|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governance cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[automazione del cloud](./cloud-automation.md)|
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>Centro cloud di eccellenza (CCoE)
 
@@ -95,7 +95,7 @@ L'ultima riga di ogni tabella, ad eccezione della prima, contiene un collegament
 |Team della piattaforma cloud  |Consultato  |Informate   |Informate   |Consultato  |Consultato  |Responsabili|Responsabile|Responsabile|
 |Team di automazione del cloud|Consultato  |Informate   |Informate   |Informate   |Consultato  |Responsabile|Responsabile|Responsabili|
 ||||||||||
-|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[Governance del cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automazione cloud](./cloud-automation.md)|
+|Funzionalità cloud allineata|[Adozione del cloud](./cloud-adoption.md)|[Strategia cloud](./cloud-strategy.md)|[Strategia cloud](./cloud-strategy.md)|[Operazioni cloud](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governance cloud](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[piattaforma cloud](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[automazione del cloud](./cloud-automation.md)|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

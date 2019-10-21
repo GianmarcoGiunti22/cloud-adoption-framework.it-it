@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di identità'
+title: 'Guida governance per le aziende complesse: migliorare la disciplina della linea di base di identità'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di identità'
+description: 'Guida governance per le aziende complesse: migliorare la disciplina della linea di base di identità'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222322"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547720"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di identità
+# <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guida governance per le aziende complesse: migliorare la disciplina della linea di base di identità
 
 Questo articolo fa avanzare il racconto aggiungendo i controlli di base di identità all'MVP governance.
 
@@ -43,9 +43,9 @@ Il team IT ha ricevuto l'approvazione a procedere con i piani del CIO e del CFO 
 
 I nuovi piani per lo stato futuro richiedono una soluzione più solida per la baseline di identità, per eseguire la migrazione delle 750 macchine virtuali con requisiti di autenticazione legacy. Oltre a questi due Data Center, è previsto che questa sfida influisca su percentuali simili di asset in altri Data Center.
 
-Ora lo stato futuro richiede anche una connessione dal provider di servizi cloud alla soluzione MPLS/linea dedicata della società.
+Lo stato futuro richiede ora anche una connessione dal provider di servizi cloud alla soluzione MPLS/lease-line della società.
 
-I cambiamenti che riguardano lo stato attuale e quello futuro espongono a nuovi rischi che richiedono nuove definizioni di criteri.
+I cambiamenti che riguardano lo stato attuale e quello futuro creano nuovi rischi che richiederanno nuove definizioni di criteri.
 
 ## <a name="changes-in-tangible-risks"></a>Modifiche ai rischi tangibili
 
@@ -53,7 +53,7 @@ I cambiamenti che riguardano lo stato attuale e quello futuro espongono a nuovi 
 
 **Dipendenze di identità esistenti.** Le dipendenze da servizi di autenticazione e gestione delle identità esistenti possono ritardare o impedire la migrazione di alcuni carichi di lavoro al cloud. La mancata restituzione dei due data center nei tempi previsti comporterà spese nell'ordine dei milioni di dollari in canoni di lease.
 
-Questo rischio aziendale può tradursi in alcuni rischi tecnici:
+Questo rischio aziendale può comportare alcuni rischi tecnici:
 
 - L'autenticazione legacy potrebbe non essere disponibile nel cloud, limitando la distribuzione di alcune applicazioni.
 - La soluzione di autenticazione a più fattori di terze parti corrente potrebbe non essere disponibile nel cloud, limitando la distribuzione di alcune applicazioni.
@@ -67,7 +67,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 - Il provider di servizi cloud scelto deve offrire un mezzo per l'autenticazione tramite i metodi legacy.
 - Il provider di servizi cloud scelto deve offrire un mezzo di autenticazione con la soluzione di autenticazione a più fattori di terze parti corrente.
-- È necessario stabilire una connessione privata ad alta velocità tra il provider di servizi cloud e il provider di servizi di telecomunicazione della società, connettendo il provider di servizi cloud alla rete globale di data center.
+- È necessario stabilire una connessione privata ad alta velocità tra il provider di servizi cloud e il provider Telco della società, connettendo il provider di servizi cloud alla rete globale di Data Center.
 - Finché non vengono stabiliti requisiti di sicurezza sufficienti, nessun tipo di traffico pubblico in ingresso può accedere agli asset aziendali ospitati nel cloud. Tutte le porte vengono bloccate per qualsiasi origine all'esterno della WAN globale.
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Miglioramento incrementale delle procedure consigliate
@@ -80,7 +80,7 @@ Ecco le nuove procedure consigliate:
 - **Modelli di Azure Resource Manager:**
     1. Definire un NSG per bloccare il traffico esterno e consentire il traffico interno.
     2. Distribuire due macchine virtuali Active Directory in una coppia con carico bilanciato in base a un'immagine dorata. Al primo avvio, l'immagine esegue uno script di PowerShell per eseguire l'aggiunta al dominio e la registrazione con i servizi di dominio. Per altre informazioni, vedere [Estendere Active Directory Domain Services in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
-- Criteri di Azure: Applicare il gruppo di sicurezza a tutte le risorse.
+- Criteri di Azure: applicare NSG a tutte le risorse.
 - Azure Blueprints:
     1. Creare un progetto denominato `active-directory-virtual-machines`.
     2. Aggiungere tutti i modelli e i criteri di Active Directory al progetto.

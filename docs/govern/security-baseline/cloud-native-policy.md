@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222893"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548029"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Criteri di base della sicurezza nativi del cloud
 
-La [baseline di sicurezza](./index.md) è una delle [cinque discipline della governance del cloud](../governance-disciplines.md). Questa disciplina è incentrata sugli argomenti di sicurezza generale, inclusi la protezione di rete, le risorse digitali, i dati e così via. Come descritto nella [Guida alla revisione dei criteri](../policy-compliance/cloud-policy-review.md), il Framework di adozione del cloud include tre livelli di criteri di **esempio**: Principio di progettazione cloud nativo, aziendale e cloud conforme per ciascuna disciplina. Questo articolo illustra i criteri di esempio nativi del cloud per la disciplina della linea di base di sicurezza.
+La [baseline di sicurezza](./index.md) è una delle [cinque discipline della governance del cloud](../governance-disciplines.md). Questa disciplina è incentrata sugli argomenti generali sulla sicurezza, tra cui la protezione della rete, asset digitali, dati e così via. Come descritto nella [Guida alla revisione dei criteri](../policy-compliance/cloud-policy-review.md), il Framework di adozione del cloud include tre livelli di criteri di **esempio**: il cloud-native, Enterprise e il principio di progettazione cloud sono conformi per ciascuna disciplina. Questo articolo illustra i criteri di esempio nativi del cloud per la disciplina della linea di base di sicurezza.
 
 > [!NOTE]
 > Microsoft non intende dettare criteri aziendali o IT. Questo articolo consente di prepararsi a una revisione interna dei criteri. Si presuppone che questo criterio di esempio venga esteso, convalidato e testato in base ai criteri aziendali prima di provare a usarlo. Qualsiasi utilizzo di questo criterio di esempio è sconsigliato.
@@ -27,13 +27,13 @@ La [baseline di sicurezza](./index.md) è una delle [cinque discipline della gov
 
 Questo criterio di esempio sintetizza uno scenario nativo del cloud, ovvero gli strumenti e le piattaforme fornite da Azure sono sufficienti per gestire i rischi aziendali interessati da una distribuzione. In questo scenario, si presume che una semplice configurazione dei servizi di Azure predefiniti offra una protezione sufficiente delle risorse.
 
-## <a name="cloud-security-and-compliance"></a>Conformità e sicurezza del cloud
+## <a name="cloud-security-and-compliance"></a>Sicurezza e conformità del cloud
 
 Azure integra la sicurezza in ogni suo aspetto, offrendo vantaggi esclusivi che derivano da una intelligence globale per la sicurezza, controlli relativi ai clienti e un'infrastruttura dotata di protezione avanzata. Questa combinazione avanzata contribuisce alla protezione delle applicazioni e dei dati e al supporto del lavoro richiesto per la conformità e offre una sicurezza a costi contenuti per organizzazioni di qualsiasi dimensione. Questo approccio consente di creare una solida posizione di partenza per qualsiasi criterio di sicurezza, ma non nega la necessità di pratiche di sicurezza ugualmente elevate relative ai servizi di protezione in uso.
 
 ### <a name="built-in-security-controls"></a>Criteri di sicurezza integrati
 
-È difficile mantenere un'infrastruttura di protezione solida quando i controlli relativi alla sicurezza non sono intuitivi e devono essere configurati separatamente. Azure offre criteri di sicurezza integrati per un'ampia gamma di servizi che consentono di proteggere rapidamente i dati e i carichi di lavoro, oltre a gestire i rischi in ambienti ibridi. Anche le soluzioni partner integrate agevolano la transizione delle protezioni esistenti alla piattaforma cloud.
+È difficile mantenere un'infrastruttura di sicurezza avanzata quando i controlli di sicurezza non sono intuitivi e devono essere configurati separatamente. Azure offre criteri di sicurezza integrati per un'ampia gamma di servizi che consentono di proteggere rapidamente i dati e i carichi di lavoro, oltre a gestire i rischi in ambienti ibridi. Anche le soluzioni partner integrate agevolano la transizione delle protezioni esistenti alla piattaforma cloud.
 
 ### <a name="cloud-native-identity-policies"></a>Criteri di identità nativi del cloud
 
@@ -87,10 +87,10 @@ L'uso del cloud potrebbe ridurre alcuni problemi legati alla protezione. Microso
 Anche con questo investimento in una linea di base di sicurezza nativa del cloud, è consigliabile che tutti i criteri di base di sicurezza estendano i criteri nativi cloud predefiniti. Di seguito sono riportati alcuni esempi di criteri estesi che devono essere presi in considerazione, anche in un ambiente cloud nativo:
 
 - **Proteggere le macchine virtuali.** La sicurezza deve essere una delle principali priorità di ogni organizzazione e per eseguirla in modo efficace sono necessarie diverse operazioni. Bisogna valutare lo stato della sicurezza, della protezione contro potenziali minacce, oltre a rilevare e rispondere rapidamente alle minacce che si verificano.
-- **Proteggere il contenuto della VM.** Configurare backup automatici a intervalli regolari è fondamentale per proteggere le macchine dagli errori dell'utente. Tuttavia questo non basta: è anche necessario assicurarsi che i backup siano protetti dagli attacchi informatici e siano disponibili al momento opportuno.
+- **Proteggere il contenuto della VM.** Configurare backup automatici a intervalli regolari è fondamentale per proteggere le macchine dagli errori dell'utente. Ma non è sufficiente. è inoltre necessario assicurarsi che i backup siano protetti da attacchi cibernetici e siano disponibili quando sono necessari.
 - **Monitorare le applicazioni.** Questo modello include numerose attività, tra cui ottenere informazioni sull'integrità delle macchine virtuali, comprendere in che modo interagiscono e definire i modi per monitorare le applicazioni in esecuzione su queste macchine virtuali. Tutte queste attività sono fondamentali per mantenere le applicazioni in esecuzione anche di notte.
 - **Proteggere e controllare l'accesso ai dati.** Le organizzazioni devono controllare tutti gli accessi ai dati e sfruttare le funzionalità avanzate di machine learning per richiamare deviazioni da modelli di accesso regolari.
-- **Procedura di failover.** Le operazioni cloud con basse tolleranze per gli errori devono essere in grado di eseguire il failover e/o il ripristino da un evento imprevisto Cybersecurity o Platform. Queste procedure non devono essere semplicemente documentate, ma devono essere esercitate ogni trimestre.
+- **Procedura di failover.** Le operazioni cloud con tolleranze minime per gli errori devono essere in grado di eseguire il failover o il ripristino da un evento imprevisto Cybersecurity o Platform. Queste procedure non devono essere semplicemente documentate, ma devono essere esercitate ogni trimestre.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Miglioramento del cloud'
+title: 'Guida governance per le aziende complesse: miglioramento del cloud'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida alla governance per le aziende complesse: Miglioramento del cloud'
+description: 'Guida governance per le aziende complesse: miglioramento del cloud'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aaafd0d4fa3c94d1ccf0b5bc3ee3f30377a2b08e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967661"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547666"
 ---
-# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Guida alla governance per le aziende complesse: Miglioramento del cloud
+# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Guida governance per le aziende complesse: miglioramento del cloud
 
 ## <a name="advancing-the-narrative"></a>Avanzamento della descrizione
 

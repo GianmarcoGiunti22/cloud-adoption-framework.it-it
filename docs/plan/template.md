@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022316"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549178"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Piano di adozione del cloud e Azure DevOps
 
@@ -28,7 +28,7 @@ Per distribuire il piano di adozione del cloud, aprire il [Generatore di demo di
 1. Verificare che il campo **modello selezionato** sia impostato su **piano di adozione cloud**. In caso contrario, selezionare **Scegli modello** per scegliere il modello corretto.
 2. Selezionare l'organizzazione DevOps di Azure dall'elenco a discesa **Seleziona organizzazione** .
 3. Immettere un nome per il nuovo progetto. Il piano di adozione del cloud avrà questo nome quando viene distribuito nel tenant di Azure DevOps.
-4. Selezionare **Crea progetto** per creare un nuovo progetto nel tenant, in base al modello di piano. Un indicatore di stato Mostra lo stato di avanzamento per la distribuzione del progetto.
+4. Selezionare **Crea progetto** per creare un nuovo progetto nel tenant, in base al modello di piano. Un indicatore di stato Mostra lo stato di avanzamento verso la distribuzione del progetto.
 5. Al termine della distribuzione selezionare **passa a progetto** per visualizzare il nuovo progetto.
 
 Dopo aver creato il progetto, continuare con questa serie di articoli per vedere come è possibile modificare il modello per allinearlo al piano di adozione del cloud.
@@ -45,10 +45,10 @@ Per preparare la workstation per la modifica bulk, vedere [aggiungere o modifica
 
 Il piano di adozione del cloud organizza le attività in base al tipo di attività:
 
-- **Epic**: Un *Epic* rappresenta una fase complessiva del ciclo di vita dell'adozione del cloud.
-- **Funzionalità**: Le funzionalità vengono usate per organizzare obiettivi specifici all'interno di ogni fase. Ad esempio, la migrazione di un carico di lavoro specifico è una funzionalità.
-- **Storie utente**: Il gruppo storie utente lavora in raccolte logiche di attività in base a un obiettivo specifico.
-- **Tasks** (Attività): Le attività sono le operazioni effettive da eseguire.
+- **EPICS**: un' *epopea* rappresenta una fase complessiva del ciclo di vita dell'adozione del cloud.
+- **Funzionalità**: le funzionalità vengono usate per organizzare obiettivi specifici all'interno di ogni fase. Ad esempio, la migrazione di un carico di lavoro specifico è una funzionalità.
+- **Storie utente**: il gruppo storie utente lavora in raccolte logiche di attività in base a un obiettivo specifico.
+- **Attività**: le attività sono le operazioni effettive da eseguire.
 
 A ogni livello, le attività vengono sequenziate in base alle dipendenze. Le attività sono collegate agli articoli nel Framework di adozione del cloud per chiarire l'obiettivo o l'attività.
 
@@ -63,11 +63,11 @@ Le pagine di panoramica per la strategia e le fasi di pianificazione del ciclo d
 
 Gli articoli seguenti supportano l'allineamento del piano di adozione del cloud:
 
-- [Carichi di lavoro](./workloads.md): Allinea le funzionalità all'interno del Migrazione cloud Epic per acquisire ogni carico di lavoro da migrare o modernizzare. È possibile aggiungere e modificare tali funzionalità per acquisire il lavoro necessario per eseguire la migrazione dei primi 10 carichi di lavoro.
-- [Asset](./assets.md): Ogni asset (macchina virtuale, applicazione o dati) è rappresentato dalle storie utente in ogni carico di lavoro. È possibile aggiungere e modificare tali storie utente per allinearle alla propria azienda digitale.
-- [Razionalizzazione](./review-rationalization.md): Quando viene definito ogni carico di lavoro, è possibile che vengano contestati i presupposti iniziali del carico di lavoro. Questo può comportare modifiche alle attività in ogni asset.
-- [Creare i piani di rilascio](./iteration-paths.md): I percorsi di iterazione stabiliscono i piani di rilascio allineando le attività con diverse versioni e iterazioni.
-- [Definire le sequenze temporali](./timelines.md): La definizione di date di inizio e di fine per ogni iterazione crea una sequenza temporale per gestire il progetto globale.
+- [Carichi di lavoro](./workloads.md): allineare le funzionalità all'interno del migrazione cloud Epic per acquisire ogni carico di lavoro da migrare o modernizzare. È possibile aggiungere e modificare tali funzionalità per acquisire il lavoro necessario per eseguire la migrazione dei primi 10 carichi di lavoro.
+- [Asset](./assets.md): ogni asset (macchina virtuale, applicazione o dati) è rappresentato dalle storie utente in ogni carico di lavoro. È possibile aggiungere e modificare tali storie utente per allinearle alla propria azienda digitale.
+- [Razionalizzazione](./review-rationalization.md): quando viene definito ogni carico di lavoro, è possibile che vengano contestate le ipotesi iniziali relative al carico di lavoro. Questo può comportare modifiche alle attività in ogni asset.
+- [Creare i piani di rilascio](./iteration-paths.md): i percorsi di iterazione stabiliscono i piani di rilascio allineando le attività con diverse versioni e iterazioni.
+- [Stabiliscono sequenze temporali](./timelines.md): la definizione di date di inizio e di fine per ogni iterazione crea una sequenza temporale per gestire il progetto globale.
 
 Questi cinque articoli sono utili per ogni attività di allineamento necessaria per iniziare a gestire le attività di adozione. Il passaggio successivo consente di iniziare l'esercizio di allineamento.
 

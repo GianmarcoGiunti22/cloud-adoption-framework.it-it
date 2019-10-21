@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833531"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549213"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Approvare le modifiche dell'architettura prima della migrazione
 
@@ -21,9 +21,9 @@ Durante il processo di valutazione della migrazione, ogni carico di lavoro viene
 
 ## <a name="business-impact-and-approval"></a>Impatto aziendale e approvazione
 
-Durante la migrazione, è probabile che alcuni elementi vengano modificati in modi che hanno impatto sull'azienda. Sebbene a volte non sia possibile evitare le modifiche, è possibile evitare invece sorprese dovute a modifiche non rese note o non documentate. Per mantenere il supporto degli stakeholder durante l'operazione di migrazione, è importante evitare sorprese. Cogliere di sorpresa i proprietari di applicazioni o gli stakeholder aziendali può comportare il rallentamento o l'arresto dell'attività di adozione del cloud.
+Durante la migrazione, è probabile che alcuni elementi vengano modificati in modi che hanno impatto sull'azienda. Sebbene non sia talvolta possibile evitare modifiche, le sorprese in seguito a modifiche riservate o non documentate dovrebbero essere. Per mantenere il supporto per gli stakeholder durante l'operazione di migrazione, è importante evitare sorprese. Cogliere di sorpresa i proprietari di applicazioni o gli stakeholder aziendali può comportare il rallentamento o l'arresto dell'attività di adozione del cloud.
 
-Prima della migrazione, è importante preparare il titolare dell'azienda del carico di lavoro a tutte le modifiche che possono influire sui processi aziendali, ad esempio le modifiche apportate a:
+Prima della migrazione, è importante preparare il proprietario aziendale del carico di lavoro per tutte le modifiche che potrebbero influire sui processi aziendali, ad esempio le modifiche apportate a:
 
 - Contratti di servizio.
 - Criteri di accesso o requisiti di sicurezza che hanno impatto sull'utente finale.

@@ -1,23 +1,23 @@
 ---
-title: Bilanciamento del portfolio
+title: Bilanciare il portfolio
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Bilanciamento del portfolio
+description: È possibile bilanciare il portfolio cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825757"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548595"
 ---
 # <a name="balance-the-portfolio"></a>Bilanciare il portfolio
 
-L'adozione del cloud è un progetto di gestione del portfolio, astutamente camuffato da implementazione tecnica. Come qualsiasi esercizio di gestione del portfolio, bilanciare il portfolio è un elemento fondamentale per il successo. A livello strategico, ciò significa bilanciamento della migrazione, dell'innovazione e della sperimentazione per sfruttare al meglio il cloud. Quando il lavoro richiesto per l'adozione del cloud si spinge troppo in una direzione o in un'altra, la complessità si insinua nel lavoro richiesto per la migrazione. Questo articolo illustra gli approcci per ottenere il bilanciamento del portfolio.
+L'adozione del cloud è un progetto di gestione del portfolio, astutamente camuffato da implementazione tecnica. Analogamente a qualsiasi esercizio di gestione del portfolio, il bilanciamento del portfolio è fondamentale. A livello strategico, ciò significa bilanciamento della migrazione, dell'innovazione e della sperimentazione per sfruttare al meglio il cloud. Quando il lavoro richiesto per l'adozione del cloud si spinge troppo in una direzione o in un'altra, la complessità si insinua nel lavoro richiesto per la migrazione. Questo articolo illustra gli approcci per ottenere il bilanciamento del portfolio.
 
 ## <a name="general-scope-expansion"></a>Espansione dell'ambito generale
 
@@ -66,7 +66,7 @@ Se la risposta a una delle due domande è "No", potrebbe essere opportuno stabil
 
 ## <a name="suggested-prerequisites"></a>Prerequisiti suggeriti
 
-I prerequisiti specificati nella guida della linea di base dovrebbero comunque essere sufficienti per risolvere questo argomento complesso. Tuttavia, l'inventario delle risorse e il digital estate dovrebbero essere messi ben in evidenza tra questi prerequisiti, poiché i dati andranno a gestire le attività seguenti.
+I prerequisiti specificati nella guida della linea di base dovrebbero comunque essere sufficienti per risolvere questo argomento complesso. Tuttavia, l'inventario delle risorse e il patrimonio digitale dovrebbero essere evidenziati e in grassetto tra questi prerequisiti, poiché i dati saranno in grado di gestire le attività seguenti.
 
 ## <a name="assess-process-changes"></a>Modifiche del processo di valutazione
 
@@ -107,19 +107,19 @@ La razionalizzazione del portfolio richiede una diversità di lavoro tecnico ric
 
 Si consiglia di segmentare i diversi lavori richiesti tra due o più team di adozione del cloud. Se come modalità di esecuzione di esempio viene usato un modello a due team, allora Team 1 corrisponde al team di migrazione e Team 2 a quello di innovazione. Per i lavori che richiedono uno sforzo maggiore, questi team possono essere ulteriormente segmentati per affrontare altri approcci, ad esempio i lavori richiesti di sostituzione/PaaS o refactoring secondario. Di seguito vengono descritte le competenze e i ruoli necessari per il rehosting, il refactoring o il refactoring secondario:
 
-**Rehosting:** Il rehosting richiede che i membri del team implementino le modifiche incentrate sull'infrastruttura. In genere si usa uno strumento come Azure Site Recovery per eseguire la migrazione di macchine virtuali o altre risorse in Azure. Questo lavoro si allinea perfettamente agli amministratori di Data Center o agli implementatori IT. Il team di migrazione del cloud è strutturato per offrire questo lavoro su larga scala. Si tratta dell'approccio più veloce per eseguire la migrazione delle risorse esistenti nella maggior parte degli scenari.
+**Rehost:** Rehost richiede che i membri del team implementino le modifiche incentrate sull'infrastruttura. In genere si usa uno strumento come Azure Site Recovery per eseguire la migrazione di macchine virtuali o altre risorse in Azure. Questo lavoro si allinea perfettamente agli amministratori di Data Center o agli implementatori IT. Il team di migrazione del cloud è strutturato per offrire questo lavoro su larga scala. Si tratta dell'approccio più veloce per eseguire la migrazione delle risorse esistenti nella maggior parte degli scenari.
 
-**Refactoring:** Il refactoring richiede che i membri del team modifichino il codice sorgente, l'architettura di un'applicazione o adottino nuovi servizi cloud. In genere, questo lavoro richiesto usa strumenti di sviluppo come Visual Studio e strumenti della pipeline di distribuzione come Azure DevOps per ridistribuire le applicazioni modernizzate in Azure. Questo lavoro si allineato bene ai ruoli di sviluppo dell'applicazione o ai ruoli di sviluppo della pipeline DevOps. Il team di innovazione del cloud è strutturato per la distribuzione di questo lavoro. Questo approccio può richiedere più tempo per sostituire le risorse esistenti con risorse cloud, tuttavia le app possono sfruttare le funzionalità native del cloud.
+**Refactoring:** Il refactoring richiede che i membri del team modifichino il codice sorgente, modifichino l'architettura di un'applicazione o adotti nuovi servizi cloud. In genere, questo lavoro richiesto usa strumenti di sviluppo come Visual Studio e strumenti della pipeline di distribuzione come Azure DevOps per ridistribuire le applicazioni modernizzate in Azure. Questo lavoro si allineato bene ai ruoli di sviluppo dell'applicazione o ai ruoli di sviluppo della pipeline DevOps. Il team di innovazione del cloud è strutturato per la distribuzione di questo lavoro. Questo approccio può richiedere più tempo per sostituire le risorse esistenti con risorse cloud, tuttavia le app possono sfruttare le funzionalità native del cloud.
 
-**Refactoring secondario:** Alcune applicazioni possono essere modernizzate con refactoring secondario a livello di dati o di applicazione. Questo lavoro richiede che i membri del team distribuiscano i dati in piattaforme dati basate su cloud o che apportino modifiche secondarie alla configurazione dell'applicazione. Questo potrebbe richiedere un supporto limitato per gli esperti di dominio dati o sviluppo di applicazioni. Tuttavia, questo lavoro è simile a quello condotto dagli implementatori IT durante la distribuzione di app di terze parti. Questo lavoro si allinea facilmente al team di migrazione del cloud o al team di strategia del cloud. Sebbene questa operazione non sia più veloce di una migrazione di rehosting, è necessario meno tempo per eseguire il refactoring.
+**Refactoring secondario:** Alcune applicazioni possono essere modernizzate con il refactoring secondario a livello di dati o di applicazione. Questo lavoro richiede che i membri del team distribuiscano i dati in piattaforme dati basate su cloud o che apportino modifiche secondarie alla configurazione dell'applicazione. Questo potrebbe richiedere un supporto limitato per gli esperti di dominio dati o sviluppo di applicazioni. Tuttavia, questo lavoro è simile a quello condotto dagli implementatori IT durante la distribuzione di app di terze parti. Questo lavoro si allinea facilmente al team di migrazione del cloud o al team di strategia del cloud. Sebbene questa operazione non sia più veloce di una migrazione di rehosting, è necessario meno tempo per eseguire il refactoring.
 
 Durante la migrazione, si consiglia di segmentare i lavori richiesti nei tre modi elencati in precedenza e di far eseguire tali attività dal team appropriato nell'iterazione appropriata. Sebbene sia consigliata una diversificazione del portfolio è anche consigliabile che le attività restino molto mirate e separate.
 
-## <a name="optimize-and-promote-process-changes"></a>Ottimizzare e alzare il livello alle modifiche del processo
+## <a name="optimize-and-promote-process-changes"></a>Modifiche dei processi di ottimizzazione e promozione
 
 Non sono necessarie altre modifiche durante i processi di ottimizzazione e promozione all'interno del lavoro richiesto per la migrazione.
 
-## <a name="secure-and-manage-process-changes"></a>Proteggere e gestire le modifiche al processo
+## <a name="secure-and-manage-process-changes"></a>Modifiche dei processi di protezione e gestione
 
 Non sono necessarie modifiche aggiuntive durante i processi di sicurezza e gestione all'interno del lavoro richiesto per la migrazione.
 

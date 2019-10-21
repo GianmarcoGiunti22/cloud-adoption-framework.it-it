@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224115"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547202"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Rehosting di un'app locale in macchine virtuali di Azure
 
@@ -22,20 +22,20 @@ Questo articolo illustra come la società fittizia Contoso esegue il rehosting d
 
 L'app SmartHotel360 usata in questo esempio viene fornita come open source. È possibile scaricarla da [GitHub](https://github.com/Microsoft/SmartHotel360) per usarla a scopi di test personalizzati.
 
-## <a name="business-drivers"></a>Driver di business
+## <a name="business-drivers"></a>Fattori chiave per lo sviluppo aziendale
 
 Il team di leadership IT collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita del business:** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali sono sotto pressione.
-- **Limitare i rischi:** l'app SmartHotel360 è fondamentale per il business di Contoso. L'obiettivo è spostare l'app in Azure senza correre alcun rischio.
-- **Estendere:** Contoso non vuole modificare l'app, ma vuole assicurarsi che sia stabile.
+- **Stare al passo con la crescita aziendale:** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali sono sotto pressione.
+- **Limitare i rischi.** l'app SmartHotel360 è fondamentale per il business di Contoso. L'obiettivo è spostare l'app in Azure senza correre alcun rischio.
+- **Procedere all'estensione.** Contoso non vuole modificare l'app, ma vuole assicurarsi che sia stabile.
 
 ## <a name="migration-goals"></a>Obiettivi della migrazione
 
 Il team di cloud di Contoso ha fissato alcuni obiettivi per la migrazione. Questi obiettivi consentono di determinare il metodo di migrazione ideale:
 
 - Dopo la migrazione, l'app in Azure dovrà avere le stesse caratteristiche prestazionali riscontrate oggi in VMware. L'app manterrà la stessa importanza critica nel cloud come la corrispondente versione in locale.
-- Contoso non intende investire in questa app. L'app è importante per l'azienda, ma Contoso vuole semplicemente eseguirne la migrazione sicura al cloud nella sua forma attuale.
+- Contoso non vuole investire in questa app. L'app è importante per l'azienda, ma Contoso vuole semplicemente eseguirne la migrazione sicura al cloud nella sua forma attuale.
 - Contoso non intende modificare il modello operativo dell'app. Punta all'interazione nel cloud esattamente come avviene ora.
 - Contoso non intende modificare le funzionalità dell'app. Cambierà solo la posizione.
 
@@ -47,7 +47,7 @@ Dopo aver definito i propri obiettivi e requisiti, Contoso progetta ed esamina u
 
 - L'app è suddivisa a livelli tra due VM (**WEBVM** e **SQLVM**).
 - Le macchine virtuali si trovano nell'host VMware ESXi **contosohost1.contoso.com** (versione 6.5).
-- L'ambiente VMware viene gestito dal server vCenter 6.5 (**vcenter.contoso.com**) in esecuzione in una macchina virtuale.
+- L'ambiente VMware è gestito da vCenter Server 6.5 (**vcenter.contoso.com**) in esecuzione in una VM.
 - Contoso ha un data center locale (contoso-datacenter) con un controller di dominio locale (**contosodc1**).
 
 ### <a name="proposed-architecture"></a>Architettura proposta
@@ -56,7 +56,7 @@ Dopo aver definito i propri obiettivi e requisiti, Contoso progetta ed esamina u
 - Le macchine virtuali dell'app verranno migrate nell'area primaria di Azure (Stati Uniti orientali 2) e collegate alla rete di produzione (VNET-PROD-EUS2).
 - La macchina virtuale front-end Web risiederà nella subnet front-end (PROD-FE-EUS2) nella rete di produzione.
 - La macchina virtuale del database risiederà nella subnet del database (PROD-DB-EUS2) nella rete di produzione.
-- Le macchine virtuali locali nel data center Contoso verranno rimosse al termine della migrazione.
+- Le autorizzazioni delle VM locali nel data center Contoso verranno rimosse al termine della migrazione.
 
 ![Architettura dello scenario](./media/contoso-migration-rehost-vm/architecture.png)
 
@@ -75,8 +75,8 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Considerazioni** | **Dettagli**
 --- | ---
-**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift and shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso può sfruttare il proprio investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure.
-**Svantaggi** | WEBVM e SQLVM eseguono Windows Server 2008 R2. Il sistema operativo è supportato da Azure per ruoli specifici (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)<br/><br/> I livelli Web e dati dell'app rimarranno come singolo punto di failover.<br/><br/> SQLVM è in esecuzione in SQL Server 2008 R2, che non è incluso nel supporto Mainstream, anche se è supportato per le macchine virtuali di Azure (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/956893)<br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database SQL di Azure.
+**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift-and-shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso può sfruttare l'investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure.
+**Svantaggi** | WEBVM e SQLVM eseguono Windows Server 2008 R2. Il sistema operativo è supportato da Azure per ruoli specifici (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> I livelli Web e dati dell'app rimarranno come singolo punto di failover.<br/><br/> SQLVM è in esecuzione in SQL Server 2008 R2, che non è incluso nel supporto Mainstream, anche se è supportato per le macchine virtuali di Azure (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/956893).<br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database SQL di Azure.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -117,12 +117,12 @@ Ecco in che modo gli amministratori di Contoso eseguiranno la migrazione:
 
 > [!div class="checklist"]
 >
-> - **Passaggio 1: Preparare Azure per Migrazione server di Azure Migrate.** Contoso aggiunge lo strumento Migrazione server al progetto di Azure Migrate.
-> - **Passaggio 2: Preparare VMware locale per Migrazione server di Azure Migrate.** Contoso prepara gli account per l'individuazione delle macchine virtuali e si prepara alla connessione alle macchine virtuali di Azure dopo il failover.
-> - **Passaggio 3: Replicare le macchine virtuali:** viene configurata e avviata la replica delle VM in Archiviazione di Azure.
-> - **Passaggio 4: Eseguire la migrazione delle macchine virtuali con Migrazione server di Azure Migrate.** vengono effettuati un failover di test per verificare che tutto funzioni come previsto e un failover completo per eseguire la migrazione delle macchine virtuali ad Azure.
+> - **Passaggio 1: preparare Azure per la migrazione di Azure Migrate server.** Contoso aggiunge lo strumento Migrazione server al progetto di Azure Migrate.
+> - **Passaggio 2: preparare VMware locale per la migrazione di Azure Migrate server.** Contoso prepara gli account per l'individuazione delle macchine virtuali e si prepara alla connessione alle macchine virtuali di Azure dopo il failover.
+> - **Passaggio 3: replicare le macchine virtuali.** viene configurata e avviata la replica delle VM in Archiviazione di Azure.
+> - **Passaggio 4: eseguire la migrazione delle macchine virtuali con Azure Migrate migrazione del server.** vengono effettuati un failover di test per verificare che tutto funzioni come previsto e un failover completo per eseguire la migrazione delle macchine virtuali ad Azure.
 
-## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Passaggio 1: Preparare Azure per lo strumento Migrazione server di Azure Migrate
+## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Passaggio 1: preparare Azure per lo strumento di migrazione di Azure Migrate server
 
 Ecco i componenti di Azure necessari a Contoso per la migrazione delle VM ad Azure:
 
@@ -177,7 +177,7 @@ Prima di poter eseguire una migrazione ad Azure, gli amministratori di Contoso d
 
 Al termine dell'individuazione, è possibile avviare la replica delle VM VMware in Azure.
 
-1. Nel progetto di Azure Migrate selezionare **Server** e **Azure Migrate: Migrazione server**, quindi **Replica**.
+1. In Azure Migrate Project > **servers** **Azure migrate: Server Migration**, fare clic su **replicate**.
 
     ![Replicare le VM](./media/contoso-migration-rehost-vm/select-replicate.png)
 
@@ -194,7 +194,7 @@ Al termine dell'individuazione, è possibile avviare la replica delle VM VMware 
 
     ![Selezionare la valutazione](./media/contoso-migration-rehost-vm/select-assessment.png)
 
-5. In **Macchine virtuali** cercare le VM in base alle esigenze e selezionare ogni macchina virtuale di cui si vuole eseguire la migrazione. Fare quindi clic su **Avanti: Impostazioni di destinazione**.
+5. In **Macchine virtuali** cercare le VM in base alle esigenze e selezionare ogni macchina virtuale di cui si vuole eseguire la migrazione. Quindi fare clic su **Avanti: impostazioni di destinazione**.
 
 6. In **Impostazioni di destinazione** selezionare la sottoscrizione e l'area di destinazione in cui eseguire la migrazione e quindi specificare il gruppo di risorse in cui risiederanno le VM di Azure dopo la migrazione. In **Rete virtuale** selezionare la rete virtuale e la subnet di Azure a cui verranno aggiunte le VM di Azure dopo la migrazione.
 
@@ -205,9 +205,9 @@ Al termine dell'individuazione, è possibile avviare la replica delle VM VMware 
 
 8. In **Calcolo** controllare il nome, le dimensioni, il tipo di disco del sistema operativo e il set di disponibilità delle VM. Le VM devono essere conformi ai [requisiti di Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
 
-    - **Dimensioni macchina virtuale**: se si usano i consigli per la valutazione, l'elenco a discesa Dimensioni macchina virtuale conterrà le dimensioni consigliate. In caso contrario, Azure Migrate seleziona le dimensioni più simili nella sottoscrizione di Azure. In alternativa, selezionare manualmente le dimensioni in **Dimensioni macchina virtuale di Azure**.
-    - **Disco del sistema operativo**: specificare il disco del sistema operativo (di avvio) per la VM. È il disco che contiene il bootloader e il programma di installazione del sistema operativo.
-    - **Set di disponibilità**: se la VM deve essere inclusa in un set di disponibilità di Azure dopo la migrazione, specificare il set. Il set deve trovarsi nel gruppo di risorse di destinazione specificato per la migrazione.
+    - **Dimensioni macchina virtuale**: se si usano le raccomandazioni per la valutazione, l'elenco a discesa Dimensioni macchina virtuale conterrà le dimensioni consigliate. In caso contrario, Azure Migrate seleziona le dimensioni più simili nella sottoscrizione di Azure. In alternativa, selezionare manualmente le dimensioni in **Dimensioni macchina virtuale di Azure**.
+    - **Disco del sistema operativo**: specificare il disco del sistema operativo (avvio) per la macchina virtuale. È il disco che contiene il bootloader e il programma di installazione del sistema operativo.
+    - **Set di disponibilità**: se la macchina virtuale deve trovarsi in un set di disponibilità di Azure dopo la migrazione, specificare il set. Il set deve trovarsi nel gruppo di risorse di destinazione specificato per la migrazione.
 
 9. In **Dischi** specificare se i dischi delle VM devono essere replicati in Azure e selezionare il tipo di disco in Azure (dischi gestiti Premium o SSD/HDD Standard). Quindi fare clic su **Next**.
     - È possibile escludere dischi dalla replica.
@@ -224,7 +224,7 @@ Gli amministratori di Contoso eseguono un rapido failover di test e poi un failo
 
 ### <a name="run-a-test-failover"></a>Eseguire un failover di test
 
-1. In **Obiettivi della migrazione** > **Server** > **Azure Migrate: Migrazione server** fare clic su **Testare i server con migrazione completata**.
+1. In **obiettivi di migrazione**  > **Server**  > **Azure migrate: migrazione del server**, fare clic su server di **test migrati**.
 
      ![Testare i server con migrazione completata](./media/contoso-migration-rehost-vm/test-migrated-servers.png)
 
@@ -243,7 +243,7 @@ Gli amministratori di Contoso eseguono un rapido failover di test e poi un failo
 
 Gli amministratori di Contoso possono ora eseguire un failover completo per completare la migrazione.
 
-1. Nel progetto di Azure Migrate selezionare **Server** > **Azure Migrate: Migrazione server** e fare clic su **Replica dei server**.
+1. Nel progetto Azure Migrate > **server**  > **Azure migrate: migrazione server**, fare clic su **server di replica**.
 
     ![Replica dei server](./media/contoso-migration-rehost-vm/replicating-servers.png)
 
@@ -266,7 +266,7 @@ Al termine della migrazione i livelli dell'app SmartHotel360 saranno in esecuzio
 Ora Contoso deve eseguire le operazioni di pulizia seguenti:
 
 - Al termine della migrazione, arrestare la replica.
-- Rimuovere il computer WEBVM dall'inventario di vCenter.
+- Rimuovere la macchina WEBVM dall'inventario di vCenter.
 - Rimuovere il computer SQLVM dall'inventario di vCenter.
 - Rimuovere WEBVM e SQLVM dai processi di backup locali.
 - Aggiornare la documentazione interna per visualizzare la nuova posizione e gli indirizzi IP per le VM.
@@ -276,26 +276,26 @@ Ora Contoso deve eseguire le operazioni di pulizia seguenti:
 
 Ora che l'app è in esecuzione, Contoso deve operazionalizzarla e proteggerla completamente in Azure.
 
-### <a name="security"></a>Security
+### <a name="security"></a>Sicurezza
 
 Il team di sicurezza Contoso esamina le VM di Azure per determinare eventuali problemi di sicurezza.
 
 - Per controllare l'accesso, il team esamina i gruppi di sicurezza di rete (NSG) per le macchine virtuali. I gruppi di sicurezza di rete fanno in modo che l'app possa essere raggiunta solo dal traffico consentito.
 - Il team valuta inoltre l'opportunità di proteggere i dati sul disco usando Crittografia dischi di Azure e Key Vault.
 
-[Altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le macchine virtuali.
+Sono disponibili [altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le VM.
 
 ## <a name="bcdr"></a>BCDR
 
 Per la continuità aziendale e il ripristino di emergenza (BCDR), Contoso esegue le azioni seguenti:
 
-- Proteggere i dati: Contoso esegue il backup dei dati nelle macchine virtuali usando il servizio Backup di Azure. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
-- Mantenere le app in esecuzione: Contoso esegue la replica delle macchine virtuali dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
+- Mantiene i dati al sicuro: Contoso esegue il backup dei dati nelle VM usando il servizio Backup di Azure. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Mantiene operative le app: Contoso esegue la replica delle VM dell'app in Azure in un'area secondaria usando Site Recovery. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licenze e ottimizzazione dei costi
 
 1. Contoso dispone di licenze esistenti per le macchine virtuali e sfrutterà il Vantaggio Azure Hybrid. Convertirà le VM di Azure esistenti per usufruire di questi prezzi.
-2. Contoso abiliterà Gestione costi, concesso in licenza da Cloudyn, una affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. [Altre informazioni](https://docs.microsoft.com/azure/cost-management/overview) sulla Gestione costi di Azure.
+2. Abiliterà Gestione costi di Azure, concesso in licenza da Cloudyn, un'affiliata Microsoft. Si tratta di una soluzione di gestione dei costi multi-cloud che consente di usare e gestire Azure e altre risorse cloud. Vedere [questo articolo](https://docs.microsoft.com/azure/cost-management/overview) per altre informazioni su Gestione costi di Azure.
 
 ## <a name="conclusion"></a>Conclusione
 

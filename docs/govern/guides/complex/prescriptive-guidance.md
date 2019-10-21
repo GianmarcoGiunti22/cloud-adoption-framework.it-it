@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Informazioni aggiuntive sulla descrizione'
+title: 'Guida alla governance per le aziende complesse: procedure consigliate illustrate'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Informazioni sulle linee guida prescrittiva per la governance in aziende complesse.
+description: Informazioni sulle procedure consigliate per la governance in aziende complesse.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220660"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547636"
 ---
-# <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Guida alla governance per le aziende complesse: Informazioni aggiuntive sulla descrizione
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guida alla governance per le aziende complesse: procedure consigliate illustrate
 
 La guida alla governance inizia con un set di [criteri aziendali](./initial-corporate-policy.md)iniziali. Questi criteri vengono usati per stabilire un prodotto minimo funzionante (MVP, Minimum Viable Product) per la governance che sia conforme alle [procedure consigliate](./index.md).
 
@@ -38,7 +38,7 @@ L'implementazione dell'MVP per la governance dipende direttamente da identità, 
 
 Questa implementazione può essere descritta anche usando un semplice elenco di controllo:
 
-1. Sollecitare decisioni relative alle dipendenze principali: identità, rete e crittografia.
+1. Sollecitare le decisioni relative alle dipendenze principali: identità, rete e crittografia.
 1. Determinare il modello da usare durante l'imposizione dei criteri aziendali.
 1. Determinare i modelli di governance appropriati per la coerenza delle risorse, l'assegnazione di tag alle risorse e le discipline per la registrazione e la creazione di report.
 1. Implementare gli strumenti di governance conformi al modello di imposizione dei criteri scelto per applicare decisioni dipendenti e di governance.
@@ -54,19 +54,19 @@ Il team di governance del cloud sarà responsabile delle decisioni e delle imple
 La decisione sulla progettazione di sottoscrizioni da usare determina il modo in cui le sottoscrizioni di Azure vengono strutturate e il modo in cui i gruppi di gestione di Azure verranno usati per gestire in modo efficiente l'accesso, i criteri e la conformità In questo racconto, il team di governance ha scelto il modello di progettazione **[misto](../../../decision-guides/subscriptions/index.md#mixed-patterns)** di sottoscrizione.
 
 - Quando si presentano nuove richieste per le risorse di Azure, è consigliabile stabilire un "reparto" per ogni unità aziendale principale in ogni area geografica operativa. All'interno di ciascun reparto, devono essere create "sottoscrizioni" per ogni archetipo di applicazione.
-- Un archetipo di applicazione consente di raggruppare le applicazioni con esigenze simili. Ecco alcuni esempi comuni: Applicazioni con dati protetti, applicazioni regolate (ad esempio HIPAA o FedRAMP), applicazioni a basso rischio, applicazioni con dipendenze locali, SAP o altre applicazioni mainframe in Azure o applicazioni che estendono SAP o mainframe locale applicazioni. Ogni organizzazione ha esigenze specifiche che dipendono dalla classificazione dei dati e dai tipi di applicazioni che supportano le attività aziendali. Il mapping delle dipendenze del patrimonio digitale consente di definire gli archetipi di applicazione in un'organizzazione.
+- Un archetipo di applicazione consente di raggruppare le applicazioni con esigenze simili. Esempi comuni sono: applicazioni con dati protetti, applicazioni regolate (ad esempio HIPAA o FedRAMP), applicazioni a basso rischio, applicazioni con dipendenze locali, SAP o altre applicazioni mainframe in Azure o applicazioni che estendono applicazioni SAP o mainframe locali. Ogni organizzazione ha esigenze specifiche che dipendono dalla classificazione dei dati e dai tipi di applicazioni che supportano le attività aziendali. Il mapping delle dipendenze del patrimonio digitale consente di definire gli archetipi di applicazione in un'organizzazione.
 - Nell'ambito della progettazione delle sottoscrizioni, è opportuno concordare una convenzione di denominazione comune in base ai due punti precedenti dell'elenco.
 
 ### <a name="resource-consistency"></a>Coerenza delle risorse
 
 Le decisioni relative alla coerenza delle risorse determinano gli strumenti, i processi e gli sforzi necessari per garantire la distribuzione, la configurazione e la gestione delle risorse di Azure in una sottoscrizione. In questa descrizione, la **[coerenza della distribuzione](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** è stata scelta come modello di coerenza delle risorse primario.
 
-- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita: tutto ciò che viene creato, mantenuto e ritirato insieme dovrebbe risiedere in un singolo gruppo di risorse. Per ulteriori informazioni sui gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- I gruppi di risorse vengono creati per le applicazioni che usano l'approccio del ciclo di vita. Tutto ciò che viene creato, mantenuto e ritirato insieme dovrebbe risiedere in un singolo gruppo di risorse. Per ulteriori informazioni sui gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - A tutte le sottoscrizioni nel gruppo di gestione associato è necessario applicare Criteri di Azure.
 - Come parte del processo di distribuzione, i modelli di coerenza delle risorse di Azure per tutti i gruppi di risorse devono essere archiviati nel controllo del codice sorgente.
 - Ogni gruppo di risorse è associato a un carico di lavoro specifico o a un'applicazione basata sull'approccio del ciclo di vita descritto in precedenza.
 - I gruppi di gestione di Azure consentono l'aggiornamento delle progettazioni di governance man mano che maturano i criteri aziendali.
-- Un'implementazione estesa di Criteri di Azure può richiedere al team più tempo del previsto e non offrire particolari vantaggi a questo punto. È tuttavia opportuno creare e applicare semplici criteri predefiniti per imporre le poche definizioni dei criteri di governance del cloud. Questi criteri consentono di definire l'implementazione di requisiti di governance specifici che può quindi essere applicata a tutti gli asset distribuiti.
+- Una vasta implementazione di criteri di Azure può superare gli impegni in termini di tempo del team e potrebbe non fornire al momento una grande quantità di valore. È tuttavia opportuno creare e applicare semplici criteri predefiniti per imporre le poche definizioni dei criteri di governance del cloud. Questi criteri consentono di definire l'implementazione di requisiti di governance specifici che può quindi essere applicata a tutti gli asset distribuiti.
 
 >[!IMPORTANT]
 >Ogni volta che una risorsa in un gruppo di risorse non condivide più lo stesso ciclo di vita, deve essere spostata in un altro gruppo di risorse. Tra gli esempi sono inclusi i database comuni e i componenti di rete. Sebbene possano gestire l'applicazione in fase di sviluppo, possono anche essere utilizzati per altri scopi e devono pertanto esistere in altri gruppi di risorse.
@@ -77,13 +77,13 @@ Le decisioni relative ai tag delle risorse determinano il modo in cui i metadati
 
 - Gli asset distribuiti devono essere contrassegnati con i valori per:
   - Reparto/unità di fatturazione
-  - Geografia
+  - Area geografica
   - Classificazione dei dati
   - Criticità
   - Contratto di servizio
   - Ambiente
   - Archetipo dell'applicazione
-  - Applicazione
+  - Richiesta
   - Proprietario dell'applicazione
 - Questi valori, insieme al gruppo di gestione e alla sottoscrizione di Azure associati a un asset distribuito, saranno alla base delle decisioni relative a governance, operazioni e sicurezza.
 

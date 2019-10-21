@@ -8,29 +8,29 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 819d0c058acf48402296bbac8d4cb4837271259e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821649"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547188"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Creare coerenza del cloud ibrido
 
 Questo articolo illustra gli approcci di alto livello per la creazione della coerenza del cloud ibrido.
 
-I modelli di distribuzione ibrida durante la migrazione possono ridurre il rischio e contribuire a una transizione fluida dell'infrastruttura. Le piattaforme cloud offrono il massimo livello di flessibilità per i processi aziendali. Molte organizzazioni sono riluttanti a eseguire il passaggio al cloud. Ma preferiscono avere il controllo completo sui dati più sensibili. Sfortunatamente, i server locali non consentono la stessa velocità di innovazione del cloud. Una soluzione cloud ibrida offre la velocità di innovazione nel cloud e il controllo della gestione locale.
+I modelli di distribuzione ibrida durante la migrazione possono ridurre il rischio e contribuire a una transizione fluida dell'infrastruttura. Le piattaforme cloud offrono il massimo livello di flessibilità per i processi aziendali. Molte organizzazioni sono riluttanti a eseguire il passaggio al cloud. Ma preferiscono avere il controllo completo sui dati più sensibili. Sfortunatamente, i server locali non consentono lo stesso tasso di innovazione del cloud. Una soluzione cloud ibrida offre la velocità di innovazione nel cloud e il controllo della gestione locale.
 
 ## <a name="integrate-hybrid-cloud-consistency"></a>Integrare la coerenza del cloud ibrido
 
 L'uso di una soluzione cloud ibrida consente alle organizzazioni di ridimensionare le risorse di calcolo. Elimina inoltre la necessità di sostenere ingenti spese in conto capitale per gestire picchi nella domanda a breve termine. Le modifiche apportate all'azienda possono favorire la necessità di liberare risorse locali per dati o applicazioni più sensibili. Il deprovisioning delle risorse cloud è più semplice, veloce e meno costoso. Si pagano solo le risorse usate temporaneamente dall'organizzazione, senza dover acquistare e gestire risorse aggiuntive. Questo approccio riduce la quantità di apparecchiature che potrebbero rimanere inattive per lunghi periodi di tempo. Cloud computing ibrido offre tutti i vantaggi di cloud computing flessibilità, la scalabilità e l'efficienza dei costi con il minor rischio possibile di esposizione dei dati.
 
-![Creazione della coerenza del cloud ibrido tra identità, gestione, sicurezza, dati, sviluppo](../../_images/hybrid-consistency.png)
-e DevOps*Figura 1-creazione della coerenza del cloud ibrido tra identità, gestione, sicurezza, dati, sviluppo e DevOps.*
+![Creating la coerenza del cloud ibrido tra identità, gestione, sicurezza, dati, sviluppo e DevOps ](../../_images/hybrid-consistency.png)
+*Figura 1-creazione della coerenza del cloud ibrido tra identità, gestione, sicurezza, dati, sviluppo e DevOps.*
 
 Una vera soluzione cloud ibrida deve fornire quattro componenti, ognuno dei quali offre vantaggi significativi:
 
-- **Identità comune per le applicazioni locali e cloud:** Questo componente migliora la produttività degli utenti concedendo agli utenti l'accesso Single Sign-on (SSO) a tutte le applicazioni. Garantisce inoltre la coerenza tra le applicazioni e gli utenti oltre i limiti di rete o cloud.
+- **Identità comune per le applicazioni locali e cloud:** Questo componente consente di migliorare la produttività degli utenti offrendo agli utenti Single Sign-On (SSO) a tutte le applicazioni. Garantisce inoltre la coerenza tra le applicazioni e gli utenti oltre i limiti di rete o cloud.
 - **Gestione e sicurezza integrate nel cloud ibrido:** Questo componente offre un modo coerente per monitorare, gestire e proteggere l'ambiente, consentendo una maggiore visibilità e controllo.
 - **Una piattaforma di dati coerente per il Data Center e il cloud:** Questo componente crea la portabilità dei dati, combinata con l'accesso facile ai servizi dati locali e cloud per ottenere informazioni approfondite su tutte le origini dati.
 - **Sviluppo unificato e DevOps nel cloud e nei data center locali:** Questo componente consente di spostare le applicazioni tra i due ambienti in base alle esigenze. La produttività degli sviluppatori migliora perché entrambe le posizioni hanno ora lo stesso ambiente di sviluppo.
@@ -56,8 +56,8 @@ Azure e Azure Stack aprono nuovi casi di utilizzo ibrido per le applicazioni lin
 
 Azure Stack è disponibile tramite due opzioni di distribuzione:
 
-- **Azure Stack sistemi integrati:** Azure Stack sistemi integrati sono offerti tramite partner Microsoft e hardware per creare una soluzione in grado di offrire un'innovazione basata sul cloud bilanciata con una gestione semplice. Poiché Azure Stack viene offerto come sistema integrato di hardware e software, è possibile ottenere flessibilità e controllo pur continuando ad adottare l'innovazione dal cloud. Azure Stack i sistemi integrati hanno una dimensione compresa tra 4 e 12 nodi. Sono supportati congiuntamente dal partner hardware e da Microsoft. Usare i sistemi integrati Azure Stack per rendere possibili nuovi scenari per i carichi di lavoro di produzione.
-- **Azure Stack Development Kit:** Il Microsoft Azure Stack Development Kit è una distribuzione a nodo singolo di Azure Stack. È possibile usarlo per valutare e ottenere informazioni sulle Azure Stack. È anche possibile usare il kit come ambiente di sviluppo, in cui è possibile sviluppare usando le API e gli strumenti coerenti con Azure. Il Azure Stack Development Kit non è destinato all'uso come ambiente di produzione.
+- **Azure stack sistemi integrati:** Azure Stack sistemi integrati sono offerti tramite partner Microsoft e hardware per creare una soluzione in grado di offrire un'innovazione basata sul cloud bilanciata con una gestione semplice. Poiché Azure Stack viene offerto come sistema integrato di hardware e software, è possibile ottenere flessibilità e controllo pur continuando ad adottare l'innovazione dal cloud. Azure Stack i sistemi integrati hanno una dimensione compresa tra 4 e 12 nodi. Sono supportati congiuntamente dal partner hardware e da Microsoft. Usare i sistemi integrati Azure Stack per rendere possibili nuovi scenari per i carichi di lavoro di produzione.
+- **Azure stack Development Kit:** Il Microsoft Azure Stack Development Kit è una distribuzione a nodo singolo di Azure Stack. È possibile usarlo per valutare e ottenere informazioni sulle Azure Stack. È anche possibile usare il kit come ambiente di sviluppo, in cui è possibile sviluppare usando le API e gli strumenti coerenti con Azure. Il Azure Stack Development Kit non è destinato all'uso come ambiente di produzione.
 
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Ecosistema Azure Stack un cloud
 

@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022656"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548417"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Valutare e ridimensionare gli asset nel cloud
 
@@ -30,7 +30,7 @@ Nel cloud, i modelli di accounting e provisioning consentono di eliminare i rita
 Quando è necessario ottimizzare un asset? Durante o dopo la migrazione? La risposta semplice è *in entrambi i casi*, ma non è del tutto esatta. Per una spiegazione, è possibile esaminare due scenari di base per ottimizzare il ridimensionamento delle risorse:
 
 - **Ridimensionamento pianificato.** Spesso un asset è chiaramente sovradimensionato e sottoutilizzato e deve essere ridimensionato durante la distribuzione. Per determinare se un asset è stato ridimensionato in modo corretto, in questo caso è necessario eseguire test di accettabilità da parte degli utenti dopo la migrazione. Se un utente esperto non riscontra perdite di prestazioni o di funzionalità durante i test, è possibile dedurre che l'asset è stato ridimensionato in modo corretto.
-- **Ottimizzazione.** Nei casi in cui la necessità di ottimizzazione non è evidente, i team IT devono usare un approccio basato sui dati per gestire le dimensioni delle risorse. Usando i benchmark delle prestazioni dell'asset, un team IT può prendere decisioni consapevoli sulle dimensioni, la portata, l'architettura e i servizi più adatti a una soluzione. Può quindi ridimensionare e testare le teorie delle prestazioni dopo la migrazione.
+- **Ottimizzazione.** Nei casi in cui la necessità di ottimizzazione non è evidente, i team IT devono usare un approccio basato sui dati per gestire le dimensioni delle risorse. Usando i benchmark delle prestazioni dell'asset, un team IT può prendere decisioni consapevoli sulla dimensione, i servizi, la scalabilità e l'architettura più appropriati di una soluzione. Può quindi ridimensionare e testare le teorie delle prestazioni dopo la migrazione.
 
 Durante la migrazione, formulare ipotesi ragionate e sperimentare varie soluzioni di ridimensionamento. Per una vera ottimizzazione delle risorse, tuttavia, sono necessari dati basati sulle prestazioni effettive in un ambiente cloud. A tale scopo, il team IT deve prima implementare approcci per il monitoraggio delle prestazioni e dell'utilizzo di risorse.
 

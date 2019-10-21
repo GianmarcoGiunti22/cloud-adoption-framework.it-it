@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cc4567495d60f76be760d532dc16a66274834396
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026546"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547397"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologia di governance cloud
 
@@ -24,19 +24,19 @@ Il Framework di adozione del cloud fornisce guide di governance che descrivono l
 
 ## <a name="envision-an-end-state"></a>Prevedere uno stato finale
 
-Un viaggio senza una destinazione è semplice vagabondare. È importante stabilire una visione approssimativa dello stato finale prima di partire. L'infografica seguente offre una cornice di riferimento per lo stato finale. Non è il punto di partenza, ma mostra la potenziale destinazione.
+Un viaggio senza una destinazione è semplice vagabondare. È importante stabilire una visione approssimativa dello stato finale prima di eseguire il primo passaggio. L'infografica seguente offre una cornice di riferimento per lo stato finale. Non è il punto di partenza, ma mostra la potenziale destinazione.
 
 ![Infografica del modello di governance di Cloud Adoption Framework](../_images/operational-transformation-govern-highres.png)
 
 Il modello di governance di Cloud Adoption Framework identifica le principali aree rilevanti durante il percorso. Ogni area è correlata ai tipi di rischi diversi che la società deve affrontare man mano che adotta ulteriori servizi cloud. All'interno di questo framework, la guida alla governance identifica le azioni necessarie per il team di governance del cloud. Lungo il percorso viene descritto in maggiore dettaglio ogni principio del modello di governance di Cloud Adoption Framework. In generale, sono inclusi i principi seguenti:
 
-**Criteri aziendali**. I criteri aziendali sono alla base della governance del cloud. La guida alla governance è incentrata su specifici aspetti dei criteri aziendali:
+**Criteri aziendali:** I criteri aziendali guidano la governance del cloud. La guida alla governance è incentrata su specifici aspetti dei criteri aziendali:
 
-- **Rischi aziendali:** identificare e conoscere i rischi aziendali.
-- **Criteri e conformità:** convertire i rischi in definizioni dei criteri che supportano eventuali requisiti di conformità.
-- **Processi:** garantire la conformità ai criteri definiti.
+- **Rischi aziendali:** Identificare e comprendere i rischi aziendali.
+- **Criteri e conformità:** Conversione dei rischi nelle istruzioni dei criteri che supportano i requisiti di conformità.
+- **Processi:** Verifica dell'aderenza ai criteri indicati.
 
-**Cinque discipline della governance del cloud**. Queste discipline supportano i criteri aziendali. Ogni disciplina consente di proteggere l'azienda da potenziali insidie:
+**Cinque discipline della governance del cloud:** Queste discipline supportano i criteri aziendali. Ogni disciplina consente di proteggere l'azienda da potenziali insidie:
 
 - Gestione dei costi
 - Baseline di sicurezza

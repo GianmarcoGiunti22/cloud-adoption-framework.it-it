@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9eee6f81922c88304c0ca5bf7edd6572daf493d8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028588"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547308"
 ---
 # <a name="common-azure-policy-examples"></a>Esempi comuni di criteri di Azure
 
 I [criteri di Azure](https://docs.microsoft.com/azure/governance/policy/overview) consentono di applicare la governance alle risorse cloud. Questo servizio può essere utile per creare Guardrails che garantiscano la conformità a livello aziendale ai requisiti dei criteri di governance. Per creare i criteri, usare il portale di Azure o i cmdlet di PowerShell. Questo articolo fornisce esempi di cmdlet di PowerShell.
 
 > [!NOTE]
-> Con criteri di Azure, i criteri di imposizione (**deployIfNotExists**) non vengono distribuiti automaticamente nelle macchine virtuali esistenti. La correzione è necessaria per assicurare la conformità di queste macchine virtuali. Per altre informazioni, vedere [correggere le risorse non conformi con i criteri di Azure](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> Con criteri di Azure, i criteri di imposizione (**deployIfNotExists**) non vengono distribuiti automaticamente nelle macchine virtuali esistenti. La correzione è necessaria per assicurare la conformità di queste macchine virtuali. Per altre informazioni, vedere monitorare e [aggiornare le risorse non conformi con criteri di Azure](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Esempi di criteri comuni
 
@@ -36,7 +36,7 @@ In alternativa, è possibile eseguire questo cmdlet per trovare i criteri:
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
 ```
 
-Nello script seguente viene illustrato come assegnare i criteri. Per usare lo script, modificare il `$SubscriptionID` valore in modo che punti alla sottoscrizione a cui si vuole assegnare il criterio. Prima di eseguire lo script, è necessario eseguire l'accesso usando il cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Nello script seguente viene illustrato come assegnare i criteri. Per usare lo script, modificare il valore `$SubscriptionID` in modo che punti alla sottoscrizione a cui si vuole assegnare il criterio. Prima di eseguire lo script, è necessario eseguire l'accesso usando il cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -73,9 +73,9 @@ Azure offre un'ampia gamma di dimensioni di VM per supportare diversi tipi di ca
 
 È possibile usare questo criterio per distribuire un'estensione Microsoft IaaSAntimalware con una configurazione predefinita per le macchine virtuali che non sono protette da antimalware.
 
-Il GUID del criterio `2835b622-407b-4114-9198-6f7064cbe0dc`è.
+Il GUID del criterio è `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
-Nello script seguente viene illustrato come assegnare i criteri. Per usare lo script, modificare il `$SubscriptionID` valore in modo che punti alla sottoscrizione a cui si vuole assegnare il criterio. Prima di eseguire lo script, è necessario eseguire l'accesso usando il cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Nello script seguente viene illustrato come assegnare i criteri. Per usare lo script, modificare il valore `$SubscriptionID` in modo che punti alla sottoscrizione a cui si vuole assegnare il criterio. Prima di eseguire lo script, è necessario eseguire l'accesso usando il cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.

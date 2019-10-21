@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: afde9af7da83bfd8d95847542d5f7236d318121e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220453"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547375"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>Guida all'idoneità del CISO per il cloud
 
@@ -29,7 +29,7 @@ Come la maggior parte dei criteri, i criteri di sicurezza e governance all'inter
 
 In questo tipo di revisione il ruolo del CISO è quello di creare un equilibrio sicuro tra i vincoli dei criteri/requisiti di conformità esistenti e il comportamento di sicurezza migliorato dei provider di servizi cloud. La valutazione di questi progressi può assumere molte forme; spesso vengono misurati in base al numero di criteri di sicurezza che possono essere trasferiti in modo sicuro al provider di servizi cloud.
 
-**Trasferimento dei rischi per la sicurezza:** man mano che i servizi vengono spostati in modelli di hosting dell'infrastruttura distribuita come servizio (IaaS), l'azienda si assume meno rischi diretti riguardanti il provisioning dell'hardware. I rischi non vengono meno, ma sono trasferiti al fornitore di servizi cloud. Se l'approccio di un fornitore di cloud al provisioning dell'hardware offre lo stesso livello di mitigazione dei rischi, in un processo ripetibile sicuro, il rischio di esecuzione del provisioning dell'hardware viene rimosso dall'area di responsabilità aziendale e trasferito al cloud provider. In questo modo si riduce il rischio di sicurezza globale aziendale che è responsabile della gestione di, anche se il rischio stesso deve essere ancora rilevato e rivisto periodicamente.
+**Trasferimento dei rischi per la sicurezza:** Poiché i servizi vengono spostati in modelli di hosting di infrastruttura distribuita come servizio (IaaS), l'azienda presuppone un rischio meno diretto per quanto riguarda il provisioning dell'hardware. I rischi non vengono meno, ma sono trasferiti al fornitore di servizi cloud. Se l'approccio di un fornitore di cloud al provisioning dell'hardware offre lo stesso livello di mitigazione dei rischi, in un processo ripetibile sicuro, il rischio di esecuzione del provisioning dell'hardware viene rimosso dall'area di responsabilità aziendale e trasferito al cloud provider. In questo modo si riduce il rischio di sicurezza globale aziendale che è responsabile della gestione di, anche se il rischio stesso deve essere ancora rilevato e rivisto periodicamente.
 
 Poiché le soluzioni si spostano ulteriormente nello stack per incorporare i modelli PaaS (Platform as a Service, piattaforma distribuita come servizio) o Software as a Service (SaaS), è possibile evitare o trasferire rischi aggiuntivi. Quando il rischio viene trasferito in modo sicuro a un provider di servizi cloud, anche il costo di esecuzione, monitoraggio e applicazione dei criteri di sicurezza o di altri criteri di conformità può essere ridotto in modo sicuro.
 
@@ -72,7 +72,7 @@ Trasparenza:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Il primo passo per mettere in atto una strategia di governance è una [revisione dei criteri](./cloud-policy-review.md). I [criteri e la conformità](./index.md) possono essere una guida utile durante la revisione dei criteri.
+Il primo passaggio per intraprendere un'azione in qualsiasi strategia di governance è la [revisione dei criteri](./cloud-policy-review.md). I [criteri e la conformità](./index.md) possono essere una guida utile durante la revisione dei criteri.
 
 > [!div class="nextstepaction"]
 > [Prepararsi alla revisione dei criteri](./cloud-policy-review.md)

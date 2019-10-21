@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029432"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548613"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Nella parte restante di questo articolo si presuppone che il Consiglio legale ab
 
 ## <a name="employee-usage-patterns"></a>Modelli di utilizzo dei dipendenti
 
-È importante comprendere in che modo gli utenti globali accedono alle applicazioni non ospitate nello stesso paese dell'utente. Spesso le reti WAN globali (Wide Area Network) instradano gli utenti in base a contratti di rete esistenti. In un mondo locale tradizionale, alcuni vincoli limitano la progettazione WAN. Questi vincoli possono comportare esperienze utente insoddisfacenti se non sono stati riconosciuti correttamente prima dell'adozione del cloud.
+È importante comprendere in che modo gli utenti globali accedono alle applicazioni non ospitate nello stesso paese dell'utente. Le reti WAN globali indirizzano gli utenti in base ai contratti di rete esistenti. In un mondo locale tradizionale, alcuni vincoli limitano la progettazione WAN. Questi vincoli possono comportare esperienze utente insoddisfacenti se non sono stati riconosciuti correttamente prima dell'adozione del cloud.
 
 In un modello cloud, Internet per le nuove opzioni offre anche numerose nuove opzioni. La comunicazione tra la diffusione dei dipendenti in più aree geografiche può aiutare il team di adozione del cloud a progettare soluzioni WAN che creano esperienze utente positive **e** potenziali costi di rete.
 

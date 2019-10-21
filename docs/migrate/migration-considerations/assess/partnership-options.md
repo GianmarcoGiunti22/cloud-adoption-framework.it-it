@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022660"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549168"
 ---
 # <a name="understand-partnership-options"></a>Informazioni sulle opzioni di partnership
 
@@ -33,11 +33,11 @@ Durante la fase di pianificazione, creazione o migrazione, una società dispone 
 Se un'organizzazione sta pianificando una migrazione di Azure in modo autonomo, Microsoft è sempre disponibile a supportarla durante tutto il suo percorso. Per semplificare la migrazione ad Azure, Microsoft e i suoi partner hanno sviluppato un ampio set di architetture, guide, strumenti e servizi per ridurre i rischi e velocizzare la migrazione di macchine virtuali, applicazioni e database. Questi strumenti e servizi supportano un'ampia gamma di sistemi operativi, linguaggi di programmazione, framework e database.
 
 - **Strumenti di valutazione e migrazione.** Azure offre un'ampia gamma di strumenti da usare in fasi diverse per la trasformazione cloud, inclusa la valutazione dell'infrastruttura esistente. Per altre informazioni, vedere la sezione "Valutazione" del capitolo "Migrazione" riportata di seguito.
-- **[Framework di adozione del cloud di Microsoft](../../index.md).** Questo framework presenta un approccio strutturato all'adozione e alla migrazione del cloud. Si basa su procedure comprovate in casi di richieste di assistenza da parte di clienti supportati da Microsoft ed è organizzato come una serie di passaggi, dall'architettura e dalla progettazione all'implementazione. Per ogni passaggio è disponibile materiale sussidiario utile per la progettazione dell'architettura dell'applicazione.
+- **[Framework di adozione del cloud di Microsoft](../../index.md).** Questo framework presenta un approccio strutturato all'adozione e alla migrazione del cloud. Si basa sulle procedure consigliate per molti impegni dei clienti supportati da Microsoft ed è organizzato come una serie di passaggi, dall'architettura e dalla progettazione all'implementazione. Per ogni passaggio è disponibile materiale sussidiario utile per la progettazione dell'architettura dell'applicazione.
 - **[Modelli di progettazione cloud](https://docs.microsoft.com/azure/architecture/patterns).** Azure fornisce alcuni schemi progettuali cloud utili per la creazione di carichi di lavoro affidabili, scalabili e sicuri nel cloud. Ogni schema descrive il problema che risolve, le considerazioni per l'applicazione dello schema e un esempio basato su Azure. La maggior parte degli schemi include esempi o frammenti di codice che illustrano come implementare lo schema in Azure. Tuttavia, questi sono pertinenti a qualsiasi sistema distribuito, sia in hosting su Azure sia su altre piattaforme cloud.
 - **[Concetti fondamentali sul cloud](https://docs.microsoft.com/azure/architecture/guide).** I concetti fondamentali consentono di insegnare gli approcci di base per l'implementazione di concetti di base. Questa guida consente ai tecnici di considerare le soluzioni che vanno oltre un singolo servizio di Azure.
 - **[Scenari di esempio](https://docs.microsoft.com/azure/architecture/example-scenario).** La guida fornisce riferimenti derivati da implementazioni reali dei clienti, che descrivono gli strumenti, gli approcci e i processi che i clienti precedenti hanno seguito per raggiungere obiettivi aziendali specifici.
-- **[Architetture di riferimento](https://docs.microsoft.com/azure/architecture/reference-architectures).** Le architetture di riferimento sono disposte per scenario, con le architetture correlate raggruppate insieme. Ogni architettura include le procedure consigliate, insieme a considerazioni per la scalabilità, la disponibilità, la gestibilità e la sicurezza. Molte includono anche una soluzione distribuibile.
+- **[Architetture di riferimento](https://docs.microsoft.com/azure/architecture/reference-architectures).** Le architetture di riferimento sono disposte per scenario, con le architetture correlate raggruppate insieme. Ogni architettura include procedure consigliate, oltre a considerazioni per la scalabilità, la disponibilità, la gestibilità e la sicurezza. Molte includono anche una soluzione distribuibile.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -45,10 +45,10 @@ Se un'organizzazione sta pianificando una migrazione di Azure in modo autonomo, 
 
 - Migrazione dei data center
 - Windows Server in Azure
-- Linux in Azure
+- Linux su Azure
 - SAP in Azure
 - Continuità aziendale e ripristino di emergenza (BCDR)
-- HPC (High Performance Computing)*
+- HPC (High-Performance Computing)*
 - App native del cloud
 - DevOps
 - Modernizzazione di app
@@ -68,7 +68,7 @@ Se un'organizzazione sta pianificando una migrazione di Azure in modo autonomo, 
 
 Durante un tipico caso di assistenza di FastTrack for Azure, Microsoft consente di definire la visione aziendale per pianificare e sviluppare soluzioni di Azure con successo. Il team valuta le esigenze dell'architettura e fornisce indicazioni, principi di progettazione, strumenti e risorse per facilitare la creazione, la distribuzione e la gestione di soluzioni di Azure. Il team associa i partner qualificati per i servizi di distribuzione su richiesta e periodicamente esegue controlli per assicurarsi che la distribuzione avanzi secondo quanto pianificato e per aiutare nella rimozione di blocchi.
 
-Ecco le fasi principali di un caso di assistenza tipico di FastTrack for Azure:
+Ecco le fasi principali di un impegno tipico di FastTrack for Azure:
 
 - **Individuazione.** Identificare gli stakeholder principali, comprendere l'obiettivo o la visione per i problemi da risolvere e valutare le esigenze a livello di architettura.
 - **Abilitazione della soluzione.** Apprendere i principi di progettazione per la creazione di applicazioni, verificare l'architettura delle applicazioni e delle soluzioni e indicazioni e strumenti utili per la distribuzione dai modelli di verifica alla produzione.
@@ -78,11 +78,11 @@ Ecco le fasi principali di un caso di assistenza tipico di FastTrack for Azure:
 
 ![Approccio al framework di adozione del cloud dei servizi Microsoft](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Valutazione:** i servizi Microsoft usano [un approccio unificato basato sui dati e sugli strumenti](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) costituito da workshop di architettura, informazioni in tempo reale di Azure, modelli di minacce per sicurezza e identità e diversi strumenti per fornire informazioni approfondite su sfide, rischi, raccomandazioni e problemi in un ambiente Azure esistente con un risultato chiave, ad esempio il [roadmap sulla modernizzazione di alto livello](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
+**Valuta:** I servizi Microsoft usano un [approccio unificato basato su dati e strumenti](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) costituito da workshop di architettura, informazioni in tempo reale di Azure, modelli di minacce per sicurezza e identità e vari strumenti per fornire informazioni approfondite su problemi, rischi, consigli e i problemi relativi a un ambiente Azure esistente con un risultato chiave, ad esempio la roadmap per la [modernizzazione di alto livello](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
-**Adozione:** tramite i servizi Microsoft [Azure cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf), è possibile definire le progettazioni, i modelli e l'architettura di governance di base di Azure associando i requisiti all'architettura di riferimento più appropriata e alla pianificazione, alla progettazione e alla distribuzione di infrastruttura, gestione, sicurezza e identità necessarie per i carichi di lavoro.
+**Adottare:** Grazie ad [Azure cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf), i servizi Microsoft definiscono le progettazioni, i modelli e l'architettura di governance di base di Azure, eseguendo il mapping dei requisiti all'architettura di riferimento più appropriata e pianificando, progettando e distribuendo l'infrastruttura. gestione, sicurezza e identità necessari per i carichi di lavoro.
 
-**Migrazione/ottimizzazione:** la [soluzione di modernizzazione cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dei servizi Microsoft offre un approccio completo per spostare le applicazioni e l'infrastruttura in Azure, nonché, una volta nel cloud, per eseguire l'ottimizzazione e la modernizzazione grazie alla migrazione semplificata.
+**Esegui migrazione/ottimizzazione:** La soluzione di [modernizzazione cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dei servizi Microsoft offre un approccio completo per spostare le applicazioni e l'infrastruttura in Azure, nonché per ottimizzare e modernizzare una volta nel cloud grazie alla migrazione semplificata.
 
 **Innovazione:** La [soluzione CCoE (cloud Center of Excellence)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) dei servizi Microsoft offre un impegno di coaching DevOps e usa i principi DevOps combinati con controlli di sicurezza e gestione dei servizi nativi del cloud prescrittivi per favorire l'innovazione aziendale, aumenta l'agilità e Riduci il tempo per il valore entro una funzionalità sicura, prevedibile e flessibile per la gestione delle operazioni e della distribuzione dei servizi.
 

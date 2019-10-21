@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della coerenza delle risorse'
+title: 'Guida alla governance per le aziende complesse: migliorare la disciplina della coerenza delle risorse'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della coerenza delle risorse'
+description: 'Guida alla governance per le aziende complesse: migliorare la disciplina della coerenza delle risorse'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/19/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5b381bf483937e2edfbf503063fd4e520203b819
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223822"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547623"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina della coerenza delle risorse
+# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guida alla governance per le aziende complesse: migliorare la disciplina della coerenza delle risorse
 
 Questo articolo fa avanzare il racconto aggiungendo controlli di coerenza delle risorse all'MVP della governance per supportare le applicazioni cruciali.
 
@@ -33,11 +33,11 @@ I team di adozione del cloud hanno soddisfatto tutti i requisiti per lo spostame
 ### <a name="incrementally-improve-the-future-state"></a>Migliorare in modo incrementale lo stato futuro
 
 - Le operazioni IT sono nuove per le operazioni cloud ed è necessario integrare rapidamente i processi operativi esistenti.
-- I cambiamenti che riguardano lo stato attuale e quello futuro espongono a nuovi rischi che richiedono nuove definizioni di criteri.
+- I cambiamenti che riguardano lo stato attuale e quello futuro creano nuovi rischi che richiederanno nuove definizioni di criteri.
 
 ## <a name="changes-in-tangible-risks"></a>Modifiche ai rischi tangibili
 
-**Interruzione aziendale:** vi è un rischio intrinseco che qualsiasi nuova piattaforma possa causare l'interruzione di processi aziendali cruciali. Il team responsabile delle operazioni IT e i team che si occupano in vari modi delle adozioni del cloud sono relativamente inesperti per quanto riguarda le operazioni nel cloud. Questa operazione aumenta il rischio di interruzione e deve essere risolta e regolata.
+**Interruzione aziendale:** C'è un rischio intrinseco di qualsiasi nuova piattaforma che provoca interruzioni nei processi aziendali cruciali. Il team responsabile delle operazioni IT e i team che si occupano in vari modi delle adozioni del cloud sono relativamente inesperti per quanto riguarda le operazioni nel cloud. Questa operazione aumenta il rischio di interruzione e deve essere risolta e regolata.
 
 Questo rischio aziendale può tradursi in diversi rischi tecnici:
 
@@ -60,7 +60,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dal proprietario dell'applicazione prima della distribuzione nel cloud.
 2. Le subnet che contengono applicazioni cruciali devono essere protette tramite una soluzione firewall in grado di rilevare le intrusioni e rispondere agli attacchi.
-3. Gli strumenti di governance devono controllare e soddisfare i requisiti di configurazione definiti dal team della baseline di sicurezza.
+3. gli strumenti di governance devono controllare e soddisfare i requisiti di configurazione definiti dal team della baseline di sicurezza.
 4. Gli strumenti di governance devono convalidare che tutti gli asset correlati alle applicazioni cruciali o ai dati protetti siano inclusi nel monitoraggio per l'esaurimento e l'ottimizzazione delle risorse.
 5. Gli strumenti di governance devono convalidare che venga raccolto il livello appropriato di dati di registrazione per tutti i dati protetti o le applicazioni cruciali.
 6. Il processo di governance deve convalidare che il backup, il ripristino e il rispetto dei contratti di servizio vengano implementati correttamente per le applicazioni cruciali e i dati protetti.
@@ -81,7 +81,7 @@ Questa sezione dell'articolo consentirà di migliorare la progettazione degli MV
 
 Seguendo l'esperienza di questo esempio fittizio, si presuppone che le modifiche ai dati protetti si siano già verificate. Sulla base di tale procedura consigliata, di seguito verranno aggiunti requisiti di monitoraggio operativo, per preparare una sottoscrizione per applicazioni cruciali.
 
-**Sottoscrizione IT aziendale:** Aggiungere quanto segue alla sottoscrizione IT aziendale, che funge da hub.
+**Sottoscrizione IT aziendale:** Aggiungere quanto segue alla sottoscrizione IT aziendale, che funge da Hub.
 
 1. Come dipendenza esterna, il team operativo cloud dovrà definire gli strumenti per il monitoraggio operativo, la continuità aziendale e il ripristino di emergenza (BCDR) e gli strumenti per la correzione automatica. Il team di governance del cloud può quindi supportare i processi di individuazione necessari.
     1. In questo caso di utilizzo, il team operativo cloud ha scelto monitoraggio di Azure come strumento principale per il monitoraggio di applicazioni cruciali.
@@ -92,7 +92,7 @@ Seguendo l'esperienza di questo esempio fittizio, si presuppone che le modifiche
 3. Implementazione di monitoraggio di Azure.
     1. Una volta identificata una sottoscrizione di importanza critica, è possibile creare un'area di lavoro di log Analytics.
 
-**Sottoscrizione per l'adozione di singoli cloud:** gli elementi seguenti assicurano che ogni sottoscrizione sia individuabile dalla soluzione di monitoraggio e pronta per essere inclusa nelle procedure BCDR.
+**Sottoscrizione per l'adozione di singoli cloud:** Il codice seguente garantisce che ogni sottoscrizione sia individuabile dalla soluzione di monitoraggio e possa essere inclusa nelle procedure BCDR.
 
 1. Criteri di Azure per i nodi mission-critical:
     1. Controllare e imporre l'uso solo dei ruoli standard.

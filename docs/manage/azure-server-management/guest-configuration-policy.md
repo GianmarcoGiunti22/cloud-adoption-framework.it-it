@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221578"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547277"
 ---
 # <a name="guest-configuration-policy"></a>Criteri di configurazione Guest
 
-L'estensione di [configurazione Guest](/azure/governance/policy/concepts/guest-configuration) di criteri di Azure consente di controllare le impostazioni di configurazione in una macchina virtuale. La configurazione Guest è attualmente supportata solo nelle VM di Azure.
+L'estensione di [configurazione Guest](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) di criteri di Azure consente di controllare le impostazioni di configurazione in una macchina virtuale. La configurazione Guest è attualmente supportata solo nelle VM di Azure.
 
 È possibile trovare l'elenco dei criteri di configurazione Guest cercando la categoria "configurazione Guest" nella pagina del portale criteri di Azure. È anche possibile trovare l'elenco eseguendo questo cmdlet in una finestra di PowerShell:
 

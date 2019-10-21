@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di sicurezza'
+title: 'Guida alla governance per le aziende complesse: migliorare la disciplina della linea di base di sicurezza'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di sicurezza'
+description: 'Guida alla governance per le aziende complesse: migliorare la disciplina della linea di base di sicurezza'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e2e075b6f051af003d4c8d542e592943084c1e7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220547"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547616"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina della linea di base di sicurezza
+# <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guida alla governance per le aziende complesse: migliorare la disciplina della linea di base di sicurezza
 
 Questo articolo fa avanzare il racconto aggiungendo controlli di sicurezza che supportano lo spostare dati protetti nel cloud.
 
 ## <a name="advancing-the-narrative"></a>Avanzamento della descrizione
 
-Il CIO ha trascorso alcuni mesi collaborando con i colleghi e i legali dell'azienda. Un consulente di gestione con esperienza in materia di sicurezza informatica è stato assunto per aiutare i team che si occupano di sicurezza IT e governance IT a delineare nuovi criteri per i dati protetti. Il gruppo è stato in grado di promuovere il supporto tecnico per sostituire i criteri esistenti, consentendo ai dati personali e finanziari sensibili di essere ospitati da provider di servizi cloud approvati. A tale scopo, è stato necessario adottare una serie di requisiti di sicurezza e un processo di governance per verificare e documentare la conformità a tali criteri.
+Il CIO ha dedicato mesi alla collaborazione con i colleghi e il personale legale della società. Un consulente di gestione con esperienza in materia di sicurezza informatica è stato assunto per aiutare i team che si occupano di sicurezza IT e governance IT a delineare nuovi criteri per i dati protetti. Il gruppo è stato in grado di promuovere il supporto tecnico per sostituire i criteri esistenti, consentendo ai dati personali e finanziari sensibili di essere ospitati da provider di servizi cloud approvati. A tale scopo, è stato necessario adottare una serie di requisiti di sicurezza e un processo di governance per verificare e documentare la conformità a tali criteri.
 
 Negli ultimi 12 mesi, i team responsabili dell'adozione del cloud hanno cancellato la maggior parte dei 5.000 asset dai due data center da ritirare. I 350 asset incompatibili sono stati spostati in un data center alternativo. Rimangono solo le 1.250 macchine virtuali che contengono dati protetti.
 
@@ -39,7 +39,7 @@ Nella fase precedente di questo scenario, l'azienda ha iniziato il processo di r
 Da allora, sono avvenuti alcuni cambiamenti che influiranno sulla governance:
 
 - Migliaia di asset IT e aziendali sono stati distribuiti nel cloud.
-- Il team di sviluppo di applicazioni ha implementato una pipeline di integrazione continua e distribuzione continua (CI/CD) per distribuire un'applicazione nativa del cloud con un'esperienza utente migliorata. L'applicazione non interagisce ancora con i dati protetti, pertanto non è pronta per l'ambiente di produzione.
+- Il team di sviluppo di applicazioni ha implementato una pipeline di integrazione continua e distribuzione continua (CI/CD) per distribuire un'applicazione nativa del cloud con un'esperienza utente migliorata. L'applicazione non interagisce ancora con i dati protetti, quindi non è pronta per la produzione.
 - Il team che si occupa di business intelligence in ambito IT cura attivamente i dati nel cloud, dalla logistica, all'inventario fino ai dati di terze parti. Questi dati vengono usati per effettuare nuove stime, che possono influire sui processi aziendali. Tuttavia, queste stime e informazioni dettagliate non hanno utilità pratica fino a quando i dati finanziari e dei clienti non possono essere integrati nella piattaforma di dati.
 - Il team IT sta procedendo con i piani del CIO e del CFO per il ritiro di due data center. Quasi 3.500 asset presenti nei due data center sono stati ritirati oppure ne è stata eseguita la migrazione.
 - I criteri relativi ai dati personali e finanziari sensibili sono stati modernizzati. Tuttavia, i nuovi criteri aziendali dipendono dall'implementazione dei criteri di governance e sicurezza correlati. I team sono ancora bloccati.
@@ -53,7 +53,7 @@ Da allora, sono avvenuti alcuni cambiamenti che influiranno sulla governance:
 
 ## <a name="changes-in-tangible-risks"></a>Modifiche ai rischi tangibili
 
-**Violazione dei dati:** quando si adotta una nuova piattaforma di dati, si verifica un aumento inerente delle responsabilità correlate alle violazioni dei dati. I tecnici che adottano le tecnologie cloud hanno maggiori responsabilità di implementare soluzioni in grado di ridurre questo rischio. È necessario implementare una solida strategia di governance e sicurezza per fare in modo che i tecnici adempiano a queste responsabilità.
+**Violazione dei dati:** Si verifica un aumento intrinseco delle passività correlate alle violazioni dei dati quando si adotta una nuova piattaforma dati. I tecnici che adottano le tecnologie cloud hanno maggiori responsabilità di implementare soluzioni in grado di ridurre questo rischio. È necessario implementare una solida strategia di governance e sicurezza per fare in modo che i tecnici adempiano a queste responsabilità.
 
 Questo rischio aziendale può tradursi in diversi rischi tecnici:
 
@@ -75,8 +75,8 @@ Questo rischio aziendale può tradursi in diversi rischi tecnici:
 Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi rischi e l'implementazione della guida. L'elenco può sembrare lungo, ma l'adozione di questi criteri può essere più semplice di quanto non sembri.
 
 1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dall'applicazione prima della distribuzione nel cloud.
-2. Le applicazioni che archiviano o accedono ai dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo fanno. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
-3. Tutti i dati protetti devono essere crittografati quando inattivi.
+2. Le applicazioni che archiviano o accedono a dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo sono. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
+3. tutti i dati protetti devono essere crittografati quando inattivi.
 4. Le autorizzazioni con privilegi elevati in qualsiasi segmento contenente dati protetti devono essere un'eccezione. Tali eccezioni verranno registrate con il team di governance del cloud e controllate regolarmente.
 5. le subnet di rete contenenti dati protetti devono essere isolate dalle altre subnet. Il traffico di rete tra le subnet di dati protetti verrà controllato regolarmente.
 6. Alle subnet contenenti dati protetti non deve essere possibile accedere direttamente tramite la rete Internet pubblica o tra data center. L'accesso a queste subnet deve essere instradato attraverso subnet intermedie. Tutti gli accessi a queste subnet devono passare attraverso una soluzione firewall che può eseguire l'analisi dei pacchetti e le funzioni di blocco.
@@ -100,9 +100,9 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 In questa sezione dell'articolo verrà modificata la progettazione degli MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove istruzioni dei criteri aziendali.
 
-Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e adozione cloud (spoke).
+Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e adozione del cloud (spoke).
 
-**Creazione di un hub IT aziendale e di una sottoscrizione spoke per centralizzare le basi di riferimento per la sicurezza:** In questa procedura consigliata, la capacità di governance esistente è incapsulata in una [topologia hub-spoke con servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), con alcune aggiunte chiave dal team di governance del cloud.
+**Creazione di un hub it aziendale e di una sottoscrizione spoke per centralizzare le basi di riferimento per la sicurezza:** In questa procedura consigliata, la capacità di governance esistente è incapsulata in una [topologia hub-spoke con servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), con alcune aggiunte chiave dal team di governance del cloud.
 
 1. Archivio di Azure DevOps. Creare un archivio in Azure DevOps per l'archiviazione e il controllo delle versioni di tutti i modelli di Azure Resource Manager e le configurazioni tramite script pertinenti.
 2. Modello hub e spoke:
@@ -114,19 +114,19 @@ Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e 
     2. Controllare che le impostazioni di sicurezza della password siano configurate correttamente nelle macchine virtuali Linux e Windows.
 4. Progetto IT aziendale
     1. Creare un progetto di Azure denominato `corporate-it-subscription`.
-    2. Aggiungere i criteri e `Hub NSG Enforcement` i modelli hub e spoke.
+    2. Aggiungere i modelli hub e spoke e i criteri di `Hub NSG Enforcement`.
 5. Ampliamento della gerarchia dei gruppi di gestione iniziale.
     1. Per ogni gruppo di gestione che ha richiesto il supporto per i dati protetti, il progetto `corporate-it-subscription-blueprint` offre una soluzione hub accelerata.
     2. Poiché i gruppi di gestione in questo esempio fittizio comprendono una gerarchia a livello di area oltre a una gerarchia di business unit, questo progetto verrà distribuito in ogni area.
     3. Per ogni area nella gerarchia dei gruppi di gestione, creare una sottoscrizione denominata `Corporate IT Subscription`.
     4. Applicare il progetto `corporate-it-subscription-blueprint` a ogni istanza a livello di area.
-    5. In questo modo verrà stabilito un hub per ogni business unit in ogni area. Nota: è possibile ottenere ulteriori risparmi sui costi, condividendo gli hub tra business unit in ogni area.
+    5. In questo modo verrà stabilito un hub per ogni business unit in ogni area. Nota: è possibile ottenere ulteriori risparmi sui costi, ma condividere gli hub tra le business unit in ogni area.
 6. Integrare gli oggetti Criteri di gruppo tramite Desired State Configuration (DSC):
     1. Convertire l'oggetto Criteri di gruppo in DSC: il [progetto di gestione Baseline Microsoft](https://github.com/Microsoft/BaselineManagement) in GitHub può accelerare questa operazione. * Assicurarsi di archiviare la configurazione DSC nell'archivio in parallelo con i modelli di Resource Manager.
     2. Distribuire la configurazione dello stato di Automazione di Azure in tutte le istanze della sottoscrizione IT aziendale. È possibile usare Automazione di Azure per applicare la configurazione DSC alle macchine virtuali distribuite nelle sottoscrizioni supportate all'interno del gruppo di gestione.
     3. La roadmap corrente prevede l'abilitazione di criteri di configurazione guest personalizzati. Dopo il rilascio di questa funzionalità, non sarà più necessario usare Automazione di Azure per questa procedura consigliata.
 
-**Applicazione della governance aggiuntiva a una sottoscrizione di adozione cloud:** `Corporate IT Subscription`La creazione di modifiche minime all'MVP di governance applicato a ogni sottoscrizione dedicata al supporto degli archetipi delle applicazioni può produrre un miglioramento rapido.
+**Applicazione della governance aggiuntiva a una sottoscrizione di adozione cloud:** Basandosi sulla `Corporate IT Subscription`, le modifiche minime apportate all'MVP di governance applicato a ogni sottoscrizione dedicata al supporto degli archetipi delle applicazioni possono produrre un miglioramento rapido.
 
 Nelle modifiche iterative precedenti alla procedura consigliata, sono stati definiti gruppi di sicurezza di rete per bloccare il traffico pubblico e il traffico interno nell'elenco elementi consentiti. Il progetto di Azure creava inoltre temporaneamente funzionalità di rete perimetrale e Active Directory. In questa iterazione queste risorse verranno modificate leggermente, creando una nuova versione del progetto di Azure.
 

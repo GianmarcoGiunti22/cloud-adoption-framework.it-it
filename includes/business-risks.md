@@ -9,9 +9,9 @@ L'obiettivo iniziale consiste nello stabilire una base per una governance flessi
 
 La società è in una fase iniziale dell'adozione del cloud, caratterizzata dalla sperimentazione e dalla creazione di modelli di verifica. I rischi sono ora relativamente bassi, ma i rischi futuri possono avere un impatto significativo. La definizione dello stato finale delle soluzioni tecniche da distribuire nel cloud è bassa e la preparazione per il cloud dei dipendenti IT è scarsa. Una base per l'adozione del cloud consentirà al team di imparare e crescere in modo sicuro.
 
-**Prove future:** c'è il rischio di non promuovere la crescita, ma anche il rischio di non fornire le protezioni giuste contro i rischi futuri.
+**Prove future:** Il rischio di non consentire la crescita, ma anche il rischio di non fornire le protezioni appropriate contro i rischi futuri.
 
-Per sostenere la visione dei dirigenti di una crescita tecnica e commerciale dell'azienda è necessario un approccio di governance flessibile ma deciso. L'impossibilità di implementare una strategia di questo tipo rallenterà la crescita tecnica, rischiando potenzialmente la crescita della quota di mercato attuale e futura. L'impatto di un tale rischio aziendale è inequivocabilmente elevato. Il ruolo dell'IT sul possibile stato futuro dell'azienda, tuttavia, è sconosciuto. Ciò rende relativamente alto il rischio associato agli sforzi attuali del reparto IT. Ciò premesso, finché non vengono allineati piani più concreti, l'azienda ha a tolleranza ai rischi elevata.
+Per supportare la visione della lavagna per la crescita aziendale e tecnica, è necessario un approccio di governance ancora affidabile e agile. L'impossibilità di implementare una strategia di questo tipo rallenterà la crescita tecnica, rischiando potenzialmente la crescita della quota di mercato attuale e futura. L'impatto di un tale rischio aziendale è inequivocabilmente elevato. Il ruolo dell'IT sul possibile stato futuro dell'azienda, tuttavia, è sconosciuto. Ciò rende relativamente alto il rischio associato agli sforzi attuali del reparto IT. Ciò premesso, finché non vengono allineati piani più concreti, l'azienda ha a tolleranza ai rischi elevata.
 
 Questo rischio aziendale può essere suddiviso tatticamente in diversi rischi tecnici:
 

@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224024"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549109"
 ---
 # <a name="central-it-capabilities"></a>Funzionalità IT centrali
 
 Poiché l'adozione del cloud si ridimensiona, le funzionalità di governance del cloud possono non essere sufficienti per gestire le attività di adozione. Quando l'adozione è graduale, i team tendono a sviluppare in modo organico le competenze e i processi necessari per il cloud nel tempo.
 
-Tuttavia, quando un team di adozione del cloud sfrutta il cloud per ottenere un risultato aziendale ad alto profilo, l'adozione graduale si verifica raramente. Esito positivo. Questo vale anche per l'adozione del cloud, ma si verifica a livello di cloud. Quando l'adozione del cloud si espande da un team a più team in un periodo di tempo relativamente breve, è necessario ulteriore supporto del personale IT esistente. Tuttavia, i membri del personale potrebbero non avere il training e l'esperienza necessari per supportare il cloud usando gli strumenti IT nativi del cloud. Questa guida spesso determina la formazione di un team IT centrale che controlla il cloud.
+Tuttavia, quando un team di adozione del cloud sfrutta il cloud per ottenere un risultato aziendale ad alto profilo, l'adozione graduale si verifica raramente. Esito positivo. Questo vale anche per l'adozione del cloud, ma si verifica a livello di cloud. Quando l'adozione del cloud si espande da un team a più team in modo relativamente rapido, è necessario ulteriore supporto del personale IT esistente. Tuttavia, i membri del personale potrebbero non avere il training e l'esperienza necessari per supportare il cloud usando gli strumenti IT nativi del cloud. Questa guida spesso determina la formazione di un team IT centrale che controlla il cloud.
 
 > [!CAUTION]
 > Sebbene si tratta di un passaggio di maturità comune, può presentare un elevato rischio di adozione, bloccando potenzialmente l'innovazione e le attività di migrazione se non vengono gestite in modo efficace. Vedere la sezione dei rischi riportata di seguito per informazioni su come mitigare il rischio di centralizzazione che diventa un antipattern culturale.
@@ -35,7 +35,7 @@ Le competenze necessarie per fornire funzionalità IT centralizzate potrebbero e
 - Governance IT
 - Infrastruttura IT
 - Rete
-- identità
+- Identità
 - Virtualizzazione
 - Continuità aziendale e ripristino di emergenza
 - Proprietari di applicazioni al suo interno
@@ -105,13 +105,13 @@ Questo racconto di esempio illustra l'approccio adottato da un team IT centrale 
 
 Contoso, LLC ha adottato un modello IT centrale per il supporto delle risorse cloud aziendali. Per distribuire questo modello, hanno implementato controlli rigidi per vari servizi condivisi, ad esempio connessioni di rete in ingresso. Questa saggia azione consente di ridurre l'esposizione dell'ambiente cloud e di fornire un singolo dispositivo "Break-Glass" per bloccare tutto il traffico in caso di violazione. I criteri di base di sicurezza specificano che tutto il traffico in ingresso deve passare attraverso un dispositivo condiviso gestito dal team IT centrale.
 
-Tuttavia, uno dei team di adozione del cloud ora richiede un ambiente con una connessione di rete in ingresso dedicata e appositamente configurata per sfruttare una tecnologia cloud specifica. Un team IT centrale non maturo può semplicemente rifiutare la richiesta e classificare in ordine di priorità i processi esistenti rispetto alle esigenze di adozione. Il team IT centrale di Contoso è diverso. Hanno rapidamente identificato una semplice soluzione in quattro parti per questo dilemma: Classificazione, negoziazione, isolamento e automazione.
+Tuttavia, uno dei team di adozione del cloud ora richiede un ambiente con una connessione di rete in ingresso dedicata e appositamente configurata per sfruttare una tecnologia cloud specifica. Un team IT centrale non maturo può semplicemente rifiutare la richiesta e classificare in ordine di priorità i processi esistenti rispetto alle esigenze di adozione. Il team IT centrale di Contoso è diverso. Hanno rapidamente identificato una semplice soluzione in quattro parti per questo dilemma: classificazione, negoziazione, isolamento e automazione.
 
-**Classificazione** Poiché il team di adozione del cloud era nelle prime fasi della creazione di una nuova soluzione e non aveva dati sensibili o esigenze di supporto cruciale, le risorse nell'ambiente venivano classificate come a basso rischio e non critiche. Una classificazione efficace è un segno di maturità nell'IT centrale. La classificazione di tutti gli asset e gli ambienti consente di definire criteri più chiari.
+**Classificazione:** Poiché il team di adozione del cloud era nelle prime fasi della creazione di una nuova soluzione e non aveva dati sensibili o esigenze di supporto cruciale, le risorse nell'ambiente venivano classificate come a basso rischio e non critiche. Una classificazione efficace è un segno di maturità nell'IT centrale. La classificazione di tutti gli asset e gli ambienti consente di definire criteri più chiari.
 
-**Negoziazione** Solo la classificazione non è sufficiente. I servizi condivisi sono stati implementati per operare in modo coerente con asset sensibili e cruciali. La modifica delle regole comprometterebbe i criteri di governance e conformità progettati per gli asset che necessitano di una maggiore protezione. Il potenziamento dell'adozione non può avvenire a scapito della stabilità, della sicurezza o della governance. Ciò ha portato a una negoziazione con il team di adozione per rispondere a domande specifiche. Un team di DevOps guidato dall'azienda può fornire la gestione delle operazioni per questo ambiente? Questa soluzione richiede l'accesso diretto ad altre risorse interne? Se il team di adozione del cloud ha dimestichezza con questi compromessi, il traffico in ingresso potrebbe essere possibile.
+**Negoziazione:** Solo la classificazione non è sufficiente. I servizi condivisi sono stati implementati per operare in modo coerente con asset sensibili e cruciali. La modifica delle regole comprometterebbe i criteri di governance e conformità progettati per gli asset che necessitano di una maggiore protezione. Il potenziamento dell'adozione non può avvenire a scapito della stabilità, della sicurezza o della governance. Ciò ha portato a una negoziazione con il team di adozione per rispondere a domande specifiche. Un team di DevOps guidato dall'azienda può fornire la gestione delle operazioni per questo ambiente? Questa soluzione richiede l'accesso diretto ad altre risorse interne? Se il team di adozione del cloud ha dimestichezza con questi compromessi, il traffico in ingresso potrebbe essere possibile.
 
-**Isolamento** Poiché l'azienda può fornire la propria gestione operativa in corso e poiché la soluzione non si basa sul traffico diretto ad altre risorse interne, può essere isolata in una nuova sottoscrizione. Tale sottoscrizione viene inoltre aggiunta a un nodo separato della nuova gerarchia del gruppo di gestione.
+**Isolamento:** Poiché l'azienda può fornire la propria gestione operativa in corso e poiché la soluzione non si basa sul traffico diretto ad altre risorse interne, può essere isolata in una nuova sottoscrizione. Tale sottoscrizione viene inoltre aggiunta a un nodo separato della nuova gerarchia del gruppo di gestione.
 
 **Automazione:** Un altro segno di maturità in questo team è costituito dai principi di automazione. Il team USA criteri di Azure per automatizzare l'applicazione dei criteri. Usano anche i progetti di Azure per automatizzare la distribuzione di componenti della piattaforma comuni e applicare la conformità alla baseline di identità definita. Per questa sottoscrizione e per gli altri utenti del nuovo gruppo di gestione, i criteri e i modelli sono leggermente diversi. I criteri che bloccano la larghezza di banda in ingresso sono stati rimossi. Sono stati sostituiti dai requisiti per instradare il traffico attraverso la sottoscrizione ai servizi condivisi, ad esempio il traffico in ingresso, per applicare l'isolamento del traffico. Poiché gli strumenti di gestione delle operazioni locali non possono accedere a questa sottoscrizione, gli agenti per tale strumento non sono più necessari. Tutti gli altri Guardrails di governance richiesti da altre sottoscrizioni nella gerarchia del gruppo di gestione vengono ancora applicati, garantendo un numero sufficiente di Guardrails.
 

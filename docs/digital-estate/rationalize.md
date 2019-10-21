@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023426"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547812"
 ---
 # <a name="rationalize-the-digital-estate"></a>Razionalizzare il digital estate
 
@@ -24,15 +24,15 @@ La razionalizzazione del cloud è il processo di valutazione delle risorse per d
 
 È facile comprendere la razionalizzazione quando si Visualizza il processo tradizionale di razionalizzazione come un albero delle decisioni complesso. Ogni asset nell'area digitale è alimentato da un processo che restituisce una delle cinque risposte (le cinque RS). Per piccoli estate, questo processo funziona bene. Per le aziende di grandi dimensioni, non è efficiente e può causare ritardi significativi. Cerchiamo di capirne il motivo esaminando il processo. In seguito presenteremo un modello più efficiente.
 
-**Inventario** Per completare una razionalizzazione completa con i modelli tradizionali, è necessario un inventario completo delle risorse, tra cui applicazioni, software, hardware, sistemi operativi e metriche delle prestazioni di sistema.
+**Inventario:** Per completare una razionalizzazione completa con i modelli tradizionali, è necessario un inventario completo delle risorse, tra cui applicazioni, software, hardware, sistemi operativi e metriche delle prestazioni di sistema.
 
-**Analisi quantitativa:** Nella struttura decisionale, le domande quantitative consentono di trovare le risposte per il primo livello di decisioni. Di seguito sono riportate alcune domande comuni: La risorsa è al momento utilizzata? In questo caso, è ottimizzata e valutata in modo corretto? Quali dipendenze esistono tra le risorse? Queste domande sono fondamentali per la classificazione dell'inventario.
+**Analisi quantitativa:** Nell'albero delle decisioni le domande quantitative determinano il primo livello di decisione. Di seguito sono riportate alcune domande comuni: l'asset attualmente in uso? In questo caso, è ottimizzata e valutata in modo corretto? Quali dipendenze esistono tra le risorse? Queste domande sono fondamentali per la classificazione dell'inventario.
 
 **Analisi qualitativa:** Il set di decisioni successivo richiede l'intelligenza umana sotto forma di analisi qualitativa. Spesso le domande che si trovano qui sono univoche per la soluzione e possono essere fornite solo da stakeholder aziendali e utenti esperti. Queste decisioni ritardano in genere il processo, rallentando considerevolmente le attività. Questa analisi USA in genere da 40 a 80 ETP ore per applicazione.
 
 Per indicazioni sulla creazione di un elenco di domande relative all'analisi qualitativa, vedere [approcci alla pianificazione delle proprietà digitali](./approach.md).
 
-**Decisione di razionalizzazione:** Nelle mani di un team di razionalizzazione esperto, i dati quantitativi e qualitativi consentono di prendere decisioni chiare. Sfortunatamente, i team con un elevato livello di esperienza sulla razionalizzazione sono costosi e il training richiede mesi.
+**Decisione di razionalizzazione:** Nelle mani di un team di razionalizzazione esperto, i dati qualitativi e quantitativi creano decisioni chiare. Sfortunatamente, i team con un elevato livello di esperienza sulla razionalizzazione sono costosi e il training richiede mesi.
 
 ## <a name="rationalization-at-enterprise-scale"></a>Razionalizzazione su scala aziendale
 
@@ -48,7 +48,7 @@ Nella parte restante di questo articolo viene descritto un approccio alternativo
 
 La razionalizzazione completa di un grande patrimonio digitale è soggetta a rischi e può subire ritardi a causa della complessità. Il presupposto alla base dell'approccio incrementale è che le decisioni ritardate sfalsano il carico dell'azienda per ridurre il rischio di blocchi stradali. Nel corso del tempo, questo approccio crea un modello organico per lo sviluppo di processi ed esperienze necessari per prendere decisioni di razionalizzazione qualificate in modo più efficiente.
 
-### <a name="inventory-reduce-discovery-data-points"></a>Inventario: consente di ridurre i punti dati di individuazione
+### <a name="inventory-reduce-discovery-data-points"></a>Inventario: ridurre i punti dati di individuazione
 
 Poche organizzazioni investono il tempo, l'energia e le spese per mantenere un inventario accurato e in tempo reale dell'intera proprietà digitale. Perdita, furto, cicli di aggiornamento e assunzione di personale spesso giustificano la verifica delle risorse dei dispositivi degli utenti finali. Tuttavia, il ROI della gestione di un inventario accurato di server e applicazioni in un Data Center locale tradizionale è spesso basso. La maggior parte delle organizzazioni IT ha problemi più pressanti da risolvere rispetto alla verifica dell’uso delle risorse fisse di un data center.
 
@@ -58,15 +58,15 @@ L'analisi basata sugli agenti è la causa di ritardo più citata. I dati affidab
 
 In un processo di razionalizzazione incrementale, è possibile utilizzare una soluzione senza agente per un’individuazione preliminare, in modo da accelerare le prime decisioni. A seconda del livello di complessità dell'ambiente, potrebbe essere ancora necessaria una soluzione basata su agenti. Tuttavia, può essere rimosso dal percorso critico alla modifica aziendale.
 
-### <a name="quantitative-analysis-streamline-decisions"></a>Analisi quantitativa: Decisioni più semplici
+### <a name="quantitative-analysis-streamline-decisions"></a>Analisi quantitativa: semplificare le decisioni
 
 Indipendentemente dall'approccio all'individuazione dell'inventario, l'analisi quantitativa può condurre a decisioni e presupposti iniziali. Ciò vale soprattutto quando si tenta di identificare il primo carico di lavoro o quando l'obiettivo della razionalizzazione è un confronto dei costi di alto livello. In un processo di razionalizzazione incrementale, il team di strategia cloud e i team di adozione del cloud limitano i [cinque RS della razionalizzazione](./5-rs-of-rationalization.md) a due decisioni concise e applicano solo questi fattori quantitativi. In questo modo si semplifica l'analisi e si riduce la quantità di dati iniziali necessaria per l'unità di modifica.
 
 Se, ad esempio, un'organizzazione si trova nel mezzo di una migrazione IaaS al cloud, è possibile presupporre che la maggior parte dei carichi di lavoro verrà ritirata o riallocata.
 
-### <a name="qualitative-analysis-temporary-assumptions"></a>Analisi qualitativa: Presupposti temporanei
+### <a name="qualitative-analysis-temporary-assumptions"></a>Analisi qualitativa: presupposti temporanei
 
-Riducendo il numero di risultati potenziali, è più facile raggiungere una decisione iniziale sullo stato futuro di una risorsa. Quando si riducono le opzioni, si riduce anche il numero di domande poste dall'azienda in questa fase iniziale.
+Grazie alla riduzione del numero di potenziali risultati, è più semplice raggiungere una decisione iniziale sullo stato futuro di un asset. Quando si riducono le opzioni, si riduce anche il numero di domande poste dall'azienda in questa fase iniziale.
 
 Se, ad esempio, le opzioni sono limitate alla riallocazione o alla disattivazione, l'azienda deve rispondere a una sola domanda durante la razionalizzazione iniziale, ovvero se ritirare l'asset.
 
@@ -122,7 +122,7 @@ I team di adozione del cloud e il team di strategia cloud possono collaborare pe
 
 Parallelamente alla razionalizzazione continua, il team di adozione del cloud può iniziare a migrare il carico di lavoro ridotto per espandere l'apprendimento nelle aree principali seguenti:
 
-- Rafforzare le competenze sulla piattaforma del provider di servizi cloud.
+- Rafforzare le competenze con la piattaforma del provider di servizi cloud.
 - Definire i servizi principali (e gli standard di Azure) necessari per adattarsi alla visione a lungo termine.
 - Comprendere meglio il modo in cui potrebbe essere necessario modificare le operazioni in un secondo momento nella trasformazione.
 - Comprendere i rischi inerenti per le attività e la tolleranza per tali rischi.

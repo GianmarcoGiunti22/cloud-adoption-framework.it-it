@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967747"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548953"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Tenere traccia dei costi tra business unit, ambienti o progetti
 
@@ -27,7 +27,7 @@ Il controllo dei costi, in modo molto simile alla governance e ad altri costrutt
 
 Gli asset (noti anche come risorse) includono tutte le macchine virtuali, le origini dati e le applicazioni distribuite nel cloud. Azure offre diversi meccanismi per la classificazione e l'organizzazione degli asset. L'articolo [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md) descrive in dettaglio le opzioni per organizzare le risorse in base a più criteri, stabilendo così un ambiente gestito correttamente. Questo articolo illustra l'applicazione di concetti fondamentali di Azure per fornire visibilità sui costi del cloud.
 
-### <a name="classification"></a>classificazione
+### <a name="classification"></a>Classificazione
 
 *L'assegnazione di tag* è un modo semplice per classificare gli asset. L'assegnazione di tag associa metadati a un asset. Tali metadati possono essere usati per classificare l'asset in base a vari punti dati. Quando i tag vengono usati per classificare gli asset nel quadro di operazioni di gestione dei costi, le aziende spesso necessitano dei tag seguenti: business unit, reparto, codice di fatturazione, geografia, ambiente, progetto e carico di lavoro o "categorizzazione dell'applicazione". Gestione costi di Azure può usare questi tag per creare visualizzazioni diverse dei dati sui costi.
 
@@ -83,7 +83,7 @@ Gestione costi di Azure supporta i seguenti ruoli predefiniti per ogni ambito:
 
 Come procedura consigliata generale, ai membri di tutti i team deve essere assegnato il ruolo di Collaboratore di Gestione costi. Questo ruolo concede l'accesso per creare e gestire i budget e le esportazioni, in modo da monitorare i costi e creare report in modo più efficace. Tuttavia, i membri del [team di strategia cloud](../../organize/cloud-strategy.md) devono essere impostati solo come Lettore per Gestione costi. Questo perché non sono interessati a impostare i budget nell'ambito dello strumento di Gestione costi di Azure.
 
-### <a name="scope"></a>`Scope`
+### <a name="scope"></a>Scope
 
 Le impostazioni seguenti relative all'ambito e ai ruoli permettono di creare la visibilità necessaria per la gestione dei costi. Questa procedura consigliata potrebbe richiedere modifiche minime per allinearsi alle decisioni dell'organizzazione in merito agli asset.
 
@@ -115,7 +115,7 @@ Gestione costi di Azure è uno strumento ben documentato per impostare i budget 
 
 ### <a name="get-started-with-azure-cost-management"></a>Introduzione a Gestione costi di Azure
 
-Per altre informazioni sull'introduzione a Gestione costi di Azure, vedere [Come ottimizzare gli investimenti per il cloud con Gestione costi di Azure](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json).
+Per altre informazioni sull'introduzione a Gestione costi di Azure, vedere [Come ottimizzare gli investimenti per il cloud con Gestione costi di Azure](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Usare Gestione costi di Azure
 

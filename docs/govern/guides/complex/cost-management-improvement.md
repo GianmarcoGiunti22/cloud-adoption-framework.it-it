@@ -1,7 +1,7 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Migliorare la disciplina di gestione dei costi'
+title: 'Guida alla governance per le aziende complesse: migliorare la disciplina di gestione dei costi'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guida alla governance per le aziende complesse: Migliorare la disciplina di gestione dei costi'
+description: 'Guida alla governance per le aziende complesse: migliorare la disciplina di gestione dei costi'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220174"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547698"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guida alla governance per le aziende complesse: Migliorare la disciplina di gestione dei costi
+# <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guida alla governance per le aziende complesse: migliorare la disciplina di gestione dei costi
 
 In questo articolo viene avanzata la descrizione aggiungendo i controlli dei costi alla governance del prodotto minimo (MVP).
 
@@ -24,7 +24,7 @@ In questo articolo viene avanzata la descrizione aggiungendo i controlli dei cos
 
 Il livello di adozione del cloud ha superato l'indicatore di tolleranza definito nell'MVP per la governance. L'aumento della spesa ora giustifica un investimento del tempo dal team di governance del cloud per monitorare e controllare i modelli di spesa.
 
-Come chiaro promotore dell'innovazione, l'IT non viene più considerato principalmente un centro di costo. Poiché l'organizzazione IT offre un maggior valore, il CIO e il CFO accettano che il tempo è giusto per spostare il ruolo che svolge nell'azienda. Tra le varie modifiche, il CFO vuole testare un approccio al cloud accounting basato su pagamenti diretti per il ramo canadese di una delle business unit. Uno dei due data center ritirati ospitava esclusivamente asset per le operazioni canadesi di tale business unit. In questo modello la filiale canadese della business unit verrà fatturata direttamente per le spese operative correlate agli Asset ospitati. Questo modello consente di concentrarsi meno sulla gestione della spesa di un altro utente e sulla creazione di un valore. Tuttavia, prima di iniziare questa transizione, è necessario implementare gli opportuni strumenti per la gestione dei costi.
+Come chiaro promotore dell'innovazione, l'IT non viene più considerato principalmente un centro di costo. Poiché l'organizzazione IT offre un maggior valore, il CIO e il CFO accettano che il tempo è giusto per spostare il ruolo che svolge nell'azienda. Tra le altre modifiche, il CFO vuole testare un approccio con pagamento diretto per la contabilità del cloud per il ramo canadese di una delle business unit. Uno dei due data center ritirati era costituito esclusivamente da Asset ospitati per le operazioni canadesi di tale business unit. In questo modello la filiale canadese della business unit verrà fatturata direttamente per le spese operative correlate agli Asset ospitati. Questo modello consente di concentrarsi meno sulla gestione della spesa di un altro utente e sulla creazione di un valore. Tuttavia, prima di iniziare questa transizione, è necessario implementare gli opportuni strumenti per la gestione dei costi.
 
 ### <a name="changes-in-the-current-state"></a>Modifiche nello stato corrente
 
@@ -42,12 +42,12 @@ Il monitoraggio dei costi e la creazione di report devono essere aggiunti alla s
 
 ## <a name="changes-in-risk"></a>Modifiche al rischio
 
-**Controllo budget:** esiste un rischio intrinseco che le capacità self-service comportino costi eccessivi e imprevisti sulla nuova piattaforma. I processi di governance per i costi di monitoraggio e i costi di migrazione in corso devono poter garantire un costante allineamento con il budget pianificato.
+**Controllo budget:** Esiste un rischio intrinseco che le funzionalità self-service provochino costi eccessivi e imprevisti sulla nuova piattaforma. I processi di governance per i costi di monitoraggio e i costi di migrazione in corso devono poter garantire un costante allineamento con il budget pianificato.
 
-Questo rischio aziendale può tradursi in alcuni rischi tecnici:
+Questo rischio aziendale può comportare alcuni rischi tecnici:
 
 - I costi effettivi possono superare quelli pianificati.
-- Le condizioni aziendali possono cambiare. In tal caso, è possibile che una funzione aziendale debba usare più servizi cloud del previsto, portando ad anomalie di spesa. Sussiste il rischio che questi costi aggiuntivi vengano considerati in eccedenza rispetto a una modifica richiesta al piano. In caso di esito positivo, l'esperimento canadese dovrebbe contribuire a correggere questo rischio.
+- Le condizioni aziendali possono cambiare. In tal caso, è possibile che una funzione di business debba utilizzare più servizi cloud del previsto, sfociando in anomalie di spesa. Sussiste il rischio che questi costi aggiuntivi vengano considerati in eccedenza rispetto a una modifica richiesta al piano. In caso di esito positivo, l'esperimento canadese dovrebbe contribuire a correggere questo rischio.
 - Si può verificare un eccessivo provisioning dei sistemi con un conseguente eccesso di spesa.
 
 ## <a name="changes-to-the-policy-statements"></a>Modifiche alle istruzioni dei criteri
@@ -57,9 +57,9 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 - Tutti i costi del cloud devono essere monitorati in base a un piano settimanale dal team di governance del cloud. I report sulle deviazioni tra i costi del cloud e il piano stabilito devono essere condivisi con i responsabili IT e l'amministrazione con frequenza mensile. Tutti i costi del cloud e gli aggiornamenti del piano devono essere controllati ogni mese con i responsabili IT e l'amministrazione.
 - Tutti i costi devono essere allocati in una funzione aziendale ai fini della rendicontazione.
 - Gli asset del cloud devono essere monitorati costantemente per eventuali opportunità di ottimizzazione.
-- Gli strumenti di Governance cloud devono limitare le opzioni delle dimensioni degli asset a un elenco approvato di configurazioni. Gli strumenti devono assicurare che tutti gli asset siano individuabili e tracciati dalla soluzione di monitoraggio dei costi.
-- Durante la pianificazione della distribuzione, tutte le risorse richieste del cloud associate all'hosting dei flussi di lavoro di produzione dovrebbero essere documentate. Questa documentazione aiuterà a perfezionare i budget e a preparare altri strumenti di automazione per impedire l'uso di opzioni più dispendiose. Durante questo processo, è consigliabile prestare attenzione alle diverse opportunità di sconto offerte dal provider di servizi cloud, ad esempio istanze riservate o riduzioni dei costi di licenza.
-- A tutti i proprietari di applicazioni è richiesta la partecipazione con training eseguito su procedure consigliate, al fine di ottimizzare i carichi di lavoro per controllare al meglio i costi del cloud.
+- Gli strumenti di governance del cloud devono limitare le opzioni relative alle dimensioni degli asset a un elenco approvato di configurazioni. Gli strumenti devono assicurare che tutti gli asset siano individuabili e tracciati dalla soluzione di monitoraggio dei costi.
+- Durante la pianificazione della distribuzione, è necessario documentare tutte le risorse cloud necessarie associate all'hosting dei carichi di lavoro di produzione. Questa documentazione aiuterà a perfezionare i budget e a preparare altri strumenti di automazione per impedire l'uso di opzioni più dispendiose. Durante questo processo, è consigliabile prestare attenzione alle diverse opportunità di sconto offerte dal provider di servizi cloud, ad esempio istanze riservate o riduzioni dei costi di licenza.
+- Tutti i proprietari di applicazioni devono partecipare a training sulle procedure consigliate al fine di ottimizzare i carichi di lavoro per un controllo più efficace dei costi del cloud.
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Miglioramento incrementale delle procedure consigliate
 
@@ -77,7 +77,7 @@ Questa sezione dell'articolo consentirà di migliorare la progettazione degli MV
 
 ## <a name="conclusion"></a>Conclusione
 
-L'aggiunta dei processi e delle modifiche precedenti all'MVP di governance consente di correggere molti dei rischi associati alla governance dei costi. Nel loro insieme offrono le caratteristiche di visibilità, rendicontazione e ottimizzazione necessarie per controllare i costi.
+L'aggiunta dei processi e delle modifiche precedenti all'MVP di governance consente di correggere molti dei rischi associati alla governance dei costi. Nel loro insieme offrono le caratteristiche di visibilità, attendibilità e ottimizzazione necessarie per controllare i costi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022605"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378375"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Elenco di controllo per la pianificazione dell'ambiente di migrazione - Convalidare l'idoneità dell'ambiente prima della migrazione
 
@@ -35,7 +35,7 @@ Che si scelga o meno di allinearsi a una strategia di governance del cloud più 
 
 Se si prevede di allineare la migrazione a una strategia di governance del cloud dall'inizio, sarà necessario applicare le [cinque discipline di governance del cloud](../../../govern/governance-disciplines.md) per fornire informazioni sulle decisioni relative a criteri, toolchain e meccanismi di alineamento dell'ambiente cloud a requisiti aziendali complessivi. Consultare le [guide di progettazione per la governance di utilità pratica](../../../govern/guides/index.md) di Cloud Adoption Framework per gli esempi di implementazione di questo modello con i servizi di Azure.
 
-Se le migrazioni iniziali non sono strettamente allineate a una strategia di governance del cloud più ampia, sarà ancora necessario gestire i problemi generali di organizzazione, accesso e pianificazione dell'infrastruttura. Consultare la [guida all'idoneità di Azure](../../../ready/azure-readiness-guide/index.md) per assistenza per queste decisioni sull'idoneità per il cloud.
+Se le migrazioni iniziali non sono strettamente allineate a una strategia di governance del cloud più ampia, sarà ancora necessario gestire i problemi generali di organizzazione, accesso e pianificazione dell'infrastruttura. Consultare la [Guida all'installazione di Azure](../../../ready/azure-setup-guide/index.md) per informazioni sulle decisioni di conformità del cloud.
 
 > [!CAUTION]
 > Si consiglia vivamente di sviluppare una strategia di governance per tutti gli aspetti che esulano dalla migrazione iniziale del carico di lavoro.
@@ -58,7 +58,7 @@ Prima di eseguire la migrazione, è necessario scegliere gli strumenti per la go
 
 I carichi di lavoro basati sul cloud richiederanno il provisioning di reti virtuali per supportare l'accesso amministrativo e degli utenti finali. In base alle decisioni relative all'organizzazione e alla governance delle risorse, è necessario scegliere una strategia per la rete e allinearla ai requisiti di sicurezza IT. Inoltre, le decisioni relative alla rete devono essere allineate a eventuali vincoli di reti ibride necessari per gestire i carichi di lavoro nel backlog di migrazione e supportare gli accessi alle risorse ospitate in locale.
 
-## <a name="identity"></a>identità
+## <a name="identity"></a>Identità
 
 I servizi di identità basati sul cloud sono un prerequisito per offrire la gestione delle identità e degli accessi (IAM) per le risorse cloud. Prima di procedere, allineare la strategia di gestione delle identità ai piani di adozione del cloud. Ad esempio, quando si esegue la migrazione di asset locali esistenti, è consigliabile supportare un approccio di identità ibride con la [sincronizzazione delle directory](../../../decision-guides/identity/index.md) per consentire un set coerente di credenziali utente negli ambienti locali e cloud durante e dopo la migrazione.
 

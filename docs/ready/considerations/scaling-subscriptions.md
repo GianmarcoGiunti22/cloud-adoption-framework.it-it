@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025152"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548784"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Ridimensionamento con più sottoscrizioni di Azure
 
@@ -45,7 +45,7 @@ Altre situazioni possono richiedere l'uso di sottoscrizioni aggiuntive. Quando s
 
 - Le sottoscrizioni nelle aree del cloud pubblico e nelle aree del cloud sovrane o governative hanno limitazioni diverse. Queste sono spesso basate su livelli diversi di classificazione dei dati tra gli ambienti.
 
-- Se si separano completamente set diversi di utenti per motivi di sicurezza o di conformità, potrebbero essere necessarie sottoscrizioni distinte. Ad esempio, è possibile che le organizzazioni governative nazionali debbano limitare l'accesso a una sottoscrizione, consentendolo ai soli cittadini.
+- Se si separano completamente set diversi di utenti per motivi di sicurezza o di conformità, potrebbero essere necessarie sottoscrizioni distinte. Ad esempio, è possibile che le organizzazioni governative nazionali debbano limitare l'accesso ai soli cittadini di una sottoscrizione.
 
 - Sottoscrizioni diverse possono avere tipi diversi di offerte, ognuno con i propri termini e vantaggi.
 
@@ -67,7 +67,7 @@ Se si dispone solo di poche sottoscrizioni, è relativamente semplice gestirle i
 
 I gruppi di gestione consentono di gestire in modo efficiente l'accesso, i criteri e la conformità per le sottoscrizioni di un'organizzazione. Ogni gruppo di gestione è un contenitore per una o più sottoscrizioni.
 
-I gruppi di gestione sono disposti in un'unica gerarchia. È possibile definire questa gerarchia nel tenant di Azure Active Directory (Azure AD) per allinearsi alla struttura e alle esigenze dell'organizzazione. Il primo livello è denominato *gruppo di gestione radice*. È possibile definire fino a sei livelli di gruppi di gestione nella gerarchia. Ogni sottoscrizione è contenuta in un solo gruppo di gestione.
+I gruppi di gestione sono disposti in un'unica gerarchia. Si definisce questa gerarchia nel tenant di Azure Active Directory (Azure AD) per allinearsi alla struttura e alle esigenze dell'organizzazione. Il primo livello è denominato *gruppo di gestione radice*. È possibile definire fino a sei livelli di gruppi di gestione nella gerarchia. Ogni sottoscrizione è contenuta in un solo gruppo di gestione.
 
 Azure offre quattro livelli relativi all'ambito di gestione: gruppi di gestione, sottoscrizioni, gruppi di risorse e risorse. Tutti gli accessi o i criteri applicati a un livello della gerarchia vengono ereditati dai livelli sottostanti. Il proprietario di una risorsa o di una sottoscrizione non può modificare un criterio ereditato. Questa limitazione contribuisce a migliorare la governance.
 
@@ -76,7 +76,7 @@ Azure offre quattro livelli relativi all'ambito di gestione: gruppi di gestione,
 
 Basandosi su questo modello di ereditarietà, è possibile disporre le sottoscrizioni nella gerarchia in modo che ogni sottoscrizione segua i criteri e i controlli di sicurezza appropriati.
 
-![I quattro livelli di ambito per organizzare le risorse di Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![I quattro livelli di ambito per organizzare le risorse di Azure](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 Qualsiasi assegnazione di accesso o criteri nel gruppo di gestione radice viene applicata a tutte le risorse all'interno della directory. Valutare attentamente gli elementi definiti in questo ambito. Includere solo le assegnazioni che è necessario avere.
 

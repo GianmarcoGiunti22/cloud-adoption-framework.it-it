@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224158"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547336"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuire un'infrastruttura di migrazione
 
@@ -29,12 +29,12 @@ Prima di eseguire la migrazione ad Azure, Contoso deve predisporre l'infrastrutt
 
 > [!div class="checklist"]
 >
-> - **Passaggio 1: Sottoscrizioni di Azure.** in che modo Contoso acquisterà Azure e interagirà con la piattaforma e i servizi di Azure?
-> - **Passaggio 2: Identità ibrida.** come gestirà e controllerà l'accesso alle risorse locali e di Azure dopo la migrazione? In che modo Contoso estenderà o migrerà la gestione delle identità al cloud?
-> - **Passaggio 3: Ripristino di emergenza e resilienza.** in che modo Contoso garantirà la resilienza delle app e dell'infrastruttura in caso di emergenze e interruzioni?
-> - **Passaggio 4: Rete.** in che modo Contoso deve progettare l'infrastruttura di rete e stabilire la connettività tra i data center locale e Azure?
-> - **Passaggio 5: Sicurezza.** In che modo proteggerà la distribuzione ibrida/Azure?
-> - **Passaggio 6: Governance.** in che modo Contoso manterrà allineata la distribuzione con i requisiti di sicurezza e di governance?
+> - **Passaggio 1: sottoscrizioni di Azure.** in che modo Contoso acquisterà Azure e interagirà con la piattaforma e i servizi di Azure?
+> - **Passaggio 2: identità ibrida.** come gestirà e controllerà l'accesso alle risorse locali e di Azure dopo la migrazione? In che modo Contoso estenderà o migrerà la gestione delle identità al cloud?
+> - **Passaggio 3: ripristino di emergenza e resilienza.** in che modo Contoso garantirà la resilienza delle app e dell'infrastruttura in caso di emergenze e interruzioni?
+> - **Passaggio 4: rete.** in che modo Contoso deve progettare l'infrastruttura di rete e stabilire la connettività tra i data center locale e Azure?
+> - **Passaggio 5: sicurezza.** In che modo proteggerà la distribuzione ibrida/Azure?
+> - **Passaggio 6: governance.** in che modo Contoso manterrà allineata la distribuzione con i requisiti di sicurezza e di governance?
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
@@ -59,7 +59,7 @@ Ecco un diagramma che illustra l'infrastruttura locale corrente di Contoso.
 - Contoso usa Active Directory per la gestione delle identità e server DNS nella rete interna.
 - I controller di dominio nel data center vengono eseguiti in macchine virtuali VMware. Il controller di dominio nelle filiali locali vengono eseguiti in server fisici.
 
-## <a name="step-1-buy-and-subscribe-to-azure"></a>Passaggio 1: Acquistare ed eseguire la sottoscrizione ad Azure
+## <a name="step-1-buy-and-subscribe-to-azure"></a>Passaggio 1: Acquistare ed eseguire la sottoscrizione a Azure
 
 Contoso deve decidere come acquistare Azure, architettare le sottoscrizioni e concedere in licenza servizi e risorse.
 
@@ -72,7 +72,7 @@ Contoso seleziona un [Contratto Enterprise (EA)](https://azure.microsoft.com/pri
 - Se per qualche motivo Contoso supera l'impegno e spende un importo superiore, Microsoft le addebiterà la differenza.
 - Eventuali costi sostenuti oltre l'impegno verranno addebitati alla stessa tariffa e alle stesse condizioni previste nel contratto con Contoso. Non sono previste penali per il superamento.
 
-### <a name="manage-subscriptions"></a>Gestisci sottoscrizioni
+### <a name="manage-subscriptions"></a>Gestire le sottoscrizioni
 
 Dopo il pagamento di Azure, Contoso deve decidere come gestire le sottoscrizioni di Azure. Poiché Contoso ha stipulato un EA, non sussistono limiti sul numero di sottoscrizioni di Azure configurabili.
 
@@ -94,15 +94,15 @@ Una volta configurate le sottoscrizioni, Contoso potrà esaminare le licenze Mic
 
 In caso di distribuzione di VM in Azure, le immagini standard includono una licenza che prevede per Contoso un addebito per minuto di software usato. Tuttavia, Contoso è cliente Microsoft da lungo tempo e ha gestito contratti EA e licenze open con Software Assurance (SA).
 
-Vantaggio Azure Hybrid offre un metodo conveniente per la migrazione di Contoso, consentendo di risparmiare sulle VM di Azure e sui carichi di lavoro SQL Server convertendo o riusando le licenze Windows Server Datacenter e Standard Edition coperte con Software Assurance. In questo modo Contoso può pagare una tariffa di calcolo di base inferiore per VM e SQL Server. [Altre informazioni](https://azure.microsoft.com/pricing/hybrid-benefit)
+Vantaggio Azure Hybrid offre un metodo conveniente per la migrazione di Contoso, consentendo di risparmiare sulle VM di Azure e sui carichi di lavoro SQL Server convertendo o riusando le licenze Windows Server Datacenter e Standard Edition coperte con Software Assurance. In questo modo Contoso può pagare una tariffa di calcolo di base inferiore per VM e SQL Server. [Altre informazioni](https://azure.microsoft.com/pricing/hybrid-benefit).
 
 #### <a name="license-mobility"></a>Mobilità delle licenze
 
-Mobilità delle licenze tramite Software Assurance fornisce ai clienti dei contratti multilicenza Microsoft come Contoso la flessibilità di distribuire le app server idonee con SA attivo in Azure. In questo modo non è necessario acquistare nuove licenze. Senza costi per la mobilità associati, le licenze esistenti possono essere facilmente distribuite in Azure. [Altre informazioni](https://azure.microsoft.com/pricing/license-mobility)
+Mobilità delle licenze tramite Software Assurance fornisce ai clienti dei contratti multilicenza Microsoft come Contoso la flessibilità di distribuire le app server idonee con SA attivo in Azure. In questo modo non è necessario acquistare nuove licenze. Senza costi per la mobilità associati, le licenze esistenti possono essere facilmente distribuite in Azure. [Altre informazioni](https://azure.microsoft.com/pricing/license-mobility).
 
 #### <a name="reserve-instances-for-predictable-workloads"></a>Riservare istanze per carichi di lavoro prevedibili
 
-I carichi di lavoro prevedibili devono essere sempre disponibili con VM in esecuzione. Ad esempio, app line-of-business come esempio un sistema ERP SAP. D'altra parte, i carichi di lavoro imprevedibili sono quelli variabili, ad esempio le macchine virtuali attive quando la domanda è elevata e quelle disattivate quando la domanda è bassa.
+I carichi di lavoro prevedibili devono essere sempre disponibili con VM in esecuzione. Ad esempio, applicazioni line-of-business come un sistema ERP SAP. D'altra parte, i carichi di lavoro imprevedibili sono quelli variabili, ad esempio le macchine virtuali attive quando la domanda è elevata e quelle disattivate quando la domanda è bassa.
 
 ![Istanza riservata](./media/contoso-migration-infrastructure/reserved-instance.png)
 
@@ -204,7 +204,7 @@ Per agevolare l'integrazione, Contoso usa lo [strumento Azure AD Connect](https:
 
 1. Nel portale di Azure, gli amministratori Contoso passano ad **Azure Active Directory** > **Azure AD Connect** e scarica la versione più recente dello strumento nel server usato per la sincronizzazione.
 
-    ![Scarica Azure AD Connect](./media/contoso-migration-infrastructure/download-ad-connect.png)
+    ![Scaricare Azure AD Connect](./media/contoso-migration-infrastructure/download-ad-connect.png)
 
 2. Avvia il file di installazione **AzureADConnect.msi** con **Usa impostazioni rapide**. Si tratta dell'installazione più comune, che può essere usata per una topologia a foresta singola con sincronizzazione dell'hash delle password per l'autenticazione.
 
@@ -245,7 +245,7 @@ Gli amministratori Contoso ora assegnano ruoli ai gruppi di Active Directory sin
 
     ![Membri di Active Directory locale in Azure](./media/contoso-migration-infrastructure/on-prem-ad-groups.png)
 
-## <a name="step-3-design-for-resiliency"></a>Passaggio 3: Progettare per la resilienza
+## <a name="step-3-design-for-resiliency"></a>Passaggio 3: progettare per la resilienza
 
 ### <a name="set-up-regions"></a>Configurare le regioni
 
@@ -276,7 +276,7 @@ I set di disponibilità consentono di proteggere le app e i dati da un'interruzi
 - I domini di errore rappresentano l'hardware sottostante con una fonte di alimentazione e uno switch di rete comuni all'interno del data center. Le macchine virtuali in un set di disponibilità vengono distribuite in diversi domini di errore per ridurre al minimo le interruzioni dovute a un singolo errore hardware o di rete.
 - Un dominio di aggiornamento rappresenta un hardware sottostante che può essere sottoposto a manutenzione oppure riavviato nello stesso momento. I set di disponibilità distribuiscono anche le macchine virtuali in più domini di aggiornamento per garantire che almeno un'istanza sia in esecuzione in qualsiasi momento.
 
-Contoso implementa i set di disponibilità ogni volta che i carichi di lavoro della macchina virtuale richiedono una disponibilità elevata. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability)
+Contoso implementa i set di disponibilità ogni volta che i carichi di lavoro della macchina virtuale richiedono una disponibilità elevata. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability).
 
 **Zone di disponibilità:**
 
@@ -287,7 +287,7 @@ Le zone di disponibilità consentono di proteggere le app e i dati dagli errori 
 - Sono presenti almeno tre zone separate in tutte le aree abilitate.
 - La separazione fisica delle zone all'interno di un'area consente di proteggere le applicazioni e i dati da eventuali guasti del data center.
 
-Contoso implementerà zone di disponibilità dal momento che le app richiedono scalabilità, alta disponibilità e resilienza. [Altre informazioni](https://docs.microsoft.com/azure/availability-zones/az-overview)
+Contoso implementerà zone di disponibilità dal momento che le app richiedono scalabilità, alta disponibilità e resilienza. [Altre informazioni](https://docs.microsoft.com/azure/availability-zones/az-overview).
 
 ### <a name="set-up-backup"></a>Configurare il backup
 
@@ -301,7 +301,7 @@ Backup di Azure consente di eseguire il backup e il ripristino dei dischi delle 
 - In caso di interruzione a livello di area, Backup di Azure supporta anche l'archiviazione con ridondanza geografica, replicando i dati di backup in un'area associata secondaria.
 - Backup di Azure crittografa i dati in transito usando AES 256. I dati di backup inattivi sono crittografati usando la [crittografia del servizio di archiviazione.](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)
 
-Contoso userà Azure Backup con archiviazione con ridondanza geografica in tutte le macchine virtuali di produzione per garantire il backup dei dati del carico di lavoro e che i dati possono essere ripristinati rapidamente in caso di interruzione o di altre interruzioni. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+Contoso userà Azure Backup con archiviazione con ridondanza geografica in tutte le macchine virtuali di produzione per garantire il backup dei dati del carico di lavoro e che i dati possono essere ripristinati rapidamente in caso di interruzione o di altre interruzioni. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 
 ### <a name="set-up-disaster-recovery"></a>Configurare il ripristino di emergenza
 
@@ -313,7 +313,7 @@ Azure Site Recovery aiuta a garantire la continuità aziendale, mantenendo caric
 - In caso di interruzione nell'area primaria, l'applicazione o il servizio esegue il failover all'uso delle istanze di macchine virtuali replicate nell'area secondaria, riducendo al minimo le potenziali interruzioni.
 - Quando le operazioni tornano alla normalità, le applicazioni o i servizi possono eseguire il failback sulle macchine virtuali nell'area primaria.
 
-Contoso implementerà Azure Site Recovery per tutte le macchine virtuali di produzione usate nei carichi di lavoro cruciali, assicurando un'interruzione minima durante un'interruzione nell'area primaria. [Altre informazioni](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+Contoso implementerà Azure Site Recovery per tutte le macchine virtuali di produzione usate nei carichi di lavoro cruciali, assicurando un'interruzione minima durante un'interruzione nell'area primaria. [Ulteriori informazioni](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 
 ## <a name="step-4-design-a-network-infrastructure"></a>Passaggio 4: Progettare un'infrastruttura di rete
 
@@ -410,8 +410,8 @@ Con una topologia di rete e routing, Contoso è pronta a configurare le reti e l
 
 Quella degli Stati Uniti orientali 2 è l'area primaria che Contoso userà per distribuire risorse e servizi. Ecco in che modo Contoso intende architettare le reti al suo interno:
 
-- **Hub**: la rete virtuale dell'hub negli Stati Uniti orientali 2 è il punto di connettività primaria centrale al data center locale.
-- **Reti virtuali:** le reti virtuali spoke negli Stati Uniti orientali 2 possono essere usate per isolare i carichi di lavoro, se necessario. Oltre alla rete virtuale dell'hub, Contoso avrà due reti virtuali spoke negli Stati Uniti orientali 2:
+- **Hub:** L'hub VNet in Stati Uniti orientali 2 è il punto centrale della connettività primaria al Data Center locale.
+- **Reti virtuali:** Per isolare i carichi di lavoro, se necessario, è possibile usare spoke reti virtuali nell'area Stati Uniti orientali 2. Oltre alla rete virtuale dell'hub, Contoso avrà due reti virtuali spoke negli Stati Uniti orientali 2:
   - **VNET-DEV-EUS2**. Questa rete virtuale offre al team di sviluppo e test una rete completamente funzionale per i progetti di sviluppo. Verrà usata come area pilota di produzione e si baserà sull'infrastruttura di produzione.
     - **VNET-PROD-EUS2**. i componenti di produzione Azure IaaS si troveranno in questa rete.
   - Ogni rete virtuale avrà un proprio spazio di indirizzi univoco, senza sovrapposizioni. Contoso intende configurare il routing senza NAT.
@@ -467,12 +467,12 @@ I componenti Azure IaaS si trovano nella rete di produzione. Ogni livello dell'a
 
 Quella degli Stati Uniti centrali è l'area secondaria di Contoso. Ecco in che modo Contoso intende architettare le reti al suo interno:
 
-- **Hub**: la rete virtuale dell'hub negli Stati Uniti orientali 2 è il punto di connettività centrale al data center locale e le reti virtuali spoke negli Stati Uniti orientali 2 possono essere usate per isolare i carichi di lavoro se necessario, con gestione separata rispetto alle altre reti spoke.
+- **Hub:** L'hub VNet in Stati Uniti orientali 2 è il punto centrale di connettività al Data Center locale e il reti virtuali spoke nell'area Stati Uniti orientali 2 può essere usato per isolare i carichi di lavoro, se necessario, gestiti separatamente dagli altri spoke.
 - **Reti virtuali:** Contoso avrà due reti virtuali negli Stati Uniti centrali:
   - VNET-PROD-CUS. Questa rete virtuale è una rete di produzione, simile a VNET-PROD_EUS2.
   - VNET-ASR-CUS. Questa rete virtuale verrà usata come posizione in cui creare le VM dopo il failover da locale o come posizione per le VM di Azure di cui è stato effettuato il failover dall'area primaria all'area secondaria. Questa rete è simile alle reti di produzione, ma è sprovvista di controller di dominio.
   - Ogni rete virtuale nell'area avrà un proprio spazio di indirizzi, senza sovrapposizioni. Contoso configurerà il routing senza NAT.
-- **Subnet:** le subnet verranno architettate in modo analogo a quelle negli Stati Uniti orientali 2, ad eccezione del fatto che per Contoso non sarà necessaria una subnet per i controller di dominio.
+- **Subnet:** Le subnet verranno progettate in modo analogo a quelle negli Stati Uniti orientali 2. ad eccezione del fatto che per Contoso non sarà necessaria una subnet per i controller di dominio.
 
 Le reti virtuali negli Stati Uniti centrali sono riepilogate nella tabella seguente.
 
@@ -567,7 +567,7 @@ Gli amministratori Contoso hanno deciso che il servizio DNS di Azure non è una 
 
 Oltre ai controller di dominio locali, Contoso intende implementarne altri quattro per supportare le reti di Azure, due per ogni area. Ecco cosa distribuirà Contoso in Azure.
 
-**Region** | **Controller di dominio** | **Rete virtuale** | **Subnet** | **Indirizzo IP**
+**Area** | **Controller di dominio** | **Rete virtuale** | **Subnet** | **Indirizzo IP**
 --- | --- | --- | --- | ---
 EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4
 EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5
@@ -584,7 +584,7 @@ Dopo aver aggiornato le impostazioni di rete, gli amministratori Contoso sono pr
 2. Crea set di disponibilità in ogni posizione per la VM. I set di disponibilità:
 
     - Fanno in modo che l'infrastruttura di Azure separi le VM in infrastrutture distinte nell'area di Azure.
-    - Garantiscono a Contoso l'idoneità del contratto di servizio al 99,95% per le VM in Azure. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)
+    - Garantiscono a Contoso l'idoneità del contratto di servizio al 99,95% per le VM in Azure. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets).
 
     ![Gruppo di disponibilità](./media/contoso-migration-infrastructure/availability-group.png)
 
@@ -615,7 +615,7 @@ Dopo aver aggiornato le impostazioni di rete, gli amministratori Contoso sono pr
 
 9. A questo punto, l'azienda aggiorna le impostazioni DNS personalizzate per ogni rete virtuale con il controller di dominio appropriato per l'area della rete virtuale. Nell'elenco include i controller di dominio locali.
 
-### <a name="set-up-active-directory"></a>Configurazione Active Directory
+### <a name="set-up-active-directory"></a>Configurare Active Directory
 
 Active Directory è un servizio fondamentale nella rete e deve essere configurato correttamente. Gli amministratori Contoso creeranno altri siti Active Directory per il data center di Contoso e per le aree EUS2 e CUS.
 
@@ -642,9 +642,9 @@ Azure offre una gamma di controlli di governance nei servizi e nella piattaforma
 
 Nel momento in cui configura il controllo delle identità e degli accessi, Contoso ha già iniziato a implementare alcuni aspetti di governance e sicurezza. Su vasta scala, sono tre le aree che deve prendere in considerazione:
 
-- **Criteri:** i Criteri in Azure applicano regole ed effetti alle risorse, in modo che queste siano sempre conformi ai requisiti e ai contratti di servizio aziendali.
-- **Blocchi:** Azure consente di bloccare sottoscrizioni, gruppi di risorse e risorse di altro tipo, in modo che possano essere modificati solo dagli utenti autorizzati.
-- **Tag:** le risorse possono essere controllate e gestite usando i tag. I tag collegano i metadati alle risorse, fornendo informazioni sulle risorse o sui proprietari.
+- **Criterio:** Criteri di Azure applica e impone regole ed effetti sulle risorse, in modo che le risorse restino conformi ai requisiti aziendali e ai contratti di contratto.
+- **Blocchi:** Azure consente di bloccare sottoscrizioni, gruppi di risorse e altre risorse, in modo che possano essere modificate solo da quelli con autorità.
+- **Tag:** È possibile controllare, controllare e gestire le risorse con i tag. I tag collegano i metadati alle risorse, fornendo informazioni sulle risorse o sui proprietari.
 
 ### <a name="set-up-policies"></a>Configurare i criteri
 
@@ -685,7 +685,7 @@ I criteri hanno effetto immediato e Contoso può verificare la conformità delle
 1. Nel portale di Azure l'azienda seleziona il collegamento **Conformità**.
 2. Viene visualizzato il dashboard di conformità. È possibile eseguire il drill-down per maggiori dettagli.
 
-    ![Conformità dei criteri](./media/contoso-migration-infrastructure/policy-compliance.png)
+    ![Conformità ai criteri](./media/contoso-migration-infrastructure/policy-compliance.png)
 
 ### <a name="set-up-locks"></a>Configurare i blocchi
 
@@ -708,7 +708,7 @@ Contoso deve visualizzare le risorse di Azure in modo significativo per l'aziend
 
 **Nome del tag** | **Valore**
 --- | ---
-Centro di costo | 12345: deve essere un centro di costo valido di SAP.
+CostCenter | 12345: deve essere un centro di costo valido di SAP.
 BusinessUnit | Nome della business unit (di SAP). Corrisponde a CostCenter.
 ApplicationTeam | Alias di posta elettronica del team responsabile del supporto dell'app.
 CatalogName | Nome dell'app o ShareServices, in base al catalogo di servizi supportato dalla risorsa.
@@ -716,7 +716,7 @@ ServiceManager | Alias di posta elettronica dell'ITIL Service Manager per la ris
 COBPriority | Priorità impostata dall'azienda per BCDR. Valori da 1 a 5.
 ENV | I valori possibili sono DEV, STG, PROD, che rappresentano sviluppo, gestione temporanea e produzione.
 
-Esempio:
+ad esempio:
 
  ![Tag di Azure](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -728,9 +728,9 @@ La sicurezza è fondamentale nel cloud e Azure offre un'ampia gamma di funzional
 
 Contoso deve prendere in considerazione alcuni aspetti:
 
-- **Centro sicurezza di Azure:** Il Centro sicurezza di Azure fornisce la gestione unificata della sicurezza e la protezione avanzata dalle minacce per carichi di lavoro cloud ibridi. Con il Centro sicurezza, è possibile applicare i criteri di sicurezza sui carichi di lavoro, limitare l'esposizione alle minacce, rilevare e rispondere agli attacchi. [Altre informazioni](https://docs.microsoft.com/azure/security-center/security-center-intro)
-- **Gruppi di sicurezza di rete:** un gruppo di sicurezza di rete è un filtro (firewall) contenente un elenco di regole di sicurezza che, se applicate, consentono o rifiutano il traffico di rete verso le risorse connesse alle reti virtuali di Azure. [Altre informazioni](https://docs.microsoft.com/azure/virtual-network/security-overview)
-- **Crittografia dei dati:** Crittografia dischi di Azure è una funzionalità che consente di crittografare i dischi delle macchine virtuali IaaS Windows e Linux. [Altre informazioni](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)
+- **Centro sicurezza di Azure:** Il Centro sicurezza di Azure offre la gestione unificata della sicurezza e la protezione avanzata dalle minacce nei carichi di lavoro cloud ibridi. Con il Centro sicurezza, è possibile applicare i criteri di sicurezza sui carichi di lavoro, limitare l'esposizione alle minacce, rilevare e rispondere agli attacchi. [Altre informazioni](https://docs.microsoft.com/azure/security-center/security-center-intro).
+- **Gruppi di sicurezza di rete (gruppi):** Un NSG è un filtro (firewall) che contiene un elenco di regole di sicurezza che, se applicate, consentono o negano il traffico di rete alle risorse connesse ad Azure reti virtuali. [Altre informazioni](https://docs.microsoft.com/azure/virtual-network/security-overview).
+- **Crittografia dei dati:** Crittografia dischi di Azure è una funzionalità che consente di crittografare i dischi delle macchine virtuali IaaS Windows e Linux. [Altre informazioni](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest).
 
 ### <a name="work-with-the-azure-security-center"></a>Uso del Centro sicurezza di Azure
 
@@ -750,11 +750,11 @@ Con la gestione centralizzata dei criteri Contoso garantisce la conformità ai r
 
 Contoso usa la valutazione continua della sicurezza, che monitora la sicurezza delle macchine, delle reti, delle risorse di archiviazione, dei dati e delle applicazioni per individuare potenziali problemi di sicurezza.
 
-- Il Centro sicurezza analizzerà lo stato di sicurezza delle risorse di calcolo, dati e infrastruttura di Contoso e delle app e dei servizi di Azure.
+- Il Centro sicurezza analizza lo stato di sicurezza delle risorse di calcolo, infrastruttura e dati di Contoso e di app e servizi di Azure.
 - La valutazione continua consente al team delle operazioni di Contoso di individuare potenziali problemi di sicurezza, ad esempio i sistemi con aggiornamenti della sicurezza mancanti o con porte di rete esposte.
 - In particolare Contoso intende assicurarsi che tutte le VM siano protette. Il Centro sicurezza è utile in tal senso, in quanto verifica l'integrità delle VM e offre consigli operativi e in ordine di priorità per risolvere le vulnerabilità della sicurezza prima che vengano sfruttate.
 
-![Monitoraggio](./media/contoso-migration-infrastructure/monitoring.png)
+![Monitorare](./media/contoso-migration-infrastructure/monitoring.png)
 
 ### <a name="work-with-nsgs"></a>Uso dei gruppi di sicurezza di rete
 
@@ -774,16 +774,16 @@ Contoso implementerà una combinazione di gruppi di sicurezza di rete e delle ap
 
 Contoso ha creato un modello che riflette l'aspetto di questa condizione per le sue applicazioni.
 
-![Security](./media/contoso-migration-infrastructure/asg.png)
+![Sicurezza](./media/contoso-migration-infrastructure/asg.png)
 
 I gruppi di sicurezza di rete associati ai gruppi di sicurezza delle applicazioni verranno configurati con privilegi minimi per garantire che solo i pacchetti consentiti possano essere trasmessi da una parte della rete alla destinazione.
 
-**Azione** | **Name** | **Origine** | **Destinazione** | **Porta**
+**Azione** | **Nome** | **Origine** | **Destinazione** | **Porta**
 --- | --- | --- | --- | ---
 Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Nega | DenyAllInbound | Any | Any | Any
+Deny | DenyAllInbound | Qualsiasi | Qualsiasi | Qualsiasi
 
 ### <a name="encrypt-data"></a>Crittografare i dati
 
