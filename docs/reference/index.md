@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 0e6bcc4e41855db5288b1f503a8f091fefd05500
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378898"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683740"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework per Azure
 
@@ -65,47 +65,3 @@ Per garantire il successo dell'adozione del cloud, i clienti devono preparare le
   - Gestione ed esecuzione di carichi di lavoro e asset nel cloud.
 
 Queste fasi non sono lineari e diventeranno molto probabilmente cicliche quando i clienti inizieranno a rivisitare e ampliare i piani di adozione grazie alle competenze sul cloud acquisite dai dipendenti e alla corretta gestione di app e carichi di lavoro che, in linea con i criteri aziendali, assicurerà i risultati previsti.
-
-## <a name="quarterly-roadmap"></a>Roadmap trimestrale
-
-Di seguito sono indicate le versioni specifiche per trimestre, per mostrare il livello di maturità raggiunto da ogni sezione di contenuto su base trimestrale.
-
-### <a name="q2-2019"></a>T2 2019
-
-- **Prima versione:** in questo trimestre verranno avviate le sezioni Migrazione, Preparazione e Pianificazione come prime versioni, con il rilascio di una sezione previsto ogni mese.
-- **Prima versione di test:** in questo trimestre dovrebbero essere completate le prime versioni di test delle sezioni Governance, Migrazione e Preparazione.
-- **Versione di maturità continua:** le sezioni Governance e Migrazione dovrebbero avere ognuna almeno una versione, incentrata su una definizione più approfondita dei passaggi successivi fattibili. Per la sezione Governance dovrebbero essere apportati ulteriori miglioramenti per le procedure consigliate e per un ambito più esteso.
-- **Versione fori programma:** la sezione Preparazione avrà una versione fuori programma tra la fine di aprile e maggio. Il contenuto della sezione Preparazione verrà prelevato direttamente dal playbook di idoneità per Azure per supportare la futura integrazione con il portale di Azure. Il contenuto verrà migliorato e allineato alle metodologie di Cloud Adoption Framework in anticipo rispetto alla prima versione ufficiale della sezione Preparazione alla fine di maggio.
-
-### <a name="q3-2019"></a>T3 2019
-
-- **Prima versione:** innovazione di app e dati.
-- **Prima versione di test:** innovazione del piano e delle app.
-- **Versione di maturità continua:** in questo trimestre per ognuna delle versioni Preparazione, Pianificazione, Migrazione e Governance verranno apportati miglioramenti in automazione, procedure consigliate e ambito ampliato.
-
-## <a name="looking-back-recent-releases"></a>Versioni recenti del passato
-
-**Creazione di Cloud Adoption Framework (1 ottobre 2018):** i clienti vogliono essere aiutati a definire un approccio strutturato alla trasformazione aziendale tramite il cloud.
-
-All'inizio del 2018 Microsoft ha rilasciato il Cloud Operating Model (COM). Il modello COM era una guida che aiutava i clienti a capire il _cosa_ e il _perché_ della trasformazione digitale. I clienti potevano così acquisire una maggiore consapevolezza delle iniziative da intraprendere in termini di strategia aziendale, culturale e tecnica. Quello che non includeva il modello COM erano le specifiche _procedure_. Il che lasciava aperta la domanda "Come possiamo procedere d'ora in poi?" A causa di questa lacuna, molti dei nostri team operativi hanno iniziato a sviluppare modelli e approcci di engagement personalizzati. Anche se accurate a livello orientativo, le informazioni comunicate da un team erano leggermente diverse da quelle degli altri, alimentando in definitiva la confusione dei clienti.
-
-A ottobre 2018 abbiamo avviato una revisione di tutti i modelli proliferati all'interno dell'organizzazione e abbiamo trovato 60 modelli di adozione del cloud differenti. In quel periodo è stato istituito un team interaziendale Microsoft per coordinare tutte queste informazioni. Il risultato è stata la creazione di un singolo modello, Microsoft Cloud Adoption Framework per Azure, il cui obiettivo è aiutare i clienti a capire il _cosa_ e il _perché_ e fornire linee guida unificate di Microsoft sul _come_, per accelerare il percorso verso il cloud.
-
-**Versione T1 2019 (11 febbraio 2019):** in base al feedback dei clienti, abbiamo iniziato a sviluppare la sezione Governance. I clienti hanno segnalato la necessità di questo componente per accelerare le loro iniziative di migrazione e promuovere ulteriormente l'adozione di servizi cloud. La definizione di un modello efficace di governance ispira nelle organizzazioni il senso di fiducia e protezione necessario per perseguire gli obiettivi di adozione del cloud.
-
-La prima versione ha consentito di testare la possibilità offerta da Cloud Adoption Framework di unificare un importante messaggio di Microsoft nelle conversazioni tra clienti, partner e servizi. Mettendo in pratica questo messaggio unificato, ci siamo impegnati a offrire un processo fattibile in quattro passaggi:
-
-1. Definire uno stato finale del cliente in base a una metodologia comune.
-2. Fornire una valutazione per definire lacune e aree di investimento della governance.
-3. Definire un Minimum Viable Product (MVP) per favorire la rapida iterazione dei clienti.
-4. Offrire un modo per apportare miglioramenti incrementali al prodotto MVP al fine di mitigare i rischi e soddisfare i requisiti aziendali.
-
-**Versione T2 2019 (15 aprile 2019):** gli strumenti di migrazione consentono di trasferire facilmente decine di migliaia di asset IT nel cloud. Tuttavia, il feedback dei clienti indica che queste migrazioni sono ostacolate da atteggiamenti culturali e dalla mancanza di preparazione tecnica. La versione primaverile risolve questi ostacoli definendo un approccio iterativo alla migrazione al cloud. La metodologia di base include una guida semplificata per la migrazione ad Azure con informazioni sugli strumenti e i processi di base necessari e con le sezioni su ambito ampliato e procedure consigliate per mettere in pratica queste linee guida basilari.
-
-Questa versione include inoltre ampliamenti della sezione Pianificazione di Cloud Adoption Framework, incentrati sulla pianificazione aziendale. Incorpora anche l'attuale guida alla configurazione di Azure all'interno della nuova sezione Preparazione.
-
-_Modifiche del sommario (riquadro di spostamento sinistro:_ il riquadro di spostamento sinistro è stato semplificato in base all'approccio Pianificazione, Preparazione e Adozione. La sezione introduttiva è stata riallineata per offrire all'utente un riepilogo generale dei tre percorsi supportati nella visione di Cloud Adoption Framework.
-
-## <a name="next-steps"></a>Passaggi successivi
-
-Aggiungere un segnalibro in questa pagina e tornare a visitarla ogni mese per trovare aggiornamenti della roadmap e note sulle recenti modifiche apportate alle linee guida di Cloud Adoption Framework.

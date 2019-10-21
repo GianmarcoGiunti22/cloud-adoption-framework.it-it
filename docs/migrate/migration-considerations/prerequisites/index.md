@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378403"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683785"
 ---
 # <a name="prerequisites-for-migration"></a>Prerequisiti per la migrazione
 
@@ -57,8 +57,8 @@ Un singolo membro di ogni team deve essere identificato come responsabile per og
 Oltre alle responsabilità di alto livello, esistono azioni per cui un singolo utente o un gruppo deve essere direttamente responsabile. Di seguito vengono descritte alcune di tali responsabilità con effetti su queste attività:
 
 - **Assegnazione delle priorità aziendali.** Prendere decisioni aziendali relative ai carichi di lavoro di cui eseguire la migrazione e ai vincoli di tempo generali. Per altre informazioni, vedere [Motivazioni aziendali della migrazione al cloud](../../../strategy/motivations.md).
-- **Idoneità per la gestione delle modifiche.** Definire e comunicare il piano per tenere traccia delle modifiche tecniche durante la migrazione. Altre informazioni su questo argomento saranno disponibili nel terzo trimestre del 2019.
-- **Allineamento degli utenti aziendali.** Elaborare un piano per preparare la comunità degli utenti aziendali per l'esecuzione della migrazione. Altre informazioni su questo argomento saranno disponibili nel terzo trimestre del 2019.
+- **Idoneità per la gestione delle modifiche.** Definire e comunicare il piano per tenere traccia delle modifiche tecniche durante la migrazione.
+- **Allineamento degli utenti aziendali.** Elaborare un piano per preparare la comunità degli utenti aziendali per l'esecuzione della migrazione.
 - **Inventario e analisi del digital estate.** Esecuzione degli strumenti necessari per creare un inventario e analizzare il digital estate. Per altre informazioni, vedere gli articoli di Cloud Adoption Framework dedicati al [digital estate](../../../digital-estate/index.md).
 - **Idoneità del cloud.** Valutare l'ambiente di distribuzione di destinazione per assicurarsi che sia conforme ai requisiti dei primi carichi di lavoro candidati. Vedere la [Guida alla configurazione di Azure](../../../ready/azure-setup-guide/index.md) per altre informazioni.
 
