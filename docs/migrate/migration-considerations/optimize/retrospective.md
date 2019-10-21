@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825458"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548364"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>In che modo le analisi retrospettive consentono di sviluppare una logica di crescita?
 
-La cultura aziendale ha sempre la meglio sulla strategia. Anche il più efficace piano di migrazione può essere facilmente annullato se non ha il supporto esecutivo e l'incoraggiamento da parte dei responsabili. L'apprendimento, la crescita e persino gli errori sono alla base di una logica di crescita. Sono anche il fulcro di qualsiasi impegno di trasformazione.
+La cultura aziendale ha sempre la meglio sulla strategia. Il piano di migrazione migliore può essere facilmente annullato, se non ha il supporto esecutivo e l'incoraggiamento dalla leadership. L'apprendimento, la crescita e persino gli errori sono alla base di una logica di crescita. Sono anche il fulcro di qualsiasi impegno di trasformazione.
 
 L'umiltà e la curiosità non sono mai state così importanti come lo sono in una trasformazione aziendale. L'adozione di una trasformazione digitale richiede entrambe queste qualità. Questi tratti sono rafforzati da una normale capacità di introspezione e da un ambiente incoraggiante. Quando i dipendenti sono incoraggiati a correre rischi, trovano le soluzioni migliori. Quando i dipendenti possono commettere errori e apprendere, ottengono ottimi risultati. Le analisi retrospettive rappresentano un'opportunità per questo spirito di indagine e crescita.
 
