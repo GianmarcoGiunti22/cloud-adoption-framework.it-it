@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223997"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549090"
 ---
 # <a name="cloud-governance-capabilities"></a>Funzionalità di governance del cloud
 
@@ -29,7 +29,7 @@ A seconda dei risultati aziendali desiderati, le competenze necessarie per forni
 - Operazioni IT
 - Infrastruttura IT
 - Rete
-- identità
+- Identità
 - Virtualizzazione
 - Continuità aziendale/ripristino di emergenza
 - Proprietari di applicazioni al suo interno
@@ -46,7 +46,7 @@ Queste attività vengono in genere eseguite dalla funzionalità di governance de
 
 - Comprendere i [rischi aziendali](../govern/policy-compliance/risk-tolerance.md) introdotti dal piano
 - Rappresenta la [tolleranza dell'azienda per il rischio](../govern/policy-compliance/risk-tolerance.md)
-- Supporto per la creazione di un [MVP](../govern/guides/index.md) di governance
+- Supporto per la creazione di un [MVP di governance](../govern/guides/index.md)
 
 **Attività mensili in corso:**
 
@@ -79,7 +79,7 @@ Alcune organizzazioni di grandi dimensioni hanno team dedicati esistenti che si 
 
 Gli sforzi di questi individui sono molto migliori rispetto agli scenari di "non governance" o "governance bloccata". Sebbene il loro lavoro debba essere elogiato, questo approccio non dovrebbe essere confuso con la governance. Una governance appropriata richiede più del supporto sporadico per garantire la coerenza, che rappresenta l'obiettivo di un approccio di governance valido. Le linee guida nelle [cinque discipline della governance del cloud](../govern/governance-disciplines.md) possono contribuire allo sviluppo di questa disciplina.
 
-**Custode del cloud:** Questo moniker è diventato un badge di onore per molti architetti di cloud specializzati nella governance delle fasi iniziali. Quando le procedure di governance iniziano per la prima volta, i risultati appaiono simili a quelli dei volontari di governance. Esiste tuttavia una differenza fondamentale. Un custode del cloud ha un piano in mente. In questa fase della maturità, il team dedica tempo alla pulizia dei pasticci creati dagli architetti del cloud che hanno prima di loro. Tuttavia, il custode del cloud allinea il lavoro a un [criterio aziendale](../govern/corporate-policy.md)ben strutturato. Usano anche strumenti di automazione della governance, come quelli descritti nell' [MVP](../govern/guides/complex/index.md)della governance.
+**Custode del cloud:** Questo moniker è diventato un badge di onore per molti architetti di cloud specializzati nella governance delle fasi iniziali. Quando le procedure di governance iniziano per la prima volta, i risultati appaiono simili a quelli dei volontari di governance. Esiste tuttavia una differenza fondamentale. Un custode del cloud ha un piano in mente. In questa fase della maturità, il team dedica tempo alla pulizia dei pasticci creati dagli architetti del cloud che hanno prima di loro. Tuttavia, il custode del cloud allinea il lavoro a un [criterio aziendale](../govern/corporate-policy.md)ben strutturato. Usano anche strumenti di automazione della governance, come quelli descritti nell' [MVP della governance](../govern/guides/complex/index.md).
 
 Un'altra differenza fondamentale tra un custode del cloud e un volontario di governance è il supporto per la leadership. Il volontario mette in eccedenza alcune ore rispetto alle aspettative regolari, a causa della loro missione di apprendimento e di esecuzione. Il custode del cloud ottiene supporto da parte della leadership per ridurre i compiti giornalieri per garantire che le allocazioni di tempo possano essere investite nel miglioramento della governance del cloud.
 
