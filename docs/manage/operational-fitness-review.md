@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Linee guida per i concetti fondamentali dell'operatività
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/20/2018
+ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04afedc133d001405c5042b309a45c9b41f3268e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7dca64941a07e091cc6b107d8390970d0a19a4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027782"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683720"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Stabilire una verifica dell'idoneità operativa
 
@@ -25,7 +25,7 @@ Esistono cinque categorie essenziali di requisiti non funzionali, detti [pilastr
 - Disponibilità
 - Resilienza, tra cui la continuità aziendale e il ripristino di emergenza
 - Gestione
-- Security
+- Sicurezza
 
 Un processo per la verifica dell'idoneità operativa garantisce che i carichi di lavoro cruciali soddisfino le aspettative dell'azienda rispetto ai pilastri qualitativi.
 
@@ -45,7 +45,7 @@ Durante questo processo, lo stato attivo è spesso relativo alle funzionalità d
 
 I requisiti non _funzionali_ , al contrario, si riferiscono a proprietà quali la [disponibilità](https://docs.microsoft.com/azure/architecture/checklist/availability), la [resilienza](https://docs.microsoft.com/azure/architecture/resiliency)e la [scalabilità](https://docs.microsoft.com/azure/architecture/checklist/scalability)del servizio. Queste proprietà differiscono dai requisiti funzionali perché non influiscono direttamente sulla funzione finale di una particolare funzionalità nel servizio. Tuttavia, i requisiti non funzionali sono correlati alle prestazioni e alla continuità del servizio.
 
-È possibile specificare alcuni requisiti non funzionali in termini di contratto di servizio (SLA). Per la continuità del servizio, ad esempio, un requisito di disponibilità per il servizio può essere espresso come percentuale: "Disponibile il 99,99% del tempo". Altri requisiti non funzionali potrebbero risultare più difficili da definire e possono cambiare in base alle esigenze di produzione. Un servizio orientato ai consumatori, ad esempio, potrebbe affrontare i requisiti di velocità effettiva inaspettati dopo un picco di popolarità.
+È possibile specificare alcuni requisiti non funzionali in termini di contratto di servizio (SLA). Per la continuità del servizio, ad esempio, un requisito di disponibilità per il servizio può essere espresso come percentuale: "disponibile 99,99% del tempo". Altri requisiti non funzionali potrebbero risultare più difficili da definire e possono cambiare in base alle esigenze di produzione. Un servizio orientato ai consumatori, ad esempio, potrebbe affrontare i requisiti di velocità effettiva inaspettati dopo un picco di popolarità.
 
 > [!NOTE]
 > I requisiti per la resilienza vengono esaminati in modo più approfondito nella [progettazione di applicazioni Azure affidabili](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). In questo articolo sono incluse spiegazioni di concetti quali il punto di ripristino (RPO), l'obiettivo del tempo di ripristino (RTO), il contratto di servizio e altri.
@@ -94,11 +94,11 @@ Questo processo è iterativo e idealmente l'azienda dispone di un team dedicato.
 
 Il team responsabile della revisione dell'idoneità operativa è costituito dai ruoli seguenti:
 
-- **Proprietario dell'azienda**: Fornisce informazioni sull'azienda per identificare e classificare in ordine di priorità ogni operazione aziendale cruciale. Questo ruolo, inoltre, è in grado di soppesare il costo delle correzioni in relazione all'impatto aziendale e guida la decisione finale in merito agli interventi correttivi.
+- **Proprietario dell'azienda**: fornisce informazioni sull'azienda per identificare e classificare in ordine di priorità ogni operazione aziendale cruciale. Questo ruolo, inoltre, è in grado di soppesare il costo delle correzioni in relazione all'impatto aziendale e guida la decisione finale in merito agli interventi correttivi.
 
-- **Business Advocate**: Suddivide le operazioni aziendali in parti discrete ed esegue il mapping di tali parti ai servizi e all'infrastruttura, sia in locale che nel cloud. Il ruolo richiede una profonda conoscenza della tecnologia associata a ogni operazione aziendale.
+- **Business Advocate**: suddivide le operazioni aziendali in parti discrete ed esegue il mapping di tali parti ai servizi e all'infrastruttura, sia in locale che nel cloud. Il ruolo richiede una profonda conoscenza della tecnologia associata a ogni operazione aziendale.
 
-- **Proprietario della progettazione**: Implementa i servizi associati all'operazione di business. Questi utenti possono partecipare alla progettazione, all'implementazione e alla distribuzione di qualsiasi soluzione per problemi di requisiti non funzionali che vengono scoperti dal team di revisione.
+- **Proprietario della progettazione**: implementa i servizi associati all'operazione di business. Questi utenti possono partecipare alla progettazione, all'implementazione e alla distribuzione di qualsiasi soluzione per problemi di requisiti non funzionali che vengono scoperti dal team di revisione.
 
 - **Responsabile dei servizi**. Gestisce le applicazioni e i servizi aziendali. Queste persone raccolgono dati di registrazione e utilizzo per questi servizi e applicazioni. Questi dati vengono utilizzati sia per identificare i problemi che per verificare le correzioni dopo la loro distribuzione.
 

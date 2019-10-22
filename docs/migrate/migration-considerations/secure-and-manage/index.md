@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022579"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683770"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Strumenti di monitoraggio e gestione sicuri
 
@@ -41,6 +41,16 @@ Affidarsi al Centro sicurezza di Azure per una gestione unificata del monitoragg
 
 Altre informazioni sul [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center) per la protezione degli asset migrati.
 
+## <a name="service-health-monitoring"></a>Monitoraggio dell'integrità dei servizi
+
+Integrità dei servizi di Azure fornisce indicazioni e avvisi personalizzati in caso di problemi dei servizi di Azure che influiscono sull'organizzazione. Può inviare notifiche, aiutare a comprendere l'impatto dei problemi e fornire informazioni aggiornate durante la risoluzione. Può anche semplificare la preparazione per la manutenzione pianificata e per le modifiche che potrebbero influire sulla disponibilità delle risorse.
+
+- **Dashboard di integrità dei servizi.** Controllare l'integrità generale di servizi e aree di Azure, con aggiornamenti dettagliati su eventuali problemi correnti, interventi imminenti di manutenzione pianificata e transizioni dei servizi.
+- **Avvisi sull'integrità dei servizi.** Configurare avvisi per ricevere notifiche in caso di problemi di un servizio come un'interruzione o un intervento imminente di manutenzione pianificata.
+- **Cronologia dell'integrità dei servizi.** Rivedere i problemi passati dei servizi e scaricare i riepiloghi e i report ufficiali di Microsoft.
+
+Leggere altre informazioni su [Integrità dei servizi di Azure](https://docs.microsoft.com/azure/service-health) per rimanere informati sull'integrità delle risorse trasferite.
+
 ## <a name="protect-assets-and-data"></a>Proteggere gli asset e i dati
 
 Backup di Azure offre una soluzione per proteggere le macchine virtuali, i file e dati. Backup di Azure può essere utile con molte funzioni, tra cui:
@@ -51,3 +61,13 @@ Backup di Azure offre una soluzione per proteggere le macchine virtuali, i file 
 - Recupero degli asset protetti.
 
 Vedere ulteriori informazioni su [Backup di Azure](https://docs.microsoft.com/azure/backup) per la protezione degli asset migrati.
+
+## <a name="optimize-resources"></a>Ottimizzare le risorse
+
+Azure Advisor è la guida personalizzata per le procedure consigliate di Azure. Analizza i dati di telemetria relativi a configurazioni e utilizzo e offre raccomandazioni per aiutare a ottimizzare le risorse di Azure in termini di disponibilità elevata, sicurezza, prestazioni e costi. Le azioni inline di Advisor consentono di correggere gli errori segnalati dalle raccomandazioni in modo semplice e immediato e di ottimizzare le distribuzioni.
+
+- **Procedure consigliate per Azure.** Ottimizzare le risorse trasferite per la disponibilità elevata, la sicurezza, le prestazioni e i costi.
+- **Guida dettagliata.** Correggere in modo efficiente gli errori segnalati dalle raccomandazioni con collegamenti rapidi guidati.
+- **Avvisi per nuove raccomandazioni.** Rimanere informati sulle nuove raccomandazioni, ad esempio altre opportunità di dimensionare correttamente le VM per risparmiare sui costi.
+
+Leggere altre informazioni su [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) per l'ottimizzazione delle risorse dopo la migrazione.
