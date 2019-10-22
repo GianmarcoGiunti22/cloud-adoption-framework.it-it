@@ -4,22 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduzione all'innovazione nel cloud-coinvolgere le applicazioni
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5dcfbc34c31346b4efada049fc46effac149cd68
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3db2349e3c1da7c80f3089ea187a3de72d006d1f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557258"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683313"
 ---
 # <a name="engage-through-applications"></a>Coinvolgi le applicazioni
 
 Come illustrato nell'articolo sulla [democratizzazione dei dati](./data.md), i dati sono il nuovo petrolio. Alimenta la maggior parte delle innovazioni nell'economia digitale. Basandosi su tale analogia, le applicazioni sono la stazione di carburante e l'infrastruttura necessarie per ottenere tale carburante nelle mani giuste.
 
 In alcuni casi, i dati sono sufficienti per apportare modifiche e soddisfare le esigenze dei clienti. Più comunemente, la soluzione per le esigenze dei clienti richiede che le applicazioni formino i dati e creino un'esperienza. Le applicazioni sono la modalità di coinvolgimento dell'utente. Sono la casa per i processi necessari per rispondere ai trigger dei clienti. Si tratta dei clienti che consentono di fornire dati e ricevere indicazioni. In questo articolo verranno illustrati alcuni principi che aiuteranno ad allineare la soluzione dell'applicazione corretta, in base alle ipotesi da convalidare.
+
+![Interagisci tramite app](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Codice condiviso
 
@@ -36,11 +38,27 @@ Gli sviluppatori di cittadini possono avere un approccio oculato quando è possi
 > [!NOTE]
 > Quando si sfruttano gli sviluppatori di cittadini per testare le ipotesi, è consigliabile che gli sviluppatori professionisti forniscano supporto, revisione e istruzioni. Una volta convalidata un'ipotesi su larga scala, un processo di transizione dell'applicazione in un modello di programmazione più affidabile accelererà le restituzioni sull'innovazione. Il coinvolgimento degli sviluppatori professionisti nelle definizioni iniziali dei processi può comportare una transizione più pulita in un secondo momento.
 
-## <a name="modern-web-experiences"></a>Esperienza web moderna
+## <a name="intelligent-experiences"></a>Esperienze intelligenti
+
+Esperienze intelligenti combinano la velocità e la scalabilità delle applicazioni Web moderne, con l'intelligenza di servizi cognitivi e bot. Da solo, ognuno può essere sufficiente per soddisfare le esigenze dei clienti. Combinando la gamma di esigenze che possono essere soddisfatte tramite un'esperienza digitale viene espansa, ma gli investimenti per lo sviluppo possono comunque essere contenuti.
+
+### <a name="modern-web-apps"></a>App Web moderne
 
 Quando un'applicazione o un'esperienza è necessaria per soddisfare le esigenze dei clienti, le applicazioni Web moderne possono essere il modo più rapido per soddisfare questa esigenza. Le esperienze Web moderne possono coinvolgere rapidamente i clienti interni o esterni e consentire un'iterazione rapida della soluzione.
 
-App Azure servizio fornisce un ambiente di hosting per le applicazioni che elimina il carico di gestione dell'infrastruttura e l'applicazione di patch del sistema operativo. Consente di automatizzare la scalabilità per soddisfare le esigenze degli utenti, ma in base ai limiti definiti per la verifica dei costi. Il servizio app offre un supporto di prima classe per linguaggi come ASP.NET, ASP.NET Core, Java, Ruby, node. js, PHP o Python. Se è necessario ospitare un altro stack di runtime, app Web per il contenitore consente di ospitare in modo rapido e semplice un contenitore Docker all'interno dell'ambiente del servizio app per consentire all'utente di ospitare lo stack di codice personalizzato in un ambiente che consente di uscire dal server occupato ESS.
+### <a name="infusing-intelligence"></a>Infusione dell'Intelligence
+
+Machine Learning e intelligenza artificiale diventano sempre più disponibili per gli sviluppatori. La disponibilità ampia di API comuni con funzionalità predittive consente agli sviluppatori di soddisfare al meglio le esigenze del cliente tramite l'accesso espanso ai dati e alle stime.
+
+L'aggiunta di informazioni di intelligence a una soluzione può consentire il riconoscimento vocale, la traduzione di testo, la visione artificiale e persino la ricerca visiva. Con queste funzionalità espanse, è più facile per gli sviluppatori creare soluzioni che sfruttano le funzionalità di intelligence per creare un'esperienza interattiva e moderna.
+
+### <a name="bots"></a>Bot
+
+I bot forniscono un'esperienza che non dà tanto la sensazione di usare un computer, quanto di interagire con una persona o almeno con un robot intelligente. Possono essere usati per attività semplici e ripetitive, come la prenotazione di una cena o la raccolta di informazioni sul profilo, e nei sistemi automatizzati che non richiedono più necessariamente l'intervento umano diretto. Gli utenti conversano con un bot usando testo, schede interattive e parlato. Un'interazione con un bot può essere un rapido scambio domanda-risposta oppure una conversazione sofisticata che fornisce l'accesso ai servizi in modo intelligente.
+
+I bot sono molto simili alle moderne applicazioni Web, che risiedono su Internet e usano le API per inviare e ricevere messaggi. Il contenuto di un bot varia notevolmente a seconda del tipo di bot. Il software bot moderno si basa su una serie di tecnologie e strumenti per fornire esperienze sempre più complesse in una vasta gamma di piattaforme. Un bot semplice può tuttavia semplicemente ricevere un messaggio e inviarlo di nuovo all'utente con la necessità di pochissimo codice.
+
+I bot possono svolgere le stesse operazioni di altri tipi di software: leggere e scrivere file, usare database e API ed eseguire normali attività di calcolo. La peculiarità dei bot risiede nell'uso di meccanismi generalmente riservati alla comunicazione tra esseri umani.
 
 ## <a name="cloud-native-solutions"></a>Soluzioni native del cloud
 
@@ -54,7 +72,7 @@ Molte ipotesi dei clienti possono essere distribuite in modo ottimale da una ver
 
 La maggior parte delle forme di modernizzazione, incluso il lieve refactoring dell'applicazione, è inclusa nella [metodologia di migrazione](../../migrate/index.md) all'interno del Framework di adozione del cloud. Questa metodologia guida i team di adozione del cloud attraverso i processi per la migrazione di un [patrimonio digitale](../../digital-estate/index.md) al cloud. La [Guida alla migrazione di Azure](../../migrate/azure-migration-guide/index.md) fornisce un approccio semplificato alla stessa metodologia, ideale per un numero ridotto di carichi di lavoro o anche per una singola applicazione.
 
-Una volta eseguita la migrazione e la modernizzazione, esistono diversi modi per sfruttare la soluzione nella creazione di nuove soluzioni innovative per le esigenze dei clienti. Ad esempio, [gli sviluppatori di cittadini](#citizen-developers) possono testare le ipotesi o gli sviluppatori professionisti possono creare [esperienze Web moderne](#modern-web-experiences) o [soluzioni native del cloud](#cloud-native-solutions).
+Una volta eseguita la migrazione e la modernizzazione, esistono diversi modi per sfruttare la soluzione nella creazione di nuove soluzioni innovative per le esigenze dei clienti. [Gli sviluppatori di cittadini](#citizen-developers) , ad esempio, possono testare le ipotesi o gli sviluppatori professionisti possono creare [esperienze intelligenti](#intelligent-experiences) o [soluzioni native del cloud](#cloud-native-solutions).
 
 ### <a name="extend-an-existing-solution"></a>Estendi una soluzione esistente
 
@@ -69,7 +87,7 @@ L'estensione di una soluzione è una forma comune di modernizzazione. Questo app
 Se un'applicazione non può essere facilmente estesa, potrebbe essere necessario effettuare il refactoring della soluzione. Con questo approccio, viene eseguita la migrazione del carico di lavoro nel cloud. Una volta eseguita la migrazione, le parti dell'applicazione vengono modificate o duplicate, come servizi Web o [microservizi](/azure/architecture/guide/architecture-styles/microservices), che vengono distribuite in parallelo alla soluzione esistente. La soluzione basata su servizi paralleli potrebbe essere considerata come una soluzione estesa. Questa soluzione esegue semplicemente il wrapping della soluzione esistente con una nuova esperienza ospitata nel cloud. In Azure è probabile che questa soluzione risieda in app Azure Services.
 
 > [!CAUTION]
-> Il refactoring e la riprogettazione di soluzioni o la centralizzazione della logica di business possono diventare rapidamente un [picco tecnico](./build.md#reduce-complexity-and-delay-technical-spikes)dispendioso in termini di tempo, in contrapposizione a un'origine del valore del cliente. Si tratta di un rischio per l'innovazione, soprattutto in fase di convalida dell'ipotesi. Con un po' di creatività nella progettazione di una soluzione, dovrebbe esistere un percorso di MVP che non richiede il refactoring delle soluzioni esistenti. È consigliabile ritardare il refactoring, fino a quando l'ipotesi iniziale non può essere convalidata su larga scala.
+> Il refactoring o la riprogettazione di soluzioni o la centralizzazione della logica di business possono diventare rapidamente un [picco tecnico](./build.md#reduce-complexity-and-delay-technical-spikes)che richiede molto tempo, anziché un'origine del valore del cliente. Si tratta di un rischio per l'innovazione, soprattutto in fase di convalida dell'ipotesi. Con un po' di creatività nella progettazione di una soluzione, dovrebbe esistere un percorso di MVP che non richiede il refactoring delle soluzioni esistenti. È consigliabile ritardare il refactoring, fino a quando l'ipotesi iniziale non può essere convalidata su larga scala.
 
 ## <a name="operating-model-innovations"></a>Innovazioni del modello operativo
 
@@ -85,7 +103,7 @@ Maggiore è la manutenzione in una soluzione, più lenta sarà l'iterazione dell
 
 Per preparare le numerose iterazioni necessarie per fornire una soluzione innovativa, è importante pensare in anticipo. È necessario ridurre al minimo gli oneri operativi iniziali del processo, privilegiando le opzioni senza server.
 
-In Azure le opzioni per le applicazioni senza server possono includere [app Azure servizio](https://docs.microsoft.com/azure/app-service/overview), [Service Fabric](https://docs.microsoft.com/azure/architecture/example-scenario/infrastructure/service-fabric-microservices), [contenitori](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)e così via.
+In Azure le opzioni per le applicazioni senza server possono includere [app Azure servizio](https://docs.microsoft.com/azure/app-service/overview) o [contenitori](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
 
 In parallelo, Azure offre opzioni di dati di transazione senza server che riducono anche l'overhead. Nell' [elenco prodotti database](https://docs.microsoft.com/azure/#pivot=products&panel=databases) sono disponibili opzioni per l'hosting dei dati, senza la necessità di una piattaforma di dati completa.
 

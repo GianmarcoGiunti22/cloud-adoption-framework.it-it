@@ -8,19 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023372"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683468"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Innovazione tramite l'adozione del cloud nel Framework di adozione del cloud
 
-L'innovazione è strettamente collegata alla migrazione. Quando i carichi di lavoro creano opportunità di differenziazione del mercato, è normale che i carichi di lavoro vengano migrati nel cloud, quindi sottoposti a attività di modernizzazione. Una volta la modernizzazione del cloud può essere accelerata da approcci moderni basati sul cloud, che permettono anche lo sviluppo di nuove innovazioni.
-
-> [!NOTE]
-> Queste linee guida sono state sviluppate per la versione Q3 2019 del Framework di adozione cloud. È probabile che la tassonomia e l'approccio seguenti cambino. Le informazioni seguenti illustrano la direzione generale delle indicazioni sull'innovazione.
+La migrazione cloud è un'ottima opzione per i carichi di lavoro già esistenti in un ambiente. La creazione di nuovi prodotti e servizi richiede un approccio diverso. La metodologia di innovazione in questo framework stabilisce un approccio per lo sviluppo di nuovi prodotti e servizi.
 
 ## <a name="motivations-behind-innovation"></a>Motivazioni alla base dell'innovazione
 
@@ -34,21 +31,17 @@ L'innovazione non deve essere il percorso di adozione scelto per tutti i carichi
 - Trasforma prodotti o servizi
 - Interrompi il mercato con nuovi prodotti o servizi
 
-## <a name="innovation-guidance"></a>Indicazioni sull'innovazione
-
-Quando viene sviluppato il contenuto dell'innovazione all'interno del Framework di adozione del cloud, vengono fornite indicazioni relative agli argomenti seguenti:
-
-- Modernizzare gli asset esistenti
-- Crea nuove app
-- Seguire le procedure che favoriscono un mindset di crescita
-- Integrare strategie DevOps
-
-![Panoramica di Cloud Adoption Framework (CAF)](../_images/caf-overview.png)
-
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Esempi comuni di carico di lavoro associati a un'innovazione nel cloud
 
 - Applicazioni personalizzate.
 - Esperienze basate su tecnologia.
-- IoT: Integrazione di prodotti e tecnologie fisici.
-- Intelligenza ambiente: Integrazione della tecnologia non intrusiva in un ambiente.
+- Internet delle cose: integrazione di prodotti e tecnologie fisici.
+- Intelligence di ambiente: integrazione della tecnologia non intrusiva in un ambiente.
 - Servizi cognitivi: Big data, intelligenza artificiale, Machine Learning e soluzioni predittive.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Inizia il tuo percorso di innovazione usando la [metodologia](../innovate/index.md)di innovazione.
+
+> [!div class="nextstepaction"]
+> [Inizia il tuo percorso di innovazione](../innovate/index.md)
