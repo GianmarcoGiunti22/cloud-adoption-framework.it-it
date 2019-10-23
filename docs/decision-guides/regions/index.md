@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967702"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547854"
 ---
 # <a name="azure-regions"></a>Aree di Azure
 
@@ -52,8 +52,8 @@ Qualsiasi distribuzione cloud affidabile richiede un'attenta valutazione della r
     > Non provare a usare l'archiviazione di Azure con ridondanza geografica per il backup o il ripristino di VM. Usare invece i servizi [Backup di Azure](https://azure.microsoft.com/services/backup) e [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery), oltre a [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) per supportare la resilienza dei carichi di lavoro IaaS.
 2. Backup di Azure e Azure Site Recovery, unitamente all'architettura di rete, semplificano la resilienza a livello di area per le esigenze di backup dei dati e dell'infrastruttura IaaS. Assicurarsi che la rete sia ottimizzata in modo che i trasferimenti di dati rimangano nel backbone Microsoft e sfruttino il [peering di reti virtuali](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), se possibile. Alcune organizzazioni più grandi con distribuzioni globali possono invece usare [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) per instradare il traffico tra le aree, risparmiando sui costi del traffico in uscita locale.
 3. I gruppi di risorse di Azure sono costrutti specifici dell'area. È tuttavia normale che le risorse all'interno di un gruppo si estendano su più aree. In questo caso, è importante tenere presente che se si verifica un errore a livello di area, le operazioni del piano di controllo su un gruppo di risorse avranno esito negativo nell'area interessata, anche se le risorse in altre aree (all'interno dello stesso gruppo) continueranno a funzionare. Questo scenario può avere un impatto sia sulla progettazione della rete che sulla definizione dei gruppi di risorse.
-4. Molti servizi PaaS all'interno di Azure supportano [endpoint di servizio](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) e/o il servizio [Collegamento privato](https://docs.microsoft.com/azure/private-link/private-link-overview). Entrambe queste soluzioni influiscono in modo sostanziale sulle valutazioni da fare per la rete, se si considerano aspetti come la resilienza, la migrazione e la governance.
-5. Molti servizi PaaS si basano su specifiche soluzioni di resilienza a livello di area. Database SQL di Azure, ad esempio, consente di eseguire facilmente la replica in N aree aggiuntive, così come CosmosDB. Alcuni servizi non hanno alcuna dipendenza dall'area, ad esempio DNS di Azure. Quando si considerano i servizi che verranno utilizzati nel processo di adozione, assicurarsi di capire chiaramente quali funzionalità di failover e quali procedure di ripristino potrebbero essere necessarie per ogni servizio di Azure.
+4. Molti servizi PaaS all'interno di Azure supportano [endpoint di servizio](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) o il servizio [Collegamento privato](https://docs.microsoft.com/azure/private-link/private-link-overview). Entrambe queste soluzioni influiscono in modo sostanziale sulle valutazioni da fare per la rete, se si considerano aspetti come la resilienza, la migrazione e la governance.
+5. Molti servizi PaaS si basano su specifiche soluzioni di resilienza a livello di area. Database SQL di Azure, ad esempio, consente di eseguire facilmente la replica in N aree aggiuntive, così come Cosmos DB. Alcuni servizi non hanno alcuna dipendenza dall'area, ad esempio DNS di Azure. Quando si considerano i servizi che verranno utilizzati nel processo di adozione, assicurarsi di capire chiaramente quali funzionalità di failover e quali procedure di ripristino potrebbero essere necessarie per ogni servizio di Azure.
 6. Oltre a eseguire la distribuzione in più aree per supportare il ripristino di emergenza, molte organizzazioni scelgono di adottare un modello attivo-attivo, per cui il failover non è necessario. L'ulteriore vantaggio di questa scelta è la disponibilità di un bilanciamento del carico globale, oltre a un miglioramento della tolleranza di errore e delle prestazioni. Per sfruttare questo modello, le applicazioni devono supportare l'esecuzione attiva-attiva in più aree.
 
 > [!WARNING]
@@ -63,9 +63,9 @@ Dopo aver considerato la topologia di rete necessaria per mantenere l'operativit
 
 - Prendere in considerazione una più solida preparazione e attuazione della governance.
 - Rilevare le aree geografiche interessate. Compilare un elenco delle aree e dei paesi interessati.
-- Requisiti di sovranità dei dati del documento: I paesi identificati dispongono dei requisiti di conformità che regolano la sovranità dei dati?
-- Documentare la base utenti: I dipendenti, i partner o i clienti del paese identificato saranno interessati dalla migrazione al cloud?
-- Data center e risorse del documento: Nel paese identificato, sono presenti risorse che potrebbero essere incluse nel lavoro richiesto per la migrazione?
+- Documentare i requisiti di sovranità dei dati. I paesi identificati dispongono dei requisiti di conformità che regolano la sovranità dei dati?
+- Documentare la base utenti. I dipendenti, i partner o i clienti del paese identificato saranno interessati dalla migrazione al cloud?
+- Documentare i data center e gli asset. Nel paese identificato, sono presenti risorse che potrebbero essere incluse nel lavoro richiesto per la migrazione?
 - Documentare la disponibilità di SKU a livello di area e i requisiti di failover.
 
 Allineare le modifiche nel processo di migrazione per affrontare l'inventario iniziale.

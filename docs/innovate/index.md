@@ -1,35 +1,122 @@
 ---
-title: Innovazione per il cloud
+title: Innovazione del cloud in Cloud Adoption Framework
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introduzione al contenuto relativo all'innovazione per il cloud
+description: Informazioni sull'innovazione del cloud in Cloud Adoption Framework.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 10/14/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4dbdaeecc094afd90df078a59774d886fd909924
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+layout: LandingPage
+ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816602"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72545142"
 ---
-# <a name="innovation-in-the-cloud-adoption-framework"></a>Innovazione in Cloud Adoption Framework
+# <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovazione del cloud in Cloud Adoption Framework
 
-Il cloud consente di creare nuove opportunità di innovazione per i clienti.
+Ogni portfolio IT include un insieme ridotto di carichi di lavoro e idee che potrebbero migliorare sensibilmente la posizione dell'azienda nel mercato. Anche se gran parte delle iniziative di adozione del cloud sono incentrate sulla migrazione e sulla modernizzazione degli attuali carichi di lavoro, il maggior valore di business associato dall'adozione del cloud deriva da attività innovative che rendono disponibili nuove competenze tecniche e funzionalità avanzate per il business. Questa sezione di Cloud Adoption Framework è dedicata a quella parte del portfolio che genera il maggior ritorno sugli investimenti.
 
-> [!NOTE]
-> Nel terzo trimestre del 2019 è prevista l'estensione di Cloud Adoption Framework per includere linee guida per la modernizzazione e gli approcci nativi del cloud per promuovere l'innovazione per l'intero portfolio di applicazioni e digital estate.
+## <a name="getting-started"></a>Introduzione
 
-## <a name="application-modernization-and-innovation"></a>Modernizzazione e innovazione delle applicazioni
+Per prepararsi per questa fase del ciclo di vita di adozione del cloud, il framework suggerisce gli esercizi seguenti:
 
-Le app e i dati nativi del cloud accelerano i cicli di sviluppo e sperimentazione. Le applicazioni meno recenti possono sfruttare molti degli stessi vantaggi nativi del cloud modernizzando la soluzione o i componenti della soluzione. Gli approcci moderni DevOps e SDLC che usano la tecnologia cloud riducono i tempi tra idea e modifica del prodotto. Nel loro insieme, questi strumenti invitano il cliente a partecipare al processo con la creazione di cicli di feedback più brevi ed esperienze utente migliori.
+<!-- markdownlint-disable MD033 -->
 
-## <a name="data-platform-modernization-and-innovation"></a>Modernizzazione e innovazione della piattaforma dei dati
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./business-value.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Consenso sul valore di business</h3>
+Prima di prendere decisioni in merito alle soluzioni tecniche, è importante uniformarsi al valore di business previsto. Questo valore deve essere associato alla strategia per il cloud. In questa metodologia incrementale il valore di business è rappresentato da un'ipotesi riguardante le esigenze dei clienti.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovation-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Guida all'innovazione di Azure</h3>
+Molti strumenti nativi del cloud disponibili in Azure consentono di accelerare lo sviluppo di soluzioni innovative. A seconda dell'ipotesi formulata per i clienti, possono essere applicabili varie combinazioni di strumenti. È consigliabile sviluppare una soluzione MVP (Minimum Viable Product) con strumenti di base.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Procedure consigliate</h3>
+Verificare che le decisioni architetturali siano conformi alle procedure consigliate per ogni strumento della toolchain. Queste procedure consigliate aiutano ad accelerare lo sviluppo di soluzioni e forniscono un riferimento per progetti di architetture affidabili.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/adoption.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Cicli di feedback</h3>
+Durante ogni iterazione dello sviluppo, le soluzioni offrono ai team opportunità di apprendimento insieme ai clienti. I cicli di feedback veloci e accurati con i clienti consentono di testare, misurare e apprendere per ridurre l'impatto sul time-to-market. Azure e GitHub possono accelerare i cicli di feedback.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-Il cloud offre nuove forme di dati all'interno di piattaforme comuni. L'aumento di velocità, veridicità, varietà e volume dei dati consente ai professionisti di elaborare informazioni dettagliate e stime su set di dati più estesi. Strumenti di ingresso estesi, come IoT e Azure Data Factory, consentono a team più ampi di integrare i dati in modo bidirezionale con prodotti fisici e virtuali.
+## <a name="methodology-summary"></a>Riepilogo della metodologia
 
-## <a name="infrastructure-modernization-and-innovation"></a>Modernizzazione e innovazione dell'infrastruttura
+La [sezione della metodologia per l'innovazione sulle considerazioni](./considerations/index.md) stabilisce un linguaggio comune per l'innovazione tra i team di sviluppo, DevOps, IT e business. Con gli esercizi descritti sopra questa metodologia diventa fattibile durante lo sviluppo di soluzioni innovative.
 
-Gli approcci moderni alla distribuzione dell'infrastruttura, alle attività operative e alla governance stanno rapidamente colmando il divario tra sviluppo e attività operative. La definizione di factory di ambiente con modelli comuni per vari modelli di applicazione consente ai team IT e operativi di accelerare la distribuzione, riducendo al contempo i rischi. Grazie all'integrazione delle attività operative, il settore DevOps non deve più occuparsi della manutenzione delle deviazioni della configurazione, dell'implementazione della baseline di sicurezza, del monitoraggio operativo e di altri servizi IT. La modernizzazione e l'innovazione nel portfolio IT promuove un maggiore allineamento con DevOps, accelerando le innovazioni per l'intero portfolio di applicazioni e digital estate.
+![Metodologia per l'innovazione di Cloud Adoption Framework](../_images/innovate/innovate-methodology.png)
+
+Questa metodologia si basa sulle attuali metodologie snelle per dar luogo a un discorso incentrato sul cloud in merito all'adozione dei clienti e a un modello scientifico per la creazione di valore di business. Allinea inoltre i servizi di Azure esistenti a processi decisionali gestibili, semplificando l'identificazione delle opzioni tecniche appropriate per rispondere a specifiche esigenze dei clienti o alle ipotesi formulate.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Il primo esercizio durante l'innovazione del cloud consiste nel [creare consenso sul valore di business](./business-value.md).
+
+> [!div class="nextstepaction"]
+> [Creare consenso sul valore di business](./business-value.md)

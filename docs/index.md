@@ -7,29 +7,17 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 07/04/2019
-ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.date: 10/14/2019
+ms.openlocfilehash: 73012184e5eab2592cfbeac1e9b5f294284ae270
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72377935"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548000"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework per Azure
 
-Cloud Adoption Framework è l'approccio Microsoft completo per l'adozione del cloud in Azure, in cui vengono consolidate e condivise le procedure consigliate proposte da dipendenti, partner e clienti Microsoft. Il framework offre ai clienti aziendali un set di strumenti, le linee guida e le spiegazioni necessarie per definire le strategie in termini di tecnologia, business e persone per ottenere i risultati aziendali desiderati in ogni iniziativa intrapresa per l'adozione. Queste linee guida sono allineate alle diverse fasi e iterazioni del tipico ciclo di vita di adozione del cloud, garantendo un facile accesso alle indicazioni appropriate al momento giusto.
-
-![Panoramica di Cloud Adoption Framework (CAF)](./_images/caf-overview.png)
-
-## <a name="getting-started-executive-summaries"></a>Attività iniziali: riepiloghi operativi
-
-Per i clienti che non conoscono ancora Cloud Adoption Framework sono disponibili tre articoli introduttivi sugli argomenti seguenti: [migrazione](./getting-started/migrate.md), [innovazione](./getting-started/innovate.md) e [abilitazione](./getting-started/enable.md). Ogni articolo include un riepilogo operativo e una panoramica generale sul ciclo di vita di adozione dell'organizzazione.
-
-Per istruzioni più specifiche, vedere più avanti i collegamenti a ogni fase del ciclo di vita di adozione.
-
-## <a name="use-the-cloud-adoption-framework-throughout-the-adoption-lifecycle"></a>Usare Cloud Adoption Framework nel ciclo di vita di adozione
-
-Ogni sezione di Cloud Adoption Framework è associata al diagramma di panoramica precedente. Questo elenco consente di accedere alla sezione più rispondente alla fase corrente del ciclo di vita di adozione del cloud.
+Cloud Adoption Framework è l'approccio Microsoft completo per l'adozione del cloud in Azure, in cui vengono consolidate e condivise le procedure consigliate proposte da dipendenti, partner e clienti Microsoft. Il framework offre ai clienti un set di strumenti, le linee guida e le spiegazioni necessarie per definire le strategie in termini di tecnologia, business e persone al fine di realizzare i risultati aziendali desiderati in ogni iniziativa intrapresa per l'adozione. Queste linee guida sono allineate alle seguenti fasi del ciclo di vita di adozione del cloud, garantendo un facile accesso alle indicazioni appropriate al momento giusto.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -98,12 +86,31 @@ Preparare l'ambiente cloud per le modifiche pianificate.
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                                <img alt="" src="./_images/caf-migrate.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrazione</h3>
 Eseguire la migrazione e la modernizzazione dei carichi di lavoro esistenti.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovate/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Innovazione</h3>
+Sviluppare nuove soluzioni native del cloud o ibride.
                         </div>
                     </div>
                 </div>
@@ -130,13 +137,32 @@ Gestire l'ambiente e i carichi di lavoro.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organize/index.md">
+        <a href="./manage/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
                                 <img alt="" src="./_images/caf-manage.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Gestisci</h3>
+Gestione delle operazioni per soluzioni cloud o ibride.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./organize/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-organize.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -150,16 +176,11 @@ Allineare gli utenti in modo da consentire le operazioni e l'adozione del cloud.
     </li>
 </ul>
 
-## <a name="product-roadmap"></a>Roadmap per il prodotto
+## <a name="understanding-the-lifecycle"></a>Informazioni sul ciclo di vita
 
-Cloud Adoption Framework è attualmente disponibile come anteprima pubblica. Il framework diventerà disponibile a livello generale una volta raggiunta la finalità prevista descritta nella sezione seguente. Le principali aree di interesse di questa versione di anteprima sono le seguenti:
+Ogni fase descritta sopra fa parte di un ampio ciclo di vita di adozione del cloud. L'immagine seguente raggruppa ogni fase per dimostrare il ciclo di vita complessivo. Cloud Adoption Framework è un framework sul ciclo di vita completo, che supporta i clienti attraverso ogni fase.
 
-- [Strategia di adozione del cloud](./strategy/index.md)
-- [Pianificazione dell'adozione del cloud](./plan/index.md)
-- [Migrazione al cloud](./migrate/index.md)
-- [Governance cloud](./govern/guides/index.md)
-
-Cloud Adoption Framework verrà ampliato di frequente, man mano che ci si avvicina alla versione prevista per la disponibilità generale. L'espansione includerà approfondimenti per ogni sezione di contenuto e l'aggiunta di nuove sezioni. Per altre informazioni, vedere la [roadmap per Cloud Adoption Framework](./reference/index.md).
+![Panoramica di Cloud Adoption Framework (CAF)](./_images/caf-overview.png)
 
 ## <a name="intent"></a>Finalità
 
@@ -179,9 +200,7 @@ Ogni sezione di Cloud Adoption Framework rappresenta una diversa variante o spec
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Come usare Microsoft Cloud Adoption Framework per Azure
 
-Se l'azienda non ha mai usato Azure, iniziare con la lettura di [Introduzione a Cloud Adoption Framework](./getting-started/migrate.md). Questa panoramica include linee guida per la trasformazione digitale dell'organizzazione, presentando in dettaglio ogni passaggio del processo.
-
-Se l'azienda ha esperienza con Azure ed è alla ricerca di indicazioni più dettagliate o procedure consigliate per aree specifiche, vedere la [panoramica sulla governance](./govern/index.md) e le [guide alle decisioni per l'architettura](./decision-guides/index.md). Verranno aggiunte altre sezioni quando si avvicina la data della disponibilità a livello generale.
+Se l'azienda non ha mai usato Azure, iniziare con la lettura di [Introduzione a Cloud Adoption Framework](./getting-started/migrate.md). Questa panoramica include procedure consigliate per la trasformazione digitale dell'organizzazione, presentando in dettaglio ogni passaggio del processo.
 
 > [!div class="nextstepaction"]
 > [Introduzione](./getting-started/migrate.md)

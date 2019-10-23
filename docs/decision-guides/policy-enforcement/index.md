@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023706"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547872"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guida decisionale di imposizione dei criteri
 
@@ -22,7 +22,7 @@ La definizione di criteri dell'organizzazione non è efficace a meno che possa e
 
 ![Grafico delle opzioni di imposizione dei criteri dalla meno alla più complessa, allineato con i collegamenti sotto](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-Passare a: [Procedure di base consigliate](#baseline-recommended-practices) | [Monitoraggio della conformità ai criteri](#policy-compliance-monitoring) | [Imposizione dei criteri](#policy-enforcement) | [Criteri tra organizzazioni](#cross-organization-policy) | [Imposizione automatizzata](#automated-enforcement)
+Passare a: [Procedure consigliate di base](#baseline-best-practices) | [Monitoraggio della conformità ai criteri](#policy-compliance-monitoring) | [Applicazione dei criteri](#policy-enforcement) | [Criteri tra organizzazioni](#cross-organization-policy) | [Applicazione automatizzata](#automated-enforcement)
 
 Con l'espansione del cloud risulterà necessario mantenere e applicare criteri per una più ampia gamma di risorse e sottoscrizioni. L'espansione dell'ambiente e l'aumento dei requisiti dei criteri dell'organizzazione renderanno necessario estendere l'ambito dei processi di applicazione dei criteri per garantire che vengano rispettati con coerenza e il rilevamento veloce di eventuali violazioni.
 
@@ -30,7 +30,7 @@ I meccanismi di applicazione dei criteri forniti dalla piattaforma a livello di 
 
 I fattori principali per determinare l'ambito dei processi di applicazione dei criteri sono i [requisiti di governance del cloud](../../govern/index.md) dell'organizzazione, le dimensioni e la natura dell'ambiente cloud e il modo in cui l'organizzazione è rispecchiata nella [progettazione delle sottoscrizioni](../subscriptions/index.md). Un aumento delle dimensioni dell'ambiente o la maggiore esigenza di gestire centralmente l'applicazione dei criteri possono entrambi giustificare l'estensione dell'ambito di applicazione.
 
-## <a name="baseline-recommended-practices"></a>Procedure di base consigliate
+## <a name="baseline-best-practices"></a>Procedure consigliate di base
 
 Per le distribuzioni cloud semplici e le sottoscrizioni singole, è possibile applicare molti criteri aziendali usando funzionalità native per le risorse e le sottoscrizioni in Azure. L'uso coerente dei modelli illustrati in tutte le [guide alle decisioni](../index.md) di Cloud Adoption Framework contribuisce a stabilire un livello di conformità ai criteri di base senza investimenti specifici per l'applicazione dei criteri. Queste funzionalità includono:
 
@@ -43,7 +43,7 @@ La pianificazione dell'imposizione dei criteri del cloud si avvia esaminando com
 
 ## <a name="policy-compliance-monitoring"></a>Monitoraggio della conformità ai criteri
 
-Un primo passaggio, oltre al semplice basarsi sui meccanismi di applicazione dei criteri forniti dalla piattaforma Azure, consiste nel garantire la capacità di verificare che le applicazioni e i servizi basati sul cloud siano conformi ai criteri dell'organizzazione. Ciò include l'implementazione di funzionalità di notifica per avvisare i responsabili se una risorsa diventa non conforme. La [creazione di log e report](../logging-and-reporting/index.md) efficaci sullo stato di conformità dei carichi di lavoro nel cloud è una parte essenziale della strategia di imposizione dei criteri aziendali.
+Un primo passaggio, oltre al semplice basarsi sui meccanismi di applicazione dei criteri forniti dalla piattaforma Azure, consiste nel garantire la possibilità di verificare che le applicazioni e i servizi basati sul cloud siano conformi ai criteri dell'organizzazione. Ciò include l'implementazione di funzionalità di notifica per avvisare i responsabili se una risorsa diventa non conforme. La [creazione di log e report](../logging-and-reporting/index.md) efficaci sullo stato di conformità dei carichi di lavoro nel cloud è una parte essenziale della strategia di imposizione dei criteri aziendali.
 
 Se un gruppo di cloud aumenta, strumenti aggiuntivi, ad esempio il [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center), garantiscono la sicurezza integrata e il rilevamento delle minacce e consentono di applicare la gestione centralizzata dei criteri e degli avvisi per entrambe le risorse locali e cloud.
 

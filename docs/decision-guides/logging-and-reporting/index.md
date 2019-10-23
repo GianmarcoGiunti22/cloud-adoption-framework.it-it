@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223621"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547901"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guida alle decisioni relative a registrazione e creazione di report
 
@@ -58,7 +58,7 @@ Può richiedere interventi sostanziali di riprogettazione per fare in modo che l
 
 Per supportare questo approccio, le risorse cloud dovranno poter comunicare direttamente con i sistemi locali tramite una combinazione di [rete ibrida](../software-defined-network/hybrid.md) e di [servizi del dominio ospitati nel cloud](../identity/index.md#cloud-hosted-domain-services). In questo modo, la rete virtuale cloud funge da estensione di rete dell'ambiente locale. I carichi di lavoro ospitati nel cloud possono quindi comunicare direttamente con il sistema di registrazione e creazione di report locale.
 
-Questo approccio sfrutta gli investimenti esistenti negli strumenti di monitoraggio con modifiche minime alle applicazioni o ai servizi distribuiti nel cloud. Si tratta spesso dell'approccio più rapido per supportare il monitoraggio durante una migrazione "lift and shift". Non verranno tuttavia acquisiti i dati dei log generati dalle risorse PaaS e SaaS basate sul cloud e verranno omessi i log relativi alle macchine virtuali generati direttamente dalla piattaforma cloud, ad esempio quelli sullo stato delle macchine virtuali. Di conseguenza, questo modello dovrà essere una soluzione temporanea da adottare solo finché non verrà implementata una soluzione di monitoraggio ibrida più completa.
+Questo approccio sfrutta gli investimenti esistenti negli strumenti di monitoraggio con modifiche minime alle applicazioni o ai servizi distribuiti nel cloud. Si tratta spesso dell'approccio più rapido per supportare il monitoraggio durante una migrazione "lift and shift". Non verranno tuttavia acquisiti i dati dei log generati dalle risorse PaaS e SaaS basate sul cloud e verranno omessi i log relativi alle macchine virtuali generati direttamente dalla piattaforma cloud, ad esempio quelli sullo stato delle VM. Di conseguenza, questo modello dovrà essere una soluzione temporanea da adottare solo finché non verrà implementata una soluzione di monitoraggio ibrida più completa.
 
 Presupposti relativi solo all'ambiente locale:
 
@@ -69,7 +69,7 @@ Presupposti relativi solo all'ambiente locale:
 
 ### <a name="gateway-aggregation"></a>Aggregazione tramite il gateway
 
-Per gli scenari in cui la quantità di dati di telemetria basati sul cloud è elevata o in cui i sistemi di monitoraggio locali esistenti devono modificare i dati dei log prima di poterli elaborare, potrebbe essere necessario un servizio di [aggregazione tramite il gateway](/azure/architecture/patterns/gateway-aggregation) dei dati del log.
+Per gli scenari in cui la quantità di dati di telemetria basati sul cloud è elevata o in cui i sistemi di monitoraggio locali esistenti devono modificare i dati dei log prima di poterli elaborare, potrebbe essere necessario un servizio di [aggregazione tramite il gateway](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) dei dati del log.
 
 Un servizio gateway viene distribuito al provider di servizi cloud. Le applicazioni e i servizi pertinenti vengono quindi configurati per inviare i dati di telemetria al gateway invece che a un sistema di registrazione predefinito. Il gateway può quindi elaborare i dati: prima li aggrega, li combina o li formatta in altro modo, quindi li invia al servizio di monitoraggio per l'inserimento e l'analisi.
 

@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f4e8f8c1ef9a145fc1497727738d6d12e8f13d7b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 88f844cb0a80971457beeb8814a109d70bb5d814
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025081"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547925"
 ---
 # <a name="mainframe-migration-overview"></a>Panoramica della migrazione dei mainframe
 
@@ -27,7 +27,7 @@ La maggior parte delle aziende Fortune 500 esegue già Azure per i propri carich
 
 ## <a name="intended-audience"></a>Destinatari
 
-Questa guida è destinata ai professionisti che stanno valutando una migrazione o l'aggiunta di servizi cloud come un'opzione per il proprio ambiente IT.
+Questa guida è destinata ai professionisti che stanno valutando una migrazione o l'aggiunta di servizi cloud come opzione per il proprio ambiente IT.
 
 Le indicazioni fornite consentono alle organizzazioni IT di avviare la conversazione sulla migrazione. Poiché è probabile che si abbia maggiore familiarità con Azure e le infrastrutture basate sul cloud rispetto ai mainframe, la guida inizia con una panoramica del funzionamento dei mainframe e prosegue illustrando varie strategie per determinare di quali elementi eseguire la migrazione e come procedere.
 

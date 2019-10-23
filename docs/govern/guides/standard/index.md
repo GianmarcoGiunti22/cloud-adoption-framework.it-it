@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967618"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547587"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guida alla governance per aziende standard
 
@@ -22,7 +22,7 @@ ms.locfileid: "71967618"
 
 Questa guida segue le esperienze di una società fittizia attraverso le diverse fasi di evoluzione della governance. È basata su esperienze di clienti reali. Le procedure consigliate si basano sui vincoli e sulle esigenze della società fittizia.
 
-Come punto di partenza rapido, questa panoramica definisce un prodotto minimo funzionante (MVP) per la governance basato su linee guida prescrittive. Fornisce inoltre i collegamenti ad alcuni miglioramenti della governance che offrono altre procedure consigliate in base all'emergere di nuovi rischi tecnici o aziendali.
+Come punto di partenza rapido, questa panoramica definisce un prodotto minimo funzionante (MVP) per la governance basato su procedure consigliate. Fornisce inoltre i collegamenti ad alcuni miglioramenti della governance che offrono altre procedure consigliate in base all'emergere di nuovi rischi tecnici o aziendali.
 
 > [!WARNING]
 > Questo MVP è solo un punto di partenza, fondato su un insieme di ipotesi. Anche questo insieme minimo di procedure consigliate è basato su criteri aziendali determinati da rischi commerciali e tolleranze di rischio speciali. Per determinare se queste ipotesi si applicano alla propria situazione, vedere lo [scenario più approfondito](./narrative.md) che segue questo articolo.
@@ -82,7 +82,7 @@ Nel corso del tempo, questo MVP per la governance verrà usato per migliorare le
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Ora che si ha familiarità con l'MVP per la governance e un'idea dei miglioramenti della governance da seguire, consultare lo scenario associato per altre informazioni sul contesto.
+Ora che si ha familiarità con l'MVP per la governance e un'idea dei miglioramenti da apportare, consultare lo scenario associato per altre informazioni sul contesto.
 
 > [!div class="nextstepaction"]
 > [Consultare lo scenario associato](./narrative.md)

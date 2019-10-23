@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fffbb4c2017d05ab6eccb350615ef18572b601d5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025723"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548717"
 ---
 <!-- markdownlint-disable -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "71025723"
 
 I percorsi di trasformazione di maggiore successo iniziano con un risultato aziendale prefissato. L'adozione del cloud può richiedere tempo e costi notevoli. Promuovere il corretto livello di supporto da parte del reparto IT e di altre aree dell'azienda è essenziale per il successo. Il [framework dei risultati aziendali](../index.md) di Microsoft è progettato per aiutare i clienti a identificare risultati aziendali che siano concisi e ben delineati, oltre a promuovere risultati osservabili o modifiche delle prestazioni aziendali, con il supporto di una misura specifica.
 
-Durante qualsiasi trasformazione del cloud, la possibilità di esprimersi in termini di risultati aziendali supporta la trasparenza e la collaborazione interfunzionale. Il framework dei risultati di business parte da un modello semplice per consentire a singoli utenti con preparazione tecnica di documentare gli obiettivi e ottenere consenso. Questo modello può essere usato da vari stakeholder dell'azienda per raccogliere un'ampia gamma di risultati aziendali, ognuno potenzialmente influenzabile dal percorso di trasformazione dell'azienda. È possibile usare questo modello in formato elettronico o, meglio ancora, disegnarlo su una lavagna per coinvolgere i responsabili e gli stakeholder in discussioni incentrate sui risultati.
+Durante qualsiasi trasformazione del cloud, la possibilità di esprimersi in termini di risultati aziendali supporta la trasparenza e la collaborazione interfunzionale. Il framework dei risultati di business parte da un modello semplice per consentire a singoli utenti con preparazione tecnica di documentare gli obiettivi e ottenere consenso. Questo modello può essere usato da vari stakeholder dell'azienda per raccogliere dati su un'ampia varietà di risultati aziendali, ognuno potenzialmente influenzabile dal percorso di trasformazione dell'azienda. È possibile usare questo modello in formato elettronico o, meglio ancora, disegnarlo su una lavagna per coinvolgere i responsabili e gli stakeholder in discussioni incentrate sui risultati.
 
 Per altre informazioni sui risultati aziendali e sul relativo modello, vedere l'articolo sulla [documentazione dei risultati aziendali](./business-outcome-template.md) oppure scaricare il [modello dei risultati aziendali](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx).
 

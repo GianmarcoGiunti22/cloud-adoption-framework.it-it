@@ -10,24 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378374"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548920"
 ---
 # <a name="before-you-start"></a>Prima di iniziare
 
 ::: zone target="docs"
+
 > [!NOTE]
-> Questa guida offre un punto di partenza iniziale per determinare l'idoneità nell'ambito di Cloud Adoption Framework ed è disponibile anche nel Centro di avvio rapido di Azure. Per un collegamento, vedere il suggerimento riportato nell'articolo.
+> Questa guida fornisce un punto di partenza per le linee guida per l'innovazione presenti in Cloud Adoption Framework. È anche disponibile nel Centro di avvio rapido di Azure. Per un collegamento al Centro di avvio rapido di Azure, vedere il suggerimento più avanti.
 
 ::: zone-end
 
 Prima di iniziare a creare e distribuire soluzioni con servizi di Azure, è necessario preparare l'ambiente. In questa guida vengono presentate le funzionalità che semplificano l'organizzazione delle risorse, il controllo dei costi e la protezione e la gestione dell'organizzazione. Per altre informazioni, procedure consigliate e considerazioni correlate alla preparazione dell'ambiente cloud, vedere la [sezione sull'idoneità di Cloud Adoption Framework](../index.md).
 
-Verrà descritto come:
+Si apprenderà come:
 
 ::: zone target="chromeless"
 
