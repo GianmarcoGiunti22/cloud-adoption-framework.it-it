@@ -10,18 +10,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 29241833514a205c08f311fc57156e70603948ba
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: fef411923327fe9f3318c4cb20c6dd456aa112d5
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378966"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698491"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Tenersi aggiornati con Microsoft Azure
 
 Le piattaforme cloud come Microsoft Azure cambiano più velocemente di quanto siano abituate le organizzazioni. Questa velocità di cambiamento indica che le organizzazioni devono adattare persone e processi a un ritmo nuovo. Se si ha la responsabilità di aiutare l'organizzazione a rimanere al passo con i cambiamenti, a volte ci si può sentire oberati. Le risorse elencate in questa sezione possono risultare utili per rimanere sempre aggiornati.
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="top-resourcestabtopresources"></a>[Principali risorse](#tab/TopResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Le risorse seguenti possono aiutare a rimanere aggiornati su Azure:
 
@@ -29,10 +33,10 @@ Le risorse seguenti possono aiutare a rimanere aggiornati su Azure:
   - Integrità dei servizi e gli avvisi forniscono notifiche tempestive per i problemi dei servizi in corso, la manutenzione pianificata e alcuni consigli sull'integrità. Tale risorsa include anche informazioni sulle funzionalità che vengono rimosse da Azure.
 - [Aggiornamenti di Azure](https://azure.microsoft.com/updates)
   - Sottoscrivere gli aggiornamenti di Azure per ricevere annunci sugli aggiornamenti del prodotto. Brevi riepiloghi collegati ad altri dettagli, per seguire facilmente gli aggiornamenti.
-  - È possibile eseguire la sottoscrizione tramite [RSS](https://azurecomcdn.azureedge.net/en-us/updates/feed).
+  - È possibile eseguire la sottoscrizione tramite [RSS](https://azurecomcdn.azureedge.net/updates/feed).
 - [Blog di Azure](https://azure.microsoft.com/blog)
   - Il Blog di Azure comunica gli annunci più importanti per la piattaforma Azure. Seguire questo blog per rimanere sempre aggiornati sulle informazioni fondamentali.
-  - È possibile eseguire la sottoscrizione tramite [RSS](https://azurecomcdn.azureedge.net/en-us/blog/feed).
+  - È possibile eseguire la sottoscrizione tramite [RSS](https://azurecomcdn.azureedge.net/blog/feed).
 - Blog specifici dei servizi
   - I singoli servizi di Azure pubblicano blog che è consigliabile seguire se si usano tali servizi.
   - Sono disponibili molti blog per i servizi di Azure. Individuare quelli a cui si è interessati tramite una ricerca sul Web.
@@ -40,7 +44,11 @@ Le risorse seguenti possono aiutare a rimanere aggiornati su Azure:
   - Questo sito è una risorsa non ufficiale che riunisce la maggior parte delle risorse elencate qui. Selezionare i collegamenti ai singoli servizi per ottenere informazioni dettagliate e trovare i blog specifici dei vari servizi.
   - È possibile eseguire la sottoscrizione tramite [RSS](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure).
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="additional-resourcestabadditionalresources"></a>[Risorse aggiuntive](#tab/AdditionalResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Per contenuti più approfonditi che consentono di rimanere aggiornati su Azure, vedere le risorse elencate qui:
 
