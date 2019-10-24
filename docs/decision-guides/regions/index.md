@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sulla scelta delle aree per la piattaforma cloud.
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547854"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769411"
 ---
 # <a name="azure-regions"></a>Aree di Azure
 
@@ -44,7 +44,7 @@ Considerando queste complessità, risulta ancora più evidente l'importanza dell
 
 Qualsiasi distribuzione cloud affidabile richiede un'attenta valutazione della rete, tenendo conto delle aree di Azure. Dopo aver valutato le caratteristiche sopra indicate per le aree in cui eseguire la distribuzione, è necessario distribuire la rete. Sebbene una discussione esaustiva sulla rete esuli dall'ambito di questo articolo, è necessario tenere conto di alcune considerazioni:
 
-1. Le aree di Azure vengono distribuite in coppie. In caso di errore irreversibile di un'area, un'altra area all'interno degli stessi confini geopolitici* viene designata come area abbinata. È consigliabile valutare l'opportunità di eseguire la distribuzione in aree abbinate come strategia per la resilienza primaria e secondaria. *Azure Brasile è un'eccezione degna di nota perché l'area abbinata è Stati Uniti centro-meridionali. Per altre informazioni, vedere [qui](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions).
+1. Le aree di Azure vengono distribuite in coppie. In caso di errore irreversibile di un'area, un'altra area all'interno degli stessi confini geopolitici* viene designata come area abbinata. È consigliabile valutare l'opportunità di eseguire la distribuzione in aree abbinate come strategia per la resilienza primaria e secondaria. *Azure Brasile è un'eccezione degna di nota perché l'area abbinata è Stati Uniti centro-meridionali. Per altre informazioni, vedere [Aree abbinate di Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
     1. Archiviazione di Azure supporta l'[archiviazione con ridondanza geografica (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), per cui tre copie dei dati vengono archiviate nell'area primaria e altre tre copie nell'area abbinata. Non è possibile cambiare l'abbinamento dell'archiviazione per gli scenari GRS.
     1. I servizi basati su archiviazione di Azure con ridondanza geografica possono trarre vantaggio dalle aree abbinate. A tale scopo, è necessario fare in modo che le applicazioni e la rete le supportino.
     1. Se non si prevede di sfruttare l'archiviazione con ridondanza geografica per soddisfare esigenze di resilienza locale, è consigliabile _NON_ usare l'area abbinata come area secondaria. In caso di errore a livello di un'area, le risorse dell'area abbinata verranno sottoposte a un'intensa pressione durante la migrazione. Evitando tale pressione, è possibile ottenere una maggiore velocità durante il ripristino in un sito alternativo.
