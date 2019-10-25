@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221415"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888879"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Strumenti e servizi di gestione del server di Azure
 
@@ -22,7 +22,7 @@ Come illustrato nella [Panoramica](./index.md) di questa sezione, Azure Server M
 - [Migrazione](#migrate)
 - [Proteggere](#secure)
 - [Proteggere](#protect)
-- [Monitoraggio](#monitor)
+- [Monitorare](#monitor)
 - [Configurare](#configure)
 - [Governare](#govern)
 
@@ -32,11 +32,11 @@ Le sezioni seguenti descrivono brevemente queste aree di gestione e forniscono c
 
 I servizi di migrazione consentono di eseguire la migrazione dei carichi di lavoro in Azure. Per fornire le linee guida ottimali, il servizio Azure Migrate inizia con la misurazione delle prestazioni del server locale e la valutazione dell'idoneità per la migrazione. Al termine della valutazione, è possibile usare [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) e il [servizio migrazione del database di Azure](https://docs.microsoft.com/azure/dms/dms-overview) per eseguire la migrazione dei computer locali in Azure. Azure migrate
 
-## <a name="secure"></a>Proteggere
+## <a name="secure"></a>Sicurezza
 
 Il [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) è un'applicazione completa per la gestione della sicurezza. Eseguendo l'onboarding nel centro sicurezza, è possibile ottenere rapidamente una valutazione dello stato di conformità delle normative e della sicurezza dell'ambiente. Per istruzioni sull'onboarding dei server nel centro sicurezza di Azure, vedere [configurare i servizi di gestione di Azure per una sottoscrizione](./onboard-at-scale.md#azure-security-center).
 
-## <a name="protect"></a>Proteggi
+## <a name="protect"></a>Protezione
 
 Per proteggere i dati, è necessario pianificare il backup, la disponibilità elevata, la crittografia, l'autorizzazione e i problemi operativi correlati. Questi argomenti sono trattati in modo estensivo, quindi in questo articolo si concentrerà sulla creazione di un piano di ripristino di emergenza per la continuità aziendale (BCDR). Verranno inclusi riferimenti alla documentazione che descrive in dettaglio come implementare e distribuire questo tipo di piano.
 
@@ -48,7 +48,7 @@ Il ripristino tramite backup può richiedere molto tempo. Lo standard di settore
 
 Per i dati file server, un altro servizio da considerare è [sincronizzazione file di Azure](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning). Questo servizio consente di centralizzare le condivisioni file dell'organizzazione in File di Azure preservando al tempo stesso la flessibilità, le prestazioni e la compatibilità di un file server locale. Per usare questo servizio, seguire le istruzioni per la distribuzione di Sincronizzazione file di Azure.
 
-## <a name="monitor"></a>Monitoraggio
+## <a name="monitor"></a>Monitorare
 
 [Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/overview) offre una visualizzazione delle varie risorse, ad esempio applicazioni, contenitori e macchine virtuali. Raccoglie anche dati da diverse origini.
 
@@ -60,7 +60,7 @@ Per i dati file server, un altro servizio da considerare è [sincronizzazione fi
 
 Diversi servizi rientrano in questa categoria. Consentono di automatizzare le attività operative, gestire le configurazioni dei server, misurare la conformità degli aggiornamenti, pianificare gli aggiornamenti e rilevare le modifiche apportate ai server. Questi servizi sono fondamentali per supportare le operazioni in corso.
 
-- [Gestione aggiornamenti](https://docs.microsoft.com/azure/automation/automation-update-management#viewing-update-assessments) automatizza la distribuzione delle patch nell'ambiente, inclusa la distribuzione in istanze del sistema operativo in esecuzione all'esterno di Azure. Supporta i sistemi operativi Windows e Linux e tiene traccia delle principali vulnerabilità del sistema operativo e della non conformità causata da patch mancanti.
+- [Gestione aggiornamenti](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatizza la distribuzione delle patch nell'ambiente, inclusa la distribuzione in istanze del sistema operativo in esecuzione all'esterno di Azure. Supporta i sistemi operativi Windows e Linux e tiene traccia delle principali vulnerabilità del sistema operativo e della non conformità causata da patch mancanti.
 - [Rilevamento modifiche e l'inventario](https://docs.microsoft.com/azure/automation/change-tracking) forniscono informazioni approfondite sul software in esecuzione nell'ambiente in uso e le eventuali modifiche apportate.
 - [Automazione di Azure](https://docs.microsoft.com/azure/automation/automation-intro) consente di eseguire script Python e PowerShell o manuali operativi per automatizzare le attività nell'ambiente. Quando si usa il ruolo di [lavoro ibrido per Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), è possibile estendere il manuali operativi anche alle risorse locali.
 - La [configurazione dello stato di automazione di Azure](https://docs.microsoft.com/azure/automation/automation-dsc-overview) consente di effettuare il push delle configurazioni DSC (Desired state Configuration) di PowerShell direttamente da Azure. A sua volta, DSC consente di monitorare e mantenere le configurazioni del sistema operativo guest e del carico di lavoro.

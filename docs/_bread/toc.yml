@@ -19,6 +19,13 @@
         - name: Ready
           tocHref: /azure/cloud-adoption-framework/ready/
           topicHref: /azure/cloud-adoption-framework/ready
+          items:
+            - name: Procedure consigliate
+              tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+            - name: Procedure consigliate
+              tocHref: /azure/security/fundamentals/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
         - name: Adozione
           items:
             - name: Migrazione

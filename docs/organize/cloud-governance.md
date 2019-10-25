@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549090"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888849"
 ---
 # <a name="cloud-governance-capabilities"></a>Funzionalità di governance del cloud
 
@@ -63,7 +63,7 @@ La funzionalità di governance del cloud viene in genere fornita da un team funz
 Di seguito sono riportati i partecipanti che parteciperanno spesso alle attività di governance del cloud:
 
 - I leader della gestione intermedia e i collaboratori diretti nei ruoli principali che sono stati designati per rappresentare l'azienda consentiranno di valutare le tolleranze dei rischi.
-- Le funzionalità di governance del cloud sono offerte per offrire un'estensione della [funzionalità di strategia cloud](./cloud-strategy.md). Proprio come il CIO e i leader aziendali sono tenuti a partecipare alle funzionalità di strategia cloud, è previsto che i loro dipendenti diretti partecipino alle attività di governance del cloud.
+- Le funzionalità di governance del cloud sono fornite da un'estensione della [funzionalità di strategia cloud](./cloud-strategy.md). Proprio come il CIO e i leader aziendali sono tenuti a partecipare alle funzionalità di strategia cloud, è previsto che i loro dipendenti diretti partecipino alle attività di governance del cloud.
 - I dipendenti aziendali membri della Business Unit che collaborano a stretto contatto con la leadership della line-of-business devono essere autorizzati a prendere decisioni in merito a rischi aziendali e tecnici.
 - I dipendenti di Information Technology (IT) e Information Security (IS) che comprendono gli aspetti tecnici della trasformazione cloud possono essere utilizzati in una capacità girevole anziché essere un provider coerente di funzionalità di governance del cloud.
 

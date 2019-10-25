@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 80cd8c74f283436d9f32ce647c27bb7c67d3c92c
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683264"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888898"
 ---
 # <a name="democratize-data"></a>Democratizzare i dati
 
@@ -47,7 +47,7 @@ La condivisione dei dati può produrre rapidamente un MVP che può essere usato 
 La governance dei dati è un argomento ampio che può richiedere un framework dedicato. Non rientra nell'ambito del [Framework di adozione del cloud](../../index.md). Tuttavia, esistono alcuni aspetti della governance dei dati che devono essere considerati, non appena viene convalidata l'ipotesi del cliente. Di seguito sono riportati alcuni esempi di queste domande:
 
 - **I dati condivisi sono sensibili?** I [dati devono essere classificati](../../govern/policy-compliance/data-classification.md) prima di qualsiasi condivisione pubblica per proteggere gli interessi dei clienti e dell'azienda.
-- **Se i dati sono sensibili, sono stati protetti?** La protezione dei dati sensibili deve essere un requisito per tutti i dati democratizzati. Il carico di lavoro di esempio incentrato sulla [protezione delle soluzioni dati](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions.md) fornisce alcuni riferimenti per la protezione dei dati.
+- **Se i dati sono sensibili, sono stati protetti?** La protezione dei dati sensibili deve essere un requisito per tutti i dati democratizzati. Il carico di lavoro di esempio incentrato sulla [protezione delle soluzioni dati](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fornisce alcuni riferimenti per la protezione dei dati.
 - **I dati sono catalogati?** Per la gestione dei dati a lungo termine è possibile acquisire i dettagli relativi ai dati condivisi. Gli strumenti per documentare i dati, ad esempio Azure Data Catalog, possono rendere questo processo molto più facile nel cloud. Le linee guida per l' [annotazione dei dati](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) e la [documentazione delle origini dati](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) possono contribuire ad accelerare il processo.
 
 Quando la democratizzazione dei dati è importante per un'ipotesi mirata ai clienti, la governance dei dati condivisi dovrebbe essere in un punto del piano di rilascio per proteggere i clienti, i consumer di dati e la società.
