@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 294ea288af478e0e451c9fd38663a26acb10359d
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 44bfe58f86a442a5129eee791e3da0f7a6b68031
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682585"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805804"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Livellamento della gestione tra le discipline di gestione del cloud
 
@@ -33,6 +33,8 @@ I livelli di gestione seguenti (anche illustrati sopra) sono alcuni livelli sugg
 - **Specializzazione del carico**di lavoro: per i carichi di lavoro realmente cruciali, potrebbe essere necessario giustificare i costi per approfondire la gestione del carico di lavoro. La specializzazione dei carichi di lavoro usa la telemetria del carico di lavoro per determinare approcci più avanzati alla gestione giornaliera Gli stessi dati spesso identificano i miglioramenti dell'automazione, della distribuzione e della progettazione che comportano maggiore stabilità, affidabilità e resilienza oltre ciò che è possibile con la gestione operativa da solo.
 - Non **supportata**: è ugualmente importante comunicare processi di gestione comuni che non verranno distribuiti attraverso le discipline di gestione del cloud per qualsiasi carico di lavoro classificato come non supportato o non critico.
 
+Le organizzazioni possono anche scegliere di [esternalizzare le funzioni correlate a uno o più di questi livelli di gestione a un provider di servizi](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Questi provider di servizi possono usare [Azure Lighthouse](https://azure.com/lighthouse) per offrire maggiore precisione e trasparenza.
+
 Gli articoli rimanenti di questa serie delineano una serie di processi comunemente rilevati all'interno di ogni disciplina.
 In parallelo, nella [Guida alla gestione di Azure](../azure-management-guide/index.md) vengono illustrati gli strumenti che possono supportare ognuno di questi processi. Per assistenza nella creazione di una linea di base di gestione, iniziare dalla guida alla gestione di Azure. Una volta stabilita la linea di base, questa serie di articoli e le procedure consigliate complementari possono contribuire a espandere la baseline per definire altri livelli di supporto per la gestione.
 
@@ -46,8 +48,8 @@ Nella maggior parte dei casi, il "livello di base di gestione" descritto in prec
 - **Conformità operativa:** Una gestione regolare di configurazione, ridimensionamento, costo e prestazioni delle risorse è fondamentale per mantenere le aspettative in termini di prestazioni e una linea di base di gestione.
 - **Proteggi e Ripristina:** Riducendo al minimo le interruzioni operative e velocizzando il ripristino, è possibile evitare perdite di prestazioni e conseguenze dei ricavi. Il rilevamento e il ripristino sono aspetti essenziali di questa disciplina all'interno di qualsiasi linea di base di gestione.
 
-Il livello di specializzazione della piattaforma di gestione esegue il pull dai processi e dagli strumenti allineati alle discipline delle operazioni della piattaforma.
-Analogamente, il livello di specializzazione del carico di lavoro estrae dai processi e dagli strumenti allineati alle discipline delle operazioni del carico di lavoro.
+Il livello di specializzazione della piattaforma di gestione esegue il pull dai processi e dagli strumenti allineati alle discipline delle operazioni della piattaforma. Analogamente, il livello di specializzazione del carico di lavoro estrae dai processi e dagli strumenti allineati alle discipline delle operazioni del carico di lavoro.
+
   
 ## <a name="next-steps"></a>Passaggi successivi
 

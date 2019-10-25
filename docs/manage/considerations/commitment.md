@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e9ac7b930018e8eb8a8d750692de808be943db0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7e7618163b15d17eab51571779e573dd9acb726e
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558129"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805808"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Impegno aziendale nella gestione cloud
 
@@ -54,6 +54,8 @@ La linea di base di Operations Management fungerà da punto di partenza iniziale
 
 In un ambiente locale tradizionale, il costo della gestione dell'ambiente viene comunemente considerato un costo affondato di proprietà delle operazioni IT. Nel cloud, la gestione è una decisione intenzionale con un effetto preventivo diretto. I costi di ogni funzione di gestione possono essere attribuiti in modo più diretto a ogni carico di lavoro distribuito nel cloud. Questo approccio consente un maggiore controllo, ma crea un requisito per i team operativi cloud e i team di strategia cloud per il primo commit a un accordo relativo alle responsabilità.
 
+Le organizzazioni possono anche scegliere di [esternalizzare alcune delle funzioni di gestione in corso a un provider di servizi](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Questi provider di servizi possono usare [Azure Lighthouse](https://azure.com/lighthouse) per offrire alle organizzazioni maggiore precisione e controllo nella concessione dell'accesso alle risorse, oltre a una maggiore trasparenza nelle azioni eseguite dai provider di servizi.
+
 **Responsabilità delegata:** Poiché non è necessario centralizzare e presupporre un sovraccarico della gestione operativa, le operazioni IT per molte organizzazioni stanno considerando i nuovi approcci. Un approccio comune viene definito responsabilità delegata. In un centro cloud del modello di eccellenza, le operazioni della piattaforma e l'automazione della piattaforma offrono strumenti di gestione self-service che possono essere sfruttati da team operativi aziendali, indipendentemente da un team operativo IT centrale. Questo approccio fornisce agli stakeholder aziendali il controllo completo sui budget correlati alla gestione. Consente inoltre a CCoE di garantire che un set minimo di Guardrails venga implementato correttamente. In questo modello, funge da broker e da una guida per aiutare le aziende a prendere decisioni sagge. Le operazioni aziendali supervisionano le operazioni quotidiane dei carichi di lavoro dipendenti.
 
 **Responsabilità centralizzata:** I requisiti di conformità, la complessità tecnica e alcuni modelli di servizi condivisi possono richiedere un modello IT centrale. In questo modello continua a mantenere le responsabilità di gestione delle operazioni. Di conseguenza, la progettazione ambientale, i controlli di gestione e gli strumenti di governance possono essere gestiti e controllati centralmente, in modo da limitare il ruolo degli stakeholder aziendali quando si effettuano impegni di gestione. Tuttavia, la visibilità dei costi e dell'architettura degli approcci cloud rende molto più semplice per la comunicazione centralizzata il costo e il livello di gestione per ogni carico di lavoro.
@@ -66,7 +68,7 @@ Il primo passaggio consiste nel impegnarsi in un approccio di responsabilità, c
 
 ## <a name="cloud-tenancy"></a>Locazione cloud
 
-Sebbene non sia consigliabile, non è insolito che un'azienda supporti risorse in più tenant. L'articolo su Lighthouse for multi-tenant offre alcuni esempi di motivi per gli ambienti Azure multi-tenant. In base agli esempi contenuti in questo articolo, il prossimo impegno è la locazione.
+Per la maggior parte delle aziende, la gestione è più semplice quando tutti gli asset si trovano in un singolo tenant. Tuttavia, alcune organizzazioni potrebbero dover gestire più tenant. L'articolo sulla [centralizzazione delle operazioni di gestione con Azure Lighthouse](../centralize-operations.md) offre alcuni esempi in cui le aziende possono richiedere ambienti Azure multi-tenant.
 
 **Questo carico di lavoro si trova in un singolo tenant di Azure, insieme a tutti gli altri carichi di lavoro?**
 
