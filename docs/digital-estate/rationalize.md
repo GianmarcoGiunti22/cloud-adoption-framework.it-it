@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547812"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915028"
 ---
 # <a name="rationalize-the-digital-estate"></a>Razionalizzare il digital estate
 
@@ -50,7 +50,7 @@ La razionalizzazione completa di un grande patrimonio digitale è soggetta a ris
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Inventario: ridurre i punti dati di individuazione
 
-Poche organizzazioni investono il tempo, l'energia e le spese per mantenere un inventario accurato e in tempo reale dell'intera proprietà digitale. Perdita, furto, cicli di aggiornamento e assunzione di personale spesso giustificano la verifica delle risorse dei dispositivi degli utenti finali. Tuttavia, il ROI della gestione di un inventario accurato di server e applicazioni in un Data Center locale tradizionale è spesso basso. La maggior parte delle organizzazioni IT ha problemi più pressanti da risolvere rispetto alla verifica dell’uso delle risorse fisse di un data center.
+Poche organizzazioni investono il tempo, l'energia e le spese per mantenere un inventario accurato e in tempo reale dell'intera proprietà digitale. La perdita, il furto, i cicli di aggiornamento e l'onboarding dei dipendenti spesso giustificano il rilevamento dettagliato delle risorse per i dispositivi degli utenti finali. Tuttavia, il ROI della gestione di un inventario accurato di server e applicazioni in un Data Center locale tradizionale è spesso basso. La maggior parte delle organizzazioni IT ha problemi più pressanti da risolvere rispetto alla verifica dell’uso delle risorse fisse di un data center.
 
 In una trasformazione cloud, l'inventario è correlato direttamente ai costi operativi. Per una pianificazione corretta sono necessari dati di inventario precisi. Sfortunatamente, le opzioni di analisi ambientale correnti possono ritardare le decisioni di settimane o mesi. Fortunatamente, alcuni trucchi possono accelerare la raccolta dei dati.
 
