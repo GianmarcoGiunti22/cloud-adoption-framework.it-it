@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547901"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915034"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guida alle decisioni relative a registrazione e creazione di report
 
@@ -26,7 +26,7 @@ Passare a: [Pianificazione dell'infrastruttura di monitoraggio](#planning-your-m
 
 Il punto di flesso quando si stabilisce una strategia di registrazione e creazione di report per il cloud è determinato principalmente dagli investimenti esistenti fatti dall'organizzazione nei processi operativi e, in una certa misura, dagli eventuali requisiti necessari per supportare una strategia multi-cloud.
 
-Ci sono diversi modi per registrare e creare report sulle attività nel cloud. Il cloud nativo e la registrazione centralizzata sono due opzioni comuni di software come un servizio (SaaS), basate sul tipo di sottoscrizione e sul numero di sottoscrizioni.
+Ci sono diversi modi per registrare e creare report sulle attività nel cloud. Il cloud nativo e la registrazione centralizzata sono due opzioni comuni di software gestito, basate sul tipo di sottoscrizione e sul numero di sottoscrizioni.
 
 ## <a name="planning-your-monitoring-infrastructure"></a>Pianificazione dell'infrastruttura di monitoraggio
 
