@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: e816420e99bfb712db3ad8064b4c077df3edfcee
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548185"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979873"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guida al monitoraggio del cloud: Introduzione
 
@@ -24,21 +24,21 @@ Benché il cloud offra flessibilità quasi illimitata a livello di opzioni di pr
 
 ![Diagramma delle strategie di adozione del cloud](./media/monitoring-management-guidance-cloud-and-on-premises/introduction-cloud-adoption.png)
 
-La trasformazione digitale offre anche l'opportunità di modernizzare l'infrastruttura, i carichi di lavoro e le applicazioni. In base alla strategia e agli obiettivi aziendali, l'adozione di un modello di cloud ibrido fa probabilmente parte del percorso di migrazione dall'ambiente locale alla piena operatività nel cloud. Durante questo percorso trasformativo, i team IT non devono solo occuparsi di adottare il cloud e realizzare rapidamente valore dalla nuova infrastruttura. Devono anche capire come monitorare efficacemente la migrazione di applicazioni o servizi ad Azure, continuando ad assicurare l'efficienza delle operazioni IT/DevOps.
+La trasformazione digitale offre anche l'opportunità di modernizzare l'infrastruttura, i carichi di lavoro e le applicazioni. In base alla strategia e agli obiettivi aziendali, l'adozione di un modello di cloud ibrido fa probabilmente parte del percorso di migrazione dall'ambiente locale alla piena operatività nel cloud. Durante questo percorso trasformativo, i team IT non devono solo occuparsi di adottare il cloud e realizzare rapidamente valore dalla nuova infrastruttura. Devono anche capire come monitorare efficacemente la migrazione di applicazioni o servizi ad Azure, continuando ad assicurare l'efficienza delle operazioni IT e DevOps.
 
 Gli stakeholder sono interessati a sfruttare strumenti basati sul cloud di tipo SaaS (Software as a Service) per il monitoraggio e la gestione. Vogliono capire quali servizi e soluzioni adottare per ottenere visibilità completa, ridurre i costi e dedicare meno risorse all'infrastruttura e alla manutenzione dei tradizionali strumenti basati su software per le operazioni IT.
 
-I team IT, però, spesso preferiscono continuare a usare gli strumenti in cui hanno fatto investimenti significativi. In questo modo, possono supportare i processi e le operazioni dei servizi e monitorare entrambi i modelli cloud, con l'obiettivo finale di passare a un'offerta basata su SaaS. Questa scelta è difficile non solo perché il cambiamento richiede tempo, pianificazione, risorse e finanziamenti, ma anche perché non sempre è immediato capire quali prodotti o servizi di Azure sono appropriati o applicabili per eseguire la transizione.
+I team IT, però, spesso preferiscono continuare a usare gli strumenti per cui hanno sostenuto investimenti significativi. Grazie a questo approccio possono supportare i processi e le operazioni dei servizi e monitorare entrambi i modelli cloud, con l'obiettivo finale di passare a un'offerta basata su SaaS. I team IT preferiscono questo approccio non solo perché il cambiamento richiede tempo, pianificazione, risorse e finanziamenti, ma anche perché non sempre è immediato capire quali prodotti o servizi di Azure sono appropriati o applicabili per eseguire la transizione.
 
 L'obiettivo di questa guida è fornire informazioni di riferimento dettagliate per aiutare responsabili IT, decisori aziendali, architetti di applicazioni e sviluppatori a individuare:
 
 * Le piattaforme di monitoraggio di Azure, con una panoramica e un confronto delle funzionalità che offrono.
 * La soluzione ideale per il monitoraggio di carichi di lavoro ibridi, privati e nativi di Azure.
-* L'approccio consigliato per il monitoraggio sia dell'infrastruttura che delle applicazioni come insieme end-to-end, incluse le soluzioni distribuibili per questi carichi di lavoro comuni di cui eseguire la migrazione in Azure.
+* L'approccio consigliato per il monitoraggio sia dell'infrastruttura che delle applicazioni come insieme end-to-end, incluse le soluzioni distribuibili per la migrazione di questi carichi di lavoro comuni in Azure.
 
 La guida non include procedure per l'uso o la configurazione di singoli servizi e soluzioni di Azure, ma vi fa riferimento, se applicabili o disponibili. Dopo aver letto questa guida, sarà possibile capire come gestire con successo un carico di lavoro seguendo procedure e modelli consigliati.
 
-Se non si ha familiarità con Monitoraggio di Azure e System Center Operations Manager e si desidera acquisire maggiori informazioni sulle caratteristiche esclusive che offrono e sulle differenze tra i due servizi, prima di procedere vedere la [panoramica delle piattaforme di monitoraggio](./platform-overview.md).
+Se non si ha familiarità con Monitoraggio di Azure e System Center Operations Manager e si vogliono acquisire maggiori informazioni sulle caratteristiche esclusive che offrono e sulle differenze tra i due servizi, vedere la [panoramica delle piattaforme di monitoraggio](./platform-overview.md).
 
 ## <a name="audience"></a>Audience
 
@@ -50,7 +50,7 @@ Questo articolo fa parte di una serie. Gli articoli seguenti sono concepiti per 
 
 * Introduzione (questo articolo)
 * [Strategia di monitoraggio per i modelli di distribuzione cloud](./cloud-models-monitor-overview.md)
-* [Raccolta dei dati appropriati](./data-collection.md)
+* [Raccogliere i dati appropriati](./data-collection.md)
 * [Invio di avvisi](./alerting.md)
 
 ## <a name="products-and-services"></a>Prodotti e servizi
@@ -64,7 +64,7 @@ Per il monitoraggio e la gestione di un'ampia varietà di risorse ospitate in Az
 * App per la logica di Azure
 * Hub eventi di Azure
 
-Questa prima versione della guida illustra le piattaforme di monitoraggio correnti, ovvero Monitoraggio di Azure e System Center Operations Manager, e delinea la strategia consigliata per il monitoraggio di ogni modello di distribuzione cloud. È anche incluso il primo set di raccomandazioni per il monitoraggio, a partire dalla raccolta di dati e dagli avvisi.
+Questa prima versione della guida illustra le piattaforme di monitoraggio correnti: Monitoraggio di Azure e System Center Operations Manager. Descrive inoltre la strategia consigliata per il monitoraggio di ognuno dei modelli di distribuzione cloud. È anche incluso il primo set di raccomandazioni per il monitoraggio, a partire dalla raccolta di dati e dagli avvisi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682706"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979885"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gestione del cloud in Cloud Adoption Framework
 
@@ -95,7 +95,7 @@ In base agli impegni aziendali e alle decisioni operative, adottare le procedure
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Operazioni avanzate e principi di progettazione</h3>
-Le piattaforme o i carichi di lavoro che richiedono un livello più elevato di impegno aziendale possono imporre una revisione più approfondita dell'architettura per soddisfare i requisiti di resilienza e affidabilità.
+Le piattaforme o i carichi di lavoro che richiedono un livello più elevato di impegno aziendale potrebbero imporre una revisione più approfondita dell'architettura per soddisfare i requisiti di resilienza e affidabilità.
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ Le piattaforme o i carichi di lavoro che richiedono un livello più elevato di i
 
 ## <a name="scalable-cloud-management-methodology"></a>Metodologia scalabile di gestione del cloud
 
-I passaggi descritti sopra definiscono approcci fattibili per attuare la metodologia di gestione di Cloud Adoption Framework.
+I passaggi precedenti definiscono approcci fattibili per attuare la metodologia di gestione di Cloud Adoption Framework.
 
 ![Metodologia per la gestione in Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
@@ -120,17 +120,17 @@ Come descritto nell'articolo sull'[allineamento aziendale](./considerations/busi
 Le linee guida in questa sezione di Cloud Adoption Framework vengono usate per due scopi:
 
 - Fornire esempi di approcci fattibili alla gestione delle operazioni che rappresentino comuni esperienze spesso riscontrate dai clienti.
-- Aiutare a creare soluzioni di gestione personalizzate basate sugli impegni aziendali.
+- Facilitare la creazione di soluzioni di gestione personalizzate basate sugli impegni aziendali.
 
 Questo contenuto è destinato al team di operazioni del cloud, ma è utile anche per i cloud architect che devono sviluppare una base solida di operazioni e principi di progettazione del cloud.
 
 ## <a name="intended-audience"></a>Destinatari
 
-Il contenuto di Cloud Adoption Framework interessa i reparti aziendali impegnati nelle attività di carattere commerciale, tecnologico e culturale. Questa sezione di Cloud Adoption Framework interagisce in maniera significativa con i settori di operazioni IT, governance IT, amministrazione, rete, gestione delle identità, con i responsabili line-of-business e con i team di adozione del cloud. Le varie dipendenze tra queste figure professionali richiedono un approccio collaborativo da parte dei cloud architect nell'uso di queste linee guida. La collaborazione con questi team può essere un'attività una tantum.
+Il contenuto di Cloud Adoption Framework interessa i reparti aziendali impegnati nelle attività di carattere commerciale, tecnologico e culturale. Questa sezione di Cloud Adoption Framework interagisce in maniera significativa con i settori di operazioni IT, governance IT, amministrazione, rete, gestione delle identità, con i responsabili line-of-business e con i team di adozione del cloud. Le varie dipendenze tra queste figure professionali richiedono un approccio collaborativo da parte dei cloud architect che adottano queste linee guida. La collaborazione con questi team può essere un'attività una tantum.
 
 Il cloud architect assume il ruolo di leader e mediatore per semplificare l'interazione tra le varie persone coinvolte. I contenuti di questa raccolta di guide sono stati progettati per consentire ai cloud architect di comunicare informazioni corrette alle persone appropriate e giungere così alle decisioni opportune. La trasformazione aziendale introdotta dal cloud dipende dalla capacità del cloud architect di aiutare il personale tecnico e commerciale a prendere decisioni appropriate.
 
-**Specializzazione del cloud architect in questa sezione:** Ogni sezione di Cloud Adoption Framework rappresenta una diversa variante o specializzazione del ruolo di cloud architect. Questa sezione di Cloud Adoption Framework è rivolta ai cloud architect interessati alle operazioni e alla gestione delle soluzioni da distribuire. All'interno del framework questi specialisti vengono spesso indicati come *team di operazioni cloud* che si occupano di *operazioni cloud*.
+**Specializzazione del cloud architect in questa sezione:** Ogni sezione di Cloud Adoption Framework rappresenta una diversa variante o specializzazione del ruolo di cloud architect. Questa sezione di Cloud Adoption Framework è rivolta ai cloud architect interessati alle operazioni e alla gestione delle soluzioni di distribuzione. All'interno del framework questi specialisti vengono spesso indicati come *team di operazioni cloud* che si occupano di *operazioni cloud*.
 
 ## <a name="use-this-guide"></a>Uso di questa guida
 
@@ -140,7 +140,7 @@ Per chi vuole seguire questa guida dall'inizio alla fine, il contenuto presentat
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Applicare la metodologia per [definire chiari impegni aziendali](./considerations/business-alignment.md).
+Applicare la metodologia per stabilire chiari impegni aziendali.
 
 > [!div class="nextstepaction"]
 > [Stabilire chiari impegni aziendali](./considerations/business-alignment.md)
