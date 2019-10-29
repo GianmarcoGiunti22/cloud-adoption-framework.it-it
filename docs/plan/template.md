@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549178"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048211"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Piano di adozione del cloud e Azure DevOps
 
@@ -45,10 +45,10 @@ Per preparare la workstation per la modifica bulk, vedere [aggiungere o modifica
 
 Il piano di adozione del cloud organizza le attività in base al tipo di attività:
 
-- **EPICS**: un' *epopea* rappresenta una fase complessiva del ciclo di vita dell'adozione del cloud.
-- **Funzionalità**: le funzionalità vengono usate per organizzare obiettivi specifici all'interno di ogni fase. Ad esempio, la migrazione di un carico di lavoro specifico è una funzionalità.
-- **Storie utente**: il gruppo storie utente lavora in raccolte logiche di attività in base a un obiettivo specifico.
-- **Attività**: le attività sono le operazioni effettive da eseguire.
+- **Epic:** Un *Epic* rappresenta una fase complessiva del ciclo di vita dell'adozione del cloud.
+- **Funzionalità:** Le funzionalità vengono usate per organizzare obiettivi specifici all'interno di ogni fase. Ad esempio, la migrazione di un carico di lavoro specifico è una funzionalità.
+- **Storie utente:** Il gruppo storie utente lavora in raccolte logiche di attività in base a un obiettivo specifico.
+- **Attività:** Le attività sono le operazioni effettive da eseguire.
 
 A ogni livello, le attività vengono sequenziate in base alle dipendenze. Le attività sono collegate agli articoli nel Framework di adozione del cloud per chiarire l'obiettivo o l'attività.
 

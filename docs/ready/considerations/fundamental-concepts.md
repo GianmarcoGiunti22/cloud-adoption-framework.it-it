@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548821"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048408"
 ---
 # <a name="azure-fundamental-concepts"></a>Concetti fondamentali di Azure
 
@@ -23,25 +23,25 @@ Vengono fornite informazioni sui termini e i concetti fondamentali usati in Azur
 
 È utile conoscere le definizioni seguenti quando si inizia il lavoro di adozione del cloud di Azure:
 
-- **Risorsa**: un'entità gestita da Azure. ad esempio macchine virtuali, reti virtuali e account di archiviazione di Azure.
-- **Sottoscrizione**: un contenitore logico per le risorse. Ogni risorsa di Azure è associata a una sola sottoscrizione. La creazione di una sottoscrizione è il primo passaggio per l'adozione di Azure.
-- **Account Azure**: l'indirizzo di posta elettronica fornito quando si crea una sottoscrizione di Azure è l'account Azure per la sottoscrizione. L'entità associata all'account di posta elettronica è responsabile dei costi mensili sostenuti dalle risorse nella sottoscrizione. Quando si crea un account Azure, si forniscono le informazioni di contatto e i dettagli di fatturazione, ad esempio una carta di credito. È possibile usare lo stesso account Azure (indirizzo di posta elettronica) per più sottoscrizioni. Ogni sottoscrizione è associata a un solo account Azure.
-- **Amministratore account**: l'entità associata all'indirizzo di posta elettronica usato per creare una sottoscrizione di Azure. L'amministratore dell'account è responsabile del pagamento di tutti i costi sostenuti dalle risorse della sottoscrizione.
-- **Azure Active Directory** (Azure ad): il servizio di gestione delle identità e degli accessi basato sul cloud Microsoft. Azure AD consente ai dipendenti di accedere alle risorse.
-- **Tenant Azure ad**: istanza di Azure ad dedicata e attendibile. Un tenant di Azure AD viene creato automaticamente quando un'organizzazione effettua per la prima volta l'iscrizione per una sottoscrizione di un servizio cloud Microsoft, ad esempio Microsoft Azure, Microsoft Intune oppure Office 365. Un tenant di Azure rappresenta una singola organizzazione.
-- **Azure ad directory**: ogni tenant di Azure ad dispone di una singola directory riservata, dedicata e attendibile. La directory include gli utenti, i gruppi e le app del tenant. Viene usata per eseguire le funzioni di gestione di identità e accessi per le risorse del tenant. Una directory può essere associata a più sottoscrizioni, ma ogni sottoscrizione è associata a una sola directory.
-- **Gruppi di risorse**: contenitori logici usati per raggruppare le risorse correlate in una sottoscrizione. Ogni risorsa può appartenere a un solo gruppo di risorse.
-- **Gruppi di gestione**: contenitori logici utilizzati per una o più sottoscrizioni. È possibile definire una gerarchia di gruppi di gestione, sottoscrizioni, gruppi di risorse e risorse per gestire in modo efficiente l'accesso, i criteri e la conformità tramite l'ereditarietà.
-- **Region**: un set di Data Center di Azure distribuiti all'interno di un perimetro definito dalla latenza. I data center sono connessi tramite una rete a livello di area, dedicata e a bassa latenza. La maggior parte delle risorse di Azure viene eseguita in un'area di Azure specifica.
+- **Risorsa:** Entità gestita da Azure. ad esempio macchine virtuali, reti virtuali e account di archiviazione di Azure.
+- **Sottoscrizione:** Un contenitore logico per le risorse. Ogni risorsa di Azure è associata a una sola sottoscrizione. La creazione di una sottoscrizione è il primo passaggio per l'adozione di Azure.
+- **Account Azure:** L'indirizzo di posta elettronica fornito quando si crea una sottoscrizione di Azure è l'account Azure per la sottoscrizione. L'entità associata all'account di posta elettronica è responsabile dei costi mensili sostenuti dalle risorse nella sottoscrizione. Quando si crea un account Azure, si forniscono le informazioni di contatto e i dettagli di fatturazione, ad esempio una carta di credito. È possibile usare lo stesso account Azure (indirizzo di posta elettronica) per più sottoscrizioni. Ogni sottoscrizione è associata a un solo account Azure.
+- **Amministratore account:** Entità associata all'indirizzo di posta elettronica usato per creare una sottoscrizione di Azure. L'amministratore dell'account è responsabile del pagamento di tutti i costi sostenuti dalle risorse della sottoscrizione.
+- **Azure Active Directory (Azure ad):** Il servizio di gestione delle identità e degli accessi basato sul cloud Microsoft. Azure AD consente ai dipendenti di accedere alle risorse.
+- **Tenant Azure ad:** Istanza di Azure AD dedicata e attendibile. Un tenant di Azure AD viene creato automaticamente quando un'organizzazione effettua per la prima volta l'iscrizione per una sottoscrizione di un servizio cloud Microsoft, ad esempio Microsoft Azure, Microsoft Intune oppure Office 365. Un tenant di Azure rappresenta una singola organizzazione.
+- **Azure ad directory:** Ogni tenant Azure AD dispone di una singola directory riservata, dedicata e attendibile. La directory include gli utenti, i gruppi e le app del tenant. Viene usata per eseguire le funzioni di gestione di identità e accessi per le risorse del tenant. Una directory può essere associata a più sottoscrizioni, ma ogni sottoscrizione è associata a una sola directory.
+- **Gruppi di risorse:** Contenitori logici utilizzati per raggruppare le risorse correlate in una sottoscrizione. Ogni risorsa può appartenere a un solo gruppo di risorse.
+- **Gruppi di gestione:** Contenitori logici utilizzati per una o più sottoscrizioni. È possibile definire una gerarchia di gruppi di gestione, sottoscrizioni, gruppi di risorse e risorse per gestire in modo efficiente l'accesso, i criteri e la conformità tramite l'ereditarietà.
+- **Area geografica:** Set di Data Center di Azure distribuiti all'interno di un perimetro definito dalla latenza. I data center sono connessi tramite una rete a livello di area, dedicata e a bassa latenza. La maggior parte delle risorse di Azure viene eseguita in un'area di Azure specifica.
 
 ## <a name="azure-subscription-purposes"></a>Scopi di una sottoscrizione di Azure
 
 Una sottoscrizione di Azure ha diversi scopi, come descritto di seguito:
 
-- **Contratto legale**. Ogni sottoscrizione è associata a un'[offerta di Azure](https://azure.microsoft.com/support/legal/offer-details), ad esempio una versione di valutazione gratuita o con pagamento in base al consumo. Ogni offerta ha un piano tariffario specifico, vantaggi e termini e condizioni associati. L'offerta di Azure viene scelta al momento della creazione di una sottoscrizione.
-- **Contratto di pagamento**. Quando si crea una sottoscrizione, si forniscono informazioni di pagamento per tale sottoscrizione, ad esempio un numero di carta di credito. Ogni mese, i costi sostenuti dalle risorse distribuite nella sottoscrizione vengono calcolati e fatturati tramite il metodo di pagamento.
-- **Limite di ridimensionamento**. Per una sottoscrizione sono definiti limiti di ridimensionamento. Le risorse della sottoscrizione non possono superare i limiti di scalabilità impostati. Ad esempio, esiste un limite per il numero di macchine virtuali che è possibile creare in una singola sottoscrizione.
-- **Limite amministrativo**. Una sottoscrizione può fungere da limite per l'amministrazione, la sicurezza e i criteri. Azure fornisce anche altri meccanismi per soddisfare queste esigenze, ad esempio gruppi di gestione, gruppi di risorse e controllo degli accessi in base al ruolo.
+- **Un contratto legale.** Ogni sottoscrizione è associata a un'[offerta di Azure](https://azure.microsoft.com/support/legal/offer-details), ad esempio una versione di valutazione gratuita o con pagamento in base al consumo. Ogni offerta ha un piano tariffario specifico, vantaggi e termini e condizioni associati. L'offerta di Azure viene scelta al momento della creazione di una sottoscrizione.
+- **Un contratto di pagamento.** Quando si crea una sottoscrizione, si forniscono informazioni di pagamento per tale sottoscrizione, ad esempio un numero di carta di credito. Ogni mese, i costi sostenuti dalle risorse distribuite nella sottoscrizione vengono calcolati e fatturati tramite il metodo di pagamento.
+- **Limite di scala.** Per una sottoscrizione sono definiti limiti di ridimensionamento. Le risorse della sottoscrizione non possono superare i limiti di scalabilità impostati. Ad esempio, esiste un limite per il numero di macchine virtuali che è possibile creare in una singola sottoscrizione.
+- **Limite amministrativo.** Una sottoscrizione può fungere da limite per l'amministrazione, la sicurezza e i criteri. Azure fornisce anche altri meccanismi per soddisfare queste esigenze, ad esempio gruppi di gestione, gruppi di risorse e controllo degli accessi in base al ruolo.
 
 ## <a name="azure-subscription-considerations"></a>Considerazioni sulle sottoscrizioni di Azure
 

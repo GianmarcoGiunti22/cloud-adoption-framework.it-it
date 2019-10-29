@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1f627dcba8db040ea212f151f216428b724c90d0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023324"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048458"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -26,19 +26,19 @@ Azure è una piattaforma cloud pubblica di Microsoft. Azure offre una vasta gamm
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2ixGo]
 
-Come altre piattaforme cloud, Azure si basa su una tecnologia nota come **virtualizzazione**. Quasi tutto l'hardware di computer può essere emulato in software perché è costituito semplicemente da un set di istruzioni codificate in silicone in modo permanente o semipermanente. Usando un livello di emulazione che associa le istruzioni del software a quelle dell'hardware, un componente hardware virtualizzato può essere eseguito nel software come un componente fisico realmente esistente.
+Come altre piattaforme cloud, Azure si basa su una tecnologia nota come _virtualizzazione_. Quasi tutto l'hardware di computer può essere emulato in software perché è costituito semplicemente da un set di istruzioni codificate in silicone in modo permanente o semipermanente. Usando un livello di emulazione che associa le istruzioni del software a quelle dell'hardware, un componente hardware virtualizzato può essere eseguito nel software come un componente fisico realmente esistente.
 
 In pratica, il cloud è costituito da un set di server fisici in uno o più data center che eseguono hardware virtualizzato per conto dei clienti. In che modo il cloud riesce a creare, avviare, arrestare ed eliminare milioni di istanze di hardware virtualizzato per milioni di clienti allo stesso tempo?
 
-Per comprendere questo concetto, si esaminerà l'architettura dell'hardware nel data center. All'interno di ogni data center è presente una raccolta di server che si siedono nei rack server. Ogni rack di server contiene numerosi **blade** con un commutatore per la connettività di rete e un'unità PDU (Power Distribution Unit) per l'alimentazione. I rack sono talvolta raggruppati in unità più grandi, dette **cluster**.
+Per comprendere questo concetto, si esaminerà l'architettura dell'hardware nel data center. All'interno di ogni data center è presente una raccolta di server che si siedono nei rack server. Ogni rack di server contiene numerosi **blade** con un commutatore per la connettività di rete e un'unità PDU (Power Distribution Unit) per l'alimentazione. I rack sono talvolta raggruppati in unità più grandi, dette _cluster_.
 
-All'interno di ogni rack o cluster, la maggior parte dei server ha il compito di eseguire le istanze di hardware virtualizzato per conto degli utenti. Tuttavia, alcuni server eseguono il software di gestione cloud noto come controller di infrastruttura. Il **controller di infrastruttura** è un'applicazione distribuita a cui sono affidati numerosi compiti, tra cui l'allocazione dei servizi, il monitoraggio dell'integrità dei server e dei servizi in esecuzione su di essi e la correzione di eventuali errori dei server.
+All'interno di ogni rack o cluster, la maggior parte dei server ha il compito di eseguire le istanze di hardware virtualizzato per conto degli utenti. Tuttavia, alcuni server eseguono il software di gestione cloud noto come controller di infrastruttura. Il _controller di infrastruttura_ è un'applicazione distribuita a cui sono affidati numerosi compiti, tra cui l'allocazione dei servizi, il monitoraggio dell'integrità dei server e dei servizi in esecuzione su di essi e la correzione di eventuali errori dei server.
 
-Ogni istanza del controller di infrastruttura è connessa a un altro set di server che eseguono il software di orchestrazione del cloud, in genere denominato **front-end**. Il front-end ospita i servizi Web, le API RESTful e i database interni di Azure usati per tutte le funzioni eseguite dal cloud.
+Ogni istanza del controller di infrastruttura è connessa a un altro set di server che eseguono il software di orchestrazione del cloud, in genere denominato _front-end_. Il front-end ospita i servizi Web, le API RESTful e i database interni di Azure usati per tutte le funzioni eseguite dal cloud.
 
 Ad esempio, il front-end ospita i servizi che gestiscono le richieste dei clienti per allocare risorse di Azure, ad esempio [macchine virtuali](https://docs.microsoft.com/azure/virtual-machines), e servizi come [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Per prima cosa, il front-end convalida l'utente e verifica che sia autorizzato ad allocare le risorse richieste. In tal caso, il front-end controlla un database per individuare un rack server con capacità sufficiente e quindi indica al controller di infrastruttura su tale rack di allocare la risorsa.
 
-Fondamentalmente, Azure è una vasta raccolta di server e componenti hardware di rete che eseguono un set complesso di applicazioni distribuite per orchestrare la configurazione e il funzionamento dell'hardware e del software virtualizzati su tali server. Si tratta di un'orchestrazione che rende Azure&mdash;così potenti utenti che non sono più responsabili della gestione e dell'aggiornamento dell'hardware poiché Azure esegue questa operazione dietro le quinte.
+Fondamentalmente, Azure è una vasta raccolta di server e componenti hardware di rete che eseguono un set complesso di applicazioni distribuite per orchestrare la configurazione e il funzionamento dell'hardware e del software virtualizzati su tali server. Si tratta di un'orchestrazione che rende Azure così potente&mdash;gli utenti non sono più responsabili della gestione e dell'aggiornamento dell'hardware, in quanto Azure esegue questa operazione dietro le quinte.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

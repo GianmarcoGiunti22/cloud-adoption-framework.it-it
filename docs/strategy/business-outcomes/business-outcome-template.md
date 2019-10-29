@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027791"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048391"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Come utilizzare il modello di risultato aziendale
 
@@ -51,15 +51,15 @@ L'individuazione è un principio fondamentale dell'architettura aziendale. Se l'
 
 *Figura 3-cinque aree di interesse nell'individuazione: stakeholder, risultati, driver, indicatori KPI e funzionalità.*
 
-**Parti interessate**: Chi nell'organizzazione probabilmente vedrà il valore più grande in un risultato aziendale specifico? Chi è più probabile che supporti questa trasformazione, soprattutto quando si verificano difficili o lunghi tempi di attività? Chi ha il maggiore interesse nel successo di questa trasformazione? Questa persona è un potenziale stakeholder.
+**Parti interessate:** Chi nell'organizzazione probabilmente vedrà il valore più grande in un risultato aziendale specifico? Chi è più probabile che supporti questa trasformazione, soprattutto quando si verificano difficili o lunghi tempi di attività? Chi ha il maggiore interesse nel successo di questa trasformazione? Questa persona è un potenziale stakeholder.
 
-**Risultati aziendali**: Un risultato aziendale è un risultato conciso, definito e osservabile o una modifica nelle prestazioni aziendali, supportata da una misura specifica. In che modo lo stakeholder desidera modificare il business? Quali saranno le conseguenze dell'azienda? Qual è il valore di questa trasformazione?
+**Risultati aziendali:** Un risultato aziendale è un risultato conciso, definito e osservabile o una modifica nelle prestazioni aziendali, supportata da una misura specifica. In che modo lo stakeholder desidera modificare il business? Quali saranno le conseguenze dell'azienda? Qual è il valore di questa trasformazione?
 
-**Driver aziendali**: I driver aziendali acquisiscono la sfida attuale che impedisce alla società di raggiungere i risultati desiderati. Possono inoltre acquisire nuove opportunità che l'azienda può capitalizzare con la soluzione corretta. Come si descrivono le attuali problemi o lo stato futuro dell'azienda? Quali funzioni aziendali verranno modificate per soddisfare i risultati desiderati?
+**Driver aziendali:** I driver aziendali acquisiscono la sfida attuale che impedisce alla società di raggiungere i risultati desiderati. Possono inoltre acquisire nuove opportunità che l'azienda può capitalizzare con la soluzione corretta. Come si descrivono le attuali problemi o lo stato futuro dell'azienda? Quali funzioni aziendali verranno modificate per soddisfare i risultati desiderati?
 
-**Indicatori KPI**: Come verrà misurata questa modifica? In che modo l'azienda è in grado di stabilire se hanno esito positivo? Con quale frequenza viene osservato questo indicatore KPI? La comprensione di ogni indicatore KPI consente di abilitare modifiche incrementali e sperimentazione.
+**Indicatori KPI:** Come verrà misurata questa modifica? In che modo l'azienda è in grado di stabilire se hanno esito positivo? Con quale frequenza viene osservato questo indicatore KPI? La comprensione di ogni indicatore KPI consente di abilitare modifiche incrementali e sperimentazione.
 
-**Funzionalità**: Quando si definisce un percorso di trasformazione, in che modo le funzionalità tecniche accelerano la realizzazione del risultato aziendale? Quali applicazioni devono essere incluse nella trasformazione per raggiungere gli obiettivi aziendali? In che modo è possibile assegnare priorità a diverse applicazioni o carichi di lavoro per fornire funzionalità? In che modo è necessario espandere o riprogettare parti della soluzione per soddisfare i risultati? È possibile riorganizzare gli approcci di esecuzione (o le sequenze temporali) per classificare in ordine di priorità i risultati aziendali a elevato effetto?
+**Funzionalità:** Quando si definisce un percorso di trasformazione, in che modo le funzionalità tecniche accelerano la realizzazione del risultato aziendale? Quali applicazioni devono essere incluse nella trasformazione per raggiungere gli obiettivi aziendali? In che modo è possibile assegnare priorità a diverse applicazioni o carichi di lavoro per fornire funzionalità? In che modo è necessario espandere o riprogettare parti della soluzione per soddisfare i risultati? È possibile riorganizzare gli approcci di esecuzione (o le sequenze temporali) per classificare in ordine di priorità i risultati aziendali a elevato effetto?
 
 ## <a name="next-steps"></a>Passaggi successivi
 

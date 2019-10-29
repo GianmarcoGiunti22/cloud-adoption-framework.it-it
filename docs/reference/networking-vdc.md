@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769433"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048254"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data Center virtuali: una prospettiva di rete
 
@@ -321,17 +321,17 @@ Nei componenti di tipo carico di lavoro si trovano le applicazioni e i servizi e
 
 Le possibilità dei carichi di lavoro sono infinite. I seguenti sono solo alcuni dei possibili tipi di carichi di lavoro:
 
-**Applicazioni LOB interne**: le applicazioni line-of-business sono applicazioni di computer cruciali per le operazioni in corso di un'azienda. Le applicazioni line-of-business presentano alcune caratteristiche comuni:
+**Applicazioni line-of-business interne:** Le applicazioni line-of-business sono applicazioni di computer cruciali per le operazioni in corso di un'azienda. Le applicazioni line-of-business presentano alcune caratteristiche comuni:
 
-- Sono **interattive** per natura. Vengono immessi dati e vengono restituiti risultati o report.
-- Sono **basate sui dati**&mdash;sono a elevato utilizzo di dati con accesso frequente ai database o alle altre risorse di archiviazione.
-- Sono **integrate**&mdash;consentono l'integrazione con gli altri sistemi interni o esterni all'organizzazione.
+- **Interattivo per natura:** I dati vengono immessi e vengono restituiti i risultati o i report.
+- **Basato sui dati:** Carichi di lavoro con utilizzo intensivo dei dati con accesso frequente a database o ad altre risorse di archiviazione.
+- **Integrazione:** Carichi di lavoro che offrono l'integrazione con altri sistemi all'interno o all'esterno dell'organizzazione.
 
 **Siti Web rivolte ai clienti (Internet o con connessione interna)** : la maggior parte delle applicazioni che interagiscono con Internet sono siti Web. Azure offre la possibilità di eseguire un sito Web in una macchina virtuale IaaS o da un sito di [app Web di Azure][WebApps] (PaaS). Le app Web di Azure supportano l'integrazione con le reti virtuali che consentono la distribuzione delle app Web in una zona di rete spoke. I siti Web interni non devono esporre un endpoint Internet pubblico perché le risorse sono accessibili tramite indirizzi privati non instradabili tramite Internet dal VNet privato.
 
-**Big Data/Analytics**: quando i dati devono essere ridimensionati in un volume elevato, i database potrebbero non essere ridimensionati correttamente. La tecnologia Hadoop offre un sistema per eseguire parallelamente le query distribuite in un numero elevato di nodi. I clienti hanno la possibilità di eseguire carichi di lavoro di dati in macchine virtuali IaaS o PaaS ([HDInsight][HDI]). HDInsight supporta la distribuzione in un VNet basato sul percorso, può essere distribuito in un cluster in una spoke di un data center virtuale.
+**Big Data e analisi:** Quando i dati devono essere ridimensionati in un volume elevato, i database potrebbero non essere ridimensionati correttamente. La tecnologia Hadoop offre un sistema per eseguire parallelamente le query distribuite in un numero elevato di nodi. I clienti hanno la possibilità di eseguire carichi di lavoro di dati in macchine virtuali IaaS o PaaS ([HDInsight][HDI]). HDInsight supporta la distribuzione in un VNet basato sul percorso, può essere distribuito in un cluster in una spoke di un data center virtuale.
 
-**Eventi e messaggistica**: [Hub eventi di Azure][EventHubs] è un servizio di inserimento di dati di telemetria con iperscalabilità che raccoglie, trasforma e archivia milioni di eventi. In quanto piattaforma di streaming distribuita, offre bassa latenza e tempo di conservazione configurabile, permettendo di inserire quantità molto elevate di dati di telemetria in Azure e leggere tali dati da più applicazioni. Con Hub eventi, un solo flusso può supportare pipeline sia in tempo reale che basate su batch.
+**Eventi e messaggistica:** [Hub eventi di Azure][EventHubs] è un servizio di inserimento di dati di telemetria con iperscalabilità che raccoglie, trasforma e archivia milioni di eventi. In quanto piattaforma di streaming distribuita, offre bassa latenza e tempo di conservazione configurabile, permettendo di inserire quantità molto elevate di dati di telemetria in Azure e leggere tali dati da più applicazioni. Con Hub eventi, un solo flusso può supportare pipeline sia in tempo reale che basate su batch.
 
 È possibile implementare un servizio di messaggistica cloud altamente affidabile tra applicazioni e servizi tramite il [bus di servizio di Azure][ServiceBus]. che offre la messaggistica negoziata asincrona tra il client e il server, insieme a funzionalità di messaggistica e pubblicazione e sottoscrizione FIFO (First-In-First-Out) strutturate.
 

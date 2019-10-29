@@ -1,7 +1,7 @@
 ---
-title: Consenti successo dei clienti in qualsiasi percorso di adozione del cloud
+title: Abilita il successo dei clienti durante un percorso di adozione del cloud
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Consenti successo dei clienti in qualsiasi percorso di adozione del cloud
+description: Abilita il successo dei clienti in un percorso di adozione del cloud
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,26 +9,26 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023451"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048331"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>Consenti successo in qualsiasi percorso di adozione del cloud
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>Consentire il successo durante un percorso di adozione del cloud
 
-Il Framework di adozione Microsoft Cloud per Azure viene fornito come strumento self-service gratuito per guidare i lettori attraverso diverse attività di adozione del cloud. L'obiettivo di questo contenuto è aiutare i clienti a realizzare obiettivi aziendali che possono essere abilitati da Azure. Tuttavia, questo contenuto rispetta anche il modo in cui il lettore può indirizzarsi a problemi aziendali, culturali o tecnici che possono essere di natura generale e talvolta richiedere una posizione indipendente dal cloud. Di conseguenza, ogni sezione di questo materiale sussidiario inizia con un primo approccio di Azure, ma segue la teoria del cloud neutro che può essere ridimensionata tra le decisioni aziendali e tecniche.
+Il Framework di adozione del cloud è uno strumento self-service gratuito che guida i lettori attraverso diversi sforzi di adozione del cloud. Il Framework consente ai clienti di realizzare obiettivi aziendali che possono essere abilitati dal Microsoft Azure. Tuttavia, questo contenuto riconosce anche che è possibile che il lettore stia affrontando grandi problemi aziendali, culturali o tecnici e che talvolta potrebbe richiedere una posizione indipendente dal cloud. Ogni sezione di questo materiale sussidiario inizia quindi con un approccio basato su Azure e quindi segue con una teoria indipendente dal cloud che può essere ridimensionata in molte decisioni aziendali e tecniche.
 
-Nell'ambito di questo Framework, l'abilitazione è un tema di base. L'elenco di controllo seguente contiene una serie di argomenti che devono essere incorporati in qualsiasi tentativo di adozione del cloud per garantire che il percorso sia un successo per quanto riguarda l'IT e l'azienda:
+Nell'ambito di questo Framework, l'abilitazione è un tema di base. Il seguente elenco di controllo rilevare i principi fondamentali di adozione del cloud che assicurano che un percorso di adozione venga considerato positivo sia da IT che dall'azienda:
 
-- **Piano** Definizione di [risultati aziendali](../strategy/business-outcomes/index.md)chiari, un piano di [Proprietà digitale](../digital-estate/index.md)definito e [backlog di adozione](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)ben noti.
-- **Pronta:** Verifica la conformità del personale attraverso [competenze e piani di studi](../ready/technical-skills.md).
-- **Operare** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
-  - **[Organizzazione](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
-  - **Governare** Allinea le [discipline di governance](../govern/index.md) appropriate per applicare in modo coerente la gestione dei costi, la mitigazione dei rischi, la conformità e le linee di base di sicurezza in tutta l'adozione cloud
+- **Piano:** La definizione di [risultati aziendali](../strategy/business-outcomes/index.md)chiari, un piano di [Proprietà digitale](../digital-estate/index.md)chiaramente definito e [backlog di adozione](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)ben noti.
+- **Pronto:** Verifica la conformità del personale attraverso [competenze e piani di studi](../ready/technical-skills.md).
+- **Funzionamento:** Definire un modello operativo gestibile per guidare le attività durante e lungo dopo l'adozione.
+  - **[Organizzare](../organize/index.md):** Allinea persone e team per offrire operazioni e adozione appropriate per il cloud.
+  - **Regola:** Allinea le [discipline di governance](../govern/index.md) appropriate per applicare in modo coerente la gestione dei costi, la mitigazione dei rischi, la conformità e le linee di base di sicurezza in tutta l'adozione cloud
   - **Gestione:** [Gestione operativa](../manage/index.md) continuativa del portfolio it per ridurre al minimo le interruzioni dei processi aziendali e garantire la stabilità del portfolio it.
-  - **Supporto** Allinea [le opzioni di collaborazione e supporto](../migrate/migration-considerations/assess/partnership-options.md)appropriate.
+  - **Supporto:** Allinea [le opzioni di collaborazione e supporto](../migrate/migration-considerations/assess/partnership-options.md)appropriate.
 
 ## <a name="additional-tools"></a>Strumenti aggiuntivi
 

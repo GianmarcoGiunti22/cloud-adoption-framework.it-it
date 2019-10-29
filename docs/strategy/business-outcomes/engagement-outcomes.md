@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029788"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047938"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Esempi di risultati di engagement per i clienti
 
@@ -29,7 +29,7 @@ Di seguito sono riportati esempi e risultati relativi all'engagement dei clienti
 
 Durante le trasformazioni con ossessione del cliente, come un lavoro di innovazione per le applicazioni abilitate per il cloud, i clienti rispondono dal coinvolgimento diretto e la possibilità di osservare le proprie esigenze è stata soddisfatta rapidamente dal team di sviluppo. La durata del ciclo è un termine di sei Sigma che fa riferimento alla durata dall'inizio alla fine di una funzione. Per i leader aziendali che sono ossessionati dal cliente e che investono molto nel miglioramento del coinvolgimento dei clienti, il tempo di ciclo può essere un risultato aziendale sicuro.
 
-- **Esempio**: Una società di servizi che fornisce servizi business-to-business (B2B) sta provando a sostenere la quota di mercato in un mercato competitivo. I clienti che hanno lasciato un provider di servizi in competizione hanno dichiarato che la soluzione tecnica eccessivamente complessa interferisce con i loro processi aziendali ed è il motivo principale per l'uscita. In questo caso, il tempo di ciclo è imperativo. Attualmente sono necessari 12 mesi perché una funzionalità venga inviata dalla richiesta al rilascio. Se è classificato in ordine di priorità dal team Executive, il ciclo può essere ridotto a sei o nove mesi. Grazie al supporto per l'innovazione delle applicazioni, ai modelli di applicazione nativi del cloud e all'integrazione DevOps di Azure, il team è stato in grado di ridurre il tempo di ciclo a un mese, consentendo ai team di sviluppo di applicazioni e aziendali di interagire più direttamente con clienti.
+- **Esempio:** Una società di servizi che fornisce servizi business-to-business (B2B) sta provando a sostenere la quota di mercato in un mercato competitivo. I clienti che hanno lasciato un provider di servizi in competizione hanno dichiarato che la soluzione tecnica eccessivamente complessa interferisce con i loro processi aziendali ed è il motivo principale per l'uscita. In questo caso, il tempo di ciclo è imperativo. Attualmente sono necessari 12 mesi perché una funzionalità venga inviata dalla richiesta al rilascio. Se è classificato in ordine di priorità dal team Executive, il ciclo può essere ridotto a sei o nove mesi. Grazie al supporto per l'innovazione delle applicazioni, ai modelli di applicazione nativi del cloud e all'integrazione DevOps di Azure, il team è stato in grado di ridurre il tempo di ciclo a un mese, consentendo ai team di sviluppo di applicazioni e aziendali di interagire più direttamente con clienti.
 
 > **ExakTime**
 >

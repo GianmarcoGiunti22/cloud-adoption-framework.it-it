@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 37bff0c476746efadb86a179f03d5d7951ea0b81
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980126"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047678"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Esperienze di ambiente: interagire con i dispositivi
 
@@ -33,7 +33,7 @@ Un'esperienza Web standard è la tecnica di sviluppo delle applicazioni più com
 
 Le esperienze di ambiente in genere richiedono più di un'app Web in questi giorni. Attraverso la [misurazione](./measure.md) e l' [apprendimento con il cliente](./learn.md) , il comportamento che attiva la necessità del cliente può essere osservato, rilevato e utilizzato per creare un'esperienza più ambientale. Nell'elenco seguente sono riepilogati alcuni approcci per l'integrazione delle soluzioni di ambiente nelle proprie ipotesi, con ulteriori dettagli su ognuno dei paragrafi seguenti.
 
-- **[Esperienza mobile](#mobile-experience)** : come per i portatili, le app per dispositivi mobili sono molto comuni nell'ambiente del cliente. In alcune situazioni, questo potrebbe fornire un livello sufficiente di interattività per rendere un ambiente della soluzione.
+- **[Esperienza mobile](#mobile-experience):** Come per i portatili, le app per dispositivi mobili sono onnipresenti negli ambienti dei clienti. In alcune situazioni, questo potrebbe fornire un livello sufficiente di interattività per rendere un ambiente della soluzione.
 - **[Realtà mista](#mixed-reality):** Talvolta è necessario modificare gli ambienti tipici di un cliente per creare un ambiente di interazione. Questo fattore crea qualcosa di una falsa realtà in cui il cliente interagisce con la soluzione e ha una necessità soddisfatta. In questo caso, la soluzione è di ambiente all'interno della realtà falsa.
 - **[Realtà integrata](#integrated-reality):** Avvicinandosi al vero ambiente, le soluzioni di realtà integrate si concentrano sull'uso di un dispositivo presente nella realtà del cliente per integrare la soluzione nei loro comportamenti naturali. Un assistente virtuale è un ottimo esempio di integrazione della realtà nell'ambiente circostante. Un'opzione meno nota riguarda Internet delle cose tecnologie, che integrano i dispositivi già esistenti negli ambienti del cliente.
 - **[Realtà regolata](#adjusted-reality):** Quando una di queste soluzioni di ambiente USA l'analisi predittiva nel cloud per definire e fornire un'interazione con il cliente attraverso l'ambiente naturale, la soluzione ha regolato la realtà.

@@ -1,27 +1,27 @@
 ---
-title: Introduzione a un percorso di migrazione cloud
+title: Inizia un percorso di migrazione cloud in Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introduzione a un percorso di migrazione cloud
+description: Inizia un percorso di migrazione cloud in Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547835"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048325"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>Introduzione a un percorso di migrazione cloud
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>Inizia un percorso di migrazione cloud in Azure
 
-Informazioni sull'uso del Framework di adozione Microsoft Cloud per Azure per iniziare un percorso di migrazione cloud. Questo Framework fornisce indicazioni complete per la transizione dei carichi di lavoro delle applicazioni legacy tramite tecnologie innovative basate su cloud.
+Usare il Framework di adozione Microsoft Cloud per Azure per iniziare un percorso di migrazione cloud. Questo Framework fornisce indicazioni complete per la transizione dei carichi di lavoro delle applicazioni legacy al cloud usando tecnologie innovative basate sul cloud.
 
 ## <a name="executive-summary"></a>Riepilogo
 
-Il Framework di adozione del cloud consente ai clienti di adottare un percorso semplificato di adozione del cloud. Questo Framework contiene informazioni dettagliate su un percorso di adozione cloud end-to-end, a partire da risultati aziendali mirati e allineando la preparazione al cloud e le valutazioni con obiettivi aziendali chiaramente definiti. Questi risultati vengono realizzati tramite un percorso definito per l'adozione del cloud. Con l'adozione basata sulla migrazione, il percorso definito è incentrato principalmente sul completamento di una migrazione di carichi di lavoro locali nel cloud. In alcuni casi questo percorso include la modernizzazione dei carichi di lavoro per aumentare il ritorno sugli investimenti dal lavoro di migrazione.
+Il Framework di adozione del cloud consente ai clienti di adottare un percorso semplificato di adozione del cloud. Questo Framework contiene informazioni dettagliate su un percorso di adozione cloud end-to-end, a partire da risultati aziendali mirati e quindi allineando la preparazione e le valutazioni del cloud con obiettivi aziendali chiaramente definiti. Questi risultati vengono realizzati tramite un percorso definito per l'adozione del cloud. Con l'adozione basata sulla migrazione, il percorso definito è incentrato principalmente sulla migrazione di carichi di lavoro locali nel cloud. In alcuni casi questo percorso include la modernizzazione dei carichi di lavoro per aumentare il ritorno sugli investimenti dal lavoro di migrazione.
 
 Questo Framework è stato progettato principalmente per architetti Cloud e per i team strategici del cloud leader nell'adozione del cloud. Tuttavia, molti argomenti di questo Framework sono rilevanti per altri ruoli nell'ambito dell'azienda. Gli architetti del cloud vengono spesso usati come facilitatori per coinvolgere ciascuno dei ruoli pertinenti. Questo riepilogo esecutivo è progettato per preparare i vari ruoli prima di facilitare le conversazioni.
 

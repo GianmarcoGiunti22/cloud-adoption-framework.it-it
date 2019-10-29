@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 1a0c1bfe2943176d647e53e8f91c8d92e168af12
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 350b13e993d2130dc72482cbe7cafb3823b6a4d8
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548688"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048362"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Esempi di esiti fiscali
 
 A livello superiore, le conversazioni sui temi finanziari sono basate su tre concetti fondamentali:
 
-- **Ricavi**: aumenteranno i costi aziendali in seguito alle vendite di beni o servizi.
-- **Costo**: meno denaro verrà speso per la creazione, il marketing, le vendite o il recapito di beni o servizi.
-- **Profitto**: Sebbene siano rari, alcune trasformazioni possono aumentare i ricavi e ridurre i costi. Si tratta di un risultato redditizio.
+- **Ricavi:** La maggior parte del denaro entrerà nell'azienda a seguito della vendita di beni o servizi.
+- **Costo:** Meno denaro verrà speso per la creazione, il marketing, le vendite o il recapito di beni o servizi.
+- **Profitto:** Sebbene siano rari, alcune trasformazioni possono aumentare i ricavi e ridurre i costi. Si tratta di un risultato redditizio.
 
 Nella parte restante di questo articolo vengono illustrati questi risultati fiscali nel contesto di una trasformazione cloud.
 
@@ -35,13 +35,13 @@ Nella parte restante di questo articolo vengono illustrati questi risultati fisc
 
 Il cloud consente di creare nuove opportunità per offrire nuovi prodotti ai clienti o fornire prodotti esistenti in modo nuovo. I nuovi flussi di ricavi sono innovativi, imprenditorialità ed entusiasmanti per molte persone nel mondo del business. Anche i nuovi flussi di ricavi sono soggetti a errori e sono considerati da molte aziende a rischio elevato. Quando vengono proposti i risultati relativi ai ricavi, è probabile che si verifichi una resistenza. Per aggiungere credibilità a questi risultati, partner con un leader aziendale che è un innovativo collaudato. La convalida del flusso dei ricavi all'inizio del processo contribuisce a evitare i blocchi stradali dall'azienda.
 
-- **Esempio**: una società ha venduto libri per più di un centinaio di anni. Un dipendente della società si rende conto che il contenuto può essere recapitato in modo elettronico. Il dipendente crea un dispositivo che può essere venduto nella libreria, che consente di scaricare direttamente gli stessi libri, guidando $X nelle vendite di nuovi libri.
+- **Esempio:** Una società ha venduto libri per più di un centinaio di anni. Un dipendente della società si rende conto che il contenuto può essere recapitato in modo elettronico. Il dipendente crea un dispositivo che può essere venduto nella libreria, che consente di scaricare direttamente gli stessi libri, guidando $X nelle vendite di nuovi libri.
 
 ### <a name="revenue-increases"></a>Aumento dei profitti
 
 Grazie alla scalabilità globale e alla portata digitale, il cloud può aiutare le aziende ad aumentare i ricavi da flussi di ricavi esistenti. Spesso questo tipo di risultato deriva da un allineamento con le vendite o la leadership di marketing.
 
-- **Esempio**: una società che vende widget potrebbe vendere più widget, se i venditori potevano accedere in modo sicuro al catalogo digitale della società e ai livelli di scorte. Sfortunatamente, i dati sono solo nel sistema ERP aziendale, a cui è possibile accedere solo tramite un dispositivo connesso alla rete. La creazione di una facciata del servizio per l'interfaccia con il ERP e l'esposizione dell'elenco di cataloghi e dei livelli di scorte non sensibili a un'applicazione nel cloud consentirebbe ai venditori di accedere ai dati necessari mentre sono in sede con un cliente. Estendendo Active Directory locali utilizzando Azure Active Directory (Azure AD) e integrando l'accesso basato sui ruoli nell'applicazione, l'azienda può garantire che i dati rimangano protetti. Questo progetto semplice potrebbe influire sui ricavi di una linea di prodotti esistente per _x%_ .
+- **Esempio:** Una società che vende widget potrebbe vendere un numero maggiore di widget, se i venditori potevano accedere in modo sicuro al catalogo digitale della società e ai livelli di scorte. Sfortunatamente, i dati sono solo nel sistema ERP aziendale, a cui è possibile accedere solo tramite un dispositivo connesso alla rete. La creazione di una facciata del servizio per l'interfaccia con il ERP e l'esposizione dell'elenco di cataloghi e dei livelli di scorte non sensibili a un'applicazione nel cloud consentirebbe ai venditori di accedere ai dati necessari mentre sono in sede con un cliente. Estendendo Active Directory locali utilizzando Azure Active Directory (Azure AD) e integrando l'accesso basato sui ruoli nell'applicazione, l'azienda può garantire che i dati rimangano protetti. Questo progetto semplice potrebbe influire sui ricavi di una linea di prodotti esistente per _x%_ .
 
 ### <a name="profit-increases"></a>Aumento dei profitti
 
@@ -53,9 +53,9 @@ Raramente una singola attività riesce simultaneamente ad aumentare i ricavi e a
 
 Il cloud computing può ridurre le spese di capitale per l'hardware e il software, configurare i Data Center, eseguire Data Center in sede e così via. I costi per i rack di server, l'energia elettrica rotonda per l'alimentazione e il raffreddamento e gli esperti IT per la gestione dell'infrastruttura si aggiungono rapidamente. L'arresto di un Data Center può ridurre gli impegni delle spese di capitale. Questa operazione viene in genere definita "come uscire dall'azienda del Data Center". La riduzione dei costi viene in genere misurata in dollari nel budget corrente, che può estendersi da uno a cinque anni a seconda del modo in cui il CFO gestisce le finanze.
 
-- **Esempio #1**: il Data Center di un'azienda usa un'alta percentuale del budget IT annuale. SI sceglie di eseguire una migrazione cloud e di passare le risorse nel data center alle soluzioni di infrastruttura distribuita come servizio (IaaS), creando una riduzione dei costi di tre anni.
-- **Esempio #2**: una società Holding ha recentemente acquisito una nuova azienda. Nell'acquisizione, i termini stabiliscono che la nuova entità deve essere rimossa dai data center correnti entro sei mesi. La mancata esecuzione di questa operazione comporterà una multa di 1 milione USD al mese per la società in possesso. Lo spostamento delle risorse digitali nel cloud in una migrazione cloud potrebbe consentire una rimozione rapida delle risorse precedenti.
-- **Esempio di #3**: una società fiscale del reddito che soddisfi le esperienze del 70% dei ricavi annuali durante i primi tre mesi dell'anno. Il resto dell'anno, il suo investimento IT di grandi dimensioni si trova relativamente inattivo. Una migrazione cloud potrebbe consentire la distribuzione della capacità di calcolo/hosting necessaria per questi tre mesi. Durante i restanti nove mesi, i costi IaaS potrebbero essere significativamente ridotti riducendo il footprint di calcolo.
+- **#1 di esempio:** Il Data Center di un'azienda usa un'alta percentuale del budget IT annuale. SI sceglie di eseguire una migrazione cloud e di passare le risorse nel data center alle soluzioni di infrastruttura distribuita come servizio (IaaS), creando una riduzione dei costi di tre anni.
+- **#2 di esempio:** Una società Holding ha recentemente acquisito una nuova azienda. Nell'acquisizione, i termini stabiliscono che la nuova entità deve essere rimossa dai data center correnti entro sei mesi. La mancata esecuzione di questa operazione comporterà una multa di 1 milione USD al mese per la società in possesso. Lo spostamento delle risorse digitali nel cloud in una migrazione cloud potrebbe consentire una rimozione rapida delle risorse precedenti.
+- **#3 di esempio:** Una società di imposte sui redditi che soddisfi le esperienze dei clienti del 70% dei ricavi annuali durante i primi tre mesi dell'anno. Il resto dell'anno, il suo investimento IT di grandi dimensioni si trova relativamente inattivo. Una migrazione cloud potrebbe consentire la distribuzione della capacità di calcolo/hosting necessaria per questi tre mesi. Durante i restanti nove mesi, i costi IaaS potrebbero essere significativamente ridotti riducendo il footprint di calcolo.
 
 ### <a name="example-coverdell"></a>Esempio: Coverdell
 
@@ -70,7 +70,7 @@ Coverdell modernizza la propria infrastruttura per ottenere risparmi sui costi d
 
 L'interruzione di un Data Center può anche garantire un costo evitabile, impedendo cicli di aggiornamento futuri. Un ciclo di aggiornamento è il processo di acquisto di nuovo hardware e software per sostituire i sistemi locali obsoleti. In Azure, l'hardware e il sistema operativo sono sottoposti a regolare manutenzione, con patch e aggiornamenti gratuiti per i clienti. Questo consente a un CFO di rimuovere la spesa futura pianificata dalle previsioni finanziarie a lungo termine. L'elusione dei costi viene misurata in dollari. Si differenzia dalla riduzione dei costi, che in genere si concentra su un budget futuro che non è ancora stato completamente approvato.
 
-- **Esempio**: il Data Center di un'azienda è attivo per un rinnovo del lease in sei mesi. Il Data Center è stato in servizio per otto anni. Quattro anni fa, tutti i server sono stati aggiornati e virtualizzati, con un costo pari a milioni di dollari della società. Il prossimo anno, la società intende aggiornare di nuovo l'hardware e il software. La migrazione degli asset in quel Data Center come parte di una migrazione cloud consente di evitare i costi rimuovendo l'aggiornamento pianificato dal budget previsto per l'anno successivo. Potrebbe anche produrre una riduzione dei costi diminuendo o eliminando i costi di locazione immobiliare.
+- **Esempio:** Il Data Center di un'azienda è attivo per un rinnovo del lease in sei mesi. Il Data Center è stato in servizio per otto anni. Quattro anni fa, tutti i server sono stati aggiornati e virtualizzati, con un costo pari a milioni di dollari della società. Il prossimo anno, la società intende aggiornare di nuovo l'hardware e il software. La migrazione degli asset in quel Data Center come parte di una migrazione cloud consente di evitare i costi rimuovendo l'aggiornamento pianificato dal budget previsto per l'anno successivo. Potrebbe anche produrre una riduzione dei costi diminuendo o eliminando i costi di locazione immobiliare.
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Spese di capitale e spese operative
 
@@ -91,7 +91,7 @@ Tuttavia, prima di associare un percorso di trasformazione a questo tipo di conv
 
 Se è auspicabile un modello di spesa operativa, l'esempio seguente potrebbe essere un risultato aziendale valido:
 
-- **Esempio**: il Data Center dell'azienda è attualmente svalutazione a _x USD_ all'anno per i prossimi tre anni. È prevista la necessità di un ulteriore _USD_ per aggiornare l'hardware prossimo anno. È possibile convertire le spese di capitale in un modello di spesa operativa a una velocità pari pari a _z USD_ al mese, consentendo una migliore gestione e responsabilità per i costi operativi della tecnologia.
+- **Esempio:** Il Data Center dell'azienda è attualmente svalutazione a _x USD_ all'anno per i prossimi tre anni. È prevista la necessità di un ulteriore _USD_ per aggiornare l'hardware prossimo anno. È possibile convertire le spese di capitale in un modello di spesa operativa a una velocità pari pari a _z USD_ al mese, consentendo una migliore gestione e responsabilità per i costi operativi della tecnologia.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833765"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048276"
 ---
 # <a name="plan-for-cloud-adoption"></a>Pianificare l'adozione del cloud
 
@@ -35,11 +35,11 @@ I modelli di acquisizione del cloud cambiano le dipendenze principali che hanno 
 
 In questa serie di articoli vengono illustrati i passaggi per tradurre la strategia e il lavoro in un piano di adozione cloud praticabile:
 
-1. **Prerequisiti**: Verificare che tutti i passaggi dei prerequisiti siano stati completati prima di creare il piano.
-2. **Definire e assegnare priorità ai carichi di lavoro**: Assegnare priorità ai primi 10 carichi di lavoro per stabilire un backlog di adozione iniziale.
-3. **Allinea asset**: Identificare gli asset (proposto o esistente) necessari per supportare i carichi di lavoro con priorità.
-4. **Esaminare**la razionalizzazione: Esaminare le decisioni di razionalizzazione per perfezionare le decisioni relative al percorso di adozione: Eseguire la migrazione o l'innovazione.
-5. **Definire iterazioni e versioni**: Le iterazioni sono i blocchi temporali allocati per il lavoro. Le *versioni* sono la definizione del lavoro da eseguire prima di attivare una modifica ai processi di produzione.
+1. **Prerequisiti:** Verificare che tutti i passaggi dei prerequisiti siano stati completati prima di creare il piano.
+2. **Definire e assegnare priorità ai carichi di lavoro:** Assegnare priorità ai primi 10 carichi di lavoro per stabilire un backlog di adozione iniziale.
+3. **Allinea asset:** Identificare gli asset (proposto o esistente) necessari per supportare i carichi di lavoro con priorità.
+4. **Esaminare la razionalizzazione:** Esaminare le decisioni di razionalizzazione per perfezionare le decisioni relative al percorso di adozione: migrazione o innovazione.
+5. **Definisci iterazioni e versioni:** le *iterazioni* rappresentano i blocchi temporali allocati per il lavoro. Le *versioni* sono la definizione del lavoro da eseguire prima di attivare una modifica ai processi di produzione.
 6. **Scadenze stimate:** Definire sequenze temporali approssimative a scopo di pianificazione della versione, in base alle stime iniziali.
 
 ## <a name="next-steps"></a>Passaggi successivi

@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548761"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048421"
 ---
 # <a name="storage-design-decisions"></a>Decisioni per la progettazione dell'archiviazione
 
@@ -61,7 +61,7 @@ Azure offre vari prodotti e servizi per diverse funzionalità di archiviazione. 
 | Sono in esecuzione contenitori con volumi permanenti. | [File di Azure (Standard o Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Archiviazione su disco di Azure (SSD Standard, SSD Premium o Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Sono disponibili le opzioni di driver per volumi di file (RWX) e blocchi (RWO) sia per il servizio Azure Kubernetes che per le distribuzioni di Kubernetes personalizzate. I volumi permanenti possono eseguire il mapping su un disco di archiviazione su disco di Azure o su una condivisione File di Azure gestita. Scegliere fra l'opzione Premium e Standard in base ai requisiti di carico di lavoro per i volumi permanenti. |
 | Si dispone di un data lake (ad esempio un cluster Hadoop per dati HDFS). | [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Archiviazione su disco di Azure (SSD Standard o Premium)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | La funzionalità Data Lake Storage Gen2 di Archiviazione BLOB di Azure offre compatibilità HDFS lato server e scalabilità in petabyte per l'analisi parallela. Offre anche disponibilità elevata e affidabilità. Se necessario, software come Cloudera possono usare SSD Premium o Standard nei nodi di lavoro/master. |
 | Si dispone di una distribuzione SAP o SAP HANA. | [Archiviazione su disco di Azure (SSD Premium o Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD è ottimizzato in modo da offrire una latenza inferiore al millisecondo per i carichi di lavoro SAP di livello 1. Ultra SSD è ora disponibile in anteprima. SSD Premium abbinato con la serie M offre un'opzione di disponibilità generale. |
-| Si dispone di un sito di ripristino di emergenza con RPO/RTO strict che esegue la sincronizzazione dai server primari. | [BLOB di pagine di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | I BLOB di pagine di Azure vengono usati dal software di replica per abilitare la replica a basso costo in Azure senza bisogno di macchine virtuali di calcolo fino a quando non si verifica il failover. Per altre informazioni, vedere la [documentazione sull'archiviazione su disco di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Nota**: i BLOB di pagine supportano un massimo di 8 TB. |
+| Si dispone di un sito di ripristino di emergenza con RPO/RTO strict che esegue la sincronizzazione dai server primari. | [BLOB di pagine di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | I BLOB di pagine di Azure vengono usati dal software di replica per abilitare la replica a basso costo in Azure senza bisogno di macchine virtuali di calcolo fino a quando non si verifica il failover. Per altre informazioni, vedere la [documentazione sull'archiviazione su disco di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Nota:** I BLOB di pagine supportano un massimo di 8 TB. |
 
 ### <a name="file-and-object-storage-scenarios"></a>Scenari di archiviazione di file e oggetti
 
