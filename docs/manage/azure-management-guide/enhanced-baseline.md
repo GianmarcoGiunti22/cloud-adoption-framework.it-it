@@ -1,0 +1,125 @@
+---
+title: Baseline di gestione ottimizzata in Azure
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: Miglioramenti comuni per la baseline di gestione
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 10/17/2019
+ms.topic: article
+ms.service: cloud-adoption-framework
+ms.subservice: operate
+ms.custom: fasttrack-edit, AQC
+ms.localizationpriority: high
+ms.openlocfilehash: 85e289867ac69f3403d964078a7c3f3b2a6c96a7
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683691"
+---
+# <a name="enhanced-management-baseline-in-azure"></a>Baseline di gestione ottimizzata in Azure
+
+Le prime tre discipline di gestione del cloud descrivono una baseline di gestione. Negli articoli precedenti di questa guida è stata descritta una soluzione MVP (Minimum Viable Product) per i servizi di gestione del cloud, indicata come baseline di gestione. Questo articolo illustra alcuni miglioramenti comuni della baseline.
+
+Lo scopo della baseline di gestione è creare un'offerta coerente che fornisca un livello minimo di impegno aziendale per **tutti*** i carichi di lavoro supportati. Questa baseline di offerte di gestione ripetibili e comuni consente al team di offrire una gestione operativa altamente ottimizzata con una deviazione minima. Tuttavia, potrebbe essere necessario un impegno maggiore per l'organizzazione, oltre all'offerta standard. L'immagine e i punti elenco seguenti mostrano tre modi per andare oltre la baseline di gestione.
+
+![Oltre la baseline di gestione del cloud](../../_images/manage/beyond-the-baseline.png)
+
+- **Operazioni per i carichi di lavoro:**
+  - investimento maggiore in operazioni per i carichi di lavoro.
+  - Massimo grado di resilienza.
+  - Suggerite per circa il 20% dei carichi di lavoro che determinano un valore di business.
+  - Generalmente riservate ai carichi di lavoro ad alta criticità o cruciali.
+- **Operazioni della piattaforma:**
+  - investimenti in operazioni distribuiti su molti carichi di lavoro.
+  - I miglioramenti della resilienza hanno effetto su tutti i carichi di lavoro che usano la piattaforma definita.
+  - Suggerite per circa il 20% delle piattaforme con la massima criticità.
+  - Generalmente riservate ai carichi di lavoro con criticità medio-alta.
+- **Baseline di gestione ottimizzata:**
+  - investimento minimo relativo in operazioni.
+  - Impegni aziendali leggermente migliorati tramite l'aggiunta di strumenti e processi operativi nativi del cloud.
+
+Per le operazioni dei carichi di lavoro e per quelle della piattaforma sarà necessario apportare cambiamenti in principi di progettazione e architettura. Questi cambiamenti possono richiedere del tempo e generare un aumento delle spese operative. Per ridurre il numero di carichi di lavoro che richiedono tali investimenti, una baseline di gestione ottimizzata potrebbe assicurare un miglioramento sufficiente per l'impegno aziendale.
+
+La tabella seguente illustra alcuni processi, strumenti e potenziali effetti comuni nelle baseline di gestione ottimizzate dei clienti.
+
+|Disciplina  |Process  |Strumento  |Impatto potenziale| Altre informazioni |
+|---------|---------|---------|---------|---------|
+|Inventario e visibilità|Rilevamento modifiche del servizio|Diagramma delle risorse di Azure|Una maggiore visibilità delle modifiche apportate ai servizi di Azure può aiutare a rilevare tempestivamente gli effetti negativi o a correggerli più rapidamente|[Panoramica di Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview)|
+|Inventario e visibilità|Integrazione di Gestione dei servizi IT|IT Service Management Connector|La connessione automatizzata di Gestione dei servizi IT crea consapevolezza in anticipo|[Connettore di Gestione dei servizi IT](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview)|
+|Conformità operativa|Automazione delle operazioni|Automazione di Azure|Automatizzare la conformità operativa per una risposta più rapida e accurata al cambiamento|Vedere di seguito|
+|Conformità operativa|Operazioni multicloud|Ruolo di lavoro ibrido per runbook di Automazione di Azure|Automatizzare le operazioni tra più cloud|[Panoramica di runbook ibrido](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)|
+|Conformità operativa|Automazione guest|Desire State Configuration (DSC)|Configurazione basata su codice dei sistemi operativi guest per ridurre gli errori e le differenze di configurazione|[Panoramica di DSC](/powershell/scripting/dsc/overview/overview)|
+|Protezione e ripristino|Notifica delle violazioni|Centro sicurezza di Azure|Estendere la protezione per includere i trigger di ripristino da violazioni della sicurezza|Vedere di seguito|
+
+::: zone target="docs"
+
+## <a name="azure-automation"></a>Automazione di Azure
+
+::: zone-end
+::: zone target="chromeless"
+
+## <a name="azure-automationtabazureautomation"></a>[Automazione di Azure](#tab/AzureAutomation)
+
+::: zone-end
+
+Automazione di Azure fornisce un sistema centralizzato per la gestione dei controlli automatizzati. In Automazione di Azure i semplici processi di correzione, ridimensionamento e ottimizzazione possono essere eseguiti in risposta a metriche ambientali, riducendo il sovraccarico associato all'elaborazione manuale degli eventi imprevisti. Soprattutto, la correzione automatizzata può essere implementata quasi in tempo reale, con una riduzione significative delle interruzioni per i processi aziendali. Uno studio delle interruzioni più comuni consentirà di identificare le attività all'interno dell'ambiente che potrebbero essere automatizzate.
+
+### <a name="runbooks"></a>Runbook
+
+Il runbook è l'unità di base di codice per offrire correzione automatizzata. I runbook contengono le istruzioni per la correzione o il ripristino in seguito a un evento imprevisto.
+
+Per creare o gestire runbook:
+
+1. Passare ad [Automazione di Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+2. Scegliere uno degli **account di automazione** elencati.
+3. Trovare la sezione **Automazione processi** nel riquadro di spostamento del portale.
+4. Le opzioni di questa sezione consentono di creare o gestire runbook, pianificazioni e altre funzionalità di correzione automatizzata.
+
+::: zone target="chromeless"
+
+<!-- markdownlint-disable DOCSMD001 -->
+
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
+
+::: zone-end
+::: zone target="docs"
+
+## <a name="azure-security-center"></a>Centro sicurezza di Azure
+
+::: zone-end
+::: zone target="chromeless"
+
+## <a name="azure-security-centertabazuresecuritycenter"></a>[Centro sicurezza di Azure](#tab/AzureSecurityCenter)
+
+::: zone-end
+
+Anche Centro sicurezza di Azure svolge un ruolo importante nella strategia di protezione e ripristino. Consente di monitorare la sicurezza di computer, reti, archiviazione, servizi dati e applicazioni. Centro sicurezza di Azure offre il rilevamento avanzato delle minacce tramite Machine Learning e analisi comportamentale per semplificare l'identificazione delle minacce attive destinate alle risorse di Azure. Fornisce inoltre protezione dalle minacce in grado di bloccare malware o altro codice indesiderato e riduce la superficie esposta ad attacchi di forza bruta e ad altre minacce per la rete.
+
+Quando identifica una minaccia, Centro sicurezza attiva un avviso di sicurezza con i passaggi necessari per rispondere a un attacco. Fornisce inoltre un report con informazioni sulla minaccia rilevata.
+
+Centro sicurezza di Azure è disponibile in due livelli: gratuito e standard. Funzionalità come le raccomandazioni di sicurezza sono disponibili nel livello gratuito. Il livello standard offre protezione aggiuntiva, tra cui il rilevamento delle minacce avanzato e la protezione per i carichi di lavoro cloud ibridi.
+
+::: zone target="chromeless"
+
+### <a name="action"></a>Azione
+
+**È possibile provare gratuitamente il livello standard per i primi 30 giorni.**
+
+Dopo aver abilitato e configurato i criteri di sicurezza per le risorse della sottoscrizione, è possibile visualizzare lo stato di sicurezza delle risorse ed eventuali problemi nella sezione **Prevenzione**. Anche nel riquadro **Raccomandazioni** è disponibile l'elenco dei problemi riscontrati.
+
+::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
+
+::: zone-end
+
+::: zone target="docs"
+
+Per esplorare il Centro sicurezza di Azure, accedere al [portale di Azure](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0).
+
+### <a name="learn-more"></a>Altre informazioni
+
+Per altre informazioni, vedere la [documentazione del Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center).
+
+::: zone-end

@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224397"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549263"
 ---
 # <a name="assess-the-digital-estate"></a>Valutare il digital estate
 
 In una migrazione ideale ogni asset (infrastruttura, app o dati) sarà compatibile con una piattaforma cloud e sarà pronto per la migrazione. In realtà, non è necessario eseguire la migrazione nel cloud. Inoltre, non tutti gli asset sono compatibili con le piattaforme cloud. Prima di eseguire la migrazione di un carico di lavoro nel cloud, è importante valutare il carico di lavoro e ogni asset correlato (infrastruttura, app e dati).
 
 Le risorse di questa sezione consentono di valutare l'ambiente per determinare l'idoneità per la migrazione e i metodi da considerare.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[Strumenti](#tab/Tools)
 

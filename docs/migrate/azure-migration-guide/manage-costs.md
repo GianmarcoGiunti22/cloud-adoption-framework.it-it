@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378422"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683830"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Meccanismi di controllo dei costi incentrati sulla migrazione
 
@@ -31,7 +31,7 @@ Gli strumenti descritti in questo articolo sono:
 > - Gestione costi di Azure
 > - Azure Advisor
 
-I processi descritti in questo articolo possono richiedere anche una collaborazione con i responsabili IT, il reparto finanza o i proprietari di applicazioni line-of-business. Per indicazioni relative alla collaborazione con tali ruoli, vedere l'articolo di Cloud Adoption Framework su come costituire un'organizzazione attenta ai costi (previsto per il terzo trimestre del 2019).
+I processi descritti in questo articolo possono richiedere anche una collaborazione con i responsabili IT, il reparto finanza o i proprietari di applicazioni line-of-business.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Questi calcolatori dei costi manuali possono essere usati in modo autonomo per p
 
 Azure Migrate calcola le **stime dei costi mensili** in base ai dati acquisiti dall'agente di raccolta e da Mapping dei servizi. La procedura seguente consentirà di caricare le stime dei costi:
 
-1. Passare al pannello Valutazione di Azure Migrate nel portale.
-1. Nella pagina **Panoramica** del progetto selezionare **+Crea valutazione**.
-1. Fare clic su **Visualizza tutto** per rivedere le proprietà di valutazione.
-1. Creare il gruppo e specificarne il nome.
-1. Selezionare le macchine virtuali da aggiungere al gruppo.
-1. Fare clic su **Crea valutazione** per creare il gruppo e la valutazione.
-1. Dopo aver creato la valutazione, visualizzarla in Panoramica > Dashboard.
-1. Nella sezione Dettagli valutazione del pannello di spostamento selezionare **Dettagli dei costi**.
+1. Passare a Valutazione di Azure Migrate nel portale.
+2. Nella pagina **Panoramica** del progetto selezionare **+Crea valutazione**.
+3. Fare clic su **Visualizza tutto** per rivedere le proprietà di valutazione.
+4. Creare il gruppo e specificarne il nome.
+5. Selezionare le macchine virtuali da aggiungere al gruppo.
+6. Fare clic su **Crea valutazione** per creare il gruppo e la valutazione.
+7. Dopo aver creato la valutazione, visualizzarla in Panoramica > Dashboard.
+8. Nella sezione Dettagli valutazione del riquadro di spostamento del portale selezionare **Dettagli dei costi**.
 
 La stima risultante, illustrata di seguito, identifica i costi mensili di calcolo e archiviazione, che spesso rappresentano la parte più significativa dei costi del cloud.
 
@@ -83,9 +83,9 @@ Entro 24 ore dalla migrazione degli asset (infrastruttura, app e dati) ad Azure,
 
 La procedura seguente fornisce consigli sui costi per gli asset (infrastruttura, app e dati) nelle sottoscrizioni correnti:
 
-1. Passare al pannello di **Azure Advisor** nel portale. A tale scopo, selezionare **Advisor** nel riquadro di spostamento sinistro del portale di Azure. Se Advisor non è visibile nel riquadro sinistro, selezionare **Tutti i servizi**. Nel riquadro del menu dei servizi, in **Monitoraggio e gestione**, selezionare **Advisor**.
-1. Nel dashboard di Advisor viene visualizzato un riepilogo dei consigli per tutte le sottoscrizioni selezionate. È possibile scegliere le sottoscrizioni per le quali si vuole ottenere i consigli usando come filtro il menu a discesa delle sottoscrizioni.
-1. Per visualizzare i consigli sui costi, fare clic sulla scheda Costo.
+1. Passare ad **Azure Advisor** nel portale. A tale scopo, selezionare **Advisor** nel riquadro di spostamento sinistro del portale di Azure. Se Advisor non è visibile nel riquadro sinistro, selezionare **Tutti i servizi**. Nel riquadro del menu dei servizi, in **Monitoraggio e gestione**, selezionare **Advisor**.
+2. Nel dashboard di Advisor viene visualizzato un riepilogo dei consigli per tutte le sottoscrizioni selezionate. È possibile scegliere le sottoscrizioni per le quali si vuole ottenere i consigli usando come filtro il menu a discesa delle sottoscrizioni.
+3. Per visualizzare i consigli sui costi, fare clic sulla scheda Costo.
 
 ## <a name="azure-cost-management"></a>Gestione costi di Azure
 
@@ -95,10 +95,10 @@ Prerequisiti: il resto di questa scheda presuppone che il lettore abbia completa
 
 La procedura seguente consentirà di caricare i dati di analisi dei costi di Gestione costi di Azure per le sottoscrizioni:
 
-1. Passare al pannello **Gestione costi e fatturazione** nel portale. Se Gestione costi e fatturazione non è visibile nel riquadro sinistro, fare clic su **Tutti i servizi**. Nel riquadro del menu dei servizi, in **Monitoraggio e gestione**, fare clic su **Gestione costi e fatturazione**.
-1. Nel pannello Gestione costi e fatturazione selezionare **Gestione costi** nel riquadro di spostamento sinistro del pannello aperto per iniziare ad analizzare e ottimizzare i costi del cloud.
-1. Nel pannello Gestione costi selezionare **Analisi dei costi**.
-    1. Usare l'etichetta **Ambito** per passare a un ambito diverso nell'analisi dei costi.
+1. Passare a **Gestione dei costi e fatturazione** nel portale. Se Gestione costi e fatturazione non è visibile nel riquadro sinistro, fare clic su **Tutti i servizi**. Nel riquadro del menu dei servizi, in **Monitoraggio e gestione**, fare clic su **Gestione costi e fatturazione**.
+2. In Gestione dei costi e fatturazione selezionare **Gestione dei costi** nel riquadro di spostamento sinistro per iniziare ad analizzare e ottimizzare i costi del cloud.
+3. In Gestione dei costi selezionare **Analisi dei costi**.
+    a. Usare l'etichetta **Ambito** per passare a un ambito diverso nell'analisi dei costi.
 
 Questa analisi consentirà di esaminare i costi totali, il budget (se disponibile) e i costi accumulati. Ogni calcolo può essere visualizzato per servizio, per risorsa e nel tempo. L'aspetto ancora più importante è rappresentato dal fatto che i costi possono essere analizzati in base ai tag. L'assegnazione di nomi e tag appropriati agli asset (infrastruttura, app e dati) è il punto di partenza fondamentale di tutti i processi affidabili di governance e gestione dei costi. I tag appropriati consentono una migliore gestione dei costi e una percezione più chiara dell'impatto delle ottimizzazioni delle prestazioni e dei costi.
 

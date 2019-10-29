@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5cb88bba1b82bf4255fb13f9ac9d415018316dec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022066"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548894"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitoraggio e creazione di report in Azure
 
@@ -139,7 +139,7 @@ Centro sicurezza di Azure è disponibile in due livelli: gratuito e standard. Fu
 
 **È possibile provare gratuitamente il livello standard per i primi 30 giorni.**
 
-Dopo aver attivato e configurato i criteri di sicurezza per le risorse di una sottoscrizione, è possibile visualizzare lo stato della sicurezza delle risorse ed eventuali problemi nella sezione **Prevenzione**. Anche nel riquadro **Raccomandazioni** è disponibile l'elenco dei problemi riscontrati.
+Dopo aver attivato e configurato i criteri di sicurezza per le risorse della sottoscrizione, è possibile visualizzarne lo stato di sicurezza ed eventuali problemi nella sezione **Prevenzione**. Anche nel riquadro **Raccomandazioni** è disponibile l'elenco dei problemi riscontrati.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 
