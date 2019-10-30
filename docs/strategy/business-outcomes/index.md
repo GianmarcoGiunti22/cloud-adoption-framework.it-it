@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548717"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048015"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Risultati aziendali associati ai percorsi di trasformazione
 
@@ -29,42 +29,42 @@ Per altre informazioni sui risultati aziendali e sul relativo modello, vedere l'
 
 L'elenco seguente include alcuni risultati aziendali che tendenzialmente consentono di avviare conversazioni con utenti di vario tipo:
 
-- **Responsabili finanziari**: aumentare la redditività pur promuovendo la conformità.
-- **Marketing**: acquisire clienti e fidelizzarli, costruire una reputazione.
-- **Vendite**: accelerare le vendite, migliorare il valore CLV (Customer Lifetime Value).
-- **Risorse umane**: conservare i dipendenti, gestire le assunzioni e aumentare la produttività dei dipendenti.
+- **Responsabili finanziari:** aumentare la redditività pur promuovendo la conformità.
+- **Marketing:** acquisire clienti e fidelizzarli, costruire una reputazione.
+- **Vendite:** accelerare le vendite, migliorare il valore CLV (Customer Lifetime Value).
+- **Risorse umane:** conservare i dipendenti, gestire le assunzioni e aumentare la produttività dei dipendenti.
 
-# <a name="sample-outcomes-by-category"></a>Risultati di esempio per categoria
+## <a name="sample-outcomes-by-category"></a>Risultati di esempio per categoria
 
 Per molte persone con formazione tecnica, il concetto di risultato aziendale può essere del tutto incomprensibile. Per facilitare la comprensione, Microsoft ha elaborato un set di esempi di risultati aziendali nel [framework dei risultati aziendali](../index.md). Questi esempi sono utili come fonte di ispirazione e per una dimostrazione dei risultati aziendali basati su percorsi di trasformazione effettivi.
 
 I risultati aziendali sono stati divisi nelle categorie seguenti per semplificarne l'individuazione. Questo approccio tende a promuovere le conversazioni finalizzate al consenso tra business unit.
 
-## <a name="fiscal-outcomes"></a>Risultati a livello fiscale
+### <a name="fiscal-outcomes"></a>Risultati a livello fiscale
 
 Le prestazioni finanziarie o fiscali sono il risultato aziendale prioritario per molti dirigenti aziendali, ma non l'unico.
 
 Vedere gli esempi di [risultati fiscali](./fiscal-outcomes.md).
 
-## <a name="agility-outcomes"></a>Risultati a livello di agilità
+### <a name="agility-outcomes"></a>Risultati a livello di agilità
 
 Negli ambienti aziendali in rapida evoluzione di oggi, il tempo è un elemento cruciale. La capacità di rispondere e favorire cambiamenti rapidi del mercato rappresenta la misura fondamentale dell'agilità aziendale.
 
 Vedere gli esempi di [risultati per l'agilità](./agility-outcomes.md).
 
-## <a name="reach-outcomes"></a>Risultati a livello di copertura globale
+### <a name="reach-outcomes"></a>Risultati a livello di copertura globale
 
 In un mercato soggetto a costanti contrazioni, la copertura globale, intesa come capacità di supportare utenti e clienti a livello globale, può essere misurata in base alla conformità nelle aree geografiche rilevanti per l'azienda.
 
 Vedere i risultati correlati alla [copertura globale](./reach-outcomes.md).
 
-## <a name="customer-engagement-outcomes"></a>Risultati a livello di engagement dei clienti
+### <a name="customer-engagement-outcomes"></a>Risultati a livello di engagement dei clienti
 
 I marketplace in ambiente social stanno ridefinendo le caratteristiche di vincitori e vinti a un ritmo mai visto prima. Rispondere alle esigenze degli utenti è un'unità di misura fondamentale per l'engagement dei clienti.
 
 Vedere altre informazioni sui [risultati a livello di engagement dei clienti](./engagement-outcomes.md).
 
-## <a name="performance-outcomes"></a>Risultati a livello di prestazioni
+### <a name="performance-outcomes"></a>Risultati a livello di prestazioni
 
 Prestazioni e affidabilità sono imprescindibili. In loro assenza, i danni per la reputazione possono essere notevoli e di lunga durata.
 
