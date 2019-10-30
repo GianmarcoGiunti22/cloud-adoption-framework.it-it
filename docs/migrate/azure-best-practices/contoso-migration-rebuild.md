@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548214"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058561"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ricompilare un'app locale in Azure
 
@@ -26,7 +26,7 @@ L'app SmartHotel360 usata in questo esempio viene fornita come open source. È p
 
 Il team di leadership IT collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in crescita e vuole offrire ai clienti esperienze differenziate nei propri siti Web.
+- **Stare al passo con la crescita del business.** Contoso è in crescita e vuole offrire ai clienti esperienze differenziate nei propri siti Web.
 - **Essere agile.** Contoso deve essere in grado di reagire più rapidamente ai cambiamenti nel marketplace, in modo da raggiungere risultati di successo in un'economia globale.
 - **Scalabilità.** Il team IT di Contoso deve offrire sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 - **Ridurre i costi:** Contoso desidera ridurre al minimo i costi di licenza.
@@ -132,11 +132,11 @@ Ecco in che modo Contoso eseguirà la migrazione:
 Gli amministratori di Contoso eseguono uno script di distribuzione per creare il cluster Kubernetes gestito tramite il servizio Azure Kubernetes e Registro Azure Container.
 
 - Le istruzioni di questa sezione usano il repository **SmartHotel360-Azure-backend**.
-- Il repository GitHub **SmartHotel360-Azure-backend** contiene l'intero software per questa parte di distribuzione.
+- Il repository GitHub **SmartHotel360-Azure-backend** contiene l'intero software per questa parte di distribuzione.  
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-1. Prima di iniziare, gli amministratori di Contoso verificano che tutti i software necessari siano installati nel computer di sviluppo usato per la distribuzione.
+1. Prima di iniziare, gli amministratori di Contoso assicurano che tutti i prerequisiti software siano installati nel computer di sviluppo usato per la distribuzione.
 2. Clonano il repository locale nel computer di sviluppo tramite Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
 
 ### <a name="provision-aks-and-acr"></a>Effettuare il provisioning del servizio Azure Kubernetes e di Registro Azure Container
@@ -152,7 +152,7 @@ Gli amministratori di Contoso effettuano il provisioning come indicato di seguit
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks3.png)
 5. Nel terminale integrato di PowerShell, Contoso accede ad Azure tramite il comando Connect-AzureRmAccount. [Altre informazioni](https://docs.microsoft.com/powershell/azure/get-started-azureps) per muovere i primi passi con PowerShell.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks4.png)
-6. Viene autenticata l'interfaccia della riga di comando di Azure eseguendo il comando **az login** e seguendo le istruzioni per l'autenticazione tramite browser Web. [Altre informazioni](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
+6. Per autenticare l'interfaccia della riga di comando di Azure, eseguire il comando `az login` e seguire le istruzioni per l'autenticazione tramite il Web browser. [Altre informazioni](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks5.png)
 7. Contoso esegue il comando seguente, trasferendo il nome del gruppo di risorse ContosoRG, il nome del cluster servizio Azure Kubernetes smarthotel-servizio Azure Kubernetes-eus2 e il nome del nuovo registro.
 
@@ -178,7 +178,9 @@ Gli amministratori di Contoso effettuano il provisioning come indicato di seguit
 
 11. Contoso usa il comando seguente per avviare il dashboard di Kubernetes:
 
-    **az servizio Azure Kubernetes browse --resource-group ContosoRG --name smarthotelservizio Azure Kuberneteseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. Una scheda del browser si apre sul dashboard. Si tratta di una connessione con tunnel tramite l'interfaccia della riga di comando di Azure.
 
@@ -278,7 +280,7 @@ A questo punto, gli amministratori di Contoso eseguono queste operazioni:
 - Distribuiscono i microservizi nel cluster servizio Azure Kubernetes.
 - Come primo passaggio, aggiornano le stringhe di connessione per i microservizi tramite Azure DevOps. Configurano quindi una nuova pipeline di rilascio di Azure DevOps per distribuire i microservizi.
 - Le istruzioni di questa sezione usano il repository [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend).
-- Si noti che alcune impostazioni di configurazione (ad esempio Active Directory B2C) non sono descritte in questo articolo. Per altre informazioni su queste impostazioni, vedere il repository.
+- Alcune impostazioni di configurazione, ad esempio Active Directory B2C, non sono descritte in questo articolo. Per ulteriori informazioni su queste impostazioni, esaminare il repository sopra riportato.
 
 A questo punto creano la pipeline:
 

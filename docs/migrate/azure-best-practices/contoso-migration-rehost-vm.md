@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547202"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058193"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Rehosting di un'app locale in macchine virtuali di Azure
 
@@ -26,7 +26,7 @@ L'app SmartHotel360 usata in questo esempio viene fornita come open source. È p
 
 Il team di leadership IT collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali sono sotto pressione.
+- **Stare al passo con la crescita del business.** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali sono sotto pressione.
 - **Limitare i rischi.** l'app SmartHotel360 è fondamentale per il business di Contoso. L'obiettivo è spostare l'app in Azure senza correre alcun rischio.
 - **Procedere all'estensione.** Contoso non vuole modificare l'app, ma vuole assicurarsi che sia stabile.
 
@@ -75,7 +75,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Considerazioni** | **Dettagli**
 --- | ---
-**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift-and-shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso può sfruttare l'investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure.
+**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift and shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso può sfruttare il proprio investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure.
 **Svantaggi** | WEBVM e SQLVM eseguono Windows Server 2008 R2. Il sistema operativo è supportato da Azure per ruoli specifici (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> I livelli Web e dati dell'app rimarranno come singolo punto di failover.<br/><br/> SQLVM è in esecuzione in SQL Server 2008 R2, che non è incluso nel supporto Mainstream, anche se è supportato per le macchine virtuali di Azure (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/956893).<br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database SQL di Azure.
 
 <!-- markdownlint-enable MD033 -->
@@ -283,7 +283,7 @@ Il team di sicurezza Contoso esamina le VM di Azure per determinare eventuali pr
 - Per controllare l'accesso, il team esamina i gruppi di sicurezza di rete (NSG) per le macchine virtuali. I gruppi di sicurezza di rete fanno in modo che l'app possa essere raggiunta solo dal traffico consentito.
 - Il team valuta inoltre l'opportunità di proteggere i dati sul disco usando Crittografia dischi di Azure e Key Vault.
 
-Sono disponibili [altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le VM.
+Per altre informazioni, vedere [procedure consigliate per la sicurezza per carichi di lavoro IaaS in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>BCDR
 

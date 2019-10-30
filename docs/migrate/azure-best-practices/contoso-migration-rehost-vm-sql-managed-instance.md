@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548157"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058505"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>eseguire il rehosting di un'app locale in una macchina virtuale di Azure e in Istanza gestita di database SQL
 
@@ -29,8 +29,8 @@ L'app SmartHotel360 usata in questo esempio viene fornita come open source. È p
 
 Il team dei responsabili IT di Contoso ha collaborato attivamente con i partner commerciali dell'azienda per comprendere gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in crescita. Di conseguenza, la pressione è aumentata sui sistemi locali e l'infrastruttura dell'azienda.
-- **Aumentare l'efficienza:** Occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un reparto IT rapido ed efficiente in termini di tempo e costi, per consentire di soddisfare più velocemente le esigenze dei clienti.
+- **Stare al passo con la crescita del business.** Contoso è in crescita. Di conseguenza, la pressione è aumentata sui sistemi locali e l'infrastruttura dell'azienda.
+- **Aumentare l'efficienza.** Occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un reparto IT rapido ed efficiente in termini di tempo e costi, per consentire di soddisfare più velocemente le esigenze dei clienti.
 - **Aumentare l'agilità.** il settore IT di Contoso deve essere più reattivo alle esigenze dell'azienda. Deve essere in grado di reagire più rapidamente dei cambiamenti nel marketplace, in modo da consentire all'azienda di raggiungere risultati positivi in un'economia globale. Il reparto IT di Contoso non deve rappresentare un ostacolo per le attività aziendali.
 - **Scalabilità.** Il reparto IT di Contoso deve mettere a punto sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 
@@ -588,7 +588,7 @@ Il team responsabile della sicurezza di Contoso esamina le macchine virtuali di 
 
      ![Sicurezza dell'istanza gestita: rilevamento delle minacce](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Per altre informazioni sulle procedure di sicurezza per le macchine virtuali, vedere [Procedure consigliate per la sicurezza dei carichi di lavoro IaaS in Azure](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms).
+Per altre informazioni sulle procedure di sicurezza per le macchine virtuali, vedere [Procedure consigliate per la sicurezza dei carichi di lavoro IaaS in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>BCDR
 

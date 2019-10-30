@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c052b5a9c3745a1d253b533086a9fdf4d86eae9
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967804"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058770"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Progettazione di governance per più team
 
@@ -29,10 +29,10 @@ I requisiti sono:
 - Supporto di più **ambienti**. Un ambiente è un raggruppamento logico di risorse, ad esempio macchine virtuali, reti virtuali e servizi di routing del traffico di rete. Questi gruppi di risorse hanno requisiti di sicurezza e gestione simili e vengono in genere usati per uno scopo specifico, ad esempio test o produzione. In questo esempio il requisito è per quattro ambienti:
   - Un **ambiente di infrastruttura condivisa** che include risorse condivise dai carichi di lavoro in altri ambienti. Ad esempio, una rete virtuale con una subnet gateway che fornisce connettività all'ambiente locale.
   - Un **ambiente di produzione** con i criteri di sicurezza più restrittivi. Può includere carichi di lavoro interni o rivolti all'esterno.
-  - Un **ambiente non di produzione** per il lavoro di sviluppo e test. Questo ambiente ha criteri di sicurezza, conformità e costi diversi da quelli dell'ambiente di produzione. In Azure il formato di una sottoscrizione Sviluppo/test Enterprise.
+  - **Ambiente di pre-produzione** per il lavoro di sviluppo e test. Questo ambiente ha criteri di sicurezza, conformità e costi diversi da quelli dell'ambiente di produzione. In Azure il formato di una sottoscrizione Sviluppo/test Enterprise.
   - **Ambiente sandbox** a scopo di prova e istruzione. Questo ambiente viene in genere assegnato a ogni dipendente che partecipa alle attività di sviluppo e dispone di controlli di sicurezza operativi e procedurali rigorosi per impedire l'atterraggio dei dati aziendali. In Azure, le sottoscrizioni di Visual Studio sono di tipo. Queste sottoscrizioni _non_ devono inoltre essere associate all'Azure Active Directory aziendale.
 - Un **modello di autorizzazione con privilegi minimi** in cui gli utenti non hanno autorizzazioni predefinite. Il modello deve supportare quanto segue:
-  - Un singolo utente attendibile (un account del servizio quasi) nell'ambito della sottoscrizione con l'autorizzazione per assegnare i diritti di accesso alle risorse.
+  - Un singolo utente attendibile (trattato come un account del servizio) nell'ambito della sottoscrizione con l'autorizzazione per assegnare i diritti di accesso alle risorse.
   - Per impostazione predefinita, a ogni proprietario del carico di lavoro viene negato l'accesso alle risorse. I diritti di accesso alle risorse vengono concessi in modo esplicito dal singolo utente attendibile nell'ambito del gruppo di risorse.
   - Accesso di gestione per le risorse dell'infrastruttura condivisa limitate ai proprietari dell'infrastruttura condivisa.
   - Accesso di gestione per ogni carico di lavoro limitato al proprietario del carico di lavoro (in produzione) e livelli di controllo crescenti, perché lo sviluppo aumenta da sviluppo a test fino alla fase di produzione.
@@ -43,10 +43,10 @@ I requisiti sono:
 
 Prima di poter progettare la gestione delle identità per il modello di governance, è importante comprendere le quattro aree principali che lo compongono:
 
-- **Amministrazione** Processi e strumenti per la creazione, la modifica e l'eliminazione dell'identità utente.
+- **Amministrazione:** Processi e strumenti per la creazione, la modifica e l'eliminazione dell'identità utente.
 - **Autenticazione:** Verifica dell'identità dell'utente tramite la convalida delle credenziali, ad esempio un nome utente e una password.
-- **Authorization:** Determinare le risorse a cui un utente autenticato può accedere o le operazioni di cui dispone dell'autorizzazione per l'esecuzione.
-- **Controllo** Esaminare periodicamente i log e altre informazioni per individuare i problemi di sicurezza correlati all'identità utente. Include l'analisi di modelli di utilizzo sospetti, l'esame periodico delle autorizzazioni dell'utente per verificare che siano corrette e altre funzioni.
+- **Autorizzazione:** Determinare le risorse a cui un utente autenticato può accedere o le operazioni di cui dispone dell'autorizzazione per l'esecuzione.
+- **Controllo:** Esaminare periodicamente i log e altre informazioni per individuare i problemi di sicurezza correlati all'identità utente. Include l'analisi di modelli di utilizzo sospetti, l'esame periodico delle autorizzazioni dell'utente per verificare che siano corrette e altre funzioni.
 
 Azure ritiene attendibile un solo servizio per l'identità, ovvero Azure Active Directory (Azure AD). Verranno aggiunti utenti ad Azure AD e questo servizio verrà usato per tutte le funzioni elencate in precedenza. Prima di esaminare come verrà configurato Azure AD, è importante comprendere gli account con privilegi che vengono usati per gestire l'accesso a questi servizi.
 
@@ -59,11 +59,13 @@ Le identità dell'utente sia per il proprietario dell'account Azure che per l'am
 
 Il proprietario dell'account Azure è autorizzato a creare, aggiornare ed eliminare sottoscrizioni:
 
-account ![Azure con Azure account manager e Azure AD amministratore globale @ no__t-1*Figura 1: un account Azure con un account manager e Azure ad amministratore globale.*
+![account Azure con gestione account di Azure e Azure AD amministratore globale](../../_images/govern/design/governance-3-0.png)
+*Figura 1: un account Azure con un account manager e Azure ad amministratore globale.*
 
 L'amministratore globale di **Azure AD** è autorizzato a creare account utente:
 
-account ![Azure con Azure account manager e Azure AD amministratore globale @ no__t-1*Figura 2-l'amministratore globale Azure ad crea gli account utente necessari nel tenant.*
+![account Azure con gestione account di Azure e Azure AD amministratore globale](../../_images/govern/design/governance-3-0a.png)
+*Figura 2: l'amministratore globale Azure ad crea gli account utente necessari nel tenant.*
 
 I primi due account, **Proprietario del carico di lavoro per App1** e **Proprietario del carico di lavoro per App2**, sono associati ognuno a un utente dell'organizzazione responsabile della gestione di un carico di lavoro. L'account **Network Operations** è di proprietà dell'utente responsabile delle risorse dell'infrastruttura condivisa. Infine, l'account **Subscription Owner** è associato al responsabile della proprietà delle sottoscrizioni.
 
@@ -80,35 +82,37 @@ Pertanto, per creare un modello di accesso con privilegi minimi è necessario de
 Di seguito sono riportati due modelli di autorizzazioni di esempio per comprendere meglio questo concetto. Nel primo esempio il modello considera attendibile solo l'amministratore per creare i gruppi di risorse. Nel secondo esempio il modello assegna il ruolo di proprietario predefinito a ogni proprietario del carico di lavoro nell'ambito della sottoscrizione.
 
 In entrambi gli esempi, è disponibile un amministratore del servizio di sottoscrizione a cui viene assegnato il ruolo proprietario predefinito nell'ambito della sottoscrizione. Tenere presente che il ruolo proprietario predefinito concede tutte le autorizzazioni, inclusa la gestione dell'accesso alle risorse.
-amministratore del servizio ![subscription con ruolo proprietario @ no__t-1*Figura 3: una sottoscrizione con un amministratore del servizio ha assegnato il ruolo proprietario predefinito.*
+![amministratore del servizio di sottoscrizione con ruolo proprietario](../../_images/govern/design/governance-2-1.png)
+*Figura 3-A una sottoscrizione con un amministratore del servizio è stato assegnato il ruolo proprietario predefinito.*
 
 1. Nel primo esempio è presente il **proprietario del carico di lavoro A** senza autorizzazioni a livello della sottoscrizione, per impostazione predefinita senza diritti di gestione dell'accesso alle risorse. Questo utente vuole distribuire e gestire le risorse per il proprio carico di lavoro. Deve contattare l'**amministratore del servizio** per richiedere la creazione di un gruppo di risorse.
     ![il proprietario del carico di lavoro richiede la creazione del gruppo di risorse A](../../_images/govern/design/governance-2-2.png)
-2. L'**amministratore del servizio** esamina la richiesta e crea il **gruppo di risorse A**. In questo momento, il **proprietario del carico di lavoro A**  non è ancora autorizzato ad eseguire alcuna operazione.
+2. L' **amministratore del servizio** esamina la richiesta e crea il **gruppo di risorse A**. A questo punto, **il proprietario del carico di lavoro a** non è ancora autorizzato a eseguire alcuna operazione.
     ![l'amministratore del servizio crea il gruppo di risorse A](../../_images/govern/design/governance-2-3.png)
 3. L'**amministratore del servizio** aggiunge il **proprietario del carico di lavoro A** al **gruppo di risorse A** e assegna il [ruolo di collaboratore predefinito](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Il ruolo di collaboratore concede tutte le autorizzazioni per il **gruppo di risorse A**, tranne la gestione delle autorizzazioni di accesso.
     ![l'amministratore del servizio aggiunge il proprietario del carico di lavoro al gruppo di risorse A](../../_images/govern/design/governance-2-4.png)
-4. Si supponga che il **proprietario del carico di lavoro A** debba consentire a un paio di componenti del team di visualizzare i dati di monitoraggio della CPU e del traffico di rete nell'ambito della pianificazione delle capacità del carico di lavoro. Dato che al **proprietario del carico di lavoro A** è assegnato il ruolo di collaboratore, non è autorizzato ad aggiungere utenti al **gruppo di risorse A**. Deve inviare questa richiesta all'**amministratore del servizio**.
+4. Si supponga che il **proprietario del carico di lavoro A** debba consentire a un paio di componenti del team di visualizzare i dati di monitoraggio della CPU e del traffico di rete nell'ambito della pianificazione delle capacità del carico di lavoro. Poiché il **proprietario del carico di lavoro a** è assegnato al ruolo Collaboratore, non dispone dell'autorizzazione per aggiungere un utente al **gruppo di risorse a**. È necessario che invii questa richiesta all' **amministratore del servizio**.
     ![il proprietario del carico di lavoro richiede l'aggiunta dei collaboratori del carico di lavoro al gruppo di risorse](../../_images/govern/design/governance-2-5.png)
-5. L'**amministratore del servizio** esamina la richiesta e aggiunge due utenti **collaboratori del carico di lavoro** al **gruppo di risorse A**. Nessuno di questi due utenti richiede l'autorizzazione a gestire le risorse, quindi viene assegnato il ruolo di [lettore predefinito](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
+5. L' **amministratore del servizio** esamina la richiesta e aggiunge i due utenti **collaboratore del carico di lavoro** al gruppo di **risorse a**. Nessuno di questi due utenti richiede l'autorizzazione per la gestione delle risorse, pertanto viene assegnato il [ruolo predefinito Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
     ![l'amministratore del servizio aggiunge i collaboratori del carico di lavoro al gruppo di risorse A](../../_images/govern/design/governance-2-6.png)
 6. Successivamente, anche il **proprietario del carico di lavoro B** richiede che un gruppo di risorse contenga le risorse per il proprio carico di lavoro. Come il **proprietario del carico di lavoro A**, il **proprietario del carico di lavoro B** non è inizialmente autorizzato a eseguire azioni a livello di sottoscrizione, quindi deve inviare una richiesta all'**amministratore del servizio**.
     ![il proprietario del carico di lavoro B richiede la creazione del gruppo di risorse B](../../_images/govern/design/governance-2-7.png)
-7. L'**amministratore del servizio** esamina la richiesta e crea il **gruppo di risorse B**.  ![l'amministratore del servizio crea il gruppo di risorse B](../../_images/govern/design/governance-2-8.png)
+7. L' **amministratore del servizio** esamina la richiesta e crea il **gruppo di risorse B**.  ![amministratore del servizio crea il gruppo di risorse B](../../_images/govern/design/governance-2-8.png)
 8. L' **amministratore del servizio** aggiunge quindi il **proprietario del carico di lavoro b** al **gruppo di risorse b** e assegna il ruolo Collaboratore predefinito.
     ![l'amministratore del servizio aggiunge il proprietario del carico di lavoro B al gruppo di risorse B](../../_images/govern/design/governance-2-9.png)
 
 A questo punto, ogni proprietario del carico di lavoro è isolato nel proprio gruppo di risorse. I proprietari del carico di lavoro o i componenti dei loro team non hanno accesso alle risorse di altri gruppi di risorse.
 
-![subscription con i gruppi di risorse A e B @ no__t-1*Figura 4-una sottoscrizione con due proprietari del carico di lavoro isolati con il proprio gruppo di risorse.*
+![sottoscrizione con i gruppi di risorse A e B](../../_images/govern/design/governance-2-10.png)
+*Figura 4-una sottoscrizione con due proprietari del carico di lavoro isolati con il proprio gruppo di risorse.*
 
-Questo modello è un modello con privilegi minimi @ no__t-0each all'utente viene assegnata l'autorizzazione corretta nell'ambito di gestione delle risorse corretto.
+Questo modello è un modello con privilegi minimi&mdash;a ogni utente viene assegnata l'autorizzazione corretta nell'ambito di gestione delle risorse corretto.
 
 Si consideri tuttavia che ogni attività in questo esempio è stata eseguita dall'**amministratore del servizio**. Anche se in un esempio semplice come questo può non sembrare un problema perché ci sono solo due proprietari del carico di lavoro, è facile immaginare i problemi che ne deriverebbero per una grande organizzazione. Ad esempio, l'**amministratore del servizio** può andare incontro a un collo di bottiglia con un gran numero di richieste arretrate che causano ritardi.
 
 Di seguito è riportato un secondo esempio che riduce il numero di attività eseguite dall'**amministratore del servizio**.
 
-1. In questo modello, al **proprietario del carico di lavoro a** viene assegnato il ruolo proprietario predefinito nell'ambito della sottoscrizione, consentendo loro di creare il proprio gruppo di risorse: **gruppo di risorse a**.  ![L'amministratore del servizio aggiunge il proprietario del carico di lavoro A alla sottoscrizione](../../_images/govern/design/governance-2-11.png)
+1. In questo modello, al **proprietario del carico di lavoro a** viene assegnato il ruolo proprietario predefinito nell'ambito della sottoscrizione, consentendo loro di creare il proprio gruppo di risorse: **gruppo di risorse a**.  ![amministratore del servizio aggiunge il proprietario del carico di lavoro a alla sottoscrizione](../../_images/govern/design/governance-2-11.png)
 2. Quando viene creato il **gruppo di risorse a** , il **proprietario del carico di lavoro a** viene aggiunto per impostazione predefinita ed eredita il ruolo predefinito del proprietario dall'ambito della sottoscrizione.
     ![Il proprietario del carico di lavoro A crea il gruppo di risorse A](../../_images/govern/design/governance-2-12.png)
 3. Il ruolo proprietario predefinito concede al **proprietario del carico di lavoro un'** autorizzazione per gestire l'accesso al gruppo di risorse. Il **proprietario del carico di lavoro a** aggiunge due **collaboratori del carico di lavoro** e assegna il ruolo di lettore predefinito a ognuno di essi.
@@ -120,7 +124,8 @@ Di seguito è riportato un secondo esempio che riduce il numero di attività ese
 
 Si noti che in questo modello l'**amministratore del servizio** ha eseguito meno azioni rispetto al primo esempio, avendo delegato l'accesso di gestione a ognuno dei proprietari dei carichi di lavoro.
 
-![subscription con i gruppi di risorse A e B @ no__t-1*Figura 5-una sottoscrizione con un amministratore del servizio e due proprietari del carico di lavoro, tutti assegnati al ruolo proprietario predefinito.*
+![sottoscrizione con i gruppi di risorse A e B](../../_images/govern/design/governance-2-16.png)
+*Figura 5: una sottoscrizione con un amministratore del servizio e due proprietari del carico di lavoro, tutti assegnati al ruolo proprietario predefinito.*
 
 Dato che tuttavia sia il **proprietario del carico di lavoro A** che il  **proprietario del carico di lavoro B** hanno il ruolo di proprietario predefinito nell'ambito della sottoscrizione, ognuno di essi ha ereditato il ruolo di proprietario predefinito per il gruppo di risorse dell'altro. Ciò significa che non solo hanno pieno accesso alle risorse dell'altro, ma possono anche delegare l'accesso di gestione al gruppo di risorse dell'altro. Ad esempio, il **proprietario del carico di lavoro B** è autorizzato ad aggiungere qualsiasi altro utente al **gruppo di risorse A** e può assegnare agli utenti qualsiasi ruolo, incluso il ruolo di proprietario predefinito.
 
@@ -130,11 +135,11 @@ Se si confronta ogni esempio con i requisiti definiti, entrambi gli esempi suppo
 
 Ora che è stato progettato un modello di autorizzazioni con privilegi minimi, verranno esaminate alcune applicazioni pratiche di questi modelli di governance. Secondo i requisiti definiti, è necessario supportare i tre ambienti seguenti:
 
-1. **Infrastruttura condivisa:** Gruppo di risorse condivise da tutti i carichi di lavoro. Si tratta di risorse quali gateway di rete, firewall e servizi di sicurezza.
-2. **Produzione** Più gruppi di risorse che rappresentano più carichi di lavoro di produzione. Queste risorse vengono usate per ospitare elementi privati e pubblici delle applicazioni. Queste risorse hanno in genere i modelli di governance e sicurezza più rigorosi per proteggere le risorse, il codice delle applicazioni e i dati da accessi non autorizzati.
-3. **Non produzione:** Più gruppi di risorse che rappresentano più carichi di lavoro pronti per la produzione. Queste risorse vengono usate per lo sviluppo e il test di queste risorse possono avere un modello di governance più rilassato per consentire una maggiore agilità degli sviluppatori. La sicurezza all'interno di questi gruppi dovrebbe aumentare il più vicino alla "produzione" per ottenere un processo di sviluppo di applicazioni.
+1. **Ambiente infrastruttura condivisa:** Gruppo di risorse condivise da tutti i carichi di lavoro. Si tratta di risorse quali gateway di rete, firewall e servizi di sicurezza.
+2. **Ambiente di produzione:** Più gruppi di risorse che rappresentano più carichi di lavoro di produzione. Queste risorse vengono usate per ospitare elementi privati e pubblici delle applicazioni. Queste risorse hanno in genere i modelli di governance e sicurezza più rigorosi per proteggere le risorse, il codice delle applicazioni e i dati da accessi non autorizzati.
+3. **Ambiente di preproduzione:** Più gruppi di risorse che rappresentano più carichi di lavoro pronti per la produzione. Queste risorse vengono usate per lo sviluppo e il test di queste risorse possono avere un modello di governance più rilassato per consentire una maggiore agilità degli sviluppatori. La sicurezza all'interno di questi gruppi dovrebbe aumentare il più vicino alla "produzione" per ottenere un processo di sviluppo di applicazioni.
 
-Per ognuno di questi tre ambienti è necessario tenere traccia dei dati sui costi per **proprietario del carico di lavoro**, **ambiente** o entrambi. In altre termini, sarà necessario ottenere informazioni sui costi in corso dell' **infrastruttura condivisa**, i costi sostenuti da singoli utenti negli ambienti di produzione **e di** **produzione** e, infine, il costo complessivo di **non produzione** e  **produzione**.
+Per ognuno di questi tre ambienti è necessario tenere traccia dei dati sui costi per **proprietario del carico di lavoro**, **ambiente** o entrambi. In altre termini, sarà necessario ottenere informazioni sui costi in corso dell' **infrastruttura condivisa**, i costi sostenuti da singoli utenti negli ambienti di **pre** -produzione e di **produzione** e infine il costo **complessivo della preproduzione e**ambienti di produzione.
 
 Si è già appreso che le risorse sono suddivise in due livelli: **sottoscrizione** e **gruppo di risorse**. La prima decisione da prendere è quindi come organizzare gli ambienti per **sottoscrizione**. Sono disponibili solo due opzioni: una singola sottoscrizione o più sottoscrizioni.
 
@@ -142,11 +147,12 @@ Prima di esaminare gli esempi di ognuno di questi modelli, verrà esaminata la s
 
 Secondo i requisiti definiti, un utente dell'organizzazione è responsabile delle sottoscrizioni e ha l'account **proprietario della sottoscrizione** nel tenant di Azure AD. Questo account non è tuttavia autorizzato a creare sottoscrizioni. Solo il **proprietario dell'account Azure** ha tale autorizzazione:
 
-@no__t: il proprietario dell'account Azure crea una sottoscrizione @ no__t-1*Figura 6: un proprietario dell'account Azure crea una sottoscrizione.*
+![un proprietario dell'account Azure crea una sottoscrizione](../../_images/govern/design/governance-3-0b.png)
+*Figura 6: un proprietario dell'account Azure crea una sottoscrizione.*
 
 Una volta creata la sottoscrizione, il **proprietario dell'account Azure** può aggiungere l'account **proprietario della sottoscrizione** alla sottoscrizione con il ruolo **proprietario**:
 
-il proprietario dell'account di Azure ![The aggiunge l'account utente del proprietario della sottoscrizione alla sottoscrizione con il ruolo proprietario. ](../../_images/govern/design/governance-3-0c.png)
+![il proprietario dell'account Azure aggiunge l'account utente del proprietario della sottoscrizione alla sottoscrizione con il ruolo proprietario.](../../_images/govern/design/governance-3-0c.png)
 *Figura 7: il proprietario dell'account Azure aggiunge l'account utente del **proprietario della sottoscrizione** alla sottoscrizione con il ruolo **proprietario** .*
 
 Il **proprietario della sottoscrizione** può ora creare **gruppi di risorse** e delegare la gestione dell'accesso alle risorse.
@@ -159,25 +165,25 @@ Verrà ora esaminato un esempio di modello di gestione delle risorse che usa una
 Verrà ora valutata la prima opzione. Si userà il modello di autorizzazioni illustrato nella sezione precedente, con un solo amministratore del servizio della sottoscrizione che crea i gruppi di risorse e aggiunge gli utenti ai gruppi con il ruolo di **collaboratore** o **lettore** predefiniti.
 
 1. Il primo gruppo di risorse distribuito rappresenta l'ambiente dell'**infrastruttura condivisa**. Il **proprietario della sottoscrizione** crea un gruppo di risorse per le risorse dell'infrastruttura condivisa denominato `netops-shared-rg`.
-    ![Creating un gruppo di risorse @ no__t-1
+    ![la creazione di un gruppo di risorse](../../_images/govern/design/governance-3-0d.png)
 2. Il **proprietario della sottoscrizione** aggiunge l'account **utente delle operazioni di rete** al gruppo risorse e assegna il ruolo di **collaboratore**.
-    ![Adding un utente di operazioni di rete @ no__t-1
+    ![l'aggiunta di un utente di operazioni di rete](../../_images/govern/design/governance-3-0e.png)
 3. L'**utente delle operazioni di rete** crea un [gateway VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) e lo configura per la connessione all'appliance VPN locale. L'**utente delle operazioni di rete** applica anche una coppia di [tag](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) a ognuna delle risorse: *environment:shared* e *managedBy:netOps*. Quando l'**amministratore del servizio della sottoscrizione** esporta un report sui costi, i costi verranno allineati a ognuno di questi tag. L'**amministratore del servizio della sottoscrizione** può così organizzare i costi usando i tag *environment* e *managedBy*. Si noti il contatore dei **limiti delle risorse** in alto a destra nella figura. Ogni sottoscrizione di Azure ha [limiti del servizio](https://docs.microsoft.com/azure/azure-subscription-service-limits). Per comprendere l'effetto di questi limiti si seguirà il limite della rete virtuale per ogni sottoscrizione. Esiste un limite di 1000 reti virtuali per ogni sottoscrizione e dopo la distribuzione della prima rete virtuale restano disponibili 999 reti.
-    ![Creating un gateway VPN @ no__t-1
+    ![la creazione di un gateway VPN](../../_images/govern/design/governance-3-1.png)
 4. Vengono distribuiti altri due gruppi di risorse. Il primo è denominato `prod-rg`. Questo gruppo di risorse è allineato all'ambiente di produzione. Il secondo è denominato `dev-rg` ed è allineato all'ambiente di sviluppo. Tutte le risorse associate ai carichi di lavoro di produzione sono distribuite nell'ambiente di produzione e tutte le risorse associate ai carichi di lavoro di sviluppo sono distribuite nell'ambiente di sviluppo. In questo esempio verranno distribuiti solo due carichi di lavoro in ognuno di questi due ambienti, quindi non si incontrerà alcun limite di servizio della sottoscrizione di Azure. È tuttavia importante considerare che ogni gruppo di risorse ha un limite di 800 risorse per gruppo di risorse. Se si continua ad aggiungere carichi di lavoro a ogni gruppo di risorse, alla fine il limite verrà raggiunto.
-    gruppi di risorse ![Creating @ no__t-1
+    ![la creazione di gruppi di risorse](../../_images/govern/design/governance-3-2.png)
 5. Il primo **proprietario del carico di lavoro** invia una richiesta all'**amministratore del servizio della sottoscrizione** e viene aggiunto a ognuno dei gruppi di risorse dell'ambiente di sviluppo e di produzione con il ruolo di **collaboratore**. Come si è appreso in precedenza, il ruolo di **collaboratore** consente all'utente di eseguire qualsiasi operazione, tranne l'assegnazione di un ruolo a un altro utente. Il primo **proprietario del carico di lavoro** può ora creare le risorse associate al proprio carico di lavoro.
-    ![Adding collaboratori @ no__t-1
+    ![aggiunta di collaboratori](../../_images/govern/design/governance-3-3.png)
 6. Il primo **proprietario del carico di lavoro** crea una rete virtuale in ognuno dei due gruppi di risorse con una coppia di macchine virtuali in ciascuno. Il primo **proprietario del carico di lavoro** applica i tag *environment* e *managedBy* a tutte le risorse. Si noti che il contatore dei limiti del servizio di Azure indica ora 997 reti virtuali rimanenti.
-    ![Creating reti virtuali @ no__t-1
+    ![la creazione di reti virtuali](../../_images/govern/design/governance-3-4.png)
 7. Nessuna delle reti virtuali ha connettività con l'ambiente locale al momento della creazione. In questo tipo di architettura, è necessario eseguire il peering di ogni rete virtuale con *hub-vnet* nell'ambiente dell'**infrastruttura condivisa**. Il peering di rete virtuale crea una connessione tra due reti virtuali separate e consente al traffico di rete di passare da una rete all'altra. Si noti che il peering di rete virtuale non è intrinsecamente transitivo. È necessario specificare un peering in ognuna delle due reti virtuali connesse. Se solo una delle reti virtuali specifica un peering, la connessione è incompleta. Per illustrare l'effetto, il primo **proprietario del carico di lavoro** specifica un peering tra **prod-vnet** e **hub-vnet**. Il primo peering è stato creato, ma il traffico non viene trasmesso perché il peering complementare da **hub-vnet**  a **prod-vnet** non è stato ancora specificato. Il primo **proprietario del carico di lavoro** contatta l'utente delle **operazioni di rete** e richiede questa connessione di peering complementare.
-    ![Creating una connessione peering @ no__t-1
+    ![la creazione di una connessione di peering](../../_images/govern/design/governance-3-5.png)
 8. L'utente delle **operazioni di rete** esamina la richiesta, la approva e quindi specifica il peering nelle impostazioni di **hub-vnet**. La connessione peering è ora completa e il traffico di rete viene trasmesso tra le due reti virtuali.
-    ![Creating una connessione peering @ no__t-1
+    ![la creazione di una connessione di peering](../../_images/govern/design/governance-3-6.png)
 9. Un secondo **proprietario del carico di lavoro**  invia ora una richiesta all'**all'amministratore del servizio della sottoscrizione** e viene aggiunto ai gruppi di risorse degli ambienti di **produzione** e **sviluppo** esistenti con il ruolo di **collaboratore**. Il secondo **proprietario del carico di lavoro** ha per tutte le risorse le stesse autorizzazioni del primo **proprietario del carico di lavoro** in ogni gruppo di risorse.
-    ![Adding collaboratori @ no__t-1
+    ![aggiunta di collaboratori](../../_images/govern/design/governance-3-7.png)
 10. Il secondo **proprietario del carico di lavoro** crea una subnet nella rete virtuale **prod-vnet**, quindi aggiunge due macchine virtuali. Il secondo **proprietario del carico di lavoro** applica i tag *environment* e *managedBy* a ogni risorsa.
-    subnet ![Creating @ no__t-1
+    ![la creazione di subnet](../../_images/govern/design/governance-3-8.png)
 
 Questo modello di esempio per la gestione delle risorse consente di gestire le risorse nei tre ambienti richiesti. Le risorse dell'infrastruttura condivisa sono protette perché nella sottoscrizione è presente un solo utente autorizzato ad accedere a tali risorse. Ognuno dei proprietari del carico di lavoro può usare le risorse dell'infrastruttura condivisa senza avere autorizzazioni sulle risorse condivise in sé. Questo modello di gestione, tuttavia, non soddisfa il requisito di isolamento del carico di lavoro: ognuno dei due **proprietari del carico di lavoro** può accedere alle risorse del carico di lavoro dell'altro.
 
@@ -190,15 +196,15 @@ Ciò significa che **app2 workload owner** è autorizzato a distribuire la propr
 Si esaminerà ora una sottoscrizione singola con più gruppi di risorse per ambienti e carichi di lavoro diversi. Si noti che nell'esempio precedente le risorse per ogni ambiente erano facilmente identificabili perché facevano parte dello stesso gruppo di risorse. Ora che quel raggruppamento non è più disponibile, sarà necessario fare affidamento su una convenzione di denominazione dei gruppi di risorse per ottenere tale funzionalità.
 
 1. Le risorse dell'**infrastruttura condivisa** avranno ancora un gruppo di risorse separato in questo modello, che quindi non cambia. Ogni carico di lavoro richiede due gruppi di risorse, uno per ognuno degli ambienti di **sviluppo** e **produzione**. Per il primo carico di lavoro, il **proprietario della sottoscrizione** crea due gruppi di risorse. Il primo è denominato **App1-prod-RG** e il secondo è denominato **App1-dev-RG**. Come illustrato in precedenza, questa convenzione di denominazione identifica le risorse come associate al primo carico di lavoro, **app1**, e all'ambiente **dev** o **prod**. Anche in questo caso, il proprietario della *sottoscrizione* aggiunge il **proprietario del carico di lavoro App1** al gruppo di risorse con il ruolo **collaboratore** .
-    ![Adding collaboratori @ no__t-1
+    ![aggiunta di collaboratori](../../_images/govern/design/governance-3-12.png)
 2. In modo simile al primo esempio, **app1 workload owner** distribuisce una rete virtuale denominata **app1-prod-vnet** nell'ambiente di **produzione** e un'altra denominata **app1-dev-vnet**  nell'ambiente di **sviluppo**. Anche in questo caso, **app1 workload owner** invia una richiesta all'utente delle **operazioni di rete** per la creazione di una connessione di peering. Si noti che **app1 workload owner** aggiunge gli stessi tag del primo esempio e il contatore dei limiti indica 997 reti virtuali rimanenti nella sottoscrizione.
-    ![Creating una connessione peering @ no__t-1
+    ![la creazione di una connessione di peering](../../_images/govern/design/governance-3-13.png)
 3. Il proprietario della **sottoscrizione** crea ora due gruppi di risorse per **app2 workload owner**. Seguendo le stesse convenzioni valide per **app1 workload owner**, i gruppi di risorse vengono denominati **app2-prod-rg** e **app2-dev-rg**. Il **proprietario della sottoscrizione** aggiunge **app2 workload owner** a ognuno dei gruppi di risorse con il ruolo **collaboratore**.
-    ![Adding collaboratori @ no__t-1
+    ![aggiunta di collaboratori](../../_images/govern/design/governance-3-14.png)
 4. *App2 workload owner* distribuisce le reti e le macchine virtuali nei gruppi di risorse con le stesse convenzioni di denominazione. Vengono aggiunti i tag e il contatore dei limiti scende a 995 reti virtuali rimanenti nella *sottoscrizione*.
-    reti virtuali e VM ![Deploying @ no__t-1
+    ![la distribuzione di reti virtuali e VM](../../_images/govern/design/governance-3-15.png)
 5. *App2 workload owner* invia una richiesta all'utente delle *operazioni di rete* per eseguire il peering di *app2-prod-vnet* con *hub-vnet*. L'utente delle *operazioni di rete*  crea la connessione di peering.
-    ![Creating una connessione peering @ no__t-1
+    ![la creazione di una connessione di peering](../../_images/govern/design/governance-3-16.png)
 
 Il modello di gestione ottenuto è simile al primo esempio, con numerose differenze fondamentali:
 
@@ -210,9 +216,9 @@ Il modello di gestione ottenuto è simile al primo esempio, con numerose differe
 Si esaminerà ora un modello di gestione delle risorse con più sottoscrizioni. In questo modello, ognuno dei tre ambienti verrà allineato a una sottoscrizione distinta: una sottoscrizione di **servizi condivisi**, una sottoscrizione di **produzione** e, infine, una sottoscrizione di **sviluppo**. Le considerazioni per questo modello sono simili a quelle di un modello che usa una sottoscrizione singola, perché è necessario decidere come allineare i gruppi di risorse ai carichi di lavoro. È già stato stabilito che la creazione di un gruppo di risorse per ogni carico di lavoro soddisfa i requisiti di isolamento del carico di lavoro, quindi si seguirà questo modello in questo esempio.
 
 1. In questo modello sono disponibili tre *sottoscrizioni*: *infrastruttura condivisa*, *produzione* e *sviluppo*. Ognuna di queste tre sottoscrizioni richiede un *proprietario della sottoscrizione* e in questo esempio semplice si userà lo stesso account utente per tutte e tre. Le risorse dell'*infrastruttura condivisa* sono gestite in modo simile ai primi due esempi precedenti e il primo carico di lavoro è associato ad *app1-rg* nell'ambiente di *produzione* e al gruppo di risorse con lo stesso nome nell'ambiente di *sviluppo*. *App1 workload owner* viene aggiunto a ogni gruppo di risorse con il ruolo di *collaboratore*.
-    ![Adding collaboratori @ no__t-1
+    ![aggiunta di collaboratori](../../_images/govern/design/governance-3-17.png)
 2. Come per gli esempi precedenti, *app1 workload owner* crea le risorse e richiede la connessione di peering con la rete virtuale dell'*infrastruttura condivisa*. *App1 workload owner* aggiunge solo il tag *managedBy* perché il tag *environment* non è più necessario. In altre parole, le risorse per ogni ambiente sono ora raggruppate nella stessa *sottoscrizione* e il tag *environment* è ridondante. Il contatore dei limiti scende a 999 reti virtuali rimanenti.
-    ![Creating una connessione peering @ no__t-1
+    ![la creazione di una connessione di peering](../../_images/govern/design/governance-3-18.png)
 3. Il *proprietario della sottoscrizione* ripete infine il processo per il secondo carico di lavoro, aggiungendo i gruppi di risorse con *app2 workload owner* nel ruolo di *collaboratore. Il contatore dei limiti per ogni sottoscrizione dell'ambiente scende a 998 reti virtuali rimanenti.
 
 Questo modello di gestione ha i vantaggi del secondo esempio illustrato in precedenza. La differenza principale è tuttavia che i limiti non rappresentano un problema reale perché sono distribuiti in due *sottoscrizioni*. Lo svantaggio è che i dati sui costi rilevati dai tag devono essere aggregati per tutte e tre le *sottoscrizioni*.
@@ -226,7 +232,7 @@ Sono stati appresi diversi modelli per la gestione dell'accesso alle risorse di 
 > [!NOTE]
 > Vedere [informazioni sull'accesso alle risorse in Azure](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles) per altre informazioni sulla relazione tra gli account e le sottoscrizioni di Azure.
 
-A tale scopo, seguire questa procedura:
+Seguire questa procedura:
 
 1. Creare un [account di Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization), se l'organizzazione non ne ha già uno. La persona che effettua l'iscrizione per l'account di Azure diventa l'amministratore account di Azure e i leader dell'organizzazione devono scegliere una persona che assuma questo ruolo. Questo utente sarà responsabile di:
     - Creazione di sottoscrizioni.

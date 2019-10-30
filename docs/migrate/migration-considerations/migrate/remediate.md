@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833453"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058860"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Correggere gli asset prima della migrazione
 
@@ -31,7 +31,7 @@ In qualsiasi ambiente aziendale esiste il debito tecnico. In alcuni casi si trat
 - **Modifiche alla configurazione delle applicazioni.** Le applicazioni di cui è stata eseguita la migrazione possono richiedere modifiche alle variabili, ad esempio i percorsi di rete degli asset dipendenti, modifiche agli account del servizio o aggiornamenti agli indirizzi IP dipendenti.
 - **Modifiche secondarie ai percorsi di rete.** Può essere necessario modificare i modelli di routing in modo da instradare correttamente il traffico utenti verso i nuovi asset.
     > [!NOTE]
-    > Non si tratta del routing di produzione verso i nuovi asset, ma della configurazione per consentire il routing appropriato verso gli asset in generale.
+    > Questo non è il routing di produzione per i nuovi asset, ma piuttosto la configurazione per consentire il routing appropriato alle risorse in generale.
 
 ## <a name="large-scale-remediation-tasks"></a>Attività di correzione su larga scala
 

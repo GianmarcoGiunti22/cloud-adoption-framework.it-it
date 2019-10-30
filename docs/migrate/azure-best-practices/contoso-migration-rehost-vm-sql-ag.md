@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547218"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058643"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Eseguire il rehosting di un'app locale in macchine virtuali di Azure e nel gruppo di disponibilità AlwaysOn di SQL Server
 
@@ -26,8 +26,8 @@ L'app SmartHotel360 usata in questo esempio viene fornita come open source. È p
 
 Il team di leadership IT collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
-- **Aumentare l'efficienza:** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
+- **Stare al passo con la crescita del business.** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
+- **Aumentare l'efficienza.** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
 - **Aumentare l'agilità.** il settore IT di Contoso deve essere più reattivo alle esigenze dell'azienda. Deve essere in grado di reagire più rapidamente ai cambiamenti nel marketplace, in modo da raggiungere risultati di successo in un'economia globale. Non deve rappresentare un ostacolo per le attività aziendali.
 - **Scalabilità.** il settore IT di Contoso deve fornire sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 
@@ -87,7 +87,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Considerazioni** | **Dettagli**
 --- | ---
-**Vantaggi** | WEBVM verrà spostata in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Il livello SQL Server verrà eseguito su SQL Server 2017 e Windows Server 2016. In questo modo viene ritirato il sistema operativo Windows Server 2008 R2 e l'esecuzione di SQL Server 2017 supporta i requisiti tecnici e gli obiettivi di Contoso. L’IT garantisce compatibilità al 100% per l’abbandono di SQL Server 2008 R2.<br/><br/> Contoso può sfruttare l'investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Una distribuzione di SQL Server ad alta disponibilità in Azure fornisce tolleranza di errore in modo che il livello di dati delle app non sia più un singolo punto di failover.
+**Vantaggi** | WEBVM verrà spostata in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Il livello SQL Server verrà eseguito su SQL Server 2017 e Windows Server 2016. In questo modo viene ritirato il sistema operativo Windows Server 2008 R2 e l'esecuzione di SQL Server 2017 supporta i requisiti tecnici e gli obiettivi di Contoso. L’IT garantisce compatibilità al 100% per l’abbandono di SQL Server 2008 R2.<br/><br/> Contoso può sfruttare il proprio investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Una distribuzione di SQL Server ad alta disponibilità in Azure fornisce tolleranza di errore in modo che il livello di dati delle app non sia più un singolo punto di failover.
 **Svantaggi** | WEBVM esegue Windows Server 2008 R2. Il sistema operativo è supportato da Azure per ruoli specifici (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> I livelli Web dell'app rimarranno come singolo punto di failover.<br/><br/> Contoso dovrà continuare a supportare il livello Web come VM di Azure anziché passare a un servizio gestito come Servizio app di Azure.<br/><br/> Con la soluzione scelta, Contoso dovrà continuare a gestire due macchine virtuali SQL Server piuttosto che passare a una piattaforma gestita come Istanza gestita di database SQL di Azure. Con Software Assurance, poi, Contoso ha potuto sostituire le licenze esistenti con licenze a tariffe scontate su Istanza gestita di database SQL di Azure.
 
 <!-- markdownlint-enable MD033 -->
@@ -659,7 +659,7 @@ Il team di sicurezza Contoso esamina le VM di Azure WEBVM, SQLAOG1 e SQLAOG2 per
 - Il team valuta l'opportunità di proteggere i dati sul disco usando Crittografia dischi di Azure e Key Vault.
 - Il team dovrebbe valutare l'uso della tecnologia TDE (Transparent Data Encryption) e quindi abilitarla nel database di SmartHotel360 in esecuzione sul nuovo gruppo di disponibilità AlwaysOn di SQL. [Altre informazioni](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
-Sono disponibili [altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le VM.
+Per altre informazioni, vedere [procedure consigliate per la sicurezza per carichi di lavoro IaaS in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>BCDR
 

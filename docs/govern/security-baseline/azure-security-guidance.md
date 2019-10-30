@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548054"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058823"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,7 +52,7 @@ Questi strumenti sono progettati per aiutare le organizzazioni a soddisfare gli 
 
 ## <a name="unique-intelligent-insights"></a>Informazioni dettagliate univoche
 
-Man mano che aumentano il volume e la complessità dei segnali di sicurezza, determinare se quei segnali sono minacce credibili, e quindi agire, richiede troppo tempo. Microsoft offre un'ampiezza impareggiabile di informazioni di sicurezza distribuite su scala del cloud per aiutare a rilevare e rimediare con rapidità alle minacce. [Altre informazioni](https://docs.microsoft.com/azure/security-center/security-center-intro)
+Man mano che aumentano il volume e la complessità dei segnali di sicurezza, determinare se quei segnali sono minacce credibili, e quindi agire, richiede troppo tempo. Microsoft offre un'ampiezza impareggiabile di informazioni di sicurezza distribuite su scala del cloud per aiutare a rilevare e rimediare con rapidità alle minacce. Per altre informazioni, vedere [Panoramica del Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
 ## <a name="azure-threat-intelligence"></a>Informazioni sulle minacce di Azure
 

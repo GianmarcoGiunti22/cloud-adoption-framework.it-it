@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 863f1270679a849d53bce04a8c2fded6019fc65f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548530"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058896"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Procedure consigliate per la configurazione della rete per i carichi di lavoro migrati in Azure
 
@@ -417,8 +417,8 @@ Gli indirizzi IP pubblici in Azure possono essere associati a macchine virtuali,
 
 **Altre informazioni**:
 
-- [Informazioni sugli](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) indirizzi IP pubblici in Azure.
-- [Informazioni](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) sull'accesso JIT alle macchine virtuali nel Centro sicurezza di Azure.
+- [Indirizzi IP pubblici in Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [Gestire l'accesso alle macchine virtuali con Just-in-Time](https://docs.microsoft.com/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Sfruttare le funzionalità di sicurezza di Azure per la rete
 

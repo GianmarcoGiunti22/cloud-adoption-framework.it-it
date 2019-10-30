@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548774"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058171"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffold Azure enterprise: governance prescrittiva per le sottoscrizioni
 
 > [!NOTE]
-> Azure Enterprise ponteggi è stato integrato nel Framework di adozione Microsoft Cloud. Il contenuto di questo articolo è ora rappresentato nella sezione [Ready](../ready/index.md) del nuovo Framework. Questo articolo verrà deprecato nelle prime 2020. Per iniziare a usare il nuovo processo, vedere la [Panoramica pronta](../ready/index.md), [creazione della prima area di destinazione](../ready/azure-setup-guide/migration-landing-zone.md)e/o [considerazioni sulla zona di destinazione](../ready/considerations/index.md).
+> Azure Enterprise ponteggi è stato integrato nel Framework di adozione Microsoft Cloud. Il contenuto di questo articolo è ora rappresentato nella sezione [Ready](../ready/index.md) del nuovo Framework. Questo articolo verrà deprecato nelle prime 2020. Per iniziare a usare il nuovo processo, vedere la [Panoramica pronta](../ready/index.md), [creazione della prima zona di destinazione](../ready/azure-setup-guide/migration-landing-zone.md)e [considerazioni sulla zona di destinazione](../ready/considerations/index.md).
 
 Le organizzazioni stanno adottando sempre di più il cloud pubblico per la sua agilità e la sua flessibilità. Si basano sui punti di forza del cloud per generare ricavi e ottimizzare l'utilizzo delle risorse per l'azienda. Microsoft Azure fornisce numerosi servizi e funzionalità che le organizzazioni assemblano come blocchi predefiniti per affrontare le esigenze di una vasta gamma di applicazioni e carichi di lavoro.
 

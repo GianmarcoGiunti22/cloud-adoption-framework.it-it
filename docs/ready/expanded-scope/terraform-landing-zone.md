@@ -1,5 +1,5 @@
 ---
-title: Area di destinazione con bonifica
+title: Usare la bonifica per creare le zone di destinazione
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni su come usare la bonifica per creare le zone di destinazione.
 author: arnaudlh
@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b540e2f4ea2a9c7f091a5505a19ad61eac05c971
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049770"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058162"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Usare la bonifica per creare le zone di destinazione
 
-Oltre ai servizi nativi di Azure, i clienti e i partner usano spesso la bonifica di Hashicorp per distribuire le zone di destinazione. Questa sezione descrive come usare un'area di destinazione prototipo per distribuire funzionalità di registrazione, contabilità e sicurezza fondamentali per una sottoscrizione di Azure.
+Azure fornisce servizi nativi per la distribuzione di zone di destinazione. Anche altri strumenti di terze parti possono aiutare a eseguire questa operazione. Uno di questi strumenti che i clienti e i partner usano spesso per distribuire le zone di destinazione sono la bonifica di Hashicorp in. Questa sezione illustra come usare un'area di destinazione prototipo per distribuire funzionalità di registrazione, contabilità e sicurezza fondamentali per una sottoscrizione di Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Scopo della zona di destinazione
 

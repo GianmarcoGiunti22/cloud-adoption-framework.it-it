@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378050"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058064"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Esempi di implementazione di scaffold enterprise di Azure
 
 > [!NOTE]
-> Azure Enterprise ponteggi è stato integrato nel Framework di adozione Microsoft Cloud. Il contenuto di questo articolo è ora rappresentato nella sezione [Ready](../ready/index.md) del nuovo Framework. Questo articolo verrà deprecato nelle prime 2020. Per iniziare a usare il nuovo processo, vedere la [Panoramica pronta](../ready/index.md), [creazione della prima area di destinazione](../ready/azure-setup-guide/migration-landing-zone.md)e/o [considerazioni sulla zona di destinazione](../ready/considerations/index.md).
+> Azure Enterprise ponteggi è stato integrato nel Framework di adozione Microsoft Cloud. Il contenuto di questo articolo è ora rappresentato nella sezione [Ready](../ready/index.md) del nuovo Framework. Questo articolo verrà deprecato nelle prime 2020. Per iniziare a usare il nuovo processo, vedere la [Panoramica pronta](../ready/index.md), [creazione della prima zona di destinazione](../ready/azure-setup-guide/migration-landing-zone.md)e [considerazioni sulla zona di destinazione](../ready/considerations/index.md).
 
 In questo articolo vengono forniti esempi di come un'azienda può implementare gli elementi consigliati per uno [scaffold enterprise di Azure](./azure-scaffold.md). Usa una società fittizia denominata Contoso per illustrare le procedure consigliate per scenari comuni.
 
@@ -138,6 +138,8 @@ Dave accede al Enterprise Portal di Azure e rileva che il reparto Supply Chain e
 | --- | --- |
 | Sviluppo. |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Produzione |Contoso SupplyChain Operations LoyaltyCard Production |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>Criteri
 

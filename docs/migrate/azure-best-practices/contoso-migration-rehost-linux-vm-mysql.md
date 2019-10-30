@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547333"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058638"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Eseguire il rehosting di un'app Linux in locale in macchine virtuali di Azure e Database di Azure per MySQL
 
@@ -25,7 +25,7 @@ osTicket, l'app Service Desk usata in questo esempio, viene fornita come open so
 
 Il team di responsabili IT ha lavorato a stretto contatto con i partner di business per comprenderne le effettive esigenze:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
+- **Stare al passo con la crescita del business.** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
 - **Limitare i rischi.** l'app Service Desk è fondamentale a livello aziendale. L'obiettivo è spostare l'app in Azure senza correre alcun rischio.
 - **Procedere all'estensione.** Contoso non vuole sostituire l'app subito, semplicemente, intende mantenere stabili le app.
 
@@ -446,7 +446,7 @@ Il team di sicurezza di Contoso esamina la macchina virtuale e il database per d
 - Il team considera di proteggere i dati sui dischi della macchina virtuale usando Crittografia dischi e Azure Key Vault.
 - La comunicazione tra la macchina virtuale e l'istanza del database non è configurata per SSL. Sarà necessario eseguire questa operazione per proteggere il traffico del database.
 
-Sono disponibili [altre informazioni](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sulle procedure di sicurezza per le VM.
+Per altre informazioni, vedere [procedure consigliate per la sicurezza per carichi di lavoro IaaS in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>BCDR
 

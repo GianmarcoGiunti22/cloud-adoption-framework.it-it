@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547336"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058901"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuire un'infrastruttura di migrazione
 
@@ -325,7 +325,7 @@ Una volta progettata l'area, Contoso è pronta considerare una strategia di rete
 
 ### <a name="plan-hybrid-network-connectivity"></a>Pianificare una connettività di rete ibrida
 
-Contoso ha considerato una [serie di architetture](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) per la rete ibrida tra Azure e il data center locale. [Altre informazioni](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) sul confronto tra le opzioni.
+Contoso ha considerato una [serie di architetture](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) per la rete ibrida tra Azure e il data center locale. Per altre informazioni, vedere [scegliere una soluzione per la connessione di una rete locale ad Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Come promemoria, l'infrastruttura di rete locale di Contoso è attualmente costituita dal data center di New York e da filiali locali nell'area orientale degli Stati Uniti. Tutte le sedi dispongono di connessione aziendale a Internet. Ogni filiale è connessa al data center con un tunnel VPN IPSec tramite Internet.
 
@@ -638,7 +638,7 @@ Active Directory è un servizio fondamentale nella rete e deve essere configurat
 
 ## <a name="step-5-plan-for-governance"></a>Passaggio 5: Pianificare la governance
 
-Azure offre una gamma di controlli di governance nei servizi e nella piattaforma di Azure. [Altre informazioni](https://docs.microsoft.com/azure/security/governance-in-azure) per una conoscenza di base delle opzioni.
+Azure offre una gamma di controlli di governance nei servizi e nella piattaforma di Azure. Per ulteriori informazioni, vedere le [Opzioni di governance di Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 Nel momento in cui configura il controllo delle identità e degli accessi, Contoso ha già iniziato a implementare alcuni aspetti di governance e sicurezza. Su vasta scala, sono tre le aree che deve prendere in considerazione:
 
