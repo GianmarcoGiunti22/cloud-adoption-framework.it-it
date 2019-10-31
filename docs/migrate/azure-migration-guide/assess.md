@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549263"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058807"
 ---
 # <a name="assess-the-digital-estate"></a>Valutare il digital estate
 
@@ -58,7 +58,7 @@ Per iniziare a usare una valutazione della migrazione dei server con Azure Migra
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>Altre informazioni
+### <a name="learn-more"></a>Altre informazioni
 
 - [Panoramica di Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Eseguire la migrazione di server fisici o virtuali ad Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -82,7 +82,7 @@ Per usare la visualizzazione delle dipendenze, è necessario scaricare e install
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>Altre informazioni
+### <a name="learn-more"></a>Altre informazioni
 
 - [Uso della soluzione Mapping dei servizi in Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate e Mapping dei servizi: Visualizzazione delle dipendenze](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -104,7 +104,7 @@ L'elenco completo delle parti interessate varia tra i progetti di migrazione. È
 
 La creazione di un team di strategia cloud di base, basata su questi principali stakeholder di alto livello, può aiutare a preparare l'organizzazione per l'adozione del cloud e a guidare le attività complessive di migrazione nel cloud. Questo team è responsabile della comprensione delle tecnologie cloud e dei processi di migrazione, dell'identificazione della motivazione aziendale per le migrazioni e della determinazione delle migliori soluzioni di alto livello per le attività di migrazione. Il team consente inoltre di identificare e collaborare con specifici stakeholder aziendali e dell'applicazione per garantire una corretta migrazione.
 
-Per altre informazioni su come preparare l'organizzazione per le attività di migrazione nel cloud, vedere l'articolo relativo all'[allineamento iniziale dell'organizzazione ](../../ready/initial-org-alignment.md) nel framework di adozione del cloud.
+Per altre informazioni su come preparare l'organizzazione per le attività di migrazione nel cloud, vedere l'articolo relativo all'[allineamento iniziale dell'organizzazione ](../../plan/initial-org-alignment.md) nel framework di adozione del cloud.
 
 # <a name="timelinestabtimelines"></a>[Tempistica](#tab/Timelines)
 
