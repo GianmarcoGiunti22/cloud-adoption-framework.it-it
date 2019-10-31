@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Creare coerenza del cloud ibrido
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Ambito esteso
+      items:
+        - name: Zone di destinazione Terraform
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Sicurezza dei limiti di rete
+          href: reference/networking-vdc.md
     - name: Procedure consigliate
       items:
         - name: Panoramica
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Procedure consigliate aggiuntive
                   items:
-                    - name: Procedure consigliate per la sicurezza dei limiti di Azure
-                      href: reference/networking-vdc.md
                     - name: Procedure consigliate per la sicurezza del database di Azure
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Procedure consigliate per la crittografia e la sicurezza dei dati di Azure

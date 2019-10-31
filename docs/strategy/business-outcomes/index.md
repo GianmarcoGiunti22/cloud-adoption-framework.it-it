@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: faa1728dd72828478a167cf09535bdf9f2ac1a82
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048015"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058868"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -62,13 +62,13 @@ Vedere i risultati correlati alla [copertura globale](./reach-outcomes.md).
 
 I marketplace in ambiente social stanno ridefinendo le caratteristiche di vincitori e vinti a un ritmo mai visto prima. Rispondere alle esigenze degli utenti è un'unità di misura fondamentale per l'engagement dei clienti.
 
-Vedere altre informazioni sui [risultati a livello di engagement dei clienti](./engagement-outcomes.md).
+Altre informazioni sui [risultati a livello di engagement dei clienti](./engagement-outcomes.md).
 
 ### <a name="performance-outcomes"></a>Risultati a livello di prestazioni
 
 Prestazioni e affidabilità sono imprescindibili. In loro assenza, i danni per la reputazione possono essere notevoli e di lunga durata.
 
-Vedere altre informazioni sui [risultati a livello di prestazioni](./performance-outcomes.md).
+Altre informazioni sui [risultati a livello di prestazioni](./performance-outcomes.md).
 
 Ognuno dei risultati aziendali elencati nelle categorie precedenti può contribuire a facilitare conversazioni mirate tra membri dei team aziendali e tecnici. Tuttavia, non è consigliabile limitare le conversazioni a questi esempi generici. Se si riescono a comprendere le esigenze specifiche della propria organizzazione e a definire risultati corrispondenti, è possibile ottimizzare il valore della trasformazione del cloud.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683513"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058714"
 ---
 # <a name="subscription-decision-guide"></a>Guida alle decisioni relative alle sottoscrizioni
 
@@ -26,7 +26,7 @@ Con l'incremento del digital estate in Azure, è probabilmente necessario creare
 
 Alcuni esempi di base relativi all'uso dei gruppi di gestione per separare carichi di lavoro diversi includono:
 
-- **Ambiente di produzione e non di produzione:** alcune organizzazioni creano gruppi di gestione per separare le sottoscrizioni di produzione e non di produzione. I gruppi di gestione consentono a questi clienti di gestire più facilmente ruoli e criteri. Ad esempio, una sottoscrizione non di produzione può consentire agli sviluppatori l'accesso come **collaboratore**, mentre nell'ambiente di produzione hanno solo l'accesso come **lettore**.
+- **Carichi di lavoro di produzione e non di produzione:** alcune organizzazioni creano gruppi di gestione per separare le sottoscrizioni di produzione e non di produzione. I gruppi di gestione consentono a questi clienti di gestire più facilmente ruoli e criteri. Ad esempio, una sottoscrizione non di produzione può consentire agli sviluppatori l'accesso come **collaboratore**, mentre nell'ambiente di produzione hanno solo l'accesso come **lettore**.
 - **Servizi interni o esterni:** in modo molto simile ai carichi di lavoro di produzione e non di produzione, le aziende hanno spesso requisiti, criteri e ruoli diversi per servizi interni ed esterni destinati ai clienti.
 
 Questa guida alle decisioni consente di prendere in considerazione diversi approcci per organizzare la gerarchia dei gruppi di gestione.
