@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048254"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240094"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data Center virtuali: una prospettiva di rete
 
@@ -378,7 +378,7 @@ Poiché usa DNS, Gestione traffico è destinato solo all'uso con gli endpoint pu
 
 ### <a name="summary"></a>Summary
 
-Un data center virtuale è un approccio alla migrazione del Data Center per creare un'architettura scalabile in Azure che ottimizza l'uso delle risorse cloud, riduce i costi e semplifica la governance del sistema. Un data center virtuale si basa su una topologia di rete hub-spoke, che fornisce servizi condivisi comuni nell'hub e che consente l'utilizzo di applicazioni e carichi di lavoro specifici negli spoke. Un data center virtuale corrisponde anche alla struttura dei ruoli aziendali, in cui diversi reparti, ad esempio l'IT centrale, DevOps, e le operazioni e la manutenzione interagiscono tra loro durante l'esecuzione dei ruoli specifici. Un data center virtuale soddisfa i requisiti per una migrazione "Lift-and-Shift", ma offre anche molti vantaggi per le distribuzioni cloud native.
+Un data center virtuale è un approccio alla migrazione del Data Center per creare un'architettura scalabile in Azure che ottimizza l'uso delle risorse cloud, riduce i costi e semplifica la governance del sistema. Un data center virtuale si basa su una topologia di rete hub-spoke, che fornisce servizi condivisi comuni nell'hub e che consente l'utilizzo di applicazioni e carichi di lavoro specifici negli spoke. Un data center virtuale corrisponde anche alla struttura dei ruoli aziendali, in cui diversi reparti, ad esempio l'IT centrale, DevOps, e le operazioni e la manutenzione interagiscono tra loro durante l'esecuzione dei ruoli specifici. Un data center virtuale soddisfa i requisiti per la migrazione in modalità Lift-and-Shift, ma offre anche molti vantaggi per le distribuzioni cloud native.
 
 ## <a name="references"></a>Riferimenti
 

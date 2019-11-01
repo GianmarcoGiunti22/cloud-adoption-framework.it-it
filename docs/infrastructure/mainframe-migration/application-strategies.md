@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547952"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239441"
 ---
 # <a name="mainframe-application-migration"></a>Migrazione delle applicazioni mainframe
 
@@ -27,7 +27,7 @@ La migrazione delle applicazioni in genere prevede una o più delle seguenti str
 
 - **Ritira:** Tutte le applicazioni che non sono più necessarie devono essere ritirate prima della migrazione.
 
-- **Ricompilazione:** Alcune organizzazioni scelgono di riscrivere completamente programmi usando tecniche moderne. Dato il costo aggiunto e la complessità di questo approccio, non è così comune come un approccio "Lift-and-Shift". Spesso dopo questo tipo di migrazione è opportuno iniziare a sostituire i moduli e il codice tramite motori di trasformazione del codice.
+- **Ricompilazione:** Alcune organizzazioni scelgono di riscrivere completamente programmi usando tecniche moderne. Dato il costo aggiunto e la complessità di questo approccio, non è altrettanto comune come un approccio Lift-and-Shift. Spesso dopo questo tipo di migrazione è opportuno iniziare a sostituire i moduli e il codice tramite motori di trasformazione del codice.
 
 - **Sostituisci:** Questo approccio sostituisce la funzionalità mainframe con funzionalità equivalenti nel cloud. Un'opzione è il software come un servizio (SaaS), che usa una soluzione creata in modo specifico per un problema aziendale, ad esempio in ambito finanziario, delle risorse umane, della produzione o ERP (Enterprise Resource Planning). Inoltre, ora sono disponibili molte app specifiche del settore per risolvere i problemi che in precedenza venivano risolti tramite soluzioni mainframe personalizzate.
 
@@ -57,7 +57,7 @@ Oltre agli ambienti di emulazione, Azure fornisce funzionalità di piattaforma d
 
 ## <a name="migrate-oltp-workloads-to-azure"></a>Migrazione dei carichi di lavoro OLTP ad Azure
 
-L'approccio "Lift-and-Shift" è l'opzione senza codice per la migrazione rapida di applicazioni esistenti in Azure. Ogni applicazione viene sottoposta a migrazione così com'è e ciò offre i vantaggi del cloud senza i rischi o i costi delle modifiche al codice. L'uso di un emulatore per il monitoraggio dell'elaborazione delle transazioni mainframe in Azure supporta questo approccio.
+L'approccio Lift-and-Shift è l'opzione senza codice per la migrazione rapida di applicazioni esistenti in Azure. Ogni applicazione viene sottoposta a migrazione così com'è e ciò offre i vantaggi del cloud senza i rischi o i costi delle modifiche al codice. L'uso di un emulatore per il monitoraggio dell'elaborazione delle transazioni mainframe in Azure supporta questo approccio.
 
 Soluzioni di monitoraggio dell'elaborazione delle transazioni sono disponibili da diversi produttori e possono essere eseguite in macchine virtuali, un'opzione di infrastruttura distribuita come servizio (IaaS) in Azure. I diagrammi seguenti illustrano una migrazione di un'applicazione online supportata da IBM DB2, un sistema di gestione di database relazionali (DBMS), in un mainframe IBM z/OS. DB2 per z/OS usa i file VSAM (Virtual Storage Access Method) per archiviare i dati e ISAM (Indexed Sequential Access Method) per i file flat. Questa architettura usa anche CICS per il monitoraggio delle transazioni.
 

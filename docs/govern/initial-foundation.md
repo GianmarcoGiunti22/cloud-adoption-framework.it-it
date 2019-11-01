@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e1f2c1b54a55a740376ba1d1c45c13dc9e7e26d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027958"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239522"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Definire una fondazione di governance cloud iniziale
 
@@ -25,7 +25,7 @@ Questo articolo fornisce due opzioni per stabilire una base iniziale per la gove
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Uso già del Framework di adozione del cloud
 
-Se si è stati seguiti insieme al Framework di adozione del cloud, è possibile che sia già stato distribuito un MVP di governance. Le linee guida sono un aspetto fondamentale di qualsiasi modello operativo. È presente durante ogni fase del ciclo di vita dell'adozione del cloud. Di conseguenza, il [Framework di adozione del cloud](../index.md) fornisce indicazioni che inseriscono la governance in attività correlate all'implementazione del [piano di adozione del cloud](../plan/index.md). Un esempio di questa integrazione della governance prevede l'uso di progetti per distribuire una o più zone di destinazione presenti nelle linee guida [pronte](../ready/index.md) . Un altro esempio è materiale sussidiario per la [scalabilità orizzontale delle sottoscrizioni](../ready/considerations/scaling-subscriptions.md). Se è stata seguita una di queste raccomandazioni, le sezioni MVP seguenti sono semplicemente una revisione delle decisioni di distribuzione esistenti. Dopo una rapida verifica, passare a una [soluzione avanzata per la governance iniziale e applicare i controlli per le procedure consigliate](./foundation-improvements.md).
+Se si è stati seguiti insieme al Framework di adozione del cloud, è possibile che sia già stato distribuito un MVP di governance. Le linee guida sono un aspetto fondamentale di qualsiasi modello operativo. È presente durante ogni fase del ciclo di vita dell'adozione del cloud. Di conseguenza, il [Framework di adozione del cloud](../index.md) fornisce indicazioni che inseriscono la governance in attività correlate all'implementazione del [piano di adozione del cloud](../plan/index.md). Un esempio di questa integrazione della governance prevede l'uso di progetti per distribuire una o più zone di destinazione presenti nelle linee guida [pronte](../ready/index.md) . Un altro esempio è materiale sussidiario per la [scalabilità orizzontale delle sottoscrizioni](../ready/azure-best-practices/scaling-subscriptions.md). Se è stata seguita una di queste raccomandazioni, le sezioni MVP seguenti sono semplicemente una revisione delle decisioni di distribuzione esistenti. Dopo una rapida verifica, passare a una [soluzione avanzata per la governance iniziale e applicare i controlli per le procedure consigliate](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Definire una base di governance iniziale
 

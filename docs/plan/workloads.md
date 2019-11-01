@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022278"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240187"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Classificare in ordine di priorità e definire i carichi di lavoro per un piano di adozione cloud
 
@@ -29,7 +29,7 @@ Nel contesto di un'adozione del cloud, un carico di lavoro è una raccolta di ri
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Gli input strategici dall'elenco di controllo dei prerequisiti rendono più semplice l'esecuzione delle attività seguenti. Per informazioni sulla raccolta dei dati descritti in questo articolo, vedere l' [elenco di controllo dei prerequisiti](./prerequisites.md).
+Gli input strategici dall'elenco dei prerequisiti rendono più semplice l'esecuzione delle attività seguenti. Per informazioni sulla raccolta dei dati illustrati in questo articolo, esaminare i [prerequisiti](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Priorità iniziale del carico di lavoro
 
@@ -64,26 +64,26 @@ Una volta definite le priorità iniziali e i carichi di lavoro sono stati aggiun
 
 ### <a name="business-inputs"></a>Input aziendali
 
-| Punto dati | DESCRIZIONE | Input |
+| Punto dati | Description | Input |
 |---|---|---|
 | Nome del carico di lavoro | Questo carico di lavoro viene chiamato? |         |
 | Descrizione del carico di lavoro | In una frase, cosa fa questo carico di lavoro? |         |
 | Motivazioni di adozione | Quali sono le motivazioni dell'adozione del cloud interessate da questo carico di lavoro? |         |
 | Sponsor principale | Di questi stakeholder interessati, chi è lo sponsor primario che richiede le motivazioni precedenti? |         |
-| Business Unit | Quale Business Unit è responsabile del costo di questo carico di lavoro? |         |
+| Business unit | Quale Business Unit è responsabile del costo di questo carico di lavoro? |         |
 | Processi aziendali | Quali processi aziendali saranno interessati dalle modifiche apportate al carico di lavoro? |         |
 | Team aziendali | Quali team aziendali saranno interessati da modifiche? |         |
 | Stakeholder aziendali | Sono presenti dirigenti la cui azienda sarà interessata da modifiche? |         |
 | Risultati aziendali | In che modo l'azienda misura il successo di questa operazione? |         |
-| metrics | Quali metriche verranno usate per tenere traccia del successo? |         |
-| Conformità | Sono previsti requisiti di conformità di terze parti per questo carico di lavoro? |         |
+| Metriche | Quali metriche verranno usate per tenere traccia del successo? |         |
+| Adeguamento | Sono previsti requisiti di conformità di terze parti per questo carico di lavoro? |         |
 | Proprietari dell'applicazione | Chi è responsabile dell'effetto aziendale di qualsiasi applicazione associata a questo carico di lavoro? |         |
 | Periodi di blocco aziendale | Ci sono casi in cui l'azienda non consentirà la modifica? |         |
 | Aree geografiche | Tutte le aree geografiche interessate da questo carico di lavoro? |         |
 
 ### <a name="technical-inputs"></a>Input tecnici
 
-| Punto dati | DESCRIZIONE | Input |
+| Punto dati | Description | Input |
 |---|---|---|
 | Approccio di adozione | Si tratta di un'adozione candidata per la migrazione o l'innovazione? |         |
 | Lead Ops applicazione | Elenca le parti responsabili delle prestazioni e della disponibilità di questo carico di lavoro. |         |
@@ -91,10 +91,10 @@ Una volta definite le priorità iniziali e i carichi di lavoro sono stati aggiun
 | Criticità | Elenca la criticità dell'applicazione corrente. |         |
 | Classificazione dei dati | Elenca la classificazione della riservatezza dei dati. |         |
 | Aree geografiche operative | Elencare le aree geografiche in cui il carico di lavoro è o deve essere ospitato. |         |
-| Applicazioni | Consente di specificare un elenco iniziale o un conteggio di tutte le applicazioni incluse in questo carico di lavoro. |         |
+| applicazioni | Consente di specificare un elenco iniziale o un conteggio di tutte le applicazioni incluse in questo carico di lavoro. |         |
 | VM | Specificare un elenco iniziale o un numero di macchine virtuali o server inclusi nel carico di lavoro. |         |
 | Origini dati | Consente di specificare un elenco iniziale o un conteggio di tutte le origini dati incluse nel carico di lavoro. |         |
-| Dependencies | Elencare tutte le dipendenze di asset non incluse nel carico di lavoro. |         |
+| Dipendenze | Elencare tutte le dipendenze di asset non incluse nel carico di lavoro. |         |
 | Geografia del traffico utente | Elencare le aree geografiche con una raccolta significativa di traffico utente. |         |
 
 ## <a name="confirm-priorities"></a>Confermare le priorità

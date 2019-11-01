@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548301"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239929"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decisioni che influiscono sulle migrazioni
 
@@ -33,7 +33,7 @@ Questo prerequisito non presuppone la necessità di scegliere uno di questi tre 
 
 ### <a name="acting-on-migration-outcomes"></a>Agire sui risultati della migrazione
 
-Se i risultati operativi occupano il primo posto nell’elenco, questa sezione del Cloud Adoption Framework funzionerà in modo ottimale per il team. In questa sezione si presuppone che sia necessario assegnare una priorità alla velocità e ai risparmi sui costi come indicatori di prestazioni chiave (KPI) principali, nel qual caso un modello di migrazione da adottare sarebbe ben allineato con i risultati. Un modello incentrato sulla migrazione si fonda principalmente su una migrazione "lift-and-shift" di asset IaaS (Infrastruttura distribuita come servizio) per esaurire un data center e produrre risparmi sui costi. In questo modello la modernizzazione, benché possa verificarsi, rappresenta un interesse secondario, fino a quando non viene realizzata la missione principale di migrazione.
+Se i risultati operativi occupano il primo posto nell’elenco, questa sezione del Cloud Adoption Framework funzionerà in modo ottimale per il team. In questa sezione si presuppone che sia necessario assegnare una priorità alla velocità e ai risparmi sui costi come indicatori di prestazioni chiave (KPI) principali, nel qual caso un modello di migrazione da adottare sarebbe ben allineato con i risultati. Un modello incentrato sulla migrazione è fortemente predicato alla migrazione Lift-and-Shift degli asset di infrastruttura distribuita come servizio (IaaS) per esaurire un Data Center e produrre risparmi sui costi. In questo modello la modernizzazione, benché possa verificarsi, rappresenta un interesse secondario, fino a quando non viene realizzata la missione principale di migrazione.
 
 ### <a name="acting-on-application-innovations"></a>Agire sulle innovazioni delle applicazioni
 

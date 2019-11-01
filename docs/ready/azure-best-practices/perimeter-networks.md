@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022209"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240167"
 ---
 # <a name="perimeter-networks"></a>Reti perimetrali
 
@@ -42,9 +42,9 @@ Le reti perimetrali usano le funzionalità e i servizi di Azure seguenti:
 
 I team IT e di sicurezza centrali in genere sono responsabili della definizione dei requisiti per il funzionamento delle reti perimetrali.
 
-![Rete hub-spoke di esempio][7]
+![Esempio di una topologia di rete hub-spoke][7]
 
-Il diagramma precedente illustra una [rete hub-spoke](./hub-spoke-network-topology.md) di esempio che implementa l'applicazione di due perimetri con accesso a Internet e a una rete locale. Entrambi i perimetri risiedono nell'hub della rete perimetrale. In tale hub la rete perimetrale verso Internet può aumentare le prestazioni per supportare molte applicazioni line-of-business, usando più farm di WAF e istanze di Firewall di Azure che contribuiscono a proteggere le reti virtuali spoke. L'hub consente anche la connettività tramite VPN o Azure ExpressRoute in base alle esigenze.
+Il diagramma precedente mostra una [topologia di rete Hub e spoke](./hub-spoke-network-topology.md) di esempio che implementa l'applicazione di due perimetri con accesso a Internet e a una rete locale. Entrambi i perimetri risiedono nell'hub della rete perimetrale. In tale hub la rete perimetrale verso Internet può aumentare le prestazioni per supportare molte applicazioni line-of-business, usando più farm di WAF e istanze di Firewall di Azure che contribuiscono a proteggere le reti virtuali spoke. L'hub consente anche la connettività tramite VPN o Azure ExpressRoute in base alle esigenze.
 
 ## <a name="virtual-networks"></a>Reti virtuali
 
@@ -54,7 +54,7 @@ Le reti perimetrali di solito si basano su una [rete virtuale][virtual-networks]
 
 Usando [route definite dall'utente][user-defined-routes], i clienti possono distribuire firewall, sistemi di rilevamento intrusioni o sistemi di prevenzione intrusioni e altre appliance virtuali. I clienti possono quindi instradare il traffico di rete attraverso queste appliance di sicurezza per l'applicazione dei criteri relativi ai limiti di sicurezza, il controllo e l'ispezione. È possibile creare route definite dall'utente per garantire che il traffico passi attraverso le macchine virtuali personalizzate, le appliance virtuali di rete e i servizi di bilanciamento del carico specificati.
 
-In un esempio di rete hub-spoke la garanzia che il traffico generato dalle macchine virtuali che risiedono nello spoke passi attraverso le appliance virtuali corrette nell'hub richiede una route definita dall'utente configurata nelle subnet dello spoke. Tale route imposta l'indirizzo IP front-end del servizio di bilanciamento del carico interno come hop successivo. Il servizio di bilanciamento del carico interno distribuisce il traffico interno alle appliance virtuali (pool back-end di bilanciamento del carico).
+In un esempio di rete hub-spoke, la garanzia che il traffico generato dalle macchine virtuali che risiedono nel spoke passa attraverso le appliance virtuali corrette nell'Hub richiede una route definita dall'utente definita nelle subnet della spoke. Tale route imposta l'indirizzo IP front-end del servizio di bilanciamento del carico interno come hop successivo. Il servizio di bilanciamento del carico interno distribuisce il traffico interno alle appliance virtuali (pool back-end di bilanciamento del carico).
 
 ## <a name="azure-firewall"></a>Firewall di Azure
 
@@ -74,13 +74,13 @@ Una farm di firewall di solito ha un software meno specializzato rispetto a un W
 
 Usare un set di istanze di Firewall di Azure (o appliance virtuali di rete) per il traffico che ha origine in Internet e un altro set per il traffico che ha origine in locale. L'uso di un solo set di firewall per entrambi i tipi di traffico costituisce un rischio per la sicurezza perché non viene fornito alcun perimetro di sicurezza tra i due set di traffico di rete. L'uso di livelli di firewall separati riduce la complessità del controllo delle regole di sicurezza e indica chiaramente la corrispondenza tra le regole e le richieste di rete in ingresso.
 
-## <a name="azure-load-balancer"></a>Azure Load Balancer
+## <a name="azure-load-balancer"></a>Servizio di bilanciamento del carico di Azure
 
 [Azure Load Balancer][ALB] offre un servizio a disponibilità elevata di livello 4 (TCP/UDP) in grado di distribuire il traffico in ingresso tra le istanze del servizio definite in set con carico bilanciato. Il traffico inviato al servizio di bilanciamento del carico dagli endpoint front-end (endpoint IP pubblici o endpoint IP privati) può essere ridistribuito con o senza conversione degli indirizzi in un pool di indirizzi IP back-end (ad esempio, appliance virtuali di rete o macchine virtuali).
 
 Azure Load Balancer può anche verificare l'integrità delle varie istanze del server. Quando un'istanza non riesce a rispondere a un probe, il servizio di bilanciamento del carico smette di inviare il traffico all'istanza non integra.
 
-Come esempio dell'uso di una rete hub-spoke, è possibile distribuire un servizio di bilanciamento del carico esterno nell'hub e negli spoke. Nell'hub il servizio di bilanciamento del carico instrada in modo efficiente il traffico ai servizi negli spoke. Nei spoke i servizi di bilanciamento del carico gestiscono il traffico dell'applicazione.
+Come esempio di utilizzo di una topologia di rete hub-spoke, è possibile distribuire un servizio di bilanciamento del carico esterno sia nell'hub che negli spoke. Nell'hub il servizio di bilanciamento del carico instrada in modo efficiente il traffico ai servizi negli spoke. Nei spoke i servizi di bilanciamento del carico gestiscono il traffico dell'applicazione.
 
 ## <a name="azure-front-door-service"></a>Servizio Frontdoor di Azure
 
@@ -88,7 +88,7 @@ Il [servizio Frontdoor di Azure][AFD] è un servizio Microsoft a scalabilità e 
 
 Il servizio Frontdoor di Azure assicura all'applicazione automazione della manutenzione regionale/con indicatore data e ora unificata, automazione della continuità aziendale e ripristino di emergenza, informazioni client/utente unificate, memorizzazione nella cache e informazioni dettagliate sul servizio. La piattaforma garantisce prestazioni, affidabilità e contratti di servizio di supporto tecnico, oltre a certificazioni di conformità e procedure di sicurezza controllabili sviluppate, gestite e supportate in modo nativo da Azure.
 
-## <a name="application-gateway"></a>Gateway applicazione
+## <a name="application-gateway"></a>gateway applicazione
 
 Il [gateway applicazione di Azure][AppGW] è un'appliance virtuale dedicata che offre un controller gestito per la distribuzione di applicazioni e varie funzionalità di bilanciamento del carico di livello 7 per l'applicazione.
 
@@ -96,7 +96,7 @@ Il gateway applicazione consente di ottimizzare la produttività delle Web farm 
 
 Lo SKU WAF del gateway applicazione include un web application firewall. Questo SKU offre alle applicazioni Web la protezione da exploit e vulnerabilità Web comuni. È possibile configurare il gateway applicazione come gateway con connessione Internet, come gateway solo interno o come una combinazione di queste due opzioni.
 
-## <a name="public-ips"></a>IP pubblici
+## <a name="public-ips"></a>Indirizzi IP pubblici
 
 Alcune funzionalità di Azure consentono di associare gli endpoint di servizio a un indirizzo [IP pubblico][PIP] in modo che la risorsa sia accessibile da Internet. Questo endpoint usa il processo NAT (Network Address Translation) per instradare il traffico fino all'indirizzo e alla porta interni nella rete virtuale di Azure. È questa la modalità primaria che consente al traffico esterno di passare attraverso la rete virtuale. Gli indirizzi IP pubblici possono essere configurati per determinare il traffico autorizzato a passare e come/dove viene convertito nella rete virtuale.
 

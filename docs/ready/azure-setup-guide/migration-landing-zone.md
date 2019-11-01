@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 0eee9746f4d2ee5fcf078774e070ffc25d430f38
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379185"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240109"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuire un'area di destinazione della migrazione
 
@@ -59,17 +59,17 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 |---------|---------|---------|
 |Strumenti di migrazione|Verrà distribuito Azure Site Recovery e verrà creato un progetto Azure Migrate.|[Guida alle decisioni relative agli strumenti di migrazione](../../decision-guides/migrate-decision-guide/index.md)|
 |Registrazione e monitoraggio|Verrà eseguito il provisioning dell'area di lavoro Operational Insights e dell'account di archiviazione di diagnostica.|         |
-|Rete|Verrà creata una rete virtuale con subnet per gateway, firewall, jumpbox e zona di destinazione.|[Decisioni relative alla rete](../considerations/network-decisions.md)|
+|Rete|Verrà creata una rete virtuale con subnet per gateway, firewall, jumpbox e zona di destinazione.|[Decisioni relative alla rete](../considerations/networking-options.md)|
 |Identità|Si presuppone che la sottoscrizione sia già associata a un'istanza di Azure Active Directory.|[Procedure consigliate per la gestione delle identità](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Policy|Questo progetto presuppone attualmente che non venga applicato alcun criterio di Azure.|         |
-|Progettazione della sottoscrizione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)|
-|Gruppi di gestione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)         |
-|Gruppi di risorse|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md)         |
+|Progettazione della sottoscrizione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)|
+|Gruppi di gestione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)         |
+|Gruppi di risorse|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)         |
 |Dati|N/D|[Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-guidance.md)         |
-|Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../considerations/naming-and-tagging.md)         |
+|Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-options.md)         |
+|Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../azure-best-practices/naming-and-tagging.md)         |
 |Gestione dei costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|
-|Calcolo|N/D|[Opzioni di calcolo](../considerations/compute-decisions.md)|
+|Calcolo|N/D|[Opzioni di calcolo](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personalizzare o distribuire una zona di destinazione da questo progetto
 

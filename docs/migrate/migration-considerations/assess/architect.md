@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819504"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240238"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Progettare i carichi di lavoro prima della migrazione
 
@@ -23,7 +23,7 @@ Questo articolo illustra il processo di valutazione esaminando le attività asso
 
 I presupposti seguenti sono tipici per le operazioni di migrazione:
 
-- **IaaS.** È un presupposto comune che la migrazione dei carichi di lavoro implichi principalmente lo spostamento di macchine virtuali da un data center fisico a un data center nel cloud tramite una migrazione IaaS, richiedendo almeno la riconfigurazione o la riconfigurazione. Questo presupposto viene indicato come migrazione in modalità "lift-and-shift" (eccezioni più in basso).
+- **IaaS.** È un presupposto comune che la migrazione dei carichi di lavoro implichi principalmente lo spostamento di macchine virtuali da un data center fisico a un data center nel cloud tramite una migrazione IaaS, richiedendo almeno la riconfigurazione o la riconfigurazione. Questa operazione è nota come migrazione in modalità _Lift-and-Shift_ . (eccezioni più in basso).
 - **Coerenza dell'architettura.** Le modifiche apportate all'architettura di base durante una migrazione aumentano notevolmente la complessità. Il debug di un sistema modificato in una nuova piattaforma introduce molte variabili che possono risultare difficili da isolare. Per questo motivo, i carichi di lavoro devono essere sottoposti solo a modifiche minime durante la migrazione che è necessario verificare accuratamente.
 - **Test di ritiro.** Le migrazioni e l'hosting di asset utilizzano le spese operative e in conto capitale potenziali. Si presuppone che i carichi di lavoro migrati siano stati ricontrollati per convalidarne l'utilizzo attuale. La scelta di ritirare le risorse inutilizzate produce risparmi di costi immediati.
 - **Ridimensionare gli asset.** Si presuppone che alcuni asset locali stiano usando per intero le risorse allocate. Prima della migrazione, si presuppone che gli asset vengano ridimensionati in modo da adattarsi ai requisiti di utilizzo effettivi.

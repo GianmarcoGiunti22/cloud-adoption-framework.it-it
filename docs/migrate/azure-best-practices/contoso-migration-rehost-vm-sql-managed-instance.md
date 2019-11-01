@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058505"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239163"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>eseguire il rehosting di un'app locale in una macchina virtuale di Azure e in Istanza gestita di database SQL
 
@@ -78,7 +78,7 @@ Nell'ambito del processo di progettazione della soluzione, Contoso ha eseguito u
 
 - L'istanza gestita mira a offrire quasi il 100% di compatibilità con la versione più recente di SQL Server locale. Microsoft consiglia l'istanza gestita per i clienti che eseguono SQL Server in locale o in una VM IaaS e intendono migrare le loro app a un servizio completamente gestito con modifiche di progettazione minime.
 - Contoso intende eseguire la migrazione di un numero elevato di app da un ambiente locale a un ambiente IaaS. Molte di queste sono fornite da ISV. Contoso è consapevole del fatto che con l'istanza gestita contribuirà a garantire la compatibilità a livello di database per queste app, mentre il database SQL potrebbe non essere supportato.
-- Contoso può semplicemente eseguire una migrazione "lift-and-shift" all'istanza gestita mediante Servizio Migrazione del database di Azure completamente automatizzato. Contoso potrà anche riusare questo servizio per le migrazioni di database future.
+- Contoso può semplicemente eseguire una migrazione Lift-and-Shift a Istanza gestita usando il servizio migrazione del database di Azure completamente automatizzato. Contoso potrà anche riusare questo servizio per le migrazioni di database future.
 - L'istanza gestita di SQL supporta SQL Server Agent, un elemento essenziale per l'app SmartHotel360. Contoso ha bisogno di questa compatibilità, per non dover riprogettare i piani di manutenzione necessari per l'app.
 - Con Software Assurance, Contoso può scambiare le licenze esistenti con tariffe scontate per un'istanza gestita di database SQL tramite il Vantaggio Azure Hybrid per SQL Server. In questo modo Contoso può risparmiare fino al 30% sull'istanza gestita.
 - SQL Istanza gestita è completamente contenuto nella rete virtuale, pertanto fornisce maggiore isolamento e sicurezza per i dati di contoso. Contoso può ottenere i vantaggi del cloud pubblico, mantenendo al contempo l'ambiente isolato dalla rete Internet pubblica.
@@ -103,7 +103,7 @@ Contoso eseguirà la migrazione dei livelli Web e dati dell'app SmartHotel360 in
 
 1. Poiché l'infrastruttura di Azure è già configurata, dovrà solo aggiungere un paio di componenti specifici di Azure per questo scenario.
 2. La migrazione del livello dati verrà effettuata con Servizio Migrazione del database di Azure. Il servizio si connette alla macchina virtuale di SQL Server locale attraverso una connessione VPN da sito a sito tra il data center di Contoso e Azure. Il servizio esegue quindi la migrazione del database.
-3. Il livello Web sarà sottoposto a una migrazione in modalità "lift and shift" tramite Site Recovery. Questo processo comporta la preparazione dell'ambiente VMware in locale, l'impostazione e l'abilitazione della replica e la migrazione delle macchine virtuali effettuandone il failover in Azure.
+3. Il livello Web verrà migrato utilizzando una migrazione in modalità Lift-and-Shift utilizzando Site Recovery. Questo processo comporta la preparazione dell'ambiente VMware in locale, l'impostazione e l'abilitazione della replica e la migrazione delle macchine virtuali effettuandone il failover in Azure.
 
      ![Architettura di migrazione](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 

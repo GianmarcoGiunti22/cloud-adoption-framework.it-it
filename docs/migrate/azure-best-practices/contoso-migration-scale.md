@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548112"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238913"
 ---
 # <a name="scale-a-migration-to-azure"></a>Passare a una migrazione completa in Azure
 
@@ -24,8 +24,8 @@ Questo articolo illustra come la società fittizia Contoso esegue una migrazione
 
 Il team di leadership IT collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in espansione e l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
-- **Aumentare l'efficienza:** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
+- **Stare al passo con la crescita del business.** Contoso è in espansione e l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
+- **Aumentare l'efficienza.** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
 - **Aumentare l'agilità.** il settore IT di Contoso deve essere più reattivo alle esigenze dell'azienda. Deve essere in grado di reagire più rapidamente ai cambiamenti nel marketplace, in modo da raggiungere risultati di successo in un'economia globale. Non deve rappresentare un ostacolo per le attività aziendali.
 - **Scalabilità.** Il team IT di Contoso deve offrire sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 - **Migliorare i modelli di costo:** Contoso punta a ridurre i requisiti di capitale nel budget IT. Contoso vuole usare le capacità cloud per garantire la scalabilità e ridurre la necessità di hardware costoso.
@@ -196,7 +196,7 @@ Esistono quattro strategie di migrazione generali che Contoso può prendere in c
 
 **Strategia** | **Dettagli** | **Utilizzo**
 --- | --- | ---
-**Rehosting** | Spesso definita migrazione "lift-and-shift", questa opzione senza codice permette di eseguire rapidamente la migrazione delle app esistenti in Azure.<br/><br/> Un'app viene migrata così com'è, in modo da sfruttare i vantaggi del cloud senza i rischi o i costi associati alle modifiche del codice. | Contoso può eseguire il rehosting delle app meno strategiche, senza dover apportare modifiche al codice.
+**Rehosting** | Noto anche come migrazione in modalità _Lift-and-Shift_ , si tratta di un'opzione senza codice per la migrazione rapida di app esistenti in Azure.<br/><br/> Un'app viene migrata così com'è, in modo da sfruttare i vantaggi del cloud senza i rischi o i costi associati alle modifiche del codice. | Contoso può eseguire il rehosting delle app meno strategiche, senza dover apportare modifiche al codice.
 **Refactoring** | Nota anche come "repackaging", questa strategia richiede modifiche minime del codice o della configurazione dell'app per connettere l'app alle risorse PaaS di Azure e trarre il massimo vantaggio dalle funzionalità cloud. | Contoso può eseguire il refactoring delle app strategiche per mantenere le stesse funzionalità di base, ma spostarle in modo da eseguirle su una piattaforma di Azure, ad esempio Servizio app di Azure.<br/><br/> Questo richiede modifiche minime del codice.<br/><br/> D'altra parte, Contoso dovrà gestire una piattaforma per le macchine virtuali perché questa non verrà gestita da Microsoft.
 **Riprogettazione** | Questa strategia modifica o estende la codebase di un'app per ottimizzare l'architettura dell'app per le funzionalità e la scalabilità cloud.<br/><br/> Modernizza un'app per ottenere un'architettura resiliente, a scalabilità elevata e distribuibile in modo indipendente.<br/><br/> I servizi di Azure consentono di accelerare il processo, ridimensionare le applicazioni in tutta sicurezza e gestire con facilità le app.
 **Ricostruzione** | Questa strategia ricompila da zero un'app usando tecnologie native del cloud.<br/><br/> Azure PaaS (Platform as a Service) offre un ambiente di sviluppo e distribuzione completo nel cloud. Elimina parte delle spese e della complessità delle licenze software e rimuove l'esigenza di un'infrastruttura sottostante per le app, del middleware e di altre risorse. | Contoso può riscrivere completamente le app critiche, per sfruttare i vantaggi delle tecnologie cloud, ad esempio computer serverless o microservizi.<br/><br/> Contoso gestirà le app e i servizi che sviluppa, mentre Azure gestirà tutto il resto.
@@ -223,7 +223,7 @@ Contoso ha già [completato un modello di verifica](./contoso-migration-rehost-v
 
 ##### <a name="using-site-recovery-at-scale"></a>Uso di Site Recovery su larga scala
 
-Contoso prevede di eseguire diverse migrazioni lift-and-shift. Per garantirne il corretto funzionamento, Site Recovery eseguirà la replica di batch di circa 100 macchine virtuali alla volta. Per stabilire come verrà eseguito questo processo, Contoso deve effettuare la pianificazione della capacità per la migrazione con Site Recovery proposta.
+Contoso prevede di eseguire più migrazioni Lift-and-Shift. Per garantirne il corretto funzionamento, Site Recovery eseguirà la replica di batch di circa 100 macchine virtuali alla volta. Per stabilire come verrà eseguito questo processo, Contoso deve effettuare la pianificazione della capacità per la migrazione con Site Recovery proposta.
 
 - Contoso deve raccogliere informazioni sui volumi di traffico. In particolare:
   - Contoso deve determinare la frequenza di modifica per le macchine virtuali di cui vuole eseguire la replica.

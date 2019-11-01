@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223862"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238808"
 ---
 # <a name="cloud-rationalization"></a>Razionalizzazione del cloud
 
@@ -24,11 +24,11 @@ La razionalizzazione del cloud è il processo di valutazione degli asset per det
 
 Le "cinque RS di razionalizzazione" elencate in questo articolo sono un ottimo modo per etichettare un potenziale stato futuro per qualsiasi carico di lavoro considerato come un candidato al cloud. Tuttavia, questo processo di assegnazione di etichette deve essere inserito nel contesto corretto prima di provare a razionalizzare un ambiente. Esaminare i seguenti miti per fornire il contesto:
 
-- **Mito: È facile prendere decisioni di razionalizzazione nelle prime fasi del processo.** Una razionalizzazione accurata richiede una conoscenza approfondita del carico di lavoro e degli asset associati (app, VM e dati). Soprattutto, le decisioni di razionalizzazione accurate prendono tempo. Si consiglia di usare un [processo](./rationalize.md#incremental-rationalization)di razionalizzazione incrementale.
+- **Mito: è facile prendere decisioni di razionalizzazione nelle prime fasi del processo.** Una razionalizzazione accurata richiede una conoscenza approfondita del carico di lavoro e degli asset associati (app, VM e dati). Soprattutto, le decisioni di razionalizzazione accurate prendono tempo. Si consiglia di usare un [processo di razionalizzazione incrementale](./rationalize.md#incremental-rationalization).
 
-- **Mito: L'adozione del cloud deve attendere la razionalizzazione di tutti i carichi di lavoro.** La razionalizzazione di un intero portfolio IT o anche di un singolo Data Center può ritardare la realizzazione del valore aziendale per mesi o anche anni. Quando possibile, è consigliabile evitare una razionalizzazione completa. Usare invece la [potenza di 10 approccio per la pianificazione del rilascio](./rationalize.md#release-planning) , in modo da prendere decisioni sagge sui 10 carichi di lavoro più prossimi disponibili per l'adozione del cloud.
+- **Mito: l'adozione del cloud deve attendere la razionalizzazione di tutti i carichi di lavoro.** La razionalizzazione di un intero portfolio IT o anche di un singolo Data Center può ritardare la realizzazione del valore aziendale per mesi o anche anni. Quando possibile, è consigliabile evitare una razionalizzazione completa. Usare invece la [potenza di 10 approccio per la pianificazione del rilascio](./rationalize.md#release-planning) , in modo da prendere decisioni sagge sui 10 carichi di lavoro più prossimi disponibili per l'adozione del cloud.
 
-- **Mito: La giustificazione aziendale deve attendere la razionalizzazione di tutti i carichi di lavoro.** Per sviluppare una motivazione aziendale per un lavoro di adozione del cloud, è necessario prendere in considerazione alcuni presupposti di base a livello di portfolio. Quando le motivazioni sono allineate all'innovazione, si supponga di riarchitettura. Quando le motivazioni sono allineate alla migrazione, si supponga di riospitare. Questi presupposti possono accelerare il processo di giustificazione aziendale. I presupposti vengono quindi contestati e i budget vengono perfezionati durante la fase di valutazione dei cicli di adozione di ogni carico di lavoro.
+- **Mito: la motivazione aziendale deve attendere la razionalizzazione di tutti i carichi di lavoro.** Per sviluppare una motivazione aziendale per un lavoro di adozione del cloud, è necessario prendere in considerazione alcuni presupposti di base a livello di portfolio. Quando le motivazioni sono allineate all'innovazione, si supponga di riarchitettura. Quando le motivazioni sono allineate alla migrazione, si supponga di riospitare. Questi presupposti possono accelerare il processo di giustificazione aziendale. I presupposti vengono quindi contestati e i budget vengono perfezionati durante la fase di valutazione dei cicli di adozione di ogni carico di lavoro.
 
 Per acquisire familiarità con il processo a lungo termine, è ora possibile esaminare le seguenti cinque RS di razionalizzazione. Durante lo sviluppo del piano di adozione del cloud, scegliere l'opzione più adatta alle proprie motivazioni, risultati aziendali e ambiente di stato attuale. L'obiettivo della razionalizzazione delle proprietà digitali è quello di impostare una linea di base, non di razionalizzare tutti i carichi di lavoro.
 
@@ -38,7 +38,7 @@ I cinque criteri di razionalizzazione elencati di seguito descrivono le opzioni 
 
 ## <a name="rehost"></a>Rehosting
 
-Nota anche come migrazione in modalità Lift-and-Shift, un impegno rehost sposta un asset di stato corrente nel provider di servizi cloud scelto, con una modifica minima dell'architettura complessiva.
+Noto anche come migrazione in modalità _Lift-and-Shift_ , un impegno rehost sposta un asset di stato corrente nel provider di servizi cloud scelto, con una modifica minima dell'architettura complessiva.
 
 I driver comuni possono includere:
 
@@ -59,7 +59,7 @@ Fattori di analisi qualitativa:
 - Eventi aziendali critici
 - Dipendenze dei processi
 
-## <a name="refactor"></a>Refactoring
+## <a name="refactor"></a>Effettua il refactoring
 
 Le opzioni di piattaforma distribuita come servizio (PaaS) possono ridurre i costi operativi associati a molte applicazioni. È consigliabile effettuare leggermente il refactoring di un'applicazione per adattarla a un modello basato su PaaS.
 
@@ -85,7 +85,7 @@ Fattori di analisi qualitativa:
 - Aumento delle opzioni/sequenze temporali
 - Dipendenze dei processi aziendali
 
-## <a name="rearchitect"></a>Riprogettazione
+## <a name="rearchitect"></a>Riprogetta
 
 Alcune applicazioni obsolete non sono compatibili con i provider di servizi cloud a causa delle decisioni di architettura effettuate durante la compilazione dell'applicazione. In questi casi, potrebbe essere necessario riprogettare l'applicazione prima della trasformazione.
 
@@ -117,8 +117,8 @@ In alcuni scenari, il Delta che deve essere superato per portare avanti un'appli
 
 I driver comuni possono includere:
 
-- Accelerazione dell'innovazione
-- Compilazione delle app più veloce
+- Accelera l'innovazione
+- Crea app alla velocità della luce
 - Riduzione dei costi operativi
 
 Fattori di analisi quantitativa:
@@ -135,7 +135,7 @@ Fattori di analisi qualitativa:
 - Processi aziendali limitati per funzionalità
 - Potenziali guadagni in termini di costi, esperienza o ricavi
 
-## <a name="replace"></a>Sostituisci
+## <a name="replace"></a>Replace
 
 Le soluzioni vengono in genere implementate usando la tecnologia e l'approccio più adatti al momento. Talvolta le applicazioni SaaS (Software as a Service) possono fornire tutte le funzionalità necessarie per l'applicazione ospitata. In questi scenari, è possibile pianificare un carico di lavoro per la sostituzione futura, in modo da rimuoverlo dal lavoro di trasformazione.
 

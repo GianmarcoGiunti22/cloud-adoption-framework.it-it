@@ -1,7 +1,7 @@
 ---
-title: Topologia di rete hub-spoke
+title: Topologia di rete Hub e spoke
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Topologia di rete hub-spoke
+description: Informazioni sulle topologie di rete hub-spoke.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549020"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239917"
 ---
-# <a name="hub-and-spoke-network-topology"></a>Topologia di rete hub-spoke
+# <a name="hub-and-spoke-network-topology"></a>Topologia di rete Hub e spoke
 
 *Hub-spoke* è un modello di rete per la gestione efficiente dei comuni requisiti di comunicazione o sicurezza. Consente anche di evitare le limitazioni delle sottoscrizioni di Azure. Questo modello consente di risolvere i problemi seguenti:
 
@@ -26,10 +26,10 @@ ms.locfileid: "72549020"
 - **Superamento dei limiti delle sottoscrizioni.** Per i carichi di lavoro di grandi dimensioni basati sul cloud, potrebbe essere necessario usare più risorse di quelle consentite in una singola sottoscrizione di Azure. Il peering delle reti virtuali dei carichi di lavoro da sottoscrizioni diverse a un hub centrale consente di superare tali limiti. Per ulteriori informazioni, vedere [limiti della sottoscrizione](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Separazione delle attività**. È possibile distribuire singoli carichi di lavoro tra i team IT centrali e i team responsabili dei carichi di lavoro.
 
-Gli ambienti cloud di dimensioni più piccole potrebbero non trarre vantaggio dalla struttura e dalle funzionalità aggiuntive offerte da questo modello. Tuttavia, per la maggior parte delle attività di adozione del cloud dovrebbe essere presa in considerazione l'implementazione di un'architettura di rete hub-spoke se vengono riscontrati alcuni dei problemi elencati in precedenza.
+Gli ambienti cloud di dimensioni più piccole potrebbero non trarre vantaggio dalla struttura e dalle funzionalità aggiuntive offerte da questo modello. Tuttavia, la maggior parte delle attività di adozione del cloud deve prendere in considerazione l'implementazione di un'architettura di rete hub-spoke se i problemi sono elencati in precedenza.
 
 > [!NOTE]
-> Il sito Architetture di riferimento di Azure contiene modelli di esempio che è possibile usare come base per implementare reti hub-spoke:
+> Il sito architetture di riferimento di Azure contiene modelli di esempio che è possibile usare come base per implementare le proprie reti hub e spoke:
 >
 > - [Implementare una topologia di rete hub-spoke in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [Implementare una topologia di rete hub-spoke con servizi condivisi in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
@@ -38,9 +38,9 @@ Gli ambienti cloud di dimensioni più piccole potrebbero non trarre vantaggio da
 
 ![Esempi di una topologia di rete hub-spoke][1]
 
-Come illustrato nel diagramma, Azure supporta due tipi di progettazione hub-spoke. Supporta comunicazione, risorse condivise e criteri di sicurezza centralizzati ("hub VNet" nel diagramma) oppure un tipo di rete WAN virtuale ("WAN virtuale" nel diagramma) per le comunicazioni su larga scala da ramo a ramo e da ramo ad Azure.
+Come illustrato nel diagramma, Azure supporta due tipi di progettazione hub e spoke. Supporta comunicazione, risorse condivise e criteri di sicurezza centralizzati ("hub VNet" nel diagramma) oppure un tipo di rete WAN virtuale ("WAN virtuale" nel diagramma) per le comunicazioni su larga scala da ramo a ramo e da ramo ad Azure.
 
-L'hub è una zona della rete centrale che controlla e ispeziona il traffico in ingresso o in uscita tra zone: Internet, locale e spoke. La topologia hub-spoke consente al reparto IT di applicare in modo efficace i criteri di sicurezza in una posizione centrale, riducendo al contempo il rischio di configurazione non corretta ed esposizione.
+L'hub è una zona della rete centrale che controlla e ispeziona il traffico in ingresso o in uscita tra zone: Internet, locale e spoke. La topologia hub e spoke offre al reparto IT un modo efficace per applicare i criteri di sicurezza in una posizione centrale. riducendo al contempo il rischio di configurazione non corretta ed esposizione.
 
 L'hub contiene spesso i componenti dei servizi comuni utilizzati dagli spoke. Di seguito sono riportati alcuni esempi di servizi centrali comuni:
 
@@ -61,7 +61,7 @@ Gli spoke possono anche essere usati per isolare e consentire gruppi diversi all
 
 In Azure ogni componente, indipendentemente dal tipo, viene distribuito in una sottoscrizione di Azure. L'isolamento dei componenti di Azure in diverse sottoscrizioni di Azure può soddisfare i requisiti di diverse line-of-business, come la configurazione di livelli differenziati di accesso e autorizzazione.
 
-Una singola implementazione di rete hub-spoke può essere ridimensionata fino a raggiungere un numero elevato di spoke. Tuttavia, come per ogni sistema IT, esistono limiti a livello di piattaforma. La distribuzione dell'hub è associata a una specifica sottoscrizione di Azure, che ha restrizioni e limiti, ad esempio un numero massimo di peering di rete virtuale. Per informazioni dettagliate, vedere [sottoscrizione di Azure e limiti, quote e vincoli dei servizi] [limiti].
+Una singola implementazione Hub e spoke può essere scalata fino a un numero elevato di spoke. Tuttavia, come per ogni sistema IT, esistono limiti a livello di piattaforma. La distribuzione dell'hub è associata a una specifica sottoscrizione di Azure, che ha restrizioni e limiti, ad esempio un numero massimo di peering di rete virtuale. Per informazioni dettagliate, vedere [sottoscrizione di Azure e limiti, quote e vincoli dei servizi] [limiti].
 
 Nei casi in cui i limiti possono costituire un problema, è possibile aumentare ulteriormente le prestazioni per l'architettura estendendo il modello da una singola rete hub-spoke a un cluster di hub e spoke. Più hub in una o più aree di Azure possono essere interconnessi usando il peering di rete virtuale, Azure ExpressRoute, una rete WAN virtuale o una VPN da sito a sito.
 
@@ -79,7 +79,7 @@ Un esempio tipico di questo scenario è quello in cui i server di elaborazione d
 
 ![Spoke interconnessi e connessi a un hub][3]
 
-Gli spoke possono anche essere interconnessi a uno spoke che funge da hub. Questo approccio crea una gerarchia a due livelli: lo spoke nel livello superiore (livello 0) diventa l'hub degli spoke inferiori (livello 1) nella gerarchia. Gli spoke di un'implementazione di tipo hub-spoke devono inoltrare il traffico all'hub centrale in modo che il traffico possa transitare verso la destinazione nella rete locale o nella rete Internet pubblica. Un'architettura con due livelli di hub crea un routing complesso che elimina i vantaggi di una relazione hub-spoke semplice.
+Gli spoke possono anche essere interconnessi a uno spoke che funge da hub. Questo approccio crea una gerarchia a due livelli: lo spoke nel livello superiore (livello 0) diventa l'hub degli spoke inferiori (livello 1) nella gerarchia. I spoke di un'implementazione Hub e spoke sono necessari per l'invio del traffico all'hub centrale, in modo che il traffico possa transitare alla propria destinazione nella rete locale o nella rete Internet pubblica. Un'architettura con due livelli di hub introduce un routing complesso che rimuove i vantaggi di una semplice relazione hub-spoke.
 
 <!-- images -->
 

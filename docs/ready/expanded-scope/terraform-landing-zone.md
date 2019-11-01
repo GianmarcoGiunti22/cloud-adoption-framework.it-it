@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058162"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239770"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Usare la bonifica per creare le zone di destinazione
 
-Azure fornisce servizi nativi per la distribuzione di zone di destinazione. Anche altri strumenti di terze parti possono aiutare a eseguire questa operazione. Uno di questi strumenti che i clienti e i partner usano spesso per distribuire le zone di destinazione sono la bonifica di Hashicorp in. Questa sezione illustra come usare un'area di destinazione prototipo per distribuire funzionalità di registrazione, contabilità e sicurezza fondamentali per una sottoscrizione di Azure.
+Azure fornisce servizi nativi per la distribuzione di zone di destinazione. Anche altri strumenti di terze parti possono aiutare a eseguire questa operazione. Uno di questi strumenti che i clienti e i partner usano spesso per distribuire le zone di destinazione sono la bonifica di Hashicorp. Questa sezione illustra come usare un'area di destinazione prototipo per distribuire funzionalità di registrazione, contabilità e sicurezza fondamentali per una sottoscrizione di Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Scopo della zona di destinazione
 
@@ -67,17 +67,17 @@ Le decisioni seguenti sono rappresentate nell'area di destinazione di bonifica:
 | Componente | Decisioni | Approcci alternativi |
 | --- | --- | --- |
 |Registrazione e monitoraggio | Verrà usata l'area di lavoro Log Analytics di monitoraggio di Azure. Verrà eseguito il provisioning di un account di archiviazione di diagnostica e di hub eventi. |         |
-|Rete | N/A-la rete verrà implementata in un'altra area di destinazione. |[Decisioni relative alla rete](../considerations/network-decisions.md) |
+|Rete | N/A-la rete verrà implementata in un'altra area di destinazione. |[Decisioni relative alla rete](../considerations/networking-options.md) |
 |Identità | Si presuppone che la sottoscrizione sia già associata a un'istanza di Azure Active Directory. | [Procedure consigliate per la gestione delle identità](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Policy | Questa zona di destinazione presuppone attualmente che non venga applicato alcun criterio di Azure. | |
-|Progettazione della sottoscrizione | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md) |
-| Gruppi di gestione | N/D - Progettazione per una singola sottoscrizione di produzione. |[Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md) |
-| Gruppi di risorse | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../considerations/scaling-subscriptions.md) |
+|Progettazione della sottoscrizione | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
+| Gruppi di gestione | N/D - Progettazione per una singola sottoscrizione di produzione. |[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
+| Gruppi di risorse | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
 | Dati | N/D | [Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-guidance.md) |
-| Standard di denominazione | Quando viene creato l'ambiente, viene creato anche un prefisso univoco. Le risorse che richiedono un nome univoco globale, ad esempio gli account di archiviazione, usano questo prefisso. Il nome personalizzato verrà aggiunto con un suffisso casuale. L'utilizzo dei tag è obbligatorio come descritto nella tabella seguente. | [Procedure consigliate di denominazione e assegnazione di tag](../considerations/naming-and-tagging.md) |
+|Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-options.md) |
+| Standard di denominazione | Quando viene creato l'ambiente, viene creato anche un prefisso univoco. Le risorse che richiedono un nome univoco globale, ad esempio gli account di archiviazione, usano questo prefisso. Il nome personalizzato verrà aggiunto con un suffisso casuale. L'utilizzo dei tag è obbligatorio come descritto nella tabella seguente. | [Procedure consigliate di denominazione e assegnazione di tag](../azure-best-practices/naming-and-tagging.md) |
 | Gestione dei costi | N/D | [Tracciamento dei costi](../azure-best-practices/track-costs.md) |
-| Calcolo | N/D | [Opzioni di calcolo](../considerations/compute-decisions.md) |
+| Calcolo | N/D | [Opzioni di calcolo](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Standard di assegnazione di tag
 

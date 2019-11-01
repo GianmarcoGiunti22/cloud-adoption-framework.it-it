@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e6187bc926aacd9a09e67b8cd2bfe94e5a4a42dd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 83165e21882b4979d0fb3b104fa4f2c12aed326c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682633"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239458"
 ---
-# <a name="predict-and-influence"></a>Stimare e influenzare
+# <a name="predict-and-influence"></a>Prevedere e influenzare
 
 Nell'economia digitale sono disponibili due classi di applicazioni: cronologiche e predittive. Molte esigenze dei clienti possono essere soddisfatte esclusivamente usando i dati cronologici, inclusi i dati quasi in tempo reale. La maggior parte delle soluzioni si concentra principalmente sull'aggregazione dei dati, nel momento attuale. Quindi elaborano e condividono i dati al cliente, sotto forma di esperienza digitale o ambientale.
 
@@ -78,7 +78,7 @@ Per altre informazioni sulla creazione di un'interazione in un'esperienza di amb
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Basandosi sulle conoscenze acquisite in merito alle [discipline di innovazione](./invention.md) all'interno della [metodologia innovativa](./index.md) , si conosceranno gli strumenti tecnici necessari per la [compilazione con Empathy](./build.md).
+Basandosi sulle conoscenze acquisite in merito alle [discipline di invenzione](./invention.md) all'interno della [metodologia di innovazione](./index.md) , si conoscono gli strumenti tecnici necessari per [creare con empatia](./build.md).
 
 > [!div class="nextstepaction"]
 > [Compilazione con empatia](./build.md)

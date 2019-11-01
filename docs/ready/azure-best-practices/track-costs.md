@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548953"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240148"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Tenere traccia dei costi tra business unit, ambienti o progetti
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548953"
 
 Il controllo dei costi, in modo molto simile alla governance e ad altri costrutti di gestione, dipende dalla corretta gestione dell'ambiente. La definizione di un ambiente di questo tipo, in particolare di uno complesso, richiede processi coerenti nella classificazione e nell'organizzazione di tutti gli asset.
 
-Gli asset (noti anche come risorse) includono tutte le macchine virtuali, le origini dati e le applicazioni distribuite nel cloud. Azure offre diversi meccanismi per la classificazione e l'organizzazione degli asset. L'articolo [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md) descrive in dettaglio le opzioni per organizzare le risorse in base a più criteri, stabilendo così un ambiente gestito correttamente. Questo articolo illustra l'applicazione di concetti fondamentali di Azure per fornire visibilità sui costi del cloud.
+Gli asset (noti anche come risorse) includono tutte le macchine virtuali, le origini dati e le applicazioni distribuite nel cloud. Azure offre diversi meccanismi per la classificazione e l'organizzazione degli asset. L'articolo [Ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md) descrive in dettaglio le opzioni per organizzare le risorse in base a più criteri, stabilendo così un ambiente gestito correttamente. Questo articolo illustra l'applicazione di concetti fondamentali di Azure per fornire visibilità sui costi del cloud.
 
 ### <a name="classification"></a>Classificazione
 
@@ -35,7 +35,7 @@ L'assegnazione di tag è uno dei metodi di elezione per comprendere i dati conte
 
 Il primo passaggio per tenere traccia in modo accurato delle informazioni sui costi tra business unit, ambienti e progetti diversi consiste nel definire uno standard per l'assegnazione di tag. Il secondo passaggio consiste nell’assicurarsi che lo standard per l'assegnazione di tag venga applicato in modo coerente. Gli articoli seguenti consentono di eseguire ognuno di questi passaggi:
 
-- [Sviluppare standard per la denominazione e l’assegnazione di tag](../considerations/naming-and-tagging.md)
+- [Sviluppare standard per la denominazione e l’assegnazione di tag](../azure-best-practices/naming-and-tagging.md)
 - [Definire un MVP di governance per applicare gli standard per l'assegnazione di tag](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Organizzazione delle risorse
@@ -59,7 +59,7 @@ Il diagramma mostra le procedure consigliate, escludendo tuttavia le opzioni seg
 
 La parte restante di questo articolo presuppone l'uso delle procedure consigliate nel diagramma precedente. Tuttavia, gli articoli seguenti possono essere utili per applicare l'approccio a un'organizzazione di risorse più adatta alla propria azienda:
 
-- [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md)
+- [Ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Distribuzione di un MVP di governance per standard di ambienti gestiti correttamente](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Fornire il corretto livello di accesso ai costi
@@ -102,7 +102,7 @@ Le impostazioni seguenti relative all'ambito e ai ruoli permettono di creare la 
 
 - [Centro di eccellenza cloud](../../organize/cloud-center-of-excellence.md). La responsabilità della gestione dei costi correlati ai servizi condivisi richiede l'accesso come Collaboratore di Gestione costi a livello di sottoscrizione. Questo team può richiedere anche l'accesso come Collaboratore di Gestione costi a gruppi di risorse o sottoscrizioni che contengono asset distribuiti da automazione CCoE per comprendere il modo in cui tali automazioni influiscono sui costi.
 
-  - **Servizi condivisi**. Quando un centro cloud di eccellenza è impegnato, la procedura consigliata suggerisce che gli asset gestiti da CCoE siano supportati da una sottoscrizione del servizio condiviso centralizzata in un modello hub/spoke. In questo scenario, è probabile che il CCoE disponga dell'accesso come collaboratore o proprietario a tale sottoscrizione, rendendo non necessaria un'assegnazione di ambito aggiuntiva come [Collaboratore di Gestione costi](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+  - **Servizi condivisi**. Quando un centro cloud di eccellenza è impegnato, la procedura consigliata suggerisce che gli asset gestiti dalla CCoE sono supportati da una sottoscrizione del servizio condiviso centralizzata all'interno di un modello hub e spoke. In questo scenario, è probabile che il CCoE disponga dell'accesso come collaboratore o proprietario a tale sottoscrizione, rendendo non necessaria un'assegnazione di ambito aggiuntiva come [Collaboratore di Gestione costi](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
   - **Automazione/controlli CCoE**. Il CCoE fornisce in genere controlli e script di distribuzione automatici ai team di adozione del cloud. Il CCoE ha la responsabilità di comprendere il modo in cui questi acceleratori influiscono sui costi. Per ottenere tale visibilità, il team deve disporre dell'accesso come [Collaboratore di Gestione costi](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) a qualsiasi gruppo di risorse o sottoscrizione che esegua tali acceleratori.
 
 - **Team Operazioni cloud**. La responsabilità della gestione dei costi in corso per gli ambienti di produzione richiede l'accesso come Collaboratore di Gestione costi a tutte le sottoscrizioni di produzione.

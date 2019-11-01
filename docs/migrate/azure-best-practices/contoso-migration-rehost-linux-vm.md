@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 8b925564b3186e153cdd9a8139499a83a1fd96ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058221"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239418"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>eseguire il rehosting di un'app Linux locale in macchine virtuali di Azure
 
@@ -69,8 +69,8 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Considerazioni** | **Dettagli**
 --- | ---
-**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift and shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure. <br/><br/> Le macchine virtuali dell'app eseguono Ubuntu 16.04-TLS, una distribuzione Linux approvata. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Svantaggi** | I livelli Web e dati dell'app rimarranno come singolo punto di failover. <br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database di Azure per MySQL.<br/><br/> Contoso è consapevole del fatto che una semplice migrazione di macchine virtuali in modalità "lift and shift" non consente di sfruttare appieno le funzionalità offerte da [Database di Azure per MySQL](https://docs.microsoft.com/azure/mysql/overview) (disponibilità elevata integrata, prestazioni prevedibili, scalabilità semplice, backup automatici e sicurezza integrata).
+**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa un approccio Lift-and-Shift per entrambe le VM dell'app, non è necessario alcun strumento di configurazione o migrazione speciale per il database dell'app.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure. <br/><br/> Le macchine virtuali dell'app eseguono Ubuntu 16.04-TLS, una distribuzione Linux approvata. [Altre informazioni](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
+**Svantaggi** | I livelli Web e dati dell'app rimarranno come singolo punto di failover. <br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database di Azure per MySQL.<br/><br/> Contoso è consapevole del fatto che, grazie alla migrazione di una macchina virtuale in modalità Lift-and-Shift, gli utenti non sfruttano appieno le funzionalità offerte da [database di Azure per MySQL](https://docs.microsoft.com/azure/mysql/overview) (disponibilità elevata predefinita, prestazioni prevedibili, scalabilità semplice, automatica backup e sicurezza incorporata).
 
 <!-- markdownlint-enable MD033 -->
 

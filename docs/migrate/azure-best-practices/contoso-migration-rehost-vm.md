@@ -1,7 +1,7 @@
 ---
-title: Eseguire il rehosting di un'app con la migrazione a macchine virtuali di Azure mediante Azure Site Recovery
+title: Riospitare un'app in macchine virtuali di Azure con Azure Site Recovery
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Informazioni su come Contoso esegue il rehosting di un'app locale con una migrazione "lift-and-shift" di macchine locali ad Azure i mediante il servizio Azure Site Recovery.
+description: Informazioni su come Contoso riospita un'app locale con una migrazione in modalità Lift-and-Shift dei computer locali in Azure usando il servizio Azure Site Recovery.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 61f329bbd708417dc98994946eb4754682413a34
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058193"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239024"
 ---
-# <a name="rehost-an-on-premises-app-to-azure-vms"></a>Rehosting di un'app locale in macchine virtuali di Azure
+# <a name="rehost-an-on-premises-app-on-azure-vms"></a>Riospitare un'app locale in macchine virtuali di Azure
 
 Questo articolo illustra come la società fittizia Contoso esegue il rehosting di un'app front-end di Windows .NET a due livelli in esecuzione su macchine virtuali VMware eseguendo la migrazione delle macchine virtuali dell'app a macchine virtuali di Azure.
 
@@ -75,7 +75,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Considerazioni** | **Dettagli**
 --- | ---
-**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa la modalità "lift and shift" per entrambe le macchine virtuali dell'app, non sono necessari particolari strumenti di configurazione o migrazione per il database dell'app.<br/><br/> Contoso può sfruttare il proprio investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure.
+**Vantaggi** | Entrambe le macchine virtuali dell'app verranno spostate in Azure senza modifiche, semplificando così la migrazione.<br/><br/> Poiché Contoso usa un approccio Lift-and-Shift per entrambe le VM dell'app, non è necessario alcun strumento di configurazione o migrazione speciale per il database dell'app.<br/><br/> Contoso può sfruttare il proprio investimento in Software Assurance usando l'offerta Vantaggio Azure Hybrid.<br/><br/> Contoso manterrà il controllo completo delle macchine virtuali dell'app in Azure.
 **Svantaggi** | WEBVM e SQLVM eseguono Windows Server 2008 R2. Il sistema operativo è supportato da Azure per ruoli specifici (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> I livelli Web e dati dell'app rimarranno come singolo punto di failover.<br/><br/> SQLVM è in esecuzione in SQL Server 2008 R2, che non è incluso nel supporto Mainstream, anche se è supportato per le macchine virtuali di Azure (luglio 2018). [Altre informazioni](https://support.microsoft.com/help/956893).<br/><br/> Contoso dovrà continuare a supportare l'app come macchine virtuali di Azure anziché passare a un servizio gestito come Servizio app di Azure e Database SQL di Azure.
 
 <!-- markdownlint-enable MD033 -->

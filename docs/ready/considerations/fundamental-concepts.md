@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 894c4c7431533aa29ad7fcc1cd08046651987f10
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048408"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239787"
 ---
 # <a name="azure-fundamental-concepts"></a>Concetti fondamentali di Azure
 
@@ -95,7 +95,7 @@ Le risorse seguenti forniscono informazioni dettagliate sui concetti illustrati 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Ora che si conoscono i concetti fondamentali di Azure, è possibile ottenere informazioni su come implementare il [ridimensionamento con più sottoscrizioni di Azure](./scaling-subscriptions.md).
+Ora che si conoscono i concetti fondamentali di Azure, è possibile ottenere informazioni su come implementare il [ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Ridimensionamento con più sottoscrizioni di Azure](./scaling-subscriptions.md)
+> [Ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md)
