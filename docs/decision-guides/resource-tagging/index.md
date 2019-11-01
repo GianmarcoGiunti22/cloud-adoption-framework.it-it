@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378022"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238848"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guida alle decisioni per la denominazione delle risorse e l'assegnazione di tag
 
@@ -40,7 +40,7 @@ Gli schemi di assegnazione di tag con focus sugli aspetti aziendali, come accoun
 
 Una convenzione di denominazione standard è il punto di partenza per organizzare le risorse ospitate nel cloud. Un sistema di denominazione strutturato correttamente consente di identificare rapidamente le risorse a fini di gestione e di accounting. Se in altre parti dell'organizzazione esistono convenzioni di denominazione IT, valutare se le convenzioni di denominazione per il cloud devono essere allineate con queste convenzioni o se è meglio stabilire standard separati basati sul cloud.
 
-Tenere anche presente che i [requisiti di denominazione](../../ready/considerations/naming-and-tagging.md) sono diversi a seconda dei tipi di risorsa di Azure. Le convenzioni di denominazione devono essere compatibili con questi requisiti di denominazione.
+Tenere anche presente che i [requisiti di denominazione](../../ready/azure-best-practices/naming-and-tagging.md) sono diversi a seconda dei tipi di risorsa di Azure. Le convenzioni di denominazione devono essere compatibili con questi requisiti di denominazione.
 
 ## <a name="resource-tagging-patterns"></a>Modelli di tag delle risorse
 

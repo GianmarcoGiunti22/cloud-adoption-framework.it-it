@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224244"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239793"
 ---
 # <a name="landing-zone-considerations"></a>Considerazioni sulle aree di destinazione
 
@@ -27,10 +27,10 @@ Questa immagine illustra gli aspetti principali da prendere in considerazione pe
 
 Tutte le aree di destinazione forniscono la struttura per le opzioni di hosting. La struttura viene creata in modo esplicito, tramite controlli di governance, o in modo organico, con l'adozione di servizi compresi nell'area di destinazione. Gli articoli seguenti consentono di prendere decisioni che verranno applicate nel progetto o in altri script di automazione per la creazione dell'area di destinazione:
 
-- **[Decisioni relative al calcolo](./compute-decisions.md)** . Per ridurre al minimo la complessità operativa, allineare le opzioni di calcolo in base all'area di destinazione. Questa decisione può essere applicata tramite toolchain di automazione, come le iniziative di Criteri di Azure e i progetti dell'area di destinazione.
-- **[Decisioni relative all'archiviazione](./storage-guidance.md)** . Selezionare la soluzione di archiviazione di Azure più adatta per supportare i requisiti del carico di lavoro.
-- **[Decisioni relative alla rete](./network-decisions.md)** . Scegliere i servizi di rete, gli strumenti e le architetture per supportare i requisiti di connettività, governance e carico di lavoro dell'organizzazione.
-- **[Decisioni relative al database](./data-decisions.md)** . Determinare la tecnologia di database più adatta ai requisiti del carico di lavoro.
+- **[Decisioni relative al calcolo](./compute-options.md)** . Per ridurre al minimo la complessità operativa, allineare le opzioni di calcolo in base all'area di destinazione. Questa decisione può essere applicata tramite toolchain di automazione, come le iniziative di Criteri di Azure e i progetti dell'area di destinazione.
+- **[Decisioni relative all'archiviazione](./storage-options.md)** . Selezionare la soluzione di archiviazione di Azure più adatta per supportare i requisiti del carico di lavoro.
+- **[Decisioni relative alla rete](./networking-options.md)** . Scegliere i servizi di rete, gli strumenti e le architetture per supportare i requisiti di connettività, governance e carico di lavoro dell'organizzazione.
+- **[Decisioni relative al database](./data-options.md)** . Determinare la tecnologia di database più adatta ai requisiti del carico di lavoro.
 
 ## <a name="azure-fundamentals"></a>Concetti fondamentali di Azure
 
@@ -47,6 +47,6 @@ Gli articoli seguenti possono essere utili per prendere decisioni correlate alla
 
 - **Requisiti relativi ai costi**. In base alla motivazione di un'organizzazione per l'adozione del cloud e gli impegni operativi assunti in relazione a questo ambiente, potrebbe essere necessario modificare diverse configurazioni di gestione dei costi per l'area di destinazione.
 - **Decisioni relative al monitoraggio**. A seconda dei requisiti operativi di un'area di destinazione, è possibile distribuire diversi strumenti di monitoraggio. L'articolo sulle decisioni relative al monitoraggio può essere utile per determinare gli strumenti più appropriati da distribuire.
-- **Uso del controllo degli accessi in base al ruolo**. Il [controllo degli accessi in base al ruolo (RBAC)](../azure-best-practices/roles.md) di Azure consente una gestione degli accessi specifica, basata su gruppi, per risorse organizzate in base ai ruoli utente.
+- **Uso del controllo degli accessi in base al ruolo**. Il [controllo degli accessi in base al ruolo (RBAC)](../considerations/roles.md) di Azure consente una gestione degli accessi specifica, basata su gruppi, per risorse organizzate in base ai ruoli utente.
 - **Decisioni relative ai criteri**. Gli [esempi di Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples) includono progetti di conformità già pronti, ognuno con iniziative predefinite per i criteri. Le decisioni relative ai criteri sono utili per orientare la scelta del migliore progetto o della migliore iniziativa di criteri in base ai requisiti e ai vincoli indicati.
-- **[Creare coerenza del cloud ibrido](../../infrastructure/misc/hybrid-consistency.md)** . Creare soluzioni cloud ibride che offrono all'organizzazione i vantaggi dell'innovazione cloud, pur mantenendo molte delle caratteristiche della gestione locale.
+- **[Creare coerenza del cloud ibrido](./hybrid-consistency.md)** . Creare soluzioni cloud ibride che offrono all'organizzazione i vantaggi dell'innovazione cloud, pur mantenendo molte delle caratteristiche della gestione locale.

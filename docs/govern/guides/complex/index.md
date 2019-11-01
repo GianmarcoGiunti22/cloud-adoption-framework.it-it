@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058695"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239736"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guida alla governance per aziende complesse
 
@@ -41,7 +41,7 @@ Tutte le applicazioni devono essere distribuite nell'area appropriata della gera
 
 1. Definire un gruppo di gestione per ogni business unit, con una gerarchia dettagliata in base ad area geografica e tipo di ambiente, ad esempio ambiente di produzione o di preproduzione.
 2. Creare una sottoscrizione di produzione e non di produzione per ogni combinazione univoca di business unit o area geografia dedicata. È necessario prestare particolare attenzione se si creano più sottoscrizioni. Per altre informazioni, vedere [qui](../../../decision-guides/subscriptions/index.md).
-3. Applicare una [nomenclatura coerente](../../../ready/considerations/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
+3. Applicare una [nomenclatura coerente](../../../ready/azure-best-practices/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
 4. I gruppi di risorse dovrebbero essere distribuiti in modo da tenere conto del ciclo di vita dei relativi contenuti: tutti quelli sviluppati, gestiti e ritirati insieme devono stare insieme. Per altre informazioni sulle procedure consigliate per i gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md).
 5. La [scelta dell'area](../../../decision-guides/regions/index.md) è particolarmente importante, perché bisogna considerare la possibilità di implementare procedure di rete, monitoraggio e controllo per il failover/failback, oltre alla disponibilità [degli SKU necessari](https://azure.microsoft.com/global-infrastructure/services).
 

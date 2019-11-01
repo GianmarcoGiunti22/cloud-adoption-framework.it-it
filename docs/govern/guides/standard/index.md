@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1f0db9ecd49973c769d74a5357e56406e3bce3cf
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058692"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239701"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guida alla governance per aziende standard
 
@@ -41,7 +41,7 @@ Tutte le applicazioni devono essere distribuite nell'area appropriata della gera
 
 1. Un gruppo di gestione per ogni tipo di ambiente (ad esempio produzione, sviluppo e test).
 2. Due sottoscrizioni, una per i carichi di lavoro di produzione e un'altra per i carichi di lavoro non di produzione.
-3. È necessario applicare una [nomenclatura coerente](../../../ready/considerations/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
+3. È necessario applicare una [nomenclatura coerente](../../../ready/azure-best-practices/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
 4. I gruppi di risorse dovrebbero essere distribuiti in modo da tenere conto del ciclo di vita dei relativi contenuti: tutti quelli sviluppati, gestiti e ritirati insieme devono stare insieme. Per altre informazioni sulle procedure consigliate per i gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md).
 5. La [scelta dell'area](../../../decision-guides/regions/index.md) è particolarmente importante, perché bisogna considerare la possibilità di implementare procedure di rete, monitoraggio e controllo per il failover/failback, oltre alla disponibilità [degli SKU necessari](https://azure.microsoft.com/global-infrastructure/services).
 
