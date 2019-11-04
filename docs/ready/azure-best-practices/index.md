@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b65affee2a2ac351ab603a52b0b6202d41458f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d55635078be0c32496a0237df1b2a67aecc5e574
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548998"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240163"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Procedure consigliate per l'idoneità per Azure
 
@@ -24,16 +24,16 @@ Gran parte della preparazione al cloud consiste nel dotare il personale delle co
 Per l'organizzazione e la distribuzione degli asset nell'ambiente di Azure, usare le indicazioni seguenti:
 
 - [Concetti fondamentali di Azure](../considerations/fundamental-concepts.md). Informazioni sui termini e i concetti fondamentali usati in Azure e sulla correlazione tra questi concetti.
-- [Convenzioni consigliate per l'assegnazione di nomi e tag](../considerations/naming-and-tagging.md). Esaminare le raccomandazioni dettagliate per l'assegnazione di nomi e tag alle risorse. Queste raccomandazioni sono state appositamente studiate per supportare le attività di adozione del cloud in ambito aziendale.
-- [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md). Informazioni sulle strategie per il ridimensionamento con più sottoscrizioni di Azure.
+- [Convenzioni consigliate per l'assegnazione di nomi e tag](../azure-best-practices/naming-and-tagging.md). Esaminare le raccomandazioni dettagliate per l'assegnazione di nomi e tag alle risorse. Queste raccomandazioni sono state appositamente studiate per supportare le attività di adozione del cloud in ambito aziendale.
+- [Ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md). Informazioni sulle strategie per il ridimensionamento con più sottoscrizioni di Azure.
 - [Organizzare le risorse con i gruppi di gestione di Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Informazioni su come i gruppi di gestione di Azure consentono di gestire risorse, ruoli, criteri, nonché la distribuzione tra più sottoscrizioni.
-- [Creare coerenza del cloud ibrido](../../infrastructure/misc/hybrid-consistency.md). Creare soluzioni cloud ibride che offrono i vantaggi dell'innovazione cloud, pur mantenendo molte delle caratteristiche della gestione locale.
+- [Creare coerenza del cloud ibrido](../considerations/hybrid-consistency.md). Creare soluzioni cloud ibride che offrono i vantaggi dell'innovazione cloud, pur mantenendo molte delle caratteristiche della gestione locale.
 
 ## <a name="networking"></a>Rete
 
 Per preparare l'infrastruttura di rete cloud per i carichi di lavoro, usare le indicazioni seguenti:
 
-- [Decisioni relative alla rete](../considerations/network-decisions.md). Scegliere i servizi di rete, gli strumenti e le architetture che supportano i requisiti di connettività, governance e carico di lavoro dell'organizzazione.
+- [Decisioni relative alla rete](../considerations/networking-options.md). Scegliere i servizi di rete, gli strumenti e le architetture che supportano i requisiti di connettività, governance e carico di lavoro dell'organizzazione.
 - [Pianificazione della rete virtuale](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Informazioni sulla pianificazione di reti virtuali in base ai requisiti di isolamento, connettività e località.
 - [Procedure consigliate per la sicurezza di rete](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Informazioni sulle procedure consigliate per risolvere problemi comuni di sicurezza della rete usando le funzionalità predefinite di Azure.
 - [Reti perimetrali](./perimeter-networks.md). Le reti perimetrali consentono la connettività sicura tra le reti cloud e le reti dei data center locali o fisici, oltre alla connettività da e verso Internet.
@@ -44,12 +44,12 @@ Per preparare l'infrastruttura di rete cloud per i carichi di lavoro, usare le i
 Per la progettazione dell'infrastruttura di identità e controllo di accesso, in modo da migliorare l'efficienza dei carichi di lavoro in termini di sicurezza e gestione, usare le indicazioni seguenti:
 
 - [Procedure consigliate per la sicurezza con il controllo di accesso e la gestione delle identità di Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Informazioni sulle procedure consigliate per il controllo di accesso e la gestione delle identità con le funzionalità integrate di Azure.
-- [Procedure consigliate per il controllo degli accessi in base al ruolo](./roles.md). Il controllo degli accessi in base al ruolo (RBAC) di Azure consente una gestione degli accessi specifica basata su gruppi per risorse organizzate in base ai ruoli utente.
+- [Procedure consigliate per il controllo degli accessi in base al ruolo](../considerations/roles.md). Il controllo degli accessi in base al ruolo (RBAC) di Azure consente una gestione degli accessi specifica basata su gruppi per risorse organizzate in base ai ruoli utente.
 - [Protezione dell'accesso con privilegi per le distribuzioni ibride e cloud in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Usare Azure Active Directory per verificare la sicurezza degli account amministratore e dell'accesso amministrativo dell'organizzazione nell'ambiente cloud e locale.
 
 ## <a name="storage"></a>Archiviazione
 
-- [Indicazioni per Archiviazione di Azure](../considerations/storage-guidance.md). Selezionare la soluzione di archiviazione di Azure più adatta per supportare gli scenari di utilizzo.
+- [Indicazioni per Archiviazione di Azure](../considerations/storage-options.md). Selezionare la soluzione di archiviazione di Azure più adatta per supportare gli scenari di utilizzo.
 - [Guida alla sicurezza di Archiviazione di Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Informazioni sulle funzionalità di sicurezza di Archiviazione di Azure.
 
 ## <a name="databases"></a>Database

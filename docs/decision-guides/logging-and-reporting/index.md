@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915034"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238755"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guida alle decisioni relative a registrazione e creazione di report
 
@@ -58,7 +58,7 @@ Può richiedere interventi sostanziali di riprogettazione per fare in modo che l
 
 Per supportare questo approccio, le risorse cloud dovranno poter comunicare direttamente con i sistemi locali tramite una combinazione di [rete ibrida](../software-defined-network/hybrid.md) e di [servizi del dominio ospitati nel cloud](../identity/index.md#cloud-hosted-domain-services). In questo modo, la rete virtuale cloud funge da estensione di rete dell'ambiente locale. I carichi di lavoro ospitati nel cloud possono quindi comunicare direttamente con il sistema di registrazione e creazione di report locale.
 
-Questo approccio sfrutta gli investimenti esistenti negli strumenti di monitoraggio con modifiche minime alle applicazioni o ai servizi distribuiti nel cloud. Si tratta spesso dell'approccio più rapido per supportare il monitoraggio durante una migrazione "lift and shift". Non verranno tuttavia acquisiti i dati dei log generati dalle risorse PaaS e SaaS basate sul cloud e verranno omessi i log relativi alle macchine virtuali generati direttamente dalla piattaforma cloud, ad esempio quelli sullo stato delle VM. Di conseguenza, questo modello dovrà essere una soluzione temporanea da adottare solo finché non verrà implementata una soluzione di monitoraggio ibrida più completa.
+Questo approccio sfrutta gli investimenti esistenti negli strumenti di monitoraggio con modifiche minime alle applicazioni o ai servizi distribuiti nel cloud. Si tratta spesso dell'approccio più rapido per supportare il monitoraggio durante una migrazione lift-and-shift. Non verranno tuttavia acquisiti i dati dei log generati dalle risorse PaaS e SaaS basate sul cloud e verranno omessi i log relativi alle macchine virtuali generati direttamente dalla piattaforma cloud, ad esempio quelli sullo stato delle VM. Di conseguenza, questo modello dovrà essere una soluzione temporanea da adottare solo finché non verrà implementata una soluzione di monitoraggio ibrida più completa.
 
 Presupposti relativi solo all'ambiente locale:
 

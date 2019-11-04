@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548474"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240269"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modello di migrazione di Cloud Adoption Framework
 
@@ -34,7 +34,7 @@ Il modello di migrazione di Cloud Adoption Framework dipende dal fatto che l'org
 
 ![Infografica delle opzioni di migrazione](../../_images/migrate/migration-options.png)
 
-La migrazione e la modernizzazione dei carichi di lavoro possono essere gestite tramite semplici migrazioni con *rehosting* ("lift and shift") usando funzionalità di infrastruttura distribuita come servizio (IaaS), tramite il *refactoring*  con modifiche minime, fino alla *riprogettazione* per modificare ed estendere la funzionalità di codice e app per sfruttare i vantaggi delle tecnologie cloud.
+La migrazione e la modernizzazione dei carichi di lavoro possono essere gestite tramite semplici migrazioni con _rehosting_ (o _lift-and-shift_) usando funzionalità di infrastruttura distribuita come servizio (IaaS), tramite il _refactoring_ con modifiche minime, fino alla _riprogettazione_ per modificare ed estendere la funzionalità di codice e app per sfruttare i vantaggi delle tecnologie cloud.
 
 Le strategie native del cloud e le strategie basate su una piattaforma distribuita come servizio (PaaS) prevedono la *ricostruzione* dei carichi di lavoro locali tramite le offerte e i servizi gestiti della piattaforma Azure. I carichi di lavoro per i quali sono disponibili offerte basate sul cloud di tipo software come servizio (SaaS) completamente gestite ed equivalenti possono spesso essere *sostituiti* integralmente da questi servizi come parte del processo di migrazione.
 

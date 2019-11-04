@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048529"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239985"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Prima di eseguire la migrazione delle risorse ad Azure, è necessario scegliere 
 
 Questa guida illustra le nozioni di base della migrazione di applicazioni e risorse dall'ambiente locale ad Azure. È progettata per ambiti di migrazione di complessità minima. Per stabilire se questa guida è appropriata per la migrazione, vedere la scheda **Quando usare questa guida**.
 
-Quando si esegue la migrazione ad Azure, è possibile eseguire la migrazione delle applicazioni così come sono con soluzioni con macchine virtuali basate su IaaS (operazione nota come "rehosting" o migrazione "lift and shift") oppure è possibile scegliere di modernizzare le applicazioni sfruttando la flessibilità offerta dall'uso di servizi gestiti e altre funzionalità native del cloud. Vedere la scheda **Opzioni di migrazione** per altre informazioni su queste opzioni. Durante lo sviluppo della strategia di migrazione è opportuno considerare gli aspetti seguenti:
+Quando si esegue la migrazione ad Azure, è possibile trasferire le applicazioni così come sono con soluzioni con macchine virtuali basate su IaaS (operazione nota come _rehosting_ o migrazione _lift-and-shift_) oppure è possibile scegliere di modernizzare le applicazioni sfruttando la flessibilità offerta dall'uso di servizi gestiti e altre funzionalità native del cloud. Vedere la scheda **Opzioni di migrazione** per altre informazioni su queste opzioni. Durante lo sviluppo della strategia di migrazione è opportuno considerare gli aspetti seguenti:
 
 - Le applicazioni incluse nella migrazione funzioneranno nel cloud?
 - Qual è la strategia migliore (per quanto riguarda tecnologia, strumenti e migrazioni) per l'applicazione? Per altre informazioni, vedere la [guida alle decisioni relative agli strumenti di migrazione](../../decision-guides/migrate-decision-guide/index.md) di Microsoft Cloud Adoption Framework.

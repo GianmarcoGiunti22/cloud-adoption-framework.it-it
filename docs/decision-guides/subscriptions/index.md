@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058714"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238780"
 ---
 # <a name="subscription-decision-guide"></a>Guida alle decisioni relative alle sottoscrizioni
 
@@ -22,7 +22,7 @@ Una progettazione efficace delle sottoscrizioni consente alle organizzazioni di 
 
 Ogni risorsa in Azure, ad esempio una macchina virtuale o un database, è associata a una sottoscrizione. Per l'adozione di Azure è quindi necessario creare una sottoscrizione di Azure e associarla a un account e quindi distribuire le risorse nella sottoscrizione. Per una panoramica di questi concetti, vedere [Concetti fondamentali di Azure](../../ready/considerations/fundamental-concepts.md).
 
-Con l'incremento del digital estate in Azure, è probabilmente necessario creare altre sottoscrizioni per soddisfare i requisiti. Azure consente di definire una gerarchia di gruppi di gestione per organizzare le sottoscrizioni e applicare facilmente i criteri più adatti alle risorse appropriate. Per altre informazioni, vedere [Ridimensionamento con più sottoscrizioni di Azure](../../ready/considerations/scaling-subscriptions.md).
+Con l'incremento del digital estate in Azure, è probabilmente necessario creare altre sottoscrizioni per soddisfare i requisiti. Azure consente di definire una gerarchia di gruppi di gestione per organizzare le sottoscrizioni e applicare facilmente i criteri più adatti alle risorse appropriate. Per altre informazioni, vedere [Ridimensionamento con più sottoscrizioni di Azure](../../ready/azure-best-practices/scaling-subscriptions.md).
 
 Alcuni esempi di base relativi all'uso dei gruppi di gestione per separare carichi di lavoro diversi includono:
 
