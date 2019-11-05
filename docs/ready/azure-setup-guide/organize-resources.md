@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379119"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980182"
 ---
 # <a name="organize-your-azure-resources"></a>Organizzare le risorse di Azure
 
@@ -159,7 +159,7 @@ Dopo aver applicato i tag, è possibile recuperare tutte le risorse nella sottos
 - **Automazione:** è possibile eseguire regolarmente script in grado di effettuare un'azione in base al valore di un tag, ad esempio "ShutdownTime" o "DeprovisionDate".
 - **Fatturazione:** i tag possono essere inclusi nella fattura. È possibile usarli per semplificare la segmentazione della fattura usando tag come "CostCenter" o "BillTo".
 
-Ogni risorsa o gruppo di risorse può avere un massimo di 15 coppie di tag nome/valore. Questa limitazione si applica solo ai tag applicati direttamente al gruppo di risorse o alla risorsa.
+Ogni risorsa o gruppo di risorse può avere un massimo di 50 coppie di tag nome/valore. Questa limitazione si applica solo ai tag applicati direttamente al gruppo di risorse o alla risorsa.
 
 Per altre raccomandazioni ed esempi sull'assegnazione di tag, vedere le [informazioni aggiuntive sull'assegnazione di tag](../considerations/naming-and-tagging.md) del Cloud Adoption Framework.
 

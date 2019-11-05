@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769277"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047563"
 ---
 ::: zone target="docs"
 
@@ -31,7 +31,7 @@ ms.locfileid: "72769277"
 
 L'innovazione si può realizzare tramite dispositivi perimetrali percettivi e connessi in modo intermittente, con la possibilità di orchestrare milioni di dispositivi, acquisire ed elaborare quantità illimitate di dati e sfruttare un numero crescente di esperienze multisensoriali e multidispositivo. Per i dispositivi al perimetro della rete, Azure fornisce un framework per la creazione di soluzioni aziendali immersive ed efficaci. Il modello di ubiquitous computing, reso possibile dalla combinazione di Azure con la tecnologia di intelligenza artificiale, consente di creare qualsiasi tipo immaginabile di applicazione e sistema intelligente.
 
-I clienti di Azure utilizzano un set in continua espansione di sistemi e dispositivi connessi che raccolgono e analizzano i dati, vicino agli utenti, ai dati o a entrambi. Gli utenti ricevono informazioni ed esperienze in tempo reale, distribuite da app con riconoscimento del contesto e altamente reattive. Spostando parte del carico di lavoro nei dispositivi perimetrali, è possibile ridurre il tempo da dedicare all'invio di messaggi nel cloud e reagire più rapidamente agli eventi spaziali.
+I clienti di Azure usano un set in continua espansione di sistemi e dispositivi connessi che raccolgono e analizzano i dati, vicino agli utenti, ai dati o a entrambi. Gli utenti ricevono informazioni ed esperienze in tempo reale, distribuite da app con riconoscimento del contesto e altamente reattive. Spostando parte del carico di lavoro nei dispositivi perimetrali, è possibile ridurre il tempo da dedicare all'invio di messaggi nel cloud e reagire più rapidamente agli eventi spaziali.
 
 > [!div class="checklist"]
 >
@@ -49,7 +49,9 @@ I clienti di Azure utilizzano un set in continua espansione di sistemi e disposi
 
 <!-- markdownlint-enable MD025 -->
 
-È possibile progettare soluzioni che usano la comunicazione bidirezionale con miliardi di dispositivi IoT, oltre a usare dati di telemetria predefiniti da dispositivo a cloud per acquisire informazioni sullo stato dei dispositivi e definire route per i messaggi da inviare ad altri servizi di Azure solo tramite configurazione. Sfruttando i messaggi da cloud a dispositivo, è possibile inviare in modo affidabile comandi e notifiche ai dispositivi connessi e tenere traccia del recapito con la conferma di ricezione. È possibile ripetere automaticamente l'invio di messaggi dei dispositivi in base alla necessità per supportare la connettività intermittente.
+È possibile progettare soluzioni che usano la comunicazione bidirezionale con miliardi di dispositivi IoT, Fanno inoltre uso dei dati di telemetria predefiniti da dispositivo a cloud per acquisire informazioni sullo stato dei dispositivi e definire route per i messaggi da inviare ad altri servizi di Azure solo tramite configurazione. Sfruttando i messaggi da cloud a dispositivo, è possibile inviare in modo affidabile comandi e notifiche ai dispositivi connessi e tenere traccia del recapito con la conferma di ricezione. È inoltre possibile ripetere automaticamente l'invio di messaggi dei dispositivi in base alla necessità per supportare la connettività intermittente.
+
+Di seguito sono elencate alcune funzionalità disponibili:
 
 - **Canale di comunicazione con sicurezza avanzata** per l'invio e la ricezione di dati da dispositivi IoT.
 - **Gestione dei dispositivi incorporata** e provisioning predefinito per la connessione e la gestione di dispositivi IoT su larga scala.
@@ -66,16 +68,18 @@ I clienti di Azure utilizzano un set in continua espansione di sistemi e disposi
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Azione
 
-Per creare l'hub IoT:
+Per creare un hub IoT:
 
 1. Passare a **Hub IoT**.
-2. Fare clic su **Crea un nuovo hub IoT**.
+2. Selezionare **Create IoT hub** (Crea hub IoT).
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 Il servizio Device Provisioning in hub IoT è un servizio di supporto per l'hub IoT che consente il provisioning JIT completamente automatico.
 
@@ -86,7 +90,9 @@ Il servizio Device Provisioning in hub IoT è un servizio di supporto per l'hub 
 Per creare servizi Device Provisioning in hub IoT:
 
 1. Passare a **Servizi Device Provisioning in hub IoT**.
-2. Fare clic su **Create Device Provisioning Services** (Crea servizi Device Provisioning).
+2. Selezionare **Create Device Provisioning Services** (Crea servizi Device Provisioning).
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -102,7 +108,7 @@ Per creare servizi Device Provisioning in hub IoT:
 
 **Modelli a oggetti di Gemelli digitali di Azure:** con i modelli a oggetti e le ontologie dei gemelli digitali, è possibile modellare un'ontologia che descrive aree, sedi, piani, uffici, zone, sale riunioni e sale dedicate di un edificio intelligente, oppure varie centrali elettriche, sottostazioni, risorse energetiche e clienti di una rete elettrica.
 
-**Grafico di intelligenza spaziale:** il grafico gerarchico di spazi, dispositivi e persone definito nel modello a oggetti di Gemelli digitali che supporta ereditarietà, filtro, attraversamento, scalabilità ed estendibilità. È possibile gestire e interagire con il grafico spaziale con una raccolta di API REST ospitate in Azure.
+**Grafico di intelligenza spaziale:** il grafico gerarchico di spazi, dispositivi e persone definito nel modello a oggetti di Gemelli digitali che supporta ereditarietà, filtro, attraversamento, scalabilità ed estendibilità. È possibile gestire e interagire con il grafico spaziale tramite una raccolta di API REST ospitate in Azure.
 
 ::: zone target="docs"
 
@@ -112,16 +118,16 @@ Per creare servizi Device Provisioning in hub IoT:
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Azione
 
 Per creare Gemelli digitali di Azure:
 
-1. Nel riquadro a sinistra selezionare **Crea una risorsa**.
-2. Cercare gemelli digitali e selezionare **Gemelli digitali**.
+1. Nel riquadro a sinistra selezionare **Crea risorsa**.
+2. Cercare **gemelli digitali** e quindi selezionare **Gemelli digitali**.
 3. Selezionare **Crea** per avviare il processo di distribuzione.
-4. Fare clic sul pulsante seguente per esaminare i Gemelli digitali esistenti.
+4. Per esaminare i gemelli digitali esistenti, selezionare questo pulsante:
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -149,14 +155,14 @@ Oltre alle tradizionali funzionalità di localizzazione, come prossimità, traff
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Azione
 
 Per usare l'intelligenza della posizione:
 
 1. Passare ad **Account Mappe di Azure**.
-2. Fare clic su **Crea account Mappe di Azure**.
+2. Selezionare **Crea account Mappe di Azure**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -170,7 +176,7 @@ Ancoraggi nello spazio di Azure consente agli sviluppatori di usare piattaforme 
 
 **Aggiunta di contesto al mondo reale:** posizionando e connettendo il contenuto digitale a punti di interesse fisici, è possibile offrire agli utenti maggiori informazioni sui dati, dove e quando necessario.
 
-**Condivisione di ologrammi in più dispositivi:** offrendo funzionalità 3D al team e ai clienti nei dispositivi che preferiscono, è possibile accelerare decisioni e risultati. Ancoraggi nello spazio consente a persone situate nello stesso posto di partecipare ad applicazioni di realtà mista multiutente.
+**Condivisione di ologrammi in più dispositivi:** offrendo funzionalità 3D al team e ai clienti nei dispositivi che preferiscono, è possibile accelerare decisioni e risultati. Ancoraggi nello spazio consente a persone presenti nello stesso posto di partecipare ad applicazioni di realtà mista multiutente.
 
 **Esperienze coinvolgenti:** è possibile creare relazioni tra ancoraggi dello spazio per connetterli e offrire un'esperienza utente che può includere due o più punti di interesse con cui un utente deve interagire per completare un'attività. L'app può consentire a un utente di inserire un artefatto virtuale nel mondo reale. In un ambiente industriale, un utente potrebbe ricevere informazioni contestuali su una macchina puntandovi la fotocamera di un dispositivo supportato.
 
@@ -184,14 +190,14 @@ Ancoraggi nello spazio di Azure è costituito da un servizio gestito e da SKD cl
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Azione
 
 Per usare esperienze spaziali:
 
 1. Passare a **Account ancoraggi nello spazio**.
-2. Fare clic su **Create spatial anchors accounts** (Crea account ancoraggio nello spazio).
+2. Selezionare **Create spatial anchors accounts** (Crea account ancoraggio nello spazio).
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -215,14 +221,14 @@ Il processo di rendering è a uso intensivo di calcoli. Può essere necessario p
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Azione
 
 Per usare Rendering remoto:
 
 1. Passare ad **Account Batch**.
-2. Fare clic su **Create batch accounts** (Crea account Batch).
+2. Selezionare **Create batch accounts** (Crea account Batch).
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b2ed1b072d5226649e5248e350edfa3578978c4c
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 5bd467e6e74ff1289a7db40add87a049d2b0697e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769253"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047628"
 ---
 ::: zone target="docs"
 
@@ -29,30 +29,31 @@ ms.locfileid: "72769253"
 
 ::: zone-end
 
-Le aziende innovative avranno a disposizione informazioni dettagliate sui dati, sul comportamento e sulle esigenze della base di clienti. L'analisi di queste informazioni può risultare utile per prevedere le esigenze dei clienti anche prima che siano consapevoli di averle. Questo articolo presenta alcuni approcci per la distribuzione di soluzioni predittive. Nella sezione successiva, l'articolo introduce gli approcci per l'integrazione di tali previsioni nella soluzione, in modo da influenzare i comportamenti dei clienti.
+Le aziende innovative hanno a disposizione informazioni dettagliate sui dati, sul comportamento e sulle esigenze della base di clienti. L'analisi di queste informazioni può risultare utile per prevedere le esigenze dei clienti, preferibilmente prima che i clienti stessi siano consapevoli di averle. Questo articolo presenta alcuni approcci per la distribuzione di soluzioni predittive. Nelle sezioni finali vengono illustrati gli approcci per l'integrazione di tali previsioni nella soluzione adottata, in modo da influenzare i comportamenti dei clienti.
 
-La tabella seguente aiuta a trovare la soluzione migliore in base alle esigenze di implementazione.
+La tabella seguente consente di trovare la soluzione migliore in base alle proprie esigenze di implementazione.
 
 |Service  |Modelli predefiniti  |Creazione e sperimentazione  |Training e compilazione con Python|Competenze necessarie|
 |---------|---------|---------|---------|---------|
-|Servizi cognitivi|Sì|No|No|Competenze su API e sviluppo|
+|Servizi cognitivi di Azure|Sì|No|No|Competenze su API e sviluppo|
 |Azure Machine Learning Studio|Sì|Sì|No|Conoscenza generale degli algoritmi predittivi|
 |Servizio Azure Machine Learning|Sì|Sì|Sì|Data scientist|
 
 ## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Servizi cognitivi di Azure](#tab/CognitiveServices)
 
-La famiglia di Servizi cognitivi di Azure offre il percorso più rapido e semplice per la generazione di previsioni. L'offerta di Servizi cognitivi consente di eseguire previsioni in base a modelli esistenti, che non richiedono training aggiuntivo. Questi servizi sono ottimali nel caso il personale non includa un data scientist per eseguire il training del modello predittivo. Per alcuni servizi, non è richiesto alcun training. Per altri è necessario solo un training minimo.
+La famiglia di Servizi cognitivi di Azure offre il percorso più rapido e semplice per generare previsioni sulle esigenze dei clienti. L'offerta di Servizi cognitivi consente di eseguire previsioni in base a modelli esistenti, che non richiedono training aggiuntivo. Questi servizi offrono una soluzione ottimale ed efficace quando nel personale di un'azienda non è disponibile un data scientist per eseguire il training del modello predittivo. Per alcuni servizi, non è richiesto alcun training. Per altri è sufficiente un training minimo.
 
-Per un elenco dei servizi disponibili con informazioni sulla quantità di training necessaria, vedere [Servizi cognitivi e Machine Learning](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model).
+Per un elenco dei servizi disponibili con informazioni sull'eventuale training necessario, vedere [Servizi cognitivi e Machine Learning](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model).
 
 ### <a name="action"></a>Azione
 
-Per usare l'API Servizi cognitivi:
+Per usare un'API Servizi cognitivi:
 
-1. Passare a **Servizi cognitivi**.
-2. Fare clic su **Aggiungi +** per trovare un servizio cognitivo nel Marketplace.
-3. Se si conosce il nome del servizio che si vuole usare, è possibile immetterlo nella casella di testo **Cerca nel Marketplace**.
-4. In alternativa, per un elenco di servizi cognitivi, fare clic sul collegamento **Vedi altro** accanto all'intestazione Servizi cognitivi.
+1. Nel [portale di Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) passare a **Servizi cognitivi**.
+2. Selezionare **Aggiungi** per trovare un'API Servizi cognitivi in Azure Marketplace.
+3. Eseguire una di queste operazioni:
+   * Se si conosce il nome del servizio da usare, immetterlo nella casella **Cerca nel Marketplace**.
+   * In alternativa, per un elenco di API Servizi cognitivi, selezionare il collegamento **Vedi altro** accanto all'intestazione Servizi cognitivi.
 
 ::: zone target="chromeless"
 
@@ -72,17 +73,18 @@ Passare direttamente a Servizi cognitivi nel [portale di Azure](https://portal.a
 
 ## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
-Se i modelli esistenti all'interno dei servizi cognitivi non sono indicati per la previsione desiderata, Azure Machine Learning Studio offre la possibilità di crearne altre senza la necessità di competenze approfondite in data science.
+Se i modelli esistenti all'interno di Servizi cognitivi non sono adatti alla previsione desiderata, Azure Machine Learning Studio offre la possibilità di creare altre previsioni, senza che sia necessario avere competenze approfondite di data science.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>Azione
 
-È possibile usare Azure Machine Learning Studio per creare un modello e usarlo per sperimentare:
+È possibile usare Azure Machine Learning Studio per creare un modello e usarlo per sperimentare eseguendo queste operazioni:
 
-1. Passare ad **Azure Machine Learning Studio**.
-2. Fare clic su **Create Machine Learning Studio Workspace** (Crea un'area di lavoro di Microsoft Azure Machine Learning Studio) e seguire le istruzioni.
-3. La nuova area di lavoro fornisce un'interfaccia con trascinamento della selezione per creare un modello con cui sperimentare, in alternativa al training approfondito.
+1. Nel [portale di Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces) passare a **Azure Machine Learning Studio**.
+2. Selezionare **Create Machine Learning Studio Workspace** (Crea un'area di lavoro di Machine Learning Studio) e seguire le istruzioni.
+
+   La nuova area di lavoro offre un'interfaccia con trascinamento della selezione per creare un modello con cui sperimentare, in alternativa al training approfondito.
 
 ::: zone target="chromeless"
 
@@ -102,21 +104,21 @@ Passare direttamente ad Azure Machine Learning Studio nel [portale di Azure](htt
 
 ## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Servizio Azure Machine Learning](#tab/MachineLearningService)
 
-Il servizio Azure Machine Learning fornisce l'approccio più completo basato sul codice necessario per un training più approfondito dei set di dati dei clienti. Usando linguaggi come Python, i data scientist possono eseguire il training e quindi creare un algoritmo per prevedere le esigenze dei clienti.
+Il servizio Azure Machine Learning offre l'approccio più completo basato sul codice necessario per un training più approfondito dei set di dati dei clienti. Usando linguaggi come Python, i data scientist possono eseguire il training e quindi creare un algoritmo per prevedere le esigenze dei clienti.
 
 ### <a name="action"></a>Azione
 
-Un data scientist può usare un servizio di Azure Machine Learning per eseguire il training e creare un modello usando linguaggi avanzati come Python:
+Un data scientist può usare il servizio Azure Machine Learning per eseguire il training e creare un modello usando linguaggi avanzati come Python:
 
 1. Passare a **Servizio Azure Machine Learning**.
-2. Fare clic su **Create Machine Learning service workspaces** (Crea aree di lavoro per il servizio Machine Learning) e seguire le istruzioni.
+2. Selezionare **Create Machine Learning service workspaces** (Crea aree di lavoro per il servizio Machine Learning) e seguire le istruzioni.
 3. La nuova area di lavoro offre ai data scientist un approccio basato sul codice per il training e la creazione di modelli che richiedono analisi più avanzate per prevedere accuratamente le esigenze dei clienti.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -130,6 +132,6 @@ Passare direttamente ad Azure Machine Learning Studio nel [portale di Azure](htt
 
 ## <a name="influence"></a>Influenza
 
-Tutti gli approcci descritti in precedenza producono un'API che espone il modello di previsione alle applicazioni. All'interno della soluzione usare uno di questi approcci per inserire i dati raccolti dal cliente in un'API predittiva. I risultati possono quindi essere integrati nell'esperienza del cliente come passaggio successivo suggerito.
+Tutti gli approcci descritti in precedenza hanno come risultato un'API che espone il modello di previsione alle applicazioni. All'interno della soluzione, adottare uno di questi approcci per inserire i dati raccolti dal cliente in un'API predittiva. I risultati possono quindi essere integrati nell'esperienza del cliente come passaggio successivo suggerito.
 
-Questi passaggi successivi si prefiggono di definire i modelli di comportamento dei clienti e di influenzare il modo in cui reagiscono. Poiché i passaggi successivi suggeriti sono basati su algoritmi predittivi, verranno usati i dati dei clienti precedenti e disponibili per prevedere e soddisfare le esigenze, spesso anche prima che il cliente sia consapevole di averle.
+Questi passaggi successivi possono essere utili per definire i modelli di comportamento dei clienti e influenzare il modo in cui reagiscono. Poiché sono basati su algoritmi predittivi, i passaggi successivi suggeriti usano i dati precedenti dei clienti e altri dati disponibili per prevedere e soddisfare le loro esigenze, spesso anche prima che i clienti siano consapevoli di averle.
