@@ -8,19 +8,19 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548550"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564773"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Procedure consigliate per proteggere e gestire i carichi di lavoro migrati ad Azure
 
 In fase di pianificazione e progettazione per la migrazione, oltre a considerare la migrazione stessa, è necessario valutare il modello di sicurezza e gestione in Azure dopo la migrazione. Questo articolo descrive la pianificazione e le procedure consigliate per proteggere la distribuzione di Azure dopo la migrazione, nonché le attività continuative da svolgere per mantenere un'esecuzione ottimale della distribuzione.
 
 > [!IMPORTANT]
-> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità mutano nel tempo.
+> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità variano nel tempo.
 
 ## <a name="secure-migrated-workloads"></a>Proteggere i carichi di lavoro migrati
 
@@ -137,7 +137,7 @@ Azure offre un paio di soluzioni:
 
 ![proteggere le app Web](./media/migrate-best-practices-security-management/web-apps.png)
 
-*Insieme di credenziali chiave Azure*
+*Insieme di credenziali delle chiavi di Azure*
 
 **Altre informazioni**:
 
@@ -355,7 +355,7 @@ Backup di Azure crea punti di recupero dei dati archiviati in Archiviazione di A
 
 È possibile usare Backup di Azure per eseguire il backup di macchine virtuali in un paio di modi.
 
-- **Backup diretto dalle impostazioni della macchina virtuale:** è possibile eseguire il backup di macchine virtuali con Backup di Azure direttamente dalle opzioni per macchine virtuali nel portale di Azure. È possibile eseguire il backup della macchina virtuale una volta al giorno e ripristinare il disco della macchina virtuale in base alle esigenze. Backup di Azure esegue snapshot di dati che supportano le app (VSS). Nella macchina virtuale non vengono installati agenti.
+- **Backup diretto dalle impostazioni della macchina virtuale:** è possibile eseguire il backup di macchine virtuali con Backup di Azure direttamente dalle opzioni per macchine virtuali nel portale di Azure. È possibile eseguire il backup della VM una volta al giorno ed è possibile ripristinare il disco della macchina virtuale in base alle esigenze. Backup di Azure esegue snapshot di dati che supportano le app (VSS). Nella macchina virtuale non vengono installati agenti.
 - **Backup diretto in un insieme di credenziali di Servizi di ripristino:** è possibile eseguire il backup delle macchine virtuali IaaS mediante la distribuzione di un insieme di credenziali di Servizi di ripristino di Backup di Azure. In un'unica posizione è possibile tenere traccia dei backup e gestirli, nonché usufruire di opzioni granulari di backup e ripristino. Il backup viene eseguito fino a tre volte al giorno, a livello di file/cartella. Non è compatibile con le app e Linux non è supportato. Installare l'agente Servizi di ripristino di Microsoft Azure (MARS) in ogni macchina virtuale di cui si intende eseguire il backup con questo metodo.
 - **Proteggere la macchina virtuale nel server di Backup di Azure:** il server di Backup di Azure è disponibile gratuitamente con Backup di Azure. La macchina virtuale viene sottoposta a backup nell'archiviazione del server di Backup di Azure. Il server di Backup di Azure viene quindi sottoposto a backup in Azure all'interno di un insieme di credenziali. La funzionalità di backup è compatibile con le app, con granularità completa su frequenza e conservazione dei backup. È ad esempio possibile eseguire il backup a livello di app, ad esempio di SQL Server o SharePoint.
 
@@ -419,7 +419,7 @@ I dischi gestiti di Azure semplificano la gestione dei dischi per le macchine vi
 - È possibile convertire dischi esistenti in gestiti.
 - È consigliabile creare macchine virtuali in set di disponibilità per disponibilità e resilienza elevate. Quando si verificano interruzioni pianificate o non pianificate, i set di disponibilità garantiscono la disponibilità continua di almeno una macchina virtuale nel set.
 
-![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
+![Dischi gestiti](./media/migrate-best-practices-security-management/managed-disks.png)
 
 *Dischi gestiti*
 

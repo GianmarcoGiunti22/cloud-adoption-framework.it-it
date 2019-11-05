@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058770"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566024"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Progettazione di governance per più team
 
@@ -225,14 +225,14 @@ Questo modello di gestione ha i vantaggi del secondo esempio illustrato in prece
 
 È quindi possibile selezionare uno di questi due esempi di modelli di gestione delle risorse a seconda della priorità dei propri requisiti. Se si prevede che l'organizzazione non raggiungerà i limiti del servizio per una sottoscrizione singola, è possibile usare una sottoscrizione singola con più gruppi di risorse. Se invece l'organizzazione prevede molti carichi di lavoro, può essere meglio usare più sottoscrizioni per ogni ambiente.
 
-## <a name="implementing-the-resource-management-model"></a>Implementazione del modello di gestione delle risorse
+## <a name="implement-the-resource-management-model"></a>Implementare il modello di gestione delle risorse
 
 Sono stati appresi diversi modelli per la gestione dell'accesso alle risorse di Azure. Ora verranno esaminati i passaggi necessari per implementare il modello di gestione delle risorse con una sottoscrizione per ognuno degli ambienti, di **infrastruttura condivisa**, **produzione** e **sviluppo**, illustrati nella guida alla progettazione. Sarà presente un **proprietario della sottoscrizione** per tutti e tre gli ambienti. Ogni carico di lavoro sarà isolato in un **gruppo di risorse** con un **proprietario del carico di lavoro** aggiunto con il ruolo di **collaboratore**.
 
 > [!NOTE]
 > Vedere [informazioni sull'accesso alle risorse in Azure](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles) per altre informazioni sulla relazione tra gli account e le sottoscrizioni di Azure.
 
-Seguire questa procedura:
+A tale scopo, seguire questa procedura:
 
 1. Creare un [account di Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization), se l'organizzazione non ne ha già uno. La persona che effettua l'iscrizione per l'account di Azure diventa l'amministratore account di Azure e i leader dell'organizzazione devono scegliere una persona che assuma questo ruolo. Questo utente sarà responsabile di:
     - Creazione di sottoscrizioni.

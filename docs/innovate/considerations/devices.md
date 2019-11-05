@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047678"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565659"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Esperienze di ambiente: interagire con i dispositivi
 
@@ -46,7 +46,7 @@ Nella prima fase dell'esperienza di ambiente, l'utente si allontana dal computer
 
 Quando i clienti sono dispositivi mobili e cambiano di frequente, questo potrebbe rappresentare la forma di ambiente più pertinente per una particolare soluzione. Nel corso dell'ultimo decennio, l'innovazione è stata spesso attivata dall'integrazione delle soluzioni esistenti con un'esperienza mobile.
 
-App Azure Services è un ottimo esempio di questo approccio. Durante le prime iterazioni, la [funzionalità app Web di app Azure Services](/azure/app-service/overview) può essere usata per testare l'ipotesi. Poiché le ipotesi diventano più complesse, la [funzionalità app per dispositivi mobili di app Azure Services](/azure/app-service-mobile/) può estendere l'app Web per l'esecuzione in un'ampia gamma di piattaforme per dispositivi mobili.
+App Azure Services è un ottimo esempio di questo approccio. Durante le prime iterazioni, la [funzionalità app Web di app Azure Services](https://docs.microsoft.com/azure/app-service/overview) può essere usata per testare l'ipotesi. Poiché le ipotesi diventano più complesse, la [funzionalità app per dispositivi mobili di app Azure Services](https://docs.microsoft.com/azure/app-service-mobile) può estendere l'app Web per l'esecuzione in un'ampia gamma di piattaforme per dispositivi mobili.
 
 ## <a name="mixed-reality"></a>Realtà mista
 
@@ -68,7 +68,7 @@ Questa esperienza è ideale quando una forma di dispositivo è coerente negli st
 Esempi di realtà integrata in Azure possono includere:
 
 - [Soluzioni azure Internet delle cose (Internet)](https://docs.microsoft.com/azure/iot-fundamentals), una raccolta di servizi in Azure che consentono di gestire i dispositivi e il flusso di dati da tali dispositivi nel cloud ed eseguire il back-up agli utenti finali.
-- [Azure Sphere](/azure-sphere), una combinazione di hardware e software. Azure Sphere è un modo sicuro per consentire a un dispositivo esistente di trasmettere in modo sicuro i dati tra il dispositivo e le soluzioni Azure.
+- [Azure Sphere](https://docs.microsoft.com/azure-sphere), una combinazione di hardware e software. Azure Sphere è un modo sicuro per consentire a un dispositivo esistente di trasmettere in modo sicuro i dati tra il dispositivo e le soluzioni Azure.
 - [Azure Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk), sensori di intelligenza artificiale con modelli avanzati di visione artificiale e riconoscimento vocale. Questi sensori possono raccogliere dati visivi e audio dalle immediate vicinanze e inserire tali input nella soluzione.
 
 È possibile utilizzare tutti e tre questi strumenti per raccogliere dati dall'ambiente naturale e al punto di necessità del cliente. A questo punto, la soluzione può rispondere a tali input di dati per risolvere la necessità, a volte prima che il cliente sappia anche che si è verificato un trigger per la necessità.
@@ -81,7 +81,7 @@ Assistenti virtuali e Smart speaker offrono ottimi esempi di realtà adattata. D
 
 Le fabbriche in tutto il mondo forniscono esempi aggiuntivi di realtà adattata. Durante le fasi iniziali della realtà integrata, i sensori sui dispositivi hanno rilevato condizioni come il surriscaldamento e quindi hanno avvertito un uomo attraverso un'applicazione. In realtà adattata, il cliente potrebbe essere ancora impegnato, ma il ciclo di commenti è più rigoroso. In una fabbrica di realtà regolata, è possibile che un dispositivo rilevi il surriscaldamento in un computer vitale in un punto lungo la linea di assembly. Altrove, un secondo dispositivo rallenta leggermente la produzione per consentire al computer di raffreddarsi e quindi riprendere la velocità completa quando la condizione viene risolta. In questa situazione, il cliente è un partecipante di seconda mano. Il cliente usa l'applicazione per impostare le regole e comprendere il modo in cui tali regole hanno influenzato la produzione, ma non sono necessarie per il ciclo di feedback.
 
-I servizi di Azure descritti in [soluzioni azure Internet delle cose](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](/azure-sphere)e [Azure Kinect Developer Kit](https://docs.microsoft.com/azure/Kinect-dk) possono essere componenti di una soluzione di realtà adattata. L'applicazione e la logica di business originali fungeranno quindi da intermediario tra l'input ambientale e la modifica che deve essere apportata nell'ambiente fisico.
+I servizi di Azure descritti in [soluzioni azure Internet delle cose](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere)e [Azure Kinect Developer Kit](https://docs.microsoft.com/azure/Kinect-dk) possono essere componenti di una soluzione di realtà adattata. L'applicazione e la logica di business originali fungeranno quindi da intermediario tra l'input ambientale e la modifica che deve essere apportata nell'ambiente fisico.
 
 Un dispositivo gemello digitale è un altro esempio di realtà adattata. Questo termine si riferisce a una rappresentazione digitale di un dispositivo fisico, presentata tramite computer, dispositivi mobili o formati di realtà mista. A differenza dei modelli 3D meno sofisticati, un dispositivo gemello digitale riflette i dati raccolti da un dispositivo reale nell'ambiente fisico. Questa soluzione consente all'utente di interagire con la rappresentazione digitale in modi che non possono mai essere eseguiti nel mondo reale. Con questo approccio, i dispositivi fisici regolano un ambiente di realtà mista. Tuttavia, la soluzione raccoglie comunque i dati da una soluzione di realtà integrata e usa tali dati per definire la realtà degli ambienti attuali del cliente.
 

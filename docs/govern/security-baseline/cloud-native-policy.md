@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047851"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565963"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Criteri di base della sicurezza nativi del cloud
 
-La [baseline di sicurezza](./index.md) è una delle [cinque discipline della governance del cloud](../governance-disciplines.md). Questa disciplina è incentrata sugli argomenti generali sulla sicurezza, tra cui la protezione della rete, asset digitali, dati e così via. Come descritto nella [Guida alla revisione dei criteri](../policy-compliance/cloud-policy-review.md), il Framework di adozione del cloud include tre livelli di criteri di **esempio**: conformi a cloud-native, Enterprise e cloud-design-Principle per ciascuna disciplina. Questo articolo illustra i criteri di esempio nativi del cloud per la disciplina della linea di base di sicurezza.
+La [baseline di sicurezza](./index.md) è una delle [cinque discipline della governance del cloud](../governance-disciplines.md). Questa disciplina è incentrata sugli argomenti generali sulla sicurezza, tra cui la protezione della rete, asset digitali, dati e così via. Come descritto nella [Guida alla revisione dei criteri](../policy-compliance/cloud-policy-review.md), il Framework di adozione del cloud include tre livelli di criteri di esempio: conformi a cloud-native, Enterprise e cloud-design-Principle per ciascuna disciplina. Questo articolo illustra i criteri di esempio nativi del cloud per la disciplina della linea di base di sicurezza.
 
 > [!NOTE]
 > Microsoft non intende dettare criteri aziendali o IT. Questo articolo consente di prepararsi a una revisione interna dei criteri. Si presuppone che questo criterio di esempio venga esteso, convalidato e testato in base ai criteri aziendali prima di provare a usarlo. Qualsiasi utilizzo di questo criterio di esempio è sconsigliato.
@@ -27,7 +27,7 @@ La [baseline di sicurezza](./index.md) è una delle [cinque discipline della gov
 
 Questo criterio di esempio sintetizza uno scenario nativo del cloud, ovvero gli strumenti e le piattaforme fornite da Azure sono sufficienti per gestire i rischi aziendali interessati da una distribuzione. In questo scenario, si presume che una semplice configurazione dei servizi di Azure predefiniti offra una protezione sufficiente delle risorse.
 
-## <a name="cloud-security-and-compliance"></a>Sicurezza e conformità del cloud
+## <a name="cloud-security-and-compliance"></a>Conformità e sicurezza del cloud
 
 Azure integra la sicurezza in ogni suo aspetto, offrendo vantaggi esclusivi che derivano da una intelligence globale per la sicurezza, controlli relativi ai clienti e un'infrastruttura dotata di protezione avanzata. Questa combinazione avanzata contribuisce alla protezione delle applicazioni e dei dati e al supporto del lavoro richiesto per la conformità e offre una sicurezza a costi contenuti per organizzazioni di qualsiasi dimensione. Questo approccio consente di creare una solida posizione di partenza per qualsiasi criterio di sicurezza, ma non nega la necessità di pratiche di sicurezza ugualmente elevate relative ai servizi di protezione in uso.
 
@@ -59,7 +59,7 @@ I criteri nativi del cloud per i controlli di rete possono includere requisiti s
 - Firewall nativo di Azure per Windows consente di proteggere gli host dal traffico di rete dannoso, limitando l'accesso alla porta. Un esempio valido di questo criterio è un requisito per bloccare (o non abilitare) il traffico direttamente a una macchina virtuale tramite SSH/RDP.
 - Servizi come le applicazioni applicazione Azure gateway web application firewall (WAF) e protezione DDoS di Azure proteggono le applicazioni e garantiscono la disponibilità per le macchine virtuali in esecuzione in Azure. Queste funzionalità non devono essere disabilitate.
 
-### <a name="data-protection"></a>Protezione dei dati
+### <a name="data-protection"></a>Protezione dati
 
 Uno degli aspetti fondamentali della protezione dei dati nel cloud consiste nel tenere conto dei possibili stati in cui possono trovarsi i dati e dei controlli disponibili per ogni stato. Per quanto concerne le procedure consigliate per la sicurezza dei dati e la crittografia in Azure, le raccomandazioni verteranno sugli stati dei dati seguenti:
 
@@ -82,7 +82,8 @@ Il monitoraggio della sicurezza è una strategia attiva per il controllo delle r
 
 ### <a name="extending-cloud-native-policies"></a>Estensione di criteri nativi del cloud
 
-L'uso del cloud potrebbe ridurre alcuni problemi legati alla protezione. Microsoft garantisce la sicurezza fisica dei data center di Azure e aiuta a proteggere la piattaforma cloud da minacce infrastrutturali, ad esempio un attacco DDoS. Dato che Microsoft dispone di migliaia di specialisti Cybersecurity che lavorano quotidianamente sulla sicurezza, le risorse per rilevare, prevenire o attenuare attacchi cibernetici sono considerevoli. In realtà, mentre le organizzazioni erano preoccupati per la sicurezza del cloud, la maggior parte del tempo è consapevole del fatto che il livello di investimento in persone e infrastrutture specializzate da fornitori come Microsoft rende il cloud più sicuro della maggior parte delle sedi locali Datacenter.
+L'uso del cloud potrebbe ridurre alcuni problemi legati alla protezione. Microsoft garantisce la sicurezza fisica dei data center di Azure e aiuta a proteggere la piattaforma cloud da minacce infrastrutturali, ad esempio un attacco DDoS. Dato che Microsoft dispone di migliaia di specialisti Cybersecurity che lavorano quotidianamente sulla sicurezza, le risorse per rilevare, prevenire o attenuare attacchi cibernetici sono considerevoli. In realtà, mentre le organizzazioni hanno dovuto preoccuparsi se il cloud è stato protetto, la maggior parte del tempo è consapevole che il livello di investimento nelle persone e nell'infrastruttura specializzata effettuata da fornitori come Microsoft rende il cloud più sicuro rispetto alla maggior parte dei data center locali.
+L'uso del cloud potrebbe ridurre alcuni problemi legati alla protezione. Microsoft garantisce la sicurezza fisica dei data center di Azure e aiuta a proteggere la piattaforma cloud da minacce infrastrutturali, ad esempio un attacco DDoS. Dato che Microsoft dispone di migliaia di specialisti Cybersecurity che lavorano quotidianamente sulla sicurezza, le risorse per rilevare, prevenire o attenuare attacchi cibernetici sono considerevoli. In realtà, mentre le organizzazioni hanno dovuto preoccuparsi se il cloud è stato protetto, la maggior parte del tempo è consapevole che il livello di investimento nelle persone e nell'infrastruttura specializzata effettuata da fornitori come Microsoft rende il cloud più sicuro rispetto alla maggior parte dei data center locali.
 
 Anche con questo investimento in una linea di base di sicurezza nativa del cloud, è consigliabile che tutti i criteri di base di sicurezza estendano i criteri nativi cloud predefiniti. Di seguito sono riportati alcuni esempi di criteri estesi che devono essere presi in considerazione, anche in un ambiente cloud nativo:
 

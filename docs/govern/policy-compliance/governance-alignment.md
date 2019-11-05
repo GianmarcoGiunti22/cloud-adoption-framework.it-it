@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223755"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566139"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Allinea la guida alla progettazione della governance del cloud con i criteri aziendali
 
@@ -27,7 +27,7 @@ Anche se le guide alla progettazione del cloud dovrebbero tenere conto di alcuni
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Uso delle guide di governance di utilità pratica
+## <a name="use-the-actionable-governance-guides"></a>Usare le guide di governance di utilità pratica
 
 Se si prevede di usare la piattaforma Azure per l'adozione del cloud, il Framework di adozione del cloud fornisce [guide di governance](../guides/index.md) di utilità pratica che illustrano l'approccio incrementale del modello di governance del Framework di adozione del cloud. Queste guide illustrano un'ampia gamma di scenari di adozione comuni, inclusi i rischi aziendali, i requisiti di tolleranza e le istruzioni per i criteri che sono stati creati per la creazione di un prodotto di governance minimo valido (MVP). Queste guide rappresentano una sintesi dell'esperienza del cliente nel mondo reale del processo di adozione del cloud in Azure.
 

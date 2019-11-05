@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222054"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566124"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Con la distribuzione di risorse e carichi di lavoro aggiuntivi, il team di gover
 
 Pianificare la valutazione di nuovi rischi potenziali e aggiornare le istruzioni di criteri e le guide di progettazione in base alle esigenze. Collaborare con i team IT e del carico di lavoro per valutare regolarmente le nuove funzionalità e i servizi di Azure. Pianificare anche i cicli di revisione regolari ognuno dei cinque disciplinari di governance per garantire che i criteri siano aggiornati e che siano soddisfatti.
 
-### <a name="education"></a>Istruzione
+### <a name="education"></a>Formazione
 
 La conformità ai criteri richiede che il personale e gli sviluppatori IT comprendano i requisiti dei criteri che influiscono sulle proprie aree di responsabilità. Pianificare di riservare risorse per documentare le decisioni e i requisiti e formare tutti i team pertinenti sulle guide di progettazione che supportano i requisiti dei criteri.
 
@@ -79,11 +79,11 @@ Alcuni esempi di trigger di violazione e azioni:
 
 | Disciplina di governance cloud | Trigger di esempio | Azione di esempio |
 |-----------------------------|----------------|---------------|
-| Gestione dei costi | Spesa mensile per il cloud superiore di oltre il 20% rispetto al previsto. | Inviare una notifica al responsabile dell'unità di fatturazione per avviare una verifica sull'utilizzo delle risorse. |
+| Gestione costi | Spesa mensile per il cloud superiore di oltre il 20% rispetto al previsto. | Inviare una notifica al responsabile dell'unità di fatturazione per avviare una verifica sull'utilizzo delle risorse. |
 | Baseline di sicurezza | Rilevamento attività di accesso utente sospetta. | Avvisare il team di sicurezza IT e disattivare l'account utente sospetto. |
 | Coerenza delle risorse | Utilizzo della CPU per carico di lavoro superiore al 90%. | Informare il team operativo IT e ampliare le risorse aggiuntive per gestire il carico. |
 
-## <a name="monitoring-and-compliance-automation"></a>Automazione di monitoraggio e conformità
+## <a name="automation-of-monitoring-and-compliance"></a>Automazione del monitoraggio e della conformità
 
 Dopo aver definito i trigger di violazione di conformità e le azioni, è possibile iniziare a pianificare il modo migliore per usare strumenti di registrazione e reporting e altre funzionalità della piattaforma cloud per automatizzare la strategia di monitoraggio e di conformità dei criteri.
 

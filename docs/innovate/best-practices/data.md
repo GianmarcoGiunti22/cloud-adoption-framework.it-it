@@ -8,39 +8,64 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b9c868efb6f35472552778b583b638da59069edd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683414"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565847"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Strumenti per democratizzare i dati in Azure
 
-Come descritto nell'articolo sulla teoria della [democratizzazione dei dati](../considerations/data.md), è possibile recapitare molte innovazioni con un investimento tecnico minimo. Sono disponibili innumerevoli esempi di importanti innovazioni che richiedono un minor numero di dati non elaborati. La democratizzazione dei dati sta per investire il minor consumo necessario per coinvolgere i clienti nell'utilizzo dei dati per sfruttare al meglio le proprie conoscenze esistenti. Iniziare a usare i dati è un modo rapido per testare un'ipotesi prima di espandersi in invenzioni digitali più ampie e costose. Poiché l'ipotesi è stata perfezionata e le invenzioni iniziano a essere adottate su larga scala, i processi riportati di seguito consentiranno di preparare il supporto operativo dell'innovazione.
+Come descritto nell'articolo concettuale sulla [democratizzazione dei dati](../considerations/data.md), è possibile fornire molte innovazioni con scarso investimento tecnico. Molte innovazioni principali richiedono un minor numero di dati non elaborati. La democratizzazione dei dati riguarda l'investimento di risorse minime necessarie per coinvolgere i clienti che utilizzano i dati per sfruttare le proprie conoscenze esistenti.
+
+Iniziare a usare i dati è un modo rapido per testare un'ipotesi prima di espandersi in invenzioni digitali più ampie e costose. Man mano che si ridefiniscono le ipotesi e si inizia ad adottare le invenzioni su larga scala, i processi seguenti consentiranno di prepararsi per il supporto operativo dell'innovazione.
 
 ![Approccio del Framework di adozione del cloud per la democratizzazione dei dati](../../_images/innovate/democratize-data.png)
 
 ## <a name="alignment-to-the-methodology"></a>Allineamento alla metodologia
 
-Questo tipo di invenzione digitale può essere accelerato attraverso ogni fase del processo seguente, illustrato anche in precedenza. Le indicazioni tecniche per accelerare l'invenzione digitale sono elencate nel sommario a sinistra. Questi articoli sono stati raggruppati nelle stesse fasi per allineare le linee guida alla metodologia complessiva:
+Questo tipo di invenzione digitale può essere accelerato in ogni fase dei processi seguenti, come illustrato nell'immagine precedente. Le indicazioni tecniche per accelerare l'invenzione digitale sono elencate nel sommario sul lato sinistro della pagina. Questi articoli sono raggruppati per fase per allineare le linee guida alla metodologia complessiva.
 
 - **Condividere i dati:** Il primo passaggio per la democratizzazione dei dati consiste nella condivisione aperta.
 - **Governare i dati:** Assicurarsi che i dati sensibili siano protetti, controllati e controllati prima della condivisione.
-- **Centralizzare i dati:** A volte è necessario fornire una piattaforma centralizzata per la condivisione e la governance dei dati.
+- **Centralizzare i dati:** In alcuni casi è necessario fornire una piattaforma centralizzata per la condivisione e la governance dei dati.
 - **Raccogli dati:** La migrazione, l'integrazione, l'inserimento e la virtualizzazione possono raccogliere i dati esistenti da centralizzare, governare e condividere.
 
-Si consiglia ai team di adozione del cloud di entrare nello stack in modo approfondito, così come è necessario per definire le priorità per le esigenze dei clienti sull'architettura in ogni iterazione. Ritardare i picchi tecnici a favore delle esigenze dei clienti accelererà la convalida dell'ipotesi. Di conseguenza, tutte le linee guida vengono mappate ai quattro processi precedenti, dal più elevato interesse per i clienti al massimo effetto tecnico. In ogni caso, si verificheranno indicazioni su una vasta gamma di potenziali modi in cui Azure può accelerare la propria capacità di [compilazione con l'empatia dei clienti](../considerations/build.md).
+In ogni iterazione, i team di adozione del cloud devono passare solo alla profondità dello stack, perché richiedono di concentrarsi sulle esigenze dei clienti rispetto all'architettura. Ritardare i picchi tecnici a favore delle esigenze dei clienti accelera la convalida dell'ipotesi.
+
+Tutte le linee guida sono mappate ai quattro processi precedenti. Le linee guida variano dall'effetto dei clienti più elevato al massimo effetto tecnico. In ogni processo verranno fornite informazioni aggiuntive su diversi modi possibili che Azure può accelerare la [creazione con empatia dei clienti](../considerations/build.md).
 
 ## <a name="toolchain"></a>Toolchain
 
-In Azure vengono in genere usati gli strumenti seguenti per accelerare l'invenzione digitale in ognuna delle fasi precedenti: Power BI, Azure Data Catalog, Azure SQL Data Warehouse, Cosmos DB, database di Azure per PostgreSQL, MySQL, MariaDB, PostgreSQL iperscalable, Azure Data Lake, servizio migrazione dati di Azure, database SQL di Azure (con o senza istanze gestite), Azure Data Factory, analisi di flusso di Azure, SQL Server Integration Services, Azure Stack, Azure SQL stretch database, StorSimple, File di Azure, Sincronizzazione file e Polybase.
+In Azure, gli strumenti seguenti sono comunemente usati per accelerare l'invenzione digitale nelle fasi precedenti:
 
-Quando l'invenzione si avvicina all'adozione su larga scala, gli aspetti di ogni soluzione richiedono perfezionamento e maturità tecnica. A questo punto, è probabile che siano necessari più servizi. Per il momento, usare il sommario a sinistra per trovare linee guida sugli strumenti di Azure rilevanti per il processo necessario per testare l'ipotesi.
+- Power BI
+- Azure Data Catalog
+- Azure SQL Data Warehouse
+- Azure Cosmos DB
+- Database di Azure per PostgreSQL
+- Database di Azure per MySQL
+- Database di Azure per MariaDB
+- Scalabilità su database di Azure per PostgreSQL
+- Azure Data Lake
+- Servizio Migrazione del database di Azure
+- Database SQL di Azure, con o senza istanze gestite
+- Data factory di Azure
+- Analisi di flusso di Azure
+- SQL Server Integration Services
+- Azure Stack
+- SQL Server Stretch Database
+- Microsoft Azure StorSimple
+- File di Azure
+- Sincronizzazione file di Azure
+- PolyBase
 
-## <a name="get-started"></a>Inizia oggi stesso
+Quando l'invenzione si avvicina all'adozione su larga scala, gli aspetti di ogni soluzione richiedono perfezionamento e maturità tecnica. In questo modo, è probabile che siano necessari più servizi. Usare il sommario sul lato sinistro della pagina per informazioni aggiuntive sugli strumenti di Azure rilevanti per il processo di verifica dell'ipotesi.
 
-Il sommario a sinistra delinea molti articoli per iniziare a usare tutti gli strumenti di questo insieme di strutture.
+## <a name="get-started"></a>Introduzione
+
+Il sommario sul lato sinistro di questa pagina descrive molti articoli. Questi articoli consentono di iniziare a usare tutti gli strumenti di questo strumento.
 
 > [!NOTE]
-> Alcuni collegamenti possono lasciare il Framework di adozione del cloud per contribuire a superare l'ambito di questo Framework.
+> Alcuni collegamenti potrebbero lasciare il Framework di adozione del cloud per aiutare a superare l'ambito di questo Framework.

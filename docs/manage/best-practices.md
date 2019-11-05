@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8e58aea5c0d3b77cd194f8bd8919f43143ab18a4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979947"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565253"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Definire le procedure operative di gestione nel cloud
 
@@ -32,15 +32,15 @@ Entrambe queste procedure consigliate si basano su una metodologia di stato futu
 
 ![Gestire la metodologia del Framework di adozione del cloud](../_images/manage/caf-manage.png)
 
-**Allineamento aziendale**: nella metodologia di gestione tutti i carichi di lavoro sono classificati in base alla criticità e al valore aziendale. Tale classificazione può quindi essere misurata attraverso un'analisi di impatto, che calcola il valore perso associato al degrado delle prestazioni o alle interruzioni dell'attività. Grazie a questo impatto tangibile sui ricavi, i team delle operazioni cloud possono collaborare con l'azienda alla definizione di un impegno in grado di bilanciare costi e prestazioni.
+**Allineamento aziendale:** Nella metodologia di gestione tutti i carichi di lavoro sono classificati in base alla criticità e al valore aziendale. Tale classificazione può quindi essere misurata attraverso un'analisi di impatto, che calcola il valore perso associato al degrado delle prestazioni o alle interruzioni dell'attività. Grazie a questo impatto tangibile sui ricavi, i team delle operazioni cloud possono collaborare con l'azienda alla definizione di un impegno in grado di bilanciare costi e prestazioni.
 
-**Discipline per le operazioni cloud**: una volta allineata l'azienda, è molto più semplice tenere traccia e creare report sulle discipline appropriate delle operazioni cloud per ogni carico di lavoro. Prendere decisioni in ogni disciplina può quindi essere convertita in termini di impegno che possono essere facilmente comprensibili per l'azienda. Grazie a questo approccio collaborativo gli stakeholder aziendali collaborano attivamente alla ricerca del giusto equilibrio tra costi e prestazioni.
+**Discipline per le operazioni cloud:** Una volta allineata l'azienda, è molto più semplice tenere traccia e creare report sulle discipline appropriate delle operazioni cloud per ogni carico di lavoro. Prendere decisioni in ogni disciplina può quindi essere convertita in termini di impegno che possono essere facilmente comprensibili per l'azienda. Grazie a questo approccio collaborativo gli stakeholder aziendali collaborano attivamente alla ricerca del giusto equilibrio tra costi e prestazioni.
 
-- **Inventario e visibilità**: la gestione delle operazioni richiede almeno un mezzo per l'inventario delle risorse e la creazione della visibilità nello stato di esecuzione di ogni asset.
-- **Conformità operativa**: la gestione regolare di configurazione, dimensionamento, costi e prestazioni delle risorse è fondamentale per mantenere le aspettative in termini di prestazioni.
-- **Proteggi e ripristina**: riducendo al minimo le interruzioni operative e velocizzando il ripristino, le aziende evitano perdite di prestazioni e conseguenze negative sui ricavi. Il rilevamento e il ripristino sono aspetti essenziali di questa regola.
-- **Operazioni della piattaforma**: tutti gli ambienti IT contengono un set di piattaforme di uso comune. Queste piattaforme possono includere archivi dati, ad esempio SQL Server o Azure HDInsight. Altre piattaforme comuni possono includere soluzioni di contenitori come Azure Kubernetes Service (AKS). Indipendentemente dalla piattaforma, la maturità delle operazioni della piattaforma è incentrata sulla personalizzazione delle operazioni in base alla modalità di distribuzione, configurazione e utilizzo delle piattaforme comuni da parte dei carichi di lavoro.
-- **Operazioni sui carichi di lavoro**: al massimo livello di maturità operativa, i team operativi cloud sono in grado di ottimizzare le operazioni per i carichi di lavoro cruciali per il successo dell'azienda. Per questi carichi di lavoro ad alta criticità, i dati disponibili possono aiutare ad automatizzare la correzione, il dimensionamento o la protezione dei carichi di lavoro in base al relativo utilizzo.
+- **Inventario e visibilità:** La gestione delle operazioni richiede almeno un mezzo di inventario delle risorse e la creazione della visibilità nello stato di esecuzione di ogni asset.
+- **Conformità operativa:** Una gestione regolare di configurazione, ridimensionamento, costo e prestazioni delle risorse è fondamentale per mantenere le aspettative in termini di prestazioni.
+- **Proteggi e Ripristina:** Ridurre al minimo le interruzioni operative e velocizzare il ripristino aiutare l'azienda a evitare perdite di prestazioni e effetti negativi sui ricavi. Il rilevamento e il ripristino sono aspetti essenziali di questa regola.
+- **Operazioni della piattaforma:** Tutti gli ambienti IT contengono un set di piattaforme di uso comune. Queste piattaforme possono includere archivi dati, ad esempio SQL Server o Azure HDInsight. Altre piattaforme comuni possono includere soluzioni di contenitori come Azure Kubernetes Service (AKS). Indipendentemente dalla piattaforma, la maturità delle operazioni della piattaforma è incentrata sulla personalizzazione delle operazioni in base alla modalità di distribuzione, configurazione e utilizzo delle piattaforme comuni da parte dei carichi di lavoro.
+- **Operazioni del carico di lavoro:** Al massimo livello di maturità operativa, i team operativi cloud sono in grado di ottimizzare le operazioni per i carichi di lavoro cruciali per il successo dell'azienda. Per questi carichi di lavoro ad alta criticità, i dati disponibili possono aiutare ad automatizzare la correzione, il dimensionamento o la protezione dei carichi di lavoro in base al relativo utilizzo.
 
 Indicazioni aggiuntive, ad esempio il [Framework di revisione della progettazione (nome in codice: principi di progettazione del cloud)](https://docs.microsoft.com/azure/architecture/reliability), consentono di prendere decisioni di architettura dettagliate su ogni carico di lavoro, all'interno delle discipline descritte in precedenza.
 

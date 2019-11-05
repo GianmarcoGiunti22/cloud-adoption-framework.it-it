@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547513"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566238"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guida alla governance aziendale standard: miglioramento del cloud
 
@@ -34,7 +34,7 @@ Da allora, sono avvenuti alcuni cambiamenti che influiranno sulla governance:
 
 - Il controllo delle identità avviene tramite un'istanza locale di Active Directory. La gestione delle identità ibride è facilitata tramite la replica in Azure Active Directory.
 - Le operazioni IT o le operazioni nel cloud sono in gran parte gestite da Monitoraggio di Azure e automazioni correlate.
-- Il ripristino di emergenza e la continuità aziendale sono controllati tramite istanze di Azure Key Vault.
+- Il ripristino di emergenza e la continuità aziendale sono controllati dalle istanze di Azure Vault.
 - Per monitorare le violazioni della sicurezza e gli attacchi viene usato Centro sicurezza di Azure.
 - Centro sicurezza di Azure e Monitoraggio di Azure vengono usati entrambi per monitorare la governance del cloud.
 - Per automatizzare la conformità ai criteri vengono usati Azure Blueprints, Criteri di Azure e i gruppi di gestione.
@@ -47,7 +47,7 @@ L'obiettivo è integrare l'azienda acquisita nelle procedure operative esistenti
 
 **Costo di acquisizione aziendale:** L'acquisizione della nuova azienda è stimata come redditizia in circa cinque anni. Considerato il ritorno lento dell'investimento, il consiglio vuole mantenere sotto controlli i costi di acquisizione quanto più possibile. C'è il rischio di un conflitto tra controllo dei costi e integrazione tecnica.
 
-Questo rischio aziendale può comportare alcuni rischi tecnici:
+Questo rischio aziendale può tradursi in alcuni rischi tecnici:
 
 - La migrazione cloud potrebbe produrre costi di acquisizione aggiuntivi.
 - Il nuovo ambiente potrebbe non essere governato correttamente, che potrebbe causare violazioni dei criteri.

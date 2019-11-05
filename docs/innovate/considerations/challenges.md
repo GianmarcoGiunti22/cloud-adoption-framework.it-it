@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0e4377f8d26cd28df1f9e6d9a82314fbe73fd0a4
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058096"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565718"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Blocchi e problemi comuni per l'innovazione
 
@@ -55,7 +55,7 @@ La metodologia di innovazione usa le seguenti discipline di innovazione per alli
 - **Codice sorgente e distribuzione:** La collaborazione tra gli sviluppatori di tutti i percorsi migliora sia la qualità che la velocità di immissione sul mercato. Integrazione di commenti e suggerimenti e una rapida risposta ai leader di settore di formazione formativa. Gli impegni per i processi di compilazione, misurazione e apprendimento consentono di accelerare le decisioni di adozione degli strumenti.
 - **Soluzioni predittive:** In un'economia digitale, raramente è sufficiente per soddisfare le esigenze attuali dei clienti. I clienti si aspettano che le aziende anticipino i passaggi successivi e ne prevedano le esigenze future. L'apprendimento continuo si evolve spesso in strumenti di stima. La complessità delle esigenze dei clienti e la disponibilità dei dati consentiranno di definire gli strumenti e gli approcci migliori per la stima e l'influenza.
 
-In un'economia digitale, il volto degli architetti con la massima sfida è comprendere chiaramente le esigenze di invenzione e adozione dei clienti e determinare quindi la migliore catena di strumenti basata sul cloud per fornire tali esigenze.
+In un'economia digitale, il volto di architetti con la massima sfida consiste nel comprendere chiaramente le esigenze di invenzione e adozione dei clienti e di determinare quindi la migliore soluzione di distribuzione basata sul cloud per soddisfare tali esigenze.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

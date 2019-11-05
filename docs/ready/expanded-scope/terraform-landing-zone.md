@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239770"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561695"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Usare la bonifica per creare le zone di destinazione
 
@@ -21,11 +21,11 @@ Azure fornisce servizi nativi per la distribuzione di zone di destinazione. Anch
 
 ## <a name="purpose-of-the-landing-zone"></a>Scopo della zona di destinazione
 
-L'area di destinazione di base del Framework di adozione del cloud per la bonifica ha un set limitato di responsabilità e funzionalità per l'applicazione di registrazione, contabilità e sicurezza. Questa zona di destinazione è stata progettata in modo da usare componenti standard noti come moduli di bonifica per applicare la coerenza tra le risorse distribuite nell'ambiente.
+L'area di destinazione di base del Framework di adozione del cloud per la bonifica ha un set limitato di responsabilità e funzionalità per applicare la registrazione, l'accounting e la sicurezza. Questa zona di destinazione USA i componenti standard noti come moduli di bonifica per applicare la coerenza tra le risorse distribuite nell'ambiente.
 
-## <a name="using-standard-modules"></a>Uso di moduli standard
+## <a name="use-standard-modules"></a>Usare i moduli standard
 
-Il riutilizzo dei componenti è un principio fondamentale di infrastruttura come codice. I moduli sono strumentali nella definizione di standard e coerenza per la distribuzione di risorse all'interno di e tra ambienti diversi. Il set di moduli utilizzati per distribuire questa prima area di destinazione è disponibile nel [Registro di sistema](https://registry.terraform.io/search?q=aztfmod)ufficiale.
+Il riutilizzo dei componenti è un principio fondamentale dell'infrastruttura come codice. I moduli sono strumentali nella definizione di standard e coerenza per la distribuzione di risorse all'interno di e tra ambienti diversi. I moduli usati per distribuire questa prima zona di destinazione sono disponibili nel [Registro di sistema](https://registry.terraform.io/search?q=aztfmod)ufficiale.
 
 ## <a name="architecture-diagram"></a>Diagramma dell'architettura
 
@@ -40,10 +40,10 @@ I componenti distribuiti e il relativo scopo includono quanto segue:
 | Componente | Responsabilità |
 |---------|---------|
 | Gruppi di risorse | Gruppi di risorse principali necessari per la base |
-| Registrazione attività | Controllo di tutte le attività di sottoscrizione e di archiviazione: </br> -Account di archiviazione </br> -Hub eventi |  
-| Registrazione diagnostica | Tutti i log operazioni conservati per un numero specifico di giorni: </br> -Account di archiviazione </br> -Hub eventi |
-| Log Analytics | Archivia tutti i log operazioni </br> Distribuire soluzioni comuni per la revisione approfondita delle procedure consigliate per le applicazioni: </br> - NetworkMonitoring </br> -Della valutazione </br> -ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
-| Centro sicurezza | Metriche e avvisi relativi all'igiene della sicurezza inviati alla posta elettronica e al numero di telefono |
+| Registrazione attività | Controllo di tutte le attività di sottoscrizione e di archiviazione: </br> -Account di archiviazione </br> -Hub eventi di Azure |  
+| Registrazione diagnostica | Tutti i log delle operazioni conservati per un numero specifico di giorni: </br> -Account di archiviazione </br> -Hub eventi |
+| Log Analytics | Archivia tutti i log delle operazioni </br> Distribuire soluzioni comuni per la revisione approfondita delle procedure consigliate per le applicazioni: </br> - NetworkMonitoring </br> -Della valutazione </br> -ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
+| Centro sicurezza di Azure | Metriche e avvisi relativi all'igiene della sicurezza inviati alla posta elettronica e al numero di telefono |
 
 ## <a name="use-this-blueprint"></a>Usare il progetto
 
@@ -66,16 +66,16 @@ Le decisioni seguenti sono rappresentate nell'area di destinazione di bonifica:
 
 | Componente | Decisioni | Approcci alternativi |
 | --- | --- | --- |
-|Registrazione e monitoraggio | Verrà usata l'area di lavoro Log Analytics di monitoraggio di Azure. Verrà eseguito il provisioning di un account di archiviazione di diagnostica e di hub eventi. |         |
-|Rete | N/A-la rete verrà implementata in un'altra area di destinazione. |[Decisioni relative alla rete](../considerations/networking-options.md) |
+|Registrazione e monitoraggio | Viene usata l'area di lavoro Log Analytics di monitoraggio di Azure. Viene eseguito il provisioning di un account di archiviazione di diagnostica e di hub eventi. |         |
+|Rete | N/A-la rete viene implementata in un'altra area di destinazione. |[Decisioni relative alla rete](../considerations/networking-options.md) |
 |Identità | Si presuppone che la sottoscrizione sia già associata a un'istanza di Azure Active Directory. | [Procedure consigliate per la gestione delle identità](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
-| Policy | Questa zona di destinazione presuppone attualmente che non venga applicato alcun criterio di Azure. | |
+| Criterio | Questa zona di destinazione presuppone attualmente che non venga applicato alcun criterio di Azure. | |
 |Progettazione della sottoscrizione | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
 | Gruppi di gestione | N/D - Progettazione per una singola sottoscrizione di produzione. |[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
 | Gruppi di risorse | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
 | Dati | N/D | [Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-options.md) |
-| Standard di denominazione | Quando viene creato l'ambiente, viene creato anche un prefisso univoco. Le risorse che richiedono un nome univoco globale, ad esempio gli account di archiviazione, usano questo prefisso. Il nome personalizzato verrà aggiunto con un suffisso casuale. L'utilizzo dei tag è obbligatorio come descritto nella tabella seguente. | [Procedure consigliate di denominazione e assegnazione di tag](../azure-best-practices/naming-and-tagging.md) |
+| Standard di denominazione | Quando viene creato l'ambiente, viene creato anche un prefisso univoco. Le risorse che richiedono un nome univoco globale, ad esempio gli account di archiviazione, usano questo prefisso. Al nome personalizzato viene aggiunto un suffisso casuale. L'utilizzo dei tag è obbligatorio come descritto nella tabella seguente. | [Procedure consigliate di denominazione e assegnazione di tag](../azure-best-practices/naming-and-tagging.md) |
 | Gestione dei costi | N/D | [Tracciamento dei costi](../azure-best-practices/track-costs.md) |
 | Calcolo | N/D | [Opzioni di calcolo](../considerations/compute-options.md) |
 
@@ -83,15 +83,15 @@ Le decisioni seguenti sono rappresentate nell'area di destinazione di bonifica:
 
 Il set di tag minimo seguente deve essere presente in tutte le risorse e nei gruppi di risorse:
 
-| Nome del tag | Description | Chiave | Valore di esempio |
+| Nome del tag | Descrizione | Chiave | Valore di esempio |
 |--|--|--|--|
 | Business Unit | Divisione di livello principale della società che possiede la sottoscrizione o carico di lavoro a cui appartiene la risorsa. | BusinessUnit | Finanza, MARKETING, {nome prodotto}, CORP, condiviso |
-| Cost Center | Centro di costo di contabilità associato a questa risorsa.| CostCenter | Numero |
+| Cost Center | Centro di costo di contabilità associato a questa risorsa.| CostCenter | Number |
 | Ripristino di emergenza | Criticità aziendale dell'applicazione, del carico di lavoro o del servizio. | DR | ABILITATO PER IL RIPRISTINO DI EMERGENZA, NON ABILITATO PER IL RIPRISTINO DI EMERGENZA |
-| Ambiente | Ambiente di distribuzione dell'applicazione, del carico di lavoro o del servizio. |  ENV | Prod, dev, QA, stage, test, training |
+| Environment | Ambiente di distribuzione dell'applicazione, del carico di lavoro o del servizio. |  ENV | Prod, dev, QA, stage, test, training |
 | Nome del proprietario | Proprietario dell'applicazione, del carico di lavoro o del servizio.| Proprietario | email |
-| DeploymentType | Definisce la modalità di manutenzione delle risorse. | deploymentType | Manuale, bonifica |
-| Versione | Versione del progetto distribuito | version | v 0.1 |
+| Tipo di distribuzione | Definisce la modalità di manutenzione delle risorse. | deploymentType | Manuale, bonifica |
+| Versione | Versione del progetto distribuito. | version | v 0.1 |
 | Nome dell'applicazione | Nome dell'applicazione, del servizio o del carico di lavoro associato alla risorsa. | ApplicationName | "nome app" |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Personalizzare e distribuire la prima zona di destinazione
@@ -100,7 +100,7 @@ Il set di tag minimo seguente deve essere presente in tutte le risorse e nei gru
 
 Esaminiamo le diverse sezioni variabili.
 
-In questo primo oggetto vengono creati due gruppi di risorse nell'area `southeastasia`, denominata "-hub-Core-sec" e "-hub-Core-sec" insieme a un prefisso aggiunto in fase di esecuzione.
+In questo primo oggetto vengono creati due gruppi di risorse nell'area `southeastasia` denominata `-hub-core-sec` e `-hub-operations` insieme a un prefisso aggiunto in fase di esecuzione.
 
 ```hcl
 resource_groups_hub = {
@@ -115,7 +115,7 @@ resource_groups_hub = {
 }
 ```
 
-Successivamente, si specificano le aree in cui è possibile impostare le fondamenta. Qui, `southeastasia` verrà usato per distribuire tutte le risorse.
+Successivamente, si specificano le aree in cui è possibile impostare le fondamenta. `southeastasia` viene usato per distribuire tutte le risorse.
 
 ```hcl
 location_map = {
@@ -124,14 +124,14 @@ location_map = {
 }
 ```
 
-Viene quindi specificato il periodo di memorizzazione per i log delle operazioni e i log della sottoscrizione di Azure. Questi dati verranno archiviati in account di archiviazione separati e in un hub eventi, i cui nomi vengono generati in modo casuale perché devono essere univoci.
+Viene quindi specificato il periodo di memorizzazione per i log delle operazioni e i log della sottoscrizione di Azure. Questi dati vengono archiviati in account di archiviazione separati e in un hub eventi, i cui nomi vengono generati in modo casuale perché devono essere univoci.
 
 ```hcl
 azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-In tags_hub, viene specificato il set minimo di tag che verrà applicato a tutte le risorse create.
+In tags_hub, viene specificato il set minimo di tag che vengono applicati a tutte le risorse create.
 
 ```hcl
 tags_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Viene quindi specificato il nome di log Analytics e un set di soluzioni che analizzeranno la distribuzione. In questo caso, è stato mantenuto il monitoraggio della rete, Valutazione AD e la replica, Analisi DNS e Analisi insieme di credenziali delle chiavi.
+Viene quindi specificato il nome di log Analytics e un set di soluzioni che analizzano la distribuzione. In questo caso, è stato mantenuto il monitoraggio della rete, la valutazione e la replica di Active Directory (AD), Analisi DNS e Analisi insieme di credenziali delle chiavi.
 
 ```hcl
 
@@ -189,20 +189,20 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Inizia ora
+## <a name="get-started"></a>Introduzione
 
-Dopo aver esaminato la configurazione, è possibile distribuire la configurazione come si distribuisce un ambiente di bonifica. È tuttavia consigliabile usare il Rover, ovvero un contenitore Docker che consente la distribuzione da Windows, Linux o MacOS. È possibile iniziare a usare il [repository GitHub di Rover](https://github.com/aztfmod/rover).
+Dopo aver esaminato la configurazione, è possibile distribuire la configurazione come si distribuisce un ambiente di bonifica. Si consiglia di usare il Rover, ovvero un contenitore Docker che consente la distribuzione da Windows, Linux o MacOS. È possibile iniziare a usare il [repository GitHub di Rover](https://github.com/aztfmod/rover).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-La zona di destinazione di base pone le fondamenta per un ambiente complesso in modo decomposto. Questa edizione fornisce un set di funzionalità molto semplici che possono essere estese da:
+La zona di destinazione di base pone le fondamenta per un ambiente complesso in modo decomposto. Questa edizione fornisce un set di semplici funzionalità che possono essere estese da:
 
 - Aggiunta di altri moduli al progetto.
 - Sovrapposizione di zone di destinazione aggiuntive.
 
-Il livello delle aree di destinazione è una procedura consigliata per separare i sistemi, il controllo delle versioni di ogni componente in uso e la rapida innovazione e stabilità per la distribuzione di infrastruttura come codice.
+Il livello delle aree di destinazione è una procedura consigliata per separare i sistemi, applicare il controllo delle versioni a ogni componente in uso e consentire un'innovazione e una stabilità veloci per la distribuzione di infrastruttura come codice.
 
-Nelle architetture di riferimento future verrà illustrato questo concetto per una topologia hub-spoke.
+Nelle architetture di riferimento future verrà illustrato questo concetto per una topologia hub-and-spoke.
 
 > [!div class="nextstepaction"]
-> [Esaminare l'esempio di area di destinazione di base usando la bonifica](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Esaminare l'esempio di area di destinazione di base per la bonifica](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

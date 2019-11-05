@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047548"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565779"
 ---
 # <a name="engage-through-applications"></a>Coinvolgi le applicazioni
 
@@ -27,16 +27,16 @@ In alcuni casi, i dati da soli sono sufficienti per apportare modifiche e soddis
 
 I team che rispondono in modo più rapido e accurato ai suggerimenti dei clienti, alle modifiche al mercato e alle opportunità di innovazione in genere portano i rispettivi mercati nell'innovazione. Il primo principio di applicazioni innovative viene riepilogato nella [panoramica sulla tendenza alla crescita](./learn.md#growth-mindset): "condividere il codice". Nel tempo, l'innovazione emerge da uno stato attivo culturale. Per sostenere l'innovazione, sono necessari diversi punti di vista e contributi.
 
-Per essere pronti per l'innovazione, tutto lo sviluppo di applicazioni dovrebbe iniziare con un repository di codice condiviso. Lo strumento più usato per la gestione dei repository di codice è [GitHub](https://guides.github.com/), che consente di creare rapidamente un repository di codice condiviso. In alternativa, [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) è un set di strumenti di controllo della versione in Azure DevOps Services che è possibile usare per gestire il codice. Azure Repos fornisce due tipi di controllo della versione:
+Per essere pronti per l'innovazione, tutto lo sviluppo di applicazioni dovrebbe iniziare con un repository di codice condiviso. Lo strumento più usato per la gestione dei repository di codice è [GitHub](https://guides.github.com), che consente di creare rapidamente un repository di codice condiviso. In alternativa, [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) è un set di strumenti di controllo della versione in Azure DevOps Services che è possibile usare per gestire il codice. Azure Repos fornisce due tipi di controllo della versione:
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controllo della versione distribuito
-- [Controllo della versione di Team Foundation (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controllo della versione centralizzato
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controllo della versione distribuito
+- [Controllo della versione di Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controllo della versione centralizzato
 
 ## <a name="citizen-developers"></a>Sviluppatori cittadini
 
 Gli sviluppatori professionisti sono un componente fondamentale dell'innovazione. Quando un'ipotesi dimostra un'accuratezza su larga scala, gli sviluppatori professionisti sono tenuti a stabilizzare e preparare la soluzione per la scalabilità. La maggior parte dei principi a cui si fa riferimento in questo articolo richiede il supporto di sviluppatori professionisti. Sfortunatamente, le tendenze correnti suggeriscono una maggiore domanda per gli sviluppatori professionisti rispetto agli sviluppatori. Inoltre, il costo e la velocità dell'innovazione possono essere meno favorevoli quando si ritiene necessario lo sviluppo professionale. In risposta a tali problemi, gli sviluppatori di cittadini forniscono un modo per ridimensionare le attività di sviluppo e accelerare i test di ipotesi iniziali.
 
-L'uso di sviluppatori di cittadini può essere valido ed efficace quando è possibile convalidare le ipotesi preliminari tramite strumenti come [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) per le interfacce di app, [ai Builder](https://docs.microsoft.com//powerapps/use-ai-builder) per i processi e le stime, [Microsoft Flow](https://docs.microsoft.com/flow) per i flussi di lavoro e per l' [alimentazione BI](https://docs.microsoft.com/power-bi) per l'utilizzo dei dati.
+L'uso di sviluppatori di cittadini può essere valido ed efficace quando è possibile convalidare le ipotesi preliminari tramite strumenti come [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) per le interfacce di app, [ai Builder](https://docs.microsoft.com/powerapps/use-ai-builder) per i processi e le stime, [Microsoft Flow](https://docs.microsoft.com/flow) per i flussi di lavoro e per l' [alimentazione BI](https://docs.microsoft.com/power-bi) per l'utilizzo dei dati.
 
 > [!NOTE]
 > Quando si fa affidamento sugli sviluppatori di cittadini per testare le ipotesi, è consigliabile avere a disposizione alcuni sviluppatori professionisti per fornire supporto, revisione e istruzioni. Dopo che un'ipotesi è stata convalidata su larga scala, un processo per la transizione dell'applicazione in un modello di programmazione più affidabile accelererà i ritorni sull'innovazione. Coinvolgendo gli sviluppatori professionisti nelle definizioni dei processi in anticipo, è possibile realizzare transizioni più pulite in un secondo momento.
@@ -83,11 +83,11 @@ L'estensione di una soluzione è una forma comune di modernizzazione. Questo app
 
 - La logica di business esistente deve soddisfare la necessità del cliente esistente (o si avvicina alla riunione).
 - Un'esperienza migliorata può soddisfare meglio le esigenze di una coorte di clienti specifica.
-- La logica di business richiesta dalla soluzione (MVP) di prodotto minimo è stata centralizzata, in genere tramite una progettazione a più [livelli](/azure/architecture/guide/architecture-styles/n-tier), servizi Web, API o [microservizi](/azure/architecture/guide/architecture-styles/microservices) . Questo approccio è costituito dal wrapping della soluzione esistente in una nuova esperienza ospitata nel cloud. In Azure è probabile che questa soluzione risieda in app Azure Services.
+- La logica di business richiesta dalla soluzione (MVP) di prodotto minimo è stata centralizzata, in genere tramite una progettazione a più [livelli](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), servizi Web, API o [microservizi](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) . Questo approccio è costituito dal wrapping della soluzione esistente in una nuova esperienza ospitata nel cloud. In Azure è probabile che questa soluzione risieda in app Azure Services.
 
 ### <a name="rebuild-an-existing-solution"></a>Ricompilare una soluzione esistente
 
-Se un'applicazione non può essere facilmente estesa, potrebbe essere necessario effettuare il refactoring della soluzione. Con questo approccio, viene eseguita la migrazione del carico di lavoro nel cloud. Dopo la migrazione dell'applicazione, parti di esso vengono modificate o duplicate, come servizi Web o [microservizi](/azure/architecture/guide/architecture-styles/microservices), che vengono distribuiti in parallelo alla soluzione esistente. La soluzione basata su servizi paralleli potrebbe essere considerata come una soluzione estesa. Questa soluzione esegue semplicemente il wrapping della soluzione esistente con una nuova esperienza ospitata nel cloud. In Azure è probabile che questa soluzione risieda in app Azure Services.
+Se un'applicazione non può essere facilmente estesa, potrebbe essere necessario effettuare il refactoring della soluzione. Con questo approccio, viene eseguita la migrazione del carico di lavoro nel cloud. Dopo la migrazione dell'applicazione, le parti vengono modificate o duplicate, come servizi Web o [microservizi](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), che vengono distribuite in parallelo con la soluzione esistente. La soluzione basata su servizi paralleli potrebbe essere considerata come una soluzione estesa. Questa soluzione esegue semplicemente il wrapping della soluzione esistente con una nuova esperienza ospitata nel cloud. In Azure è probabile che questa soluzione risieda in app Azure Services.
 
 > [!CAUTION]
 > Il refactoring o la riprogettazione di soluzioni o la centralizzazione della logica di business può attivare rapidamente un [picco tecnico](./build.md#reduce-complexity-and-delay-technical-spikes)che richiede molto tempo anziché un'origine del valore del cliente. Si tratta di un rischio per l'innovazione, soprattutto in fase di convalida dell'ipotesi. Con un po' di creatività nella progettazione di una soluzione, dovrebbe esistere un percorso di MVP che non richiede il refactoring delle soluzioni esistenti. È consigliabile ritardare il refactoring fino a quando l'ipotesi iniziale non può essere convalidata su larga scala.
@@ -98,7 +98,7 @@ Oltre agli approcci moderni e innovativi per la creazione di app, sono state app
 
 Il tipo di modello di gestione operativa self-service disponibile in un cloud Center of Excellence consente controlli più rigorosi e iterazioni più veloci nell'ambiente della soluzione. Questi obiettivi vengono eseguiti trasferendo il controllo operativo e la responsabilità al team aziendale.
 
-Se si intende ridimensionare o soddisfare la domanda globale per una soluzione esistente, è possibile trovare questo approccio sufficiente per convalidare un'ipotesi del cliente. Una volta eseguita la migrazione di una soluzione e leggermente modernizzata, il team aziendale può ridimensionarlo per testare una varietà di ipotesi. Che in genere coinvolgono le coorti dei clienti che riguardano le prestazioni, la distribuzione globale e altre esigenze del cliente ostacolate dalle operazioni IT.
+Se si sta provando a ridimensionare o soddisfare la domanda globale per una soluzione esistente, questo approccio potrebbe essere sufficiente per convalidare un'ipotesi del cliente. Una volta eseguita la migrazione di una soluzione e leggermente modernizzata, il team aziendale può ridimensionarlo per testare una varietà di ipotesi. Che in genere coinvolgono le coorti dei clienti che riguardano le prestazioni, la distribuzione globale e altre esigenze del cliente ostacolate dalle operazioni IT.
 
 ## <a name="reduce-overhead-and-management"></a>Riduzione del sovraccarico e della gestione
 

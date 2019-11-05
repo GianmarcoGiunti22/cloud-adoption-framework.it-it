@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025457"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564604"
 ---
 # <a name="business-change-plan"></a>Piano di modifiche aziendali
 
@@ -31,7 +31,7 @@ Anche se gli approcci possano variare, quasi tutti i piani di adozione da parte 
 
 Questi temi sono spesso basati sul presupposto che l'introduzione di nuove soluzioni per gli utenti debba concentrarsi principalmente sul controllo del rischio e sulla facilitazione del cambiamento. Inoltre, il personale IT si è sempre concentrato principalmente sul rischio derivante dal cambiamento tecnologico e dalla facilitazione di tale cambiamento.
 
-## <a name="creating-business-change-plans"></a>Creazione di piani di modifiche aziendali
+## <a name="create-business-change-plans"></a>Creazione di piani di modifiche aziendali
 
 Un piano di modifiche aziendali va ben oltre il semplice concetto di modifica tecnica e presuppone che ogni rilascio nell'ambito di un processo di migrazione comporti un certo livello di cambiamento dei processi aziendali. L'attenzione viene rivolta in direzione upstream e downstream rispetto all'implementazione delle modifiche tecniche. Le domande seguenti sono utili per riflettere sull'adozione da parte degli utenti in una prospettiva di cambiamento aziendale per ottenere il massimo impatto aziendale:
 
@@ -67,4 +67,4 @@ Dopo aver documentato e pianificato la trasformazione aziendale, è possibile pa
 
 ## <a name="references"></a>Riferimenti
 
-- Eason, K. (1988) _Information technology and organizational change_, New York: Taylor and Francis.
+- EMI, K. (1988) _Information Technology e Change Organizational_, New York: Taylor e Francis.

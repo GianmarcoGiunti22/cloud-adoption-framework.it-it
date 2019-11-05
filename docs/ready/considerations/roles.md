@@ -11,16 +11,16 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6aa17f3ffb16afae0b27bcccbee84ddf9ad2c5f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243136"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561772"
 ---
-# <a name="role-based-access-control"></a>Controllo degli accessi basato sul ruolo
+# <a name="role-based-access-control"></a>Controllo degli accessi in base al ruolo
 
-La definizione di privilegi e diritti di accesso basati su gruppo è una procedura consigliata. La definizione di gruppi, anziché di singoli utenti, consente di gestire più facilmente i criteri di accesso, mantenere la coerenza degli accessi tra i team e ridurre gli errori di configurazione. L'assegnazione e la rimozione di utenti nei gruppi appropriati sono inoltre utili per mantenere aggiornati i privilegi di utenti specifici. Il [controllo degli accessi in base al ruolo (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) di Azure consente una gestione degli accessi con granularità fine per le risorse organizzate in base ai ruoli utente.
+La definizione di privilegi e diritti di accesso basati su gruppo è una procedura consigliata. La gestione di gruppi, anziché di singoli utenti, consente di gestire più facilmente i criteri di accesso, mantenere la coerenza degli accessi tra i team e ridurre gli errori di configurazione. L'assegnazione e la rimozione di utenti nei gruppi appropriati sono inoltre utili per mantenere aggiornati i privilegi di utenti specifici. Il [controllo degli accessi in base al ruolo (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) di Azure consente una gestione degli accessi con granularità fine per le risorse organizzate in base ai ruoli utente.
 
 Per una panoramica delle procedure di controllo degli accessi in base al ruolo consigliate come parte di una strategia di sicurezza e gestione delle identità, vedere [Procedure consigliate per la sicurezza con il controllo di accesso e la gestione delle identità di Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
 
@@ -41,7 +41,7 @@ Quando si pianifica una strategia di controllo di accesso, usare un modello di a
 > [!NOTE]
 > Quanto più specifiche o dettagliate sono le autorizzazioni definite dall'utente, tanto più probabile è che i controlli di accesso diventino complessi e difficili da gestire. Questo è particolarmente vero man mano che aumentano le dimensioni dell'ambiente cloud. Evitare di definire autorizzazioni specifiche per le risorse. In alternativa, [usare gruppi di gestione](https://docs.microsoft.com/azure/governance/management-groups) per il controllo di accesso a livello aziendale e [gruppi di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) per il controllo di accesso nell'ambito di sottoscrizioni. Evitare anche di definire autorizzazioni specifiche per gli utenti. In alternativa, assegnare l'accesso a [gruppi in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
-## <a name="using-built-in-rbac-roles"></a>Uso dei ruoli predefiniti del controllo degli accessi in base al ruolo
+## <a name="use-built-in-rbac-roles"></a>Usare i ruoli RBAC predefiniti
 
 In Azure sono disponibili molte definizioni di ruolo predefinite, con tre ruoli principali per concedere l'accesso:
 
@@ -59,7 +59,7 @@ Per un altro esempio d'uso dei ruoli predefiniti per gestire l'accesso a partico
 
 Per un elenco completo dei ruoli predefiniti disponibili, vedere [Ruoli predefiniti per le risorse di Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
-## <a name="using-custom-roles"></a>Uso dei ruoli personalizzati
+## <a name="use-custom-roles"></a>Usare i ruoli personalizzati
 
 Anche se i ruoli predefiniti di Azure supportano un'ampia gamma di scenari di controllo di accesso, possono non soddisfare tutte le esigenze dell'organizzazione o del team. Se, ad esempio, un gruppo di utenti è responsabile della gestione delle macchine virtuali e delle risorse del database SQL di Azure, può essere necessario creare un ruolo personalizzato per ottimizzare la gestione dei controlli di accesso necessari.
 
@@ -75,7 +75,7 @@ La tabella seguente illustra un modello comune per suddividere le responsabilit�
 
 <!-- markdownlint-disable MD033 -->
 
-| Group | Nome del ruolo comune | Responsabilità |
+| Gruppo | Nome del ruolo comune | Responsabilità |
 | --- | --- | --- |
 | Operazioni per la sicurezza | SecOps | Esegue una supervisione generale della sicurezza.<br/><br/> Stabilisce e applica i criteri di sicurezza, ad esempio la crittografia dei file inattivi.<br/><br/> Gestisce le chiavi di crittografia.<br/><br/> Gestisce le regole del firewall. |
 | Operazioni per la rete | NetOps | Gestisce la configurazione e le operazioni nell'ambito delle reti virtuali, ad esempio le route e i peering. |

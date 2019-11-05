@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547720"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566318"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guida governance per le aziende complesse: migliorare la disciplina della linea di base di identità
 
@@ -31,7 +31,7 @@ La motivazione aziendale per la migrazione al cloud dei due data center è stata
 
 I primi due blocchi stradali vengono gestiti in parallelo. Questo articolo illustra la risoluzione del terzo e del quarto ostacolo.
 
-### <a name="expanding-the-cloud-governance-team"></a>Espansione del team di governance del cloud
+### <a name="expand-the-cloud-governance-team"></a>Espandi il team di governance del cloud
 
 Il team di governance del cloud è in espansione. Data la necessità di ulteriore supporto in merito alla gestione delle identità, un amministratore di sistemi del team addetto alla baseline di identità ora partecipa a una riunione settimanale per mantenere i membri del team al corrente dei cambiamenti.
 
@@ -53,7 +53,7 @@ I cambiamenti che riguardano lo stato attuale e quello futuro creano nuovi risch
 
 **Dipendenze di identità esistenti.** Le dipendenze da servizi di autenticazione e gestione delle identità esistenti possono ritardare o impedire la migrazione di alcuni carichi di lavoro al cloud. La mancata restituzione dei due data center nei tempi previsti comporterà spese nell'ordine dei milioni di dollari in canoni di lease.
 
-Questo rischio aziendale può comportare alcuni rischi tecnici:
+Questo rischio aziendale può tradursi in alcuni rischi tecnici:
 
 - L'autenticazione legacy potrebbe non essere disponibile nel cloud, limitando la distribuzione di alcune applicazioni.
 - La soluzione di autenticazione a più fattori di terze parti corrente potrebbe non essere disponibile nel cloud, limitando la distribuzione di alcune applicazioni.

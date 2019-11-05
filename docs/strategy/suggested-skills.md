@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240028"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561645"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Percorso di preparazione delle competenze durante la fase di pianificazione di un percorso di migrazione
 
@@ -55,16 +55,16 @@ Convertire il business case e il patrimonio digitale razionalizzato in un piano 
 
 Durante la fase di preparazione, il personale tecnico crea una zona di destinazione della migrazione in grado di ospitare, gestire e gestire i carichi di lavoro di cui è stata eseguita la migrazione nel cloud. Questi percorsi di apprendimento consentono di sviluppare le competenze necessarie:
 
-- [Creare un account Azure](/learn/modules/create-an-azure-account). il primo passaggio per usare Azure consiste nel creare un account. L'account include i servizi di Azure di cui si esegue il provisioning e gestisce le impostazioni personali, ad esempio identità, fatturazione e preferenze.
-- [portale di Azure](/learn/modules/tour-azure-portal). Panoramica delle funzionalità e dei servizi del portale di Azure e informazioni su come personalizzare il portale.
-- [Introduzione ad Azure](/learn/modules/welcome-to-azure). iniziare a usare Azure creando e configurando la prima macchina virtuale nel cloud.
-- [Introduzione alla sicurezza in Azure](/learn/modules/intro-to-security-in-azure). Scopri i concetti di base per la protezione dei dati e dell'infrastruttura quando si opera nel cloud. e ottenere informazioni sulle responsabilità dell'utente e sulle attività gestite automaticamente da Azure.
-- [Gestire le risorse in Azure](/learn/paths/manage-resources-in-azure). imparare a usare la riga di comando di Azure e il portale Web per creare, gestire e controllare le risorse basate sul cloud.
-- [Creare una macchina virtuale](/learn/modules/create-windows-virtual-machine-in-azure). creare una macchina virtuale usando il portale di Azure.
-- [Rete di Azure](/learn/modules/intro-to-azure-networking). Informazioni sulle nozioni di base sulla rete di Azure e su come rete di Azure consente di migliorare la resilienza e ridurre la latenza.
-- [Opzioni di calcolo di Azure](/learn/modules/intro-to-azure-compute). Informazioni sui servizi di calcolo di Azure.
-- [Proteggere le risorse con RBAC](/learn/modules/secure-azure-resources-with-rbac). usare il controllo degli accessi in base al ruolo per proteggere le risorse.
-- [Opzioni di archiviazione dati](/learn/modules/intro-to-data-in-azure/index). Scopri i vantaggi dell'archiviazione dati di Azure.
+- [Creare un account Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). il primo passaggio per usare Azure consiste nel creare un account. L'account include i servizi di Azure di cui si esegue il provisioning e gestisce le impostazioni personali, ad esempio identità, fatturazione e preferenze.
+- [portale di Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal). Panoramica delle funzionalità e dei servizi del portale di Azure e informazioni su come personalizzare il portale.
+- [Introduzione ad Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). iniziare a usare Azure creando e configurando la prima macchina virtuale nel cloud.
+- [Introduzione alla sicurezza in Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Scopri i concetti di base per la protezione dei dati e dell'infrastruttura quando si opera nel cloud. e ottenere informazioni sulle responsabilità dell'utente e sulle attività gestite automaticamente da Azure.
+- [Gestire le risorse in Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). imparare a usare la riga di comando di Azure e il portale Web per creare, gestire e controllare le risorse basate sul cloud.
+- [Creare una macchina virtuale](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). creare una macchina virtuale usando il portale di Azure.
+- [Rete di Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Informazioni sulle nozioni di base sulla rete di Azure e su come rete di Azure consente di migliorare la resilienza e ridurre la latenza.
+- [Opzioni di calcolo di Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute). Informazioni sui servizi di calcolo di Azure.
+- [Proteggere le risorse con RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac). usare il controllo degli accessi in base al ruolo per proteggere le risorse.
+- [Opzioni di archiviazione dati](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index). Scopri i vantaggi dell'archiviazione dati di Azure.
 
 ## <a name="organizational-skills"></a>Competenze organizzative
 
@@ -89,8 +89,10 @@ Si consiglia di trasformare la conoscenza di Azure in un riconoscimento ufficial
 
 Microsoft Learn è un nuovo approccio all'apprendimento. L'idoneità per le nuove competenze e responsabilità che derivano dall'adozione del cloud non è facile. Microsoft Learn offre un approccio più gratificante all'apprendimento pratico che consente di raggiungere più velocemente i propri obiettivi. Ottieni punti, livelli e Ottieni di più.
 
-Di seguito è riportato un esempio di percorsi di apprendimento personalizzati che si allineano alla pozione di strategia del Framework di adozione cloud. 
+Di seguito è riportato un esempio di percorsi di apprendimento personalizzati che si allineano alla pozione di strategia del Framework di adozione cloud.
 
-[Scopri il valore aziendale di Microsoft Azure](/learn/paths/learn-business-value-of-azure/): questa esperienza di apprendimento ti porterà a un viaggio che inizierà mostrando in che modo la trasformazione digitale e la potenza del cloud possono trasformare la tua attività. Si tratterà il modo in cui i servizi cloud Microsoft Azure possono potenziare l'organizzazione in una piattaforma cloud attendibile. Infine, verrà illustrato come rendere questo percorso reale per la propria organizzazione. 
+[Scopri il valore aziendale di Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): questa esperienza di apprendimento ti porterà a un viaggio che inizierà mostrando in che modo la trasformazione digitale e la potenza del cloud possono trasformare la tua attività. Si tratterà il modo in cui i servizi cloud Microsoft Azure possono potenziare l'organizzazione in una piattaforma cloud attendibile. Infine, verrà illustrato come rendere questo percorso reale per la propria organizzazione.
 
-Per individuare percorsi di apprendimento aggiuntivi, esplorare il [Catalogo delle informazioni](/learn/browse). Usare il filtro **Ruoli** per allineare i percorsi di apprendimento a un ruolo specifico.
+## <a name="learn-more"></a>Altre informazioni
+
+Per individuare percorsi di apprendimento aggiuntivi, esplorare il [catalogo Microsoft Learn](https://docs.microsoft.com/learn/browse). Usare il filtro **Ruoli** per allineare i percorsi di apprendimento a un ruolo specifico.

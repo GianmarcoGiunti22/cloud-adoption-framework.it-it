@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 997975a01b171ca1613ace518f29047793c6d437
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980065"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565711"
 ---
 # <a name="democratize-data"></a>Democratizzare i dati
 
@@ -44,7 +44,7 @@ Gli strumenti principali per la condivisione diretta dei dati con i consumer di 
 
 La condivisione dei dati può produrre rapidamente un MVP che è possibile usare nelle conversazioni dei clienti. Tuttavia, per trasformare i dati condivisi in una conoscenza utile e praticabile, è in genere necessario un po' di più. Dopo che un'ipotesi è stata convalidata tramite la condivisione dei dati, la fase successiva dello sviluppo è in genere governance dei dati.
 
-La governance dei dati è un argomento ampio che può richiedere un framework dedicato. Tale grado di granularità esula dall'ambito del [Framework di adozione del cloud](../../index.md). Tuttavia, esistono diversi aspetti della governance dei dati che è opportuno prendere in considerazione non appena viene convalidata l'ipotesi del cliente. ad esempio:
+La governance dei dati è un argomento ampio che può richiedere un framework dedicato. Tale grado di granularità esula dall'ambito del [Framework di adozione del cloud](../../index.md). Tuttavia, esistono diversi aspetti della governance dei dati che è opportuno prendere in considerazione non appena viene convalidata l'ipotesi del cliente. Ad esempio:
 
 - **I dati condivisi sono sensibili?** I [dati devono essere classificati](../../govern/policy-compliance/data-classification.md) prima di qualsiasi condivisione pubblica per proteggere gli interessi dei clienti e dell'azienda.
 - **Se i dati sono sensibili, sono stati protetti?** La protezione dei dati sensibili deve essere un requisito per tutti i dati democratizzati. Il carico di lavoro di esempio incentrato sulla [protezione delle soluzioni dati](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fornisce alcuni riferimenti per la protezione dei dati.
@@ -80,7 +80,7 @@ Inserimento **:** Alcuni dati non si trovano in un archivio dati esistente. Quan
 
 **Virtualizza:** L'integrazione e l'inserimento dei dati possono a volte rallentare l'innovazione. Quando una soluzione per la virtualizzazione dei dati è già disponibile, può rappresentare un approccio più ragionevole. L'inserimento e l'integrazione possono duplicare i requisiti di archiviazione e sviluppo, aggiungere la latenza dei dati, aumentare la superficie di attacco, attivare problemi di qualità e migliorare le attività di governance. La virtualizzazione dei dati è un'alternativa più contemporanea che lascia i dati originali in un'unica posizione e crea query pass-through o memorizzate nella cache dei dati di origine.
 
-SQL Server 2017 e Azure SQL Data Warehouse supportano entrambi la [polibase](/sql/relational-databases/polybase/polybase-guide) , ovvero l'approccio alla virtualizzazione dei dati usata più di frequente in Azure.
+SQL Server 2017 e Azure SQL Data Warehouse supportano entrambi la [polibase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) , ovvero l'approccio alla virtualizzazione dei dati usata più di frequente in Azure.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

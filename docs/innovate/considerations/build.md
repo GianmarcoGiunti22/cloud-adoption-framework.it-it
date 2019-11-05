@@ -8,18 +8,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058604"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565742"
 ---
-# <a name="build-with-customer-empathy"></a>Creare con empatia per i clienti
+# <a name="build-with-customer-empathy"></a>Crea con empatia dei clienti
 
 "La necessità è la madre dell'invenzione". Questo proverbio acquisisce il indelibility dello spirito umano e l'unità naturale da inventare. Come illustrato nel dizionario italiano Oxford, "quando la necessità di un elemento diventa imperativo, è necessario trovare modi per ottenerlo o raggiungerlo". Pochi negano queste verità universali sull'invenzione. Tuttavia, come descritto in [innovazione nell'economia digitale](./index.md), l'innovazione richiede un equilibrio tra *invenzione* e *adozione*.
 
-Continuando con l'analogia, l'innovazione deriva da una famiglia più estesa. *L'empatia del cliente è l'elemento padre orgoglioso dell'innovazione.* La creazione di una soluzione che guida l'innovazione richiede un cliente legittimo&mdash;uno che consente di tornare al cliente per risolvere problemi critici. Queste soluzioni si basano sulle esigenze del cliente anziché sui propri desideri o capricci. Per trovare le esigenze reali dei clienti, iniziamo con empatia &mdash;a comprensione approfondita dell'esperienza del cliente. Empatia è una competenza sottosviluppata per molti ingegneri, responsabili di prodotto e persino leader aziendali. Fortunatamente, le diverse interazioni e la velocità rapida del ruolo di architetto del cloud hanno già iniziato a promuovere questa competenza.
+Continuando con l'analogia, l'innovazione deriva da una famiglia più estesa. *L'empatia del cliente è l'elemento padre orgoglioso dell'innovazione.* La creazione di una soluzione che guida l'innovazione richiede un cliente legittimo&mdash;uno che consente di tornare al cliente per risolvere problemi critici. Queste soluzioni si basano sulle esigenze del cliente anziché sui propri desideri o capricci. Per trovare le esigenze reali dei clienti, iniziamo con empatia&mdash;una conoscenza approfondita dell'esperienza del cliente. Empatia è una competenza sottosviluppata per molti ingegneri, responsabili di prodotto e persino leader aziendali. Fortunatamente, le diverse interazioni e la velocità rapida del ruolo di architetto del cloud hanno già iniziato a promuovere questa competenza.
 
 Perché l'empatia è così importante? Dal primo rilascio di un prodotto (MVP) minimo alla disponibilità a livello generale di una soluzione di livello mercato, l'empatia del cliente ci aiuta a comprendere e condividere l'esperienza del cliente. Empatia ci aiuta a creare una soluzione migliore. Ancora più importante, è meglio incaricarci di inventare soluzioni che incoraggino l'adozione. In un'economia digitale, coloro che possono simpatizzare più facilmente con le esigenze dei clienti possono creare un futuro più chiaro che ridefinisce e conduce il mercato.
 
@@ -56,7 +56,7 @@ Da qui, è possibile stimare la percentuale di tale mercato totale che presenta 
 
 Durante ogni iterazione di un ciclo di feedback Build-Measure-Learn, il tentativo di compilazione con Empathy viene definito da un MVP.
 
-Un MVP è la più piccola unità di lavoro (invenzione, progettazione, sviluppo di applicazioni o architettura dei dati) necessaria per creare una soluzione sufficiente per acquisire familiarità _con il cliente_. L'obiettivo di ogni MVP è testare alcune o tutte le ipotesi precedenti e ricevere commenti e suggerimenti direttamente dal cliente. L'output non è una splendida applicazione con tutte le funzionalità necessarie per modificare il settore. L'output desiderato di ogni iterazione è un'opportunità di apprendimento &mdash;a possibilità di testare in modo più approfondito un'ipotesi.
+Un MVP è la più piccola unità di lavoro (invenzione, progettazione, sviluppo di applicazioni o architettura dei dati) necessaria per creare una soluzione sufficiente per acquisire familiarità _con il cliente_. L'obiettivo di ogni MVP è testare alcune o tutte le ipotesi precedenti e ricevere commenti e suggerimenti direttamente dal cliente. L'output non è una splendida applicazione con tutte le funzionalità necessarie per modificare il settore. L'output desiderato di ogni iterazione è un'opportunità di apprendimento&mdash;la possibilità di eseguire test più approfonditi di un'ipotesi.
 
 _Timeboxing_ è un modo standard per assicurarsi che un prodotto rimanga magro. Assicurarsi, ad esempio, che il team di sviluppo pensi che la soluzione possa essere creata in un'unica iterazione per consentire un test rapido. Per comprendere meglio l'utilizzo della velocità, delle iterazioni e delle versioni per definire il mezzo minimo, vedere [pianificazione della velocità, delle iterazioni, della versione e dei percorsi di iterazione](../../plan/iteration-paths.md).
 

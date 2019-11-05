@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915028"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564699"
 ---
 # <a name="rationalize-the-digital-estate"></a>Razionalizzare il digital estate
 
@@ -28,7 +28,7 @@ La razionalizzazione del cloud è il processo di valutazione delle risorse per d
 
 **Analisi quantitativa:** Nell'albero delle decisioni le domande quantitative determinano il primo livello di decisione. Di seguito sono riportate alcune domande comuni: l'asset attualmente in uso? In questo caso, è ottimizzata e valutata in modo corretto? Quali dipendenze esistono tra le risorse? Queste domande sono fondamentali per la classificazione dell'inventario.
 
-**Analisi qualitativa:** Il set di decisioni successivo richiede l'intelligenza umana sotto forma di analisi qualitativa. Spesso le domande che si trovano qui sono univoche per la soluzione e possono essere fornite solo da stakeholder aziendali e utenti esperti. Queste decisioni ritardano in genere il processo, rallentando considerevolmente le attività. Questa analisi USA in genere da 40 a 80 ETP ore per applicazione.
+**Analisi qualitativa:** Il set di decisioni successivo richiede l'intelligenza umana sotto forma di analisi qualitativa. Spesso le domande che si trovano qui sono univoche per la soluzione e possono ricevere una risposta solo dagli stakeholder aziendali e dagli utenti esperti. Queste decisioni ritardano in genere il processo, rallentando considerevolmente le attività. Questa analisi USA in genere da 40 a 80 ETP ore per applicazione.
 
 Per indicazioni sulla creazione di un elenco di domande relative all'analisi qualitativa, vedere [approcci alla pianificazione delle proprietà digitali](./approach.md).
 

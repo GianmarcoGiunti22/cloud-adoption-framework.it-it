@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239917"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566778"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia di rete Hub e spoke
 
@@ -61,7 +61,7 @@ Gli spoke possono anche essere usati per isolare e consentire gruppi diversi all
 
 In Azure ogni componente, indipendentemente dal tipo, viene distribuito in una sottoscrizione di Azure. L'isolamento dei componenti di Azure in diverse sottoscrizioni di Azure può soddisfare i requisiti di diverse line-of-business, come la configurazione di livelli differenziati di accesso e autorizzazione.
 
-Una singola implementazione Hub e spoke può essere scalata fino a un numero elevato di spoke. Tuttavia, come per ogni sistema IT, esistono limiti a livello di piattaforma. La distribuzione dell'hub è associata a una specifica sottoscrizione di Azure, che ha restrizioni e limiti, ad esempio un numero massimo di peering di rete virtuale. Per informazioni dettagliate, vedere [sottoscrizione di Azure e limiti, quote e vincoli dei servizi] [limiti].
+Una singola implementazione Hub e spoke può essere scalata fino a un numero elevato di spoke. Tuttavia, come per ogni sistema IT, esistono limiti a livello di piattaforma. La distribuzione dell'hub è associata a una specifica sottoscrizione di Azure, che ha restrizioni e limiti, Un esempio è un numero massimo di peering di rete virtuale. Per altre informazioni, vedere [Sottoscrizione di Azure e limiti, quote e vincoli dei servizi](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 Nei casi in cui i limiti possono costituire un problema, è possibile aumentare ulteriormente le prestazioni per l'architettura estendendo il modello da una singola rete hub-spoke a un cluster di hub e spoke. Più hub in una o più aree di Azure possono essere interconnessi usando il peering di rete virtuale, Azure ExpressRoute, una rete WAN virtuale o una VPN da sito a sito.
 

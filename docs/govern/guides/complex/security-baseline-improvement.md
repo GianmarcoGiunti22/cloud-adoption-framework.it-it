@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058130"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566260"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guida alla governance per le aziende complesse: migliorare la disciplina della linea di base di sicurezza
 
@@ -74,7 +74,7 @@ Questo rischio aziendale può tradursi in diversi rischi tecnici:
 
 Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi rischi e l'implementazione della guida. L'elenco può sembrare lungo, ma l'adozione di questi criteri può essere più semplice di quanto non sembri.
 
-1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dall'applicazione prima della distribuzione nel cloud.
+1. Tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dall'applicazione prima della distribuzione nel cloud.
 2. Le applicazioni che archiviano o accedono a dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo sono. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
 3. tutti i dati protetti devono essere crittografati quando inattivi.
 4. Le autorizzazioni con privilegi elevati in qualsiasi segmento contenente dati protetti devono essere un'eccezione. Tali eccezioni verranno registrate con il team di governance del cloud e controllate regolarmente.
@@ -98,7 +98,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Miglioramento incrementale delle procedure consigliate
 
-In questa sezione dell'articolo verrà modificata la progettazione degli MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove istruzioni dei criteri aziendali.
+In questa sezione dell'articolo verrà modificata la progettazione degli MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove definizioni dei criteri aziendali.
 
 Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e adozione del cloud (spoke).
 
@@ -122,7 +122,7 @@ Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e 
     4. Applicare il progetto `corporate-it-subscription-blueprint` a ogni istanza a livello di area.
     5. In questo modo verrà stabilito un hub per ogni business unit in ogni area. Nota: è possibile ottenere ulteriori risparmi sui costi, ma condividere gli hub tra le business unit in ogni area.
 6. Integrare gli oggetti Criteri di gruppo tramite Desired State Configuration (DSC):
-    1. Convertire l'oggetto Criteri di gruppo in DSC: il [progetto di gestione Baseline Microsoft](https://github.com/Microsoft/BaselineManagement) in GitHub può accelerare questa operazione. * Assicurarsi di archiviare la configurazione DSC nell'archivio in parallelo con i modelli di Resource Manager.
+    1. Convertire l'oggetto Criteri di gruppo in DSC: il [progetto di gestione Baseline Microsoft](https://github.com/Microsoft/BaselineManagement) in GitHub può accelerare questa operazione. Assicurarsi di archiviare DSC nel repository in parallelo con i modelli Gestione risorse.
     2. Distribuire la configurazione dello stato di Automazione di Azure in tutte le istanze della sottoscrizione IT aziendale. È possibile usare Automazione di Azure per applicare la configurazione DSC alle macchine virtuali distribuite nelle sottoscrizioni supportate all'interno del gruppo di gestione.
     3. La roadmap corrente prevede l'abilitazione di criteri di configurazione guest personalizzati. Dopo il rilascio di questa funzionalità, non sarà più necessario usare Automazione di Azure per questa procedura consigliata.
 

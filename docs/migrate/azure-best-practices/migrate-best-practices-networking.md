@@ -8,19 +8,19 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4496d272ec4c23feb84157e2eba40935b1d16370
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240040"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565232"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Procedure consigliate per la configurazione della rete per i carichi di lavoro migrati in Azure
 
 Durante la pianificazione e la progettazione per la migrazione, oltre alla migrazione stessa, uno degli aspetti più importanti è la progettazione e l'implementazione della rete di Azure. Questo articolo descrive le procedure consigliate per la rete durante la migrazione alle implementazioni IaaS e PaaS in Azure.
 
 > [!IMPORTANT]
-> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità mutano nel tempo. È possibile che non tutti i consigli siano applicabili alla distribuzione in uso. È pertanto necessario scegliere quelli che meglio si adattano alle proprie esigenze.
+> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità variano nel tempo. È possibile che non tutti i consigli siano applicabili alla distribuzione in uso. È pertanto necessario scegliere quelli che meglio si adattano alle proprie esigenze.
 
 ## <a name="design-virtual-networks"></a>Progettare reti virtuali
 
@@ -278,7 +278,7 @@ Per ottimizzare il routing per gli utenti di entrambi gli uffici, è necessario 
 
 - [Informazioni su come](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) ottimizzare il routing.
 
-## <a name="securing-vnets"></a>Protezione delle reti virtuali
+## <a name="secure-vnets"></a>Sicurezza reti virtuali
 
 La responsabilità per la protezione delle reti virtuali è condivisa tra Microsoft e il cliente. Microsoft offre molte delle funzionalità di rete, nonché i servizi che aiutano a proteggere le risorse. Quando si progetta la sicurezza per le reti virtuali, è consigliabile seguire alcune procedure consigliate, tra cui l'implementazione di una rete perimetrale, l'uso di filtri e gruppi di sicurezza, la protezione dell'accesso alle risorse e agli indirizzi IP e l'implementazione della protezione dagli attacchi.
 

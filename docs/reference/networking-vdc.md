@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240094"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566693"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data Center virtuali: una prospettiva di rete
 
@@ -33,9 +33,9 @@ I clienti possono scegliere di accedere a questi servizi cloud tramite Internet 
 
 Agli inizi, il cloud era essenzialmente una piattaforma di hosting per applicazioni rivolte al pubblico. Le aziende hanno iniziato a comprendere il valore del cloud e a spostare le applicazioni line-of-business interne nel cloud. Questi tipi di applicazioni hanno introdotto considerazioni aggiuntive in riferimento a sicurezza, affidabilità, prestazioni e costi, che hanno reso necessaria una maggiore flessibilità nella modalità di erogazione dei servizi cloud. Sono state così poste le basi per i nuovi servizi di infrastruttura e di rete progettati per offrire questa flessibilità, ma anche per nuove funzionalità per la scalabilità, il ripristino di emergenza e altre esigenze.
 
-Le prime soluzioni cloud erano progettate per ospitare singole applicazioni relativamente isolate in ambito pubblico. Questo approccio è andato bene per alcuni anni, ma, man mano che i vantaggi delle soluzioni cloud si facevano evidenti e sempre più carichi di lavoro su vasta scala venivano ospitati nel cloud, Affrontare i problemi di sicurezza, affidabilità, prestazioni e costi delle distribuzioni in una o più aree è diventato fondamentale durante tutto il ciclo di vita del servizio cloud.
+Le prime soluzioni cloud erano progettate per ospitare singole applicazioni relativamente isolate in ambito pubblico. Questo approccio è andato bene per alcuni anni, ma, man mano che i vantaggi delle soluzioni cloud si facevano evidenti e sempre più carichi di lavoro su vasta scala venivano ospitati nel cloud, La risoluzione dei problemi di sicurezza, affidabilità, prestazioni e costi delle distribuzioni in una o più aree è diventata fondamentale per tutto il ciclo di vita del servizio cloud.
 
-Il diagramma distribuzione cloud seguente illustra un esempio di lacune nella sicurezza nella **casella rossa** La **casella gialla** Mostra lo spazio per l'ottimizzazione delle appliance virtuali di rete tra i carichi di lavoro.
+Il diagramma di distribuzione cloud seguente mostra un esempio di Gap di sicurezza, evidenziato nella casella rossa. La casella gialla mostra lo spazio per l'ottimizzazione delle appliance virtuali di rete tra i carichi di lavoro.
 
 ![0][0]
 
@@ -93,7 +93,7 @@ Non è necessario un singolo amministratore globale per assegnare tutte le autor
 
 #### <a name="security-infrastructure"></a>Infrastruttura di sicurezza
 
-L'infrastruttura di sicurezza si riferisce alla separazione del traffico in un segmento di rete virtuale specifico dell'implementazione di un data center virtuale. Questa infrastruttura specifica il modo in cui il traffico in ingresso e in uscita viene controllato in un'implementazione virtuale del Data Center. Azure si basa su un'architettura multi-tenant che impedisce il traffico non autorizzato e non intenzionale tra le distribuzioni usando l'isolamento VNet, gli elenchi di controllo di accesso (ACL), i bilanciamenti del carico, i filtri IP e i criteri di flusso del traffico. Network Address Translation (NAT) separa il traffico di rete interno da quello esterno.
+L'infrastruttura di sicurezza si riferisce alla separazione del traffico in un segmento di rete virtuale specifico dell'implementazione di un data center virtuale. Questa infrastruttura specifica il modo in cui il traffico in ingresso e in uscita viene controllato in un'implementazione virtuale del Data Center. Azure si basa su un'architettura multi-tenant che impedisce il traffico non autorizzato e non intenzionale tra le distribuzioni usando l'isolamento VNet, gli elenchi di controllo di accesso (ACL), i bilanciamenti del carico, i filtri IP e i criteri di flusso del traffico. Network Address Translation (NAT) separa il traffico di rete interno dal traffico esterno.
 
 L'infrastruttura di Azure alloca le risorse di infrastruttura ai carichi di lavoro dei tenant e gestisce le comunicazioni verso e dalle macchine virtuali (VM). L'hypervisor di Azure impone la separazione di memoria e processi tra le VM e instrada in modo sicuro il traffico di rete ai tenant del sistema operativo guest.
 
@@ -263,7 +263,7 @@ Usare un set di firewall di Azure (o di appliance virtuali di rete) per il traff
 
 Azure Load Balancer possibile verificare anche l'integrità delle varie istanze del server e quando un'istanza non riesce a rispondere a un probe, il servizio di bilanciamento del carico interrompe l'invio del traffico all'istanza non integra. In un data center virtuale viene distribuito un servizio di bilanciamento del carico esterno nell'hub e negli spoke. Nell'hub, il servizio di bilanciamento del carico consente di instradare in modo efficiente il traffico ai servizi negli spoke e negli spoke i servizi di bilanciamento del carico vengono usati per gestire il traffico delle applicazioni.
 
-Il front-end di [**Azure**][AFD] (AFD) è la piattaforma di accelerazione delle applicazioni Web a disponibilità elevata e scalabile di Microsoft, Load Balancer http globale, protezione delle applicazioni e rete per la distribuzione di contenuti. In esecuzione in più di 100 posizioni alla periferia della rete globale di Microsoft, AFD consente di creare, usare e scalare in orizzontale l'applicazione Web dinamica e il contenuto statico. Il servizio Frontdoor di Azure assicura all'applicazione prestazioni per l'utente finale di livello superiore, automazione della manutenzione regionale unificata, automazione della continuità aziendale e ripristino di emergenza, informazioni client/utente unificate, memorizzazione nella cache e informazioni dettagliate sul servizio. La piattaforma garantisce prestazioni, affidabilità e contratti di servizio di supporto tecnico, oltre a certificazioni di conformità e procedure di sicurezza controllabili sviluppate, gestite e supportate in modo nativo da Azure.
+Il front-end di [Azure (AFD)][AFD] è la piattaforma di accelerazione delle applicazioni Web a disponibilità elevata e scalabile di Microsoft, Load Balancer http globale, protezione delle applicazioni e rete per la distribuzione di contenuti. In esecuzione in più di 100 posizioni alla periferia della rete globale di Microsoft, AFD consente di creare, usare e scalare in orizzontale l'applicazione Web dinamica e il contenuto statico. Il servizio Frontdoor di Azure assicura all'applicazione prestazioni per l'utente finale di livello superiore, automazione della manutenzione regionale unificata, automazione della continuità aziendale e ripristino di emergenza, informazioni client/utente unificate, memorizzazione nella cache e informazioni dettagliate sul servizio. La piattaforma garantisce prestazioni, affidabilità e contratti di servizio di supporto tecnico, oltre a certificazioni di conformità e procedure di sicurezza controllabili sviluppate, gestite e supportate in modo nativo da Azure.
 
 [**Gateway applicazione**][AppGW] Microsoft Azure gateway applicazione è un'appliance virtuale dedicata che offre un servizio di controller per la distribuzione di applicazioni (ADC), che offre diverse funzionalità di bilanciamento del carico di livello 7 per l'applicazione. Consente di ottimizzare la produttività delle Web farm eseguendo l'offload al gateway applicazione della terminazione SSL con utilizzo elevato di CPU. Offre anche altre funzionalità di routing di livello 7, tra cui la distribuzione round robin del traffico in ingresso, l'affinità di sessione basata su cookie, il routing basato su percorso URL e la possibilità di ospitare più siti Web dietro un unico gateway applicazione. Nello SKU WAF del gateway applicazione è incluso anche un Web application firewall (WAF). Questo SKU offre alle applicazioni Web la protezione da exploit e vulnerabilità Web comuni. Il gateway applicazione può essere configurato come gateway con connessione Internet, come gateway solo interno o come una combinazione di queste due opzioni.
 
@@ -327,7 +327,7 @@ Le possibilità dei carichi di lavoro sono infinite. I seguenti sono solo alcuni
 - **Basato sui dati:** Carichi di lavoro con utilizzo intensivo dei dati con accesso frequente a database o ad altre risorse di archiviazione.
 - **Integrazione:** Carichi di lavoro che offrono l'integrazione con altri sistemi all'interno o all'esterno dell'organizzazione.
 
-**Siti Web rivolte ai clienti (Internet o con connessione interna)** : la maggior parte delle applicazioni che interagiscono con Internet sono siti Web. Azure offre la possibilità di eseguire un sito Web in una macchina virtuale IaaS o da un sito di [app Web di Azure][WebApps] (PaaS). Le app Web di Azure supportano l'integrazione con le reti virtuali che consentono la distribuzione delle app Web in una zona di rete spoke. I siti Web interni non devono esporre un endpoint Internet pubblico perché le risorse sono accessibili tramite indirizzi privati non instradabili tramite Internet dal VNet privato.
+**Siti Web rivolte ai clienti (Internet o con connessione interna):** La maggior parte delle applicazioni che interagiscono con Internet sono siti Web. Azure offre la possibilità di eseguire un sito Web in una macchina virtuale IaaS o da un sito di [app Web di Azure][WebApps] (PaaS). Le app Web di Azure supportano l'integrazione con le reti virtuali che consentono la distribuzione delle app Web in una zona di rete spoke. I siti Web interni non devono esporre un endpoint Internet pubblico perché le risorse sono accessibili tramite indirizzi privati non instradabili tramite Internet dal VNet privato.
 
 **Big Data e analisi:** Quando i dati devono essere ridimensionati in un volume elevato, i database potrebbero non essere ridimensionati correttamente. La tecnologia Hadoop offre un sistema per eseguire parallelamente le query distribuite in un numero elevato di nodi. I clienti hanno la possibilità di eseguire carichi di lavoro di dati in macchine virtuali IaaS o PaaS ([HDInsight][HDI]). HDInsight supporta la distribuzione in un VNet basato sul percorso, può essere distribuito in un cluster in una spoke di un data center virtuale.
 
@@ -337,7 +337,7 @@ Le possibilità dei carichi di lavoro sono infinite. I seguenti sono solo alcuni
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Creazione di un datacenter virtuale a disponibilità elevata: più data center virtuali
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Rendere un data center virtuale a disponibilità elevata: più data center virtuali
 
 Fino a questo punto, questo articolo è incentrato sulla progettazione di un singolo data center virtuale, che descrive i componenti e l'architettura di base che contribuiscono alla resilienza. Funzionalità di Azure, ad esempio Azure Load Balancer, appliance virtuali, set di disponibilità, set di scalabilità e altri meccanismi contribuiscono a un sistema che consente di creare livelli di SLA solidi nei servizi di produzione.
 
@@ -376,7 +376,7 @@ In genere, le connessioni Peering reti virtuali o ExpressRoute sono il tipo pref
 
 Poiché usa DNS, Gestione traffico è destinato solo all'uso con gli endpoint pubblici di Azure. Il servizio viene in genere usato per controllare o deviare il traffico verso le macchine virtuali e le app Web di Azure nell'istanza integra di un'implementazione del data center virtuale. Gestione traffico è resiliente anche in caso di errore di un'intera area di Azure e può controllare la distribuzione del traffico utente per gli endpoint di servizio in diversi data center virtuali in base a diversi criteri. Ad esempio, l'errore di un servizio in un'implementazione di data center virtuale specifica o la selezione dell'implementazione del data center virtuale con la latenza di rete più bassa.
 
-### <a name="summary"></a>Summary
+### <a name="summary"></a>Riepilogo
 
 Un data center virtuale è un approccio alla migrazione del Data Center per creare un'architettura scalabile in Azure che ottimizza l'uso delle risorse cloud, riduce i costi e semplifica la governance del sistema. Un data center virtuale si basa su una topologia di rete hub-spoke, che fornisce servizi condivisi comuni nell'hub e che consente l'utilizzo di applicazioni e carichi di lavoro specifici negli spoke. Un data center virtuale corrisponde anche alla struttura dei ruoli aziendali, in cui diversi reparti, ad esempio l'IT centrale, DevOps, e le operazioni e la manutenzione interagiscono tra loro durante l'esecuzione dei ruoli specifici. Un data center virtuale soddisfa i requisiti per la migrazione in modalità Lift-and-Shift, ma offre anche molti vantaggi per le distribuzioni cloud native.
 
@@ -386,11 +386,11 @@ In questo documento sono state illustrate le funzionalità seguenti. Per altre i
 
 <!-- markdownlint-disable MD033 -->
 
-|Funzionalità di rete|Bilanciamento del carico.|Connettività|
+|Funzionalità di rete|Bilanciamento del carico|Connettività|
 |-|-|-|
 |[Reti virtuali di Azure][VNet]</br>[Gruppi di sicurezza di rete][network-security-groups]</br>[Log del gruppo di sicurezza di rete][nsg-log]</br>[Route definite dall'utente][user-defined-routes]</br>[Appliance virtuali di rete][NVA]</br>[Indirizzi IP pubblici][PIP]</br>[DDoS di Azure][DDoS]</br>[Firewall di Azure][AzFW]</br>[DNS di Azure][DNS]|[Sportello anteriore di Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway applicazione (L7)][AppGW]</br>[Web Application Firewall] WAF</br>[Gestione traffico di Azure][traffic-manager]</br></br></br></br></br> |[Peering reti virtuali][VNetPeering]</br>[Rete privata virtuale][VPN]</br>[Rete WAN virtuale][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identità</br>|Monitorare</br>|Procedure consigliate</br>|
+|Identità</br>|Monitoraggio</br>|Procedure consigliate</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[Controlli di accesso di base del ruolo][RBAC]</br>[Ruoli predefiniti Azure AD][Roles]</br></br></br> |[Network Watcher][NetWatch]</br>[Monitoraggio di Azure][Monitor]</br>[Log attività][ActLog]</br>[Log di diagnostica][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Monitoraggio delle prestazioni di rete][NPM]|[Procedure consigliate per le reti perimetrali][DMZ]</br>[Gestione delle sottoscrizioni][SubMgmt]</br>[Gestione dei gruppi di risorse][RGMgmt]</br>[Limiti della sottoscrizione di Azure][limits] </br></br></br>|
 
@@ -400,7 +400,7 @@ In questo documento sono state illustrate le funzionalità seguenti. Per altre i
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Fasi successive
+## <a name="next-steps"></a>Passaggi successivi
 
 - Esplora il [peering VNet][VNetPeering], la tecnologia di base per le progettazioni di hub e spoke Virtual Datacenter.
 - Implementare [Azure ad][azure-ad] per iniziare a usare l'esplorazione [RBAC][RBAC] .

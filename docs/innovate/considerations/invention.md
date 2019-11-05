@@ -1,21 +1,21 @@
 ---
-title: 'Innovazione nel cloud: sviluppo di invenzioni digitali'
+title: 'Innovazione nel cloud: sviluppare invenzioni digitali'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introduzione all'innovazione nel cloud-sviluppo di invenzioni digitali
+description: Introduzione all'innovazione nel cloud-sviluppare invenzioni digitali
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e1e9d693e7ca8de494ec2eb3e833ed3d0b07786f
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980037"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565673"
 ---
-# <a name="developing-digital-inventions"></a>Sviluppo di invenzioni digitali
+# <a name="develop-digital-inventions"></a>Sviluppare invenzioni digitali
 
 Come descritto in [innovazione nell'economia digitale](./index.md), l'innovazione richiede un equilibrio tra *invenzione* e *adozione*. I suggerimenti dei clienti e la collaborazione sono necessari per favorire l'adozione. Le discipline descritte nella sezione successiva definiscono una serie di approcci per lo sviluppo di invenzioni digitali, mantenendo a mente l'adozione e l'empatia dei clienti. Ogni disciplina viene brevemente descritta, oltre a collegamenti più profondi in ogni processo.
 

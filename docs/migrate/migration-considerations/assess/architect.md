@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240238"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566818"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Progettare i carichi di lavoro prima della migrazione
 
@@ -37,7 +37,7 @@ I presupposti riportati possono creare ostacoli che potrebbero rallentare lo sta
 - **Pagamento del debito tecnico.** Alcuni vecchi carichi di lavoro comportano un debito tecnico elevato. Questo può causare problemi a lungo termine con l'aumento dei costi di hosting con qualsiasi provider di servizi cloud. Quando il debito tecnico porta a un aumento dei costi di hosting non naturale, è necessario valutare le architetture alternative.
 - **Modelli di traffico utente.** Le soluzioni esistenti possono dipendere da modelli di routing di rete esistenti. Questi modelli potrebbero rallentare notevolmente le prestazioni. Inoltre, l'introduzione di nuove soluzioni di Wide Area Network ibride (WAN) può richiedere settimane o anche mesi. Prepararsi agli ostacoli dell'inizio del processo di architettura considerando i modelli di traffico e le modifiche apportate ai servizi di infrastruttura di base.
 
-## <a name="accelerating-business-value"></a>Accelerazione del valore di business
+## <a name="accelerate-business-value"></a>Accelerazione del valore aziendale
 
 Alcuni scenari potrebbero richiedere un'architettura diversa rispetto alla strategia di riallocazione IaaS presunta. Di seguito sono riportati alcuni esempi:
 

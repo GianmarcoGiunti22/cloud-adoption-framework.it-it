@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 93449f754e3908e092fa64c55ad62fc604b4ba5b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028475"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565428"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Abilita rilevamento e avvisi per le modifiche critiche
 
 Azure Rilevamento modifiche e l'inventario forniscono avvisi sullo stato di configurazione dell'ambiente ibrido e sulle modifiche apportate a tale ambiente. È possibile monitorare le modifiche critiche a file, servizi, software e registro di sistema che potrebbero influire sui server distribuiti.
 
-Per impostazione predefinita, il servizio inventario di automazione di Azure non monitora i file o le impostazioni del registro di sistema. La soluzione fornisce un elenco di chiavi del registro di sistema consigliate per il monitoraggio. Per visualizzare questo elenco, passare all'account di automazione nella portale di Azure e selezionare**impostazioni di modifica** **inventario** > :
+Per impostazione predefinita, il servizio inventario di automazione di Azure non monitora i file o le impostazioni del registro di sistema. La soluzione fornisce un elenco di chiavi del registro di sistema consigliate per il monitoraggio. Per visualizzare questo elenco, passare all'account di automazione nella portale di Azure e selezionare **inventory** > **Edit Settings**.
 
 ![Screenshot della visualizzazione inventario di automazione di Azure nella portale di Azure](./media/change-tracking1.png)
 
@@ -81,7 +81,7 @@ Utile per gli ambienti che devono bloccare le configurazioni software.
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>La versione software specifica è o non è installata in un computer
 
-Utile per la valutazione della sicurezza. Si noti che questa query `ConfigurationData`fa riferimento a, che contiene i log per l'inventario e segnala l'ultimo stato di configurazione segnalato, non le modifiche.
+Utile per la valutazione della sicurezza. Si noti che questa query fa riferimento `ConfigurationData`, che contiene i log per l'inventario e segnala l'ultimo stato di configurazione segnalato, non le modifiche.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"

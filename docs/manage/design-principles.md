@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8ea3610ed65ae45d924ca65ef26d249ed8343d0b
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979977"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564999"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Applicare principi di progettazione e operazioni avanzate
 
 Le prime tre discipline di gestione del cloud descrivono una baseline di gestione. Come minimo, una linea di base di gestione deve includere un impegno aziendale standard per ridurre al minimo le interruzioni aziendali e accelerare il ripristino in caso di interruzione del servizio. La maggior parte delle linee di base di gestione comprende un'attenzione disciplinata alla gestione dell'inventario e della visibilità, della "conformità operativa" e della "protezione e ripristino".
 
-Lo scopo di una linea di base di gestione è creare un'offerta coerente che fornisce un livello minimo di impegno aziendale per tutti i carichi di lavoro supportati. Questa linea di base delle offerte di gestione comuni e ripetibili consente al team di offrire un livello di gestione operativa altamente ottimizzato, con una deviazione minima. Tuttavia, l'offerta standard potrebbe non offrire un impegno sufficiente per l'azienda. 
+Lo scopo di una linea di base di gestione è creare un'offerta coerente che fornisce un livello minimo di impegno aziendale per tutti i carichi di lavoro supportati. Questa linea di base delle offerte di gestione comuni e ripetibili consente al team di offrire un livello di gestione operativa altamente ottimizzato, con una deviazione minima. Tuttavia, l'offerta standard potrebbe non offrire un impegno sufficiente per l'azienda.
 
 Il diagramma nella sezione successiva illustra tre modi per superare la linea di base di gestione.
 
@@ -45,8 +45,8 @@ Per i carichi di lavoro che garantiscono un investimento superiore per soddisfar
 
 Esistono due aree di specializzazione:
 
-- **Specializzazione della piattaforma**: investire nelle operazioni in corso di una piattaforma condivisa, distribuendo l'investimento tra più carichi di lavoro.
-- **Specializzazione del carico di lavoro**: investire nelle operazioni in corso di un carico di lavoro specifico, generalmente riservato ai carichi di lavoro di importanza critica.
+- **Specializzazione piattaforma:** Investire nelle operazioni in corso di una piattaforma condivisa, distribuendo l'investimento tra più carichi di lavoro.
+- **Specializzazione del carico di lavoro:** Investire nelle operazioni in corso di un carico di lavoro specifico, generalmente riservato ai carichi di lavoro di importanza critica.
 
 ### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>IT centrale o cloud Center of Excellence (CCoE)
 
@@ -54,12 +54,13 @@ Le decisioni tra specializzazione della piattaforma e specializzazione dei caric
 
 La specializzazione del carico di lavoro spesso attiva una modifica culturale. IT tradizionale e centrale IT entrambi i processi di compilazione che possono fornire supporto su larga scala. Il supporto per la scalabilità è più raggiungibile per i servizi ripetibili trovati in una linea di base di gestione, una linea di base avanzata o anche operazioni di piattaforma. La specializzazione del carico di lavoro non si ridimensiona spesso. Questa mancanza di scalabilità rende difficile per un'organizzazione IT centralizzata fornire il supporto necessario senza raggiungere limitazioni di scalabilità organizzative.
 
-In alternativa, l'approccio basato su cloud Center of Excellence si ridimensiona attraverso la delega intenzionale di responsabilità e la centralizzazione selettiva. La specializzazione del carico di lavoro tende a migliorare l'allineamento con l'approccio di responsabilità delegato di un CCoE. 
+In alternativa, l'approccio basato su cloud Center of Excellence si ridimensiona attraverso la delega intenzionale di responsabilità e la centralizzazione selettiva. La specializzazione del carico di lavoro tende a migliorare l'allineamento con l'approccio di responsabilità delegato di un CCoE.
 
 L'allineamento naturale dei ruoli in un CCoE è descritto di seguito:
-- Il team della piattaforma cloud aiuta a creare piattaforme comuni che supportano più team di adozione del cloud. 
-- Il team di automazione del cloud estende le piattaforme in risorse distribuibili in un catalogo di servizi. 
-- Gestione cloud offre la linea di base di gestione in modo centralizzato e consente di supportare l'utilizzo del catalogo di servizi. 
+
+- Il team della piattaforma cloud aiuta a creare piattaforme comuni che supportano più team di adozione del cloud.
+- Il team di automazione del cloud estende le piattaforme in risorse distribuibili in un catalogo di servizi.
+- Gestione cloud offre la linea di base di gestione in modo centralizzato e consente di supportare l'utilizzo del catalogo di servizi.
 - Tuttavia, la business unit, sotto forma di Team DevOps aziendale o team di adozione del cloud, è responsabile delle operazioni quotidiane del carico di lavoro, della pipeline o delle prestazioni.
 
 Per quanto riguarda l'allineamento delle aree di gestione, i modelli di IT centrale e CCoE possono in genere fornire una specializzazione della piattaforma, con modifiche culturali minime. La distribuzione della specializzazione del carico di lavoro potrebbe essere un po' più complessa per i team IT centrali.
@@ -68,10 +69,10 @@ Per quanto riguarda l'allineamento delle aree di gestione, i modelli di IT centr
 
 All'interno di ogni specializzazione, il processo in quattro passaggi seguente viene fornito in un approccio iterativo e disciplinato. Questo approccio richiede la collaborazione tra l'adozione del cloud, la piattaforma cloud, l'automazione cloud e gli esperti di gestione cloud per creare un ciclo di feedback valido e informato.
 
-- **Miglioramento della progettazione del sistema**: migliorare la progettazione di sistemi comuni (piattaforme) o carichi di lavoro specifici per ridurre al minimo le interruzioni.
-- **Correzione automatica**: alcuni miglioramenti non sono convenienti. In questi casi, potrebbe essere più opportuno automatizzare la correzione e ridurre l'effetto delle interruzioni.
-- **Ridimensionare la soluzione**: poiché la progettazione dei sistemi e la correzione automatica sono migliorate, è possibile ridimensionare le modifiche nell'ambiente tramite il catalogo di servizi.
-- **Miglioramento continuo**: è possibile usare vari strumenti di monitoraggio per individuare i miglioramenti incrementali da affrontare nel passaggio successivo della progettazione del sistema, dell'automazione e della scalabilità.
+- **Miglioramento della progettazione del sistema:** Migliorare la progettazione di sistemi comuni (piattaforme) o carichi di lavoro specifici per ridurre al minimo le interruzioni.
+- **Automatizzare la correzione:** Alcuni miglioramenti non sono convenienti. In questi casi, potrebbe essere più opportuno automatizzare la correzione e ridurre l'effetto delle interruzioni.
+- **Ridimensionare la soluzione:** Con il miglioramento della progettazione dei sistemi e della correzione automatica, è possibile ridimensionare le modifiche nell'ambiente tramite il catalogo di servizi.
+- **Miglioramento continuo:** È possibile usare vari strumenti di monitoraggio per individuare i miglioramenti incrementali da affrontare nel passaggio successivo della progettazione del sistema, dell'automazione e della scalabilità.
 
 ### <a name="improve-system-design"></a>Migliorare la progettazione del sistema
 
@@ -79,11 +80,11 @@ Il miglioramento della progettazione del sistema è l'approccio più efficace pe
 
 Il Framework di architettura di Azure è incentrato sul miglioramento tra cinque pilastri della progettazione del sistema:
 
-- **Scalabilità**: ridimensionamento delle risorse comuni della piattaforma per gestire un aumento del carico.
-- **Disponibilità**: riduzione delle interruzioni aziendali grazie alla possibilità di migliorare il tempo di attività.
-- **Resilienza**: miglioramento dei tempi di ripristino per ridurre la durata delle interruzioni.
-- **Sicurezza**: proteggere le applicazioni e i dati da minacce esterne.
-- **Gestione**: processi operativi specifici per le risorse comuni della piattaforma.
+- **Scalabilità:** Ridimensionamento delle risorse comuni della piattaforma per gestire un aumento del carico.
+- **Disponibilità:** Riduzione delle interruzioni aziendali grazie alla possibilità di migliorare il tempo di attività.
+- **Resilienza:** Miglioramento dei tempi di ripristino per ridurre la durata delle interruzioni.
+- **Sicurezza:** Protezione delle applicazioni e dei dati da minacce esterne.
+- **Gestione:** Processi operativi specifici per le risorse comuni della piattaforma.
 
 La maggior parte delle interruzioni aziendali equivale a una forma di debito tecnico o a un deficit nell'architettura. Per le distribuzioni esistenti, i miglioramenti alla progettazione dei sistemi possono essere visualizzati come pagamenti rispetto al debito tecnico esistente. Per le nuove distribuzioni, i miglioramenti alla progettazione dei sistemi possono essere considerati come evitare il debito tecnico. La sezione successiva, "monitoraggio e aggiornamento automatizzato", esamina i modi per risolvere i debiti tecnici che non possono o non devono essere risolti.
 
@@ -107,7 +108,7 @@ Per informazioni sulla pubblicazione in un catalogo di servizi, vedere la serie 
 
 ### <a name="continuous-improvement"></a>Miglioramento continuo
 
-La specializzazione della piattaforma e le operazioni della piattaforma dipendono dai cicli di feedback forte tra i team di adozione, piattaforma, automazione e gestione. L'utilizzo di questi cicli di feedback nei dati consente a ogni team di prendere decisioni sagge. Per le operazioni della piattaforma per ottenere impegni aziendali a lungo termine, è importante sfruttare le informazioni specifiche della piattaforma centralizzata. Poiché i contenitori e SQL Server sono le due piattaforme gestite centralmente più comuni, è consigliabile iniziare a usare la raccolta di dati di miglioramento continuo esaminando gli articoli seguenti: 
+La specializzazione della piattaforma e le operazioni della piattaforma dipendono dai cicli di feedback forte tra i team di adozione, piattaforma, automazione e gestione. L'utilizzo di questi cicli di feedback nei dati consente a ogni team di prendere decisioni sagge. Per le operazioni della piattaforma per ottenere impegni aziendali a lungo termine, è importante sfruttare le informazioni specifiche della piattaforma centralizzata. Poiché i contenitori e SQL Server sono le due piattaforme gestite centralmente più comuni, è consigliabile iniziare a usare la raccolta di dati di miglioramento continuo esaminando gli articoli seguenti:
 
 - [Prestazioni del contenitore](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Prestazioni del database PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

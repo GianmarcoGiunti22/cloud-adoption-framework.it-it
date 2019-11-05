@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048325"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564692"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Inizia un percorso di migrazione cloud in Azure
 
@@ -36,7 +36,7 @@ Le migrazioni cloud possono aiutare le aziende a raggiungere i risultati azienda
 
 |Eventi aziendali critici | Motivazioni della migrazione | Motivazioni dell'innovazione |
 |---------|---------|---------|
-| Uscita Data Center<br/><br/>Fusioni, acquisizioni o dismissioni<br/><br/>Riduzioni delle spese di capitale<br/><br/>Fine del supporto per le tecnologie mission-critical<br/><br/>Risposta alle modifiche di conformità alle normative<br/><br/>Soddisfare i nuovi requisiti di sovranità dei dati<br/><br/>Ridurre le rotture e migliorare la stabilità IT|Risparmio sui costi<br/><br/>Riduzione della complessità tecnica o del fornitore<br/><br/>Ottimizzazione delle operazioni interne<br/><br/>Aumentare l'agilità aziendale<br/><br/>Prepararsi per nuove funzionalità tecniche<br/><br/>Scalabilità per soddisfare le esigenze del mercato<br/><br/>Scalabilità per soddisfare le esigenze geografiche|Prepararsi per nuove funzionalità tecniche<br/><br/>Crea nuove funzionalità tecniche<br/><br/>Scalabilità per soddisfare le esigenze del mercato<br/><br/>Scalabilità per soddisfare le esigenze geografiche<br/><br/>Migliorare le esperienze dei clienti e gli impegni<br/><br/>Trasforma prodotti o servizi<br/><br/>Interrompi il mercato con nuovi prodotti o servizi|
+| Uscita Data Center<br/><br/>Fusioni, acquisizioni o dismissioni<br/><br/>Riduzioni delle spese di capitale<br/><br/>Fine del supporto per le tecnologie mission-critical<br/><br/>Risposta alle modifiche di conformità alle normative<br/><br/>Soddisfare i nuovi requisiti di sovranità dei dati<br/><br/>Ridurre le rotture e migliorare la stabilità IT|Risparmi sui costi<br/><br/>Riduzione della complessità tecnica o del fornitore<br/><br/>Ottimizzazione delle operazioni interne<br/><br/>Aumentare l'agilità aziendale<br/><br/>Prepararsi per nuove funzionalità tecniche<br/><br/>Scalabilità per soddisfare le esigenze del mercato<br/><br/>Scalabilità per soddisfare le esigenze geografiche|Prepararsi per nuove funzionalità tecniche<br/><br/>Crea nuove funzionalità tecniche<br/><br/>Scalabilità per soddisfare le esigenze del mercato<br/><br/>Scalabilità per soddisfare le esigenze geografiche<br/><br/>Miglioramento delle esperienze e degli impegni dei clienti<br/><br/>Trasforma prodotti o servizi<br/><br/>Interrompi il mercato con nuovi prodotti o servizi|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -50,7 +50,7 @@ Preparare tutti i partecipanti attraverso l'impegno di migrazione con la consape
 
 ## <a name="migration-approach"></a>Approccio alla migrazione
 
-Il Framework di adozione del cloud stabilisce un costrutto di alto livello di piano, pronto, adozione per raggruppare i tipi di lavoro richiesto per qualsiasi adozione del cloud. Questo riepilogo esecutivo si basa su tale flusso di alto livello per stabilire processi iterativi che consentono di semplificare le attività di sviluppo/spostamento/ottimizzazione **e** l'impegno di modernizzazione in un unico approccio tra tutte le attività di migrazione nel cloud.
+Il Framework di adozione del cloud stabilisce un costrutto di alto livello di piano, pronto, adozione per raggruppare i tipi di lavoro richiesto per qualsiasi adozione del cloud. Questo riepilogo esecutivo si basa su tale flusso di alto livello per stabilire processi iterativi che consentono di semplificare lo spostamento Lift-optimize e ottimizzare le attività di modernizzazione in un unico approccio in tutte le attività di migrazione nel cloud.
 
 Questo approccio è costituito da due metodologie o aree di interesse: strategia cloud & pianificazione e implementazione cloud. La [motivazione](#motivations) o il risultato aziendale desiderato per una migrazione cloud determina spesso quanto un team deve investire in [strategia e pianificazione](#cloud-strategy-and-planning) e [implementazione](#cloud-implementation). Queste motivazioni possono anche influenzare le decisioni di esecuzione in sequenza o in parallelo.
 

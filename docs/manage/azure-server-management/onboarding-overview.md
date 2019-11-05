@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 330e297b4fb63eaa376e8b6dac0ccf77c2a16ef4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c0b1a3ec7f748f9a9217dde45226ae778a2c78d9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028777"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565342"
 ---
-# <a name="phase-2-onboarding-azure-server-management-services"></a>Fase 2: Onboarding di servizi di gestione del server di Azure
+# <a name="phase-2-onboarding-azure-server-management-services"></a>Fase 2: onboarding dei servizi di gestione del server di Azure
 
-Quando si ha familiarità con gli [strumenti](./tools-services.md) e la [pianificazione](./prerequisites.md) necessari per i servizi di gestione di Azure, si è pronti per la seconda fase, che fornisce istruzioni dettagliate per l'onboarding di questi servizi da usare con le risorse di Azure. Per iniziare, è necessario valutare questo processo di onboarding prima di adottarlo nel proprio ambiente.
+Dopo aver acquisito familiarità con gli [strumenti](./tools-services.md) e la [pianificazione](./prerequisites.md) necessari per i servizi di gestione di Azure, si è pronti per la seconda fase. La fase 2 fornisce istruzioni dettagliate per l'onboarding di questi servizi da usare con le risorse di Azure. Per iniziare, è necessario valutare questo processo di onboarding prima di adottarlo nel proprio ambiente.
 
 > [!NOTE]
-> Gli approcci di automazione descritti nelle sezioni successive di questa guida sono destinati alle distribuzioni che non dispongono già di server distribuiti nel cloud. Per creare tutte le risorse e i criteri necessari, è necessario avere il ruolo proprietario in una sottoscrizione. Se sono già state create Log Analytics area di lavoro e le risorse dell'account di automazione, è consigliabile passare queste risorse nei parametri appropriati quando si avviano gli script di automazione di esempio.
+> Gli approcci di automazione descritti nelle sezioni successive di questa guida sono destinati alle distribuzioni che non dispongono già di server distribuiti nel cloud. Per creare tutte le risorse e i criteri necessari, è necessario avere il ruolo proprietario in una sottoscrizione. Se sono già state create aree di lavoro Log Analytics e account di automazione, è consigliabile passare queste risorse nei parametri appropriati quando si avviano gli script di automazione di esempio.
 
 ## <a name="onboarding-processes"></a>Processi di onboarding
 
@@ -33,14 +33,16 @@ Questa sezione del materiale sussidiario illustra i seguenti processi di onboard
 Le procedure per ognuno di questi approcci sono diverse.
 
 > [!NOTE]
-> La sequenza di passaggi di onboarding quando si usa la portale di Azure differisce dalla procedura di onboarding automatizzata, perché il portale offre un'esperienza di onboarding più semplice.
+> Quando si usa il portale di Azure, la sequenza di passaggi di caricamento differisce dalla procedura automatica di onboarding. Il portale offre un'esperienza di onboarding più semplice.
 
-Il diagramma seguente illustra il modello di distribuzione consigliato per i servizi di gestione. 
+Il diagramma seguente illustra il modello di distribuzione consigliato per i servizi di gestione:
 
 ![Diagramma del modello di distribuzione consigliato](./media/recommended-deployment.png)
 
-> [!NOTE]
-> Come illustrato nel diagramma precedente, l'agente di Log Analytics dispone di una configurazione di *registrazione automatica* e *consenso esplicito* per i server locali. La *registrazione automatica* indica che quando l'agente di log Analytics è installato in un server e configurato per la connessione a un'area di lavoro, le soluzioni abilitate nell'area di lavoro verranno applicate automaticamente al server. Il *consenso esplicito* significa che anche se l'agente è installato e connesso all'area di lavoro, la soluzione non verrà applicata a meno che non venga aggiunta alla configurazione dell'ambito del server nell'area di lavoro.
+Come illustrato nel diagramma precedente, l'agente di Log Analytics dispone di una configurazione di *registrazione automatica* e *consenso esplicito* per i server locali:
+
+- **Registrazione automatica:** Quando l'agente di Log Analytics viene installato in un server e configurato per la connessione a un'area di lavoro, le soluzioni abilitate in tale area di lavoro vengono applicate automaticamente al server.
+- **Consenso esplicito:** Anche se l'agente è installato e connesso all'area di lavoro, la soluzione non viene applicata a meno che non venga aggiunta alla configurazione dell'ambito del server nell'area di lavoro.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

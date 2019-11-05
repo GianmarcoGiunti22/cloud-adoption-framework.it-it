@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547182"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566057"
 ---
 # <a name="evaluate-risk-tolerance"></a>Valutare la tolleranza ai rischi
 
@@ -38,7 +38,7 @@ I veri rischi aziendali sono basati sui dettagli delle trasformazioni specifiche
 
 Quelli precedenti sono alcuni dei rischi più comuni indicati dai clienti. Il team di governance del cloud e i team di adozione del cloud possono iniziare a sviluppare un profilo di rischio, perché i carichi di lavoro vengono migrati e sono pronti per la versione di produzione. Prepararsi a conversazioni per definire, perfezionare e gestire i rischi in base ai risultati aziendali desiderati e al lavoro di trasformazione.
 
-## <a name="understanding-risk-tolerance"></a>Informazioni sulla tolleranza ai rischi
+## <a name="understand-risk-tolerance"></a>Comprendere la tolleranza al rischio
 
 L'identificazione dei rischi è un processo abbastanza diretto. I rischi correlati all'IT sono generalmente standard in tutti i settori. Tuttavia, la tolleranza per questi rischi è specifica di ogni organizzazione. È qui che le discussioni tra azienda e IT tendono a interrompersi. Ogni parte coinvolta sta essenzialmente parlando una lingua diversa. I confronti e le domande seguenti sono pensati per dare inizio a discussioni che consentono a ogni parte di comprendere e calcolare meglio la tolleranza ai rischi.
 

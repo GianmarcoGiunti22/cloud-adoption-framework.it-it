@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058576"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565682"
 ---
-# <a name="empower-adoption"></a>Supportare l'adozione
+# <a name="empower-adoption"></a>Adozione potenziata
 
 Il test finale dell'innovazione è la reazione dei clienti alla tua invenzione. L'ipotesi è stata rivelata vera? I clienti usano la soluzione? Scalabilità per soddisfare le esigenze della percentuale di utenti desiderata? In particolare, continuano a tornare indietro? Nessuna di queste domande può essere richiesta fino a quando non è stata distribuita la soluzione di prodotto (MVP) minima. In questo articolo si concentrerà sulla disciplina di potenziamento dell'adozione.
 
-## <a name="reducing-friction-to-adoption"></a>Riduzione dell'attrito all'adozione
+## <a name="reduce-friction-that-affects-adoption"></a>Riduzione dell'attrito che influiscono sull'adozione
 
 Ci sono alcuni punti chiave di attrito da adottare che possono essere ridotti al minimo tramite una combinazione di tecnologia e processi. Per i lettori che conoscono i processi di integrazione continua (CI) e distribuzione continua (CD) o DevOps, il codice seguente risulterà molto familiare. Questo articolo intende stabilire un punto di partenza per i team di adozione del cloud, che fornirà i cicli di innovazione e feedback. A lungo termine, questo punto di partenza potrebbe favorire approcci più affidabili di integrazione continua/recapito continuo e DevOps quando i prodotti e i team maturano.
 
@@ -80,7 +80,7 @@ Forse l'aspetto più significativo dell'adozione dell'adozione riguarda la possi
 Sono disponibili diversi metodi per la distribuzione della soluzione. Di seguito sono rappresentate le tre più comuni:
 
 - La **distribuzione continua** è il metodo più avanzato, perché distribuisce automaticamente le modifiche al codice nell'ambiente di produzione. Per i team maturi che testano le ipotesi mature, la distribuzione continua può essere estremamente preziosa.
-- Durante le fasi iniziali dello sviluppo, il **recapito continuo** potrebbe essere più appropriato. Nel recapito continuo tutte le modifiche al codice vengono distribuite automaticamente in un ambiente di tipo produzione. Gli sviluppatori, i decision maker aziendali e altri utenti del team possono utilizzare questo ambiente per verificare che il lavoro sia pronto per la produzione. È anche possibile usare questo metodo per testare un'ipotesi con i clienti senza influire sulle attività aziendali in corso.
+- Durante le fasi iniziali dello sviluppo, il **recapito continuo** potrebbe essere più appropriato. Nel recapito continuo tutte le modifiche al codice vengono distribuite automaticamente in un ambiente di tipo produzione. Gli sviluppatori, i decision maker aziendali e altri utenti del team possono utilizzare questo ambiente per verificare che il lavoro sia pronto per la produzione. È anche possibile usare questo metodo per testare un'ipotesi con i clienti senza influire sulle attività di business in corso.
 - La **distribuzione manuale** è l'approccio meno sofisticato per la gestione delle versioni. Come suggerisce il nome, un utente del team distribuisce manualmente le modifiche apportate al codice più recenti. Questo approccio è soggetto a errori, non affidabile e considerato un antipattern da parte dei tecnici più esperti.
 
 Durante la prima iterazione di una soluzione MVP, la distribuzione manuale è comune, nonostante la valutazione precedente. Quando la soluzione è estremamente fluida e i suggerimenti dei clienti sono sconosciuti, c'è un rischio significativo nella reimpostazione dell'intera soluzione (o anche dell'ipotesi principale). Ecco la regola generale per la distribuzione manuale: nessuna prova del cliente, nessuna automazione della distribuzione.
