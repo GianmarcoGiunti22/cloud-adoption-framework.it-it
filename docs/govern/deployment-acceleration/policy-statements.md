@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547760"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566357"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Esempi di istruzioni dei criteri di Accelerazione della distribuzione
 
 Le singole definizioni dei criteri del cloud sono linee guida per affrontare i rischi specifici identificati durante il processo di valutazione dei rischi. Queste definizioni devono fornire un riassunto conciso dei rischi e dei piani per gestirli. Ogni definizione di istruzione deve includere i tipi di informazioni seguenti:
 
-- **Rischi tecnici.** Riepilogo del rischio che verrà risolto da questi criteri.
-- **Istruzione dei criteri.** Una spiegazione chiara e riepilogativa dei requisiti dei criteri.
-- **Opzioni di progettazione.** Suggerimenti pratici, specifiche o altre linee guida che i team IT e gli sviluppatori possono usare quando implementano i criteri.
+- **Rischio tecnico:** Riepilogo del rischio che verrà indirizzato da questo criterio.
+- **Istruzione per i criteri:** Una chiara spiegazione di riepilogo dei requisiti dei criteri.
+- **Opzioni di progettazione:** Raccomandazioni di utilità pratica, specifiche o altre istruzioni che i team IT e gli sviluppatori possono usare per l'implementazione dei criteri.
 
 Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comuni relativi alla configurazione. Queste istruzioni sono esempi a cui è possibile fare riferimento durante la stesura di istruzioni dei criteri per soddisfare le esigenze dell'organizzazione. Questi esempi non sono destinati a essere proscrittivi e sono potenzialmente disponibili diverse opzioni relative ai criteri per la gestione di ogni rischio identificato. Collaborare a stretto contatto con i team IT e aziendali per identificare i criteri migliori per un set di rischi esclusivo.
 

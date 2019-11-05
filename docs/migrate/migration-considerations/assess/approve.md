@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8e3030a53a7812eea87ec8cd12d492888cc3c421
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549213"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566838"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Approvare le modifiche dell'architettura prima della migrazione
 
@@ -54,7 +54,7 @@ Le procedure consigliate seguenti consentono al CAB di mantenere un livello di f
 
 ### <a name="standardize-change"></a>Standardizzare le modifiche
 
-Per un team di adozione del cloud potrebbe essere allettante prendere in esame decisioni di architettura dettagliate per ogni carico di lavoro di cui viene eseguita la migrazione nel cloud. È altrettanto allettante usare la migrazione nel cloud come catalizzatore per effettuare il refactoring delle decisioni di architettura precedenti. Per le organizzazioni che eseguono la migrazione di poche centinaia di macchine virtuali o poche dozzine di carichi di lavoro, entrambi gli approcci possono essere gestiti correttamente. Quando si esegue la migrazione di un data center costituito da 1000 o più asset, ognuno di questi approcci viene considerato ad alto rischio con riduzione significativa della probabilità di successo. La modernizzazione, il refactoring e la riprogettazione di ogni applicazione richiedono set di competenze diversi e una varietà significativa di modifiche, tutte attività che creano dipendenze da interventi umani su larga scala. Ognuna di queste dipendenze introduce rischi nel processo di migrazione.
+Per un team di adozione del cloud potrebbe essere allettante prendere in esame decisioni di architettura dettagliate per ogni carico di lavoro di cui viene eseguita la migrazione nel cloud. È altrettanto allettante usare la migrazione nel cloud come catalizzatore per effettuare il refactoring delle decisioni di architettura precedenti. Per le organizzazioni che eseguono la migrazione di poche centinaia di macchine virtuali o poche dozzine di carichi di lavoro, entrambi gli approcci possono essere gestiti correttamente. Quando si esegue la migrazione di un data center costituito da 1000 o più asset, ognuno di questi approcci viene considerato ad alto rischio con riduzione significativa della probabilità di successo. La modernizzazione, il refactoring e la riprogettazione di ogni applicazione richiedono diversi set di competenze e una serie significativa di modifiche e queste attività creano dipendenze da sforzi umani su larga scala. Ognuna di queste dipendenze introduce rischi nel processo di migrazione.
 
 L'articolo sulla [razionalizzazione del digital estate](../../../digital-estate/rationalize.md) illustra l'agilità e il risparmio di tempo associati a presupposti di base quando si razionalizza un digital estate. Esiste poi il vantaggio aggiuntivo derivante dalla modifica standardizzata. Scegliendo un approccio di razionalizzazione predefinito per gestire l'attività di migrazione, il comitato consultivo per il cloud o il proprietario del prodotto può rivedere e approvare l'applicazione di una modifica a un lungo elenco di carichi di lavoro. In questo modo si riduce l'approvazione tecnica di ogni carico di lavoro solo a quelli che richiedono una modifica significativa dell'architettura per garantire la compatibilità con il cloud.
 

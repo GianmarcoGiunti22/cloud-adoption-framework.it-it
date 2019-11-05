@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240215"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564207"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introduzione a un percorso di preparazione delle competenze
 
@@ -38,18 +38,15 @@ Il Framework di adozione del cloud guida i lettori attraverso il ciclo di vita d
 
 Ognuno dei percorsi di apprendimento precedenti condivide opportunità tra più tipi di supporti per ottimizzare l'acquisizione delle informazioni.
 
-# <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn è un nuovo approccio all'apprendimento. L'idoneità per le nuove competenze e responsabilità che derivano dall'adozione del cloud non è facile. Microsoft Learn offre un approccio più gratificante all'apprendimento pratico che consente di raggiungere più velocemente i propri obiettivi. Ottieni punti e livelli e Ottieni di più.
 Di seguito sono riportati alcuni esempi di percorsi di apprendimento personalizzati su Microsoft Learn che si allineano alla sezione del piano del Framework di adozione del cloud:
 
-[Evolve le tue procedure DevOps](learn/paths/evolve-your-devops-practices/):D evops è l'Unione di persone, processi e prodotti per consentire il recapito continuo di valore agli utenti finali. Azure DevOps è un set di servizi che offre gli strumenti necessari per eseguire questa operazione. Con Azure DevOps puoi compilare, testare e distribuire qualsiasi applicazione nel cloud o in locale.
+[Evolve le tue procedure DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops è l'Unione di persone, processi e prodotti per consentire il recapito continuo di valore agli utenti finali. Azure DevOps è un set di servizi che offre gli strumenti necessari per eseguire questa operazione. Con Azure DevOps puoi compilare, testare e distribuire qualsiasi applicazione nel cloud o in locale.
 
-[Azure per il Data Engineer](learn/paths/azure-for-the-data-engineer/): esplorare il modo in cui si è evoluto il mondo dei dati e il modo in cui l'avvento delle tecnologie cloud fornisce nuove opportunità per l'esplorazione delle aziende. Verranno illustrate le diverse tecnologie della piattaforma dati disponibili e il modo in cui un ingegnere dei dati può trarre vantaggio da questa tecnologia per un vantaggio aziendale.     
+[Azure per il Data Engineer](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): esplorare il modo in cui si è evoluto il mondo dei dati e il modo in cui l'avvento delle tecnologie cloud fornisce nuove opportunità per l'esplorazione delle aziende. Verranno illustrate le diverse tecnologie della piattaforma dati disponibili e il modo in cui un ingegnere dei dati può trarre vantaggio da questa tecnologia per un vantaggio aziendale.
 
-Per individuare percorsi di apprendimento aggiuntivi, esplorare il [Learn Catalog] (/Learn/Browse). Usare il filtro ruoli per allineare i percorsi di apprendimento al ruolo.
+## <a name="learn-more"></a>Altre informazioni.
 
-
-
-
-
+Per individuare percorsi di apprendimento aggiuntivi, esplorare il [catalogo Microsoft Learn](https://docs.microsoft.com/learn/browse). Usare il filtro ruoli per allineare i percorsi di apprendimento al ruolo.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029234"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566584"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Creare un modello finanziario per la trasformazione del cloud
 
@@ -28,13 +28,13 @@ Return on Investment (ROI) è spesso un criterio importante per il gruppo C-Suit
 
 Nelle sezioni successive verranno illustrati i dati necessari per calcolare l'investimento iniziale e il guadagno da investimenti (guadagni).
 
-## <a name="calculating-initial-investment"></a>Calcolo dell'investimento iniziale
+## <a name="calculate-initial-investment"></a>Calcolare gli investimenti iniziali
 
 Gli investimenti iniziali sono le spese di capitale e i costi operativi necessari per completare una trasformazione. La classificazione dei costi può variare a seconda delle preferenze del direttore delle finanze e dei modelli di contabilità. Questa categoria include tuttavia elementi come servizi professionali da trasformare, licenze software usate solo durante la trasformazione, il costo dei servizi cloud durante la trasformazione e potenzialmente il costo dei dipendenti stipendiati durante la trasformazione .
 
 Aggiungere questi costi per creare una stima dell'investimento iniziale.
 
-## <a name="calculating-the-gain-from-investment"></a>Calcolo del guadagno dell'investimento
+## <a name="calculate-the-gain-from-investment"></a>Calcolo del guadagno dall'investimento
 
 Il calcolo del guadagno dall'investimento spesso richiede una seconda formula specifica per i risultati aziendali e le modifiche tecniche associate. Il calcolo dei guadagni è più difficile del calcolo delle riduzioni dei costi.
 

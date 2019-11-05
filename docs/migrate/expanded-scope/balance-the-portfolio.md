@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548595"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566934"
 ---
 # <a name="balance-the-portfolio"></a>Bilanciare il portfolio
 
@@ -23,7 +23,7 @@ L'adozione del cloud è un progetto di gestione del portfolio, astutamente camuf
 
 Questo argomento è strategico. Di conseguenza, l'approccio adottato in questo articolo lo è altrettanto. Per fondare la strategia nelle decisioni basate sui dati, questo articolo presuppone che sia già stata fatta una valutazione riguardo il [digital estate](../../digital-estate/index.md) esistente o si sia in procinto di farlo. L'obiettivo di questo approccio consiste nell'agevolare la valutazione dei carichi di lavoro per garantire un bilanciamento corretto del portfolio attraverso domande qualitative e perfezionamento del portfolio.
 
-### <a name="documenting-business-outcomes"></a>Documentazione dei risultati aziendali
+### <a name="document-business-outcomes"></a>Documentare i risultati aziendali
 
 Prima di bilanciare il portfolio, è importante documentare e condividere i risultati aziendali alla base del lavoro richiesto per la migrazione del cloud. Per alcuni esempi di risultati aziendali generali relativi alle migrazioni cloud, vedere il [riepilogo di cloud Migration Executive](../../getting-started/migrate.md).
 
@@ -47,7 +47,7 @@ Il materiale sussidiario relativo alla [razionalizzazione incrementale del digit
 
 ### <a name="importance-of-sunset-and-retire-decisions"></a>Importanza delle decisioni relative al termine e al ritiro
 
-La tabella presente nella sezione precedente relativa alla [documentazione dei risultati aziendali](#documenting-business-outcomes), non presenta un risultato chiave che supporterebbe l'obiettivo principale nella riduzione dei costi IT. Quando le riduzioni dei costi IT si collocano in qualsiasi punto dell'elenco dei risultati aziendali, è importante considerare il potenziale per terminare o ritirare i carichi di lavoro. In alcuni scenari, il risparmio sui costi può derivare dalla MANCATA migrazione dei carichi di lavoro che non garantiscono un investimento a breve termine. Alcuni clienti hanno segnalato risparmi sui costi superiori al 20% di riduzione dei costi totali grazie al ritiro dei carichi di lavoro poco sfruttati.
+La tabella presente nella sezione precedente relativa alla [documentazione dei risultati aziendali](#document-business-outcomes), non presenta un risultato chiave che supporterebbe l'obiettivo principale nella riduzione dei costi IT. Quando le riduzioni dei costi IT si collocano in qualsiasi punto dell'elenco dei risultati aziendali, è importante considerare il potenziale per terminare o ritirare i carichi di lavoro. In alcuni scenari, il risparmio sui costi può derivare dalla MANCATA migrazione dei carichi di lavoro che non garantiscono un investimento a breve termine. Alcuni clienti hanno segnalato risparmi sui costi superiori al 20% di riduzione dei costi totali grazie al ritiro dei carichi di lavoro poco sfruttati.
 
 Per bilanciare il portfolio in modo da riflettere meglio le decisioni relative al termine e al ritiro, il team di strategia del cloud e il team di adozione del cloud sono invitati a porre le domande seguenti riguardo ogni carico di lavoro all'interno dei processi di valutazione e migrazione:
 
@@ -74,7 +74,7 @@ Per il bilanciamento del portfolio è necessaria un'analisi qualitativa aggiunti
 
 ### <a name="suggested-action-during-the-assess-process"></a>Azione suggerita durante il processo di valutazione
 
-In base ai dati della tabella riportata nella sezione precedente relativa alla [documentazione dei risultati aziendali](#documenting-business-outcomes) è probabile che il portfolio si avvicini troppo a un modello di esecuzione incentrato sulla migrazione. Se l'esperienza del cliente fosse in cima alle priorità sarebbe più probabile ottenere un portfolio altamente innovativo. Non è giusto o sbagliato, ma propendere troppo in una direzione si traduce comunemente in una diminuzione dei ritorni, aggiunge inutili complessità e aumenta i tempi di esecuzione legati ai lavori richiesti per l'adozione del cloud.
+In base ai dati della tabella riportata nella sezione precedente relativa alla [documentazione dei risultati aziendali](#document-business-outcomes) è probabile che il portfolio si avvicini troppo a un modello di esecuzione incentrato sulla migrazione. Se l'esperienza del cliente fosse in cima alle priorità sarebbe più probabile ottenere un portfolio altamente innovativo. Non è giusto o sbagliato, ma propendere troppo in una direzione si traduce comunemente in una diminuzione dei ritorni, aggiunge inutili complessità e aumenta i tempi di esecuzione legati ai lavori richiesti per l'adozione del cloud.
 
 Per ridurre la complessità è consigliabile seguire un approccio tradizionale alla razionalizzazione del portfolio ma in un modello iterativo. La procedura seguente illustra un modello qualitativo per un approccio di questo tipo:
 
@@ -113,13 +113,13 @@ Si consiglia di segmentare i diversi lavori richiesti tra due o più team di ado
 
 **Refactoring secondario:** Alcune applicazioni possono essere modernizzate con il refactoring secondario a livello di dati o di applicazione. Questo lavoro richiede che i membri del team distribuiscano i dati in piattaforme dati basate su cloud o che apportino modifiche secondarie alla configurazione dell'applicazione. Questo potrebbe richiedere un supporto limitato per gli esperti di dominio dati o sviluppo di applicazioni. Tuttavia, questo lavoro è simile a quello condotto dagli implementatori IT durante la distribuzione di app di terze parti. Questo lavoro si allinea facilmente al team di migrazione del cloud o al team di strategia del cloud. Sebbene questa operazione non sia più veloce di una migrazione di rehosting, è necessario meno tempo per eseguire il refactoring.
 
-Durante la migrazione, si consiglia di segmentare i lavori richiesti nei tre modi elencati in precedenza e di far eseguire tali attività dal team appropriato nell'iterazione appropriata. Sebbene sia consigliata una diversificazione del portfolio è anche consigliabile che le attività restino molto mirate e separate.
+Durante la migrazione, le attività devono essere segmentate nei tre modi elencati sopra ed eseguite dal team appropriato nell'iterazione appropriata. Sebbene sia necessario diversificare il portfolio, assicurarsi che gli sforzi continuino a concentrarsi e separare.
 
 ## <a name="optimize-and-promote-process-changes"></a>Modifiche dei processi di ottimizzazione e promozione
 
 Non sono necessarie altre modifiche durante i processi di ottimizzazione e promozione all'interno del lavoro richiesto per la migrazione.
 
-## <a name="secure-and-manage-process-changes"></a>Modifiche dei processi di protezione e gestione
+## <a name="secure-and-manage-process-changes"></a>Proteggere e gestire le modifiche al processo
 
 Non sono necessarie modifiche aggiuntive durante i processi di sicurezza e gestione all'interno del lavoro richiesto per la migrazione.
 

@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240167"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564029"
 ---
 # <a name="perimeter-networks"></a>Reti perimetrali
 
@@ -27,9 +27,9 @@ Per rendere efficaci le reti perimetrali, è necessario che i pacchetti in ingre
 Le reti perimetrali usano le funzionalità e i servizi di Azure seguenti:
 
 - [Reti virtuali][virtual-networks], [route definite dall'utente][user-defined-routes] e [gruppi di sicurezza di rete][network-security-groups]
-- [Appliance virtuali di rete][NVA]
+- [Appliance virtuali di rete (appliance virtuali)][NVA]
 - [Servizio di bilanciamento del carico di Azure][ALB]
-- [Gateway applicazione di Azure][AppGW] e [web application firewall][AppGWWAF] (WAF)
+- [Gateway][AppGW] e web application firewall di applicazione Azure [(WAF)][AppGWWAF]
 - [IP pubblici][PIP]
 - [Frontdoor di Azure][AFD] con [web application firewall][AFDWAF]
 - [Firewall di Azure][AzFW]

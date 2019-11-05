@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239335"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566440"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Esempi e modelli di migrazione delle applicazioni
 
@@ -88,7 +88,7 @@ Di seguito sono riepilogati gli articoli della serie.
 [Eseguire il rehosting di un'app in una macchina virtuale di Azure e in Istanza gestita di database SQL](./contoso-migration-rehost-vm-sql-managed-instance.md) | Questo articolo fornisce un esempio di migrazione in modalità Lift-and-Shift ad Azure per un'app locale. Questa operazione comporta la migrazione della macchina virtuale front-end dell'app con [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) e del database dell'app a Istanza gestita di database SQL di Azure con [Servizio Migrazione del database di Azure](https://docs.microsoft.com/azure/dms/dms-overview).
 [Eseguire il rehosting di un'app in macchine virtuali di Azure e in un gruppo di disponibilità AlwaysOn di SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | Questo esempio illustra come eseguire la migrazione di un'app e dei dati usando macchine virtuali di SQL Server ospitate in Azure. Viene usato Site Recovery per la migrazione delle macchine virtuali dell'app e Servizio Migrazione del database di Azure per la migrazione del database dell'app a un cluster di SQL Server protetto da un gruppo di disponibilità AlwaysOn.
 
-### <a name="aspnet--php--java-apps"></a>App ASP.NET/PHP/Java
+### <a name="aspnet-php-and-java-apps"></a>App ASP.NET, PHP e Java
 
 **Articolo** | **Dettagli**
 --- | ---

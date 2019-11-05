@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547698"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566338"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guida alla governance per le aziende complesse: migliorare la disciplina di gestione dei costi
 
@@ -57,7 +57,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 - Tutti i costi del cloud devono essere monitorati in base a un piano settimanale dal team di governance del cloud. I report sulle deviazioni tra i costi del cloud e il piano stabilito devono essere condivisi con i responsabili IT e l'amministrazione con frequenza mensile. Tutti i costi del cloud e gli aggiornamenti del piano devono essere controllati ogni mese con i responsabili IT e l'amministrazione.
 - Tutti i costi devono essere allocati in una funzione aziendale ai fini della rendicontazione.
 - Gli asset del cloud devono essere monitorati costantemente per eventuali opportunità di ottimizzazione.
-- Gli strumenti di governance del cloud devono limitare le opzioni relative alle dimensioni degli asset a un elenco approvato di configurazioni. Gli strumenti devono assicurare che tutti gli asset siano individuabili e tracciati dalla soluzione di monitoraggio dei costi.
+- Gli strumenti di governance del cloud devono limitare le opzioni di ridimensionamento delle risorse a un elenco approvato di configurazioni. Gli strumenti devono assicurare che tutti gli asset siano individuabili e tracciati dalla soluzione di monitoraggio dei costi.
 - Durante la pianificazione della distribuzione, è necessario documentare tutte le risorse cloud necessarie associate all'hosting dei carichi di lavoro di produzione. Questa documentazione aiuterà a perfezionare i budget e a preparare altri strumenti di automazione per impedire l'uso di opzioni più dispendiose. Durante questo processo, è consigliabile prestare attenzione alle diverse opportunità di sconto offerte dal provider di servizi cloud, ad esempio istanze riservate o riduzioni dei costi di licenza.
 - Tutti i proprietari di applicazioni devono partecipare a training sulle procedure consigliate al fine di ottimizzare i carichi di lavoro per un controllo più efficace dei costi del cloud.
 

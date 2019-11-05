@@ -1,5 +1,5 @@
 ---
-title: Valutare i carichi di lavoro locali per la migrazione in Azure
+title: Valuta i carichi di lavoro locali per la migrazione ad Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni su come Contoso valuta i computer locali per la migrazione ad Azure con Azure Migrate e Data Migration Assistant.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221458"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566484"
 ---
-# <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Valutare i carichi di lavoro locali per la migrazione in Azure
+# <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Valuta i carichi di lavoro locali per la migrazione ad Azure
 
 Questo articolo illustra come la società fittizia Contoso valuta un'app locale per la migrazione ad Azure. Nello scenario di esempio, l'app SmartHotel360 locale di Contoso è attualmente in esecuzione in VMware. Contoso valuta le macchine virtuali dell'app con il servizio Azure Migrate e il database di SQL Server dell'app con Data Migration Assistant.
 
@@ -49,7 +49,7 @@ Questo diagramma illustra l'infrastruttura locale corrente di Contoso:
 - Contoso usa Active Directory per la gestione delle identità e i server DNS nella rete interna.
 - I controller di dominio nel data center vengono eseguiti in macchine virtuali VMware. Il controller di dominio nelle filiali locali vengono eseguiti in server fisici.
 
-## <a name="business-drivers"></a>Driver di business
+## <a name="business-drivers"></a>Fattori chiave per lo sviluppo aziendale
 
 Il team dei responsabili IT di Contoso ha collaborato attivamente con i partner commerciali dell'azienda per comprendere gli obiettivi da raggiungere con questa migrazione:
 
@@ -71,9 +71,9 @@ Il team dedicato al cloud di Contoso ha identificato alcuni obiettivi per le val
 
 Contoso usa gli strumenti Microsoft per la valutazione della migrazione. Questi strumenti sono in linea con gli obiettivi aziendali prefissati e devono offrire a Contoso tutte le informazioni necessarie.
 
-Tecnologia | Descrizione | Costo
+Tecnologia | Description | Costo
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso usa Data Migration Assistant per valutare e rilevare i problemi di compatibilità che potrebbero compromettere le funzionalità del database in Azure. Data Migration Assistant valuta la parità delle funzionalità tra origini e destinazioni SQL e consiglia miglioramenti per le prestazioni e l'affidabilità. | Data Migration Assistant è uno strumento gratuito e scaricabile.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso usa Data Migration Assistant per valutare e rilevare i problemi di compatibilità che potrebbero compromettere le funzionalità del database in Azure. Data Migration Assistant valuta la parità delle funzionalità tra origini e destinazioni SQL e consiglia miglioramenti per le prestazioni e l'affidabilità. | Data Migration Assistant è uno strumento gratuito e scaricabile.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso usa il servizio Azure Migrate per valutare le proprie macchine virtuali VMware. Azure Migrate valuta l'idoneità alla migrazione delle macchine. Fornisce stime di dimensioni e costi per l'esecuzione in Azure. | A partire da maggio 2018, Azure Migrate è un servizio gratuito.
 [Elenco dei servizi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate usa Mapping dei servizi per mostrare le dipendenze tra le macchine di cui l'azienda vuole eseguire la migrazione. | Elenco dei servizi fa parte dei log di Monitoraggio di Azure. Attualmente, Contoso può usare Mapping dei servizi per 180 giorni senza addebito di costi.
 
@@ -121,12 +121,12 @@ Ecco come Contoso esegue la valutazione:
 
 > [!div class="checklist"]
 >
-> - **Passaggio 1: Scaricare e installare Data Migration Assistant.** Contoso prepara Data Migration Assistant per la valutazione del database di SQL Server locale.
-> - **Passaggio 2: Valutare il database locale usando Data Migration Assistant.** Contoso esegue e analizza la valutazione del database.
-> - **Passaggio 3: Preparare la valutazione delle macchine virtuali con Azure Migrate.** Contoso configura gli account locali e configura le impostazioni di VMware.
-> - **Passaggio 4: Individuare le macchine virtuali locali con Azure Migrate.** Contoso crea una macchina virtuale dell'agente di raccolta di Azure Migrate. Contoso esegue quindi l'agente di raccolta per individuare le macchine virtuali per la valutazione.
-> - **Passaggio 5: Preparare l'analisi delle dipendenze con Azure Migrate.** Contoso installa gli agenti di Azure Migrate nelle macchine virtuali per poter verificare il mapping delle dipendenze tra le macchine virtuali.
-> - **Passaggio 6: Valutare le macchine virtuali con Azure Migrate.** Contoso verifica le dipendenze, raggruppa le macchine virtuali ed esegue la valutazione. Quando la valutazione è pronta, Contoso la analizza in preparazione per la migrazione.
+> - **Passaggio 1: scaricare e installare Data Migration Assistant.** Contoso prepara Data Migration Assistant per la valutazione del database di SQL Server locale.
+> - **Passaggio 2: valutare il database usando Data Migration Assistant.** Contoso esegue e analizza la valutazione del database.
+> - **Passaggio 3: preparare la valutazione della macchina virtuale usando Azure Migrate.** Contoso configura gli account locali e configura le impostazioni di VMware.
+> - **Passaggio 4: individuare le macchine virtuali locali usando Azure Migrate.** Contoso crea una macchina virtuale dell'agente di raccolta di Azure Migrate. Contoso esegue quindi l'agente di raccolta per individuare le macchine virtuali per la valutazione.
+> - **Passaggio 5: preparare l'analisi delle dipendenze usando Azure Migrate.** Contoso installa gli agenti di Azure Migrate nelle macchine virtuali per poter verificare il mapping delle dipendenze tra le macchine virtuali.
+> - **Passaggio 6: valutare le macchine virtuali usando Azure Migrate.** Contoso verifica le dipendenze, raggruppa le macchine virtuali ed esegue la valutazione. Quando la valutazione è pronta, Contoso la analizza in preparazione per la migrazione.
 
     > [!NOTE]
     > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
@@ -188,7 +188,7 @@ I risultati vengono visualizzati non appena disponibili. Se Contoso corregge i p
     ![Data Migration Assistant - Report Funzionalità consigliate](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso deve [abilitare Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) per tutti i database di SQL Server. Ciò è ancora più importante quando un database si trova nel cloud rispetto a quando è ospitato in locale. Transparent Data Encryption deve essere abilitata solo dopo la migrazione. Se la funzionalità Transparent Data Encryption è già abilitata, Contoso deve spostare il certificato o la chiave asimmetrica nel database master del server di destinazione. Informazioni su come [spostare un database protetto con Transparent Data Encryption in un'altra istanza di SQL Server](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
+    > Contoso deve [abilitare Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) per tutti i database di SQL Server. Ciò è ancora più importante quando un database si trova nel cloud rispetto a quando è ospitato in locale. Transparent Data Encryption deve essere abilitata solo dopo la migrazione. Se la funzionalità Transparent Data Encryption è già abilitata, Contoso deve spostare il certificato o la chiave asimmetrica nel database master del server di destinazione. Informazioni su come [spostare un database protetto con Transparent Data Encryption in un'altra istanza di SQL Server](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
 
 3. Contoso può esportare la valutazione nel formato JSON o CSV.
 
@@ -196,8 +196,8 @@ I risultati vengono visualizzati non appena disponibili. Se Contoso corregge i p
 > Per le valutazioni su larga scala:
 >
 > - Eseguire più valutazioni contemporaneamente e visualizzarne lo stato nella pagina relativa a **Tutte le valutazioni**.
-> - Consolidare le valutazioni in un [database di SQL Server](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
-> - Consolidare le valutazioni in un [report di Power BI](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
+> - Consolidare le valutazioni in un [database di SQL Server](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
+> - Consolidare le valutazioni in un [report di Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Passaggio 3: Preparare la valutazione delle macchine virtuali con Azure Migrate
 
@@ -208,8 +208,8 @@ Contoso deve creare un account VMware che può essere usato da Azure Migrate per
 L'individuazione delle macchine virtuali richiede un account di sola lettura nel server vCenter, con le proprietà seguenti:
 
 - **Tipo di utente:** Almeno un utente di sola lettura.
-- **Permissions** (Autorizzazioni): per l'oggetto data center selezionare la casella di controllo **Propagate to Child Objects** (Propaga a oggetti figlio). Per **Ruolo** selezionare **Sola lettura**.
-- **Dettagli:** l'utente viene assegnato a livello di data center, con accesso a tutti gli oggetti nel data center.
+- **Autorizzazioni:** Per l'oggetto datacenter, selezionare la casella **di controllo propaga a oggetti figlio** . Per **Ruolo** selezionare **Sola lettura**.
+- **Dettagli:** L'utente viene assegnato a livello di Data Center, con accesso a tutti gli oggetti nel Data Center.
 - Per limitare l'accesso, assegnare il ruolo **No access** (Nessun accesso) con **Propagate to Child Objects** (Propaga a oggetti figlio) agli oggetti figlio (host vSphere, archivi dati, macchine virtuali e reti).
 
 ### <a name="verify-permissions-to-create-a-vm"></a>Verificare le autorizzazioni per creare una VM
@@ -220,11 +220,11 @@ Contoso verifica di avere le autorizzazioni per creare una macchina virtuale imp
 
 La valutazione di Contoso usa il mapping delle dipendenze. Il mapping delle dipendenze richiede l'installazione di un agente nelle macchine virtuali che verranno valutate. L'agente deve potersi connettere ad Azure dalla porta TCP 443 in ogni macchina virtuale. Vedere altre informazioni sui [requisiti di connessione](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
 
-## <a name="step-4-discover-vms"></a>Passaggio 4: Individuare le VM
+## <a name="step-4-discover-vms"></a>Passaggio 4: Individuare le macchine virtuali
 
 Per individuare le macchine virtuali in Contoso, si crea un progetto di Azure Migrate. Contoso Scarica e configura la macchina virtuale dell'agente di raccolta. Contoso esegue quindi l'agente di raccolta per individuare le macchine virtuali in locale.
 
-### <a name="create-a-project"></a>Crea un progetto
+### <a name="create-a-project"></a>Creare un progetto
 
 Per configurare un nuovo progetto di Azure Migrate, seguire questa procedura.
 
@@ -245,9 +245,9 @@ Per configurare un nuovo progetto di Azure Migrate, seguire questa procedura.
     - L'area geografica del progetto viene usata solo per archiviare i metadati raccolti dalle macchine virtuali locali.
     - Per la migrazione è possibile selezionare qualsiasi area di destinazione.
 
-7. Fare clic su **Avanti**.
+7. Fare clic su **Next** (Avanti).
 
-8. In **Selezionare lo strumento di valutazione** selezionare **Azure Migrate: Valutazione server** > **Avanti**.
+8. In **Seleziona strumento di valutazione**selezionare **Azure migrate: server Assessment** > **Avanti**.
 
     ![Azure Migrate - Strumento di valutazione](./media/contoso-migration-assessment/assessment-tool.png)
 
@@ -259,9 +259,9 @@ Per configurare un nuovo progetto di Azure Migrate, seguire questa procedura.
 
 ### <a name="download-the-collector-appliance"></a>Scaricare l'appliance dell'agente di raccolta
 
-1. In **Obiettivi della migrazione** > **Server** > **Azure Migrate: Valutazione server** fare clic su **Individua**.
+1. In **obiettivi di migrazione** > **Server** > **Azure migrate: server Assessment**, **fare clic su individua**.
 
-2. In **Individua macchine virtuali** > **I computer sono virtualizzati?** fare clic su **Sì, con VMware vSphere Hypervisor**.
+2. In **individua macchine** **virtuali > i computer sono virtualizzati?** fare clic su **Sì con VMware vSphere Hypervisor**.
 
 3. Fare clic su **Scarica** per scaricare il file di modello OVA.
 
@@ -279,7 +279,7 @@ Prima di distribuire la macchina virtuale, Contoso verifica che il file OVA sia 
     **Esempio:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. L'hash generato deve corrispondere ai valori hash elencati nella sezione [Verificare la sicurezza](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) dell'esercitazione [Valutare le VM VMWare per la migrazione](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
+3. L'hash generato deve corrispondere ai valori hash elencati nella sezione [verificare la sicurezza](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) dell'esercitazione [valutare le macchine virtuali VMware per la migrazione](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
 
 ### <a name="create-the-collector-appliance"></a>Creare l'appliance dell'agente di raccolta
 
@@ -305,7 +305,7 @@ A questo punto, Contoso esegue l'agente di raccolta per individuare le macchine 
     ![Console di vSphere Client - Collegamento per l'agente di raccolta](./media/contoso-migration-assessment/collector-shortcut-v2.png)
 
 3. In Agente di raccolta di Azure Migrate, Contoso seleziona **Configura i prerequisiti**. Contoso accetta le condizioni di licenza e legge le informazioni di terze parti.
-4. L'agente di raccolta controlla che la macchina virtuale abbia accesso a Internet, che l'ora sia sincronizzata e che il servizio dell'agente di raccolta sia in esecuzione. (Il servizio dell'agente di raccolta è installato per impostazione predefinita nella macchina virtuale.) Contoso installa anche VMware vSphere Virtual Disk Development Kit.
+4. L'agente di raccolta controlla che la macchina virtuale abbia accesso a Internet, che l'ora sia sincronizzata e che il servizio dell'agente di raccolta sia in esecuzione. Il servizio agente di raccolta viene installato per impostazione predefinita nella macchina virtuale. Contoso installa anche il VMware vSphere Virtual Disk Development Kit.
 
     > [!NOTE]
     > Si presume che la macchina virtuale abbia accesso diretto a Internet, senza usare un proxy.
@@ -394,6 +394,7 @@ Contoso esegue l'installazione in ogni macchina virtuale.
     `sudo -i`
 
 3. Contoso installa MMA:
+
     - Contoso immette l'ID e la chiave dell'area di lavoro nel comando.
     - I comandi sono per la versione a 64 bit.
     - La chiave primaria e l'ID dell'area di lavoro si trovano nell'area di lavoro Log Analytics nel portale di Azure. Selezionare **Impostazioni** e quindi selezionare la scheda **Origini connesse**.

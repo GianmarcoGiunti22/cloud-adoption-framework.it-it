@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0efdd1a42ae7ff161c29f37365d0a14d4d869496
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547357"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566649"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Riprogettazione di un'app in locale in un contenitore di Azure e nel database SQL di Azure
 
@@ -26,8 +26,8 @@ L'app SmartHotel360 usata in questo esempio viene fornita come open source. È p
 
 Il team di leadership IT di Contoso collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
-- **Aumentare l'efficienza:** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
+- **Stare al passo con la crescita del business.** Contoso è in espansione e di conseguenza l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
+- **Aumentare l'efficienza.** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
 - **Aumentare l'agilità.** il settore IT di Contoso deve essere più reattivo alle esigenze dell'azienda. Deve essere in grado di reagire più rapidamente ai cambiamenti nel marketplace, in modo da raggiungere risultati di successo in un'economia globale. Non deve rappresentare un ostacolo per le attività aziendali.
 - **Scalabilità.** il settore IT di Contoso deve fornire sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 - **Ridurre i costi:** Contoso desidera ridurre al minimo i costi di licenza.
@@ -40,7 +40,7 @@ Il team di cloud di Contoso ha fissato alcuni obiettivi per la migrazione. Quest
 
 **Obiettivi** | **Dettagli**
 --- | ---
-**Requisiti dell'app** | L'app in Azure manterrà il livello di criticità attuale.<br/><br/> Deve avere le stesse funzionalità di prestazioni di cui dispone attualmente in VMware.<br/><br/> Contoso intende interrompere il supporto per Windows Server 2008 R2, in cui l'app è attualmente in esecuzione, ed è disposta a investire nell'app.<br/><br/> Contoso intende passare da SQL Server 2008 R2 a una piattaforma di database PaaS moderna, per ridurre al minimo la necessità di gestione.<br/><br/> Contoso vuole sfruttare gli investimenti effettuati nelle licenze di SQL Server e Software Assurance, laddove possibile.<br/><br/> Contoso intende essere in grado di aumentare il livello dell'app Web.
+**Requisiti dell'app** | L'app in Azure manterrà il livello di criticità attuale.<br/><br/> Deve avere le stesse funzionalità di performance che attualmente ha in VMware.<br/><br/> Contoso intende interrompere il supporto per Windows Server 2008 R2, in cui l'app è attualmente in esecuzione, ed è disposta a investire nell'app.<br/><br/> Contoso intende passare da SQL Server 2008 R2 a una piattaforma di database PaaS moderna, per ridurre al minimo la necessità di gestione.<br/><br/> Contoso desidera sfruttare gli investimenti effettuati nelle licenze di SQL Server e Software Assurance, laddove possibile.<br/><br/> Contoso intende essere in grado di aumentare il livello dell'app Web.
 **Limitazioni** | L'app è costituita da un'app ASP.NET e un servizio WCF in esecuzione nella stessa macchina virtuale. Contoso intende suddividere questa app in due app Web usando il servizio app di Azure.
 **Richieste di Azure** | Contoso intende spostare l'app in Azure ed eseguirla in un contenitore per prolungarne la durata. Non vuole iniziare completamente da zero per implementare l'app in Azure.
 **DevOps** | Contoso intende passare a un modello DevOps usando Azure DevOps Services per le pipeline di compilazione e di versione del codice.
@@ -99,7 +99,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Servizio** | **Descrizione** | **Costii**
 --- | --- | ---
-[Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Valuta e rileva i problemi di compatibilità che possono influire sulle funzionalità del database in Azure. DMA valuta l'analogia nelle funzionalità tra le origini e le destinazioni SQL e consiglia miglioramenti nelle prestazioni e nell'affidabilità. | Questo strumento è scaricabile gratuitamente.
+[Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Valuta e rileva i problemi di compatibilità che possono influire sulle funzionalità del database in Azure. DMA valuta l'analogia nelle funzionalità tra le origini e le destinazioni SQL e consiglia miglioramenti nelle prestazioni e nell'affidabilità. | Questo strumento è scaricabile gratuitamente.
 [Database SQL di Azure](https://azure.microsoft.com/services/sql-database) | Fornisce un servizio di database cloud relazionale intelligente completamente gestito. | Costo in base a funzionalità, velocità effettiva e dimensioni. [Altre informazioni](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Registro Azure Container](https://azure.microsoft.com/services/container-registry) | Archivia le immagini per tutti i tipi di distribuzioni di contenitori. | Costo in base a funzionalità, archiviazione e durata dell'utilizzo. [Altre informazioni](https://azure.microsoft.com/pricing/details/container-registry).
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Crea e gestisce app distribuite, scalabili e sempre disponibili | Costo in base a dimensioni, posizione e durata dei nodi di calcolo. [Altre informazioni](https://azure.microsoft.com/pricing/details/service-fabric).

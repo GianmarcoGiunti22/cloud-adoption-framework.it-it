@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0118fcf3ca5b724a90d5e68482bfe6fe1a7e6abb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548212"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566567"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Effettuare il refactoring di un'app locale in un'app Web di Servizio app di Azure e nel database SQL di Azure
 
@@ -26,8 +26,8 @@ L'app SmartHotel360 usata in questo esempio viene fornita come open source. È p
 
 Il team di leadership IT collabora attivamente con i partner commerciali per capire gli obiettivi da raggiungere con questa migrazione:
 
-- **Stare al passo con la crescita aziendale:** Contoso è in espansione e l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
-- **Aumentare l'efficienza:** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
+- **Stare al passo con la crescita del business.** Contoso è in espansione e l'infrastruttura e i sistemi locali iniziano a sentirne la pressione.
+- **Aumentare l'efficienza.** occorre rimuovere le procedure inutili e semplificare i processi per sviluppatori e utenti. L'azienda richiede un settore IT rapido ed efficiente in termini di tempo e costi, in modo da soddisfare più velocemente le esigenze dei clienti.
 - **Aumentare l'agilità.**  il settore IT di Contoso deve essere più reattivo alle esigenze dell'azienda. Deve essere in grado di reagire più rapidamente ai cambiamenti nel marketplace, in modo da raggiungere risultati di successo in un'economia globale. Non deve rappresentare un ostacolo per le attività aziendali.
 - **Scalabilità.** il settore IT di Contoso deve fornire sistemi in grado di crescere di pari passo con l'espansione dell'azienda.
 - **Ridurre i costi:** Contoso desidera ridurre al minimo i costi di licenza.
@@ -40,7 +40,7 @@ Il team di cloud di Contoso ha fissato alcuni obiettivi per la migrazione. Quest
 
 **Requisiti** | **Dettagli**
 --- | ---
-**App** | L'app in Azure manterrà il livello di criticità attuale.<br/><br/> Deve avere le stesse funzionalità di prestazioni di cui dispone attualmente in VMware.<br/><br/> Il team non intende investire nell'app. Per il momento, gli amministratori spostano semplicemente l'app in modo sicuro nel cloud.<br/><br/> Il team intende interrompere il supporto Windows Server 2008 R2, in cui viene attualmente eseguita l'app.<br/><br/> Il team intende passare da SQL Server 2008 R2 a una piattaforma di database PaaS moderna, per ridurre al minimo la necessità di gestione.<br/><br/> Contoso vuole sfruttare gli investimenti effettuati nelle licenze di SQL Server e Software Assurance, laddove possibile.<br/><br/> Contoso vuole anche ridurre il singolo punto di guasto nel livello Web.
+**App** | L'app in Azure manterrà il livello di criticità attuale.<br/><br/> Deve avere le stesse funzionalità di performance che attualmente ha in VMware.<br/><br/> Il team non intende investire nell'app. Per il momento, gli amministratori spostano semplicemente l'app in modo sicuro nel cloud.<br/><br/> Il team intende interrompere il supporto Windows Server 2008 R2, in cui viene attualmente eseguita l'app.<br/><br/> Il team intende passare da SQL Server 2008 R2 a una piattaforma di database PaaS moderna, per ridurre al minimo la necessità di gestione.<br/><br/> Contoso desidera sfruttare gli investimenti effettuati nelle licenze di SQL Server e Software Assurance, laddove possibile.<br/><br/> Contoso vuole anche ridurre il singolo punto di guasto nel livello Web.
 **Limitazioni** | L'app è costituita da un'app ASP.NET e un servizio WCF in esecuzione nella stessa macchina virtuale. Si desidera suddividere questa tra due app Web usando il Servizio app di Azure.
 **Azure** | Contoso intende spostare l'app in Azure, ma non eseguirlo nelle macchine virtuali. Contoso intende usare i servizi PaaS di Azure per i livelli Web e dati.
 **DevOps** | Contoso intende passare a un modello DevOps usando Azure DevOps per le pipeline di compilazione e di versione del codice.
@@ -97,7 +97,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Servizio** | **Descrizione** | **Costii**
 --- | --- | ---
-[Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso usa DMA per valutare e rilevare i problemi di compatibilità che possono compromettere le funzionalità dei database in Azure. DMA valuta l'analogia nelle funzionalità tra le origini e le destinazioni SQL e consiglia miglioramenti nelle prestazioni e nell'affidabilità. | Questo strumento è scaricabile gratuitamente.
+[Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso usa DMA per valutare e rilevare i problemi di compatibilità che possono compromettere le funzionalità dei database in Azure. DMA valuta l'analogia nelle funzionalità tra le origini e le destinazioni SQL e consiglia miglioramenti nelle prestazioni e nell'affidabilità. | Questo strumento è scaricabile gratuitamente.
 [Database SQL di Azure](https://azure.microsoft.com/services/sql-database) | Servizio di database cloud relazionale intelligente completamente gestito. | Costo in base a funzionalità, velocità effettiva e dimensioni. [Altre informazioni](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Informazioni sul servizio app di Azure](https://docs.microsoft.com/azure/app-service/overview) | Crea app cloud avanzate usando una piattaforma completamente gestita | Costo in base a durata, dimensioni, posizione e utilizzo. [Altre informazioni](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fornisce una pipeline di integrazione e distribuzione continua (CI/CD) per lo sviluppo delle app. La pipeline inizia con un repository GIT per la gestione del codice app, un sistema di compilazione per la produzione di pacchetti e altri artefatti di compilazione, nonché un sistema di Release Management per implementare le modifiche negli ambienti di sviluppo, test e produzione.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058901"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566506"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuire un'infrastruttura di migrazione
 
@@ -179,7 +179,7 @@ L'azienda crea gruppi di risorse come indicato di seguito:
 
     ![Gruppi di risorse](./media/contoso-migration-infrastructure/resource-groups.png)
 
-##### <a name="scaling-resource-groups"></a>Ridimesionamento dei gruppi di risorse
+##### <a name="scale-resource-groups"></a>Ridimensionare i gruppi di risorse
 
 In futuro, Contoso aggiungerà altri gruppi di risorse in base alle esigenze. Ad esempio, potrebbero definire un gruppo di risorse per ogni app o servizio, in modo che possano essere gestite e protette in modo indipendente.
 

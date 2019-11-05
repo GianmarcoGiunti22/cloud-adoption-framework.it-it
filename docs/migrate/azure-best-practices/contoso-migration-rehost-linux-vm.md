@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 8b925564b3186e153cdd9a8139499a83a1fd96ff
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: c1d7549a820b8f830fc577ce82ebc4d2f1dbfcb2
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239418"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566541"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>eseguire il rehosting di un'app Linux locale in macchine virtuali di Azure
 
@@ -164,6 +164,7 @@ Al termine dell'individuazione, è possibile avviare la replica delle VM VMware 
     ![Replicare le VM](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
 2. In **Replica** > **Impostazioni origine**  > **I computer sono virtualizzati?** selezionare **Sì, con VMware vSphere**.
+
 3. In **Appliance locale** selezionare il nome dell'appliance di Azure Migrate configurata e quindi **OK**.
 
     ![Impostazioni origine](./media/contoso-migration-rehost-linux-vm/source-settings.png)
@@ -178,16 +179,17 @@ Al termine dell'individuazione, è possibile avviare la replica delle VM VMware 
 5. In **Macchine virtuali** cercare le VM in base alle esigenze e selezionare ogni macchina virtuale di cui si vuole eseguire la migrazione. Quindi fare clic su **Avanti: impostazioni di destinazione**.
 
 6. In **Impostazioni di destinazione** selezionare la sottoscrizione e l'area di destinazione in cui eseguire la migrazione e quindi specificare il gruppo di risorse in cui risiederanno le VM di Azure dopo la migrazione. In **Rete virtuale** selezionare la rete virtuale e la subnet di Azure a cui verranno aggiunte le VM di Azure dopo la migrazione.
-7. In **Vantaggio Azure Hybrid**:
+
+7. In **vantaggio Azure Hybrid**selezionare gli elementi seguenti:
 
     - Selezionare **No** se non si vuole applicare Vantaggio Azure Hybrid. Quindi fare clic su **Next**.
     - Selezionare **Sì** se si hanno computer Windows Server con copertura Software Assurance o sottoscrizioni di Windows Server attive e si vuole applicare il vantaggio alle VM di cui si sta eseguendo la migrazione. Quindi fare clic su **Next**.
 
 8. In **Calcolo** controllare il nome, le dimensioni, il tipo di disco del sistema operativo e il set di disponibilità delle VM. Le VM devono essere conformi ai [requisiti di Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
 
-    - **Dimensioni macchina virtuale**: se si usano le raccomandazioni per la valutazione, l'elenco a discesa Dimensioni macchina virtuale conterrà le dimensioni consigliate. In caso contrario, Azure Migrate seleziona le dimensioni più simili nella sottoscrizione di Azure. In alternativa, selezionare manualmente le dimensioni in **Dimensioni macchina virtuale di Azure**.
-    - **Disco del sistema operativo**: specificare il disco del sistema operativo (avvio) per la macchina virtuale. È il disco che contiene il bootloader e il programma di installazione del sistema operativo.
-    - **Set di disponibilità**: se la macchina virtuale deve trovarsi in un set di disponibilità di Azure dopo la migrazione, specificare il set. Il set deve trovarsi nel gruppo di risorse di destinazione specificato per la migrazione.
+    - **Dimensioni macchina virtuale:** Se si usano le raccomandazioni per la valutazione, l'elenco a discesa Dimensioni macchina virtuale conterrà le dimensioni consigliate. In caso contrario, Azure Migrate seleziona le dimensioni più simili nella sottoscrizione di Azure. In alternativa, selezionare manualmente le dimensioni in **Dimensioni macchina virtuale di Azure**.
+    - **Disco del sistema operativo:** Specificare il disco del sistema operativo (avvio) per la macchina virtuale. È il disco che contiene il bootloader e il programma di installazione del sistema operativo.
+    - **Set di disponibilità:** Se la macchina virtuale deve trovarsi in un set di disponibilità di Azure dopo la migrazione, specificare il set. Il set deve trovarsi nel gruppo di risorse di destinazione specificato per la migrazione.
 
 9. In **Dischi** specificare se i dischi delle VM devono essere replicati in Azure e selezionare il tipo di disco in Azure (dischi gestiti Premium o SSD/HDD Standard). Quindi fare clic su **Next**.
     - È possibile escludere dischi dalla replica.

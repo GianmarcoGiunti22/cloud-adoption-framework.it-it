@@ -1,27 +1,27 @@
 ---
-title: Accelerazione della migrazione con gli host VMWare
+title: Accelerazione della migrazione con gli host VMware
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Accelerazione della migrazione con gli host VMWare
+description: Accelerazione della migrazione con gli host VMware
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980203"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566879"
 ---
-# <a name="accelerate-migration-with-vmware-hosts"></a>Accelerazione della migrazione con gli host VMWare
+# <a name="accelerate-migration-with-vmware-hosts"></a>Accelerazione della migrazione con gli host VMware
 
-La migrazione di interi host VMWare può spostare più carichi di lavoro e diversi asset in un'unica operazione di migrazione. Le linee guida seguenti consentono di espandere l'ambito della [Guida alla migrazione di Azure](../azure-migration-guide/index.md) tramite una migrazione di host VMware. La maggior parte degli sforzi richiesti in questa espansione dell'ambito si verifica durante i prerequisiti e i processi di migrazione di un'operazione di migrazione.
+La migrazione di interi host VMware può spostare più carichi di lavoro e diversi asset in un'unica operazione di migrazione. Le linee guida seguenti consentono di espandere l'ambito della [Guida alla migrazione di Azure](../azure-migration-guide/index.md) tramite una migrazione di host VMware. La maggior parte degli sforzi richiesti in questa espansione dell'ambito si verifica durante i prerequisiti e i processi di migrazione di un'operazione di migrazione.
 
 ## <a name="suggested-prerequisites"></a>Prerequisiti suggeriti
 
-Quando si esegue la migrazione del primo host VMWare ad Azure, è necessario soddisfare una serie di prerequisiti per preparare i requisiti di identità, rete e gestione. Una volta soddisfatti questi prerequisiti, per eseguire la migrazione di ogni host aggiuntivo dovrebbe essere necessaria una quantità di risorse notevolmente inferiore. Le sezioni seguenti forniscono maggiori dettagli sui prerequisiti.
+Quando si esegue la migrazione del primo host VMware ad Azure, è necessario soddisfare una serie di prerequisiti per preparare i requisiti di identità, rete e gestione. Una volta soddisfatti questi prerequisiti, per eseguire la migrazione di ogni host aggiuntivo dovrebbe essere necessaria una quantità di risorse notevolmente inferiore. Le sezioni seguenti forniscono maggiori dettagli sui prerequisiti.
 
 ### <a name="secure-your-azure-environment"></a>Proteggere l'ambiente Azure
 
@@ -44,15 +44,15 @@ Una volta stabiliti i requisiti di gestione, è possibile stabilire la rete clou
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integrazione con il piano di adozione del cloud
 
-Dopo aver soddisfatto gli altri prerequisiti, è necessario includere ogni host VMWare nel piano di adozione del [cloud](../../plan/template.md). Nel piano di adozione del cloud aggiungere ogni host da migrare come [carico di lavoro distinto](../../plan/workloads.md). All'interno di ogni carico di lavoro aggiungere le macchine virtuali da migrare come [Asset](../../plan/workloads.md). Per aggiungere i carichi di lavoro e le risorse al piano di adozione in blocco, vedere [aggiunta/modifica di elementi di lavoro con Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Dopo aver soddisfatto gli altri prerequisiti, è necessario includere ogni host VMware nel piano di adozione del [cloud](../../plan/template.md). Nel piano di adozione del cloud aggiungere ogni host da migrare come [carico di lavoro distinto](../../plan/workloads.md). All'interno di ogni carico di lavoro aggiungere le macchine virtuali da migrare come [Asset](../../plan/workloads.md). Per aggiungere i carichi di lavoro e le risorse al piano di adozione in blocco, vedere [aggiunta/modifica di elementi di lavoro con Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="migrate-process-changes"></a>Modifiche del processo di migrazione
 
-Durante ogni iterazione, il team di adozione usa il backlog per eseguire la migrazione dei carichi di lavoro con priorità più elevata. Il processo non cambia realmente per gli host VMWare. Quando il carico di lavoro successivo nel backlog è un host VMWare, l'unica modifica sarà lo strumento utilizzato.
+Durante ogni iterazione, il team di adozione usa il backlog per eseguire la migrazione dei carichi di lavoro con priorità più elevata. Il processo non cambia realmente per gli host VMware. Quando il carico di lavoro successivo nel backlog è un host VMware, l'unica modifica sarà lo strumento utilizzato.
 
 È possibile usare gli strumenti seguenti nell'operazione di migrazione:
 
-- [Strumenti VMWare nativi](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Strumenti VMware nativi](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 In alternativa, è possibile eseguire la migrazione dei carichi di lavoro tramite un failover di ripristino di emergenza utilizzando gli strumenti seguenti:

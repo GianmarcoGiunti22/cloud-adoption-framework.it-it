@@ -8,14 +8,14 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbfe025b5e324ec685fcec3001cc8705ac001beb
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243266"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564000"
 ---
-# <a name="scaling-with-multiple-azure-subscriptions"></a>Ridimensionamento con più sottoscrizioni di Azure
+# <a name="scale-with-multiple-azure-subscriptions"></a>Scalabilità con più sottoscrizioni di Azure
 
 Le organizzazioni spesso necessitano di più di una sottoscrizione di Azure in seguito ai limiti delle risorse e ad altre considerazioni sulla governance. È quindi importante avere una strategia per il ridimensionamento delle sottoscrizioni.
 
@@ -61,7 +61,7 @@ Altre situazioni possono richiedere l'uso di sottoscrizioni aggiuntive. Quando s
 
 È possibile spostare molti tipi di risorse da una sottoscrizione a un'altra o usare distribuzioni automatizzate per eseguire la migrazione delle risorse a un'altra sottoscrizione. Per altre informazioni, vedere [Spostare le risorse di Azure in un altro gruppo di risorse o in un'altra sottoscrizione](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
-## <a name="managing-multiple-subscriptions"></a>Gestione di più sottoscrizioni
+## <a name="manage-multiple-subscriptions"></a>Gestione di più sottoscrizioni
 
 Se si dispone solo di poche sottoscrizioni, è relativamente semplice gestirle in modo indipendente. Ma se si dispone di numerose sottoscrizioni, è consigliabile considerare la possibilità di creare una gerarchia di gruppi di gestione per semplificare la gestione delle sottoscrizioni e delle risorse.
 

@@ -1,5 +1,5 @@
 ---
-title: Motivazioni Perché ci si sta muovendo nel cloud?
+title: 'Motivazioni: perché stiamo migrando al cloud?'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Accounting cloud e passaggio al cloud
 author: BrianBlanchard
@@ -8,16 +8,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027943"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561615"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivazioni Perché ci si sta muovendo nel cloud?
+# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivazioni: perché stiamo migrando al cloud?
 
 "Perché stiamo migrando al cloud?" è una domanda comune per gli stakeholder aziendali e tecnici. Se la risposta è "la nostra lavagna, o CIO, o dirigenti di livello C, ci ha comunicato di passare al cloud", è improbabile che l'azienda raggiunga i risultati desiderati.
 
@@ -25,7 +25,7 @@ Questo articolo illustra alcune motivazioni alla base della migrazione nel cloud
 
 ## <a name="motivations"></a>Motivazioni
 
-Le trasformazioni aziendali supportate dall'adozione del cloud possono essere determinate da diverse motivazioni. È anche probabile che diverse motivazioni siano applicabili in una sola volta. L'obiettivo degli elenchi nella tabella seguente è quello di aiutare Spark a comprendere quali motivazioni sono rilevanti. Da qui è possibile classificare in ordine di priorità e valutare i potenziali effetti delle motivazioni. In questo articolo è consigliabile che il team di adozione del cloud soddisfi tutti i dirigenti e i leader aziendali usando l'elenco riportato di seguito per comprendere quali di queste motivazioni sono interessate dal lavoro di adozione del cloud.
+Le trasformazioni aziendali supportate dall'adozione del cloud possono essere determinate da diverse motivazioni. È probabile che diverse motivazioni si applichino allo stesso tempo. L'obiettivo degli elenchi nella tabella seguente è quello di aiutare Spark a comprendere quali motivazioni sono rilevanti. Da qui è possibile classificare in ordine di priorità e valutare i potenziali effetti delle motivazioni. In questo articolo è consigliabile che il team di adozione del cloud soddisfi tutti i dirigenti e i leader aziendali usando l'elenco riportato di seguito per comprendere quali di queste motivazioni sono interessate dal lavoro di adozione del cloud.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -65,7 +65,7 @@ Alcune motivazioni si allineano bene con una strategia di migrazione. I motivi n
 
 ### <a name="innovation"></a>Innovazione
 
-I dati sono i nuovi prodotti. Le app moderne sono la supply chain che guida i dati in varie esperienze. Nel mercato aziendale odierno, è difficile trovare un prodotto o un servizio trasformativo che non si basa su dati, approfondimenti ed esperienze dei clienti. Le motivazioni che appaiono più in basso nell'elenco Innovation si allineano a una strategia tecnologica definita in questo framework come [innovazione](../getting-started/innovate.md).
+I dati sono i nuovi prodotti. Le app moderne sono la supply chain che guida i dati in varie esperienze. Nel mercato aziendale odierno, è difficile trovare un prodotto o un servizio trasformativo che non si basa su dati, approfondimenti ed esperienze dei clienti. Le motivazioni che appaiono più in basso nell'elenco *Innovation* si allineano a una strategia tecnologica definita in questo framework come [innovazione](../getting-started/innovate.md).
 
 L'elenco seguente include le motivazioni che consentono a un'organizzazione IT di concentrarsi maggiormente su una strategia di innovazione rispetto a una strategia di migrazione.
 

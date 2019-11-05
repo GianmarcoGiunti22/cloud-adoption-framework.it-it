@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224350"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564306"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro di eccellenza cloud
 
@@ -92,7 +92,7 @@ In Exchange per questi vantaggi, la funzione IT esistente può scambiare i valor
 
 Nelle aziende che fanno parte del cloud integro, questo processo di negoziazione è una conversazione dinamica tra i peer e la collaborazione tra i team IT. I dettagli tecnici possono essere complessi, ma sono gestibili quando sono in grado di comprendere l'obiettivo e supportano le attività CCoE. Quando è minore del supporto, la sezione seguente sull'abilitazione di CCoE Success può aiutare a superare i blocchi culturali.
 
-## <a name="enabling-ccoe-success"></a>Abilitazione di CCoE riuscita
+## <a name="enable-ccoe-success"></a>Abilita CCoE riuscita
 
 Prima di procedere con questo modello, è importante convalidare la tolleranza della società per una mentalità di crescita e la comodità con il rilascio di responsabilità centrali. Come indicato in precedenza, lo scopo di un CCoE è quello di scambiare il controllo per l'agilità e la velocità.
 

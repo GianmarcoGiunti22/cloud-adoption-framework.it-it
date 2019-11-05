@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224183"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566627"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Creare una motivazione aziendale per la migrazione al cloud
 
@@ -22,19 +22,19 @@ Le migrazioni cloud possono generare un ritorno sugli investimenti (ROI) anticip
 
 ## <a name="dispelling-cloud-migration-myths"></a>Miti sulla migrazione cloud
 
-**Mito: Il cloud è sempre più economico.** Si ritiene comunemente che la gestione di un Data Center nel cloud sia sempre più economica rispetto alla gestione di un Data Center locale. Sebbene questo presupposto possa essere in genere vero, non è sempre il caso. A volte i costi operativi del cloud sono maggiori. Questi costi più elevati sono spesso causati da una governance dei costi scadente, da architetture di sistema non allineate, dalla duplicazione dei processi, da configurazioni di sistema atipiche o da costi di personale maggiori. Fortunatamente, è possibile mitigare molti di questi problemi per creare il ROI iniziale. Seguendo le istruzioni riportate in [creazione della motivazione aziendale](#building-the-business-justification) , è possibile rilevare ed evitare questi problemi di allineamento. La digitazione degli altri miti descritti qui può essere utile.
+**Mito: il cloud è sempre più economico.** Si ritiene comunemente che la gestione di un Data Center nel cloud sia sempre più economica rispetto alla gestione di un Data Center locale. Sebbene questo presupposto possa essere in genere vero, non è sempre il caso. A volte i costi operativi del cloud sono maggiori. Questi costi più elevati sono spesso causati da una governance dei costi scadente, da architetture di sistema non allineate, dalla duplicazione dei processi, da configurazioni di sistema atipiche o da costi di personale maggiori. Fortunatamente, è possibile mitigare molti di questi problemi per creare il ROI iniziale. Seguendo le istruzioni riportate in [creare la motivazione aziendale](#build-the-business-justification) può essere utile per rilevare ed evitare questi problemi di allineamento. La digitazione degli altri miti descritti qui può essere utile.
 
-**Mito: bisogna passare completamente al cloud.** Infatti, alcuni driver aziendali potrebbero consentire di scegliere una soluzione ibrida. Prima di finalizzare un modello aziendale, è possibile completare un'analisi quantitativa per la prima volta, come descritto negli articoli relativi alle [Proprietà digitali](../digital-estate/5-rs-of-rationalization.md). Per ulteriori informazioni sui singoli driver quantitativi associati alla razionalizzazione, vedere la pagina relativa [alla razionalizzazione di 5](../digital-estate/5-rs-of-rationalization.md). Entrambi gli approcci usano i dati di inventario facilmente ottenuti e una breve analisi quantitativa per identificare i carichi di lavoro o applicazioni che potrebbero causare un aumento dei costi nel cloud. Questi approcci possono anche identificare le dipendenze o i modelli di traffico che richiedono una soluzione ibrida.
+**Mito: tutto dovrebbe andare nel cloud.** Infatti, alcuni driver aziendali potrebbero consentire di scegliere una soluzione ibrida. Prima di finalizzare un modello aziendale, è possibile completare un'analisi quantitativa per la prima volta, come descritto negli articoli relativi alle [Proprietà digitali](../digital-estate/5-rs-of-rationalization.md). Per ulteriori informazioni sui singoli driver quantitativi associati alla razionalizzazione, vedere la pagina relativa [alla razionalizzazione di 5](../digital-estate/5-rs-of-rationalization.md). Entrambi gli approcci usano i dati di inventario facilmente ottenuti e una breve analisi quantitativa per identificare i carichi di lavoro o applicazioni che potrebbero causare un aumento dei costi nel cloud. Questi approcci possono anche identificare le dipendenze o i modelli di traffico che richiedono una soluzione ibrida.
 
-**Mito: il mirroring dell’ambiente locale permette di ridurre i costi del cloud.** Durante la pianificazione delle proprietà digitali, per le aziende è necessario rilevare una capacità inutilizzata superiore al 50% dell'ambiente di cui è stato effettuato il provisioning. Se le risorse vengono sottoposte a provisioning nel cloud per soddisfare il provisioning corrente, è difficile realizzare risparmi sui costi. Valutare la possibilità di ridurre le dimensioni degli asset distribuiti per allinearli con i modelli di utilizzo anziché con i modelli di provisioning.
+**Mito: il mirroring dell'ambiente locale consentirà di risparmiare denaro nel cloud.** Durante la pianificazione delle proprietà digitali, per le aziende è necessario rilevare una capacità inutilizzata superiore al 50% dell'ambiente di cui è stato effettuato il provisioning. Se le risorse vengono sottoposte a provisioning nel cloud per soddisfare il provisioning corrente, è difficile realizzare risparmi sui costi. Valutare la possibilità di ridurre le dimensioni degli asset distribuiti per allinearli con i modelli di utilizzo anziché con i modelli di provisioning.
 
-**Mito: I costi del server spingono i casi aziendali per la migrazione nel cloud.** A volte questa ipotesi è vera. Per alcune aziende, è importante ridurre le spese in conto capitale costanti relative ai server. Ma dipende da diversi fattori. Le aziende con un ciclo di aggiornamento hardware da cinque anni a otto anni sono improbabile che rivedano i ritorni rapidi sulla migrazione cloud. Le aziende con cicli di aggiornamento standardizzati o imposti possano raggiungere rapidamente un punto di pareggio. In entrambi i casi, altre spese potrebbero essere i trigger finanziari che giustificano la migrazione. Di seguito sono riportati alcuni esempi di costi comunemente trascurati quando le aziende accettano una visualizzazione dei costi solo per server o solo VM:
+**Mito: i costi del server spingono i casi aziendali per la migrazione nel cloud.** A volte questa ipotesi è vera. Per alcune aziende, è importante ridurre le spese in conto capitale costanti relative ai server. Ma dipende da diversi fattori. Le aziende con un ciclo di aggiornamento hardware da cinque anni a otto anni sono improbabile che rivedano i ritorni rapidi sulla migrazione cloud. Le aziende con cicli di aggiornamento standardizzati o imposti possano raggiungere rapidamente un punto di pareggio. In entrambi i casi, altre spese potrebbero essere i trigger finanziari che giustificano la migrazione. Di seguito sono riportati alcuni esempi di costi comunemente trascurati quando le aziende accettano una visualizzazione dei costi solo per server o solo VM:
 
 - I costi del software per la virtualizzazione, i server e il middleware possono essere estesi. I provider di servizi cloud eliminano alcuni di questi costi. Due esempi di un provider di servizi cloud che riducono i costi di virtualizzazione sono i programmi [vantaggio Azure Hybrid](https://azure.microsoft.com/pricing/hybrid-benefit/#services) e [prenotazioni di Azure](https://azure.microsoft.com/reservations) .
 - Le perdite aziendali dovute a interruzioni possono superare rapidamente i costi hardware o software. Se il Data Center corrente è instabile, collaborare con l'azienda per quantificare l'effetto delle interruzioni in termini di costi di opportunità o costi aziendali effettivi.
 - Anche i costi ambientali possono essere significativi. Per la famiglia americana media, una casa rappresenta l'investimento più grande e il costo più elevato del budget. Lo stesso accade spesso per i Data Center. I costi dei beni immobili, delle strutture e i costi di utilità rappresentano una parte equa dei costi locali. Quando i Data Center vengono ritirati, è possibile reimpiegare tali funzionalità oppure è possibile che l'azienda sia potenzialmente rilasciata da questi costi.
 
-**Mito: Un modello di spese operative è migliore rispetto a un modello di spese di capitale.** Come illustrato nell'articolo relativo ai [risultati fiscali](./business-outcomes/fiscal-outcomes.md) , un modello di spesa operativa può essere un aspetto positivo. Tuttavia, alcune industrie visualizzano le spese operative in senso negativo. Di seguito sono riportati alcuni esempi che innescano una maggiore integrazione con la contabilità e le business unit sulla conversazione delle spese operative:
+**Mito: un modello di spesa operativa è migliore rispetto a un modello di spese di capitale.** Come illustrato nell'articolo relativo ai [risultati fiscali](./business-outcomes/fiscal-outcomes.md) , un modello di spesa operativa può essere un aspetto positivo. Tuttavia, alcune industrie visualizzano le spese operative in senso negativo. Di seguito sono riportati alcuni esempi che innescano una maggiore integrazione con la contabilità e le business unit sulla conversazione delle spese operative:
 
 - Quando un'azienda considera le risorse di capitale come un driver per la valutazione aziendale, le riduzioni delle spese di capitale potrebbero essere un risultato negativo. Sebbene non si tratta di uno standard universale, questo sentimento è più comunemente riscontrato nei settori per la vendita al dettaglio, la produzione e la costruzione.
 - Una società di equità privata o una società che sta cercando un afflusso di capitali può prendere in considerazione l'aumento delle spese operative come risultato negativo.
@@ -44,7 +44,7 @@ Le migrazioni cloud possono generare un ritorno sugli investimenti (ROI) anticip
 
 Prima di fornire una giustificazione aziendale incentrata sulla conversione da spese di capitale a spese operative, è necessario comprendere quale sia la soluzione migliore per la propria azienda. L'accounting e l'approvvigionamento possono spesso contribuire a allineare il messaggio agli obiettivi finanziari.
 
-**Mito: la migrazione al cloud è semplice come premere un interruttore.** Le migrazioni sono una trasformazione tecnica manualmente intensa. Quando si sviluppa una motivazione aziendale, in particolare le motivazioni che sono sensibili al tempo, prendere in considerazione i seguenti aspetti che potrebbero aumentare il tempo necessario per eseguire la migrazione delle risorse:
+**Mito: il passaggio al cloud è simile al capovolgimento di un commutatore.** Le migrazioni sono una trasformazione tecnica manualmente intensa. Quando si sviluppa una motivazione aziendale, in particolare le motivazioni che sono sensibili al tempo, prendere in considerazione i seguenti aspetti che potrebbero aumentare il tempo necessario per eseguire la migrazione delle risorse:
 
 - **Limitazioni della larghezza di banda:** La quantità di larghezza di banda tra il Data Center corrente e il provider di servizi cloud guiderà le sequenze temporali durante la migrazione.
 - **Sequenze temporali di test:** Il test delle applicazioni con l'azienda per garantire la conformità e le prestazioni può richiedere molto tempo. L’allineamento agli utenti avanzati e i processi di test sono fondamentali.
@@ -57,7 +57,7 @@ Gli ostacoli tecnici e culturali possono rallentare l'adozione del cloud. Quando
 
 Per ottimizzare la conformità e la mitigazione dei rischi per la sequenza temporale, preparare gli stakeholder esecutivi allineando saldamente il valore aziendale e i risultati aziendali. Aiutare le parti interessate a comprendere le modifiche che verranno apportate alla trasformazione. Essere chiari e impostare aspettative realistiche fin dall'inizio. Quando le persone o le tecnologie rallentano il processo, sarà più facile integrare il supporto tecnico Executive.
 
-## <a name="building-the-business-justification"></a>Creazione di una motivazione aziendale
+## <a name="build-the-business-justification"></a>Compilare la giustificazione aziendale
 
 Il processo seguente definisce un approccio allo sviluppo della motivazione aziendale per le migrazioni cloud. Per ulteriori informazioni sui calcoli e sui termini finanziari, vedere l'articolo sui [modelli finanziari](./financial-models.md).
 
@@ -73,7 +73,7 @@ Al livello più alto, la formula per una motivazione aziendale è semplice. Tutt
 - Alcuni provider di servizi cloud forniscono anche calcolatrici a costo Delta. Il [calcolo del costo totale di proprietà (TCO) di Azure](https://azure.com/tco) è un esempio.
 - Per strutture di costo più raffinate, prendere in considerazione un esercizio di [pianificazione delle proprietà digitali](../digital-estate/index.md) .
 - Stimare il costo della migrazione.
-- Stimare il costo di qualsiasi opportunità di training prevista. [Microsoft Learn](/learn) potrebbe essere in grado di mitigare tali costi.
+- Stimare il costo di qualsiasi opportunità di training prevista. [Microsoft Learn](https://docs.microsoft.com/learn) potrebbe essere in grado di mitigare tali costi.
 - In alcune aziende, potrebbe essere necessario includere nei costi iniziali il tempo investito dai membri del personale esistente. Per istruzioni, consultare l'ufficio finanziario.
 - Discutere eventuali costi aggiuntivi o l’onere dei costi con l'ufficio finanziario per la convalida.
 

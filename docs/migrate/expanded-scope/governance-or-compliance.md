@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549226"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566919"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia di governance o di conformità
 
@@ -38,7 +38,7 @@ La configurazione dell'ambiente Azure di base potrebbe cambiare in modo signific
 **Servizi Microsoft:** I servizi Microsoft offrono offerte di soluzioni che possono essere allineate al modello di governance del Framework di adozione del cloud, ai progetti di conformità o alle opzioni dei data center virtuali per assicurare il modello di governance o conformità più appropriato. Usare la soluzione [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) per stabilire un'immagine basata sui dati relativa a una distribuzione di clienti in Azure, convalidare la maturità di implementazione di Azure del cliente durante l'identificazione dell'ottimizzazione di architetture di distribuzione esistenti e rimuovere i rischi per la sicurezza e la disponibilità della governance. In base a Customer Insights, è consigliabile usare gli approcci seguenti:
 
 - **Cloud Foundation:** Definire l'architettura di base, i modelli e l'architettura di governance del cliente con l'offerta della soluzione [Hybrid Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) . Eseguire il mapping dei requisiti del cliente all'architettura di riferimento più appropriata. Implementare un prodotto minimo funzionante costituito da servizi condivisi e carichi di lavoro IaaS.
-- **Modernizzazione del cloud:** Usa la soluzione di [modernizzazione nel cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) come approccio completo per spostare applicazioni, dati e infrastruttura in un cloud di livello aziendale, nonché per ottimizzare e modernizzare una volta nel cloud.
+- **Modernizzazione del cloud:** Usa la soluzione di [modernizzazione cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) che offre un approccio completo per spostare applicazioni, dati e infrastruttura in un cloud di livello aziendale, oltre che per ottimizzare e modernizzare dopo la distribuzione cloud.
 - **Innovazione con il cloud:** Coinvolgi i clienti tramite un approccio innovativo e univoco per la soluzione [cloud Center of Excellence (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) che consente di compilare un'organizzazione IT moderna per offrire agilità su larga scala con DevOps, mantenendo al tempo stesso il controllo. Implementa un approccio agile per l'acquisizione dei requisiti aziendali e il riutilizzo dei pacchetti di distribuzione allineati ai criteri di sicurezza, conformità e gestione dei servizi e mantiene la piattaforma Azure allineata alle procedure operative.
 
 ## <a name="assess-process-changes"></a>Modifiche del processo di valutazione

@@ -1,21 +1,21 @@
 ---
-title: Decisioni che influiscono sulle migrazioni
+title: Decisioni che influiscono sulla migrazione
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Decisioni importanti da prendere in merito al processo di migrazione
+description: Prendere decisioni importanti sul processo di migrazione.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239929"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564575"
 ---
-# <a name="decisions-that-affect-migrations"></a>Decisioni che influiscono sulle migrazioni
+# <a name="decisions-that-affect-migration"></a>Decisioni che influiscono sulla migrazione
 
 Durante la migrazione, sono numerosi i fattori che influiscono sulle decisioni e sulle attività di esecuzione. Questo articolo illustra il tema centrale di tali decisioni ed esamina alcune domande che illustrano i principi della migrazione in questa sezione delle linee guida sul Cloud Adoption Framework.
 
@@ -31,19 +31,19 @@ Nessuna azienda può perseguire uno solo di questi risultati. Senza operazioni n
 
 Questo prerequisito non presuppone la necessità di scegliere uno di questi tre obiettivi, quanto piuttosto di aiutare il team di strategia cloud e il team di adozione del cloud a definire un set di priorità operative che guideranno l'esecuzione nei successivi tre-sei mesi. Queste priorità vengono impostate in base alla classificazione di ognuna delle tre opzioni dettagliate, dalla *più significativa* alla *meno significativa*, in quanto sono correlate al lavoro richiesto a cui questo team può contribuire nel trimestre o nei due trimestri successivi.
 
-### <a name="acting-on-migration-outcomes"></a>Agire sui risultati della migrazione
+### <a name="act-on-migration-outcomes"></a>Agire sui risultati della migrazione
 
 Se i risultati operativi occupano il primo posto nell’elenco, questa sezione del Cloud Adoption Framework funzionerà in modo ottimale per il team. In questa sezione si presuppone che sia necessario assegnare una priorità alla velocità e ai risparmi sui costi come indicatori di prestazioni chiave (KPI) principali, nel qual caso un modello di migrazione da adottare sarebbe ben allineato con i risultati. Un modello incentrato sulla migrazione è fortemente predicato alla migrazione Lift-and-Shift degli asset di infrastruttura distribuita come servizio (IaaS) per esaurire un Data Center e produrre risparmi sui costi. In questo modello la modernizzazione, benché possa verificarsi, rappresenta un interesse secondario, fino a quando non viene realizzata la missione principale di migrazione.
 
-### <a name="acting-on-application-innovations"></a>Agire sulle innovazioni delle applicazioni
+### <a name="act-on-application-innovations"></a>Agire sulle innovazioni delle applicazioni
 
 Se i driver principali sono la quota di mercato e l'esperienza del cliente, questa potrebbe non essere la sezione migliore del Cloud Adoption Framework per favorire il lavoro richiesto ai team. L'innovazione delle applicazioni richiede un piano incentrato sulla modernizzazione e la transizione dei carichi di lavoro, indipendentemente dall'infrastruttura sottostante. In tal caso, il materiale sussidiario contenuto in questa sezione, anche se può essere utile a livello informativo, potrebbe non rappresentare l'approccio migliore per prendere decisioni chiave.
 
-### <a name="acting-on-data-innovations"></a>Agire sull'innovazione dei dati
+### <a name="act-on-data-innovations"></a>Agire sulle innovazioni dei dati
 
 Se la priorità dei prossimi sei mesi sono i dati, la sperimentazione, la ricerca e lo sviluppo (R&D) o i nuovi prodotti, questa potrebbe non essere la sezione migliore del Cloud Adoption Framework per favorire il lavoro richiesto ai team. Qualsiasi lavoro richiesto di innovazione dei dati può trarre vantaggio dalle linee guida relative alla migrazione dei dati di origine esistenti. Tuttavia, l'obiettivo più ampio di tale lavoro richiesto sono l'immissione e l'integrazione di origini dati aggiuntive. L'ampliamento di tali linee guida con stime e nuove esperienze è molto più importante della migrazione di asset IaaS.
 
-## <a name="balancing-the-portfolio"></a>Bilanciamento del portfolio
+## <a name="balance-the-portfolio"></a>Bilanciare il portfolio
 
 Questa sezione del Cloud Adoption Framework definisce gli aspetti teorici per aiutare i lettori a comprendere i diversi approcci all'indirizzamento delle modifiche in un portfolio bilanciato. L'articolo relativo al [bilanciamento del portfolio](../../expanded-scope/balance-the-portfolio.md) offre un esempio di ambito espanso, progettato per agire in base a questa teoria.
 

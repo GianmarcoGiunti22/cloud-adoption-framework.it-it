@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027330"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566765"
 ---
-# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipattern aziendali: Silos e feudi
+# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipattern aziendali: silos e feudi
 
 Il successo di qualsiasi modifica sostanziale alle procedure aziendali, alle impostazioni cultura o alle operazioni tecnologiche richiede un approccio mentale alla crescita. Alla base della mentalità di crescita si intende un'accettazione delle modifiche e la possibilità di condurre senza ambiguità.
 
@@ -48,13 +48,13 @@ Quando architetti del cloud e altri leader investono nell'abolizione dei bias pe
 
 Fornire a questi team un meccanismo per la comunicazione con la terminologia in futuro consente di aggiungere punti dati, identificare Gap e creare un attrito integro per le soluzioni proposte. Tale attrito può comportare la levigatura dei bordi approssimativi sulle soluzioni e l'unità di valori a lungo termine. La semplice modifica della conversazione può creare chiarezza su argomenti complessi e generare energia per offrire soluzioni più efficaci.
 
-Le linee guida per la [definizione dei criteri aziendali](../govern/corporate-policy.md) mirano a facilitare le conversazioni basate sul rischio con le parti interessate dell'azienda. Tuttavia, questo stesso modello può essere usato per semplificare le conversazioni con i team che vengono percepiti come resistenti al cloud. Quando la percezione della resistenza è diffusa, potrebbe essere opportuno includere procedure di risoluzione della resistenza nella carta per un team di governance del [cloud](./cloud-governance.md).
+Le linee guida per la [definizione dei criteri aziendali](../govern/corporate-policy.md) mirano a facilitare le conversazioni basate sul rischio con le parti interessate dell'azienda. Tuttavia, questo stesso modello può essere usato per semplificare le conversazioni con i team che vengono percepiti come resistenti al cloud. Quando la percezione della resistenza è diffusa, potrebbe essere opportuno includere procedure di risoluzione della resistenza nella carta per un [team di governance del cloud](./cloud-governance.md).
 
 ## <a name="antipatterns"></a>Antipatterns
 
 La crescita organica e reattiva al suo interno, che consente di creare team IT integri, può anche causare antipattern che bloccano la trasformazione e l'adozione del cloud. I silo e feudi di IT sono diversi dalle microcolture naturali all'interno di team IT integri. In entrambi i modelli, lo stato attivo del team tende a essere indirizzato verso la protezione del "Turf". Quando i membri del team hanno la possibilità di gestire le operazioni di modifica e miglioramento, investono più tempo ed energia per bloccare la modifica rispetto alla ricerca di una soluzione positiva.
 
-Come indicato in precedenza, i team IT integri possono creare resistenza naturale e attrito positivo. Silos e feudi rappresentano un problema diverso. Non è presente alcun indicatore principale documentato per entrambi gli antipattern. Questi antipattern tendono a essere identificati dopo i mesi di [cloud Center of Excellence e del team di](./cloud-center-of-excellence.md) governance del [cloud](./cloud-governance.md) . Sono state individuate come il risultato della resistenza continua.
+Come indicato in precedenza, i team IT integri possono creare resistenza naturale e attrito positivo. Silos e feudi rappresentano un problema diverso. Non è presente alcun indicatore principale documentato per entrambi gli antipattern. Questi antipattern tendono a essere identificati dopo i mesi di [cloud Center of Excellence e del team di](./cloud-center-of-excellence.md) [governance del cloud](./cloud-governance.md) . Sono state individuate come il risultato della resistenza continua.
 
 Anche nelle impostazioni cultura tossiche, le attività dei CCoE e del team di governance del cloud dovrebbero aiutare a promuovere la crescita culturale e lo stato tecnico. Dopo i mesi di lavoro, è possibile che alcuni team non mostrino alcun segno di comportamenti inclusivi e siano saldi nella loro resistenza al cambiamento. È probabile che questi team funzionino in uno dei modelli antipattern seguenti: silos e feudi. Sebbene questi modelli abbiano sintomi simili, la causa principale e gli approcci per l'indirizzamento della resistenza sono radicalmente diversi tra loro.
 
@@ -64,7 +64,7 @@ I membri del team in un silo IT possono definire autonomamente il loro allineame
 
 Questo antipattern spesso emerge da una passione comune per una soluzione specifica. Il silo IT viene quindi rinforzato dalle competenze avanzate del team in seguito all'investimento nella soluzione specifica. Questa competenza superiore può essere un acceleratore per le attività di adozione del cloud se la resistenza alla modifica può essere superata. Può anche diventare un blocco principale se i silo sono suddivisi o se i membri del team non possono valutare accuratamente le opzioni. Fortunatamente, i silo IT possono spesso essere superati senza apportare modifiche significative al grafico dell'organizzazione.
 
-### <a name="addressing-resistance-from-it-silos"></a>Indirizzamento della resistenza dai silo IT
+### <a name="address-resistance-from-it-silos"></a>Affrontare la resistenza dai silo IT
 
 I silo IT possono essere risolti tramite gli approcci seguenti. L'approccio migliore dipende dalla causa principale della resistenza.
 
@@ -112,16 +112,18 @@ Feudi sono particolarmente comuni nelle organizzazioni che hanno sperimentato il
 
 In genere, feudi sono il risultato di un gestore delle linee che teme la perdita del team e della base di energia associata. Questi leader hanno spesso un'idea di dovere per il proprio team e devono proteggere le proprie subordinate da conseguenze negative. Le frasi come "proteggere il team dal cambiamento" e "proteggere il team dalle problematiche del processo" possono essere indicatori di un responsabile troppo sorvegliato, che potrebbe richiedere un maggiore supporto da parte della leadership.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Indirizzamento della resistenza dal feudi IT
+### <a name="address-resistance-from-it-fiefdoms"></a>Affrontare la resistenza dall'IT feudi
 
-Feudi è in grado di dimostrare una certa crescita seguendo gli approcci per [risolvere la resistenza del silo it](#addressing-resistance-from-it-silos). Prima di provare a risolvere la resistenza da un feudo IT, è consigliabile considerare prima di tutto il team come un silo IT. Se questi tipi di approcci non riescono a produrre modifiche significative, il team resistente potrebbe essere in sofferenza da un antipattern feudale IT. La causa principale di questo feudi è un po' più complessa da affrontare, perché tale resistenza tende a derivare da Direct Line Manager (o da un leader superiore al grafico dell'organizzazione). I problemi che sono basati su silo sono in genere più semplici da superare.
+Feudi è in grado di dimostrare una certa crescita seguendo gli approcci per [risolvere la resistenza del silo it](#address-resistance-from-it-silos). Prima di provare a risolvere la resistenza da un feudo IT, è consigliabile considerare prima di tutto il team come un silo IT. Se questi tipi di approcci non riescono a produrre modifiche significative, il team resistente potrebbe essere in sofferenza da un antipattern feudale IT. La causa principale di questo feudi è un po' più complessa da affrontare, perché tale resistenza tende a derivare da Direct Line Manager (o da un leader superiore al grafico dell'organizzazione). I problemi che sono basati su silo sono in genere più semplici da superare.
 
-Quando la resistenza continua da feudi blocca il lavoro di adozione del cloud, potrebbe essere opportuno eseguire un tentativo combinato di valutare la situazione con i responsabili IT esistenti. I responsabili IT devono considerare attentamente le informazioni dettagliate del [team di strategia cloud](./cloud-strategy.md), il [centro cloud di eccellenza](./cloud-center-of-excellence.md)e il team di governance del [cloud](./cloud-governance.md) prima di prendere decisioni.
+Quando la resistenza continua da feudi blocca il lavoro di adozione del cloud, potrebbe essere opportuno eseguire un tentativo combinato di valutare la situazione con i responsabili IT esistenti. I responsabili IT devono considerare attentamente le informazioni dettagliate del [team di strategia cloud](./cloud-strategy.md), il [centro cloud di eccellenza](./cloud-center-of-excellence.md)e il [team di governance del cloud](./cloud-governance.md) prima di prendere decisioni.
 
 > [!NOTE]
-> I responsabili IT non dovrebbero mai apportare modifiche al grafico dell'organizzazione. Devono inoltre convalidare e analizzare il feedback da ognuno dei team di supporto. Tuttavia, le attività Transformative come l'adozione del cloud tendono a ingrandire i problemi sottostanti che sono diventati inosservati o non indirizzati molto prima di questa operazione. Quando feudi impedisce la riuscita della società, le modifiche alla leadership sono probabilmente una necessità.
+> I responsabili IT non dovrebbero mai apportare modifiche al grafico dell'organizzazione. Devono inoltre convalidare e analizzare il feedback da ognuno dei team di supporto. Tuttavia, le attività di trasformazione come l'adozione del cloud tendono a ingrandire i problemi sottostanti che sono diventati inosservati o non indirizzati molto prima di questa operazione. Quando feudi impedisce la riuscita della società, le modifiche alla leadership sono probabilmente una necessità.
 >
 > Fortunatamente, la rimozione del leader di un feudo non termina spesso con la terminazione. Questi forti leader appassionati possono spesso passare a un ruolo di gestione dopo un breve periodo di riflessione. Con il supporto corretto, questo cambiamento può essere integro per il leader del feudo e per il team corrente.
+
+<!-- -->
 
 > [!CAUTION]
 > Per i responsabili del feudi IT, la protezione del team dal rischio è un valore di leadership chiaro. Tuttavia, esiste una linea sottile tra protezione e isolamento. Quando il team non ha partecipato alla Guida alle modifiche, può avere conseguenze psicologiche e professionali sul team. Il desiderio di resistere alle modifiche potrebbe essere forte, soprattutto durante i periodi di modifica visibile.

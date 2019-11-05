@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8623a845a6c8d8b0a8cc50d404ead85eae256134
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243188"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561887"
 ---
 # <a name="review-your-compute-options"></a>Esaminare le opzioni di calcolo
 
@@ -35,7 +35,7 @@ Usare l'albero delle decisioni seguente come punto di partenza per determinare i
 Rispondere alle domande seguenti sui carichi di lavoro per prendere decisioni in base all'albero delle decisioni per i servizi di calcolo di Azure:
 
 - **Si creano applicazioni e servizi completamente nuovi o si esegue la migrazione da carichi di lavoro locali esistenti?** Lo sviluppo di nuove applicazioni nell'ambito delle attività di adozione del cloud consente di sfruttare appieno le moderne tecnologie di hosting basate sul cloud a partire dalla fase di progettazione in poi.
-- **Se si esegue la migrazione, i carichi di lavoro esistenti possono sfruttare le tecnologie cloud moderne?** La migrazione dei carichi di lavoro locali richiede l'analisi: è possibile ottimizzare facilmente le applicazioni e i servizi esistenti per sfruttare le tecnologie cloud moderne o un approccio *Lift-and-Shift* migliore per i carichi di lavoro?
+- **Se si esegue la migrazione, i carichi di lavoro esistenti possono sfruttare le tecnologie cloud moderne?** La migrazione dei carichi di lavoro locali richiede l'analisi: è possibile ottimizzare facilmente le applicazioni e i servizi esistenti per sfruttare le tecnologie cloud moderne o un approccio _Lift-and-Shift_ migliore per i carichi di lavoro?
 - **Le applicazioni o i servizi possono sfruttare i vantaggi offerti dai contenitori?** Se le applicazioni sono adatte per l'hosting in contenitori, è possibile sfruttare le funzionalità di efficienza, ridimensionamento e orchestrazione delle risorse offerte [dai servizi contenitore di Azure](https://azure.microsoft.com/product-categories/containers). È possibile usare i servizi [archiviazione su disco di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) e [File di Azure](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) per l'archiviazione permanente per le applicazioni incluse in contenitori.
 - **Le applicazioni sono basate sul Web o su API e usano PHP, ASP.NET, Node.js o tecnologie simili?** Le app Web possono essere distribuite in istanze gestite di [Servizio app di Azure](https://docs.microsoft.com/azure/app-service/overview), quindi non è necessario mantenere macchine virtuali per l'hosting.
 - **Sarà necessario avere il controllo completo sul sistema operativo e sull'ambiente di hosting del carico di lavoro?** Se è necessario controllare l'ambiente di hosting, inclusi il sistema operativo, i dischi, il software in esecuzione in locale e altre configurazioni, è possibile usare [Macchine virtuali di Azure](https://azure.microsoft.com/services/virtual-machines) per ospitare le applicazioni e i servizi. Oltre a scegliere le dimensioni e i livelli di prestazioni delle macchine virtuali, le decisioni relative all'archiviazione su dischi virtuali influiranno sulle prestazioni e sui contratti di servizio correlati ai carichi di lavoro basati sull'infrastruttura distribuita come servizio (IaaS). Per altre informazioni, vedere la documentazione relativa ad [archiviazione su disco di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).

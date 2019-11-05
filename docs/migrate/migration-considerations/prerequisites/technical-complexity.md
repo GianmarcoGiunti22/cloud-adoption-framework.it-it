@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548269"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564540"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Superare la complessità tecnica: gestione delle modifiche agile
 
@@ -21,7 +21,7 @@ Quando è possibile effettuare il deprovisioning di un intero data center e ricr
 
 Quando si passa a un modello agile in cui vengono evidenziate flessibilità e iterazioni, la complessità tecnica e la gestione delle modifiche sono gestite in modo diverso rispetto a un modello a cascata tradizionale, che si concentra su una serie lineare di passaggi di migrazione. Questo articolo illustra un approccio di alto livello alla gestione delle modifiche in un lavoro richiesto di migrazione basato su procedure agili. Alla fine di questo articolo sarà stata acquisita una conoscenza generale dei livelli di gestione delle modifiche e della documentazione che interessano l'approccio di migrazione incrementale. Per selezionare e implementare procedure agili basate su tale conoscenza saranno necessarie altre attività di training e decisioni. Lo scopo di questo articolo è quello di preparare i Cloud Architect a una conversazione facilitata con il project management per illustrare il concetto generale di gestione del cambiamento in questo approccio.
 
-## <a name="addressing-technical-complexity"></a>Superare le complessità tecniche
+## <a name="address-technical-complexity"></a>Risolvere la complessità tecnica
 
 Quando si modifica un sistema tecnico, la complessità e l'interdipendenza generano rischi nei piani del progetto. Le migrazioni cloud non fanno eccezione. Quando si trasferiscono migliaia o decine di migliaia di risorse nel cloud, questi rischi sono amplificati. Il rilevamento e il mapping di tutte le dipendenze in un digital estate particolarmente ampio possono richiedere anni. Poche aziende possono tollerare un ciclo di analisi così lungo. Per bilanciare la necessità di un'analisi dell'architettura e di accelerazione aziendale, il Cloud Adoption Framework si concentra su un modello INVEST per la gestione del backlog di prodotto. Nelle sezioni seguenti viene riepilogato questo tipo di modello.
 
@@ -103,7 +103,7 @@ All'interno di un singolo sprint o di una singola iterazione, il team di adozion
 Per una migrazione di piccole dimensioni con un team di migrazione autonomo, un singolo sprint può includere tutte e quattro le fasi della migrazione per un singolo carico di lavoro (*valutazione*, *migrazione*, *ottimizzazione*, *protezione e gestione*). Più comunemente, ognuno di questi processi è condiviso da più team in elementi di lavoro distinti in diversi sprint. A seconda del tipo di lavoro richiesto, della scalabilità del lavoro richiesto e dei ruoli, questi sprint possono assumere forme diverse.
 
 - **Factory di migrazione.** Le migrazioni su larga scala richiedono talvolta un approccio simile a una factory nel modello di esecuzione. In questo modello, diversi team vengono allocati all'esecuzione di un processo di migrazione specifico (o subset del processo). Al termine, l'output dello sprint di un team popola il backlog per il team successivo. Si tratta di un approccio efficace per migrazioni di rehosting su larga scala di molti carichi di lavoro potenziali, in cui sono coinvolte migliaia di macchine virtuali che passano attraverso fasi di valutazione, architettura, monitoraggio, correzione e migrazione. Tuttavia, per il corretto funzionamento di questo approccio è necessario un nuovo ambiente omogeneo con processi di approvazione e gestione delle modifiche ottimizzati.
-- **Cicli di migrazione.** Un altro approccio efficace per migrazioni di grandi dimensioni consiste in un modello ciclico. In questo modello, la suddivisione del lavoro non è altrettanto chiara. I team si dedicano all'esecuzione del processo di migrazione di singoli carichi di lavoro. Tuttavia, la natura di ogni sprint cambia. In uno sprint, il team può completare il lavoro di valutazione e architettura. In un altro sprint, può completare il lavoro di migrazione. In un altro sprint ancora, l'attenzione si concentra sull'ottimizzazione e la versione di produzione. Questo approccio consente a un team di base di restare allineato ai carichi di lavoro, acquistandone una panoramica completa nel processo. Quando si usa questo approccio, la diversità di competenze e il cambio di contesto possono ridurre la velocità potenziale del team, rallentando il lavoro di migrazione richiesto. Alcuni ostacoli durante i cicli di approvazione possono anche causare ritardi significativi. Con questo modello, è importante mantenere più opzioni nel backlog di versione per far progredire il team durante i periodi di blocco. È importante eseguire anche un training incrociato dei membri del team e assicurarsi che i set di competenze siano allineati al tema di ogni sprint.
+- **Cicli di migrazione.** Un altro approccio efficace per migrazioni di grandi dimensioni consiste in un modello ciclico. In questo modello, la suddivisione del lavoro non è altrettanto chiara. I team si dedicano all'esecuzione del processo di migrazione di singoli carichi di lavoro. Tuttavia, la natura di ogni sprint cambia. In uno sprint, il team può completare il lavoro di valutazione e architettura. In un altro sprint, può completare il lavoro di migrazione. In un altro sprint ancora, l'attenzione si concentra sull'ottimizzazione e la versione di produzione. Questo approccio consente a un team di base di restare allineato ai carichi di lavoro, acquistandone una panoramica completa nel processo. Quando si usa questo approccio, la diversità di competenze e il cambio di contesto possono ridurre la velocità potenziale del team, rallentando il lavoro di migrazione richiesto. Alcuni ostacoli durante i cicli di approvazione possono anche causare ritardi significativi. Con questo modello, è importante mantenere più opzioni nel backlog di versione per far progredire il team durante i periodi di blocco. È anche importante eseguire il training dei membri del team e garantire che i set di competenze si allineano al tema di ogni sprint.
 
 ### <a name="sprint-backlog-data-points"></a>Punti dati del backlog sprint
 

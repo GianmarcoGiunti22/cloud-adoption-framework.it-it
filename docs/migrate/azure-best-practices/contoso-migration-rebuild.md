@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058561"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566606"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ricompilare un'app locale in Azure
 
@@ -95,7 +95,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Servizio** | **Descrizione** | **Costii**
 --- | --- | ---
-[servizio Azure Kubernetes](/sql/dma/dma-overview?view=ssdt-18vs2017) | Semplifica la gestione, la distribuzione e le operazioni di Kubernetes. Offre un servizio di orchestrazione di contenitori Kubernetes completamente gestito. | servizio Azure Kubernetes è un servizio gratuito. Si paga solo per le macchine virtuali e le risorse di archiviazione e di rete associate usate. [Altre informazioni](https://azure.microsoft.com/pricing/details/kubernetes-service).
+[servizio Azure Kubernetes](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Semplifica la gestione, la distribuzione e le operazioni di Kubernetes. Offre un servizio di orchestrazione di contenitori Kubernetes completamente gestito. | servizio Azure Kubernetes è un servizio gratuito. Si paga solo per le macchine virtuali e le risorse di archiviazione e di rete associate usate. [Altre informazioni](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Funzioni di Azure](https://azure.microsoft.com/services/functions) | Accelera lo sviluppo con un'esperienza di elaborazione senza server basata su eventi. Scalabilità su richiesta. | Si paga solo per le risorse usate. Il piano viene fatturato in base al consumo di risorse e di esecuzioni al secondo. [Altre informazioni](https://azure.microsoft.com/pricing/details/functions).
 [Registro Azure Container](https://azure.microsoft.com/services/container-registry) | Archivia le immagini per tutti i tipi di distribuzioni di contenitori. | Costo in base a funzionalità, archiviazione e durata dell'utilizzo. [Altre informazioni](https://azure.microsoft.com/pricing/details/container-registry).
 [Informazioni sul servizio app di Azure](https://azure.microsoft.com/services/app-service/containers) | Crea, distribuisci e ridimensiona rapidamente app Web, per dispositivi mobili e per le API di livello aziendale in esecuzione su qualsiasi piattaforma. | I piani di servizio app vengono fatturati al secondo. [Altre informazioni](https://azure.microsoft.com/pricing/details/app-service/windows).
@@ -110,7 +110,7 @@ Di seguito vengono indicati i requisiti che Contoso deve soddisfare per questo s
 --- | ---
 **Sottoscrizione di Azure** | Contoso ha creato le sottoscrizioni in un articolo precedente. Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se si crea un account gratuito, si è l'amministratore della sottoscrizione e si possono eseguire tutte le azioni.<br/><br/> Se si usa una sottoscrizione esistente e non si ha il ruolo di amministratore, è necessario rivolgersi all'amministratore per l'assegnazione delle autorizzazioni di proprietario o collaboratore.
 **Infrastruttura di Azure** | [Informazioni](./contoso-migration-infrastructure.md) sul modo in cui Contoso configura un'infrastruttura di Azure.
-**Prerequisiti per gli sviluppatori** | Contoso necessita dei seguenti strumenti in una workstation per sviluppatori:<br/><br/> - [Visual Studio 2017 Community Edition: versione 15.5](https://www.visualstudio.com)<br/><br/> Abilitazione al carico di lavoro .NET.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [interfaccia della riga di comando di Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) o Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) impostato per l'uso dei Contenitori di Windows.
+**Prerequisiti per gli sviluppatori** | Contoso necessita dei seguenti strumenti in una workstation per sviluppatori:<br/><br/> - [Visual Studio 2017 Community Edition: versione 15.5](https://www.visualstudio.com)<br/><br/> Abilitazione al carico di lavoro .NET.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [interfaccia della riga di comando di Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) o Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) impostato per l'uso dei Contenitori di Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,7 +152,7 @@ Gli amministratori di Contoso effettuano il provisioning come indicato di seguit
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks3.png)
 5. Nel terminale integrato di PowerShell, Contoso accede ad Azure tramite il comando Connect-AzureRmAccount. [Altre informazioni](https://docs.microsoft.com/powershell/azure/get-started-azureps) per muovere i primi passi con PowerShell.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks4.png)
-6. Per autenticare l'interfaccia della riga di comando di Azure, eseguire il comando `az login` e seguire le istruzioni per l'autenticazione tramite il Web browser. [Altre informazioni](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
+6. Per autenticare l'interfaccia della riga di comando di Azure, eseguire il comando `az login` e seguire le istruzioni per l'autenticazione tramite il Web browser. [Altre informazioni](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
     ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks5.png)
 7. Contoso esegue il comando seguente, trasferendo il nome del gruppo di risorse ContosoRG, il nome del cluster servizio Azure Kubernetes smarthotel-servizio Azure Kubernetes-eus2 e il nome del nuovo registro.
 

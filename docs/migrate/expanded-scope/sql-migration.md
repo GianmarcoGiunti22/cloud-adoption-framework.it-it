@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 217b2653a4bec268720f44ac1eefd74bc2d05366
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980235"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566890"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Accelerazione della migrazione mediante la migrazione di un'istanza di SQL Server
 
@@ -32,7 +32,7 @@ Tuttavia, è possibile eseguire la migrazione di alcune strutture di dati in mod
 - **Database ad alta densità, utilizzo ridotto:** L'istanza di SQL Server dispone di una densità elevata di database. Ognuno di questi database dispone di volumi di transazione limitati e richiede poco in termini di risorse di calcolo. È consigliabile prendere in considerazione altre soluzioni più moderne, ma un approccio di infrastruttura distribuita come servizio (IaaS) può comportare un notevole riduzione dei costi operativi.
 - **Costo totale di proprietà:** Quando applicabile, è possibile applicare i [vantaggi di Azure Hybrid](https://azure.microsoft.com/pricing/hybrid-benefit) al prezzo di listino creando il costo di proprietà più basso per le istanze di SQL Server. Questa operazione è particolarmente comune per i clienti che ospitano SQL Server in scenari con più cloud.
 - **Acceleratore migrazione:** La migrazione "Lift-and-Shift" di un'istanza di SQL Server può spostare più database in un'unica iterazione. Questo approccio consente a volte le iterazioni future di concentrarsi più specificamente sulle applicazioni e sulle macchine virtuali, vale a dire che è possibile eseguire la migrazione di più carichi di lavoro in una singola iterazione.
-- **Migrazione di VMware:** Un'architettura locale comune include le applicazioni e le macchine virtuali in un host virtuale e i database in bare metal. In questo scenario, è possibile eseguire la migrazione di intere istanze di SQL Server per supportare la migrazione dell'host VMWare al servizio VMWare di Azure. Per ulteriori informazioni, vedere [migrazione di host VMware](./vmware-host.md).
+- **Migrazione di VMware:** Un'architettura locale comune include le applicazioni e le macchine virtuali in un host virtuale e i database in bare metal. In questo scenario, è possibile eseguire la migrazione di intere istanze di SQL Server per supportare la migrazione dell'host VMware al servizio VMware di Azure. Per ulteriori informazioni, vedere [migrazione di host VMware](./vmware-host.md).
 
 Se nessuno dei criteri precedenti si applica a questa migrazione, potrebbe essere consigliabile continuare con il processo di [migrazione standard](../index.md). Nel processo standard, le strutture dei dati vengono migrate in modo iterativo, insieme a ogni carico di lavoro.
 
@@ -46,13 +46,13 @@ Prima di eseguire una migrazione di SQL Server, è necessario iniziare con l'esp
 
 Di seguito è riportato un esempio di inventario server:
 
-|SQL Server|Scopo|Versione|[Criticità](../../manage/considerations/criticality.md)|[Riservatezza](../../govern/policy-compliance/data-classification.md)|Conteggio database|SSIS|SSRS|SSAS|HDInsight|Numero di nodi|
+|SQL Server|Finalità|Versione|[Criticità](../../manage/considerations/criticality.md)|[Riservatezza](../../govern/policy-compliance/data-classification.md)|Conteggio database|SSIS|SSRS|SSAS|HDInsight|Numero di nodi|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|App principali|2016|Cruciale|Riservatezza elevata|40|N/D|N/D|N/D|Sì|3|
-|SQL-02|App principali|2016|Cruciale|Riservatezza elevata|40|N/D|N/D|N/D|Sì|3|
-|SQL-03|App principali|2016|Cruciale|Riservatezza elevata|40|N/D|N/D|N/D|Sì|3|
-|SQL-04|BI|2012|Alto|XX|6|N/D|Riservate|Sì-cubo multidimensionale|No|1|
-|SQL-05|Integrazione|2008 R2|Basso|Generale|20|Sì|N/D|N/D|No|1|
+|SQL-01|App principali|2016|Cruciale|Riservatezza elevata|40|N/D|N/D|N/D|SÌ|3|
+|SQL-02|App principali|2016|Cruciale|Riservatezza elevata|40|N/D|N/D|N/D|SÌ|3|
+|SQL-03|App principali|2016|Cruciale|Riservatezza elevata|40|N/D|N/D|N/D|SÌ|3|
+|SQL-04|BI|2012|Alte|XX|6|N/D|Riservate|Sì-cubo multidimensionale|No|1|
+|SQL-05|Integrazione|2008 R2|Basse|Informazioni di carattere generale|20|SÌ|N/D|N/D|No|1|
 
 ### <a name="database-inventory"></a>Inventario database
 
@@ -60,12 +60,12 @@ Di seguito è riportato un esempio di inventario del database per uno dei server
 
 |Server|Database|[Criticità](../../manage/considerations/criticality.md)|[Riservatezza](../../govern/policy-compliance/data-classification.md)|Risultati di Data Migration Assistant (DMA)|Monitoraggio e aggiornamento DMA|Piattaforma di destinazione|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Cruciale|Riservatezza elevata|Compatibile|N/D|Database SQL di Azure|
-|SQL-01|DB-2|Alto|Riservate|Modifica dello schema obbligatoria|Modifiche implementate|Database SQL di Azure|
-|SQL-01|DB-1|Alto|Generale|Compatibile|N/D|Istanza gestita di SQL di Azure|
-|SQL-01|DB-1|Basso|Riservatezza elevata|Modifica dello schema obbligatoria|Modifiche pianificate|Istanza gestita di SQL di Azure|
-|SQL-01|DB-1|Cruciale|Generale|Compatibile|N/D|Istanza gestita di SQL di Azure|
-|SQL-01|DB-2|Alto|Riservate|Compatibile|N/D|Database SQL di Azure|
+|SQL-01|DB-1|Cruciale|Riservatezza elevata|Compatibile|N/D|database SQL di Azure|
+|SQL-01|DB-2|Alte|Riservate|Modifica dello schema obbligatoria|Modifiche implementate|database SQL di Azure|
+|SQL-01|DB-1|Alte|Informazioni di carattere generale|Compatibile|N/D|Istanza gestita di SQL di Azure|
+|SQL-01|DB-1|Basse|Riservatezza elevata|Modifica dello schema obbligatoria|Modifiche pianificate|Istanza gestita di SQL di Azure|
+|SQL-01|DB-1|Cruciale|Informazioni di carattere generale|Compatibile|N/D|Istanza gestita di SQL di Azure|
+|SQL-01|DB-2|Alte|Riservate|Compatibile|N/D|database SQL di Azure|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integrazione con il piano di adozione del cloud
 
@@ -81,7 +81,7 @@ Se è possibile eseguire la migrazione di un database nel piano a una piattaform
 
 Per i database di cui è possibile eseguire la migrazione a una soluzione PaaS, durante il processo di valutazione vengono completate le azioni seguenti.
 
-- **Valutazione con DMA:** Usare Data Migration Assistant per rilevare i problemi di compatibilità che possono influire sulla funzionalità del database nell'istanza gestita di database SQL di Azure di destinazione. Utilizzare DMA per consigliare miglioramenti in merito a prestazioni e affidabilità e per spostare lo schema, i dati e gli oggetti non indipendenti dal server di origine al server di destinazione. Per ulteriori informazioni, vedere [Data Migration Assistant](/sql/dma/dma-overview).
+- **Valutazione con DMA:** Usare Data Migration Assistant per rilevare i problemi di compatibilità che possono influire sulla funzionalità del database nell'istanza gestita di database SQL di Azure di destinazione. Utilizzare DMA per consigliare miglioramenti in merito a prestazioni e affidabilità e per spostare lo schema, i dati e gli oggetti non indipendenti dal server di origine al server di destinazione. Per ulteriori informazioni, vedere [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview).
 - **Correzione e conversione:** In base all'output di DMA, convertire lo schema dei dati di origine per correggere i problemi di compatibilità. Testare lo schema di dati convertito con le applicazioni dipendenti.
 
 ## <a name="migrate-process-changes"></a>Modifiche del processo di migrazione
@@ -94,33 +94,33 @@ La destinazione e l'origine della struttura dei dati e dei servizi possono rende
 
 Il percorso suggerito per la migrazione e la sincronizzazione utilizza una combinazione dei tre strumenti seguenti. Le sezioni seguenti descrivono le opzioni di migrazione e sincronizzazione più complesse che consentono una gamma più ampia di soluzioni di destinazione e di origine.
 
-|Opzione di migrazione|Scopo|
+|Opzione di migrazione|Finalità|
 |---------|---------|
-|[Servizio Migrazione del database di Azure](/sql/dma/dma-overview)|Supporta migrazioni in linea (tempo di inattività minimo) e offline (una volta) su larga scala a un'istanza gestita di database SQL di Azure. Supporta la migrazione da: SQL Server 2005, SQL Server 2008 e SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 e SQL Server 2017.|
-|[Replica transazionale](/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|La replica transazionale in un'istanza gestita di database SQL di Azure è supportata per le migrazioni da: SQL Server 2012 (SP2 CU8, SP3 o versioni successive), SQL Server 2014 (RTM CU10 dalla o versione successiva o SP1 CU3 o versione successiva), SQL Server 2016, SQL Server 2017.|
-|[Caricamento bulk](/sql/t-sql/statements/bulk-insert-transact-sql)|Usare il caricamento bulk in un'istanza gestita di database SQL di Azure per i dati archiviati in: SQL Server 2005, SQL Server 2008 e SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 e SQL Server 2017.|
+|[Servizio Migrazione del database di Azure](https://docs.microsoft.com/sql/dma/dma-overview)|Supporta migrazioni in linea (tempo di inattività minimo) e offline (una volta) su larga scala a un'istanza gestita di database SQL di Azure. Supporta la migrazione da: SQL Server 2005, SQL Server 2008 e SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 e SQL Server 2017.|
+|[Replica transazionale](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|La replica transazionale in un'istanza gestita di database SQL di Azure è supportata per le migrazioni da: SQL Server 2012 (SP2 CU8, SP3 o versioni successive), SQL Server 2014 (RTM CU10 dalla o versione successiva o SP1 CU3 o versione successiva), SQL Server 2016, SQL Server 2017.|
+|[Caricamento bulk](https://docs.microsoft.com/sql/t-sql/statements/bulk-insert-transact-sql)|Usare il caricamento bulk in un'istanza gestita di database SQL di Azure per i dati archiviati in: SQL Server 2005, SQL Server 2008 e SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 e SQL Server 2017.|
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Indicazioni ed esercitazioni per il processo di migrazione suggerito
 
 La scelta delle linee guida consigliate per la migrazione tramite il servizio migrazione del database dipende dalla piattaforma di origine e destinazione scelta. La tabella seguente contiene collegamenti alle esercitazioni per ciascuno degli approcci standard per la migrazione di un database SQL tramite il servizio migrazione del database.
 
-|Source  |Destinazione  |Strumento  |Tipo di migrazione  |Indicazioni  |
+|Source (Sorgente)  |Obiettivo  |Strumento  |Tipo di migrazione  |Guida  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Database SQL di Azure|Servizio Migrazione del database|Offline|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Database SQL di Azure|Servizio Migrazione del database|Online|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Istanza gestita di Database SQL di Azure|Servizio Migrazione del database|Offline|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Istanza gestita di Database SQL di Azure|Servizio Migrazione del database|Online|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|SQL Server RDS|Database SQL di Azure (o istanza gestita)|Servizio Migrazione del database|Online|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
+|SQL Server|database SQL di Azure|Database Migration Service|Offline|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|database SQL di Azure|Database Migration Service|Online|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Istanza gestita di Database SQL di Azure|Database Migration Service|Offline|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Istanza gestita di Database SQL di Azure|Database Migration Service|Online|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server RDS|Database SQL di Azure (o istanza gestita)|Database Migration Service|Online|[Esercitazione](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Indicazioni ed esercitazioni per vari servizi per soluzioni PaaS equivalenti
 
 Dopo lo spostamento dei database da un'istanza di SQL Server al servizio migrazione del database, lo schema e i dati possono essere riallocati in diverse soluzioni PaaS. Tuttavia, altri servizi necessari potrebbero essere ancora in esecuzione su tale server. Le tre esercitazioni seguenti facilitano lo trasferimento di SSIS, SSAS e SSRS ai servizi PaaS equivalenti in Azure.
 
-|Source  |Destinazione  |Strumento  |Tipo di migrazione  |Indicazioni  |
+|Source (Sorgente)  |Obiettivo  |Strumento  |Tipo di migrazione  |Guida  |
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory runtime di integrazione|Data factory di Azure|Offline|[Esercitazione](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |Modello tabulare SQL Server Analysis Services|Azure Analysis Services|SQL Server Data Tools|Offline|[Esercitazione](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Server di report di Power BI|Power BI|Offline|[Esercitazione](/power-bi/report-server/migrate-report-server)|
+|SQL Server Reporting Services|Server di report di Power BI|Power BI|Offline|[Esercitazione](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Indicazioni ed esercitazioni per la migrazione da SQL Server a un'istanza IaaS di SQL Server
 
@@ -128,7 +128,7 @@ Dopo aver eseguito la migrazione di database e servizi a istanze PaaS, è possib
 
 Utilizzare questo approccio per eseguire la migrazione di database o altri servizi nell'istanza di SQL Server.
 
-|Source  |Destinazione  |Strumento  |Tipo di migrazione  |Indicazioni  |
+|Source (Sorgente)  |Obiettivo  |Strumento  |Tipo di migrazione  |Guida  |
 |---------|---------|---------|---------|---------|
 |SQL Server a istanza singola|SQL Server in IaaS|Diversi|Offline|[Esercitazione](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 

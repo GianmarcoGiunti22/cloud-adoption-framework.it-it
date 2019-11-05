@@ -9,44 +9,44 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220934"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566408"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Definizioni dei criteri di esempio per la gestione dei costi
 
 Le singole definizioni dei criteri del cloud sono linee guida per affrontare i rischi specifici identificati durante il processo di valutazione dei rischi. Queste definizioni devono fornire un riassunto conciso dei rischi e dei piani per gestirli. Ogni definizione di istruzione deve includere i tipi di informazioni seguenti:
 
-- **Rischio aziendale.** Riepilogo del rischio che verrà risolto da questi criteri.
-- **Istruzione dei criteri.** Una spiegazione chiara e riepilogativa dei requisiti dei criteri.
-- **Opzioni di progettazione.** Suggerimenti pratici, specifiche o altre linee guida che i team IT e gli sviluppatori possono usare quando implementano i criteri.
+- **Rischio aziendale:** Riepilogo del rischio che verrà indirizzato da questo criterio.
+- **Istruzione per i criteri:** Una chiara spiegazione di riepilogo dei requisiti dei criteri.
+- **Opzioni di progettazione:** Raccomandazioni di utilità pratica, specifiche o altre istruzioni che i team IT e gli sviluppatori possono usare per l'implementazione dei criteri.
 
 Le istruzioni dei criteri di esempio seguenti affrontano i rischi aziendali comuni correlati ai costi. Queste istruzioni sono esempi a cui è possibile fare riferimento durante la stesura di istruzioni dei criteri per soddisfare le esigenze dell'organizzazione. Questi esempi non sono destinati a essere proscrittivi e sono potenzialmente disponibili diverse opzioni relative ai criteri per la gestione di ogni rischio identificato. Collaborare a stretto contatto con i team IT e aziendali per identificare i criteri migliori per un set di rischi esclusivo.
 
 ## <a name="future-proofing"></a>Investimento solido per il futuro
 
-**Rischio aziendale**: i criteri attuali non giustificano un investimento in una disciplina Gestione costi da parte del team di governance. Tuttavia, si prevede un investimento di questo tipo in futuro.
+**Rischio aziendale:** Criteri correnti che non garantiscono un investimento in una disciplina di gestione dei costi del team di governance. Tuttavia, si prevede un investimento di questo tipo in futuro.
 
-**Definizione dei criteri**: È necessario associare tutti gli asset distribuiti al cloud con un'unità di fatturazione e un carico di lavoro o un'applicazione. In questo modo si ha la sicurezza di ottenere risultati efficaci dall'impegno che si dedicherà in futuro alla gestione dei costi.
+**Istruzione per i criteri:** È necessario associare tutti gli asset distribuiti al cloud con un'unità di fatturazione e un carico di lavoro o un'applicazione. In questo modo si ha la sicurezza di ottenere risultati efficaci dall'impegno che si dedicherà in futuro alla gestione dei costi.
 
-**Opzioni di progettazione**: Per informazioni sulla definizione di una base di prova futura, vedere le discussioni correlate alla creazione di un MVP di governance nelle [guide di progettazione](../guides/index.md) di utilità pratica incluse come parte delle linee guida per il Framework di adozione del cloud.
+**Opzioni di progettazione:** Per informazioni sulla definizione di una base di prova futura, vedere le discussioni correlate alla creazione di un MVP di governance nelle [guide di progettazione](../guides/index.md) di utilità pratica incluse come parte delle linee guida per il Framework di adozione del cloud.
 
 ## <a name="budget-overruns"></a>Superamento del budget
 
-**Rischio aziendale**: la distribuzione in modalità self-service crea un rischio di superamento dei costi.
+**Rischio aziendale:** La distribuzione self-service crea il rischio di sovraspesa.
 
-**Definizione dei criteri**: qualsiasi distribuzione cloud deve essere allocata a un'unità di fatturazione con budget approvato e un meccanismo per i limiti di budget.
+**Istruzione per i criteri:** Qualsiasi distribuzione cloud deve essere allocata a un'unità di fatturazione con un budget approvato e un meccanismo per i limiti di budget.
 
-**Opzioni di progettazione**: in Azure è possibile controllare il budget con [Gestione costi di Azure](https://docs.microsoft.com/azure/cost-management/manage-budgets).
+**Opzioni di progettazione:** In Azure è possibile controllare il budget con [Gestione costi di Azure](https://docs.microsoft.com/azure/cost-management/manage-budgets)
 
 ## <a name="underutilization"></a>Sottoutilizzo
 
-**Rischio aziendale**: la società ha pagato in anticipo i servizi cloud o ha scelto un piano annuale per un importo specifico. Sussiste il rischio che l'importo concordato non venga utilizzato, causando un investimento perso.
+**Rischio aziendale:** La società ha prepagato per i servizi cloud o ha compiuto un impegno annuale per spendere un importo specifico. Sussiste il rischio che l'importo concordato non venga utilizzato, causando un investimento perso.
 
-**Definizione dei criteri**: ogni unità di fatturazione con un budget allocato per il cloud si incontrerà ogni anno per definire i budget, ogni trimestre per apportare eventuali rettifiche e ogni mese per verificare la spesa effettiva rispetto a quella pianificata. Discutere delle deviazioni superiori al 20% con il responsabile dell'unità di fatturazione una volta al mese. Ai fini della tracciabilità, assegnare tutti gli asset a un'unità di fatturazione.
+**Istruzione per i criteri:** Ogni unità di fatturazione con un budget allocato per il cloud viene soddisfatta annualmente per impostare i budget, trimestralmente per regolare i budget e mensilmente per allocare tempo per la revisione della spesa pianificata rispetto a quella effettiva. Discutere delle deviazioni superiori al 20% con il responsabile dell'unità di fatturazione una volta al mese. Ai fini della tracciabilità, assegnare tutti gli asset a un'unità di fatturazione.
 
 **Opzioni di progettazione**:
 
@@ -55,9 +55,9 @@ Le istruzioni dei criteri di esempio seguenti affrontano i rischi aziendali comu
 
 ## <a name="overprovisioned-assets"></a>Provisioning eccessivo di asset
 
-**Rischio aziendale**: nei data center locali tradizionali si ha l'abitudine di distribuire asset con più capacità del necessario in previsione di una crescita futura. Le risorse cloud possono essere ridimensionate più rapidamente rispetto alle apparecchiature tradizionali. Inoltre, i prezzi degli asset del cloud variano in base alla capacità tecnica. Esiste il rischio che la prassi tradizionale adottata nei data center locali abbia l'effetto di aumentare artificialmente la spesa relativa al cloud.
+**Rischio aziendale:** Nei data center locali tradizionali, è prassi comune distribuire gli asset con una pianificazione della capacità aggiuntiva per la crescita in futuro. Le risorse cloud possono essere ridimensionate più rapidamente rispetto alle apparecchiature tradizionali. Inoltre, i prezzi degli asset del cloud variano in base alla capacità tecnica. Esiste il rischio che la prassi tradizionale adottata nei data center locali abbia l'effetto di aumentare artificialmente la spesa relativa al cloud.
 
-**Definizione dei criteri**: qualsiasi asset distribuito nel cloud deve essere registrato in un programma che può monitorarne l'utilizzo e segnalare l'eventuale capacità in eccesso del 50% rispetto all'utilizzo. Gli asset distribuiti nel cloud devono essere raggruppati o contrassegnati in base a una logica per consentire ai membri del team di governance di coinvolgere il proprietario del carico di lavoro nell'ottimizzazione degli asset con provisioning eccessivo.
+**Istruzione per i criteri:** Qualsiasi asset distribuito nel cloud deve essere registrato in un programma in grado di monitorare l'utilizzo e segnalare una capacità superiore al 50% dell'utilizzo. Gli asset distribuiti nel cloud devono essere raggruppati o contrassegnati in base a una logica per consentire ai membri del team di governance di coinvolgere il proprietario del carico di lavoro nell'ottimizzazione degli asset con provisioning eccessivo.
 
 **Opzioni di progettazione**:
 
@@ -66,9 +66,9 @@ Le istruzioni dei criteri di esempio seguenti affrontano i rischi aziendali comu
 
 ## <a name="overoptimization"></a>Ottimizzazione eccessiva
 
-**Rischio aziendale**: Gestione dei costi effettivi crea nuovi rischi. L'ottimizzazione della spesa è inversamente proporzionale alle prestazioni del sistema. Tagliando i costi si corre il rischio di ridurre eccessivamente la spesa e di conseguenza peggiorare la qualità delle esperienze degli utenti.
+**Rischio aziendale:** Gestione dei costi effettivi crea nuovi rischi. L'ottimizzazione della spesa è inversamente proporzionale alle prestazioni del sistema. Tagliando i costi si corre il rischio di ridurre eccessivamente la spesa e di conseguenza peggiorare la qualità delle esperienze degli utenti.
 
-**Definizione dei criteri**: è necessario raggruppare e contrassegnare gli asset che hanno un impatto diretto sulle esperienze dei clienti. Prima di ottimizzare qualsiasi asset che influisca sull'esperienza del cliente, il team di governance del cloud deve adattare l'ottimizzazione in base ad almeno 90 giorni di tendenze di utilizzo. Documentare eventuali picchi collegati a eventi o alla variazione stagionale presi in considerazione durante la fase di ottimizzazione degli asset.
+**Istruzione per i criteri:** Tutti gli asset che influiscono direttamente sulle esperienze dei clienti devono essere identificati tramite il raggruppamento o l'assegnazione di tag. Prima di ottimizzare qualsiasi asset che influisca sull'esperienza del cliente, il team di governance del cloud deve adattare l'ottimizzazione in base ad almeno 90 giorni di tendenze di utilizzo. Documentare eventuali picchi collegati a eventi o alla variazione stagionale presi in considerazione durante la fase di ottimizzazione degli asset.
 
 **Opzioni di progettazione**:
 
@@ -86,4 +86,4 @@ Per accelerare l'adozione di questa disciplina, scegliere la [Guida alla governa
 Sulla base dei rischi e della tolleranza, stabilire un processo per controllare e comunicare la conformità ai criteri di Gestione costi.
 
 > [!div class="nextstepaction"]
-> [Establish policy compliance processes (Stabilire i processi di conformità ai criteri)](./compliance-processes.md)
+> [Stabilire i processi di conformità ai criteri](./compliance-processes.md)

@@ -1,5 +1,5 @@
 ---
-title: Modelli di promozione - Promozione, processo di gestione temporanea o modello in più fasi
+title: 'Modelli di promozione: singolo passaggio, gestione temporanea o volo'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informazioni sull'impatto della promozione sulle attività di migrazione
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548441"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564608"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>Modelli di promozione - singolo passaggio, gestione temporanea o anteprima
+# <a name="promotion-models-single-step-staged-or-flight"></a>Modelli di promozione: singolo passaggio, gestione temporanea o volo
 
 La migrazione di un carico di lavoro viene spesso descritta come un'attività singola. In realtà si tratta di una raccolta di attività più piccole che facilitano lo spostamento di un asset digitale nel cloud. Una delle ultime attività in una migrazione è la promozione di un asset alla produzione. La promozione è il punto in cui il sistema di produzione cambia per gli utenti finali. Spesso può comportare semplicemente la modifica del routing di rete con il reindirizzamento degli utenti finali al nuovo asset di produzione. La promozione è anche il punto in cui le operazioni IT o le operazioni cloud spostano l'obiettivo dei processi di gestione operativa dal sistema di produzione precedente ai nuovi sistemi di produzione.
 

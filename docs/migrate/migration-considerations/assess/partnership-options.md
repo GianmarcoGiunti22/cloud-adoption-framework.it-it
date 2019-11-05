@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564652"
 ---
 # <a name="understand-partnership-options"></a>Informazioni sulle opzioni di partnership
 
@@ -82,7 +82,7 @@ Ecco le fasi principali di un impegno tipico di FastTrack for Azure:
 
 **Adottare:** Grazie ad [Azure cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf), i servizi Microsoft definiscono le progettazioni, i modelli e l'architettura di governance di base di Azure, eseguendo il mapping dei requisiti all'architettura di riferimento più appropriata e pianificando, progettando e distribuendo l'infrastruttura. gestione, sicurezza e identità necessari per i carichi di lavoro.
 
-**Esegui migrazione/ottimizzazione:** La soluzione di [modernizzazione cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dei servizi Microsoft offre un approccio completo per spostare le applicazioni e l'infrastruttura in Azure, nonché per ottimizzare e modernizzare una volta nel cloud grazie alla migrazione semplificata.
+**Esegui migrazione/ottimizzazione:** La soluzione di [modernizzazione cloud](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dei servizi Microsoft offre un approccio completo per spostare le applicazioni e l'infrastruttura in Azure, nonché per ottimizzare e modernizzare dopo la distribuzione cloud, supportata dalla migrazione semplificata.
 
 **Innovazione:** La [soluzione CCoE (cloud Center of Excellence)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) dei servizi Microsoft offre un impegno di coaching DevOps e usa i principi DevOps combinati con controlli di sicurezza e gestione dei servizi nativi del cloud prescrittivi per favorire l'innovazione aziendale, aumenta l'agilità e Riduci il tempo per il valore entro una funzionalità sicura, prevedibile e flessibile per la gestione delle operazioni e della distribuzione dei servizi.
 

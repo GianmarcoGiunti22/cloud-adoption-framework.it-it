@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833752"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564147"
 ---
 # <a name="review-rationalization-decisions"></a>Esaminare le decisioni sulla razionalizzazione
 
@@ -26,7 +26,7 @@ Per convalidare le decisioni di razionalizzazione, utilizzare le domande seguent
 
 ## <a name="innovation-indicators"></a>Indicatori di innovazione
 
-Se la revisione congiunta delle domande seguenti genera una risposta "Sì", un carico di lavoro potrebbe essere un candidato migliore per l'innovazione. Un carico di lavoro di questo tipo non verrà migrato tramite un modello di spostamento/accuratezza o modernizzazione. Al contrario, la logica di business o le strutture di dati verrebbero ricreate come un'applicazione nuova o riprogettata. Questo approccio può essere più laborioso e richiede molto tempo. Tuttavia, per un carico di lavoro che rappresenta una significativa redditività, l'investimento è giustificato.
+Se la revisione congiunta delle domande seguenti genera una risposta "Sì", un carico di lavoro potrebbe essere un candidato migliore per l'innovazione. Non verrà eseguita la migrazione di tale carico di lavoro tramite un modello lift-and-Shift o modernizzate. Al contrario, la logica di business o le strutture di dati verrebbero ricreate come un'applicazione nuova o riprogettata. Questo approccio può essere più laborioso e richiede molto tempo. Tuttavia, per un carico di lavoro che rappresenta una significativa redditività, l'investimento è giustificato.
 
 - Le applicazioni in questo carico di lavoro creano una differenziazione del mercato?
 - Un investimento proposto o approvato mira a migliorare le esperienze associate alle applicazioni in questo carico di lavoro?

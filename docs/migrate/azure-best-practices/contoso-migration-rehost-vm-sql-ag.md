@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3f80454b864ae89f15a3be6d736192545683a0ed
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239275"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566515"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Riospitare un'app locale in macchine virtuali di Azure e SQL Server Gruppi di disponibilità Always On
 
@@ -96,7 +96,7 @@ Contoso valuta la progettazione proposta elaborando un elenco di vantaggi e svan
 
 **Servizio** | **Descrizione** | **Costii**
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA viene eseguito dalla macchina SQL Server locale e migra il database su una VPN da sito a sito ad Azure. | DMA è uno strumento gratuito e scaricabile.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA viene eseguito dalla macchina SQL Server locale e migra il database su una VPN da sito a sito ad Azure. | DMA è uno strumento gratuito e scaricabile.
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Questo servizio orchestra e gestisce la migrazione e il ripristino di emergenza per le VM di Azure e per le VM e i server fisici locali. | Durante la replica in Azure vengono addebitati costi relativi all'archiviazione di Azure. In caso di failover vengono create macchine virtuali di Azure, le quali sono soggette a costi. [Altre informazioni](https://azure.microsoft.com/pricing/details/site-recovery) su addebiti e prezzi.
 
 ## <a name="migration-process"></a>Processo di migrazione
@@ -657,7 +657,7 @@ Il team di sicurezza Contoso esamina le VM di Azure WEBVM, SQLAOG1 e SQLAOG2 per
 
 - Il team esamina i gruppi di sicurezza di rete (NSG) per la macchina virtuale per controllare l'accesso. I gruppi di sicurezza di rete vengono usati per assicurarsi che possa passare solo il traffico consentito all'applicazione.
 - Il team valuta l'opportunità di proteggere i dati sul disco usando Crittografia dischi di Azure e Key Vault.
-- Il team dovrebbe valutare l'uso della tecnologia TDE (Transparent Data Encryption) e quindi abilitarla nel database di SmartHotel360 in esecuzione sul nuovo gruppo di disponibilità AlwaysOn di SQL. [Altre informazioni](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
+- Il team dovrebbe valutare l'uso della tecnologia TDE (Transparent Data Encryption) e quindi abilitarla nel database di SmartHotel360 in esecuzione sul nuovo gruppo di disponibilità AlwaysOn di SQL. [Altre informazioni](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
 Per altre informazioni, vedere [procedure consigliate per la sicurezza per carichi di lavoro IaaS in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 

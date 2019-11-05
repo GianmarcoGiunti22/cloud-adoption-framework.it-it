@@ -47,7 +47,7 @@ La prima decisione da prendere in merito all'accelerazione della distribuzione r
 - Anche se vengono usati gruppi di gestione di Azure, è prevista una gerarchia relativamente semplice.
 - Verranno usati progetti Azure Blueprints per distribuire e aggiornare le sottoscrizioni tramite l'applicazione di requisiti di controllo degli accessi in base al ruolo, modelli di Resource Manager e Criteri di Azure nei vari gruppi di gestione.
 
-## <a name="applying-the-dependent-patterns"></a>Applicazione dei modelli dipendenti
+## <a name="apply-the-dependent-patterns"></a>Applicare i modelli dipendenti
 
 Le decisioni seguenti rappresentano i modelli da applicare tramite la strategia di applicazione dei criteri sopra descritta:
 

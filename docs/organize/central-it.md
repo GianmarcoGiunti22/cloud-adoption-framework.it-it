@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549109"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564284"
 ---
 # <a name="central-it-capabilities"></a>Funzionalità IT centrali
 
@@ -93,7 +93,7 @@ Le misure di questo rischio sono velocità e flessibilità. Il Cloud semplifica 
 
 Molti settori richiedono una rigida aderenza alla conformità di terze parti. Alcuni requisiti di conformità richiedono anche un controllo IT centralizzato. Il recapito di queste misure di conformità può aggiungere tempi ai processi di distribuzione, specialmente per le nuove tecnologie che non sono state usate in modo esteso. In questi scenari, prevedere ritardi nella distribuzione durante le fasi iniziali dell'adozione. Situazioni analoghe sono disponibili per le aziende che gestiscono dati sensibili dei clienti, ma che potrebbero non essere soggette a requisiti di conformità di terze parti.
 
-### <a name="operating-within-the-exceptions"></a>Funzionamento all'interno delle eccezioni
+### <a name="operate-within-the-exceptions"></a>Opera all'interno delle eccezioni
 
 Quando sono necessari processi IT centralizzati e questi processi creano Checkpoint appropriati nell'adozione di nuove tecnologie, questi Checkpoint di innovazione possono comunque essere risolti rapidamente. I requisiti di governance e conformità sono progettati per proteggere gli elementi sensibili, non per proteggere tutto. Il cloud offre semplici meccanismi per l'acquisizione e la distribuzione di risorse isolate, mantenendo al tempo stesso Guardrails appropriati.
 
