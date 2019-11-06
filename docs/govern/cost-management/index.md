@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221158"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566415"
 ---
 # <a name="cost-management-discipline-overview"></a>Panoramica della disciplina Gestione costi
 
@@ -31,9 +31,9 @@ I principali destinatari di queste linee guida sono gli architetti dell'infrastr
 Una disciplina Gestione costi si basa principalmente sulle definizioni dei criteri in base ai quali prendere decisioni operative e sui requisiti dell'architettura risultanti. Per esempi di definizioni dei criteri, vedere l'articolo [Definizioni dei criteri di esempio per la gestione dei costi](./policy-statements.md). Questi esempi possono essere usati come punto di partenza per definire i criteri di governance della propria organizzazione.
 
 > [!CAUTION]
-> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud e creare definizioni dei criteri che siano in grado di soddisfare le esigenze esclusive della propria organizzazione, eseguire i passaggi seguenti.
+> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud, eseguire i passaggi seguenti in modo da creare definizioni dei criteri in grado di soddisfare le esigenze specifiche della propria organizzazione.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Sviluppo di definizioni dei criteri di governance per la gestione dei costi
+## <a name="develop-governance-policy-statements"></a>Sviluppare dichiarazioni per i criteri di governance
 
 I sei passaggi seguenti consentono di definire i criteri di governance per controllare i costi nel proprio ambiente.
 

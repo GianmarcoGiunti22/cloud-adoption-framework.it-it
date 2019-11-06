@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222718"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566360"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>panoramica della disciplina di accelerazione della distribuzione
 
@@ -33,9 +33,9 @@ I principali destinatari di queste linee guida sono gli architetti dell'infrastr
 Una disciplina di accelerazione della distribuzione si basa principalmente sulle definizioni dei criteri in base ai quali prendere decisioni operative e sui requisiti dell'architettura risultanti. Per esempi di definizioni dei criteri, vedere l'articolo [Definizioni dei criteri per l'accelerazione della distribuzione](./policy-statements.md). Questi esempi possono essere usati come punto di partenza per definire i criteri di governance della propria organizzazione.
 
 > [!CAUTION]
-> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud e creare definizioni dei criteri che siano in grado di soddisfare le esigenze esclusive della propria organizzazione, eseguire i passaggi seguenti.
+> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud, eseguire i passaggi seguenti in modo da creare definizioni dei criteri in grado di soddisfare le esigenze specifiche della propria organizzazione.
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>Sviluppo di definizioni dei criteri di governance dell'accelerazione della distribuzione
+## <a name="develop-governance-policy-statements"></a>Sviluppare dichiarazioni per i criteri di governance
 
 I sei passaggi seguenti consentono di definire i criteri di governance per controllare la distribuzione e la configurazione delle risorse nell'ambiente cloud.
 

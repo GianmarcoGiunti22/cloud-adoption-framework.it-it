@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71025738"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564300"
 ---
-# <a name="managing-organizational-alignment"></a>Gestione dell'allineamento dell'organizzazione
+# <a name="manage-organizational-alignment"></a>Gestire l'allineamento dell'organizzazione
 
 L'adozione del cloud non può prescindere dal contributo di persone ben organizzate. Per la buona riuscita dell'adozione del cloud è infatti necessario personale adeguatamente qualificato che svolga il tipo di lavoro appropriato, in linea con obiettivi di business chiaramente definiti e in un ambiente correttamente gestito. Per implementare un modello operativo cloud efficace, è importante definire strutture organizzative con personale adeguato. Questo articolo illustra un approccio per la definizione e la gestione delle strutture organizzative appropriate in quattro passaggi.
 
@@ -130,7 +130,7 @@ Di seguito è riportato un elenco delle funzionalità cloud necessarie per assic
 - [Piattaforma cloud](./cloud-platform.md): per gestire e perfezionare la piattaforma.
 - [Automazione del cloud](./cloud-automation.md): per accelerare l'adozione e l'innovazione.
 
-## <a name="maturing-organizational-structures"></a>Definizione della maturità delle strutture organizzative
+## <a name="mature-organizational-structures"></a>Strutture organizzative mature
 
 Entro certi limiti, ognuna delle funzionalità sopra elencate viene distribuita in ogni attività di adozione, in modo esplicito o in base a una struttura del team definita.
 Con l'aumentare delle esigenze di adozione, è quindi necessario creare un equilibrio e una struttura. Per soddisfare queste esigenze, le aziende spesso seguono un processo per definire la maturità delle strutture organizzative.
@@ -139,7 +139,7 @@ Con l'aumentare delle esigenze di adozione, è quindi necessario creare un equil
 
 L'articolo sulla [determinazione della maturità della struttura organizzativa](./organization-structures.md) include maggiori dettagli su ogni livello di maturità.
 
-## <a name="aligning-raci-charts"></a>Allineamento dei grafici per l'assegnazione delle responsabilità
+## <a name="align-raci-charts"></a>Allineare i grafici RACI
 
 A ogni livello di maturità, la responsabilità delle diverse funzionalità cloud passa a nuovi team. Questo passaggio di responsabilità consente di velocizzare i cicli di migrazione e innovazione, automatizzando le operazioni e rimuovendo gli ostacoli al cambiamento. Per allineare correttamente le assegnazioni, l'articolo sull'[allineamento delle assegnazioni delle responsabilità](./raci-alignment.md) include un apposito grafico per ognuna delle strutture organizzative a cui si fa riferimento.
 

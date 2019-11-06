@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 6c3588c7b7b8e3ae53fc2d2a311b93b548b856c5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239736"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566283"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guida alla governance per aziende complesse
 
@@ -40,7 +40,7 @@ Il diagramma seguente mostra la gerarchia dell'MVP per la governance per organiz
 Tutte le applicazioni devono essere distribuite nell'area appropriata della gerarchia di gruppi di gestione, sottoscrizioni e gruppi di risorse. Durante la pianificazione della distribuzione, il team di governance del cloud creerà i nodi necessari nella gerarchia per i team responsabili dell'adozione del cloud.
 
 1. Definire un gruppo di gestione per ogni business unit, con una gerarchia dettagliata in base ad area geografica e tipo di ambiente, ad esempio ambiente di produzione o di preproduzione.
-2. Creare una sottoscrizione di produzione e non di produzione per ogni combinazione univoca di business unit o area geografia dedicata. È necessario prestare particolare attenzione se si creano più sottoscrizioni. Per altre informazioni, vedere [qui](../../../decision-guides/subscriptions/index.md).
+2. Creare una sottoscrizione di produzione e non di produzione per ogni combinazione univoca di business unit o area geografia dedicata. È necessario prestare particolare attenzione se si creano più sottoscrizioni. Per altre informazioni, vedere la [guida alle decisioni relative alle sottoscrizioni](../../../decision-guides/subscriptions/index.md).
 3. Applicare una [nomenclatura coerente](../../../ready/azure-best-practices/naming-and-tagging.md) a ogni livello di questa gerarchia di gruppi.
 4. I gruppi di risorse dovrebbero essere distribuiti in modo da tenere conto del ciclo di vita dei relativi contenuti: tutti quelli sviluppati, gestiti e ritirati insieme devono stare insieme. Per altre informazioni sulle procedure consigliate per i gruppi di risorse, vedere [qui](../../../decision-guides/resource-consistency/index.md).
 5. La [scelta dell'area](../../../decision-guides/regions/index.md) è particolarmente importante, perché bisogna considerare la possibilità di implementare procedure di rete, monitoraggio e controllo per il failover/failback, oltre alla disponibilità [degli SKU necessari](https://azure.microsoft.com/global-infrastructure/services).

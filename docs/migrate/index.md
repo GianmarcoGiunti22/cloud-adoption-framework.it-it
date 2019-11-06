@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378270"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566867"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migrazione al cloud in Cloud Adoption Framework
 
@@ -130,7 +130,7 @@ In sostanza, la migrazione al cloud si articola in quattro semplici fasi: valuta
 
 ![Modello di migrazione di Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Creazione di un portfolio cloud bilanciato
+## <a name="create-a-balanced-cloud-portfolio"></a>Creare un portfolio cloud bilanciato
 
 Qualsiasi portfolio tecnologico bilanciato include una combinazione mista di asset in vari stati. Alcune applicazioni sono pianificate per il ritiro e hanno un supporto minimo. Altre applicazioni o altri asset sono supportati in uno stato di manutenzione, ma le funzionalità di tali soluzioni sono stabili. Per i processi aziendali più recenti, è probabile che le condizioni di mercato in evoluzione promuovano interventi continuativi di miglioramento delle funzionalità o modernizzazione. Quando emergono opportunità per promuovere nuovi flussi di ricavi, nell'ambiente vengono introdotti nuove applicazioni o nuovi asset. In ogni fase del ciclo di vita di un asset, l'impatto di qualsiasi investimento su ricavi e profitti sarà variabile. Man mano che si avanza nel ciclo di vita diminuiscono le probabilità che una nuova funzionalità o un nuovo progetto di modernizzazione produca un ritorno sugli investimenti interessante.
 
