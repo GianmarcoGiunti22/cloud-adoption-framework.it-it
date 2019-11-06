@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: Passare a una migrazione completa
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: Migrazione di host VMWare
+            - name: Migrazione di host VMware
               items:
                 - name: Panoramica
                   href: migrate/azure-best-practices/vmware-host.md
@@ -475,13 +475,13 @@
               items:
                 - name: Panoramica
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: Decisioni che influiscono sulle attività di migrazione
+                - name: Decisioni che influiscono sulla migrazione
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Elenco di controllo per la pianificazione dell'ambiente
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Allineare ruoli e responsabilità
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Strutturare backlog per la gestione delle modifiche
+                - name: Gestione del cambiamento agile
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Revisione dei backlog di migrazione
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Mantenere allineate le priorità
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Valutare l'idoneità di carichi di lavoro e asset
+                - name: Valutare l'idoneità dei carichi di lavoro
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Progettare i carichi di lavoro
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Stimare i costi del cloud
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Coinvolgere il supporto e i partner per la migrazione
+                - name: Informazioni sulle opzioni di partnership
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Gestire i processi incrementali
+                - name: Gestire il cambiamento
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Processi di approvazione delle modifiche
+                - name: Approvare le modifiche dell'architettura
                   href: migrate/migration-considerations/assess/approve.md
             - name: Eseguire la migrazione di singoli asset
               items:
                 - name: Panoramica
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 'Modelli di promozione - singolo passaggio, gestione temporanea o anteprima'
+                - name: Modelli di promozione
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Attività di correzione
+                - name: Correggere gli asset
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Replicare gli asset nel cloud
+                - name: Replicare gli asset
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Opzioni di replica
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Gestire temporaneamente i carichi di lavoro per il test e la promozione
+                - name: Staging dei carichi di lavoro
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Ottimizzare e promuovere i carichi di lavoro
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Test aziendale
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Definire benchmark e ottimizzare gli asset
+                - name: Valutare e ridimensionare gli asset
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Idoneità per la promozione
+                - name: Preparare per la promozione
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Promuovere i carichi di lavoro nell'ambiente di produzione
+                - name: Alzare il livello alla produzione
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Rimuovere gli asset ritirati
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Analisi retrospettiva
+                - name: Eseguire analisi retrospettive
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Proteggere e gestire i carichi di lavoro nell'ambiente di produzione
               items:
