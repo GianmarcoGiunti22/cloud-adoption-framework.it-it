@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566024"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656697"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Progettazione di governance per più team
 
@@ -232,7 +232,7 @@ Sono stati appresi diversi modelli per la gestione dell'accesso alle risorse di 
 > [!NOTE]
 > Vedere [informazioni sull'accesso alle risorse in Azure](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles) per altre informazioni sulla relazione tra gli account e le sottoscrizioni di Azure.
 
-A tale scopo, seguire questa procedura:
+Seguire questa procedura:
 
 1. Creare un [account di Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization), se l'organizzazione non ne ha già uno. La persona che effettua l'iscrizione per l'account di Azure diventa l'amministratore account di Azure e i leader dell'organizzazione devono scegliere una persona che assuma questo ruolo. Questo utente sarà responsabile di:
     - Creazione di sottoscrizioni.
@@ -259,7 +259,7 @@ A tale scopo, seguire questa procedura:
 6. Creare un processo di approvazione per i **proprietari dei carichi di lavoro** per richiedere la creazione dei gruppi di risorse. Il processo di approvazione può essere implementato in molti modi, ad esempio tramite posta elettronica oppure usando uno strumento di gestione dei processi come i [flussi di lavoro di SharePoint](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Il processo di approvazione può seguire questi passaggi:
     - Il **proprietario del carico di lavoro** prepara una distinta base per le risorse di Azure necessarie nell'ambiente di **sviluppo**, di **produzione** o in entrambi e la invia al **proprietario della sottoscrizione**.
     - Il **proprietario della sottoscrizione** esamina la distinta base e convalida le risorse richieste per garantire che siano appropriate per l'uso previsto, ad esempio verificando che le [dimensioni delle macchine virtuali](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) richieste siano corrette.
-    - Se la richiesta non viene approvata, viene inviata una notifica al **proprietario del carico di lavoro**. Se la richiesta viene approvata, il **proprietario della sottoscrizione** [crea il gruppo di risorse richiesto](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) seguendo le [convenzioni di denominazione](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) dell'organizzazione, [aggiunge il **proprietario del carico di lavoro**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) con il [**ruolo di collaboratore** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)e invia una notifica al **proprietario del carico di lavoro** per comunicare che il gruppo di risorse è stato creato.
+    - Se la richiesta non viene approvata, viene inviata una notifica al **proprietario del carico di lavoro**. Se la richiesta viene approvata, il **proprietario della sottoscrizione** [crea il gruppo di risorse richiesto](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) seguendo le [convenzioni di denominazione](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) dell'organizzazione, [aggiunge il **proprietario del carico di lavoro**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) con il [**ruolo di collaboratore** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)e invia una notifica al **proprietario del carico di lavoro** per comunicare che il gruppo di risorse è stato creato.
 7. Creare un processo di approvazione per i proprietari del carico di lavoro per richiedere una connessione peering reti virtuali dal proprietario dell'infrastruttura condivisa. Come con il passaggio precedente, questo processo di approvazione può essere implementato tramite posta elettronica o tramite uno strumento di gestione dei processi.
 
 Ora che il modello di governance è stato implementato, è possibile distribuire i servizi di infrastruttura condivisa.

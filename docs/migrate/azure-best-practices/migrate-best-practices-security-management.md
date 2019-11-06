@@ -8,19 +8,19 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564773"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656704"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Procedure consigliate per proteggere e gestire i carichi di lavoro migrati ad Azure
 
 In fase di pianificazione e progettazione per la migrazione, oltre a considerare la migrazione stessa, è necessario valutare il modello di sicurezza e gestione in Azure dopo la migrazione. Questo articolo descrive la pianificazione e le procedure consigliate per proteggere la distribuzione di Azure dopo la migrazione, nonché le attività continuative da svolgere per mantenere un'esecuzione ottimale della distribuzione.
 
 > [!IMPORTANT]
-> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità variano nel tempo.
+> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità mutano nel tempo.
 
 ## <a name="secure-migrated-workloads"></a>Proteggere i carichi di lavoro migrati
 
@@ -137,7 +137,7 @@ Azure offre un paio di soluzioni:
 
 ![proteggere le app Web](./media/migrate-best-practices-security-management/web-apps.png)
 
-*Insieme di credenziali delle chiavi di Azure*
+*Insieme di credenziali chiave Azure*
 
 **Altre informazioni**:
 
@@ -219,7 +219,7 @@ L'assegnazione di nomi significativi ai gruppi di risorse che gli amministratori
 
 **Altre informazioni**:
 
-- [Informazioni](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) sulle convenzioni di denominazione.
+- [Informazioni](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) sulle convenzioni di denominazione.
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Procedura consigliata: implementare i blocchi di eliminazione per i gruppi di risorse
 
@@ -419,7 +419,7 @@ I dischi gestiti di Azure semplificano la gestione dei dischi per le macchine vi
 - È possibile convertire dischi esistenti in gestiti.
 - È consigliabile creare macchine virtuali in set di disponibilità per disponibilità e resilienza elevate. Quando si verificano interruzioni pianificate o non pianificate, i set di disponibilità garantiscono la disponibilità continua di almeno una macchina virtuale nel set.
 
-![Dischi gestiti](./media/migrate-best-practices-security-management/managed-disks.png)
+![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
 
 *Dischi gestiti*
 

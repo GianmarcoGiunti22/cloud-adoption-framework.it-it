@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565253"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656553"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Definire le procedure operative di gestione nel cloud
 
@@ -42,6 +42,6 @@ Entrambe queste procedure consigliate si basano su una metodologia di stato futu
 - **Operazioni della piattaforma:** Tutti gli ambienti IT contengono un set di piattaforme di uso comune. Queste piattaforme possono includere archivi dati, ad esempio SQL Server o Azure HDInsight. Altre piattaforme comuni possono includere soluzioni di contenitori come Azure Kubernetes Service (AKS). Indipendentemente dalla piattaforma, la maturità delle operazioni della piattaforma è incentrata sulla personalizzazione delle operazioni in base alla modalità di distribuzione, configurazione e utilizzo delle piattaforme comuni da parte dei carichi di lavoro.
 - **Operazioni del carico di lavoro:** Al massimo livello di maturità operativa, i team operativi cloud sono in grado di ottimizzare le operazioni per i carichi di lavoro cruciali per il successo dell'azienda. Per questi carichi di lavoro ad alta criticità, i dati disponibili possono aiutare ad automatizzare la correzione, il dimensionamento o la protezione dei carichi di lavoro in base al relativo utilizzo.
 
-Indicazioni aggiuntive, ad esempio il [Framework di revisione della progettazione (nome in codice: principi di progettazione del cloud)](https://docs.microsoft.com/azure/architecture/reliability), consentono di prendere decisioni di architettura dettagliate su ogni carico di lavoro, all'interno delle discipline descritte in precedenza.
+Indicazioni aggiuntive, ad esempio il [Framework di revisione della progettazione (nome in codice: principi di progettazione del cloud)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), consentono di prendere decisioni di architettura dettagliate su ogni carico di lavoro, all'interno delle discipline descritte in precedenza.
 
 Questa sezione del Framework di adozione del cloud verrà compilata su ognuno degli argomenti precedenti per promuovere le operazioni cloud mature all'interno dell'organizzazione.

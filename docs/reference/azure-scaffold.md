@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561817"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656651"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffold Azure enterprise: governance prescrittiva per le sottoscrizioni
 
@@ -115,7 +115,7 @@ Il primo pilastro dello scaffolding è uno standard di denominazione coerente. S
 > [!TIP]
 > Per le convenzioni di denominazione:
 >
-> - Esaminare [Patterns and Practices guidance (Linee guida su modelli e procedure)](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) e adottarle dove possibile. Queste linee guida consentono di stabilire uno standard di denominazione significativo e offre esempi dettagliati.
+> - Esaminare [Patterns and Practices guidance (Linee guida su modelli e procedure)](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) e adottarle dove possibile. Queste linee guida consentono di stabilire uno standard di denominazione significativo e offre esempi dettagliati.
 > - Uso dei criteri di Gestione risorse per applicare gli standard di denominazione.
 >
 > Occorre tenere presente che è difficile modificare i nomi in un secondo momento, pertanto spendere alcuni minuti a farlo a questo punto consentiranno di non dover affrontare problemi più avanti.

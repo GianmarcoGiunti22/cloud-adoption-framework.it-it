@@ -8,28 +8,28 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f3faa122039097dd6f0f4df1d6f5071b77816545
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565428"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656633"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Abilita rilevamento e avvisi per le modifiche critiche
 
-Azure Rilevamento modifiche e l'inventario forniscono avvisi sullo stato di configurazione dell'ambiente ibrido e sulle modifiche apportate a tale ambiente. È possibile monitorare le modifiche critiche a file, servizi, software e registro di sistema che potrebbero influire sui server distribuiti.
+Azure Rilevamento modifiche e l'inventario forniscono avvisi sullo stato di configurazione dell'ambiente ibrido e sulle modifiche apportate a tale ambiente. Può segnalare modifiche critiche a file, servizi, software e registro di sistema che potrebbero influire sui server distribuiti.
 
 Per impostazione predefinita, il servizio inventario di automazione di Azure non monitora i file o le impostazioni del registro di sistema. La soluzione fornisce un elenco di chiavi del registro di sistema consigliate per il monitoraggio. Per visualizzare questo elenco, passare all'account di automazione nella portale di Azure e selezionare **inventory** > **Edit Settings**.
 
 ![Screenshot della visualizzazione inventario di automazione di Azure nella portale di Azure](./media/change-tracking1.png)
 
-Per ulteriori informazioni su ogni chiave del registro di sistema, vedere [rilevamento delle modifiche della chiave del registro di sistema](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). È possibile valutare e quindi abilitare ogni chiave selezionandola. L'impostazione viene applicata a tutte le macchine virtuali abilitate nell'area di lavoro corrente.
+Per ulteriori informazioni su ogni chiave del registro di sistema, vedere [rilevamento delle modifiche della chiave del registro di sistema](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). Selezionare un tasto qualsiasi per valutare e quindi abilitarlo. L'impostazione viene applicata a tutte le macchine virtuali abilitate nell'area di lavoro corrente.
 
-È anche possibile tenere traccia delle modifiche di file critiche. Ad esempio, si potrebbe voler tenere traccia del file C:\windows\system32\drivers\etc\hosts perché il sistema operativo lo usa per eseguire il mapping dei nomi host agli indirizzi IP. Eventuali modifiche apportate a questo file possono causare problemi di connettività o reindirizzare il traffico a siti Web pericolosi.
+È anche possibile usare il servizio per tenere traccia delle modifiche dei file critiche. Ad esempio, si potrebbe voler tenere traccia del file C:\windows\system32\drivers\etc\hosts perché il sistema operativo lo usa per eseguire il mapping dei nomi host agli indirizzi IP. Le modifiche a questo file possono causare problemi di connettività o reindirizzare il traffico a siti Web pericolosi.
 
-Per abilitare il rilevamento del contenuto del file per il file host, seguire i passaggi in [abilitare il rilevamento del contenuto del file](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking).
+Per abilitare il rilevamento del contenuto di file per il file degli host, seguire i passaggi in [abilitare il rilevamento del contenuto del file](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking).
 
-È anche possibile aggiungere un avviso per le modifiche apportate ai file di cui si sta eseguendo il monitoraggio. Si immagini, ad esempio, di voler impostare un avviso per le modifiche apportate al file degli host. Per iniziare, passare a Log Analytics selezionando **log Analytics** sulla barra dei comandi o aprendo ricerca log per l'area di lavoro log Analytics collegata. Al termine dell'Log Analytics, cercare le modifiche al contenuto del file host usando la query seguente:
+È anche possibile aggiungere un avviso per le modifiche ai file di cui si sta eseguendo il monitoraggio. Si immagini, ad esempio, di voler impostare un avviso per le modifiche apportate al file degli host. Selezionare **log Analytics** sulla barra dei comandi o cercare log per l'area di lavoro log Analytics collegata. In Log Analytics utilizzare la query seguente per cercare le modifiche apportate al file hosts:
 
 ```kusto
 ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
@@ -39,7 +39,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 Questa query cerca le modifiche apportate al contenuto dei file con un percorso che contiene la parola "hosts". È anche possibile cercare un file specifico modificando il parametro path. ad esempio `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.
   
-Dopo che la query ha restituito i risultati, selezionare **nuova regola di avviso** per aprire l'editor delle regole di avviso. È anche possibile ottenere questo editor tramite monitoraggio di Azure nel portale di Azure.
+Dopo che la query ha restituito i risultati, selezionare **nuova regola di avviso** per aprire l'Editor regole di avviso. È anche possibile ottenere questo editor tramite monitoraggio di Azure nel portale di Azure.
 
 Nell'editor delle regole di avviso esaminare la query e modificare la logica di avviso, se necessario. In questo caso, si desidera che l'avviso venga generato se vengono rilevate modifiche in qualsiasi computer nell'ambiente.
 
@@ -51,13 +51,13 @@ Dopo aver impostato la logica della condizione, è possibile assegnare gruppi di
 
 Dopo aver impostato tutti i parametri e la logica, applicare l'avviso all'ambiente.
 
-## <a name="more-tracking-and-alerting-examples"></a>Altri esempi di rilevamento e avviso
+## <a name="tracking-and-alerting-examples"></a>Esempi di rilevamento e avviso
 
-Di seguito sono riportati alcuni altri scenari comuni per il rilevamento e l'invio di avvisi che è opportuno prendere in considerazione:
+In questa sezione vengono illustrati altri scenari comuni per il rilevamento e l'invio di avvisi che è possibile utilizzare.
 
 ### <a name="driver-file-changed"></a>File del driver modificato
 
-Rilevare se i file del driver vengono modificati, aggiunti o rimossi. Utile per tenere traccia delle modifiche apportate ai file di sistema critici.
+Utilizzare la query seguente per rilevare se i file del driver vengono modificati, aggiunti o rimossi. È utile per tenere traccia delle modifiche apportate ai file di sistema critici.
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Files" and FileSystemPath contains " c:\\windows\\system32\\drivers\\"
@@ -65,7 +65,7 @@ Rilevare se i file del driver vengono modificati, aggiunti o rimossi. Utile per 
 
 ### <a name="specific-service-stopped"></a>Servizio specifico arrestato
 
-Utile per tenere traccia delle modifiche apportate ai servizi critici del sistema.
+Utilizzare la query seguente per tenere traccia delle modifiche apportate ai servizi critici del sistema.
 
   ```kusto
   ConfigurationChange | where SvcState == "Stopped" and SvcName contains "w3svc"
@@ -73,7 +73,7 @@ Utile per tenere traccia delle modifiche apportate ai servizi critici del sistem
 
 ### <a name="new-software-installed"></a>Nuovo software installato
 
-Utile per gli ambienti che devono bloccare le configurazioni software.
+Usare la query seguente per gli ambienti che devono bloccare le configurazioni software.
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Software" and ChangeCategory == "Added"
@@ -81,15 +81,15 @@ Utile per gli ambienti che devono bloccare le configurazioni software.
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>La versione software specifica è o non è installata in un computer
 
-Utile per la valutazione della sicurezza. Si noti che questa query fa riferimento `ConfigurationData`, che contiene i log per l'inventario e segnala l'ultimo stato di configurazione segnalato, non le modifiche.
+Utilizzare la query seguente per valutare la sicurezza. Questa query fa riferimento `ConfigurationData`, che contiene i log per l'inventario e fornisce l'ultimo stato di configurazione segnalato, non le modifiche.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
   ```
 
-### <a name="known-dll-changed-through-registry"></a>DLL nota modificata tramite registro di sistema
+### <a name="known-dll-changed-through-the-registry"></a>DLL nota modificata nel registro di sistema
 
-Utile per rilevare le modifiche apportate alle chiavi del registro di sistema note.
+Utilizzare la query seguente per rilevare le modifiche apportate alle chiavi del registro di sistema note.
 
   ```kusto
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
@@ -97,7 +97,7 @@ Utile per rilevare le modifiche apportate alle chiavi del registro di sistema no
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Informazioni su come gestire gli aggiornamenti ai server [creando pianificazioni](./update-schedules.md) degli aggiornamenti con automazione di Azure.
+Informazioni su come usare automazione di Azure per [creare pianificazioni](./update-schedules.md) degli aggiornamenti per gestire gli aggiornamenti ai server.
 
 > [!div class="nextstepaction"]
 > [Creare pianificazioni degli aggiornamenti](./update-schedules.md)
