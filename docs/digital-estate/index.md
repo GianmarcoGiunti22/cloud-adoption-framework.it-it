@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023456"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564738"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,11 +27,11 @@ L'importanza di un digital estate è più evidente durante la pianificazione e l
 
 La valutazione di un digital estate varia in base ai risultati aziendali da perseguire.
 
-- **Migrazioni di infrastrutture.** Quando un'organizzazione si concentra sulla propria struttura e cerca di ottimizzare costi, processi operativi, agilità o altri aspetti gestionali, il digital estate è incentrato sulle macchine virtuali, sui server e sui carichi di lavoro.
+- **Migrazioni di infrastrutture:** Quando un'organizzazione si concentra sulla propria struttura e cerca di ottimizzare costi, processi operativi, agilità o altri aspetti gestionali, il digital estate è incentrato sulle macchine virtuali, sui server e sui carichi di lavoro.
 
-- **Innovazione delle applicazioni.** Per le trasformazioni incentrate sui clienti, il punto di vista è leggermente diverso. Gli sforzi devono essere concentrati su applicazioni, API e dati transazionali a supporto dei clienti. VM e appliance di rete ricevono in genere meno attenzione.
+- **Innovazione delle applicazioni:** Per le trasformazioni incentrate sui clienti, il punto di vista è leggermente diverso. Gli sforzi devono essere concentrati su applicazioni, API e dati transazionali a supporto dei clienti. VM e appliance di rete ricevono in genere meno attenzione.
 
-- **Innovazione incentrata sui dati.** Nel mercato odierno, incentrato sul digitale, è difficile lanciare un nuovo prodotto o servizio senza una solida base di dati. Per i progetti di innovazione dei dati con supporto del cloud, l’attenzione va riposta maggiormente sulle grandi quantità di dati gestiti dall'intera organizzazione.
+- **Innovazione incentrata sui dati:** Nel mercato odierno, incentrato sul digitale, è difficile lanciare un nuovo prodotto o servizio senza una solida base di dati. Per i progetti di innovazione dei dati con supporto del cloud, l’attenzione va riposta maggiormente sulle grandi quantità di dati gestiti dall'intera organizzazione.
 
 Quando un'organizzazione riconosce la forma più importante di trasformazione, la pianificazione dei digital estate diventa molto più facile da gestire.
 

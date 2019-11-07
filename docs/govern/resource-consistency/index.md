@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222098"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565985"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Panoramica della disciplina Coerenza delle risorse
 
@@ -35,7 +35,7 @@ Una disciplina Coerenza delle risorse si basa principalmente sulle definizioni d
 > [!CAUTION]
 > I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud, eseguire i passaggi seguenti in modo da creare definizioni dei criteri in grado di soddisfare le esigenze specifiche della propria organizzazione.
 
-## <a name="developing-resource-consistency-governance-policy-statements"></a>Sviluppo di definizioni dei criteri relativi alla governance per la coerenza delle risorse
+## <a name="develop-governance-policy-statements"></a>Sviluppare dichiarazioni per i criteri di governance
 
 I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello sviluppo della governance per la coerenza delle risorse. Usare ogni passaggio come punto di partenza per le discussioni all'interno del team di governance del cloud e con i team responsabili delle attività aziendali e IT interessati in tutta l'organizzazione per stabilire i criteri e i processi necessari per gestire i rischi correlati alla coerenza delle risorse.
 

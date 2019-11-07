@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223908"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564886"
 ---
 # <a name="encryption-decision-guide"></a>Guida alle decisioni relative alla crittografia
 
@@ -103,7 +103,9 @@ La crittografia dei dati inattivi comprende anche tecniche di crittografia dei d
 
 I criteri e i requisiti di conformità complessivi, il livello di riservatezza dei dati archiviati e i requisiti di prestazioni dei carichi di lavoro dovrebbero determinare quali risorse debbano essere crittografate.
 
-**Presupposti relativi alla crittografia dei dati inattivi.** La crittografia dei dati inattivi presuppone le condizioni seguenti:
+### <a name="assumptions-about-encrypting-data-at-rest"></a>Presupposti relativi alla crittografia dei dati inattivi
+
+La crittografia dei dati inattivi presuppone le condizioni seguenti:
 
 - Si archiviano i dati che non sono destinati all'utilizzo pubblico.
 - I carichi di lavoro possono accettare i costi di latenza aggiuntivi per la crittografia dei dischi.

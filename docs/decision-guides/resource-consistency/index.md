@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683520"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564811"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guida alle decisioni relative alla coerenza delle risorse
 
@@ -41,7 +41,7 @@ I gruppi di risorse fungono da contenitori per le risorse con un ciclo di vita c
 Se la risposta è _NO_ a una di queste domande, la risorsa in questione dovrebbe essere inserita altrove, in un altro gruppo di risorse.
 
 > [!IMPORTANT]
-> I gruppi di risorse sono anche specifici per area, però spesso le risorse si trovano in aree diverse all'interno dello stesso gruppo, perché vengono gestite insieme, come descritto sopra. Per altre informazioni sulla scelta dell'area, vedere [qui](../regions/index.md).
+> I gruppi di risorse sono anche specifici per area, però spesso le risorse si trovano in aree diverse all'interno dello stesso gruppo, perché vengono gestite insieme, come descritto sopra. Per altre informazioni sulla selezione dell'area, vedere la [Guida alla decisione sulle aree](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Coerenza di distribuzione
 

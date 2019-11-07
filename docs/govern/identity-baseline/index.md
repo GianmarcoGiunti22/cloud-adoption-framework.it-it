@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222254"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566202"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Panoramica sulla disciplina Baseline di identità
 
@@ -33,9 +33,9 @@ Se l'organizzazione non dispone di competenze interne in materia di Baseline di 
 Le informative sui criteri di utilità pratica e i requisiti dell'architettura risultanti sono il principale fondamento di una disciplina Baseline di identità. Per esempi di informative sui criteri, consultare l'articolo [Identity Baseline Policy Statements (Esempi di informative sui criteri di Baseline di identità)](./policy-statements.md). Questi esempi possono essere usati come punto di partenza per definire i criteri di governance della propria organizzazione.
 
 > [!CAUTION]
-> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud, eseguire i passaggi seguenti per creare informative sui criteri che siano in grado di soddisfare le esigenze esclusive della propria organizzazione.
+> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud, eseguire i passaggi seguenti in modo da creare definizioni dei criteri in grado di soddisfare le esigenze specifiche della propria organizzazione.
 
-## <a name="developing-identity-baseline-governance-policy-statements"></a>Sviluppare istruzioni dei criteri di governance per Baseline di identità
+## <a name="develop-governance-policy-statements"></a>Sviluppare dichiarazioni per i criteri di governance
 
 Le sei fasi seguenti offrono esempi e potenziali opzioni da considerare nello sviluppo della governance di Baseline di identità. Usare ogni passaggio come punto di partenza per le discussioni all'interno del team di governance del cloud e con i team aziendali e IT interessati in tutta l'organizzazione per stabilire i criteri e i processi necessari per gestire i rischi correlati all'identità.
 

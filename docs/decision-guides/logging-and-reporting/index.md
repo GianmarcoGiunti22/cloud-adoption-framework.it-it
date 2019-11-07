@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238755"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564864"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guida alle decisioni relative a registrazione e creazione di report
 
@@ -22,13 +22,13 @@ Tutte le organizzazioni hanno bisogno di meccanismi per notificare ai team IT le
 
 ![Grafico delle opzioni relative a registrazione, creazione di report e monitoraggio, dalla meno complessa alla più complessa, allineato con i collegamenti sotto](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Passare a: [Pianificazione dell'infrastruttura di monitoraggio](#planning-your-monitoring-infrastructure) | [Cloud nativo](#cloud-native) | [Estensione locale](#on-premises-extension) | [Aggregazione tramite il gateway](#gateway-aggregation) | [Monitoraggio ibrido (locale)](#hybrid-monitoring-on-premises) | [Monitoraggio ibrido (basato sul cloud)](#hybrid-monitoring-cloud-based) | [Multi-cloud](#multicloud) | [Altre informazioni](#learn-more)
+Passare a: [Pianificazione dell'infrastruttura di monitoraggio](#plan-your-monitoring-infrastructure) | [Cloud nativo](#cloud-native) | [Estensione locale](#on-premises-extension) | [Aggregazione tramite il gateway](#gateway-aggregation) | [Monitoraggio ibrido (locale)](#hybrid-monitoring-on-premises) | [Monitoraggio ibrido (basato sul cloud)](#hybrid-monitoring-cloud-based) | [Multi-cloud](#multicloud) | [Altre informazioni](#learn-more)
 
 Il punto di flesso quando si stabilisce una strategia di registrazione e creazione di report per il cloud è determinato principalmente dagli investimenti esistenti fatti dall'organizzazione nei processi operativi e, in una certa misura, dagli eventuali requisiti necessari per supportare una strategia multi-cloud.
 
 Ci sono diversi modi per registrare e creare report sulle attività nel cloud. Il cloud nativo e la registrazione centralizzata sono due opzioni comuni di software gestito, basate sul tipo di sottoscrizione e sul numero di sottoscrizioni.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Pianificazione dell'infrastruttura di monitoraggio
+## <a name="plan-your-monitoring-infrastructure"></a>Pianificare l'infrastruttura di monitoraggio
 
 Quando si pianifica la distribuzione, è necessario considerare dove sono archiviati i dati di registrazione e come si integreranno i servizi di monitoraggio e creazione di report basati su cloud con gli strumenti e i processi esistenti.
 
@@ -45,9 +45,9 @@ Se attualmente l'organizzazione è priva di sistemi di registrazione e creazione
 
 In questo scenario i dati dei log vengono registrati e archiviati nel cloud, mentre gli strumenti di registrazione e creazione di report che elaborano e inviano le informazioni al personale IT sono offerti come parte della piattaforma Azure di e di Monitoraggio di Azure.
 
-Si possono implementare soluzioni di registrazione basate su Monitoraggio di Azure personalizzate per ogni sottoscrizione o carico di lavoro per le distribuzioni più piccole o sperimentali. Tali soluzioni vengono organizzate in modo centralizzato per monitorare i dati dei log nell'intero ambiente cloud.
+Si possono implementare soluzioni di registrazione basate su Monitoraggio di Azure personalizzate per ogni sottoscrizione o carico di lavoro in distribuzioni più piccole o sperimentali. Tali soluzioni vengono organizzate in modo centralizzato per monitorare i dati dei log nell'intero ambiente cloud.
 
-**Presupposti relativi al cloud nativo.** L'uso di un sistema cloud nativo per la registrazione e la creazione di report presuppone quanto segue:
+**Presupposti relativi al cloud nativo:** L'uso di un sistema cloud nativo per la registrazione e la creazione di report presuppone quanto segue:
 
 - Non è necessario integrare nei sistemi locali esistenti i dati dei log dei carichi di lavoro cloud.
 - Non si useranno i sistemi di creazione di report basati sul cloud per monitorare i sistemi locali.
@@ -87,7 +87,7 @@ Un soluzione di monitoraggio ibrido combina i dati dei log sia delle risorse loc
 
 Se è stato fatto un investimento in sistemi di monitoraggio locali che sarebbero difficili o costosi da sostituire, potrebbe essere necessario integrare dati di telemetria dei carichi di lavoro cloud nelle soluzioni di monitoraggio locali preesistenti. In un sistema di monitoraggio locale ibrido i dati di telemetria locali continuano a usare il sistema di monitoraggio locale esistente. I dati di telemetria basati sul cloud vengono inviati al sistema di monitoraggio locale direttamente oppure vengono inviati a Monitoraggio di Azure e quindi compilati e inseriti nel sistema locale a intervalli regolari.
 
-**Presupposti relativi al monitoraggio ibrido locale.** L'uso di un sistema di registrazione e di creazione di report locale per il monitoraggio ibrido presuppone quanto segue:
+**Presupposti relativi al monitoraggio ibrido locale:** L'uso di un sistema di registrazione e di creazione di report locale per il monitoraggio ibrido presuppone quanto segue:
 
 - È necessario usare i sistemi di creazione di report locali esistenti per monitorare i carichi di lavoro cloud.
 - È necessario mantenere la proprietà dei dati dei log in locale.

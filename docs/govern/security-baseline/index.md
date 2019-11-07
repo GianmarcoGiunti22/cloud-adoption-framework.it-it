@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221760"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565934"
 ---
 # <a name="security-baseline-discipline-overview"></a>Panoramica sulla disciplina Baseline di sicurezza
 
@@ -33,9 +33,9 @@ Prendere le decisioni appropriate in materia di sicurezza è fondamentale per il
 Una disciplina Baseline di sicurezza si basa principalmente sulle definizioni dei criteri in base ai quali prendere decisioni operative e sui requisiti dell'architettura risultanti. Per esempi di definizioni dei criteri, vedere l'articolo [Definizioni dei criteri di esempio per la baseline di sicurezza](./policy-statements.md). Questi esempi possono essere usati come punto di partenza per definire i criteri di governance della propria organizzazione.
 
 > [!CAUTION]
-> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud e creare definizioni dei criteri che siano in grado di soddisfare le esigenze esclusive della propria organizzazione, eseguire i passaggi seguenti.
+> I criteri di esempio sono stati sviluppati in base a esperienze comuni dei clienti. Per allineare questi criteri a specifiche esigenze di governance del cloud, eseguire i passaggi seguenti in modo da creare definizioni dei criteri in grado di soddisfare le esigenze specifiche della propria organizzazione.
 
-## <a name="developing-security-baseline-governance-policy-statements"></a>Sviluppare definizioni dei criteri di governance per la baseline di sicurezza
+## <a name="develop-governance-policy-statements"></a>Sviluppare dichiarazioni per i criteri di governance
 
 I sei passaggi seguenti offrono esempi e potenziali opzioni da considerare nello sviluppo della governance per la baseline di sicurezza. Usare ogni passaggio come punto di partenza per le discussioni all'interno del team di governance del cloud e con i team responsabili delle attività aziendali, dell'IT e della sicurezza interessati in tutta l'organizzazione per stabilire i criteri e i processi necessari per gestire i rischi correlati alla sicurezza.
 

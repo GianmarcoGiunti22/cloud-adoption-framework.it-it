@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979885"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565026"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gestione del cloud in Cloud Adoption Framework
 
@@ -111,7 +111,7 @@ I passaggi precedenti definiscono approcci fattibili per attuare la metodologia 
 
 ![Metodologia per la gestione in Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Creazione di un portfolio cloud bilanciato
+## <a name="create-a-balanced-cloud-portfolio"></a>Creare un portfolio cloud bilanciato
 
 Come descritto nell'articolo sull'[allineamento aziendale](./considerations/business-alignment.md), non tutti i carichi di lavoro sono cruciali. Ogni portfolio include vari gradi di esigenze di gestione operativa. L'allineamento aziendale aiuta a capire l'impatto sul business e a negoziare i costi di gestione con l'organizzazione per garantire la disponibilità dei processi e degli strumenti più appropriati per la gestione operativa.
 

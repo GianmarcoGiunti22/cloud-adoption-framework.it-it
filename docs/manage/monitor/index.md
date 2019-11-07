@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979873"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564925"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guida al monitoraggio del cloud: Introduzione
 
@@ -34,7 +34,7 @@ L'obiettivo di questa guida è fornire informazioni di riferimento dettagliate p
 
 * Le piattaforme di monitoraggio di Azure, con una panoramica e un confronto delle funzionalità che offrono.
 * La soluzione ideale per il monitoraggio di carichi di lavoro ibridi, privati e nativi di Azure.
-* L'approccio consigliato per il monitoraggio sia dell'infrastruttura che delle applicazioni come insieme end-to-end, incluse le soluzioni distribuibili per la migrazione di questi carichi di lavoro comuni in Azure.
+* L'approccio consigliato per il monitoraggio end-to-end sia dell'infrastruttura che delle applicazioni incluse le soluzioni distribuibili per la migrazione di questi carichi di lavoro comuni in Azure.
 
 La guida non include procedure per l'uso o la configurazione di singoli servizi e soluzioni di Azure, ma vi fa riferimento, se applicabili o disponibili. Dopo aver letto questa guida, sarà possibile capire come gestire con successo un carico di lavoro seguendo procedure e modelli consigliati.
 

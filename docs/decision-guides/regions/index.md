@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769411"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564823"
 ---
 # <a name="azure-regions"></a>Aree di Azure
 
@@ -29,7 +29,7 @@ Azure è costituito da diverse aree geografiche in tutto il mondo. Ogni [area di
     1. [Azure per enti pubblici statunitensi](https://azure.microsoft.com/global-infrastructure/government)
     1. Nota: due aree in [Australia](https://azure.microsoft.com/global-infrastructure/australia) sono gestite da Microsoft, ma vengono fornite per il governo australiano e per i relativi clienti e terzisti, quindi presentano vincoli simili a quelli di altri cloud sovrani.
 
-## <a name="operating-in-multiple-geographic-regions"></a>Organizzazioni operanti in più aree geografiche
+## <a name="operate-in-multiple-geographic-regions"></a>Organizzazioni operanti in più aree geografiche
 
 Il fatto di operare in più aree geografiche, pur essendo essenziale ai fini della resilienza, aggiunge ulteriori complessità, che si manifestano in quattro forme principali:
 
@@ -44,17 +44,23 @@ Considerando queste complessità, risulta ancora più evidente l'importanza dell
 
 Qualsiasi distribuzione cloud affidabile richiede un'attenta valutazione della rete, tenendo conto delle aree di Azure. Dopo aver valutato le caratteristiche sopra indicate per le aree in cui eseguire la distribuzione, è necessario distribuire la rete. Sebbene una discussione esaustiva sulla rete esuli dall'ambito di questo articolo, è necessario tenere conto di alcune considerazioni:
 
-1. Le aree di Azure vengono distribuite in coppie. In caso di errore irreversibile di un'area, un'altra area all'interno degli stessi confini geopolitici* viene designata come area abbinata. È consigliabile valutare l'opportunità di eseguire la distribuzione in aree abbinate come strategia per la resilienza primaria e secondaria. *Azure Brasile è un'eccezione degna di nota perché l'area abbinata è Stati Uniti centro-meridionali. Per altre informazioni, vedere [Aree abbinate di Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
-    1. Archiviazione di Azure supporta l'[archiviazione con ridondanza geografica (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), per cui tre copie dei dati vengono archiviate nell'area primaria e altre tre copie nell'area abbinata. Non è possibile cambiare l'abbinamento dell'archiviazione per gli scenari GRS.
-    1. I servizi basati su archiviazione di Azure con ridondanza geografica possono trarre vantaggio dalle aree abbinate. A tale scopo, è necessario fare in modo che le applicazioni e la rete le supportino.
-    1. Se non si prevede di sfruttare l'archiviazione con ridondanza geografica per soddisfare esigenze di resilienza locale, è consigliabile _NON_ usare l'area abbinata come area secondaria. In caso di errore a livello di un'area, le risorse dell'area abbinata verranno sottoposte a un'intensa pressione durante la migrazione. Evitando tale pressione, è possibile ottenere una maggiore velocità durante il ripristino in un sito alternativo.
-    > [!WARNING]
-    > Non provare a usare l'archiviazione di Azure con ridondanza geografica per il backup o il ripristino di VM. Usare invece i servizi [Backup di Azure](https://azure.microsoft.com/services/backup) e [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery), oltre a [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) per supportare la resilienza dei carichi di lavoro IaaS.
-2. Backup di Azure e Azure Site Recovery, unitamente all'architettura di rete, semplificano la resilienza a livello di area per le esigenze di backup dei dati e dell'infrastruttura IaaS. Assicurarsi che la rete sia ottimizzata in modo che i trasferimenti di dati rimangano nel backbone Microsoft e sfruttino il [peering di reti virtuali](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), se possibile. Alcune organizzazioni più grandi con distribuzioni globali possono invece usare [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) per instradare il traffico tra le aree, risparmiando sui costi del traffico in uscita locale.
-3. I gruppi di risorse di Azure sono costrutti specifici dell'area. È tuttavia normale che le risorse all'interno di un gruppo si estendano su più aree. In questo caso, è importante tenere presente che se si verifica un errore a livello di area, le operazioni del piano di controllo su un gruppo di risorse avranno esito negativo nell'area interessata, anche se le risorse in altre aree (all'interno dello stesso gruppo) continueranno a funzionare. Questo scenario può avere un impatto sia sulla progettazione della rete che sulla definizione dei gruppi di risorse.
-4. Molti servizi PaaS all'interno di Azure supportano [endpoint di servizio](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) o il servizio [Collegamento privato](https://docs.microsoft.com/azure/private-link/private-link-overview). Entrambe queste soluzioni influiscono in modo sostanziale sulle valutazioni da fare per la rete, se si considerano aspetti come la resilienza, la migrazione e la governance.
-5. Molti servizi PaaS si basano su specifiche soluzioni di resilienza a livello di area. Database SQL di Azure, ad esempio, consente di eseguire facilmente la replica in N aree aggiuntive, così come Cosmos DB. Alcuni servizi non hanno alcuna dipendenza dall'area, ad esempio DNS di Azure. Quando si considerano i servizi che verranno utilizzati nel processo di adozione, assicurarsi di capire chiaramente quali funzionalità di failover e quali procedure di ripristino potrebbero essere necessarie per ogni servizio di Azure.
-6. Oltre a eseguire la distribuzione in più aree per supportare il ripristino di emergenza, molte organizzazioni scelgono di adottare un modello attivo-attivo, per cui il failover non è necessario. L'ulteriore vantaggio di questa scelta è la disponibilità di un bilanciamento del carico globale, oltre a un miglioramento della tolleranza di errore e delle prestazioni. Per sfruttare questo modello, le applicazioni devono supportare l'esecuzione attiva-attiva in più aree.
+- Le aree di Azure vengono distribuite in coppie. In caso di errore irreversibile di un'area, un'altra area all'interno degli stessi confini geopolitici* viene designata come area abbinata. È consigliabile valutare l'opportunità di eseguire la distribuzione in aree abbinate come strategia per la resilienza primaria e secondaria. *Azure Brasile è un'eccezione degna di nota perché l'area abbinata è Stati Uniti centro-meridionali. Per altre informazioni, vedere [Aree abbinate di Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+
+  - Archiviazione di Azure supporta l'[archiviazione con ridondanza geografica (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), per cui tre copie dei dati vengono archiviate nell'area primaria e altre tre copie nell'area abbinata. Non è possibile cambiare l'abbinamento dell'archiviazione per gli scenari GRS.
+  - I servizi basati su archiviazione di Azure con ridondanza geografica possono trarre vantaggio dalle aree abbinate. A tale scopo, è necessario fare in modo che le applicazioni e la rete le supportino.
+  - Se non si prevede di sfruttare l'archiviazione con ridondanza geografica per soddisfare esigenze di resilienza locale, è consigliabile _NON_ usare l'area abbinata come area secondaria. In caso di errore a livello di un'area, le risorse dell'area abbinata verranno sottoposte a un'intensa pressione durante la migrazione. Evitando tale pressione, è possibile ottenere una maggiore velocità durante il ripristino in un sito alternativo.
+  > [!WARNING]
+  > Non provare a usare l'archiviazione di Azure con ridondanza geografica per il backup o il ripristino di VM. Usare invece i servizi [Backup di Azure](https://azure.microsoft.com/services/backup) e [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery), oltre a [Managed Disks di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) per supportare la resilienza dei carichi di lavoro IaaS.
+
+- Backup di Azure e Azure Site Recovery, unitamente all'architettura di rete, semplificano la resilienza a livello di area per le esigenze di backup dei dati e dell'infrastruttura IaaS. Assicurarsi che la rete sia ottimizzata in modo che i trasferimenti di dati rimangano nel backbone Microsoft e sfruttino il [peering di reti virtuali](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), se possibile. Alcune organizzazioni più grandi con distribuzioni globali possono invece usare [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) per instradare il traffico tra le aree, risparmiando sui costi del traffico in uscita locale.
+
+- I gruppi di risorse di Azure sono costrutti specifici dell'area. È tuttavia normale che le risorse all'interno di un gruppo si estendano su più aree. In questo caso, è importante tenere presente che se si verifica un errore a livello di area, le operazioni del piano di controllo su un gruppo di risorse avranno esito negativo nell'area interessata, anche se le risorse in altre aree (all'interno dello stesso gruppo) continueranno a funzionare. Questo scenario può avere un impatto sia sulla progettazione della rete che sulla definizione dei gruppi di risorse.
+
+- Molti servizi PaaS all'interno di Azure supportano [endpoint di servizio](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) o il servizio [Collegamento privato](https://docs.microsoft.com/azure/private-link/private-link-overview). Entrambe queste soluzioni influiscono in modo sostanziale sulle valutazioni da fare per la rete, se si considerano aspetti come la resilienza, la migrazione e la governance.
+
+- Molti servizi PaaS si basano su specifiche soluzioni di resilienza a livello di area. Database SQL di Azure, ad esempio, consente di eseguire facilmente la replica in N aree aggiuntive, così come Cosmos DB. Alcuni servizi non hanno alcuna dipendenza dall'area, ad esempio DNS di Azure. Quando si considerano i servizi che verranno utilizzati nel processo di adozione, assicurarsi di capire chiaramente quali funzionalità di failover e quali procedure di ripristino potrebbero essere necessarie per ogni servizio di Azure.
+
+- Oltre a eseguire la distribuzione in più aree per supportare il ripristino di emergenza, molte organizzazioni scelgono di adottare un modello attivo-attivo, per cui il failover non è necessario. L'ulteriore vantaggio di questa scelta è la disponibilità di un bilanciamento del carico globale, oltre a un miglioramento della tolleranza di errore e delle prestazioni. Per sfruttare questo modello, le applicazioni devono supportare l'esecuzione attiva-attiva in più aree.
 
 > [!WARNING]
 > Le aree di Azure sono costrutti a disponibilità elevata con contratti di servizio applicati ai servizi in esecuzione al loro interno. Tuttavia, per le applicazioni cruciali, non si dovrebbe mai assumere una dipendenza da un'unica area. Pianificare sempre le procedure di ripristino e mitigazione in caso di errori a livello di area.
@@ -70,7 +76,7 @@ Dopo aver considerato la topologia di rete necessaria per mantenere l'operativit
 
 Allineare le modifiche nel processo di migrazione per affrontare l'inventario iniziale.
 
-## <a name="documenting-complexity"></a>Documentazione della complessità
+## <a name="document-complexity"></a>Documentare la complessità
 
 La tabella seguente può aiutare a documentare i risultati dei passaggi precedenti:
 
@@ -99,7 +105,7 @@ Poiché l'azienda supporta dipendenti, partner e clienti in Germania, ma non dis
 
 La posizione dei data center esistenti può influire sulla strategia di migrazione. Di seguito sono riportati alcuni degli effetti più comuni:
 
-**Decisioni relative all'architettura:** Area o percorso di destinazione: uno dei primi passaggi nella progettazione della strategia di migrazione. Spesso viene influenzato dalla posizione delle risorse esistenti. Inoltre, la disponibilità dei servizi cloud e il costo unitario di tali servizi possono variare da un'area all'altra. Di conseguenza, il riconoscimento del percorso corrente e futuro delle risorse influisce sulle decisioni relative all'architettura e può inoltre influenzare le stime del budget.
+**Decisioni relative all'architettura:** uno dei primi passaggi nella progettazione della strategia di migrazione riguarda l'area di destinazione. Spesso viene influenzato dalla posizione delle risorse esistenti. Inoltre, la disponibilità dei servizi cloud e il costo unitario di tali servizi possono variare da un'area all'altra. Di conseguenza, il riconoscimento del percorso corrente e futuro delle risorse influisce sulle decisioni relative all'architettura e può inoltre influenzare le stime del budget.
 
 **Dipendenze tra data center:** In base ai dati nella tabella precedente, è probabile che esistano dipendenze tra i vari data center in tutto il mondo. In molte organizzazioni che operano in questo tipo di scalabilità, tali dipendenze potrebbero non essere documentate o riconosciute. Gli approcci usati per valutare i profili utente consentiranno di identificare alcune di queste dipendenze. Tuttavia, durante il processo di valutazione vengono suggeriti passaggi aggiuntivi per attenuare i rischi associati a questa complessità.
 
@@ -114,7 +120,7 @@ Quando l'ambito di una migrazione include più aree, il team di adozione del clo
 
 Una volta che la conformità è allineata e il team ha acquisito familiarità con l'approccio di base, bisogna considerare alcuni prerequisiti basati sui dati:
 
-- **Individuazione generale:** Completare la tabella precedente relativa alla [Documentazione della complessità](#documenting-complexity).
+- **Individuazione generale:** Completare la tabella precedente relativa alla [Documentazione della complessità](#document-complexity).
 - **Eseguire un'analisi del profilo utente per ogni paese interessato:** È importante riconoscere il routing generale degli utenti finali all'inizio del processo di migrazione. La modifica delle linee di lease globali e l'aggiunta di connessioni come ExpressRoute a un data center cloud può comportare mesi di ritardi di rete. Risolvere il problema nel processo il prima possibile.
 - **Razionalizzazione iniziale del digital estate:** Ogni volta che viene introdotta complessità in una strategia di migrazione è necessario completare una razionalizzazione iniziale del digital estate. Per assistenza, vedere le linee guida sulla [razionalizzazione del digital estate](../../digital-estate/index.md).
   - **Requisiti digitale estate aggiuntivi:** Definire i criteri di assegnazione di tag per identificare qualsiasi carico di lavoro interessato dai requisiti di sovranità dei dati. Nella razionalizzazione del digital estate è necessario partire con i tag obbligatori per proseguire fino alle risorse sottoposte a migrazione.

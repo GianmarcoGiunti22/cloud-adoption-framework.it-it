@@ -9,18 +9,20 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0d8ffd15dd0e42e7ba31760361dc970b63025eda
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72545142"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565615"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovazione del cloud in Cloud Adoption Framework
 
-Ogni portfolio IT include un insieme ridotto di carichi di lavoro e idee che potrebbero migliorare sensibilmente la posizione dell'azienda nel mercato. Anche se gran parte delle iniziative di adozione del cloud sono incentrate sulla migrazione e sulla modernizzazione degli attuali carichi di lavoro, il maggior valore di business associato dall'adozione del cloud deriva da attività innovative che rendono disponibili nuove competenze tecniche e funzionalità avanzate per il business. Questa sezione di Cloud Adoption Framework è dedicata a quella parte del portfolio che genera il maggior ritorno sugli investimenti.
+Tutti i portfolio IT includono alcuni carichi di lavoro e idee che potrebbero migliorare sensibilmente la posizione di un'azienda nel mercato. La maggior parte delle iniziative di adozione del cloud si concentra sulla migrazione e sulla modernizzazione dei carichi di lavoro esistenti. È l'innovazione, però, che può offrire il massimo valore di business. L'innovazione legata all'adozione del cloud può sbloccare nuove competenze tecniche e ampliare le possibilità per le funzioni essenziali del business.
 
-## <a name="getting-started"></a>Introduzione
+Questa sezione di Cloud Adoption Framework è dedicata a quegli elementi del portfolio che generano il maggior ritorno sugli investimenti.
+
+## <a name="get-started"></a>Attività iniziali
 
 Per prepararsi per questa fase del ciclo di vita di adozione del cloud, il framework suggerisce gli esercizi seguenti:
 
@@ -39,7 +41,7 @@ Per prepararsi per questa fase del ciclo di vita di adozione del cloud, il frame
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Consenso sul valore di business</h3>
-Prima di prendere decisioni in merito alle soluzioni tecniche, è importante uniformarsi al valore di business previsto. Questo valore deve essere associato alla strategia per il cloud. In questa metodologia incrementale il valore di business è rappresentato da un'ipotesi riguardante le esigenze dei clienti.
+Prima di decidere quali soluzioni tecniche adottare, identificare come sia possibile generare valore di business con l'innovazione più recente. Allineare questo valore alla strategia per il cloud. In questa metodologia incrementale il valore di business è rappresentato da un'ipotesi riguardante le esigenze dei clienti.
                         </div>
                     </div>
                 </div>
@@ -58,7 +60,7 @@ Prima di prendere decisioni in merito alle soluzioni tecniche, è importante uni
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Guida all'innovazione di Azure</h3>
-Molti strumenti nativi del cloud disponibili in Azure consentono di accelerare lo sviluppo di soluzioni innovative. A seconda dell'ipotesi formulata per i clienti, possono essere applicabili varie combinazioni di strumenti. È consigliabile sviluppare una soluzione MVP (Minimum Viable Product) con strumenti di base.
+Azure include una serie di strumenti cloud che consentono di accelerare la distribuzione di soluzioni innovative. A seconda dell'ipotesi formulata, è possibile prendere in considerazione diverse combinazioni di strumenti. È consigliabile sviluppare una soluzione MVP (Minimum Viable Product) con strumenti di base.
                         </div>
                     </div>
                 </div>
@@ -77,7 +79,7 @@ Molti strumenti nativi del cloud disponibili in Azure consentono di accelerare l
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Procedure consigliate</h3>
-Verificare che le decisioni architetturali siano conformi alle procedure consigliate per ogni strumento della toolchain. Queste procedure consigliate aiutano ad accelerare lo sviluppo di soluzioni e forniscono un riferimento per progetti di architetture affidabili.
+Le decisioni architetturali dovranno essere basate sulle procedure consigliate per ogni strumento della toolchain. Conformandosi a queste indicazioni, sarà possibile accelerare lo sviluppo di soluzioni e ottenere un riferimento per progetti di architetture affidabili.
                         </div>
                     </div>
                 </div>
@@ -96,7 +98,7 @@ Verificare che le decisioni architetturali siano conformi alle procedure consigl
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Cicli di feedback</h3>
-Durante ogni iterazione dello sviluppo, le soluzioni offrono ai team opportunità di apprendimento insieme ai clienti. I cicli di feedback veloci e accurati con i clienti consentono di testare, misurare e apprendere per ridurre l'impatto sul time-to-market. Azure e GitHub possono accelerare i cicli di feedback.
+Durante ogni iterazione, le soluzioni in via di sviluppo offrono ai team l'opportunità di imparare insieme ai clienti. I cicli di feedback rapidi e accurati con i clienti possono aiutare a testare, misurare, apprendere più rapidamente e in definitiva a ridurre l'impatto sul time-to-market. Azure e GitHub possono accelerare i cicli di feedback.
                         </div>
                     </div>
                 </div>
@@ -108,15 +110,15 @@ Durante ogni iterazione dello sviluppo, le soluzioni offrono ai team opportunit�
 
 ## <a name="methodology-summary"></a>Riepilogo della metodologia
 
-La [sezione della metodologia per l'innovazione sulle considerazioni](./considerations/index.md) stabilisce un linguaggio comune per l'innovazione tra i team di sviluppo, DevOps, IT e business. Con gli esercizi descritti sopra questa metodologia diventa fattibile durante lo sviluppo di soluzioni innovative.
+- La [panoramica sulle considerazioni](./considerations/index.md) stabilisce un linguaggio comune per l'innovazione tra i team di sviluppo, DevOps, IT e business.
+- Con gli esercizi descritti nella sezione [Attività iniziali](#get-started), questa metodologia diventa fattibile durante lo sviluppo di soluzioni innovative.
 
 ![Metodologia per l'innovazione di Cloud Adoption Framework](../_images/innovate/innovate-methodology.png)
 
-Questa metodologia si basa sulle attuali metodologie snelle per dar luogo a un discorso incentrato sul cloud in merito all'adozione dei clienti e a un modello scientifico per la creazione di valore di business. Allinea inoltre i servizi di Azure esistenti a processi decisionali gestibili, semplificando l'identificazione delle opzioni tecniche appropriate per rispondere a specifiche esigenze dei clienti o alle ipotesi formulate.
+Questo approccio si basa sulle metodologie snelle esistenti. Lo scopo è aiutare a creare un discorso incentrato sul cloud sull'adozione dei clienti e un modello scientifico per la creazione di valore di business. L'approccio allinea anche i servizi di Azure esistenti a processi decisionali gestibili. Questo allineamento può essere utile per individuare le opzioni tecniche appropriate per soddisfare specifiche esigenze dei clienti o ipotesi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Il primo esercizio durante l'innovazione del cloud consiste nel [creare consenso sul valore di business](./business-value.md).
-
+Il primo esercizio per l'innovazione nel cloud è:
 > [!div class="nextstepaction"]
-> [Creare consenso sul valore di business](./business-value.md)
+> [Creare consenso sul valore di business dell'innovazione](./business-value.md)

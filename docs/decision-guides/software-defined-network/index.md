@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023742"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564778"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guida alle decisioni per le reti definite dal software
 
@@ -32,7 +32,7 @@ Il punto critico in questa guida dipende da diverse decisioni chiave prese dal t
 
 Le distribuzioni in aree singole con piccole dimensioni di meno di 1.000 macchine virtuali hanno meno probabilità di essere influenzate in modo significativo da questo punto di flesso. Al contrario, il grande lavoro di adozione richiesto con più di 1.000 macchine virtuali, più business unit o più mercati geo-politici può essere influenzato notevolmente dalla scelta della SDN e da questo punto di flesso cruciale.
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>Scegliere le architetture di rete virtuale appropriate
+## <a name="choose-the-right-virtual-networking-architectures"></a>Scegliere le architetture di rete virtuale appropriate
 
 Questa sezione sviluppa la guida decisionale per aiutare a scegliere le architetture di rete virtuale appropriate.
 
