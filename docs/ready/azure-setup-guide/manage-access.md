@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7ce8b1f8509ab0e51c94913ef010eb35b22b8978
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dc52d39699e20a243a6d1156764e30063aea76a5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379034"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240118"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Gestire l'accesso all'ambiente di Azure con controlli degli accessi in base al ruolo
 
@@ -29,7 +29,7 @@ Quando si pianifica la strategia di controllo degli accessi, concedere agli uten
 
 Nel pianificare la metodologia di controllo di accesso, è consigliabile collaborare con persone che nell'organizzazione si occupano di sicurezza e conformità, amministrazione IT e architettura aziendale.
 
-Cloud Adoption Framework offre indicazioni aggiuntive su come [usare il controllo degli accessi in base al ruolo](../azure-best-practices/roles.md) come parte delle attività di adozione del cloud.
+Cloud Adoption Framework offre indicazioni aggiuntive su come [usare il controllo degli accessi in base al ruolo](../considerations/roles.md) come parte delle attività di adozione del cloud.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ Per concedere l'accesso utente a una sottoscrizione:
 Per altre informazioni, vedere:
 
 - [Che cos'è il controllo degli accessi in base al ruolo?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Cloud Adoption Framework: Usare il controllo degli accessi in base al ruolo](../azure-best-practices/roles.md)
+- [Cloud Adoption Framework: Usare il controllo degli accessi in base al ruolo](../considerations/roles.md)
 
 ::: zone-end

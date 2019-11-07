@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058539"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565545"
 ---
 ::: zone target="docs"
 
@@ -106,10 +106,6 @@ Per creare una condivisione dati:
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-Usare i [set di dati aperti di Azure](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets) per migliorare l'analisi incorporando dati su [festività](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays), [meteo](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system) e [immagini spaziali](https://azure.microsoft.com/services/open-datasets/catalog/hls) nei modelli.
-
-I passaggi successivi includono informazioni sulla [democratizzazione dei processi aziendali](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes) e sul [supporto per sviluppatori non professionisti](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers).
 
 # <a name="insightstabinsights"></a>[Insights](#tab/Insights)
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e47e7e5f8528580d4aa268fd90e7aa838e5f70ba
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224059"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239947"
 ---
 # <a name="organize-your-azure-resources"></a>Organizzare le risorse di Azure
 
@@ -151,7 +151,7 @@ Dopo aver applicato i tag, è possibile recuperare tutte le risorse nella sottos
 
 Ogni risorsa o gruppo di risorse può avere un massimo di 15 coppie nome-valore di tag. Questo limite vale tuttavia solo per i tag applicati direttamente al gruppo di risorse o alla risorsa.
 
-Per altre informazioni sull'assegnazione di tag, vedere le [convenzioni di denominazione per le risorse di Azure del Centro architetture di Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags)
+Per altre informazioni sull'assegnazione di tag, vedere le [convenzioni di denominazione per le risorse di Azure del Centro architetture di Azure](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5bd467e6e74ff1289a7db40add87a049d2b0697e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 507801a0332058917b585d335f859c1b41d48ce1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047628"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565527"
 ---
 ::: zone target="docs"
 
@@ -52,8 +52,8 @@ Per usare un'API Servizi cognitivi:
 1. Nel [portale di Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) passare a **Servizi cognitivi**.
 2. Selezionare **Aggiungi** per trovare un'API Servizi cognitivi in Azure Marketplace.
 3. Eseguire una di queste operazioni:
-   * Se si conosce il nome del servizio da usare, immetterlo nella casella **Cerca nel Marketplace**.
-   * In alternativa, per un elenco di API Servizi cognitivi, selezionare il collegamento **Vedi altro** accanto all'intestazione Servizi cognitivi.
+   - Se si conosce il nome del servizio da usare, immetterlo nella casella **Cerca nel Marketplace**.
+   - In alternativa, per un elenco di API Servizi cognitivi, selezionare il collegamento **Vedi altro** accanto all'intestazione Servizi cognitivi.
 
 ::: zone target="chromeless"
 

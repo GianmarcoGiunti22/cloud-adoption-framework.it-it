@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 79102a3664f055489da37fc3de0ec7156c1272ef
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025240"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239842"
 ---
 # <a name="organize-your-azure-resources"></a>Organizzare le risorse di Azure
 
@@ -40,7 +40,7 @@ Azure offre quattro livelli relativi all'ambito di gestione: gruppi di gestione,
 
 In genere, è consigliabile applicare le impostazioni critiche ai livelli superiori e i requisiti specifici dei progetti ai livelli inferiori. Potrebbe ad esempio essere necessario assicurarsi che tutte le risorse dell'organizzazione vengano distribuite in determinate aree geografiche. A questo scopo, è possibile applicare un criterio alla sottoscrizione per specificare le località consentite. Quando altri utenti nell'organizzazione aggiungono nuovi gruppi di risorse e nuove risorse, vengono applicate automaticamente le posizioni consentite. Altre informazioni sui criteri sono disponibili nella sezione su governance, sicurezza e conformità di questa guida.
 
-Se si dispone solo di poche sottoscrizioni, è relativamente semplice gestirle in modo indipendente. Se il numero di sottoscrizioni usate aumenta, è consigliabile creare una gerarchia del gruppo di gestione per semplificare la gestione delle sottoscrizioni e delle risorse. Per altre informazioni su come gestire più sottoscrizioni, vedere [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md).
+Se si dispone solo di poche sottoscrizioni, è relativamente semplice gestirle in modo indipendente. Se il numero di sottoscrizioni usate aumenta, è consigliabile creare una gerarchia del gruppo di gestione per semplificare la gestione delle sottoscrizioni e delle risorse. Per altre informazioni su come gestire più sottoscrizioni, vedere [Ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md).
 
 Nel pianificare una strategia di conformità, collaborare con le figure che, nell'organizzazione, si occupano di sicurezza e conformità, amministrazione IT, architettura aziendale, reti, finanza e approvvigionamento.
 
@@ -79,7 +79,7 @@ Creare un gruppo di risorse per contenere le risorse come app Web, database e ac
 Per altre informazioni, vedere:
 
 - [Concetti fondamentali di Azure](../considerations/fundamental-concepts.md)
-- [Ridimensionamento con più sottoscrizioni di Azure](../considerations/scaling-subscriptions.md)
+- [Ridimensionamento con più sottoscrizioni di Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Informazioni sulla gestione dell'accesso alle risorse in Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Organizzare le risorse con i gruppi di gestione di Azure ](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Limiti del servizio di sottoscrizione](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Uno standard di denominazione ben progettato consente di identificare le risorse
 
 - Il lato operativo deve garantire che i nomi includano le informazioni necessarie per i team IT. Usare dettagli che identificano il carico di lavoro, l'applicazione, l'ambiente, la criticità e altre informazioni utili per la gestione delle risorse.
 
-Tipi di risorse diversi possono avere limiti di lunghezza e caratteri consentiti diversi, molti dei quali sono elencati nell'articolo relativo alle [convenzioni di denominazione](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) per le procedure consigliate di Azure. Per altre informazioni e consigli mirati in modo specifico a supportare le attività di adozione del cloud aziendale, vedere la [guida alla denominazione e all'assegnazione di tag](../considerations/naming-and-tagging.md) del Cloud Adoption Framework.
+Tipi di risorse diversi possono avere limiti di lunghezza e caratteri consentiti diversi, molti dei quali sono elencati nell'articolo relativo alle [convenzioni di denominazione](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) per le procedure consigliate di Azure. Per altre informazioni e consigli mirati in modo specifico a supportare le attività di adozione del cloud aziendale, vedere la [guida alla denominazione e all'assegnazione di tag](../azure-best-practices/naming-and-tagging.md) del Cloud Adoption Framework.
 
 La tabella seguente include i modelli di denominazione per alcuni tipi di risorse di Azure di esempio.
 
@@ -159,9 +159,9 @@ Dopo aver applicato i tag, è possibile recuperare tutte le risorse nella sottos
 - **Automazione:** è possibile eseguire regolarmente script in grado di effettuare un'azione in base al valore di un tag, ad esempio "ShutdownTime" o "DeprovisionDate".
 - **Fatturazione:** i tag possono essere inclusi nella fattura. È possibile usarli per semplificare la segmentazione della fattura usando tag come "CostCenter" o "BillTo".
 
-Ogni risorsa o gruppo di risorse può avere un massimo di 15 coppie di tag nome/valore. Questa limitazione si applica solo ai tag applicati direttamente al gruppo di risorse o alla risorsa.
+Ogni risorsa o gruppo di risorse può avere un massimo di 50 coppie di tag nome/valore. Questa limitazione si applica solo ai tag applicati direttamente al gruppo di risorse o alla risorsa.
 
-Per altre raccomandazioni ed esempi sull'assegnazione di tag, vedere le [informazioni aggiuntive sull'assegnazione di tag](../considerations/naming-and-tagging.md) del Cloud Adoption Framework.
+Per altre raccomandazioni ed esempi sull'assegnazione di tag, vedere le [informazioni aggiuntive sull'assegnazione di tag](../azure-best-practices/naming-and-tagging.md) del Cloud Adoption Framework.
 
 ::: zone target="docs"
 
