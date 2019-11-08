@@ -8,22 +8,20 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4939464c80668ca175a4d7ac53fe2198610afc1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 53feb14cab8f2109b86aa5850d856261d132ba19
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565357"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656603"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Panoramica dei servizi di gestione del server di Azure
 
-I servizi di gestione del server di Azure offrono ai clienti un'esperienza coerente per la gestione i server su larga scala. Questi servizi riguardano i sistemi operativi sia Linux che Windows e possono essere usati in ambienti di produzione, sviluppo e test. Possono inoltre supportare macchine virtuali IaaS di Azure, nonché server fisici e macchine virtuali ospitati in locale o in altri ambienti di hosting.
+I servizi di gestione server di Azure offrono un'esperienza coerente per la gestione di server su larga scala. Questi servizi si applicano sia ai sistemi operativi Linux che Windows. Possono essere usati in ambienti di produzione, sviluppo e test. Possono inoltre supportare le macchine virtuali IaaS di Azure, nonché i server fisici e le macchine virtuali ospitate in locale o in altri ambienti di hosting.
 
-Nel gruppo di servizi di gestione dei server di Azure sono inclusi i servizi illustrati nel diagramma seguente.
+I servizi di gestione server di Azure includono quelli illustrati nel diagramma seguente: ![Diagramma del modello delle operazioni di Azure](./media/operations-diagram.png)
 
-![Diagramma del modello delle operazioni di Azure](./media/operations-diagram.png)
-
-Le indicazioni fornite in questa sezione di Microsoft Cloud Adoption Framework costituiscono un piano pratico e attuabile per la distribuzione dei servizi di gestione dei server nell'ambiente. L'obiettivo di questo piano è aiutare a orientarsi rapidamente tra questi servizi grazie a un set incrementale di fasi di gestione per ambienti di qualsiasi dimensione.
+Questa sezione di Microsoft Cloud Adoption Framework include un piano attuabile e prescrittivo per la distribuzione dei servizi di gestione server nell'ambiente. Il piano aiuta a orientarsi rapidamente tra questi servizi grazie a una serie incrementale di fasi di gestione per ambienti di qualsiasi dimensione.
 
 Per semplicità, queste indicazioni sono state organizzate in tre fasi:
 
@@ -31,14 +29,14 @@ Per semplicità, queste indicazioni sono state organizzate in tre fasi:
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="why-use-azure-management-services"></a>Perché usare i servizi di gestione di Azure?
+## <a name="why-use-azure-server-management-services"></a>Perché usare i servizi di gestione server di Azure?
 
-I servizi di gestione di Azure offrono i vantaggi seguenti:
+I servizi di gestione server di Azure offrono i vantaggi seguenti:
 
-- **Nativi di Azure:** I servizi di gestione sono predefiniti e integrati in modalità nativa con Azure Resource Manager. Questi servizi vengono costantemente migliorati per offrire nuove funzionalità.
-- **Windows e Linux:** I computer Windows e Linux offrono la stessa esperienza di gestione coerente.
-- **Ambiente ibrido:** I servizi di gestione riguardano macchine virtuali IaaS di Azure, nonché server fisici e virtuali ospitati in locale o in altri ambienti di hosting.
-- **Sicurezza:** Microsoft dedica ingenti risorse a tutte le forme di sicurezza. Questo investimento non consente solo di proteggere l'infrastruttura cloud di Azure, ma di estendere anche le tecnologie e le competenze risultanti necessarie per proteggere le risorse dei clienti ovunque si trovino.
+- **Nativi di Azure:** i servizi di gestione server sono predefiniti e integrati in modalità nativa con Azure Resource Manager. Questi servizi vengono costantemente migliorati per offrire nuove funzionalità.
+- **Windows e Linux:** i computer Windows e Linux offrono la stessa esperienza coerente di gestione.
+- **Ambiente ibrido:** i servizi di gestione riguardano macchine virtuali IaaS di Azure, nonché server fisici e virtuali ospitati in locale o in altri ambienti di hosting.
+- **Sicurezza:** Microsoft dedica ingenti risorse a tutte le forme di sicurezza. Oltre a proteggere l'infrastruttura di Azure, questo investimento consente anche di estendere le tecnologie e le competenze risultanti necessarie per proteggere le risorse dei clienti ovunque risiedano.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
