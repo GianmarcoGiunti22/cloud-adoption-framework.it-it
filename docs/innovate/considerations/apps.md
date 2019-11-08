@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565779"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752076"
 ---
 # <a name="engage-through-applications"></a>Coinvolgi le applicazioni
 
@@ -21,7 +21,7 @@ Come descritto in [democratizzazione dei dati](./data.md), i dati sono il nuovo 
 
 In alcuni casi, i dati da soli sono sufficienti per apportare modifiche e soddisfare le esigenze dei clienti. In genere, tuttavia, le soluzioni per le esigenze dei clienti richiedono che le applicazioni formino i dati e creino un'esperienza. Le applicazioni sono la modalità di coinvolgimento dell'utente. Sono la casa per i processi necessari per rispondere ai trigger dei clienti. Si tratta di mezzi per i clienti per fornire dati e ricevere indicazioni. Questo articolo riepiloga diversi principi che consentono di allinearsi alla soluzione di applicazione corretta, in base alle ipotesi da convalidare.
 
-![Interagisci tramite app](../../_images/innovate/engage-via-apps.png)
+![Interagire tramite app](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Codice condiviso
 
@@ -32,7 +32,7 @@ Per essere pronti per l'innovazione, tutto lo sviluppo di applicazioni dovrebbe 
 - [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controllo della versione distribuito
 - [Controllo della versione di Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controllo della versione centralizzato
 
-## <a name="citizen-developers"></a>Sviluppatori cittadini
+## <a name="citizen-developers"></a>Sviluppatori non professionisti
 
 Gli sviluppatori professionisti sono un componente fondamentale dell'innovazione. Quando un'ipotesi dimostra un'accuratezza su larga scala, gli sviluppatori professionisti sono tenuti a stabilizzare e preparare la soluzione per la scalabilità. La maggior parte dei principi a cui si fa riferimento in questo articolo richiede il supporto di sviluppatori professionisti. Sfortunatamente, le tendenze correnti suggeriscono una maggiore domanda per gli sviluppatori professionisti rispetto agli sviluppatori. Inoltre, il costo e la velocità dell'innovazione possono essere meno favorevoli quando si ritiene necessario lo sviluppo professionale. In risposta a tali problemi, gli sviluppatori di cittadini forniscono un modo per ridimensionare le attività di sviluppo e accelerare i test di ipotesi iniziali.
 
@@ -49,7 +49,7 @@ Esperienze intelligenti combinano la velocità e la scalabilità delle applicazi
 
 Quando un'applicazione o un'esperienza è necessaria per soddisfare le esigenze dei clienti, le applicazioni Web moderne possono essere il modo più rapido per iniziare. Le esperienze Web moderne possono coinvolgere rapidamente i clienti interni o esterni e consentire un'iterazione rapida della soluzione.
 
-### <a name="infusing-intelligence"></a>Infusione dell'Intelligence
+### <a name="infusing-intelligence"></a>Infondere intelligenza
 
 Machine Learning e intelligenza artificiale sono sempre più disponibili per gli sviluppatori. La disponibilità ampia di API comuni con funzionalità predittive consente agli sviluppatori di soddisfare al meglio le esigenze del cliente tramite l'accesso espanso ai dati e alle stime.
 

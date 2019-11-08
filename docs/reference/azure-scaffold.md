@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656651"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753765"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffold Azure enterprise: governance prescrittiva per le sottoscrizioni
 
@@ -195,13 +195,13 @@ Il [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/
 > [!TIP]
 >Il Centro sicurezza di Azure è uno strumento potente che viene regolarmente migliorato con le nuove funzionalità che è possibile usare per rilevare le minacce e proteggere l'azienda. È consigliabile abilitare sempre il Centro sicurezza di Azure.
 
-### <a name="azure-resource-locks"></a>Blocchi per le risorse di Azure
+### <a name="locks-for-azure-resources"></a>Blocchi per le risorse di Azure
 
-Con l'aggiunta di servizi di base alle sottoscrizioni, l'organizzazione diventa sempre più importante per evitare l'intralcio aziendale. Un tipo di interruzione che è possibile notare spesso è costituito dalle conseguenze impreviste di script e strumenti che ostacolano le sottoscrizioni di Azure eliminando accidentalmente le risorse. I [blocchi per le risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) consentono di limitare le operazioni sulle risorse di valore elevato in cui la modifica o l'eliminazione potrebbe avere un impatto significativo. I blocchi vengono applicati a una sottoscrizione, a un gruppo di risorse o persino a singole risorse. Il caso d'uso comune è quello di applicare i blocchi alle risorse di base, ad esempio reti virtuali, gateway, gruppi di sicurezza di rete e account di archiviazione delle chiavi.
+Con l'aggiunta di servizi di base alle sottoscrizioni, l'organizzazione diventa sempre più importante per evitare l'intralcio aziendale. Un'interferenza comune si verifica quando uno script o uno strumento in esecuzione in una sottoscrizione di Azure Elimina involontariamente una risorsa. I [blocchi](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) limitano le operazioni sulle risorse di valore elevato in cui la modifica o l'eliminazione potrebbe avere un impatto significativo. È possibile applicare blocchi a sottoscrizioni, gruppi di risorse o singole risorse. Applicare i blocchi alle risorse di base, ad esempio reti virtuali, gateway, gruppi di sicurezza di rete e account di archiviazione delle chiavi.
 
-### <a name="secure-devops-toolkit"></a>Toolkit Secure DevOps
+### <a name="secure-devops-kit-for-azure"></a>Secure DevOps kit per Azure
 
-Secure DevOps kit per Azure (AzSK) è una raccolta di script, strumenti, estensioni e funzionalità di automazione creati originariamente dal team IT di Microsoft e [rilasciati come Open Source tramite GitHub](https://github.com/azsk/DevOpsKit-docs). AzSK soddisfa le esigenze di sicurezza delle risorse e delle sottoscrizioni di Azure end-to-end per i team che usano un'automazione completa e integrano senza problemi la sicurezza nei flussi di lavoro DevOps nativi, contribuendo a garantire DevOps sicuri con queste sei aree di interesse:
+Secure DevOps kit per Azure (AzSK) è una raccolta di script, strumenti, estensioni e funzionalità di automazione creati originariamente dal team IT di Microsoft e [rilasciati come Open Source tramite GitHub](https://github.com/azsk/devopskit-docs). AzSK soddisfa le esigenze di sicurezza delle risorse e delle sottoscrizioni di Azure end-to-end per i team che usano un'automazione completa e integrano senza problemi la sicurezza nei flussi di lavoro DevOps nativi, contribuendo a garantire DevOps sicuri con queste sei aree di interesse:
 
 - Proteggere la sottoscrizione
 - Offrire uno sviluppo sicuro
@@ -210,7 +210,7 @@ Secure DevOps kit per Azure (AzSK) è una raccolta di script, strumenti, estensi
 - Avvisi e monitoraggio
 - Governance del rischio cloud
 
-![Toolkit Azure DevOps](../_images/reference/secure-devops-kit.png)
+![Diagramma di panoramica del kit Secure DevOps per Azure](../_images/reference/secure-devops-kit.png)
 
 AzSK è un set completo di strumenti, script e informazioni che rappresentano una parte importante di un piano di governance di Azure completo e l'incorporamento di questo nell'impalcatura è fondamentale per supportare gli obiettivi di gestione dei rischi per le organizzazioni.
 

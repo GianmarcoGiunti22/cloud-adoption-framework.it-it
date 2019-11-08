@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566357"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752678"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Esempi di istruzioni dei criteri di Accelerazione della distribuzione
 
@@ -32,7 +32,7 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 
 **Istruzione per i criteri:** Tutti gli asset distribuiti nel cloud devono essere distribuiti usando modelli o script di automazione laddove possibile.
 
-**Opzioni di progettazione potenziali:** i [modelli Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) offrono un approccio di infrastruttura come codice per la distribuzione delle risorse in Azure. È anche possibile usare la funzione di [bonifica](https://docs.microsoft.com/azure/terraform/terraform-overview) come strumento di distribuzione locale coerente e basato sul cloud.
+**Opzioni di progettazione potenziali:** [Azure Resource Manager modelli](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) fornisce un'infrastruttura come approccio al codice per la distribuzione delle risorse in Azure. È anche possibile usare la funzione di [bonifica](https://docs.microsoft.com/azure/terraform/terraform-overview) come strumento di distribuzione locale coerente e basato sul cloud.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Mancanza di visibilità per problemi di sistema
 
@@ -43,7 +43,7 @@ Le istruzioni dei criteri di esempio seguenti riguardano i rischi aziendali comu
 - Misure di diagnostica e metriche chiave saranno identificate per tutti i componenti e sistemi di produzione, gli strumenti di monitoraggio e diagnostica verranno applicati a questi sistemi e monitorati regolarmente dal personale operativo.
 - Le operazioni considereranno l'utilizzo degli strumenti di monitoraggio e diagnostica in ambienti non di produzione, ad esempio staging e QA, per identificare i problemi di sistema prima che si verifichino nell'ambiente di produzione.
 
-**Opzioni di progettazione potenziali:** [monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor), che include anche log Analytics e Application Insights, fornisce strumenti per la raccolta e l'analisi dei dati di telemetria per comprendere il modo in cui le applicazioni vengono eseguite e proattive identificare i problemi che interessano le risorse e le risorse da cui dipendono. Inoltre, il [log attività di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) segnala tutte le modifiche apportate a livello di piattaforma e deve essere monitorato/controllato per le modifiche non conformi.
+**Opzioni di progettazione potenziali:** [monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor), che include log Analytics e Application Insights, fornisce strumenti per la raccolta e l'analisi dei dati di telemetria per comprendere il modo in cui le applicazioni eseguono e identificano in modo proattivo problemi che interessano le risorse e le risorse da cui dipendono. Inoltre, il [log attività di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) segnala tutte le modifiche apportate a livello di piattaforma e deve essere monitorato e controllato per le modifiche non conformi.
 
 ## <a name="configuration-security-reviews"></a>Verifiche di protezione della configurazione
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566919"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753545"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia di governance o di conformità
 
@@ -47,7 +47,7 @@ Durante la valutazione, è necessario prendere decisioni aggiuntive per allinear
 
 ### <a name="suggested-action-during-the-assess-process"></a>Azione suggerita durante il processo di valutazione
 
-I requisiti di valutazione di governance e conformità sono troppo specifici del cliente per fornire indicazioni generali sui passaggi effettivi eseguiti durante la valutazione. È tuttavia preferibile che il processo includa attività e allocazioni di tempo per l'"allineamento ai requisiti di conformità/governance". Per altre informazioni su questi requisiti, vedere i collegamenti seguenti:
+I requisiti di valutazione di governance e conformità sono troppo specifici del cliente per fornire indicazioni generali sui passaggi effettivi eseguiti durante la valutazione. Tuttavia, il processo deve includere le attività e le allocazioni temporali per "allineamento ai requisiti di conformità/Governance". Per altre informazioni su questi requisiti, vedere i collegamenti seguenti:
 
 Per una conoscenza più approfondita della governance, esaminare la [panoramica delle cinque discipline sulla governance del cloud](../../govern/governance-disciplines.md). Questa sezione di Cloud Adoption Framework include anche modelli per documentare i criteri, le indicazioni e i requisiti per ognuna delle cinque sezioni:
 
@@ -61,15 +61,15 @@ Per indicazioni sullo sviluppo di linee guida sulla governance basate sul modell
 
 ## <a name="optimize-and-promote-process-changes"></a>Modifiche dei processi di ottimizzazione e promozione
 
-Durante i processi di ottimizzazione e promozione, si consiglia al team di governance del cloud di investire tempo per testare e convalidare l'adesione agli standard di governance e conformità. Questo passaggio inoltre è il momento giusto per inserire i processi che consentono al team di governance del cloud di gestire i modelli che potrebbero fornire un'ulteriore [accelerazione della distribuzione](../../govern/deployment-acceleration/index.md) per progetti futuri.
+Durante i processi di ottimizzazione e promozione, il team di governance del cloud necessario investe tempo per testare e convalidare la conformità agli standard di governance e conformità. Questo passaggio inoltre è il momento giusto per inserire i processi che consentono al team di governance del cloud di gestire i modelli che potrebbero fornire un'ulteriore [accelerazione della distribuzione](../../govern/deployment-acceleration/index.md) per progetti futuri.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Azione suggerita durante il processo di ottimizzazione e promozione
 
-Durante questo processo, è consigliabile che il piano del progetto includa allocazioni di tempo per consentire al team di governance del cloud di eseguire una verifica della conformità per ogni carico di lavoro pianificato per la promozione alla produzione.
+Durante questo processo, il piano del progetto deve includere le allocazioni temporali per il team di governance del cloud per eseguire una verifica della conformità per ogni carico di lavoro pianificato per la promozione della produzione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Come ultima voce dell'[elenco di controllo per l'espansione dell'ambito](./index.md), il lettore è invitato a tornare all'elenco di controllo e a rivalutare altri eventuali requisiti di ambito per la migrazione.
+Come ultima voce dell'elenco di [controllo dell'ambito espanso](./index.md), tornare all'elenco di controllo e rivalutare eventuali requisiti di ambito aggiuntivi per la migrazione.
 
 > [!div class="nextstepaction"]
 > [Elenco di controllo per l'espansione dell'ambito](./index.md)

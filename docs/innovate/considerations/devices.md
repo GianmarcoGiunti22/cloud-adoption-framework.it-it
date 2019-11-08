@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565659"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752078"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Esperienze di ambiente: interagire con i dispositivi
 
@@ -40,7 +40,7 @@ Le esperienze di ambiente in genere richiedono più di un'app Web in questi gior
 
 Comprendere le esigenze dei clienti e misurare l'effetto del cliente sia per determinare se è necessaria un'interazione del dispositivo o un'esperienza di ambiente per convalidare l'ipotesi. Con ognuno di questi punti dati, le sezioni seguenti consentiranno di trovare la soluzione migliore.
 
-## <a name="mobile-experience"></a>Esperienza per dispositivi mobili
+## <a name="mobile-experience"></a>Esperienza mobile
 
 Nella prima fase dell'esperienza di ambiente, l'utente si allontana dal computer. I clienti attuali e i professionisti aziendali si spostano fluidamente tra dispositivi mobili e PC. Ogni piattaforma o dispositivo usato dal cliente crea una nuova esperienza potenziale. L'aggiunta di un'esperienza mobile che estende la soluzione principale è il modo più rapido per migliorare l'integrazione nelle immediate vicinanze del cliente. Mentre un dispositivo mobile è lontano dall'ambiente, potrebbe essere più vicino al punto di necessità del cliente.
 
@@ -55,7 +55,7 @@ Le soluzioni di realtà mista rappresentano il livello successivo di maturità p
 > [!IMPORTANT]
 > Se è necessario un dispositivo di realtà virtuale (VR) e *non fa già parte dei comportamenti immediati o naturali di un cliente*, la realtà aumentata o virtuale è più un'esperienza alternativa e meno un'esperienza di ambiente.
 
-Le esperienze di realtà miste sono sempre più comuni tra i dipendenti remoti. Il loro utilizzo cresce ancora più rapidamente nei settori che richiedono collaborazione o competenze speciali che non sono immediatamente disponibili nel mercato locale. Situazioni che richiedono il supporto centralizzato per l'implementazione di un prodotto complesso per una forza lavoro remota sono particolarmente fertili per la realtà aumentata. In questi scenari, il team di supporto centrale e i dipendenti remoti possono sfruttare la realtà aumentata per lavorare, risolvere i problemi e installare il prodotto.
+Le esperienze di realtà miste sono sempre più comuni tra i dipendenti remoti. Il loro utilizzo cresce ancora più rapidamente nei settori che richiedono collaborazione o competenze speciali che non sono immediatamente disponibili nel mercato locale. Situazioni che richiedono il supporto centralizzato per l'implementazione di un prodotto complesso per una forza lavoro remota sono particolarmente fertili per la realtà aumentata. In questi scenari, il team di supporto centrale e i dipendenti remoti possono utilizzare la realtà aumentata per lavorare, risolvere i problemi e installare il prodotto.
 
 Si consideri, ad esempio, il caso di ancoraggi spaziali. Gli ancoraggi spaziali consentono di creare esperienze di realtà miste con oggetti che rendono permanente le rispettive posizioni tra i dispositivi nel tempo. Tramite gli ancoraggi spaziali, è possibile acquisire, registrare e salvare in modo permanente un comportamento specifico, offrendo così un'esperienza di ambiente al successivo funzionamento dell'utente all'interno di tale ambiente. Gli [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors/overview) sono un servizio che sposta questa logica nel cloud, consentendo l'esperienza di condivisione tra dispositivi e anche tra soluzioni.
 
@@ -73,7 +73,7 @@ Esempi di realtà integrata in Azure possono includere:
 
 È possibile utilizzare tutti e tre questi strumenti per raccogliere dati dall'ambiente naturale e al punto di necessità del cliente. A questo punto, la soluzione può rispondere a tali input di dati per risolvere la necessità, a volte prima che il cliente sappia anche che si è verificato un trigger per la necessità.
 
-## <a name="adjusted-reality"></a>Realtà regolata
+## <a name="adjusted-reality"></a>Realtà modificata
 
 La forma più elevata dell'esperienza ambiente è la realtà adattata, spesso definita *Intelligence di ambiente*. La realtà adattata è un approccio all'uso delle informazioni della soluzione per modificare la realtà del cliente senza che sia necessario interagire direttamente con un'applicazione. Con questo approccio, l'applicazione creata inizialmente per dimostrare l'ipotesi potrebbe non essere più pertinente. I dispositivi nell'ambiente contribuiscono invece a modulare gli input e gli output per soddisfare le esigenze dei clienti.
 

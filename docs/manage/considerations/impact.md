@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356460b8f2952475060c857e0b7999696be0d215
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565135"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752859"
 ---
 # <a name="business-impact-in-cloud-management"></a>Un effetto aziendale sulla gestione cloud
 
@@ -41,7 +41,7 @@ Quando si desidera prendere in considerazione altri investimenti di gestione, è
 
 - **Perdite modificate:** Se l'azienda ha riscontrato un evento di perdita principale in passato, ad esempio un uragano o un'altra calamità naturale, un addetto alle attestazioni potrebbe avere calcolato perdite effettive durante l'interruzione. Questi calcoli sono basati sugli standard del settore assicurativo per il calcolo delle perdite e la gestione dei rischi. L'uso di perdite modificate come quantità totale di perdite in un intervallo di tempo specifico può causare proiezioni altamente accurate.
 
-- **Perdite storiche:** Se l'ambiente locale ha sofferto storicamente dalle interruzioni derivanti dall'instabilità dell'infrastruttura, può essere un po' più difficile calcolare le perdite. Tuttavia, è comunque possibile applicare le formule di regolazione sfruttate internamente. Per calcolare le perdite cronologiche, confrontare i Delta nelle vendite, i ricavi lordi e i costi operativi in tre frame temporali: prima, durante e dopo l'interruzione. Esaminando questi Delta, è possibile identificare le perdite accurate quando non sono disponibili altri dati.
+- **Perdite storiche:** Se l'ambiente locale ha sofferto storicamente dalle interruzioni derivanti dall'instabilità dell'infrastruttura, può essere un po' più difficile calcolare le perdite. Tuttavia, è comunque possibile applicare le formule di regolazione utilizzate internamente. Per calcolare le perdite cronologiche, confrontare i Delta nelle vendite, i ricavi lordi e i costi operativi in tre frame temporali: prima, durante e dopo l'interruzione. Esaminando questi Delta, è possibile identificare le perdite accurate quando non sono disponibili altri dati.
 
 - **Calcolo completo della perdita:** Se non sono disponibili dati cronologici, è possibile derivare un valore di perdita comparativa. In questo modello si determinano i ricavi lordi medi per ora per la business unit. Quando si proiettano investimenti di prevenzione della perdita, non è lecito presumere che un'interruzione completa del sistema equivale a una perdita del 100% dei ricavi. È tuttavia possibile usare questo presupposto come base per confrontare le conseguenze della perdita e la priorità degli investimenti.
 

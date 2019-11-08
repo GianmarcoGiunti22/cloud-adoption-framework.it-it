@@ -8,19 +8,19 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565232"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753622"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Procedure consigliate per la configurazione della rete per i carichi di lavoro migrati in Azure
 
 Durante la pianificazione e la progettazione per la migrazione, oltre alla migrazione stessa, uno degli aspetti più importanti è la progettazione e l'implementazione della rete di Azure. Questo articolo descrive le procedure consigliate per la rete durante la migrazione alle implementazioni IaaS e PaaS in Azure.
 
 > [!IMPORTANT]
-> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità variano nel tempo. È possibile che non tutti i consigli siano applicabili alla distribuzione in uso. È pertanto necessario scegliere quelli che meglio si adattano alle proprie esigenze.
+> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità mutano nel tempo. È possibile che non tutti i consigli siano applicabili alla distribuzione in uso. È pertanto necessario scegliere quelli che meglio si adattano alle proprie esigenze.
 
 ## <a name="design-virtual-networks"></a>Progettare reti virtuali
 
@@ -85,7 +85,7 @@ Per fornire l'isolamento in una rete virtuale, segmentare la rete virtuale in un
 - Le decisioni relative alle subnet dipendono dai requisiti tecnici e aziendali.
 - Le subnet vengono create usando la notazione CIDR.
 - Al momento di prendere una decisione in merito all'intervallo di rete per le subnet, è importante tenere presente che Azure mantiene cinque indirizzi IP di ogni subnet che non possono essere usati. Ad esempio, se si crea la subnet più piccola /29 (con otto indirizzi IP), Azure manterrà cinque indirizzi, quindi saranno disponibili solo tre indirizzi utilizzabili che possono essere assegnati agli host nella subnet.
-- Nella maggior parte dei casi è consigliabile usare /28 come subnet più piccola.
+- Per la maggior parte dei casi, usare/28 come subnet più piccola.
 
 **Esempio:**
 
@@ -160,8 +160,8 @@ Per una corretta migrazione, è fondamentale connettere le reti aziendali locali
 
 Per implementare una VPN da sito a sito, configurare un gateway VPN in Azure.
 
-- Un gateway VPN è un tipo specifico di gateway di rete virtuale, usato per inviare traffico crittografato tra una rete virtuale di Azure e una posizione locale attraverso la rete Internet pubblica.
-- È possibile usare un gateway VPN anche per inviare traffico crittografato tra le reti virtuali di Azure sulla rete Microsoft.
+- Un gateway VPN è un tipo specifico di gateway VNet che invia il traffico crittografato tra un VNet di Azure e una posizione locale tramite la rete Internet pubblica.
+- Un gateway VPN può anche inviare il traffico crittografato tra Azure reti virtuali tramite la rete Microsoft.
 - Ogni rete virtuale può avere un solo gateway VPN.
 - È possibile creare più connessioni allo stesso gateway VPN. Quando si creano più connessioni, tutti i tunnel VPN condividono la larghezza di banda disponibile per il gateway.
 - Ogni gateway VPN di Azure è costituito da due istanze in una configurazione di tipo attivo-standby.
@@ -175,7 +175,7 @@ Per configurare una VPN da sito a sito, procedere nel modo seguente:
 
 - È necessaria una rete virtuale con un intervallo di indirizzi che non si sovrapponga alla rete locale a cui si connetterà la VPN.
 - Creare una subnet del gateway nella rete.
-- Creare un gateway VPN, specificare il tipo di gateway (VPN) e specificare se il gateway è basato su criteri o basato su route. È consigliata una VPN basata su route perché ha una capacità superiore e garantirà la compatibilità anche in futuro.
+- Creare un gateway VPN, specificare il tipo di gateway (VPN) e specificare se il gateway è basato su criteri o basato su route. Una VPN basata su Route è considerata più idonea e a prova futura.
 - Creare un gateway di rete locale in locale e configurare il dispositivo VPN locale.
 - Creare una connessione VPN da sito a sito di failover tra il gateway della rete virtuale e il dispositivo in locale. L'uso di una VPN basata su route consente connessioni attivo/passivo o attivo/attivo ad Azure. Una VPN basata su route inoltre supporta connessioni da sito a sito (da qualsiasi computer) e da punto a sito (da un singolo computer) contemporaneamente.
 - Specificare lo SKU del gateway da usare. Questo elemento varia a seconda dei requisiti del carico di lavoro, delle velocità effettive, delle funzionalità e dei contratti di servizio.

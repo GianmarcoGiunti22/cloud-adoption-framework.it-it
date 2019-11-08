@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565401"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751594"
 ---
 # <a name="automate-onboarding"></a>Automatizzare il caricamento
 
@@ -37,7 +37,7 @@ Nei file di esempio viene illustrato come utilizzare i cmdlet di Azure PowerShel
 
 In questo esempio vengono utilizzati i file descritti nella tabella seguente. È possibile personalizzarli per supportare scenari di distribuzione personalizzati.
 
-| Nome file | Descrizione |
+| Nome file | Description |
 |-----------|-------------|
 | New-AMSDeployment. ps1 | Script di orchestrazione principale che automatizza l'onboarding. Viene creato un gruppo di risorse, un percorso, un'area di lavoro e gli account di automazione, se non esistono già. Questo script di PowerShell richiede una sottoscrizione esistente. |
 | Area di lavoro-AutomationAccount. JSON | Modello di Gestione risorse che distribuisce l'area di lavoro e le risorse dell'account di automazione. |

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564935"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751519"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guida al monitoraggio del cloud: raccogliere i dati corretti
 
@@ -45,7 +45,7 @@ Per una risoluzione più rapida dell'evento imprevisto, tenere presenti le racco
 - Usare le funzionalità di drill-down del dashboard o supportare la personalizzazione della visualizzazione per rifinirla.
 - Se sono necessari log dettagliati, le metriche dovrebbero avere consentito di individuare i criteri di ricerca. Se le metriche non sono state utili, migliorarle per l'evento imprevisto successivo.
 
-L'adozione di questo set di principi guida consente di ottenere informazioni dettagliate quasi in tempo reale, nonché una migliore gestione del servizio.
+L'adozione di questo set di principi guida consente di ottenere informazioni in tempo quasi reale, oltre a una migliore gestione del servizio.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058673"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753054"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guida alla governance aziendale standard: migliorare la disciplina della linea di base di sicurezza
 
@@ -71,7 +71,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dal proprietario dell'applicazione prima della distribuzione nel cloud.
 2. Le applicazioni che archiviano o accedono a dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo sono. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
-3. tutti i dati protetti devono essere crittografati quando inattivi. Anche se questa è l'impostazione predefinita per tutti gli account di archiviazione di Azure, potrebbero essere necessarie strategie di crittografia aggiuntive, inclusa la crittografia dei dati nell'account di archiviazione, la crittografia delle VM e la crittografia a livello di database se si usa SQL in una VM (Transparent Data Encryption e colonna) crittografia).
+3. tutti i dati protetti devono essere crittografati quando inattivi. Anche se questa è l'impostazione predefinita per tutti gli account di archiviazione di Azure, potrebbero essere necessarie altre strategie di crittografia, tra cui la crittografia dei dati nell'account di archiviazione, la crittografia delle VM e la crittografia a livello di database quando si usa SQL in una macchina virtuale (Transparent Data Encryption e crittografia di colonna ).
 4. Le autorizzazioni con privilegi elevati in qualsiasi segmento contenente dati protetti devono essere un'eccezione. Tali eccezioni verranno registrate con il team di governance del cloud e controllate regolarmente.
 5. le subnet di rete contenenti dati protetti devono essere isolate dalle altre subnet. Il traffico di rete tra le subnet di dati protetti verrà controllato regolarmente.
 6. Alle subnet contenenti dati protetti non deve essere possibile accedere direttamente tramite la rete Internet pubblica o tra data center. L'accesso a tali subnet deve essere instradato tramite subnet intermedie. Tutti gli accessi a tali subnet devono passare attraverso una soluzione firewall in grado di eseguire la scansione dei pacchetti e applicare funzioni di blocco.

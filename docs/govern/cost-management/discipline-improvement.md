@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1c546512b2b9407d9edf54648e704209f8d460ea
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547788"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753080"
 ---
 # <a name="cost-management-discipline-improvement"></a>Miglioramento della disciplina Gestione costi
 
@@ -87,7 +87,7 @@ La migrazione è un processo incrementale incentrato sullo spostamento, il testi
 
 ## <a name="operate-and-post-implementation"></a>Operazioni e post-implementazione
 
-Al termine della trasformazione, la governance e le operazioni devono continuare a funzionare per il ciclo di vita naturale di un'applicazione o di un carico di lavoro. Questa fase di maturità della governance si basa principalmente sulle attività che vengono svolte in genere dopo che la soluzione è stata implementata e il ciclo di trasformazione ha iniziato a stabilizzarsi.
+Al termine della trasformazione, la governance e le operazioni devono essere attivate per il ciclo di vita naturale di un'applicazione o di un carico di lavoro. Questa fase di maturità della governance si basa principalmente sulle attività che vengono svolte in genere dopo che la soluzione è stata implementata e il ciclo di trasformazione ha iniziato a stabilizzarsi.
 
 **Attività minime suggerite:**
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048430"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753103"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Innovazione tramite l'adozione del cloud
 
@@ -21,7 +21,7 @@ La migrazione cloud è un'ottima opzione per i tuoi carichi di lavoro esistenti.
 
 ## <a name="motivations-behind-innovation"></a>Motivazioni alla base dell'innovazione
 
-L'innovazione non è il percorso di adozione appropriato per ogni carico di lavoro. Un percorso di innovazione richiede in genere un investimento più ampio nel codice personalizzato e nella gestione dei dati rispetto ad altri percorsi. L'innovazione richiede inoltre più tempo della migrazione o di altre forme di modernizzazione. Questo percorso è consigliato quando i clienti hanno come destinazione i risultati aziendali seguenti:
+L'innovazione non è il percorso di adozione appropriato per ogni carico di lavoro. Un percorso di innovazione richiede in genere un investimento più ampio nel codice personalizzato e nella gestione dei dati rispetto ad altri percorsi. L'innovazione richiede inoltre più tempo della migrazione o di altre forme di modernizzazione. Seguire questo percorso quando si è interessati ai risultati aziendali seguenti:
 
 - Prepararsi per nuove competenze tecniche.
 - Scalabilità per soddisfare le esigenze di mercato.

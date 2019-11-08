@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566934"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753481"
 ---
 # <a name="balance-the-portfolio"></a>Bilanciare il portfolio
 
@@ -76,7 +76,7 @@ Per il bilanciamento del portfolio è necessaria un'analisi qualitativa aggiunti
 
 In base ai dati della tabella riportata nella sezione precedente relativa alla [documentazione dei risultati aziendali](#document-business-outcomes) è probabile che il portfolio si avvicini troppo a un modello di esecuzione incentrato sulla migrazione. Se l'esperienza del cliente fosse in cima alle priorità sarebbe più probabile ottenere un portfolio altamente innovativo. Non è giusto o sbagliato, ma propendere troppo in una direzione si traduce comunemente in una diminuzione dei ritorni, aggiunge inutili complessità e aumenta i tempi di esecuzione legati ai lavori richiesti per l'adozione del cloud.
 
-Per ridurre la complessità è consigliabile seguire un approccio tradizionale alla razionalizzazione del portfolio ma in un modello iterativo. La procedura seguente illustra un modello qualitativo per un approccio di questo tipo:
+Per ridurre la complessità, è consigliabile seguire un approccio tradizionale alla razionalizzazione del portfolio, ma in un modello iterativo. La procedura seguente illustra un modello qualitativo per un approccio di questo tipo:
 
 - Il team di strategia del cloud mantiene un backlog con priorità dei carichi di lavoro da sottoporre a migrazione.
 - Il team di strategia del cloud e il team di adozione del cloud organizzano una riunione di pianificazione del rilascio prima del completamento di ogni versione.
@@ -89,8 +89,8 @@ Per ridurre la complessità è consigliabile seguire un approccio tradizionale a
   - I dati all'interno di questo carico di lavoro contribuiranno a un'innovazione downstream correlata a BI, Machine Learning, Internet delle cose o tecnologie correlate?
   - Il carico di lavoro è compatibile con le moderne piattaforme di applicazioni come Servizio app di Azure?
 - Le risposte alle domande precedenti e qualsiasi altra analisi qualitativa richiesta influenzeranno quindi le rettifiche del backlog con priorità. Queste rettifiche possono includere:
-  - Se un carico di lavoro può essere sostituito con una soluzione PaaS, può essere rimosso completamente dal backlog di migrazione. Come minimo, si aggiungerebbe un'ulteriore due diligence per decidere tra il rehosting e la sostituzione, riducendo temporaneamente la priorità di tale carico di lavoro rispetto al backlog di migrazione.
-  - Se un carico di lavoro è in fase di avanzamento dello sviluppo (dovrebbe esserlo), sarebbe più adatto in un modello di refactoring/riprogettazione/ricompilazione. Poiché l'innovazione e la migrazione richiedono competenze tecniche diverse, spesso si consiglia di gestire le applicazioni tramite un backlog di innovazione anziché un backlog di migrazione, in quanti si allineano a un approccio di refactoring/riprogettazione/ricompilazione.
+  - Se un carico di lavoro può essere sostituito con una soluzione PaaS, può essere rimosso completamente dal backlog di migrazione. Come attività, è necessario aggiungere almeno una diligenza per decidere tra rehost e Replace, riducendo temporaneamente la priorità del carico di lavoro dal backlog di migrazione.
+  - Se un carico di lavoro è (o dovrebbe essere) sottoposto a un avanzamento dello sviluppo, può rientrare in un modello refactoring-Rebuild. Poiché l'innovazione e la migrazione richiedono competenze tecniche diverse, le applicazioni che si allineano a un approccio refactoring-Rebuild devono essere gestite tramite un backlog di innovazione anziché un backlog di migrazione.
   - Se un carico di lavoro fa parte di un'innovazione downstream, potrebbe essere opportuno effettuare il refactoring della piattaforma dati lasciando però i livelli dell'applicazione come candidato per il rehosting. Effettuare il refactoring secondario della piattaforma dati di un carico di lavoro può spesso essere risolto in una migrazione o in un backlog di innovazione. Questo risultato della razionalizzazione può risultare in elementi di lavoro più dettagliati nel backlog, ma in caso contrario non è necessario modificare le priorità.
   - Se un carico di lavoro non è strategico ma è compatibile con le moderne piattaforme di hosting di applicazioni basate sul cloud, potrebbe essere opportuno eseguire un refactoring secondario all'applicazione per distribuirla come app moderna. Questo può contribuire al risparmio complessivo grazie alla riduzione dei requisiti generali per le licenze IaaS e del sistema operativo della migrazione al cloud.
   - Se un carico di lavoro è un'applicazione di terze parti e i dati del carico di lavoro non sono pianificati per l'uso in un'innovazione downstream, potrebbe essere preferibile lasciare l'opzione di rehosting nel backlog.
@@ -105,7 +105,7 @@ Durante la migrazione, le attività di bilanciamento del portfolio possono avere
 
 La razionalizzazione del portfolio richiede una diversità di lavoro tecnico richiesto. Si tenta di far corrispondere i team di adozione del cloud alla diversità del portfolio all'interno dei lavori richiesti per la migrazione. Gli stakeholder aziendali di richiedono un singolo team di adozione del cloud per affrontare l'intero backlog di migrazione. Si tratta di un approccio consigliato raramente, in molti casi può essere controproducente.
 
-Si consiglia di segmentare i diversi lavori richiesti tra due o più team di adozione del cloud. Se come modalità di esecuzione di esempio viene usato un modello a due team, allora Team 1 corrisponde al team di migrazione e Team 2 a quello di innovazione. Per i lavori che richiedono uno sforzo maggiore, questi team possono essere ulteriormente segmentati per affrontare altri approcci, ad esempio i lavori richiesti di sostituzione/PaaS o refactoring secondario. Di seguito vengono descritte le competenze e i ruoli necessari per il rehosting, il refactoring o il refactoring secondario:
+Queste diverse attività devono essere segmentate in due o più team di adozione del cloud. Se come modalità di esecuzione di esempio viene usato un modello a due team, allora Team 1 corrisponde al team di migrazione e Team 2 a quello di innovazione. Per i lavori che richiedono uno sforzo maggiore, questi team possono essere ulteriormente segmentati per affrontare altri approcci, ad esempio i lavori richiesti di sostituzione/PaaS o refactoring secondario. Di seguito vengono descritte le competenze e i ruoli necessari per il rehosting, il refactoring o il refactoring secondario:
 
 **Rehost:** Rehost richiede che i membri del team implementino le modifiche incentrate sull'infrastruttura. In genere si usa uno strumento come Azure Site Recovery per eseguire la migrazione di macchine virtuali o altre risorse in Azure. Questo lavoro si allinea perfettamente agli amministratori di Data Center o agli implementatori IT. Il team di migrazione del cloud è strutturato per offrire questo lavoro su larga scala. Si tratta dell'approccio più veloce per eseguire la migrazione delle risorse esistenti nella maggior parte degli scenari.
 

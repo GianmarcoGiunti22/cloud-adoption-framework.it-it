@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564925"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752786"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guida al monitoraggio del cloud: Introduzione
 
-Il cloud rappresenta un cambiamento fondamentale nel modo in cui le aziende ottengono e usano le risorse tecnologiche. In passato le aziende si assumevano la proprietà e la responsabilità di tutti i livelli della tecnologia, dall'infrastruttura al software. Il cloud offre ora alle aziende la possibilità di effettuare il provisioning delle risorse e utilizzarle in base a esigenze specifiche.
+Il cloud cambia sostanzialmente il modo in cui le aziende ottengono e usano le risorse tecnologiche. In passato le aziende si assumevano la proprietà e la responsabilità di tutti i livelli della tecnologia, dall'infrastruttura al software. Il cloud offre ora alle aziende la possibilità di effettuare il provisioning delle risorse e utilizzarle in base a esigenze specifiche.
 
 Benché il cloud offra flessibilità quasi illimitata a livello di opzioni di progettazione, le aziende cercano una metodologia convalidata e coerente per l'adozione delle tecnologie cloud. Ogni azienda ha obiettivi e tempistiche diverse per l'adozione del cloud, quindi un approccio unico per tutte le situazioni è quasi impossibile.
 

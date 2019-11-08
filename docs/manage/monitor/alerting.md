@@ -1,5 +1,5 @@
 ---
-title: Guida al monitoraggio del cloud-avvisi
+title: 'Guida al monitoraggio del cloud: avviso'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Scegliere quando usare monitoraggio di Azure o System Center Operations Manager in Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564986"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752738"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guida al monitoraggio del cloud: avviso
 
@@ -83,12 +83,12 @@ Soluzione| Tipo di dati | Comportamento degli avvisi
 :---|:---|:---
 Monitoraggio di Azure per contenitori | I dati relativi alle prestazioni medie calcolati da nodi e Pod vengono scritti nell'archivio di metriche. | Creare avvisi delle metriche se si vuole ricevere un avviso in base alla variazione delle prestazioni di utilizzo misurato, aggregato nel tempo.
 || I dati sulle prestazioni calcolati che usano percentile da nodi, controller, contenitori e Pod vengono scritti nell'archivio dei log. Anche i log del contenitore e le informazioni di inventario vengono scritti nell'archivio dei log. | Creare avvisi di query di log se si desidera ricevere avvisi in base a variazioni di utilizzo misurato da cluster e contenitori. Gli avvisi di query di log possono anche essere configurati in base ai conteggi delle fasi pod e ai conteggi dei nodi di stato.
-Monitoraggio di Azure per VM | I criteri di integrità sono metriche scritte nell'archivio di metriche. | Gli avvisi vengono generati quando lo stato di integrità passa da integro a non integro. Questo avviso supporta solo i gruppi di azioni configurati per l'invio di notifiche SMS o di posta elettronica.
+Monitoraggio di Azure per le macchine virtuali | I criteri di integrità sono metriche scritte nell'archivio di metriche. | Gli avvisi vengono generati quando lo stato di integrità passa da integro a non integro. Questo avviso supporta solo i gruppi di azioni configurati per l'invio di notifiche SMS o di posta elettronica.
 || I dati del log delle prestazioni del sistema operativo guest e mappa vengono scritti nell'archivio dei log. | Creare avvisi per le query di log.
 
 ### <a name="fastest-speed-driven-by-cost"></a>Velocità più veloce basata sui costi
 
-La latenza è una delle decisioni più importanti che guidano gli avvisi e una rapida risoluzione dei problemi che interessano il servizio. Se sono necessari avvisi in tempo quasi reale in cinque minuti, valutare prima se sono disponibili o possono ricevere avvisi sui dati di telemetria dove vengono archiviati per impostazione predefinita. In generale, questa strategia è anche l'opzione più economica, perché lo strumento che si sta utilizzando sta già inviando i dati a tale percorso.
+La latenza è una delle decisioni più importanti che guidano gli avvisi e una rapida risoluzione dei problemi che interessano il servizio. Se sono necessari avvisi quasi in tempo reale in cinque minuti, valutare prima se sono disponibili o possono ricevere avvisi sui dati di telemetria dove vengono archiviati per impostazione predefinita. In generale, questa strategia è anche l'opzione più economica, perché lo strumento che si sta utilizzando sta già inviando i dati a tale percorso.
 
 Detto questo, vi sono alcune note importanti a questa regola.
 

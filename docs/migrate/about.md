@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547245"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751280"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migrazione al cloud in Microsoft Cloud Adoption Framework per Azure
 
@@ -44,7 +44,7 @@ Il Cloud Architect assume il ruolo di leader e mediatore per semplificare l'inte
 
 Per chi vuole seguire queste linee guida dall'inizio alla fine, il contenuto presentato consentirà di sviluppare una solida strategia di migrazione al cloud. Le linee guida accompagneranno il lettore alla scoperta della teoria e dell'implementazione di tale strategia.
 
-Come primo passaggio, è consigliabile esaminare i contenuti della [guida alla migrazione di Azure](./azure-migration-guide/index.md) per informazioni sul set standard di strumenti e approcci necessari per la migrazione in un caso d'uso comune. Dopo aver acquisito le informazioni di base, i lettori potranno ampliare le proprie conoscenze con [scenari di migrazione complessi](./expanded-scope/index.md), [procedure consigliate per la migrazione](./azure-best-practices/index.md) e [considerazioni sulla migrazione](./migration-considerations/index.md).
+Come primo passaggio, utilizzare la guida alla [migrazione di Azure](./azure-migration-guide/index.md) per comprendere il set standard di strumenti e approcci necessari per la migrazione in un caso d'uso comune. Dopo aver acquisito le informazioni di base, i lettori potranno ampliare le proprie conoscenze con [scenari di migrazione complessi](./expanded-scope/index.md), [procedure consigliate per la migrazione](./azure-best-practices/index.md) e [considerazioni sulla migrazione](./migration-considerations/index.md).
 
 > [!div class="nextstepaction"]
 > [Guida alla migrazione ad Azure](./azure-migration-guide/index.md)

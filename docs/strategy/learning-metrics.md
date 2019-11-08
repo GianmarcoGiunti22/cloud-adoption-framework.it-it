@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f761f85fa4b21b35e8428985707176624b92a5ec
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029963"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753786"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ La sfida con le metriche del comportamento dei clienti è che possono essere fac
 
 ## <a name="data-innovation"></a>Innovazione dei dati
 
-La modifica di un settore, l'interferenza dei mercati o la trasformazione di prodotti/servizi possono richiedere anni. In un'attività di innovazione dei dati abilitata per il cloud, la sperimentazione è fondamentale per misurare il successo. Essere trasparente condividendo le metriche di stima, ad esempio la percentuale di probabilità, il numero di esperimenti non riusciti e la quantità di modelli sottoposti a training. Gli errori si accumuleranno più velocemente dei successi. Queste metriche possono essere scoraggianti ed è importante che il team esecutivo conosca il tempo e gli investimenti necessari per sfruttare i dati in modo corretto.
+La modifica di un settore, l'interferenza dei mercati o la trasformazione di prodotti e servizi possono richiedere anni. In un'attività di innovazione dei dati abilitata per il cloud, la sperimentazione è fondamentale per misurare il successo. Essere trasparente condividendo le metriche di stima, ad esempio la percentuale di probabilità, il numero di esperimenti non riusciti e il numero di modelli sottoposti a training. Gli errori si accumuleranno più velocemente dei successi. Queste metriche possono essere scoraggianti e il team dirigente deve comprendere il tempo e l'investimento necessari per usare correttamente queste metriche.
 
 D'altra parte, alcuni indicatori positivi sono spesso associati all'apprendimento basato sui dati: la centralizzazione di set di dati eterogenei, l'ingresso di dati e la democratizzazione dei dati. Mentre il team sta imparando a conoscere il cliente di domani, è possibile produrre risultati reali. Il supporto delle metriche di apprendimento potrebbe includere:
 

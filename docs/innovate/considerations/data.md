@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565711"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753028"
 ---
 # <a name="democratize-data"></a>Democratizzare i dati
 
 Carbone, olio e potenziale umano sono le tre risorse più consequenziali durante la rivoluzione industriale. Queste risorse compilavano società, mercati spostati e infine modifiche alle Nazioni. Nell'economia digitale esistono tre asset ugualmente importanti: dati, dispositivi e potenziale umano. Ognuno di questi asset ha un notevole potenziale di innovazione. Per qualsiasi lavoro di innovazione nell'era moderna, i dati sono il nuovo petrolio.
 
-In ogni azienda oggi sono disponibili sacche di dati che potrebbero essere sfruttate per trovare e soddisfare le esigenze dei clienti in modo più efficace. Sfortunatamente, il processo di data mining di questi dati per guidare l'innovazione è stato molto costoso e dispendioso in termini di tempo. Molte delle soluzioni più importanti alle esigenze dei clienti non sono soddisfatte perché le persone giuste non possono accedere ai dati necessari.
+Attualmente, in ogni azienda ci sono sacche di dati che possono essere usati per trovare e soddisfare le esigenze dei clienti in modo più efficace. Sfortunatamente, il processo di data mining di questi dati per guidare l'innovazione è stato molto costoso e dispendioso in termini di tempo. Molte delle soluzioni più importanti alle esigenze dei clienti non sono soddisfatte perché le persone giuste non possono accedere ai dati necessari.
 
 La democratizzazione dei dati è il processo che consente di ottenere questi dati nelle mani giuste per promuovere l'innovazione. Questo processo può assumere diverse forme, ma in genere include soluzioni per dati non elaborati inseriti o integrati, centralizzazione dei dati, condivisione dei dati e protezione dei dati. Quando questi metodi hanno esito positivo, gli esperti di tutta la società possono usare i dati per testare le ipotesi. In molti casi, i team di adozione del cloud possono [compilare con l'empatia dei clienti](./build.md) usando solo i dati e risolvendo rapidamente le esigenze dei clienti esistenti.
 
@@ -33,20 +33,20 @@ Le fasi seguenti guideranno le decisioni e gli approcci necessari per adottare u
 
 Quando si esegue la [compilazione con Customer empatia](./build.md), tutti i processi elevano la necessità dei clienti su una soluzione tecnica. Poiché la democratizzazione dei dati non è un'eccezione, si inizia condividendo i dati. Per democratizzare i dati, deve includere una soluzione che condivide i dati con un consumer di dati. Il consumer di dati può essere un cliente diretto o un proxy che prende decisioni per i clienti. I consumer di dati approvati possono analizzare, interrogare e creare report sui dati centralizzati, senza alcun supporto da parte del personale IT.
 
-Molte innovazioni riuscite sono state avviate come prodotti di qualità minima (MVP) che forniscono processi manuali basati sui dati per conto del cliente. In questo modello di concierge, un dipendente è il consumer di dati. Il dipendente usa i dati per aiutare il cliente. Ogni volta che il cliente attiva il supporto manuale, un'ipotesi può essere testata e convalidata. Questo approccio è spesso un mezzo economico per testare un'ipotesi incentrata sul cliente prima di investire molto in soluzioni integrate.
+Molte innovazioni riuscite sono state avviate come un prodotto minimo valido (MVP) che fornisce processi manuali basati sui dati per conto del cliente. In questo modello di concierge, un dipendente è il consumer di dati. Il dipendente usa i dati per aiutare il cliente. Ogni volta che il cliente attiva il supporto manuale, un'ipotesi può essere testata e convalidata. Questo approccio è spesso un mezzo economico per testare un'ipotesi incentrata sul cliente prima di investire molto in soluzioni integrate.
 
 Gli strumenti principali per la condivisione diretta dei dati con i consumer di dati includono la creazione di report Self-Service o dati incorporati in altre esperienze, usando strumenti come [Power bi](https://docs.microsoft.com/power-bi).
 
 > [!NOTE]
 > Prima di condividere i dati, assicurarsi di aver letto le sezioni seguenti. La condivisione dei dati potrebbe richiedere la governance per fornire protezione per i dati condivisi. Inoltre, i dati potrebbero essere distribuiti in più cloud e potrebbero richiedere la centralizzazione. Molti dei dati potrebbero anche risiedere all'interno delle applicazioni, che richiedono la raccolta dei dati prima di poterla condividere.
 
-### <a name="govern-data"></a>Governare i dati
+### <a name="govern-data"></a>Governance dei dati
 
 La condivisione dei dati può produrre rapidamente un MVP che è possibile usare nelle conversazioni dei clienti. Tuttavia, per trasformare i dati condivisi in una conoscenza utile e praticabile, è in genere necessario un po' di più. Dopo che un'ipotesi è stata convalidata tramite la condivisione dei dati, la fase successiva dello sviluppo è in genere governance dei dati.
 
-La governance dei dati è un argomento ampio che può richiedere un framework dedicato. Tale grado di granularità esula dall'ambito del [Framework di adozione del cloud](../../index.md). Tuttavia, esistono diversi aspetti della governance dei dati che è opportuno prendere in considerazione non appena viene convalidata l'ipotesi del cliente. Ad esempio:
+La governance dei dati è un argomento ampio che può richiedere un framework dedicato. Tale grado di granularità esula dall'ambito del [Framework di adozione del cloud](../../index.md). Tuttavia, esistono diversi aspetti della governance dei dati che è opportuno prendere in considerazione non appena viene convalidata l'ipotesi del cliente. ad esempio:
 
-- **I dati condivisi sono sensibili?** I [dati devono essere classificati](../../govern/policy-compliance/data-classification.md) prima di qualsiasi condivisione pubblica per proteggere gli interessi dei clienti e dell'azienda.
+- **I dati condivisi sono sensibili?** I [dati devono essere classificati](../../govern/policy-compliance/data-classification.md) prima di essere condivisi pubblicamente per proteggere gli interessi dei clienti e dell'azienda.
 - **Se i dati sono sensibili, sono stati protetti?** La protezione dei dati sensibili deve essere un requisito per tutti i dati democratizzati. Il carico di lavoro di esempio incentrato sulla [protezione delle soluzioni dati](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fornisce alcuni riferimenti per la protezione dei dati.
 - **I dati sono catalogati?** Per la gestione dei dati a lungo termine è possibile acquisire i dettagli relativi ai dati condivisi. Gli strumenti per documentare i dati, ad esempio Azure Data Catalog, possono rendere questo processo molto più facile nel cloud. Le linee guida per l' [annotazione dei dati](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) e la [documentazione delle origini dati](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) possono contribuire ad accelerare il processo.
 
@@ -72,7 +72,7 @@ Quando è necessario centralizzare i dati per soddisfare le esigenze dei clienti
 
 **Integrazione:** I dati che si trovano in un archivio dati esistente possono essere integrati nell'archivio dati centralizzato utilizzando tecniche tradizionali di spostamento dei dati. Questa operazione è particolarmente comune per gli scenari che interessano l'archiviazione dei dati multicloud. Queste tecniche prevedono l'estrazione dei dati dall'archivio dati esistente e quindi il relativo caricamento nell'archivio dati centrale. A un certo punto del processo, i dati vengono in genere trasformati in modo da essere più utilizzabili e pertinenti nell'archivio centrale.
 
-Gli strumenti basati sul cloud hanno trasformato queste tecniche in strumenti con pagamento in base al consumo, riducendo la barriera all'ingresso per la raccolta e la centralizzazione dei dati. Strumenti come servizio migrazione dati e Data Factory sono due esempi in Azure. L'architettura di riferimento per [Data Factory con un archivio dati OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) è un esempio di una soluzione di questo tipo.
+Gli strumenti basati sul cloud hanno trasformato queste tecniche in strumenti con pagamento in base al consumo, riducendo la barriera all'ingresso per la raccolta e la centralizzazione dei dati. Strumenti come il servizio migrazione del database di Azure e Azure Data Factory sono due esempi. L'architettura di riferimento per [Data Factory con un archivio dati OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) è un esempio di una soluzione di questo tipo.
 
 Inserimento **:** Alcuni dati non si trovano in un archivio dati esistente. Quando questi dati temporanei sono una fonte primaria di innovazione, è opportuno prendere in considerazione approcci alternativi. I dati temporanei possono trovarsi in un'ampia gamma di origini esistenti, ad esempio applicazioni, API, flussi di dati, dispositivi Internet degli elementi, blockchain, cache di applicazioni, contenuto multimediale o anche in file flat.
 

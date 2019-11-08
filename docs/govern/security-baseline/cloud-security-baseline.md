@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548024"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752162"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Informazioni sulla baseline per la sicurezza del cloud
 
@@ -27,7 +27,7 @@ Questo è un articolo introduttivo sull'argomento generale di una linea di base 
 
 La sicurezza del cloud è un'estensione delle procedure di protezione delle informazioni tradizionali. La sicurezza IT tradizionale include criteri e controlli per la governance della sicurezza dei computer e della rete, della protezione dei dati, dell'utilizzo delle informazioni e così via. Gli stessi criteri e controlli sono necessari nel cloud. Durante qualsiasi trasformazione cloud, è fondamentale che i CISO siano coinvolti attivamente e conoscano il panorama Cloud, per garantire che i criteri IT legacy siano mappati ai livelli di controllo appropriati nel cloud.
 
-Come minimo, qualsiasi strategia di sicurezza del cloud deve tenere conto degli aspetti seguenti:
+Come minimo, qualsiasi strategia di sicurezza cloud deve prendere in considerazione gli argomenti seguenti:
 
 - **Classificare i dati.** classificazione appropriata dei dati per essere a conoscenza delle origini dati che sono private, protette o con riservatezza elevata. Ciò consentirà di gestire i rischi durante la pianificazione.
 - **Pianificare uno scenario di cloud ibrido.** Comprendere in che modo le reti locali legacy si connetteranno al cloud aiuteranno i CISO a identificare e correggere i rischi.

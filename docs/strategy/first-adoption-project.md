@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378085"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753807"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ Altri esempi di progetti di adozione sono i seguenti:
 - **Sviluppo/test:** Rimuovi sviluppo/test da ambienti locali per offrire agli sviluppatori controllo, agilità e capacità self-service.
 - **App semplici (meno di cinque):** Modernizza ed Esegui la migrazione di una semplice app per ottenere rapidamente esperienza per sviluppatori e operazioni.
 - **Lab delle prestazioni:** Quando è necessario ottenere prestazioni elevate in un ambiente lab, usare il cloud per eseguire il provisioning rapido ed economico di questi laboratori per un breve periodo di tempo.
-- **Piattaforma dati:** Creazione di un data Lake con calcolo scalabile per i carichi di lavoro di analisi, creazione di report o Machine Learning e migrazione a database gestiti tramite metodi di dump/ripristino o servizi di migrazione dei dati.
+- **Piattaforma dati:** Creazione di un data Lake con calcolo scalabile per carichi di lavoro di analisi, creazione di report o Machine Learning e migrazione a database gestiti tramite metodi di dump/ripristino o servizi di migrazione dei dati.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

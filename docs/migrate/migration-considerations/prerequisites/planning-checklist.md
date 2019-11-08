@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564562"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753446"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Elenco di controllo della pianificazione dell'ambiente di migrazione: convalidare la conformità ambientale prima della migrazione
 
@@ -27,7 +27,7 @@ Questo articolo e l'elenco di controllo suppongono un approccio di _rehosting_ o
 
 ## <a name="governance-alignment"></a>Allineamento della governance
 
-La prima decisione e anche la più importante relativa a un ambiente pronto per la migrazione è la scelta dell'allineamento della governance. Valutare se è stato raggiunto un consenso per l'allineamento della governance con l'impostazione della migrazione. Come minimo, il team di adozione del cloud deve comprendere se questa migrazione ha come destinazione un singolo ambiente con governance limitata, una factory di ambiente completamente regolamentata o una variante intermedia di queste due opzioni. Per altre opzioni e indicazioni sull'allineamento della governance, vedere l'articolo sull'[allineamento di governance e conformità](../../expanded-scope/governance-or-compliance.md).
+La prima decisione e anche la più importante relativa a un ambiente pronto per la migrazione è la scelta dell'allineamento della governance. Valutare se è stato raggiunto un consenso per l'allineamento della governance con l'impostazione della migrazione. Come minimo, il team di adozione del cloud deve comprendere se questa migrazione si trova in un singolo ambiente con governance limitata, una factory dell'ambiente completamente governata o alcune varianti. Per altre opzioni e indicazioni sull'allineamento della governance, vedere l'articolo sull'[allineamento di governance e conformità](../../expanded-scope/governance-or-compliance.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementazione dell'idoneità per il cloud
 
@@ -52,7 +52,7 @@ Prima della migrazione, è necessario stabilire un approccio uniforme per la den
 
 ### <a name="resource-governance"></a>Governance delle risorse
 
-Prima di eseguire la migrazione, è necessario scegliere gli strumenti per la governance delle risorse. Gli strumenti non devono essere completamente implementati, ma è necessario selezionare e testare un orientamento. È consigliabile che il team di governance del cloud definisca e richieda l'implementazione di un prodotto minimo funzionante per gli strumenti di governance prima della migrazione.
+Prima di eseguire la migrazione, è necessario scegliere gli strumenti per la governance delle risorse. Gli strumenti non devono essere completamente implementati, ma è necessario selezionare e testare un orientamento. Il team di governance del cloud deve definire e richiedere l'implementazione di un prodotto minimo valido (MVP) per gli strumenti di governance prima della migrazione.
 
 ## <a name="network"></a>Rete
 

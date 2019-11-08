@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8aa0e1d86bb679241bc8e769bb8a09fc436c6906
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565577"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752992"
 ---
-# <a name="predict-and-influence"></a>Stimare e influenzare
+# <a name="predict-and-influence"></a>Prevedere e influenzare
 
 Nell'economia digitale sono disponibili due classi di applicazioni: *cronologiche* e *predittive*. Molte esigenze dei clienti possono essere soddisfatte esclusivamente usando i dati cronologici, inclusi i dati quasi in tempo reale. La maggior parte delle soluzioni si concentra principalmente sull'aggregazione dei dati nel momento. Quindi elaborano e condividono i dati al cliente sotto forma di esperienza digitale o ambientale.
 
@@ -46,9 +46,9 @@ I dati sono la maggior parte degli elementi delle caratteristiche descritte in p
 
 È possibile utilizzare un'ampia gamma di origini dati per fornire funzionalità predittive:
 
-## <a name="insights"></a>Informazioni dettagliate
+## <a name="insights"></a>Informazioni approfondite
 
-Gli esperti in materia sfruttano i dati relativi alle esigenze e ai comportamenti dei clienti per sviluppare informazioni aziendali di base da uno studio di dati non elaborati. Tali informazioni possono individuare le occorrenze dei comportamenti desiderati del cliente (o, in alternativa, risultati indesiderati). Durante le iterazioni nelle stime, queste informazioni possono aiutare a identificare le possibili correlazioni che potrebbero generare risultati positivi. Per informazioni sull'abilitazione di esperti in materia per sviluppare informazioni dettagliate, vedere [democratizzazione dei dati](./data.md).
+Gli esperti in materia usano i dati sulle esigenze e sui comportamenti dei clienti per sviluppare informazioni aziendali di base da uno studio di dati non elaborati. Tali informazioni possono individuare le occorrenze dei comportamenti desiderati del cliente (o, in alternativa, risultati indesiderati). Durante le iterazioni nelle stime, queste informazioni possono aiutare a identificare le possibili correlazioni che potrebbero generare risultati positivi. Per informazioni sull'abilitazione di esperti in materia per sviluppare informazioni dettagliate, vedere [democratizzazione dei dati](./data.md).
 
 ## <a name="patterns"></a>Modelli
 

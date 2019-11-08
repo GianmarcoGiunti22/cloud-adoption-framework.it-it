@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566693"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753741"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data Center virtuali: una prospettiva di rete
 
@@ -93,7 +93,7 @@ Non è necessario un singolo amministratore globale per assegnare tutte le autor
 
 #### <a name="security-infrastructure"></a>Infrastruttura di sicurezza
 
-L'infrastruttura di sicurezza si riferisce alla separazione del traffico in un segmento di rete virtuale specifico dell'implementazione di un data center virtuale. Questa infrastruttura specifica il modo in cui il traffico in ingresso e in uscita viene controllato in un'implementazione virtuale del Data Center. Azure si basa su un'architettura multi-tenant che impedisce il traffico non autorizzato e non intenzionale tra le distribuzioni usando l'isolamento VNet, gli elenchi di controllo di accesso (ACL), i bilanciamenti del carico, i filtri IP e i criteri di flusso del traffico. Network Address Translation (NAT) separa il traffico di rete interno dal traffico esterno.
+L'infrastruttura di sicurezza si riferisce alla separazione del traffico in un segmento di rete virtuale specifico dell'implementazione di un data center virtuale. Questa infrastruttura specifica il modo in cui il traffico in ingresso e in uscita viene controllato in un'implementazione virtuale del Data Center. Azure si basa su un'architettura multi-tenant che impedisce il traffico non autorizzato e non intenzionale tra le distribuzioni usando l'isolamento VNet, gli elenchi di controllo di accesso (ACL), i bilanciamenti del carico, i filtri IP e i criteri di flusso del traffico. Network Address Translation (NAT) separa il traffico di rete interno da quello esterno.
 
 L'infrastruttura di Azure alloca le risorse di infrastruttura ai carichi di lavoro dei tenant e gestisce le comunicazioni verso e dalle macchine virtuali (VM). L'hypervisor di Azure impone la separazione di memoria e processi tra le VM e instrada in modo sicuro il traffico di rete ai tenant del sistema operativo guest.
 
@@ -194,7 +194,7 @@ Il diagramma precedente illustra la relazione tra i progetti, gli utenti, i grup
 
 Nell'ambito IT un ambiente (o livello) è in genere un sistema in cui vengono distribuite ed eseguite più applicazioni. Le aziende di grandi dimensioni usano un ambiente di sviluppo (in cui le modifiche vengono apportate e testate) e un ambiente di produzione (cosa usano gli utenti finali). Tali ambienti sono separati, spesso con diversi ambienti di staging, per consentire la distribuzione a fasi (rollout), il test e il ripristino dello stato precedente in caso di problemi. Le architetture di distribuzione variano in modo significativo, ma in genere il processo di base, che prevede l'avvio con lo sviluppo (DEV) e la fine con la produzione (PROD), è ancora seguito.
 
-Un'architettura comune per questi tipi di ambienti multilivello è costituita da Azure DevOps per lo sviluppo e il test, UAT per gli ambienti di gestione temporanea e di produzione. Le organizzazioni possono sfruttare uno o più tenant di Azure AD per definire l'accesso e i diritti per questi ambienti. Il diagramma precedente illustra un caso in cui vengono usati due diversi tenant di Azure AD: uno per Azure DevOps e il test di accettazione utente e l'altro esclusivamente per la produzione.
+Un'architettura comune per questi tipi di ambienti multilivello è costituita da Azure DevOps per lo sviluppo e il test, UAT per gli ambienti di gestione temporanea e di produzione. Le organizzazioni possono usare uno o più tenant di Azure AD per definire l'accesso e i diritti per questi ambienti. Il diagramma precedente illustra un caso in cui vengono usati due diversi tenant di Azure AD: uno per Azure DevOps e il test di accettazione utente e l'altro esclusivamente per la produzione.
 
 La presenza di tenant di Azure AD diversi impone la separazione tra gli ambienti. Lo stesso gruppo di utenti (ad esempio, l'IT centrale) deve eseguire l'autenticazione con un URI diverso per accedere a un tenant di Azure AD diverso e modificare i ruoli o le autorizzazioni degli ambienti Azure DevOps o di produzione di un progetto. La presenza di autenticazioni utente diverse per accedere ad ambienti diversi riduce le possibili interruzioni e gli altri problemi causati dagli errori umani.
 
@@ -376,7 +376,7 @@ In genere, le connessioni Peering reti virtuali o ExpressRoute sono il tipo pref
 
 Poiché usa DNS, Gestione traffico è destinato solo all'uso con gli endpoint pubblici di Azure. Il servizio viene in genere usato per controllare o deviare il traffico verso le macchine virtuali e le app Web di Azure nell'istanza integra di un'implementazione del data center virtuale. Gestione traffico è resiliente anche in caso di errore di un'intera area di Azure e può controllare la distribuzione del traffico utente per gli endpoint di servizio in diversi data center virtuali in base a diversi criteri. Ad esempio, l'errore di un servizio in un'implementazione di data center virtuale specifica o la selezione dell'implementazione del data center virtuale con la latenza di rete più bassa.
 
-### <a name="summary"></a>Riepilogo
+### <a name="summary"></a>Summary
 
 Un data center virtuale è un approccio alla migrazione del Data Center per creare un'architettura scalabile in Azure che ottimizza l'uso delle risorse cloud, riduce i costi e semplifica la governance del sistema. Un data center virtuale si basa su una topologia di rete hub-spoke, che fornisce servizi condivisi comuni nell'hub e che consente l'utilizzo di applicazioni e carichi di lavoro specifici negli spoke. Un data center virtuale corrisponde anche alla struttura dei ruoli aziendali, in cui diversi reparti, ad esempio l'IT centrale, DevOps, e le operazioni e la manutenzione interagiscono tra loro durante l'esecuzione dei ruoli specifici. Un data center virtuale soddisfa i requisiti per la migrazione in modalità Lift-and-Shift, ma offre anche molti vantaggi per le distribuzioni cloud native.
 
@@ -386,11 +386,11 @@ In questo documento sono state illustrate le funzionalità seguenti. Per altre i
 
 <!-- markdownlint-disable MD033 -->
 
-|Funzionalità di rete|Bilanciamento del carico|Connettività|
+|Funzionalità di rete|Bilanciamento del carico.|Connettività|
 |-|-|-|
-|[Reti virtuali di Azure][VNet]</br>[Gruppi di sicurezza di rete][network-security-groups]</br>[Log del gruppo di sicurezza di rete][nsg-log]</br>[Route definite dall'utente][user-defined-routes]</br>[Appliance virtuali di rete][NVA]</br>[Indirizzi IP pubblici][PIP]</br>[DDoS di Azure][DDoS]</br>[Firewall di Azure][AzFW]</br>[DNS di Azure][DNS]|[Sportello anteriore di Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway applicazione (L7)][AppGW]</br>[Web Application Firewall] WAF</br>[Gestione traffico di Azure][traffic-manager]</br></br></br></br></br> |[Peering reti virtuali][VNetPeering]</br>[Rete privata virtuale][VPN]</br>[Rete WAN virtuale][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Reti virtuali di Azure][VNet]</br>[Gruppi di sicurezza di rete][network-security-groups]</br>[Log del gruppo di sicurezza di rete][nsg-log]</br>[Route definite dall'utente][user-defined-routes]</br>[Appliance virtuali di rete][NVA]</br>[Indirizzi IP pubblici][PIP]</br>[DDoS di Azure][DDoS]</br>[Firewall di Azure][AzFW]</br>[DNS di Azure][DNS]|[Frontdoor di Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway applicazione (L7)][AppGW]</br>[Web Application Firewall] WAF</br>[Gestione traffico di Azure][traffic-manager]</br></br></br></br></br> |[Peering reti virtuali][VNetPeering]</br>[Rete privata virtuale][VPN]</br>[Rete WAN virtuale][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identità</br>|Monitoraggio</br>|Procedure consigliate</br>|
+|Identità</br>|Monitorare</br>|Procedure consigliate</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[Controlli di accesso di base del ruolo][RBAC]</br>[Ruoli predefiniti Azure AD][Roles]</br></br></br> |[Network Watcher][NetWatch]</br>[Monitoraggio di Azure][Monitor]</br>[Log attività][ActLog]</br>[Log di diagnostica][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Monitoraggio delle prestazioni di rete][NPM]|[Procedure consigliate per le reti perimetrali][DMZ]</br>[Gestione delle sottoscrizioni][SubMgmt]</br>[Gestione dei gruppi di risorse][RGMgmt]</br>[Limiti della sottoscrizione di Azure][limits] </br></br></br>|
 

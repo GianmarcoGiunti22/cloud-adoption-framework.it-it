@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566260"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753200"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guida alla governance per le aziende complesse: migliorare la disciplina della linea di base di sicurezza
 
@@ -74,7 +74,7 @@ Questo rischio aziendale può tradursi in diversi rischi tecnici:
 
 Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi rischi e l'implementazione della guida. L'elenco può sembrare lungo, ma l'adozione di questi criteri può essere più semplice di quanto non sembri.
 
-1. Tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dall'applicazione prima della distribuzione nel cloud.
+1. tutti gli asset distribuiti devono essere ordinati in categorie in base a criticità e classificazione dei dati. Le classificazioni devono essere esaminate dal team di governance del cloud e dall'applicazione prima della distribuzione nel cloud.
 2. Le applicazioni che archiviano o accedono a dati protetti devono essere gestite in modo diverso rispetto a quelle che non lo sono. Come minimo, devono essere segmentate per evitare accessi non intenzionali ai dati protetti.
 3. tutti i dati protetti devono essere crittografati quando inattivi.
 4. Le autorizzazioni con privilegi elevati in qualsiasi segmento contenente dati protetti devono essere un'eccezione. Tali eccezioni verranno registrate con il team di governance del cloud e controllate regolarmente.
@@ -98,7 +98,7 @@ Le seguenti modifiche ai criteri consentono di monitorare e aggiornare i nuovi r
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Miglioramento incrementale delle procedure consigliate
 
-In questa sezione dell'articolo verrà modificata la progettazione degli MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove definizioni dei criteri aziendali.
+Questa sezione modifica la progettazione MVP di governance per includere nuovi criteri di Azure e un'implementazione di gestione costi di Azure. Insieme, queste due modifiche di progettazione riusciranno a soddisfare le nuove istruzioni dei criteri aziendali.
 
 Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e adozione del cloud (spoke).
 
@@ -108,7 +108,7 @@ Le nuove procedure consigliate rientrano in due categorie: IT aziendale (hub) e 
 2. Modello hub e spoke:
     1. Le linee guida nella [topologia hub e spoke con architettura di riferimento dei servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) possono essere usate per generare modelli di gestione risorse per le risorse necessarie in un hub it aziendale.
     2. Usando questi modelli, questa struttura può essere resa ripetibile, come parte di una strategia di governance centrale.
-    3. Oltre all'architettura di riferimento corrente, è consigliabile creare un modello di gruppo di sicurezza di rete che acquisisca i requisiti di blocco o di elenco elementi consentiti per il VNet per ospitare il firewall. Questo gruppo di sicurezza di rete è diverso dai gruppi precedenti, perché sarà il primo gruppo di sicurezza di rete a consentire il traffico pubblico in una VNet.
+    3. Oltre all'architettura di riferimento corrente, è necessario creare un modello di gruppo di sicurezza di rete per acquisire i requisiti di blocco o di elenco elementi consentiti per il VNet per ospitare il firewall. Questo gruppo di sicurezza di rete è diverso dai gruppi precedenti, perché sarà il primo gruppo di sicurezza di rete a consentire il traffico pubblico in una VNet.
 3. Creare i criteri di Azure. Creare un criterio denominato `Hub NSG Enforcement` per applicare la configurazione del gruppo di sicurezza di rete assegnato a qualsiasi VNet creato in questa sottoscrizione. Applicare i criteri predefiniti per la configurazione guest come indicato di seguito:
     1. Controllare che i server Web Windows usino protocolli di comunicazione sicuri.
     2. Controllare che le impostazioni di sicurezza della password siano configurate correttamente nelle macchine virtuali Linux e Windows.
@@ -134,7 +134,7 @@ Nelle modifiche iterative precedenti alla procedura consigliata, sono stati defi
     1. L'architettura di riferimento dalla sezione precedente, la [topologia hub e spoke con servizi condivisi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), ha generato un modello di gestione risorse per l'abilitazione del peering VNet.
     2. Questo modello può essere usato come guida per modificare il modello di rete perimetrale dall'iterazione governance precedente.
     3. Verrà ora aggiunto il peering VNet alla rete perimetrale VNet che in precedenza era connessa al dispositivo perimetrale locale tramite VPN.
-    4. *** È anche consigliabile rimuovere la VPN dal modello e assicurarsi che il traffico non venga instradato direttamente al data center locale, senza passare attraverso la soluzione di firewall e la sottoscrizione IT aziendale. È anche possibile impostare questa VPN come circuito di failover in caso di outge del circuito ExpressRoute.
+    4. Anche la VPN deve essere rimossa da questo modello per garantire che il traffico non venga indirizzato direttamente al Data Center locale, senza passare attraverso la sottoscrizione IT aziendale e la soluzione firewall. È anche possibile impostare questa VPN come circuito di failover in caso di outge del circuito ExpressRoute.
     5. Sarà necessaria una [configurazione di rete](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) aggiuntiva in Automazione di Azure per applicare la configurazione DSC alle macchine virtuali ospitate.
 2. Modificare il gruppo di sicurezza di rete. Bloccare tutto il traffico locale pubblico **e** diretto nel gruppo di sicurezza di rete. Il traffico in ingresso deve arrivare solo attraverso il peering reti virtuali nella sottoscrizione IT aziendale.
     1. Nell'iterazione precedente è stato creato un gruppo di sicurezza di rete che blocca tutto il traffico pubblico e l'inserimento nell'elenco elementi consentiti del traffico interno. A questo punto si vuole spostare il gruppo di sicurezza di rete.

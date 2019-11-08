@@ -8,20 +8,20 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565682"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752096"
 ---
-# <a name="empower-adoption"></a>Adozione potenziata
+# <a name="empower-adoption"></a>Supportare l'adozione
 
 Il test finale dell'innovazione è la reazione dei clienti alla tua invenzione. L'ipotesi è stata rivelata vera? I clienti usano la soluzione? Scalabilità per soddisfare le esigenze della percentuale di utenti desiderata? In particolare, continuano a tornare indietro? Nessuna di queste domande può essere richiesta fino a quando non è stata distribuita la soluzione di prodotto (MVP) minima. In questo articolo si concentrerà sulla disciplina di potenziamento dell'adozione.
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Riduzione dell'attrito che influiscono sull'adozione
 
-Ci sono alcuni punti chiave di attrito da adottare che possono essere ridotti al minimo tramite una combinazione di tecnologia e processi. Per i lettori che conoscono i processi di integrazione continua (CI) e distribuzione continua (CD) o DevOps, il codice seguente risulterà molto familiare. Questo articolo intende stabilire un punto di partenza per i team di adozione del cloud, che fornirà i cicli di innovazione e feedback. A lungo termine, questo punto di partenza potrebbe favorire approcci più affidabili di integrazione continua/recapito continuo e DevOps quando i prodotti e i team maturano.
+Ci sono alcuni punti chiave di attrito da adottare che possono essere ridotti al minimo tramite una combinazione di tecnologia e processi. Per i lettori che conoscono i processi di integrazione continua (CI) e di distribuzione continua (CD) o DevOps, saranno noti gli elementi seguenti. Questo articolo costituisce un punto di partenza per i team di adozione del cloud che alimentano i cicli di innovazione e di feedback. In futuro, questo punto di partenza potrebbe favorire approcci più affidabili di integrazione continua/recapito continuo o DevOps, in base alla maturità dei prodotti e dei team.
 
 Come descritto in [misurare l'impatto del cliente](./measure.md), la convalida positiva di qualsiasi ipotesi richiede iterazione e determinazione. Si verificheranno molti più errori rispetto a WINS durante qualsiasi ciclo di innovazione. Si tratta di un comportamento previsto. Tuttavia, in caso di necessità, ipotesi e allineamento della soluzione a livello di cliente, il mondo cambia rapidamente. Questo articolo ha lo scopo di ridurre al minimo i [picchi tecnici](./build.md#reduce-complexity-and-delay-technical-spikes) che rallentano l'innovazione, assicurando comunque di mantenere alcune solide procedure consigliate. Questa operazione consentirà al team di progettare per un futuro successo, garantendo al tempo stesso le esigenze attuali dei clienti.
 
@@ -69,7 +69,7 @@ Altre informazioni sull' [integrazione continua](https://docs.microsoft.com/azur
 
 I difetti in qualsiasi soluzione possono creare falsi positivi o falsi negativi. Gli errori imprevisti possono facilmente compromettere l'interpretazione delle metriche di adozione da parte degli utenti. Possono anche generare feedback negativi da clienti che non rappresentano in modo accurato il test dell'ipotesi.
 
-Durante le prime iterazioni di una soluzione MVP, sono previsti dei difetti; i primi ad adottare potrebbero anche trovarli. Nelle prime versioni, il test di accettazione è in genere inesistente. Tuttavia, un aspetto della compilazione con empatia riguarda la convalida della necessità e dell'ipotesi. Entrambi possono essere completati tramite unit test a livello di codice e test di accettazione manuali prima della distribuzione. Insieme, questi forniscono un mezzo di affidabilità nei test. A lungo termine, è necessario cercare di automatizzare una serie ben definita di test di compilazione, unità e accettazione. In questo modo, le metriche affidabili sono correlate a modifiche più granulari all'ipotesi e alla soluzione risultante.
+Durante le prime iterazioni di una soluzione MVP, sono previsti dei difetti; i primi ad adottare potrebbero anche trovarli. Nelle prime versioni, il test di accettazione è in genere inesistente. Tuttavia, un aspetto della compilazione con empatia riguarda la convalida della necessità e dell'ipotesi. Entrambi possono essere completati tramite unit test a livello di codice e test di accettazione manuali prima della distribuzione. Insieme, questi forniscono un mezzo di affidabilità nei test. È necessario cercare di automatizzare una serie ben definita di test di compilazione, unità e accettazione. In questo modo, le metriche affidabili sono correlate a modifiche più granulari all'ipotesi e alla soluzione risultante.
 
 La funzionalità [Azure test plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) offre strumenti per sviluppare e gestire i piani di test durante l'esecuzione di test manuali o automatizzati.
 

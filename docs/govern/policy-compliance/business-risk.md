@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 85ff0f9fa54542309a814fbca44c38de65805933
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220390"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752654"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Durante una trasformazione per il cloud, sia i team aziendali che quelli IT hann
 
 Un **prodotto minimo valido** viene comunemente usato per definire per definire l'unità più piccola di un elemento che può produrre un valore tangibile. In un MVP per i rischi aziendali, il team di governance del cloud inizia con il presupposto che alcune risorse verranno distribuite in un ambiente cloud in un determinato momento. Si tratta di informazioni sconosciute sulle risorse che si trovano al momento e il team potrebbe non essere sicuro dei tipi di dati che verranno archiviati in tali asset.
 
-Quando si pianificano i rischi aziendali, il team di governance del cloud potrebbe creare per il peggiore scenario ed eseguire il mapping di tutti i criteri possibili al cloud. Tuttavia, l'identificazione di tutti i potenziali rischi aziendali per tutti gli scenari di utilizzo del cloud può richiedere molto tempo e fatica, ritardando potenzialmente l'implementazione della governance ai carichi di lavoro cloud. Non è consigliabile, ma è un'opzione.
+Quando si pianificano i rischi aziendali, il team di governance del cloud potrebbe creare per il peggiore scenario ed eseguire il mapping di tutti i criteri possibili al cloud. Tuttavia, l'identificazione di tutti i potenziali rischi aziendali per tutti gli scenari di utilizzo del cloud può richiedere molto tempo e fatica, ritardando potenzialmente l'implementazione della governance ai carichi di lavoro cloud. Questa operazione non è consigliata, ma è un'opzione.
 
 Viceversa, un approccio MVP può consentire al team di definire un punto di partenza iniziale e un set di presupposti che sarebbero veri per la maggior parte o per tutti gli asset. Questo MVP per il rischio aziendale supporterà le distribuzioni iniziali con scalabilità ridotta o test cloud, quindi verrà usato come base per identificare e correggere gradualmente i nuovi rischi quando si verificano esigenze aziendali o aggiungere ulteriori carichi di lavoro all'ambiente cloud. Questo processo consente di applicare la governance durante il processo di adozione del cloud.
 

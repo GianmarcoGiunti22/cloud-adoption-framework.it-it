@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566238"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753078"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guida alla governance aziendale standard: miglioramento del cloud
 
@@ -47,7 +47,7 @@ L'obiettivo è integrare l'azienda acquisita nelle procedure operative esistenti
 
 **Costo di acquisizione aziendale:** L'acquisizione della nuova azienda è stimata come redditizia in circa cinque anni. Considerato il ritorno lento dell'investimento, il consiglio vuole mantenere sotto controlli i costi di acquisizione quanto più possibile. C'è il rischio di un conflitto tra controllo dei costi e integrazione tecnica.
 
-Questo rischio aziendale può tradursi in alcuni rischi tecnici:
+Questo rischio aziendale può comportare alcuni rischi tecnici:
 
 - La migrazione cloud potrebbe produrre costi di acquisizione aggiuntivi.
 - Il nuovo ambiente potrebbe non essere governato correttamente, che potrebbe causare violazioni dei criteri.
@@ -85,4 +85,4 @@ L'adozione di più cloud deve essere contenuta nel punto in cui è necessario in
 
 ## <a name="conclusion"></a>Conclusione
 
-Questa serie di articoli descrive lo sviluppo incrementale delle procedure consigliate di governance, allineate con le esperienze di questa società fittizia. Iniziando gradualmente, ma sulle giuste basi, la società è stata in grado di muoversi rapidamente, applicando comunque la giusta quantità di governance al momento giusto. L'MVP di per sé non ha protetto il cliente. Al contrario, ha creato le fondamenta per gestire i rischi e aggiungere protezioni. A questo punto, sono stati applicati livelli di governance per correggere i rischi tangibili. Il percorso presentato in questo articolo non sarà perfettamente allineato con le esperienze di tutti i lettori. È infatti da intendere come modello per la governance incrementale. È consigliabile adattare queste procedure consigliate in base ai propri specifici vincoli e requisiti di governance.
+Questa serie di articoli descrive lo sviluppo incrementale delle procedure consigliate di governance, allineate con le esperienze di questa società fittizia. Iniziando gradualmente, ma sulle giuste basi, la società è stata in grado di muoversi rapidamente, applicando comunque la giusta quantità di governance al momento giusto. L'MVP di per sé non ha protetto il cliente. Al contrario, ha creato le fondamenta per gestire i rischi e aggiungere protezioni. A questo punto, sono stati applicati livelli di governance per correggere i rischi tangibili. Il percorso presentato in questo articolo non sarà perfettamente allineato con le esperienze di tutti i lettori. È infatti da intendere come modello per la governance incrementale. È consigliabile modellare queste procedure consigliate per adattarsi ai propri vincoli univoci e ai requisiti di governance.

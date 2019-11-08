@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565762"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752012"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Crea il consenso sul valore aziendale dell'innovazione
 
@@ -31,7 +31,7 @@ Prima di sviluppare qualsiasi soluzione (nel cloud o in locale), convalidare i c
 Se le risposte a tutte e quattro le domande sono ben documentate, potrebbe non essere necessario completare il resto di questo esercizio. Fortunatamente, è possibile testare facilmente qualsiasi documentazione. Configurare due brevi riunioni per testare sia la documentazione che l'allineamento interno dell'organizzazione. Invitare le parti interessate aziendali impegnate a una riunione e configurare una riunione separata con il team di sviluppo impegnato. Porre le quattro domande precedenti a ogni gruppo, quindi confrontare i risultati.
 
 > [!NOTE]
-> La documentazione esistente **non deve** essere condivisa con nessuno dei due team prima della riunione. Se il vero allineamento esiste, è necessario fare riferimento alle ipotesi di Guiding o addirittura ricitarle dai membri di ogni gruppo.
+> La documentazione esistente **non deve** essere condivisa con entrambi i team prima della riunione. Se il vero allineamento esiste, è necessario fare riferimento alle ipotesi di Guiding o addirittura ricitarle dai membri di ogni gruppo.
 
 <!-- -->
 
@@ -66,7 +66,7 @@ Queste grandi opportunità spesso rivelano modi per allineare meglio la soluzion
 - **Opportunità di ipotesi:** Per le varie parti interessate e i team di sviluppo è frequente avere un numero eccessivo di aspettative per una soluzione. Le aspettative irrealistiche possono essere un segno che l'ipotesi è troppo vaga. Per costruire un'ipotesi più chiara, seguire le istruzioni riportate in [creazione con l'empatia dei clienti](./considerations/build.md) .
 - **Opportunità di compilazione:** I team potrebbero essere allineati in modo non corretto perché non sono in grado di risolvere le esigenze del cliente. Tale disaccordo in genere indica che il team è stato [ritardato da un picco tecnico prematuro](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Per fare in modo che il team sia incentrato sul cliente, avviare la prima iterazione e compilare un piccolo prodotto minimo (MVP) per risolvere parte dell'ipotesi. Per altre indicazioni per aiutare il team a proseguire, vedere [sviluppare invenzioni digitali](./considerations/invention.md).
 - **Opportunità di formazione:** Entrambi i team possono essere allineati in modo non corretto perché richiedono requisiti tecnici profondi e requisiti funzionali completi. Questa esigenza può condurre a un'opportunità di formazione nelle metodologie agile. Quando le impostazioni cultura del team non sono pronte per i processi Agile, è possibile che si trovino le innovazioni e si mantengano al passo il mercato.  Per le risorse di formazione sulle procedure DevOps e agile, vedere:
-  - [Migliora le procedure DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+  - [Evolve le tue procedure DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Creare applicazioni con Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Distribuire applicazioni con Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
@@ -75,5 +75,6 @@ Seguendo la metodologia e gli strumenti di gestione del backlog in ogni sezione 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Dopo aver allineato la proposta del valore aziendale e averla comunicata, si è pronti per iniziare a compilare la soluzione.
+
 > [!div class="nextstepaction"]
 > [Tornare agli esercizi innovativi per i passaggi successivi](./index.md)

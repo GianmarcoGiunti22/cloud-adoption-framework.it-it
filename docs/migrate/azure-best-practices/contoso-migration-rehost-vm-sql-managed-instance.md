@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239163"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752827"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>eseguire il rehosting di un'app locale in una macchina virtuale di Azure e in Istanza gestita di database SQL
 
@@ -387,7 +387,7 @@ Per configurare l'ambiente origine, gli amministratori Contoso eseguono le opera
 3. Alla prima accensione, la macchina virtuale viene avviata con un'esperienza di installazione di Windows Server 2016. Accettano il contratto di licenza e immettono una password amministratore.
 4. Al termine dell'installazione, accedono alla macchina virtuale come amministratori. Al primo accesso viene avviato automaticamente lo strumento di configurazione di Azure Site Recovery.
 5. Nello strumento di configurazione di Site Recovery immettono un nome da usare per registrare il server di configurazione nell'insieme di credenziali.
-6. Lo strumento verifica la connessione della macchina virtuale a Azure. Dopo aver stabilito la connessione, selezionano **Accedi** per accedere alla sottoscrizione di Azure. Le credenziali devono avere accesso all'insieme di credenziali in cui è registrato il server di configurazione.
+6. Lo strumento controlla la connessione della macchina virtuale ad Azure. Dopo aver stabilito la connessione, selezionano **Accedi** per accedere alla sottoscrizione di Azure. Le credenziali devono avere accesso all'insieme di credenziali in cui è registrato il server di configurazione.
 
     ![Registrare il server di configurazione](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 

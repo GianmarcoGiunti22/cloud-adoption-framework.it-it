@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564964"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751681"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guida al monitoraggio del cloud: Panoramica delle piattaforme di monitoraggio
 
@@ -34,7 +34,7 @@ Quando Azure è stato rilasciato in 2010, il monitoraggio dei servizi cloud è s
 
 Application Insights è stato introdotto per passare con le modifiche apportate al settore in cui è cresciuta la proliferazione dei dispositivi cloud, mobile e Internet e l'introduzione delle procedure DevOps. È cresciuta da Application Performance Monitoring in Operations Manager a un servizio in Azure, dove offre un monitoraggio completo delle applicazioni Web scritte in un'ampia gamma di linguaggi. In 2015, l'anteprima di Application Insights per Visual Studio è stata annunciata e in seguito è diventata nota semplicemente come Application Insights. Raccoglie informazioni dettagliate sulle prestazioni dell'applicazione, sulle richieste, sulle eccezioni e sulle tracce.
 
-In 2015 Azure Operational Insights è stato reso disponibile a livello generale. Ha fornito il servizio di analisi Log Analytics che ha raccolto e cercato i dati dai computer in Azure, in locale o in altri ambienti cloud e connessi ai System Center Operations Manager. Sono stati offerti Intelligence Pack che hanno fornito un'ampia gamma di configurazioni di gestione e monitoraggio predefinite che contenevano una raccolta di logica di analisi, visualizzazioni e raccolta di dati per scenari come il controllo della sicurezza, valutazione dell'integrità e gestione degli avvisi. In seguito, Azure Operational Insights è stato noto come Log Analytics.  
+In 2015 Azure Operational Insights è stato reso disponibile a livello generale. Ha fornito il servizio di analisi Log Analytics che ha raccolto e cercato i dati dai computer in Azure, in locale o in altri ambienti cloud e connessi ai System Center Operations Manager. Sono stati offerti Intelligence Pack che hanno fornito una serie di configurazioni di gestione e monitoraggio preconfezionate che contenevano una raccolta di logica di analisi, visualizzazioni e raccolta di dati per scenari come il controllo della sicurezza, l'integrità valutazioni e gestione degli avvisi. In seguito, Azure Operational Insights è stato noto come Log Analytics.  
 
 In 2016, l'anteprima di monitoraggio di Azure è stata annunciata alla conferenza Microsoft Ignite. Ha fornito un Framework comune per raccogliere le metriche della piattaforma, i log di diagnostica delle risorse e gli eventi del log attività a livello di sottoscrizione da qualsiasi servizio di Azure che ha iniziato a usare il Framework. In precedenza, ogni servizio di Azure aveva un proprio metodo di monitoraggio.
 
@@ -54,7 +54,7 @@ Da 2015 fino al 2018 aprile, Operations Management Suite (OMS) era un bundle dei
 - Automazione di Azure
 - Backup di Azure
 - Operational Insights (successivamente rietichettato come Log Analytics)
-- Site Recovery
+- Ripristino sito
 
 La funzionalità dei servizi che facevano parte di OMS non è cambiata quando OMS non è più disponibile. Sono stati riallineati in monitoraggio di Azure.
 
@@ -74,9 +74,11 @@ Monitoraggio di Azure è un servizio Software as a Service (SaaS), in cui tutte 
 
 ## <a name="data-collection"></a>Raccolta dei dati
 
+<!-- markdownlint-disable MD024 -->
+
 ### <a name="operations-manager"></a>Operations Manager
 
-#### <a name="agents"></a>Agents
+#### <a name="agents"></a>Agenti
 
 Operations Manager raccoglie i dati direttamente dagli agenti installati nei [computer Windows](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent). Può accettare i dati da Operations Manager SDK, ma questo approccio viene in genere usato per i partner che estendono il prodotto con applicazioni personalizzate, non per la raccolta dei dati di monitoraggio. Può raccogliere dati da altre origini, ad esempio [computer Linux](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent) e dispositivi di rete, usando moduli speciali eseguiti nell'agente Windows che accede in remoto a questi altri dispositivi.
 
@@ -114,11 +116,11 @@ Informazioni dettagliate, ad esempio monitoraggio di Azure per contenitori e Mon
 
 Monitoraggio di Azure separa la raccolta di dati da azioni eseguite su tali dati, che supporta microservizi distribuiti in un ambiente cloud. Consente di consolidare i dati di più origini in una piattaforma dati comune e fornisce funzionalità di analisi, visualizzazione e avviso in base ai dati raccolti.
 
-Tutti i dati raccolti da monitoraggio di Azure vengono archiviati come log o metriche e le diverse funzionalità di monitoraggio si basano su entrambe. Le metriche contengono valori numerici in serie temporali che sono particolarmente adatti per gli avvisi in tempo quasi reale e per il rilevamento rapido dei problemi. I log contengono dati di testo o numerici e sono supportati da un linguaggio di query avanzato che li rende particolarmente utili per l'esecuzione di analisi complesse.
+Tutti i dati raccolti da monitoraggio di Azure vengono archiviati come log o metriche e le diverse funzionalità di monitoraggio si basano su entrambe. Le metriche contengono valori numerici in serie temporali che sono particolarmente adatti per gli avvisi quasi in tempo reale e per il rilevamento rapido dei problemi. I log contengono dati di testo o numerici e sono supportati da un linguaggio di query avanzato che li rende particolarmente utili per l'esecuzione di analisi complesse.
 
-Poiché il monitoraggio separa la raccolta di dati da azioni rispetto a tali dati, potrebbe non essere in grado di fornire avvisi in tempo quasi reale in molti casi. Per generare un avviso sui dati del log, le query vengono eseguite in base a una pianificazione ricorrente definita nell'avviso. Questo comportamento consente a monitoraggio di Azure di correlare facilmente i dati di tutte le origini monitorate ed è possibile analizzare i dati in modo interattivo in diversi modi. Questa operazione è particolarmente utile per eseguire l'analisi della causa radice e identificare la posizione in cui potrebbe verificarsi un problema.
+Poiché il monitoraggio separa la raccolta di dati da azioni rispetto a tali dati, potrebbe non essere in grado di fornire avvisi quasi in tempo reale in molti casi. Per generare un avviso sui dati del log, le query vengono eseguite in base a una pianificazione ricorrente definita nell'avviso. Questo comportamento consente a monitoraggio di Azure di correlare facilmente i dati di tutte le origini monitorate ed è possibile analizzare i dati in modo interattivo in diversi modi. Questa operazione è particolarmente utile per eseguire l'analisi della causa radice e identificare la posizione in cui potrebbe verificarsi un problema.
 
-## <a name="health-monitoring"></a>Monitoraggio dell’integrità
+## <a name="health-monitoring"></a>Monitoraggio dell'integrità
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -134,7 +136,7 @@ Monitoraggio di Azure non fornisce un metodo definibile dall'utente per l'implem
 
 - **Monitoraggio di Azure per i contenitori:** Monitora le prestazioni e l'integrità del servizio Kubernetes di Azure o di istanze di contenitore di Azure. che raccoglie metriche sulla memoria e sul processore da controller, nodi e contenitori disponibili in Kubernetes tramite l'API Metriche. Raccoglie anche i log del contenitore e i dati di inventario relativi ai contenitori e alle relative immagini. I criteri di integrità predefiniti basati sui dati sulle prestazioni raccolti consentono di identificare l'esistenza di un collo di bottiglia delle risorse o di un problema di capacità. È anche possibile comprendere le prestazioni complessive o le prestazioni di un tipo di oggetto Kubernetes specifico (Pod, nodo, controller o contenitore).
 
-## <a name="analyze-data"></a>Analizzare i dati
+## <a name="analyze-data"></a>Analizza i dati
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -152,7 +154,7 @@ Operations Manager offre quattro modi di base per analizzare i dati dopo che son
 
 Grazie al potente motore di analisi di monitoraggio di Azure, puoi lavorare in modo interattivo con i dati di log e combinarli con altri dati di monitoraggio per le tendenze e altre analisi dei dati. Viste e dashboard consentono di visualizzare i dati delle query in diversi modi dal portale di Azure e di importarli in Power BI. Le soluzioni di monitoraggio includono query e visualizzazioni per presentare i dati raccolti. Informazioni dettagliate, ad esempio Application Insights, Monitoraggio di Azure per le macchine virtuali e monitoraggio di Azure per i contenitori, includono visualizzazioni personalizzate per supportare scenari di monitoraggio interattivo.
 
-## <a name="alerting"></a>Creazione di avvisi
+## <a name="alerting"></a>Avvisi
 
 ### <a name="operations-manager"></a>Operations Manager
 

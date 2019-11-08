@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6a9d82e0211b36a2d34b54deca50227a62d7298e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023804"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753116"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Approcci per la pianificazione del digital estate
 
@@ -48,7 +48,7 @@ Questo approccio, in genere, presuppone un modello IaaS di distribuzione come ba
 
 - **Analisi dei costi iniziale:** Se è necessaria la convalida finanziaria, iniziare con un approccio basato sulle risorse, descritto in precedenza, per ottenere un calcolo dei costi iniziale per l'intera area digitale, senza alcuna razionalizzazione. Questo consente di stabilire un benchmark per il peggiore dei casi.
 
-- **Pianificare la migrazione:** Dopo aver assemblato un team di strategia cloud, creare un backlog di migrazione iniziale usando un approccio basato sul carico di lavoro che si basa sulla conoscenza collettiva e su interviste di stakeholder limitati. Questo approccio crea rapidamente una valutazione del carico di lavoro leggera per favorire la collaborazione.
+- **Pianificazione della migrazione:** Dopo aver assemblato un team di strategia cloud, creare un backlog di migrazione iniziale usando un approccio basato sul carico di lavoro che si basa sulla conoscenza collettiva e su interviste di stakeholder limitati. Questo approccio crea rapidamente una valutazione del carico di lavoro leggera per favorire la collaborazione.
 
 - **Pianificazione della versione:** A ogni rilascio, il backlog di migrazione viene eliminato e riassegnata in ordine di priorità per concentrarsi sull'effetto aziendale più rilevante. Durante questo processo, i successivi cinque a dieci carichi di lavoro vengono selezionati come versioni con priorità. A questo punto, il team di strategia cloud investe il tempo per completare un approccio esaustivo basato sui carichi di lavoro. Ritardare questa valutazione fino a quando non viene allineata una versione migliore rispetto al tempo delle parti interessate. Inoltre, ritarda l'investimento in un'analisi completa finché l'azienda non inizia a vedere i risultati delle attività precedenti.
 

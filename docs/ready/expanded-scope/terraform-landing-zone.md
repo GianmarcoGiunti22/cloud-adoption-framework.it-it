@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561695"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753744"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Usare la bonifica per creare le zone di destinazione
 
@@ -43,7 +43,7 @@ I componenti distribuiti e il relativo scopo includono quanto segue:
 | Registrazione attività | Controllo di tutte le attività di sottoscrizione e di archiviazione: </br> -Account di archiviazione </br> -Hub eventi di Azure |  
 | Registrazione diagnostica | Tutti i log delle operazioni conservati per un numero specifico di giorni: </br> -Account di archiviazione </br> -Hub eventi |
 | Log Analytics | Archivia tutti i log delle operazioni </br> Distribuire soluzioni comuni per la revisione approfondita delle procedure consigliate per le applicazioni: </br> - NetworkMonitoring </br> -Della valutazione </br> -ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
-| Centro sicurezza di Azure | Metriche e avvisi relativi all'igiene della sicurezza inviati alla posta elettronica e al numero di telefono |
+| Centro sicurezza Azure | Metriche e avvisi relativi all'igiene della sicurezza inviati alla posta elettronica e al numero di telefono |
 
 ## <a name="use-this-blueprint"></a>Usare il progetto
 
@@ -69,7 +69,7 @@ Le decisioni seguenti sono rappresentate nell'area di destinazione di bonifica:
 |Registrazione e monitoraggio | Viene usata l'area di lavoro Log Analytics di monitoraggio di Azure. Viene eseguito il provisioning di un account di archiviazione di diagnostica e di hub eventi. |         |
 |Rete | N/A-la rete viene implementata in un'altra area di destinazione. |[Decisioni relative alla rete](../considerations/networking-options.md) |
 |Identità | Si presuppone che la sottoscrizione sia già associata a un'istanza di Azure Active Directory. | [Procedure consigliate per la gestione delle identità](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
-| Criterio | Questa zona di destinazione presuppone attualmente che non venga applicato alcun criterio di Azure. | |
+| Policy | Questa zona di destinazione presuppone attualmente che non venga applicato alcun criterio di Azure. | |
 |Progettazione della sottoscrizione | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
 | Gruppi di gestione | N/D - Progettazione per una singola sottoscrizione di produzione. |[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
 | Gruppi di risorse | N/D - Progettazione per una singola sottoscrizione di produzione. | [Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md) |
@@ -83,12 +83,12 @@ Le decisioni seguenti sono rappresentate nell'area di destinazione di bonifica:
 
 Il set di tag minimo seguente deve essere presente in tutte le risorse e nei gruppi di risorse:
 
-| Nome del tag | Descrizione | Chiave | Valore di esempio |
+| Nome del tag | Description | Chiave | Valore di esempio |
 |--|--|--|--|
 | Business Unit | Divisione di livello principale della società che possiede la sottoscrizione o carico di lavoro a cui appartiene la risorsa. | BusinessUnit | Finanza, MARKETING, {nome prodotto}, CORP, condiviso |
-| Cost Center | Centro di costo di contabilità associato a questa risorsa.| CostCenter | Number |
+| Cost Center | Centro di costo di contabilità associato a questa risorsa.| CostCenter | Numero |
 | Ripristino di emergenza | Criticità aziendale dell'applicazione, del carico di lavoro o del servizio. | DR | ABILITATO PER IL RIPRISTINO DI EMERGENZA, NON ABILITATO PER IL RIPRISTINO DI EMERGENZA |
-| Environment | Ambiente di distribuzione dell'applicazione, del carico di lavoro o del servizio. |  ENV | Prod, dev, QA, stage, test, training |
+| Ambiente | Ambiente di distribuzione dell'applicazione, del carico di lavoro o del servizio. |  ENV | Prod, dev, QA, stage, test, training |
 | Nome del proprietario | Proprietario dell'applicazione, del carico di lavoro o del servizio.| Proprietario | email |
 | Tipo di distribuzione | Definisce la modalità di manutenzione delle risorse. | deploymentType | Manuale, bonifica |
 | Versione | Versione del progetto distribuito. | version | v 0.1 |
@@ -189,7 +189,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Inizia oggi stesso
 
 Dopo aver esaminato la configurazione, è possibile distribuire la configurazione come si distribuisce un ambiente di bonifica. Si consiglia di usare il Rover, ovvero un contenitore Docker che consente la distribuzione da Windows, Linux o MacOS. È possibile iniziare a usare il [repository GitHub di Rover](https://github.com/aztfmod/rover).
 
@@ -200,9 +200,9 @@ La zona di destinazione di base pone le fondamenta per un ambiente complesso in 
 - Aggiunta di altri moduli al progetto.
 - Sovrapposizione di zone di destinazione aggiuntive.
 
-Il livello delle aree di destinazione è una procedura consigliata per separare i sistemi, applicare il controllo delle versioni a ogni componente in uso e consentire un'innovazione e una stabilità veloci per la distribuzione di infrastruttura come codice.
+Il layering di zone di destinazione è una procedura consigliata per separare i sistemi, il controllo delle versioni di ogni componente in uso e per consentire una rapida innovazione e stabilità per l'infrastruttura come distribuzione del codice.
 
-Nelle architetture di riferimento future verrà illustrato questo concetto per una topologia hub-and-spoke.
+Nelle architetture di riferimento future verrà illustrato questo concetto per una topologia hub-spoke.
 
 > [!div class="nextstepaction"]
 > [Esaminare l'esempio di area di destinazione di base per la bonifica](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

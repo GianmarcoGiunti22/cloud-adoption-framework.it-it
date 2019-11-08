@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dafe5f36a59d60fa91816695cae1e1f3784df046
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565320"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751650"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: pianificazione dei prerequisiti per i servizi di gestione del server di Azure
 
@@ -34,7 +34,7 @@ Le sezioni seguenti illustrano la pianificazione e la preparazione necessarie pe
 
 Molti dei servizi da usare per l'onboarding dei servizi di gestione di Azure richiedono un'area di lavoro Log Analytics e un account di automazione di Azure collegato.
 
-Un' [area di lavoro log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) è un ambiente univoco per l'archiviazione dei dati di log di monitoraggio di Azure. Ogni area di lavoro dispone di un repository di dati e di una configurazione propri. Le origini dati e le soluzioni sono configurate per archiviare i dati in aree di lavoro particolari. Per le soluzioni di monitoraggio di Azure è necessario che tutti i server siano connessi a un'area di lavoro, in modo che sia possibile archiviare e accedere ai dati di log.
+Un'[area di lavoro Log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) è un ambiente univoco per l'archiviazione dei dati dei log di Monitoraggio di Azure. Ogni area di lavoro include un proprio repository di dati e una configurazione specifica. Le origini dati e le soluzioni sono configurate per archiviare i dati in determinate aree di lavoro. Per le soluzioni di monitoraggio di Azure è necessario che tutti i server siano connessi a un'area di lavoro, in modo che sia possibile archiviare e accedere ai dati dei relativi log.
 
 Alcuni dei servizi di gestione richiedono un account di [automazione di Azure](https://docs.microsoft.com/azure/automation/automation-intro) . Questo account viene usato e le funzionalità di automazione di Azure per integrare i servizi di Azure e altri sistemi pubblici per distribuire, configurare e gestire i processi di gestione del server.
 

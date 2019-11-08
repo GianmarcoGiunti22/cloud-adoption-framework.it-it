@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 82f6ea5b422bc4d33fe898f86d003ffb2ab92422
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565630"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753007"
 ---
-# <a name="learn-with-customers"></a>Scopri con i clienti
+# <a name="learn-with-customers"></a>Apprendere con i clienti
 
 I clienti attuali rappresentano la risorsa migliore per l'apprendimento. Grazie alla collaborazione con Microsoft, ci aiutano a [creare con l'empatia del cliente](./build.md) per trovare la soluzione migliore per le proprie esigenze. Consentono inoltre di creare una soluzione MVP (Minimum productable Product) generando metriche da cui viene [misurato l'effetto del cliente](./measure.md). In questo articolo verrà descritto come apprendere con e dai partner clienti.
 
@@ -56,4 +56,4 @@ Come passaggio successivo per comprendere questa metodologia, i [blocchi e le pr
 > [!div class="nextstepaction"]
 > [Informazioni su blocchi e problemi comuni](./challenges.md)
 
-Alcuni dei concetti in questo articolo si basano sugli argomenti descritti per la prima volta nell' [avvio snello](http://theleanstartup.com/book), scritto da Eric Ries.
+Alcuni dei concetti in questo articolo si basano sugli argomenti descritti per la prima volta nell' [avvio snello](https://theleanstartup.com/book), scritto da Eric Ries.

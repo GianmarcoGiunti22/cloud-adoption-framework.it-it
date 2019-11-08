@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239965"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753487"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>I requisiti dei dati superano la capacità di rete durante un'operazione di migrazione
 
@@ -39,7 +39,7 @@ Esistono anche [soluzioni di partner di terze parti](https://azuremarketplace.mi
 
 Se i requisiti di archiviazione di uno o più carichi di lavoro superano la capacità della rete, è comunque possibile usare Azure Data Box in un trasferimento dati offline.
 
-Secondo la posizione generale di Microsoft, la trasmissione sulla rete è l'approccio consigliato, a meno che la rete non sia disponibile. Questo suggerimento è dovuto alla velocità dei trasferimenti. Il trasferimento di dati attraverso la rete (anche in presenza di vincoli di larghezza di banda) è in genere più veloce rispetto all'invio fisico della stessa quantità di dati tramite un meccanismo di trasferimento offline, ad esempio Data Box.
+La trasmissione di rete è l'approccio consigliato, a meno che la rete non sia disponibile. La velocità di trasferimento dei dati in rete, anche quando la larghezza di banda è vincolata, è in genere più veloce rispetto alla distribuzione fisica della stessa quantità di dati tramite un meccanismo di trasferimento offline, ad esempio Data Box.
 
 Se è disponibile la connettività ad Azure, è necessario eseguire un'analisi prima di usare Data Box, soprattutto se la migrazione del carico di lavoro è urgente. È consigliabile usare Data Box solo quando il tempo per il trasferimento dei dati necessari supera il tempo richiesto per popolare, inviare e ripristinare i dati usando Data Box.
 

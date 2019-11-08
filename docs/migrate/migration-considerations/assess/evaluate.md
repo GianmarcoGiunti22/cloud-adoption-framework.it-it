@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549155"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753505"
 ---
 # <a name="evaluate-workload-readiness"></a>Valutare l'idoneità dei carichi di lavoro
 
@@ -21,7 +21,7 @@ Questa attività è incentrata sulla valutazione dell'idoneità di un carico di 
 
 ## <a name="evaluation-assumptions"></a>Presupposti di valutazione
 
-La maggior parte del contenuto in cui vengono illustrati i principi di Cloud Adoption Framework è concepito per essere indipendente dal cloud. Il processo di valutazione dell'idoneità tuttavia deve essere in gran parte specifico per ogni piattaforma cloud. Le indicazioni seguenti presuppongono l'intenzione di eseguire la migrazione in Azure, nonché l'uso di Azure Migrate (noto anche come Azure Site Recovery) per [le attività di replica](../migrate/replicate.md). Per strumenti alternativi, vedere le [opzioni di replica](../migrate/replicate-options.md).
+La maggior parte del contenuto che discute i principi nel Framework di adozione del cloud è indipendente dal cloud. Il processo di valutazione dell'idoneità tuttavia deve essere in gran parte specifico per ogni piattaforma cloud. Le indicazioni seguenti presuppongono l'intenzione di eseguire la migrazione in Azure, nonché l'uso di Azure Migrate (noto anche come Azure Site Recovery) per [le attività di replica](../migrate/replicate.md). Per strumenti alternativi, vedere le [opzioni di replica](../migrate/replicate-options.md).
 
 Questo articolo non ha l'obiettivo di illustrare tutte le attività di valutazione possibili. Si presuppone che per ogni ambiente e risultato di business siano definiti requisiti specifici. Per accelerare la creazione di tali requisiti, la parte restante di questo articolo condivide alcune attività comuni di valutazione dell'[infrastruttura](#common-infrastructure-evaluation-activities), dei [database](#common-database-evaluation-activities) e della [rete ](#common-network-evaluation-activities).
 

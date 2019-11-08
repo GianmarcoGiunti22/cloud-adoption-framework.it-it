@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 60c6b72590cc5f912572109f0cce10366413fdf0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 5b38b5d52ee5151a2ccd696f0049a9feea0d21a0
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565103"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752807"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Inventario e visibilità nella gestione cloud
 
@@ -50,7 +50,7 @@ La creazione di visibilità su qualsiasi piattaforma cloud richiede alcuni compo
 - Responsabilità e visibilità
 - Inventario
 - Registrazione centrale
-- Rilevamento modifiche
+- Rilevamento delle modifiche
 - Telemetria delle prestazioni
 
 ### <a name="responsibility-and-visibility"></a>Responsabilità e visibilità
@@ -67,7 +67,7 @@ La registrazione centralizzata è essenziale per la visibilità richiesta quotid
 
 L'applicazione dell'utilizzo coerente della registrazione centrale è il primo passo verso la creazione di operazioni ripetibili. L'imposizione può essere eseguita tramite criteri aziendali. Quando possibile, tuttavia, l'applicazione deve essere automatizzata per garantire la coerenza.
 
-### <a name="change-tracking"></a>Rilevamento modifiche
+### <a name="change-tracking"></a>Rilevamento delle modifiche
 
 Change è una costante in un ambiente tecnologico. La consapevolezza e la comprensione delle modifiche tra più carichi di lavoro sono essenziali per le operazioni affidabili. Qualsiasi soluzione di gestione del cloud deve includere un mezzo per comprendere quando, come e perché apportare modifiche tecniche. Senza questi punti dati, le attività correttive sono significativamente compromesse.
 
@@ -77,9 +77,9 @@ Gli impegni aziendali sulla gestione del cloud sono basati sui dati. Per mantene
 
 L'integrità e le operazioni in corso della rete, del DNS, dei sistemi operativi e di altri aspetti fondamentali dell'ambiente sono punti dati critici che determinano l'integrità complessiva di tutti i carichi di lavoro.
 
-## <a name="processes"></a>Processi
+## <a name="processes"></a>Procedure
 
-Forse più importante delle funzionalità della piattaforma di gestione cloud, i processi di gestione del cloud realizzeranno gli impegni operativi con l'azienda. Qualsiasi metodologia di gestione del cloud deve includere, almeno, i processi seguenti:
+Forse più importante delle funzionalità della piattaforma di gestione cloud, i processi di gestione del cloud realizzeranno gli impegni operativi con l'azienda. Qualsiasi metodologia di gestione del cloud deve includere almeno i processi seguenti:
 
 - **Monitoraggio reattivo:** Quando le deviazioni influiscono negativamente sulle operazioni aziendali, chi risolve tali deviazioni? Quali azioni intraprendono per correggere le deviazioni?
 - **Monitoraggio proattivo:** Quando vengono rilevate deviazioni, ma le operazioni aziendali non sono interessate, come vengono risolte le deviazioni e da chi?
@@ -107,11 +107,11 @@ Indipendentemente dalla piattaforma cloud, i cinque componenti di inventario e v
 
 I dati senza azione producono un piccolo ritorno. La gestione cloud potrebbe espandersi oltre gli strumenti e i processi nativi del cloud. Per gestire processi più ampi, potrebbe essere necessario migliorare una linea di base di gestione del cloud per includere Reporting, integrazione della gestione dei servizi IT o centralizzazione dei dati. Per la gestione del cloud potrebbe essere necessario includere uno o più degli elementi seguenti durante le varie fasi della maturità operativa.
 
-### <a name="report"></a>Report
+### <a name="report"></a>Documentazione
 
 I processi offline e la comunicazione sugli impegni per gli stakeholder aziendali richiedono spesso la creazione di report. La creazione di report Self-Service o periodici può essere un componente necessario di una linea di base di gestione migliorata.
 
-### <a name="it-service-management-itsm-integration"></a>Integrazione di IT Service Management (ITSM)
+### <a name="it-service-management-itsm-integration"></a>Integrazione di Gestione dei servizi IT
 
 L'integrazione con ITSM è spesso il primo esempio di azione sull'inventario e sulla visibilità. Quando si verificano deviazioni rispetto ai modelli di prestazioni previsti, l'integrazione di ITSM utilizza gli avvisi della piattaforma cloud per attivare i ticket in uno strumento di gestione dei servizi separato per attivare le attività di correzione. Alcuni modelli operativi potrebbero richiedere l'integrazione di ITSM come aspetto della linea di base di gestione migliorata.
 

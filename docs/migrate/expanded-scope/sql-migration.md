@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566890"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753532"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Accelerazione della migrazione mediante la migrazione di un'istanza di SQL Server
 
@@ -102,7 +102,7 @@ Il percorso suggerito per la migrazione e la sincronizzazione utilizza una combi
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Indicazioni ed esercitazioni per il processo di migrazione suggerito
 
-La scelta delle linee guida consigliate per la migrazione tramite il servizio migrazione del database dipende dalla piattaforma di origine e destinazione scelta. La tabella seguente contiene collegamenti alle esercitazioni per ciascuno degli approcci standard per la migrazione di un database SQL tramite il servizio migrazione del database.
+La scelta delle linee guida consigliate per la migrazione tramite il servizio migrazione del database di Azure dipende dalla piattaforma di origine e destinazione scelta. La tabella seguente contiene collegamenti alle esercitazioni per ognuno degli approcci standard per la migrazione di un database SQL tramite il servizio migrazione del database di Azure.
 
 |Source (Sorgente)  |Obiettivo  |Strumento  |Tipo di migrazione  |Guida  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ La scelta delle linee guida consigliate per la migrazione tramite il servizio mi
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Indicazioni ed esercitazioni per vari servizi per soluzioni PaaS equivalenti
 
-Dopo lo spostamento dei database da un'istanza di SQL Server al servizio migrazione del database, lo schema e i dati possono essere riallocati in diverse soluzioni PaaS. Tuttavia, altri servizi necessari potrebbero essere ancora in esecuzione su tale server. Le tre esercitazioni seguenti facilitano lo trasferimento di SSIS, SSAS e SSRS ai servizi PaaS equivalenti in Azure.
+Dopo lo spostamento dei database da un'istanza di SQL Server al servizio migrazione del database di Azure, lo schema e i dati possono essere riallocati in diverse soluzioni PaaS. Tuttavia, altri servizi necessari potrebbero essere ancora in esecuzione su tale server. Le tre esercitazioni seguenti facilitano lo trasferimento di SSIS, SSAS e SSRS ai servizi PaaS equivalenti in Azure.
 
 |Source (Sorgente)  |Obiettivo  |Strumento  |Tipo di migrazione  |Guida  |
 |---------|---------|---------|---------|---------|

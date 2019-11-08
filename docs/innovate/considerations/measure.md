@@ -8,14 +8,14 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c050e34feecfe26431c7105eef46d000fbb32cf8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565609"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752117"
 ---
-# <a name="measure-for-customer-impact"></a>Misura per l'effetto del cliente
+# <a name="measure-for-customer-impact"></a>Misurare l'impatto sui clienti
 
 Esistono diversi modi per misurare l'effetto del cliente. Questo articolo consentirà di definire le metriche per convalidare le ipotesi che derivano da un impegno di [compilazione con l'empatia dei clienti](./build.md).
 
@@ -35,7 +35,7 @@ Quando la prima versione di un prodotto MVP minimo viene condivisa con i clienti
 
 ### <a name="customer-flow-and-learning-metrics"></a>Metriche di formazione e flusso del cliente
 
-Se una soluzione MVP convalida un'ipotesi incentrata sul cliente, la soluzione indurrà alcune modifiche ai comportamenti dei clienti. Queste modifiche del comportamento tra le coorti dei clienti devono migliorare i risultati aziendali. Tenere presente che la modifica del comportamento dei clienti è in genere un processo costituito da più passaggi. Poiché ogni passaggio consente di misurare l'effetto, il team di adozione può proseguire l'apprendimento e creare una soluzione migliore.
+Se una soluzione MVP convalida un'ipotesi incentrata sul cliente, la soluzione indurrà alcune modifiche ai comportamenti dei clienti. Queste modifiche del comportamento tra le coorti dei clienti devono migliorare i risultati aziendali. Tenere presente che la modifica del comportamento dei clienti è in genere un processo a più fasi. Poiché ogni passaggio consente di misurare l'effetto, il team di adozione può proseguire l'apprendimento e creare una soluzione migliore.
 
 Per conoscere le modifiche apportate al comportamento dei clienti, è necessario mappare il flusso che si spera di visualizzare da una soluzione MVP.
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656598"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753284"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Consentire il successo durante un percorso di adozione del cloud
 
@@ -32,7 +32,7 @@ Nell'ambito di questo Framework, l'abilitazione è un tema di base. Il seguente 
 
 ## <a name="additional-tools"></a>Strumenti aggiuntivi
 
-Oltre al Framework di adozione del cloud, Microsoft copre argomenti aggiuntivi che possono consentire l'esito positivo. In questo articolo vengono evidenziati alcuni strumenti comuni che possono migliorare significativamente il successo oltre l'ambito del Framework di adozione del cloud. La definizione del cloud governance, le architetture resilienti, le competenze tecniche e un approccio DevOps sono importanti per il successo di qualsiasi impegno nell'adozione del cloud. Il lettore consiglia di aggiungere un segnalibro a questa pagina come risorsa per la visita a tutti i percorsi di adozione del cloud.
+Oltre al Framework di adozione del cloud, Microsoft copre argomenti aggiuntivi che possono consentire l'esito positivo. In questo articolo vengono evidenziati alcuni strumenti comuni che possono migliorare significativamente il successo oltre l'ambito del Framework di adozione del cloud. La definizione del cloud governance, le architetture resilienti, le competenze tecniche e un approccio DevOps sono importanti per il successo di qualsiasi impegno nell'adozione del cloud. Aggiungere un segnalibro a questa pagina come risorsa da rivedere durante qualsiasi percorso di adozione del cloud.
 
 <!-- markdownlint-disable MD033 -->
 

@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 25e9ecd4d911766864d81a5ff34f00caf82e86bf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564284"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753636"
 ---
 # <a name="central-it-capabilities"></a>Funzionalità IT centrali
 
 Poiché l'adozione del cloud si ridimensiona, le funzionalità di governance del cloud possono non essere sufficienti per gestire le attività di adozione. Quando l'adozione è graduale, i team tendono a sviluppare in modo organico le competenze e i processi necessari per il cloud nel tempo.
 
-Tuttavia, quando un team di adozione del cloud sfrutta il cloud per ottenere un risultato aziendale ad alto profilo, l'adozione graduale si verifica raramente. Esito positivo. Questo vale anche per l'adozione del cloud, ma si verifica a livello di cloud. Quando l'adozione del cloud si espande da un team a più team in modo relativamente rapido, è necessario ulteriore supporto del personale IT esistente. Tuttavia, i membri del personale potrebbero non avere il training e l'esperienza necessari per supportare il cloud usando gli strumenti IT nativi del cloud. Questa guida spesso determina la formazione di un team IT centrale che controlla il cloud.
+Tuttavia, quando un team di adozione del cloud usa il cloud per ottenere un risultato aziendale ad alto profilo, l'adozione graduale è raramente la situazione. Esito positivo. Questo vale anche per l'adozione del cloud, ma si verifica a livello di cloud. Quando l'adozione del cloud si espande da un team a più team in modo relativamente rapido, è necessario ulteriore supporto del personale IT esistente. Tuttavia, i membri del personale potrebbero non avere il training e l'esperienza necessari per supportare il cloud usando gli strumenti IT nativi del cloud. Questa guida spesso determina la formazione di un team IT centrale che controlla il cloud.
 
 > [!CAUTION]
 > Sebbene si tratta di un passaggio di maturità comune, può presentare un elevato rischio di adozione, bloccando potenzialmente l'innovazione e le attività di migrazione se non vengono gestite in modo efficace. Vedere la sezione dei rischi riportata di seguito per informazioni su come mitigare il rischio di centralizzazione che diventa un antipattern culturale.
@@ -105,7 +105,7 @@ Questo racconto di esempio illustra l'approccio adottato da un team IT centrale 
 
 Contoso, LLC ha adottato un modello IT centrale per il supporto delle risorse cloud aziendali. Per distribuire questo modello, hanno implementato controlli rigidi per vari servizi condivisi, ad esempio connessioni di rete in ingresso. Questa saggia azione consente di ridurre l'esposizione dell'ambiente cloud e di fornire un singolo dispositivo "Break-Glass" per bloccare tutto il traffico in caso di violazione. I criteri di base di sicurezza specificano che tutto il traffico in ingresso deve passare attraverso un dispositivo condiviso gestito dal team IT centrale.
 
-Tuttavia, uno dei team di adozione del cloud ora richiede un ambiente con una connessione di rete in ingresso dedicata e appositamente configurata per sfruttare una tecnologia cloud specifica. Un team IT centrale non maturo può semplicemente rifiutare la richiesta e classificare in ordine di priorità i processi esistenti rispetto alle esigenze di adozione. Il team IT centrale di Contoso è diverso. Hanno rapidamente identificato una semplice soluzione in quattro parti per questo dilemma: classificazione, negoziazione, isolamento e automazione.
+Tuttavia, uno dei team di adozione del cloud ora richiede un ambiente con una connessione di rete in ingresso dedicata e appositamente configurata per l'uso di una tecnologia cloud specifica. Un team IT centrale non maturo può semplicemente rifiutare la richiesta e classificare in ordine di priorità i processi esistenti rispetto alle esigenze di adozione. Il team IT centrale di Contoso è diverso. Hanno rapidamente identificato una semplice soluzione in quattro parti per questo dilemma: classificazione, negoziazione, isolamento e automazione.
 
 **Classificazione:** Poiché il team di adozione del cloud era nelle prime fasi della creazione di una nuova soluzione e non aveva dati sensibili o esigenze di supporto cruciale, le risorse nell'ambiente venivano classificate come a basso rischio e non critiche. Una classificazione efficace è un segno di maturità nell'IT centrale. La classificazione di tutti gli asset e gli ambienti consente di definire criteri più chiari.
 

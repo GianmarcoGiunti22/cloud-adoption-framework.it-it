@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566506"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751836"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuire un'infrastruttura di migrazione
 
@@ -654,7 +654,7 @@ I criteri di Azure specificano la definizione dei criteri e l'assegnazione speci
 
 Contoso intende iniziare con un paio di criteri:
 
-- Vuole che un criterio garantisca la distribuzione delle risorse esclusivamente nelle aree EUS2 e CUS.
+- Desidera un criterio per garantire che le risorse possano essere distribuite solo nelle aree EUS2 e CUS.
 - Intende limitare gli SKU di VM ai soli SKU approvati. La finalità è quella di garantire che non vengano usati SKU di VM dispendiosi.
 
 #### <a name="limit-resources-to-regions"></a>Limitare le risorse alle aree
@@ -780,7 +780,7 @@ I gruppi di sicurezza di rete associati ai gruppi di sicurezza delle applicazion
 
 **Azione** | **Nome** | **Origine** | **Destinazione** | **Porta**
 --- | --- | --- | --- | ---
-Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Deny | DenyAllInbound | Qualsiasi | Qualsiasi | Qualsiasi
