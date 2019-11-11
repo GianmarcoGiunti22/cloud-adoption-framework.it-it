@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564533"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753668"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Definire un modello operativo per il cloud
 
@@ -40,7 +40,7 @@ Questa sezione di Cloud Adoption Framework offre un modello operativo attuabile,
 
 Il cloud e l'economia digitale hanno messo in luce l'esigenza di più modelli operativi. Questa esigenza è a volte dettata dal requisito di supportare più cloud pubblici. Più in generale, dipende dalla transizione dall'ambiente locale al cloud. In ogni caso, è importante allineare i modelli operativi per garantire prestazioni massime e ridondanza minima.
 
-Gli analisti prevedono un'ampia e diffusa adozione del multi-cloud. Molti clienti iniziano a confermare questa previsione. Purtroppo, la gestione di più cloud presenta sfide significative, secondo quanto segnalato dai clienti. La duplicazione di risorse, processi, competenze e tecnologie genera un aumento dei costi e non il risparmio previsto per il cloud. Per evitare l'affermarsi di questa tendenza, è consigliabile adottare un modello operativo specializzato. Con l'allineamento dovrà esserci sempre un unico **modello operativo generale**. Per supportare le deviazioni dal modello standard in specifici scenari, si potranno sfruttare **modelli operativi specializzati**.
+Gli analisti prevedono un'ampia e diffusa adozione del multi-cloud. Molti clienti iniziano a confermare questa previsione. Purtroppo, la gestione di più cloud presenta sfide significative, secondo quanto segnalato dai clienti. La duplicazione di risorse, processi, competenze e tecnologie genera un aumento dei costi e non il risparmio previsto per il cloud. Per evitare l'affermarsi di questa tendenza, i clienti dovranno adottare un modello operativo specializzato. Con l'allineamento dei modelli operativi, dovrà esserci sempre un unico **modello operativo generale**. I **modelli operativi specializzati** verranno usati in specifici scenari per supportare le deviazioni dal modello standard.
 
 - **Modello operativo generale:** il modello operativo generale si basa su una singola piattaforma di cloud pubblico o privato. Le operazioni di tale piattaforma definiscono standard, criteri e processi operativi. Il modello operativo dovrà essere il principale strumento per delineare la futura strategia per il cloud. In questo modello l'obiettivo è affidarsi al principale provider di servizi cloud per la maggior parte delle attività di adozione del cloud.
 

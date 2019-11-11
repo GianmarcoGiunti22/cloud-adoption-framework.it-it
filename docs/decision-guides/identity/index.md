@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023886"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753182"
 ---
 # <a name="identity-decision-guide"></a>Guida alle decisioni relative alla gestione delle identità
 
@@ -28,7 +28,7 @@ Sono disponibili diverse opzioni per la gestione delle identità in un ambiente 
 
 In Azure, Azure Active Directory (Azure AD) fornisce un livello di base per il controllo di accesso e la gestione delle identità per le risorse cloud. Se però l'infrastruttura di Active Directory locale dell'organizzazione ha una struttura di foresta complessa o unità organizzative personalizzate, i carichi di lavoro basati sul cloud potrebbero richiedere la sincronizzazione della directory con Azure AD per ottenere un set coerente di identità, gruppi e ruoli tra l'ambiente locale e l'ambiente cloud. Inoltre, per supportare le applicazioni che dipendono da meccanismi di autenticazione legacy potrebbe essere necessario distribuire Active Directory Domain Services (AD DS) nel cloud.
 
-La gestione delle identità basata sul cloud è un processo iterativo. È consigliabile iniziare con una soluzione nativa del cloud con un piccolo gruppo di utenti e di ruoli corrispondenti per una distribuzione iniziale. Con il progressivo perfezionamento della migrazione, potrebbe diventare necessario integrare la soluzione di gestione delle identità con la sincronizzazione della directory o aggiungere servizi di dominio come parte delle distribuzioni del cloud. Rivedere la propria strategia di gestione delle identità in ogni iterazione del processo di migrazione.
+La gestione delle identità basata sul cloud è un processo iterativo. È possibile iniziare con una soluzione nativa del cloud con un piccolo gruppo di utenti e di ruoli corrispondenti per una distribuzione iniziale. Con il progressivo perfezionamento della migrazione, potrebbe diventare necessario integrare la soluzione di gestione delle identità con la sincronizzazione della directory o aggiungere servizi di dominio come parte delle distribuzioni del cloud. Rivedere la propria strategia di gestione delle identità in ogni iterazione del processo di migrazione.
 
 ## <a name="determine-identity-integration-requirements"></a>Determinare i requisiti di integrazione della soluzione di gestione delle identità
 
@@ -48,7 +48,7 @@ Azure AD è il sistema di gestione delle identità e degli accessi nativo per la
 **Presupposti relativi alla baseline del cloud:** L'uso di un'infrastruttura di gestione delle identità completamente nativa del cloud presuppone le condizioni seguenti:
 
 - Le risorse basate sul cloud non hanno dipendenze dai servizi directory locali o da server Active Directory oppure è possibile modificare i carichi di lavoro per rimuovere queste dipendenze.
-- I carichi di lavoro di applicazioni o servizi di cui eseguire la migrazione supportano meccanismi di autenticazione compatibili con Azure AD o possono essere facilmente modificati per supportarli. Azure AD si affida a meccanismi di autenticazione basati su Internet come SAML, OAuth e OpenID Connect. I carichi di lavoro esistenti che dipendono da metodi di autenticazione legacy che usano protocolli come Kerberos o NTLM potrebbero dover essere sottoposti a refactoring prima della migrazione al cloud usando il modello di baseline del cloud.
+- I carichi di lavoro di applicazioni o servizi di cui eseguire la migrazione supportano meccanismi di autenticazione compatibili con Azure AD o possono essere facilmente modificati per supportarli. Azure AD si affida a meccanismi di autenticazione basati su Internet come SAML, OAuth e OpenID Connect. I carichi di lavoro esistenti che dipendono da metodi di autenticazione legacy con protocolli come Kerberos o NTLM potrebbero dover essere sottoposti a refactoring prima della migrazione al cloud usando il modello di baseline del cloud.
 
 > [!TIP]
 > La migrazione completa dei servizi di gestione delle identità in Azure AD elimina la necessità di mantenere l'infrastruttura di gestione delle identità locale, semplificando notevolmente la gestione IT.
@@ -73,7 +73,7 @@ Note: le organizzazioni che hanno adottato Office 365 potrebbero avere già impl
 
 ### <a name="cloud-hosted-domain-services"></a>Servizi di dominio ospitati nel cloud
 
-In presenza di carichi di lavoro che dipendono da un meccanismo di autenticazione basata sulle attestazioni che usa protocolli legacy come Kerberos o NTLM, e che non possono essere sottoposti a refactoring per accettare protocolli di autenticazione moderni come SAML o OAuth e OpenID Connect, potrebbe essere necessario eseguire la migrazione di alcuni servizi di dominio al cloud nell'ambito della distribuzione cloud.
+In presenza di carichi di lavoro che dipendono da un meccanismo di autenticazione basata sulle attestazioni con protocolli legacy come Kerberos o NTLM, e che non possono essere sottoposti a refactoring per accettare protocolli di autenticazione moderni come SAML o OAuth e OpenID Connect, potrebbe essere necessario eseguire la migrazione di alcuni servizi di dominio al cloud nell'ambito della distribuzione cloud.
 
 Questo modello implica la distribuzione di macchine virtuali che eseguono Active Directory nelle reti virtuali aziendali basate sul cloud al fine di rendere disponibile Active Directory Domain Services (AD DS) per le risorse nel cloud. Le applicazioni e i servizi esistenti trasferiti nella rete cloud dovrebbero poter usare questi server di directory ospitati nel cloud con modifiche minime.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564886"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753362"
 ---
 # <a name="encryption-decision-guide"></a>Guida alle decisioni relative alla crittografia
 
@@ -63,7 +63,7 @@ L'approccio BYOK consiste nel generare chiavi nell'hardware HSM dedicato nell'am
 
 ### <a name="on-premises-hold-your-own-key"></a>Gestione locale (HYOK, Hold Your Own Key)
 
-In alcune situazioni potrebbero esistere normative, criteri o motivi tecnici che impediscono di archiviare le chiavi in un sistema di gestione delle chiavi basato sul cloud. In questi casi è necessario generare le chiavi tramite hardware locale, archiviarle e gestirle tramite un sistema di gestione delle chiavi locale e fornire un meccanismo che consenta alle risorse basate sul cloud di accedere a queste chiavi ai fini della crittografia. Tenere presente che un approccio HYOK potrebbe non essere compatibile con tutti i servizi basati su Azure.
+In alcuni scenari potrebbero esistere normative, criteri o motivi tecnici che impediscono di archiviare le chiavi in un sistema di gestione delle chiavi basato sul cloud. In questi casi è necessario generare le chiavi tramite hardware locale, archiviarle e gestirle tramite un sistema di gestione delle chiavi locale e fornire un meccanismo che consenta alle risorse basate sul cloud di accedere a queste chiavi ai fini della crittografia. Tenere presente che un approccio HYOK potrebbe non essere compatibile con tutti i servizi basati su Azure.
 
 **Presupposti relativi alla gestione delle chiavi locale:** l'uso di un sistema di gestione delle chiavi locale presuppone le condizioni seguenti:
 
@@ -84,7 +84,7 @@ Quando si pianificano i criteri di crittografia, considerare i numerosi stati di
 
 I dati in transito sono dati che si spostano tra le risorse nella rete interna, tra i data center, in reti esterne o su Internet.
 
-La crittografia dei dati in transito avviene in genere richiedendo i protocolli SSL/TLS per il traffico. Il traffico in transito tra le risorse ospitate nel cloud e una rete esterna o la rete Internet pubblica deve sempre essere crittografato. Per impostazione predefinita, le risorse PaaS in genere applicano anche la crittografia SSL/TLS al traffico. La decisione di applicare la crittografia al traffico tra le risorse IaaS ospitate all'interno della rete virtuale spetta al team di adozione del cloud e al proprietario del carico di lavoro ed è generalmente consigliata.
+La crittografia dei dati in transito avviene in genere richiedendo i protocolli SSL/TLS per il traffico di rete. È necessario crittografare sempre il traffico tra le risorse ospitate nel cloud e le reti esterne o la rete Internet pubblica. Le risorse PaaS applicano in genere la crittografia SSL/TLS per impostazione predefinita. I team di adozione del cloud e i proprietari dei carichi di lavoro dovranno valutare se applicare la crittografia per il traffico che intercorre tra risorse IaaS ospitate all'interno delle reti virtuali.
 
 **Presupposti relativi alla crittografia dei dati in transito:** L'implementazione dei criteri di crittografia corretti per i dati in transito presuppone le condizioni seguenti:
 

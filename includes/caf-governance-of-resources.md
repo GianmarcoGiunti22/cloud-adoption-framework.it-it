@@ -5,7 +5,7 @@
 
 ### <a name="governance-of-resources"></a>Governance delle risorse
 
-Un set di criteri e ruoli di controllo degli accessi in base al ruolo globali fornirà un livello di base per l'imposizione della governance. Per soddisfare i requisiti dei criteri del team di governance del cloud, l'implementazione dell'MVP per la governance richiede il completamento delle attività seguenti:
+Un set di criteri e ruoli di controllo degli accessi in base al ruolo globali fornirà un livello di base per l'imposizione della governance. Per soddisfare i requisiti dei criteri del team di governance del cloud, l'implementazione di una soluzione MVP per la governance richiede il completamento delle attività seguenti:
 
 1. Identificare le definizioni personalizzate di Criteri di Azure necessarie per imporre i requisiti aziendali. Tale attività può includere l'uso di definizioni predefinite e la creazione di nuove definizioni personalizzate.
 2. Creare una definizione di progetto usando questi criteri predefiniti e personalizzati nonché le assegnazioni di ruolo personalizzate richiede dall'MVP per la governance.
@@ -19,8 +19,8 @@ Le definizioni di criteri personalizzate vengono salvate in un gruppo di gestion
 
 Dal momento che i criteri richiesti per supportare l'MVP per la governance sono progettati per l'applicazione a tutte le sottoscrizioni correnti, i requisiti aziendali seguenti verranno implementati usando una combinazione di definizioni predefinite e definizioni personalizzate create nel gruppo di gestione radice:
 
-1. Limitare l'elenco delle assegnazioni di ruolo disponibili a un set di ruoli predefiniti di Azure autorizzato dal team di governance del cloud. A questo scopo, sarà necessaria una [definizione di criteri personalizzata](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Richiedere l'uso dei tag seguenti per tutte le risorse: *reparto/unità di fatturazione*, *area geografica*, *classificazione dei dati*, *criticità*, *contratto di servizio*, *ambiente*, *archetipo di applicazione*, *applicazione* e *proprietario dell'applicazione*. Per gestire questa situazione, è possibile usare la definizione predefinita `Require specified tag`.
+1. Limitare l'elenco delle assegnazioni di ruolo disponibili a un set di ruoli predefiniti di Azure autorizzato dal team di governance del cloud. A questo scopo, è necessaria una [definizione di criteri personalizzata](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+2. Richiedere i tag seguenti per tutte le risorse: *reparto/unità di fatturazione*, *area geografica*, *classificazione dei dati*, *criticità*, *contratto di servizio*, *ambiente*, *archetipo di applicazione*, *applicazione* e *proprietario dell'applicazione*. Per gestire questa situazione, è possibile usare la definizione predefinita `Require specified tag`.
 3. È necessario che il tag `Application` per le risorse abbia un nome corrispondente a quello del gruppo di risorse pertinente. Per gestire questa situazione, è possibile usare la definizione predefinita "Richiedi tag e relativo valore".
 
 Per informazioni sulla definizione di criteri personalizzati, vedere la [documentazione di Criteri di Azure](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Per istruzioni ed esempi di criteri personalizzati, vedere il [sito degli esempi di criteri di Azure](https://docs.microsoft.com/azure/governance/policy/samples) e il [repository di GitHub](https://github.com/Azure/azure-policy) associato.

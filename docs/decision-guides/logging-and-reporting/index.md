@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564864"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753172"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guida alle decisioni relative a registrazione e creazione di report
 
@@ -26,7 +26,7 @@ Passare a: [Pianificazione dell'infrastruttura di monitoraggio](#plan-your-monit
 
 Il punto di flesso quando si stabilisce una strategia di registrazione e creazione di report per il cloud è determinato principalmente dagli investimenti esistenti fatti dall'organizzazione nei processi operativi e, in una certa misura, dagli eventuali requisiti necessari per supportare una strategia multi-cloud.
 
-Ci sono diversi modi per registrare e creare report sulle attività nel cloud. Il cloud nativo e la registrazione centralizzata sono due opzioni comuni di software gestito, basate sul tipo di sottoscrizione e sul numero di sottoscrizioni.
+Le attività nel cloud possono essere registrate e segnalate in diversi modi. Il cloud nativo e la registrazione centralizzata sono due opzioni comuni di software gestito, basate sul tipo di sottoscrizione e sul numero di sottoscrizioni.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Pianificare l'infrastruttura di monitoraggio
 
@@ -54,7 +54,7 @@ Si possono implementare soluzioni di registrazione basate su Monitoraggio di Azu
 
 ### <a name="on-premises-extension"></a>Estensione locale
 
-Può richiedere interventi sostanziali di riprogettazione per fare in modo che le applicazioni e i servizi di cui eseguire la migrazione al cloud facciano uso di soluzioni per la registrazione e la creazione di report basate sul cloud, come Monitoraggio di Azure. In questi casi potrebbe avere senso consentire a questi carichi di lavoro di continuare a inviare i dati di telemetria ai sistemi locali esistenti.
+Per usare soluzioni di registrazione e report basate sul cloud, come Monitoraggio di Azure, per le applicazioni e i servizi da trasferire nel cloud, possono essere necessari interventi sostanziali di sviluppo. In questi casi è consigliabile consentire a questi carichi di lavoro di continuare a inviare i dati di telemetria ai sistemi locali esistenti.
 
 Per supportare questo approccio, le risorse cloud dovranno poter comunicare direttamente con i sistemi locali tramite una combinazione di [rete ibrida](../software-defined-network/hybrid.md) e di [servizi del dominio ospitati nel cloud](../identity/index.md#cloud-hosted-domain-services). In questo modo, la rete virtuale cloud funge da estensione di rete dell'ambiente locale. I carichi di lavoro ospitati nel cloud possono quindi comunicare direttamente con il sistema di registrazione e creazione di report locale.
 
@@ -85,7 +85,7 @@ Presupposti dell'aggregazione tramite il gateway:
 
 Un soluzione di monitoraggio ibrido combina i dati dei log sia delle risorse locali che di quelle cloud per offrire una visualizzazione integrata dello stato operativo dell'ambiente IT.
 
-Se è stato fatto un investimento in sistemi di monitoraggio locali che sarebbero difficili o costosi da sostituire, potrebbe essere necessario integrare dati di telemetria dei carichi di lavoro cloud nelle soluzioni di monitoraggio locali preesistenti. In un sistema di monitoraggio locale ibrido i dati di telemetria locali continuano a usare il sistema di monitoraggio locale esistente. I dati di telemetria basati sul cloud vengono inviati al sistema di monitoraggio locale direttamente oppure vengono inviati a Monitoraggio di Azure e quindi compilati e inseriti nel sistema locale a intervalli regolari.
+Se è stato fatto un investimento in sistemi di monitoraggio locali che sarebbe difficile o costoso sostituire, può essere necessario integrare dati di telemetria dei carichi di lavoro cloud nelle soluzioni di monitoraggio locali preesistenti. In un sistema di monitoraggio locale ibrido i dati di telemetria locali continuano a usare il sistema di monitoraggio locale esistente. I dati di telemetria basati sul cloud vengono inviati al sistema di monitoraggio locale direttamente oppure vengono inviati a Monitoraggio di Azure e quindi compilati e inseriti nel sistema locale a intervalli regolari.
 
 **Presupposti relativi al monitoraggio ibrido locale:** L'uso di un sistema di registrazione e di creazione di report locale per il monitoraggio ibrido presuppone quanto segue:
 

@@ -10,28 +10,28 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557092"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565475"
 ---
 # <a name="operational-compliance-in-azure"></a>Conformità operativa in Azure
 
-La conformità operativa è la seconda disciplina in qualsiasi baseline di gestione del cloud.
+La _conformità operativa_ è la seconda disciplina in qualsiasi baseline di gestione del cloud.
 
 ![Baseline di gestione del cloud](../../_images/manage/management-baseline.png)
 
-Il miglioramento della conformità operativa riduce la probabilità che si verifichino interruzioni del servizio dovute a errori di configurazione oppure vulnerabilità causate dalla mancata applicazione di patch ai sistemi.
+Il miglioramento della conformità operativa riduce la probabilità che si verifichino interruzioni del servizio dovute a differenze di configurazione oppure vulnerabilità causate dall'applicazione impropria di patch ai sistemi.
 
-Per qualsiasi ambiente di livello aziendale, la tabella seguente include il minimo consigliato per qualsiasi baseline di gestione.
+Per qualsiasi ambiente di livello aziendale, la tabella seguente include il minimo consigliato per una baseline di gestione.
 
 |Process  |Strumento  |Scopo  |
 |---------|---------|---------|
 |Gestione delle patch|Gestione degli aggiornamenti|Gestione e pianificazione degli aggiornamenti|
 |Imposizione dei criteri|Criteri di Azure|Applicazione di criteri per garantire la conformità di ambiente e guest|
-|Ambiente Configurazione|Azure Blueprint|Conformità automatizzata per i servizi essenziali|
+|Configurazione dell'ambiente|Azure Blueprint|Conformità automatizzata per i servizi essenziali|
 
 ::: zone target="docs"
 
@@ -44,30 +44,33 @@ Per qualsiasi ambiente di livello aziendale, la tabella seguente include il mini
 
 ::: zone-end
 
-I computer gestiti da Gestione aggiornamenti usano le configurazioni seguenti per le valutazioni e le distribuzioni degli aggiornamenti:
+I computer gestiti da Gestione aggiornamenti usano le configurazioni seguenti per le valutazioni e la distribuzione degli aggiornamenti:
 
 - Microsoft Monitoring Agent (MMA) per Windows o Linux
 - PowerShell DSC (Desired State Configuration) per Linux
-- Ruolo di lavoro ibrido per runbook di Automazione
+- Ruolo di lavoro ibrido per runbook di Automazione di Azure
 - Microsoft Update o Windows Server Update Services (WSUS) per computer Windows
 
 Per altre informazioni, vedere [Soluzione Gestione aggiornamenti](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 > [!WARNING]
-> Prima di applicare la gestione degli aggiornamenti, è necessario eseguire l'onboarding delle VM o di un'intera sottoscrizione in Log Analytics e Automazione di Azure.
-> Esistono due approcci all'onboarding ed è necessario adottarne uno prima di procedere alla gestione degli aggiornamenti.
+> Prima di usare Gestione aggiornamenti, è necessario eseguire l'onboarding delle macchine virtuali o di un'intera sottoscrizione in Log Analytics e Automazione di Azure.
+>
+> Sono disponibili due approcci all'onboarding:
 >
 > - [Singola macchina virtuale](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [Intera sottoscrizione](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> È consigliabile adottare uno di questi approcci prima di procedere con Gestione aggiornamenti.
 
 ### <a name="manage-updates"></a>Gestire gli aggiornamenti
 
 Per applicare criteri a un gruppo di risorse:
 
 1. Passare ad [Automazione di Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
-2. Scegliere uno degli **account di automazione** elencati.
-3. Trovare la sezione **Gestione della configurazione** nel riquadro di spostamento del portale.
-4. È possibile usare le opzioni Inventario, Gestione del cambiamento e State Configuration per controllare lo stato e la conformità operativa delle VM gestite.
+1. Selezionare **Account di automazione** e scegliere uno degli account nell'elenco.
+1. Passare a **Gestione della configurazione**.
+1. È possibile usare le opzioni **Inventario**, **Gestione del cambiamento** e **State Configuration** per controllare lo stato e la conformità operativa delle VM gestite.
 
 ::: zone target="chromeless"
 
@@ -90,11 +93,11 @@ Per applicare criteri a un gruppo di risorse:
 
 ::: zone-end
 
-Il servizio Criteri di Azure viene usato in tutti i processi di governance. Ma risulta anche estremamente utile all'interno dei processi di gestione del cloud. Oltre al controllo e alla correzione delle risorse di Azure, Criteri di Azure consente di controllare le impostazioni all'interno di un computer. La convalida viene eseguita dall'estensione della configurazione guest e dal client. L'estensione, tramite il client, convalida impostazioni come:
+Il servizio Criteri di Azure viene usato in tutti i processi di governance. Risulta anche estremamente utile all'interno dei processi di gestione del cloud. Criteri di Azure consente di controllare e correggere le risorse di Azure, oltre che di controllare le impostazioni all'interno di un computer. La convalida viene eseguita dall'estensione della configurazione guest e dal client. L'estensione, tramite il client, convalida impostazioni come:
 
-- Configurazione del sistema operativo
-- Configurazione o presenza di applicazioni
-- Impostazioni dell'ambiente
+- Configurazione del sistema operativo.
+- Configurazione o presenza di applicazioni.
+- Impostazioni dell'ambiente.
 
 Al momento, Configurazione guest di Criteri di Azure controlla solo le impostazioni all'interno del computer. Non applica le configurazioni.
 
@@ -134,7 +137,9 @@ Per altre informazioni, vedere:
 
 ::: zone-end
 
-Azure Blueprints consente agli architetti del cloud e ai gruppi centrali del settore IT di definire un set ripetibile di risorse di Azure per implementare e rispettare gli standard, i modelli e i requisiti di un'organizzazione. Azure Blueprints consente ai team di sviluppo di creare e realizzare rapidamente nuovi ambienti sapendo che vengono creati in conformità con i requisiti dell'organizzazione con un set di componenti integrati, ad esempio le reti, per velocizzare lo sviluppo e il recapito.
+Con Azure Blueprints, gli architetti cloud e i gruppi IT centrali possono definire un set ripetibile di risorse di Azure. Queste risorse implementano e rispettano gli standard, i modelli e i requisiti di un'organizzazione.
+
+Con Azure Blueprints, i team di sviluppo possono creare e configurare rapidamente nuovi ambienti, con la certezza di rispettare la conformità dell'organizzazione. A tale scopo, usano un set di componenti predefiniti, come la rete, per velocizzare lo sviluppo e la distribuzione.
 
 I progetti costituiscono un metodo dichiarativo per orchestrare la distribuzione di vari modelli di risorse e altri artefatti, ad esempio:
 
@@ -151,12 +156,13 @@ Per creare un progetto:
 
 ::: zone target="chromeless"
 
-1. Passare a **Progetti - Introduzione**.
-1. Nella sezione **Crea un progetto** selezionare **Crea**.
+1. Passare a **Blueprints - Guida introduttiva**.
+1. Nel riquadro **Crea un progetto** selezionare **Crea**.
 1. Filtrare l'elenco di progetti per selezionare quello appropriato.
-1. Immettere un valore in **Nome progetto** e selezionare la posizione appropriata in  **Località della definizione**.
-1. Fare clic su **Avanti: Artefatti >>** ed esaminare gli artefatti inclusi nel progetto.
-1. Fare clic su **Salva bozza**.
+1. Nella casella **Nome progetto** immettere il nome del progetto.
+1. Selezionare **Località della definizione**e scegliere la località appropriata.
+1. Selezionare **Avanti: Artefatti >>** ed esaminare gli artefatti inclusi nel progetto.
+1. Selezionare **Salva bozza**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ Per creare un progetto:
 ::: zone target="docs"
 
 1. Passare a [Blueprints - Guida introduttiva](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
-1. Nella sezione **Crea un progetto** selezionare **Crea**.
+1. Nel riquadro **Crea un progetto** selezionare **Crea**.
 1. Filtrare l'elenco di progetti per selezionare quello appropriato.
-1. Immettere un valore in **Nome progetto** e selezionare la posizione appropriata in  **Località della definizione**.
-1. Fare clic su **Avanti: Artefatti >>** ed esaminare gli artefatti inclusi nel progetto.
-1. Fare clic su **Salva bozza**.
+1. Nella casella **Nome progetto** immettere il nome del progetto.
+1. Selezionare **Località della definizione**e scegliere la località appropriata.
+1. Selezionare **Avanti: Artefatti >>** ed esaminare gli artefatti inclusi nel progetto.
+1. Selezionare **Salva bozza**.
 
 ::: zone-end
 
@@ -182,7 +189,9 @@ Per pubblicare gli artefatti di un progetto nella sottoscrizione:
 1. Passare a **Progetti - Definizioni di progetto**.
 1. Selezionare il progetto creato nei passaggi precedenti.
 1. Esaminare la definizione del progetto e selezionare **Pubblica progetto**.
-1. Specificare un valore in **Versione** (ad esempio "1.0") e in **Modifica le note**, quindi selezionare **Pubblica**.
+1. Nella casella **Versione** immettere una versione, ad esempio "1.0".
+1. Nella casella **Modifica le note** modifiche immettere le note.
+1. Selezionare **Pubblica**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -193,7 +202,11 @@ Per pubblicare gli artefatti di un progetto nella sottoscrizione:
 1. Passare a [Progetti - Definizioni di progetto](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Selezionare il progetto creato nei passaggi precedenti.
 1. Esaminare la definizione del progetto e selezionare **Pubblica progetto**.
-1. Specificare un valore in **Versione** (ad esempio "1.0") e in **Modifica le note**, quindi selezionare **Pubblica**.
+1. Nella casella **Versione** immettere una versione, ad esempio "1.0".
+1. Nella casella **Modifica le note** modifiche immettere le note.
+1. Selezionare **Pubblica**.
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>Altre informazioni
 

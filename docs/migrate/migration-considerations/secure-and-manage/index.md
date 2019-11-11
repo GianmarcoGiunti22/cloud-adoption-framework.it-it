@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683770"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753424"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Strumenti di monitoraggio e gestione sicuri
 
-Dopo aver completato la migrazione, gli asset migrati devono essere gestiti da operazioni IT controllate. Questo articolo non intende suggerire deviazioni dalle procedure operative consigliate. Al contrario, le indicazioni seguenti dovrebbero essere considerate come prodotto minimo funzionante per la protezione e la gestione degli asset migrati, dalle operazioni IT oppure in modo indipendente quando le operazioni IT sono online.
+Dopo aver completato la migrazione, gli asset migrati devono essere gestiti da operazioni IT controllate. Questo articolo non rappresenta una deviazione dalle procedure operative consigliate. Al contrario, le indicazioni seguenti dovrebbero essere considerate come prodotto minimo funzionante per la protezione e la gestione degli asset migrati, dalle operazioni IT oppure in modo indipendente quando le operazioni IT sono online.
 
 ## <a name="monitoring"></a>Monitoraggio
 

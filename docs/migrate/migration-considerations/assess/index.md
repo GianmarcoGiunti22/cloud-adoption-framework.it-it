@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816296"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753468"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Valutare gli asset prima della migrazione
 
@@ -56,7 +56,7 @@ Oltre alle responsabilità di alto livello, esistono azioni per cui un singolo u
   - Per evitare sorprese in un secondo momento nel processo, almeno un rappresentante dell'azienda deve essere coinvolto nel processo di approvazione.
 
 > [!CAUTION]
-> Questo elenco completo di responsabilità e azioni può supportare migrazioni estese e complesse che coinvolgono più ruoli con vari livelli di competenza e richiedono un processo di approvazione dettagliato. Per le iniziative di migrazione più semplici e contenute potrebbero non essere richiesti tutti i ruoli e le azioni qui descritti. Per determinare quali di queste attività offrono valore aggiunto e quali rappresentano un sovraccarico non necessario, si consiglia al team di adozione del cloud e al team di strategia del cloud di usare questo processo completo come parte della prima migrazione del carico di lavoro. Dopo aver verificato e testato il carico di lavoro, il team può valutare questo processo e scegliere quali azioni usare in futuro.
+> Questo elenco completo di responsabilità e azioni può supportare migrazioni estese e complesse che coinvolgono più ruoli con vari livelli di competenza e richiedono un processo di approvazione dettagliato. Per le iniziative di migrazione più semplici e contenute potrebbero non essere richiesti tutti i ruoli e le azioni qui descritti. Per determinare quali di queste attività offrono valore aggiunto e quali sono invece non necessarie, è consigliabile che il team di adozione del cloud e quello di strategia del cloud seguano questo processo completo durante la prima migrazione dei carichi di lavoro. Dopo aver verificato e testato il carico di lavoro, il team può valutare questo processo e scegliere quali azioni usare in futuro.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

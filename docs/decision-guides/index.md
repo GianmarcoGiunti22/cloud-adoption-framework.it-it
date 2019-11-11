@@ -9,24 +9,24 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c5ffe30a66305dcff1df70a383f6716702b4a067
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223884"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753331"
 ---
 # <a name="architectural-decision-guides"></a>Guide all'architettura decisionale
 
 Le guide all'architettura decisionale nel Framework di adozione del Cloud descrivono i modelli e gli schemi che aiutano quando si crea una guida alla progettazione della governance del cloud. Ogni guida è incentrata su un componente fondamentale dell'infrastruttura delle distribuzioni cloud ed elenca gli schemi e i modelli in grado di supportare scenari specifici.
 
-Quando si inizia a definire la governance del cloud per l'organizzazione, i percorsi di governance attuabili forniscono una roadmap di base. Tuttavia, questi percorsi fanno ipotesi sui requisiti e le priorità che potrebbero non riflettere quelle della propria organizzazione.
+Quando si inizia a definire la governance del cloud per l'organizzazione, i percorsi di governance attuabili forniscono una roadmap di base. Tuttavia, questi percorsi si basano su presupposti relativi a requisiti e priorità che potrebbero non rispecchiare quelli della propria organizzazione.
 
 Tali guide decisionali integrano i percorsi di esempio di governance, fornendo schemi e modelli alternativi che aiutano ad allineare con le proprie esigenze le scelte di progettazione architetturale prese nella guida di progettazione di esempio.
 
 ## <a name="decision-guidance-categories"></a>Categorie di indicazioni per le decisioni
 
-Ognuna delle categorie seguenti rappresenta una tecnologia di base di tutte le distribuzioni cloud. I percorsi di governance di esempio prendono decisioni di progettazione relative a queste tecnologie in base alle esigenze delle aziende di esempio e alcune di queste decisioni potrebbero non corrispondere alle esigenze specifiche dell'organizzazione. Le sezioni seguenti illustrano opzioni alternative per ognuna di queste categorie, consentendo di scegliere uno schema o un modello più adatto alle proprie esigenze.
+Ognuna delle categorie seguenti rappresenta una tecnologia di base di tutte le distribuzioni cloud. I percorsi di governance di esempio si fondano su decisioni di progettazione legate a queste tecnologie in base alle esigenze delle aziende di esempio e alcune di queste decisioni potrebbero non corrispondere alle esigenze specifiche dell'organizzazione. Le sezioni seguenti illustrano opzioni alternative per ognuna di queste categorie, consentendo di scegliere uno schema o un modello più adatto alle proprie esigenze.
 
 [Sottoscrizioni](./subscriptions/index.md): pianificare la struttura della sottoscrizione e la struttura dell'account della distribuzione cloud in modo che corrisponda alle proprietà, alla fatturazione e alle capacità di gestione dell'organizzazione.
 

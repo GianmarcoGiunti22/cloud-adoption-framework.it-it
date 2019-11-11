@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058114"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565573"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ Sviluppare una nuova soluzione innovativa non significa dare agli utenti quello 
 - **Quantitativi (feedback dei test):** questo feedback consente di verificare se i risultati sono quelli auspicati.
 - **Qualitativi (feedback dei clienti):** questo feedback indica quali metriche sono significative nelle opinioni dei clienti.
 
-Prima di integrare i cicli di feedback, è necessario disporre di un repository condiviso per la propria soluzione. Un repository centralizzato consentirà di registrare tutto il feedback in arrivo sul progetto e agire di conseguenza. [GitHub](https://github.com/) è il sito del software open source. È anche una delle piattaforme più diffuse per ospitare i repository di codice sorgente per le app commerciali sviluppate. L'articolo sulla [creazione dei repository GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) può essere utile per iniziare a usare un proprio repository.
+Prima di integrare i cicli di feedback, è necessario disporre di un repository condiviso per la propria soluzione. Un repository centralizzato consentirà di registrare tutto il feedback in arrivo sul progetto e agire di conseguenza. [GitHub](https://github.com) è il sito del software open source. È anche una delle piattaforme più diffuse per ospitare i repository di codice sorgente per le app commerciali sviluppate. L'articolo sulla [creazione dei repository GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) può essere utile per iniziare a usare un proprio repository.
 
 Ognuno degli strumenti seguenti di Azure si integra o è compatibile con i progetti ospitati in GitHub:
 
@@ -126,7 +126,7 @@ Il backlog (o lavagna) si usa per registrare il feedback sotto forma di storie u
 ### <a name="action"></a>Azione
 
 Azure Board e Azure Pipelines richiedono un portale separato da GitHub e Azure.
-Per iniziare a usare uno di questi strumenti, passare ad [Azure DevOps](https://dev.azure.com/).
+Per iniziare a usare uno di questi strumenti, passare ad [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Per iniziare a usare uno di questi strumenti, passare ad [Azure DevOps](https://
 
 Per creare un progetto DevOps:
 
-1. Passare a **Progetto Azure DevOps**.
+1. Passare a **Azure DevOps Projects**.
 2. Selezionare **Crea progetto DevOps**.
 3. Selezionare **un runtime, un framework e un servizio**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Per creare un progetto DevOps:
 
 Questi articoli consentono di centralizzare e gestire il feedback usando Azure Boards insieme a GitHub:
 
-- [Introduzione ad Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards e GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Introduzione ad Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards e GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Chiudere il ciclo con le pipeline](#tab/pipelines)
 
@@ -163,15 +163,15 @@ Agire in base al feedback non sempre significa aggiungere la funzionalità richi
 
 Per visualizzare le distribuzioni correnti nella pipeline:
 
-1. Passare a **Servizio app**.
+1. Passare a **Servizi app**.
 2. Selezionare l'applicazione desiderata nell'elenco.
-3. Selezionare **Centro distribuzione** nella sezione **Distribuzione** del riquadro dei servizi app.
+3. Selezionare **Centro distribuzione** nella sezione **Distribuzione** del riquadro Servizi app.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

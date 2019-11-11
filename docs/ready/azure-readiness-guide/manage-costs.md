@@ -10,18 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5fd413b1492d1ef885103ee529b4bdfb68f4666
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a8ef217104e1b4bf90719c32786c5fdd3732a352
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025204"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566732"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Gestire i costi e la fatturazione per le risorse di Azure
 
 Gestione costi è il processo che consente di pianificare e controllare in maniera efficace i costi aziendali. Le attività di gestione dei costi vengono eseguite in genere dai team dedicati alle attività finanziarie, alla gestione e alle app. Gestione costi di Azure può essere utile per eseguire una pianificazione tenendo conto dei costi. Consente inoltre di analizzare in modo efficace i costi e intraprendere azioni per ottimizzare la spesa per il cloud.
 
-Per altre informazioni su come integrare i processi di gestione dei costi del cloud nell'intera organizzazione, vedere l'articolo di Cloud Adoption Framework per Azure su come [tenere traccia dei costi tra le business unit, gli ambienti o i progetti](../azure-best-practices/track-costs.md).
+Per altre informazioni su come integrare i processi di gestione dei costi del cloud nell'intera organizzazione, vedere l'articolo di Cloud Adoption Framework su come [tenere traccia dei costi tra le business unit, gli ambienti o i progetti](../azure-best-practices/track-costs.md).
 
 ## <a name="manage-your-costs-with-azure-cost-management"></a>Gestire i costi tramite Gestione costi di Azure
 

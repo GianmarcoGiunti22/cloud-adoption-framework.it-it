@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564845"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753147"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guida decisionale di imposizione dei criteri
 
@@ -55,9 +55,9 @@ In Azure è possibile applicare le impostazioni di configurazione e le regole pe
 
 ## <a name="cross-organization-policy"></a>Criteri tra organizzazioni
 
-Se l'ambiente cloud aumenta estendendosi a più sottoscrizioni che richiedono l'applicazione dei criteri, sarà necessario concentrarsi su una strategia per l'applicazione estesa all'intero ambiente cloud per garantire la coerenza dei criteri.
+Se l'ambiente cloud aumenta estendendosi a più sottoscrizioni che richiedono l'applicazione dei criteri, sarà necessario concentrarsi su una strategia per l'applicazione estesa all'intero ambiente cloud per garantire coerenza.
 
-La [progettazione di una sottoscrizione](../subscriptions/index.md) dovrà prendere in considerazione i criteri relativi alla struttura dell'organizzazione. Oltre ad aiutare a supportare un'organizzazione complessa all'interno della progettazione di una sottoscrizione, i [gruppi di gestione di Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) possono essere usati per assegnare le regole dei criteri di Azure tra più sottoscrizioni.
+Per la [progettazione di una sottoscrizione](../subscriptions/index.md) è necessario tenere conto dei criteri in relazione alla struttura organizzativa. Oltre ad aiutare a supportare un'organizzazione complessa all'interno della progettazione di una sottoscrizione, i [gruppi di gestione di Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) possono essere usati per assegnare le regole dei criteri di Azure tra più sottoscrizioni.
 
 ## <a name="automated-enforcement"></a>Imposizione automatizzata
 

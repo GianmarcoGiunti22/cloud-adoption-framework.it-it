@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 0d8ffd15dd0e42e7ba31760361dc970b63025eda
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 96ca8aab7a1fb1e04180f12ac1753bd1b6857e92
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565615"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752127"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovazione del cloud in Cloud Adoption Framework
 
@@ -79,7 +79,7 @@ Azure include una serie di strumenti cloud che consentono di accelerare la distr
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Procedure consigliate</h3>
-Le decisioni architetturali dovranno essere basate sulle procedure consigliate per ogni strumento della toolchain. Conformandosi a queste indicazioni, sarà possibile accelerare lo sviluppo di soluzioni e ottenere un riferimento per progetti di architetture affidabili.
+Le decisioni architetturali dovranno essere basate sulle procedure consigliate per ogni strumento della toolchain. Conformandosi a queste linee guida, sarà possibile accelerare lo sviluppo di soluzioni e ottenere un riferimento per progetti di architetture affidabili.
                         </div>
                     </div>
                 </div>

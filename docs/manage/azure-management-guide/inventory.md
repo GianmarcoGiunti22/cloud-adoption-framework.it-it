@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8b7902910de3df729524b1625fe83b0681eeef5b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556786"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565472"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventario e visibilità in Azure
 
@@ -23,17 +23,17 @@ _Inventario e visibilità_ è la prima di tre discipline della baseline di gesti
 
 ![Baseline di gestione del cloud](../../_images/manage/management-baseline.png)
 
-Questa disciplina è la più importante perché è fondamentale per raccogliere i dati operativi appropriati quando si prendono decisioni sulle operazioni. I team di gestione del cloud devono capire quali asset vengono gestiti e con quale livello di efficienza. Questo articolo illustra i vari strumenti che forniscono sia un inventario che la visibilità sul relativo stato di esecuzione.
+Questa disciplina è la più importante perché la raccolta di dati operativi appropriati è fondamentale quando si prendono decisioni sulle operazioni. I team di gestione del cloud devono capire quali asset vengono gestiti e con quale livello di efficienza. Questo articolo descrive i vari strumenti che forniscono sia un inventario che la visibilità sul relativo stato di esecuzione.
 
-Per qualsiasi ambiente di livello aziendale, la tabella seguente include il minimo consigliato per qualsiasi baseline di gestione.
+Per qualsiasi ambiente di livello aziendale, la tabella seguente include il minimo consigliato per una baseline di gestione.
 
 |Process  |Strumento  |Scopo  |
 |---------|---------|---------|
 |Monitoraggio dell'integrità dei servizi di Azure|Integrità dei servizi di Azure|Integrità, prestazioni e diagnostica per i servizi in esecuzione in Azure|
 |Centralizzazione dei log|Log Analytics|Registrazione centrale per tutti gli scopi di visibilità|
 |Centralizzazione del monitoraggio|Monitoraggio di Azure|Monitoraggio centrale di dati operativi e tendenze|
-|Inventario delle VM e rilevamento delle modifiche|Servizio Rilevamento modifiche e inventario di Azure|Inventario delle VM e monitoraggio delle modifiche per il livello del sistema operativo guest|
-|Integrità del servizio|Azure Activity Log|Monitoraggio delle modifiche a livello di sottoscrizione|
+|Inventario delle macchine virtuali e rilevamento delle modifiche|Rilevamento modifiche e inventario di Azure|Inventario delle VM e monitoraggio delle modifiche per il livello del sistema operativo guest|
+|Service Health|Azure Activity Log|Monitoraggio delle modifiche a livello di sottoscrizione|
 |Monitoraggio del sistema operativo host|Monitoraggio di Azure per le macchine virtuali|Monitoraggio delle modifiche e delle prestazioni delle VM|
 |Monitoraggio della rete|Azure Network Watcher|Monitoraggio delle modifiche e delle prestazioni della rete|
 |Monitoraggio del DNS|Analisi DNS|Sicurezza, prestazioni e operazioni del DNS|
@@ -49,15 +49,15 @@ Per qualsiasi ambiente di livello aziendale, la tabella seguente include il mini
 
 ::: zone-end
 
-Integrità dei servizi di Azure fornisce una visualizzazione personalizzata dell'integrità dei servizi e delle aree di Azure che vengono usati. Le informazioni sui problemi attivi vengono pubblicate in Integrità dei servizi per comprendere meglio l'impatto per le risorse. Sono previsti aggiornamenti regolari per essere informati quando viene risolto il problema.
+Integrità dei servizi di Azure fornisce una visualizzazione personalizzata dell'integrità dei servizi e delle aree di Azure. Le informazioni sui problemi attivi vengono pubblicate in Integrità dei servizi per comprendere meglio l'effetto sulle risorse. Gli aggiornamenti regolari consentono di tenersi informati quando i problemi vengono risolti.
 
-In Integrità dei servizi vengono anche pubblicati gli eventi di manutenzione pianificata, in modo che gli utenti siano a conoscenza delle modifiche che potrebbero influire sulla disponibilità delle risorse. Configurare gli avvisi di Integrità dei servizi per ricevere notifiche in caso di problemi dei servizi, eventi di manutenzione pianificata o altre modifiche che potrebbero influire sui servizi e sulle aree di Azure che vengono usati.
+In Integrità dei servizi vengono anche pubblicati gli eventi di manutenzione pianificata, in modo che gli utenti siano a conoscenza delle modifiche che potrebbero influire sulla disponibilità delle risorse. Configurare gli avvisi di Integrità dei servizi per ricevere notifiche in caso di problemi dei servizi, eventi di manutenzione pianificata o altre modifiche che potrebbero influire sui servizi e sulle aree di Azure.
 
 Integrità dei servizi di Azure include le informazioni seguenti:
 
 - **Stato di Azure:** visualizzazione completa dell'integrità dei servizi di Azure.
 - **Integrità dei servizi:** visualizzazione personalizzata dell'integrità dei servizi di Azure.
-- **Integrità risorsa:** visualizzazione più dettagliata dell'integrità di ogni singola risorsa.
+- **Integrità risorsa:** una visualizzazione più dettagliata dell'integrità di ogni singola risorsa.
 
 ::: zone target="chromeless"
 
@@ -125,13 +125,13 @@ Per altre informazioni, vedere la [documentazione relativa alla creazione di are
 
 ::: zone-end
 
-Monitoraggio di Azure offre un solo hub unificato per tutti i dati di monitoraggio e diagnostica in Azure. È possibile usarlo per ottenere visibilità nelle risorse. Monitoraggio di Azure consente di individuare e correggere i problemi e di ottimizzare le prestazioni. Consente inoltre di comprendere il comportamento dei clienti.
+Monitoraggio di Azure offre un singolo hub unificato per tutti i dati di monitoraggio e diagnostica in Azure e assicura visibilità su tutte le risorse. Monitoraggio di Azure consente di individuare e correggere i problemi e di ottimizzare le prestazioni. Consente inoltre di comprendere il comportamento dei clienti.
 
-- **Monitorare e visualizzare metriche:** le metriche sono valori numerici disponibili dalle risorse di Azure che consentono di determinare l'integrità dei sistemi. È possibile personalizzare i grafici per i dashboard e usare cartelle di lavoro per la creazione di report.
+- **Monitorare e visualizzare metriche:** le metriche sono valori numerici disponibili dalle risorse di Azure. Aiutano a capire lo stato di integrità dei sistemi. È possibile personalizzare i grafici per i dashboard e usare cartelle di lavoro per la creazione di report.
 
 - **Eseguire query e analisi dei log:** i log includono log di attività e log di diagnostica di Azure. È possibile raccogliere log aggiuntivi da altre soluzioni di monitoraggio e gestione per le risorse cloud o locali. Log Analytics fornisce un repository centrale per aggregare tutti questi dati. Da qui è possibile eseguire query per semplificare la risoluzione dei problemi o per visualizzare i dati.
 
-- **Configurare avvisi e azioni:** gli avvisi avvertono in modo proattivo riguardo a eventuali condizioni critiche. È possibile adottare azioni correttive in base a trigger generati da metriche, log o problemi di integrità dei servizi. È possibile configurare diverse notifiche e azioni e inviare i dati agli strumenti di gestione dei servizi IT.
+- **Configurare avvisi e azioni:** gli avvisi notificano le condizioni critiche. È possibile adottare azioni correttive in base a trigger generati da metriche, log o problemi di integrità dei servizi. È possibile configurare diverse notifiche e azioni e anche inviare i dati agli strumenti di gestione dei servizi IT.
 
 ::: zone target="chromeless"
 
@@ -171,14 +171,14 @@ Per altre informazioni, vedere la [documentazione di Monitoraggio di Azure](http
 
 ::: zone-end
 
-Per abilitare le soluzioni, è necessario configurare l'area di lavoro Log Analytics. Dopo l'onboarding, le VM di Azure e i server locali otterranno le soluzioni dalle aree di lavoro Log Analytics a cui sono connessi.
+Per abilitare le soluzioni, è necessario configurare l'area di lavoro Log Analytics. Dopo l'onboarding, le VM di Azure e i server locali ottengono le soluzioni dalle aree di lavoro Log Analytics a cui sono connessi.
 
 Sono disponibili due approcci all'onboarding:
 
 - [Singola macchina virtuale](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 - [Intera sottoscrizione](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
 
-Ogni articolo illustra una serie di procedure per eseguire l'onboarding delle soluzioni seguenti:
+Ogni articolo illustra una serie di procedure per eseguire l'onboarding di queste soluzioni:
 
 - Gestione degli aggiornamenti
 - Rilevamento modifiche e inventario
@@ -188,4 +188,4 @@ Ogni articolo illustra una serie di procedure per eseguire l'onboarding delle so
 - Monitoraggio di Azure per le macchine virtuali
 - Centro sicurezza di Azure
 
-Ognuno degli articoli precedenti consentirà di stabilire l'inventario e la visibilità.
+Ognuno dei passaggi precedenti consente di stabilire l'inventario e la visibilità.
