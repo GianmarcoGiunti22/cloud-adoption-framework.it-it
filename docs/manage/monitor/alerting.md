@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
+ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752738"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912510"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guida al monitoraggio del cloud: avviso
 
@@ -67,7 +67,7 @@ Monitoraggio di Azure offre quattro tipi di avvisi, ognuno dei quali è associat
 
 - [Avviso del log attività](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): avvisi sugli elementi nell'archivio dei log attività, fatta eccezione per i dati di integrità del servizio.
 
-- [Avviso di integrità del servizio](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): tipo speciale di avviso, solo per i problemi di integrità del servizio che provengono dall'archivio dei log attività.
+- [Avviso di integrità del servizio](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): tipo speciale di avviso usato solo per i problemi di integrità del servizio che provengono dall'archivio dei log attività, ad esempio interruzioni e manutenzione pianificata imminente. Si noti che questo tipo di avviso viene configurato tramite [integrità dei servizi di Azure](https://docs.microsoft.com/azure/service-health/service-health-overview), un servizio complementare per monitoraggio di Azure.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Abilitare gli avvisi tramite gli strumenti dei partner
 
