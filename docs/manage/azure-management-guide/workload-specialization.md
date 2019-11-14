@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565386"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752911"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Specializzazione dei carichi di lavoro per la gestione del cloud
 
@@ -44,9 +44,9 @@ Quando è necessaria tale specializzazione, in genere la gestione operativa si e
 
 In questo modello, le attività operative come il monitoraggio, la distribuzione, DevOps e altre funzioni incentrate sull'innovazione vengono spostate in un'organizzazione di sviluppo di applicazioni o di tipo business unit. I team che della piattaforma cloud e del monitoraggio del cloud continuano comunque a mantenere la baseline di gestione nell'ambiente.
 
-Questi team centralizzati inoltre guidano e istruiscono sulle rispettive operazioni i team specializzati in carichi di lavoro. Ma la responsabilità operativa quotidiana ricade sul team di gestione del cloud, che esula dall'IT. Questo tipo di controllo distribuito è uno dei principali indicatori del livello di maturità del centro di eccellenza cloud.
+Questi team centralizzati inoltre guidano e istruiscono sulle rispettive operazioni i team specializzati in carichi di lavoro. Ma la responsabilità operativa quotidiana ricade sul team di gestione del cloud, che esula dall'IT. Questo tipo di controllo distribuito è uno dei principali indicatori del livello di maturità di un centro di eccellenza cloud.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Oltre la specializzazione della piattaforma - Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Oltre la specializzazione della piattaforma: Application Insights
 
 Per realizzare operazioni ben definite, è necessario prestare una maggiore attenzione al carico di lavoro in questione. Durante la fase di miglioramento continuo, Application Insights sarà un'aggiunta necessaria per la toolchain della gestione del cloud.
 

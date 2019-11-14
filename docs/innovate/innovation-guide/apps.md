@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058552"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751565"
 ---
 ::: zone target="docs"
 
@@ -43,14 +43,14 @@ Uno dei vantaggi delle soluzioni basate sul cloud consiste nella possibilità di
 
 Il Servizio app di Azure fornisce un ambiente di hosting per le applicazioni che rimuove il carico associato alla gestione dell'infrastruttura e alla distribuzione di patch del sistema operativo. Il servizio offre funzionalità di automazione su larga scala per soddisfare le esigenze degli utenti, rispettando comunque i limiti definiti per tenere sotto controllo i costi.
 
-Il servizio app di Azure offre un supporto eccellente per i linguaggi come ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP e Python. Se è necessario ospitare un altro stack di runtime, il servizio app Web per contenitori consente di ospitare in modo semplice e immediato un contenitore Docker all'interno dell'ambiente del servizio app di Azure, ospitando in questo modo lo stack di codice personalizzato in un ambiente che evita all'organizzazione di occuparsi dei server.
+Il servizio app di Azure offre un supporto eccellente per i linguaggi come ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP e Python. Se è necessario ospitare un altro stack di runtime, il servizio app Web per contenitori consente di ospitare in modo semplice e immediato un contenitore Docker all'interno del servizio app, ospitando in questo modo lo stack di codice personalizzato in un ambiente che evita all'organizzazione di occuparsi dei server.
 
 ### <a name="action"></a>Azione
 
 Per configurare o monitorare le distribuzioni del Servizio app di Azure:
 
 1. Passare a **Servizi app**.
-2. Configurare un nuovo servizio: Selezionare **Aggiungi** e seguire le istruzioni.
+2. Configurare un nuovo servizio: selezionare **Aggiungi** e seguire le istruzioni.
 3. Per gestire i servizi esistenti, selezionare l'app desiderata nell'elenco di applicazioni ospitate.
 
 ::: zone target="chromeless"
