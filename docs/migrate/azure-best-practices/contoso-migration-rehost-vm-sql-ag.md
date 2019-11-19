@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566515"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160336"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Riospitare un'app locale in macchine virtuali di Azure e SQL Server Gruppi di disponibilità Always On
 
@@ -214,7 +214,7 @@ Gli amministratori di Contoso creano un account di archiviazione e come indicato
 
 Prima di configurare il cluster, gli amministratori Contoso creano uno snapshot del disco del sistema operativo in ogni computer.
 
-![snapshot](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Creare uno snapshot](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Esegue quindi uno script definito per creare il cluster di failover di Windows.
 
@@ -439,7 +439,7 @@ Gli amministratori di Contoso eseguono questi passaggi come indicato di seguito:
 8. Contoso accede nuovamente alla macchina. Viene avviata automaticamente la gestione guidata del server di configurazione.
 9. Nella procedura guidata seleziona la scheda NIC per ricevere il traffico di replica. Questa impostazione non può essere modificata dopo che è stata configurata.
 10. Si seleziona la sottoscrizione, il gruppo di risorse e l'insieme di credenziali in cui registrare il server di configurazione.
-        ![vault](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
+        ![selezionare l'insieme di credenziali di servizi di ripristino](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. A questo punto scaricano e installano MySQL Server e VMware PowerCLI.
 12. Dopo la convalida, specifica l'indirizzo IP o il nome di dominio completo dell'host vSphere o del server vCenter. Mantiene la porta predefinita e specifica un nome descrittivo per il server vCenter.

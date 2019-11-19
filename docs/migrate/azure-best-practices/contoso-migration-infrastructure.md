@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751836"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160371"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuire un'infrastruttura di migrazione
 
@@ -299,7 +299,7 @@ Backup di Azure consente di eseguire il backup e il ripristino dei dischi delle 
 - I backup sono coerenti con l'applicazione, garantendo che i dati di cui è stato eseguito il backup siano coerenti a livello di transazione e che le applicazioni avviino il post-ripristino.
 - Backup di Azure supporta l'archiviazione con ridondanza locale per replicare più copie dei dati di backup in un data center, in caso di errore hardware locale.
 - In caso di interruzione a livello di area, Backup di Azure supporta anche l'archiviazione con ridondanza geografica, replicando i dati di backup in un'area associata secondaria.
-- Backup di Azure crittografa i dati in transito usando AES 256. I dati di backup inattivi sono crittografati usando la [crittografia del servizio di archiviazione.](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)
+- Backup di Azure crittografa i dati in transito usando AES 256. I dati di backup inattivi sono crittografati usando la [crittografia del servizio di archiviazione.](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
 
 Contoso userà Azure Backup con archiviazione con ridondanza geografica in tutte le macchine virtuali di produzione per garantire il backup dei dati del carico di lavoro e che i dati possono essere ripristinati rapidamente in caso di interruzione o di altre interruzioni. [Altre informazioni](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 

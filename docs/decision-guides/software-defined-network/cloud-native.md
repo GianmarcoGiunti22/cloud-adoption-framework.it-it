@@ -1,5 +1,5 @@
 ---
-title: 'Software Defined Networking: Gestione nativa del cloud'
+title: 'Software Defined Networking: cloud-nativo'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Discussione dei servizi di rete virtuale nativi del cloud.
 author: rotycenh
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023586"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160199"
 ---
-# <a name="software-defined-networking-cloud-native"></a>Software Defined Networking: Gestione nativa del cloud
+# <a name="software-defined-networking-cloud-native"></a>Software Defined Networking: cloud-nativo
 
 Una rete virtuale nativa del cloud è obbligatoria quando si distribuiscono risorse IaaS, ad esempio macchine virtuali, in una piattaforma cloud. Per l'accesso alle reti virtuali da origini esterne, come il Web, è necessario eseguire esplicitamente il provisioning. Questi tipi di reti virtuali supportano la creazione di subnet, regole di gestione, firewall virtuali e dispositivi per la gestione del traffico.
 
@@ -41,5 +41,5 @@ I problemi aggiuntivi che i team di adozione del cloud devono prendere in consid
 
 Per ulteriori informazioni sulle reti virtuali native del cloud in Azure, vedere:
 
-- [Rete virtuale di Azure: guide alle procedure](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Le reti virtuali di Azure appena create sono cloud native per impostazione predefinita. Usare queste guide per facilitare la pianificazione della progettazione e la distribuzione di reti virtuali.
-- [Limiti delle sottoscrizioni: Rete](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits). Qualsiasi rete virtuale singola e le risorse connesse possono esistere soltanto all'interno di una singola sottoscrizione e operare con i limiti della stessa.
+- [Rete virtuale di Azure: Guide alle procedure](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Le reti virtuali di Azure appena create sono cloud native per impostazione predefinita. Usare queste guide per facilitare la pianificazione della progettazione e la distribuzione di reti virtuali.
+- [Limiti della sottoscrizione: rete](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Qualsiasi rete virtuale singola e le risorse connesse possono esistere soltanto all'interno di una singola sottoscrizione e operare con i limiti della stessa.

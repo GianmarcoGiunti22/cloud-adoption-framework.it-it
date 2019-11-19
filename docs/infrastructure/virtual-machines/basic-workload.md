@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4f00fbb1c494d3eecd32597cf94fe17192ad66ed
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548098"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160445"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Distribuire un carico di lavoro di base in Azure
 
@@ -36,20 +36,20 @@ Indipendentemente dal fatto che il carico di lavoro sia un'applicazione Web o un
 
 ## <a name="basic-web-application-paas"></a>Applicazione Web di base (PaaS)
 
-Per un'applicazione Web di base, selezionare una delle guide introduttive di 5 minuti dalla [documentazione delle app Web](https://docs.microsoft.com/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) e seguire le procedure.
+Per un'applicazione Web di base, selezionare una delle guide introduttive di 5 minuti dalla [documentazione delle app Web](https://docs.microsoft.com/azure/app-service) e seguire le procedure.
 
 > [!NOTE]
 > Alcune delle guide introduttive distribuiscono un gruppo di risorse per impostazione predefinita. In questo caso non è necessario creare un gruppo di risorse in modo esplicito. In caso contrario, distribuire l'applicazione Web nel gruppo di risorse creato in precedenza.
 
-Quando si distribuisce un carico di lavoro semplice, è possibile ottenere altre informazioni sulle procedure consigliate per la distribuzione di un' [applicazione Web di base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) in Azure.
+Quando si distribuisce un carico di lavoro semplice, è possibile ottenere altre informazioni sulle procedure consigliate per la distribuzione di un' [applicazione Web di base](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app) in Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Singola VM Windows o Linux (IaaS)
 
-Per un carico di lavoro semplice che viene eseguito in una VM, il primo passo è distribuire una rete virtuale. Tutte le risorse IaaS (Infrastructure as a Service, infrastruttura distribuita come servizio) in Azure, come le macchine virtuali, i servizi di bilanciamento del carico e i gateway, richiedono una rete virtuale. Per altre informazioni sulle [reti virtuali di Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json), seguire i passaggi per [distribuire una rete virtuale in Azure tramite il portale](https://docs.microsoft.com/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Quando si specificano le impostazioni per la rete virtuale nel portale di Azure, assicurarsi di indicare il nome del gruppo di risorse creato in precedenza.
+Per un carico di lavoro semplice che viene eseguito in una VM, il primo passo è distribuire una rete virtuale. Tutte le risorse IaaS (Infrastructure as a Service, infrastruttura distribuita come servizio) in Azure, come le macchine virtuali, i servizi di bilanciamento del carico e i gateway, richiedono una rete virtuale. Per altre informazioni sulle [reti virtuali di Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), seguire i passaggi per [distribuire una rete virtuale in Azure tramite il portale](https://docs.microsoft.com/azure/virtual-network/quick-create-portal). Quando si specificano le impostazioni per la rete virtuale nel portale di Azure, assicurarsi di indicare il nome del gruppo di risorse creato in precedenza.
 
-Il passo successivo è decidere se distribuire una singola VM Windows o Linux. Per una VM Windows, seguire i passaggi per [distribuire una VM Windows in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Anche in questo caso, quando si specificano le impostazioni per la macchina virtuale nel portale di Azure, indicare il nome del gruppo di risorse creato in precedenza.
+Il passo successivo è decidere se distribuire una singola VM Windows o Linux. Per una VM Windows, seguire i passaggi per [distribuire una VM Windows in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal). Anche in questo caso, quando si specificano le impostazioni per la macchina virtuale nel portale di Azure, indicare il nome del gruppo di risorse creato in precedenza.
 
-Dopo aver seguito i passaggi e aver distribuito la VM, è possibile ottenere informazioni sulle [procedure consigliate per l'esecuzione di una VM Windows in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). Per una macchina virtuale Linux, seguire i passaggi per [distribuire una macchina virtuale Linux in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). È anche possibile ottenere altre informazioni sulle [procedure consigliate per l'esecuzione di una VM Linux in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Dopo aver seguito i passaggi e aver distribuito la VM, è possibile ottenere informazioni sulle [procedure consigliate per l'esecuzione di una VM Windows in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm). Per una macchina virtuale Linux, seguire i passaggi per [distribuire una macchina virtuale Linux in Azure con il portale](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal). È anche possibile ottenere altre informazioni sulle [procedure consigliate per l'esecuzione di una VM Linux in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

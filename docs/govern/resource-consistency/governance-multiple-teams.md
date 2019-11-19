@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656697"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160468"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Progettazione di governance per più team
 
@@ -82,21 +82,22 @@ Pertanto, per creare un modello di accesso con privilegi minimi è necessario de
 Di seguito sono riportati due modelli di autorizzazioni di esempio per comprendere meglio questo concetto. Nel primo esempio il modello considera attendibile solo l'amministratore per creare i gruppi di risorse. Nel secondo esempio il modello assegna il ruolo di proprietario predefinito a ogni proprietario del carico di lavoro nell'ambito della sottoscrizione.
 
 In entrambi gli esempi, è disponibile un amministratore del servizio di sottoscrizione a cui viene assegnato il ruolo proprietario predefinito nell'ambito della sottoscrizione. Tenere presente che il ruolo proprietario predefinito concede tutte le autorizzazioni, inclusa la gestione dell'accesso alle risorse.
+
 ![amministratore del servizio di sottoscrizione con ruolo proprietario](../../_images/govern/design/governance-2-1.png)
 *Figura 3-A una sottoscrizione con un amministratore del servizio è stato assegnato il ruolo proprietario predefinito.*
 
 1. Nel primo esempio è presente il **proprietario del carico di lavoro A** senza autorizzazioni a livello della sottoscrizione, per impostazione predefinita senza diritti di gestione dell'accesso alle risorse. Questo utente vuole distribuire e gestire le risorse per il proprio carico di lavoro. Deve contattare l'**amministratore del servizio** per richiedere la creazione di un gruppo di risorse.
-    ![il proprietario del carico di lavoro richiede la creazione del gruppo di risorse A](../../_images/govern/design/governance-2-2.png)
+    ![proprietario del carico di lavoro richiede la creazione di un gruppo di risorse A](../../_images/govern/design/governance-2-2.png)
 2. L' **amministratore del servizio** esamina la richiesta e crea il **gruppo di risorse A**. A questo punto, **il proprietario del carico di lavoro a** non è ancora autorizzato a eseguire alcuna operazione.
-    ![l'amministratore del servizio crea il gruppo di risorse A](../../_images/govern/design/governance-2-3.png)
+    ![amministratore del servizio crea un gruppo di risorse A](../../_images/govern/design/governance-2-3.png)
 3. L'**amministratore del servizio** aggiunge il **proprietario del carico di lavoro A** al **gruppo di risorse A** e assegna il [ruolo di collaboratore predefinito](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Il ruolo di collaboratore concede tutte le autorizzazioni per il **gruppo di risorse A**, tranne la gestione delle autorizzazioni di accesso.
-    ![l'amministratore del servizio aggiunge il proprietario del carico di lavoro al gruppo di risorse A](../../_images/govern/design/governance-2-4.png)
+    ![amministratore del servizio aggiunge il proprietario del carico di lavoro a al gruppo di risorse a](../../_images/govern/design/governance-2-4.png)
 4. Si supponga che il **proprietario del carico di lavoro A** debba consentire a un paio di componenti del team di visualizzare i dati di monitoraggio della CPU e del traffico di rete nell'ambito della pianificazione delle capacità del carico di lavoro. Poiché il **proprietario del carico di lavoro a** è assegnato al ruolo Collaboratore, non dispone dell'autorizzazione per aggiungere un utente al **gruppo di risorse a**. È necessario che invii questa richiesta all' **amministratore del servizio**.
-    ![il proprietario del carico di lavoro richiede l'aggiunta dei collaboratori del carico di lavoro al gruppo di risorse](../../_images/govern/design/governance-2-5.png)
+    ![proprietario del carico di lavoro richiede l'aggiunta di collaboratori del carico di lavoro al gruppo di risorse](../../_images/govern/design/governance-2-5.png)
 5. L' **amministratore del servizio** esamina la richiesta e aggiunge i due utenti **collaboratore del carico di lavoro** al gruppo di **risorse a**. Nessuno di questi due utenti richiede l'autorizzazione per la gestione delle risorse, pertanto viene assegnato il [ruolo predefinito Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
-    ![l'amministratore del servizio aggiunge i collaboratori del carico di lavoro al gruppo di risorse A](../../_images/govern/design/governance-2-6.png)
+    ![amministratore del servizio aggiunge i collaboratori del carico di lavoro al gruppo di risorse A](../../_images/govern/design/governance-2-6.png)
 6. Successivamente, anche il **proprietario del carico di lavoro B** richiede che un gruppo di risorse contenga le risorse per il proprio carico di lavoro. Come il **proprietario del carico di lavoro A**, il **proprietario del carico di lavoro B** non è inizialmente autorizzato a eseguire azioni a livello di sottoscrizione, quindi deve inviare una richiesta all'**amministratore del servizio**.
-    ![il proprietario del carico di lavoro B richiede la creazione del gruppo di risorse B](../../_images/govern/design/governance-2-7.png)
+    ![proprietario del carico di lavoro B richiede la creazione del gruppo di risorse B](../../_images/govern/design/governance-2-7.png)
 7. L' **amministratore del servizio** esamina la richiesta e crea il **gruppo di risorse B**.  ![amministratore del servizio crea il gruppo di risorse B](../../_images/govern/design/governance-2-8.png)
 8. L' **amministratore del servizio** aggiunge quindi il **proprietario del carico di lavoro b** al **gruppo di risorse b** e assegna il ruolo Collaboratore predefinito.
     ![l'amministratore del servizio aggiunge il proprietario del carico di lavoro B al gruppo di risorse B](../../_images/govern/design/governance-2-9.png)

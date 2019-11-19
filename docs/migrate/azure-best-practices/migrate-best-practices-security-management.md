@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656704"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160046"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Procedure consigliate per proteggere e gestire i carichi di lavoro migrati ad Azure
 
@@ -38,10 +38,10 @@ Dopo la migrazione, l'attività più importante consiste nel proteggere i carich
 
 Microsoft si impegna a garantire che gli amministratori di tenant di Azure abbiano le informazioni necessarie per abilitare funzionalità di sicurezza in grado di proteggere i carichi di lavoro dagli attacchi. Il Centro sicurezza di Azure offre un livello unificato di gestione della sicurezza. Dal Centro sicurezza è possibile applicare i criteri di sicurezza sui carichi di lavoro, limitare l'esposizione alle minacce, rilevare e rispondere agli attacchi. Il Centro sicurezza analizza le risorse e le configurazioni tra i tenant di Azure e offre consigli sulla sicurezza, tra cui:
 
-- **Gestione centralizzata dei criteri**: garantisce la conformità con i requisiti di sicurezza normativi o aziendali tramite la gestione centralizzata dei criteri di sicurezza in tutti i carichi di lavoro cloud ibridi.
-- **Continua valutazione della sicurezza**: monitora il comportamento di sicurezza dei computer, delle reti, dei servizi di archiviazione e dati e delle applicazioni per individuare potenziali problemi di sicurezza.
-- **Consigli operativi**: corregge le vulnerabilità della sicurezza prima che possano essere sfruttate dagli utenti malintenzionati con indicazioni di sicurezza con priorità e operative.
-- **Avvisi ed eventi imprevisti classificati in ordine di priorità**: si concentra per prima cosa sulle minacce principali con avvisi di sicurezza ed eventi imprevisti classificati in ordine di priorità.
+- **Gestione centralizzata dei criteri:** Assicurare la conformità ai requisiti di sicurezza aziendali o normativi gestendo centralmente i criteri di sicurezza in tutti i carichi di lavoro cloud ibridi.
+- **Valutazione della sicurezza continua:** Monitorare il comportamento di sicurezza di computer, reti, servizi di archiviazione e dati e applicazioni per individuare potenziali problemi di sicurezza.
+- **Raccomandazioni di utilità pratica:** Correggere le vulnerabilità di sicurezza prima che possano essere sfruttate da utenti malintenzionati con raccomandazioni di sicurezza con priorità e azioni.
+- **Avvisi ed eventi imprevisti classificati in ordine di priorità:** Concentrarsi innanzitutto sulle minacce più critiche con gli avvisi di sicurezza e gli eventi imprevisti in ordine di priorità.
 
 Oltre a consigli e valutazioni, Centro sicurezza di Azure offre molte altre funzionalità di sicurezza che possono essere abilitate per risorse specifiche.
 
@@ -135,9 +135,8 @@ Azure offre un paio di soluzioni:
   - Protegge contemporaneamente più app Web con un gateway applicazione.
   - Web application firewall può essere monitorato mediante Monitoraggio di Azure ed è integrato in Centro sicurezza di Azure.
 
-![proteggere le app Web](./media/migrate-best-practices-security-management/web-apps.png)
-
-*Insieme di credenziali chiave Azure*
+![Proteggere le app Web](./media/migrate-best-practices-security-management/web-apps.png)
+*Azure Key Vault*
 
 **Altre informazioni**:
 
@@ -175,7 +174,6 @@ Azure Active Directory (Azure AD) offre log attività visualizzati in Monitoragg
 - È consigliabile esaminare periodicamente i log o integrare strumenti di informazioni di sicurezza e gestione degli eventi per verificare automaticamente la presenza di anomalie. Se non si usa Premium 1 o 2, sarà necessario eseguire numerose analisi in autonomia o mediante il sistema di informazioni di sicurezza e gestione degli eventi in uso. L'analisi include la ricerca di accessi ed eventi a rischio e altri modelli di attacco degli utenti.
 
 ![Utenti e gruppi](./media/migrate-best-practices-security-management/azure-ad.png)
-
 *Utenti e gruppi di Azure AD*
 
 **Altre informazioni**:
@@ -214,7 +212,6 @@ L'assegnazione di nomi significativi ai gruppi di risorse che gli amministratori
 - Se si esegue la sincronizzazione di Active Directory locale con Azure AD mediante Azure AD Connect, valutare la possibilità di assegnare ai gruppi di risorse in Azure gli stessi nomi dei gruppi di sicurezza locali.
 
 ![Denominazione](./media/migrate-best-practices-security-management/naming.png)
-
 *Denominazione dei gruppi di risorse*
 
 **Altre informazioni**:
@@ -226,7 +223,6 @@ L'assegnazione di nomi significativi ai gruppi di risorse che gli amministratori
 L'eliminazione accidentale di un gruppo di risorse è tutto fuorché un'esperienza piacevole. Per evitare questa situazione, è consigliabile implementare blocchi di eliminazione.
 
 ![Blocchi di eliminazione](./media/migrate-best-practices-security-management/locks.png)
-
 *Blocchi di eliminazione*
 
 **Altre informazioni**:
@@ -359,7 +355,7 @@ Backup di Azure crea punti di recupero dei dati archiviati in Archiviazione di A
 - **Backup diretto in un insieme di credenziali di Servizi di ripristino:** è possibile eseguire il backup delle macchine virtuali IaaS mediante la distribuzione di un insieme di credenziali di Servizi di ripristino di Backup di Azure. In un'unica posizione è possibile tenere traccia dei backup e gestirli, nonché usufruire di opzioni granulari di backup e ripristino. Il backup viene eseguito fino a tre volte al giorno, a livello di file/cartella. Non è compatibile con le app e Linux non è supportato. Installare l'agente Servizi di ripristino di Microsoft Azure (MARS) in ogni macchina virtuale di cui si intende eseguire il backup con questo metodo.
 - **Proteggere la macchina virtuale nel server di Backup di Azure:** il server di Backup di Azure è disponibile gratuitamente con Backup di Azure. La macchina virtuale viene sottoposta a backup nell'archiviazione del server di Backup di Azure. Il server di Backup di Azure viene quindi sottoposto a backup in Azure all'interno di un insieme di credenziali. La funzionalità di backup è compatibile con le app, con granularità completa su frequenza e conservazione dei backup. È ad esempio possibile eseguire il backup a livello di app, ad esempio di SQL Server o SharePoint.
 
-In termini di sicurezza, Backup di Azure crittografa i dati in transito mediante AES 256 e li invia tramite HTTPS ad Azure. I dati inattivi sottoposti a backup in Azure vengono crittografati mediante [crittografia del servizio di archiviazione](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) e i dati per la trasmissione e l'archiviazione.
+In termini di sicurezza, Backup di Azure crittografa i dati in transito mediante AES 256 e li invia tramite HTTPS ad Azure. I dati inattivi sottoposti a backup in Azure vengono crittografati mediante [crittografia del servizio di archiviazione](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) e i dati per la trasmissione e l'archiviazione.
 
 ![Backup di Azure](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Backup di Azure*
@@ -401,7 +397,6 @@ Azure Site Recovery è il servizio primario di Azure per garantire che le macchi
 Site Recovery replica le macchine virtuali da un'area primaria a un'area secondaria di Azure. In caso di emergenza eseguire il failover delle macchine virtuali dall'area primaria per continuare ad accedervi normalmente nell'area secondaria. Al ripristino delle normali condizioni eseguire nuovamente il failback delle macchine virtuali all'area primaria.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
 **Altre informazioni**:
@@ -419,8 +414,7 @@ I dischi gestiti di Azure semplificano la gestione dei dischi per le macchine vi
 - È possibile convertire dischi esistenti in gestiti.
 - È consigliabile creare macchine virtuali in set di disponibilità per disponibilità e resilienza elevate. Quando si verificano interruzioni pianificate o non pianificate, i set di disponibilità garantiscono la disponibilità continua di almeno una macchina virtuale nel set.
 
-![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
-
+![Dischi gestiti](./media/migrate-best-practices-security-management/managed-disks.png)
 *Dischi gestiti*
 
 **Altre informazioni**:

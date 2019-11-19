@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: acfae57b1073d0205619f81b9caea72b5dc6d57d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752804"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160278"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Proteggi e ripristina in gestione cloud
 
@@ -31,7 +31,7 @@ Come minimo, ogni asset che supporta un determinato carico di lavoro deve avere 
 
 ### <a name="recovery-time-objectives-rto"></a>Obiettivi del tempo di ripristino (RTO)
 
-In caso di emergenza, un obiettivo del tempo di ripristino è la quantità di tempo necessaria per il ripristino di qualsiasi sistema allo stato di pre-emergenza. Per ogni carico di lavoro, che include il tempo necessario per ripristinare le funzionalità minime necessarie per le macchine virtuali e le app. Include inoltre la quantità di tempo necessaria per ripristinare i dati richiesti dalle applicazioni.
+In caso di emergenza, un obiettivo del tempo di ripristino è la quantità di tempo necessario per il ripristino di un sistema allo stato precedente all'emergenza. Per ogni carico di lavoro, che include il tempo necessario per ripristinare le funzionalità minime necessarie per le macchine virtuali e le app. Include inoltre la quantità di tempo necessaria per ripristinare i dati richiesti dalle applicazioni.
 
 In termini di business, RTO rappresenta la quantità di tempo per cui il processo di business sarà fuori servizio. Per i carichi di lavoro cruciali, questa variabile dovrebbe essere relativamente bassa, consentendo ai processi aziendali di riprendersi velocemente. Per i carichi di lavoro con priorità più bassa, un livello standard di RTO potrebbe non avere un notevole effetto sulle prestazioni aziendali.
 

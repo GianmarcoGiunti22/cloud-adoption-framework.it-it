@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752730"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160258"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guida al monitoraggio del cloud: strategia di monitoraggio per i modelli di distribuzione cloud
 
@@ -23,7 +23,7 @@ Questo articolo include la strategia di monitoraggio consigliata per ognuno dei 
 - È necessario mantenere il proprio impegno per Operations Manager o un'altra piattaforma di monitoraggio aziendale, perché è integrata con i processi, le conoscenze e le competenze delle operazioni IT, oppure alcune funzionalità non sono ancora disponibili in monitoraggio di Azure.
 - È necessario monitorare i carichi di lavoro sia in locale che nel cloud pubblico oppure solo nel cloud.
 - La strategia di migrazione cloud include la modernizzazione delle operazioni IT e il passaggio alle soluzioni e ai servizi di monitoraggio cloud.
-- Potrebbero essere presenti sistemi critici, gapped o fisicamente isolati, ospitati in un cloud privato o su hardware fisico. E i sistemi devono essere monitorati.
+- Potrebbero essere presenti sistemi critici che sono gapped o fisicamente isolati oppure sono ospitati in un cloud privato o su hardware fisico e questi sistemi devono essere monitorati.
 
 Questa strategia include il supporto per il monitoraggio dell'infrastruttura (elaborazione, archiviazione e carichi di lavoro del server), applicazione (utente finale, eccezioni e client) e risorse di rete. Offre una prospettiva di monitoraggio completa e orientata ai servizi.
 
@@ -104,7 +104,7 @@ Per raccogliere metriche e log dall'infrastruttura di Azure e dalle risorse dell
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Monitorare con System Center Operations Manager
 
-Sebbene System Center Operations Manager sia stato originariamente progettato come soluzione locale per il monitoraggio di applicazioni, carichi di lavoro e infrastruttura eseguiti nell'ambiente IT, si è evoluto per includere funzionalità di monitoraggio del cloud. Si integra con Azure, Office 365 e Amazon Web Services (AWS). Che può monitorare in questi ambienti diversi con i Management Pack progettati e aggiornati per supportarli.  
+Sebbene System Center Operations Manager sia stato originariamente progettato come soluzione locale per il monitoraggio di applicazioni, carichi di lavoro e componenti dell'infrastruttura in esecuzione nell'ambiente IT, si è evoluto in modo da includere il monitoraggio del cloud funzionalità. Si integra con Azure, Office 365 e Amazon Web Services (AWS). Che può monitorare in questi ambienti diversi con i Management Pack progettati e aggiornati per supportarli.  
 
 Per i clienti che hanno effettuato investimenti significativi in Operations Manager per ottenere un monitoraggio completo strettamente integrato con i loro Gestione dei servizi IT processi e strumenti oppure per i clienti che non hanno familiarità con Azure, è comprensibile chiedere quanto segue domande
 
@@ -132,7 +132,7 @@ Sebbene Operations Manager sia in grado di monitorare le risorse ospitate in Azu
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Svantaggi dell'utilizzo di Operations Manager da solo
 
-- L'analisi dei dati di monitoraggio in Operations Manager viene in genere eseguita utilizzando visualizzazioni predefinite fornite dai Management Pack a cui si accede dalla console di, dai report di SQL Server Reporting Services (SSRS) o da visualizzazioni personalizzate create dagli utenti finali. L'analisi dei dati ad-hoc non è possibile. La creazione di report Operations Manager non è flessibile. Il data warehouse che fornisce la conservazione a lungo termine dei dati di monitoraggio non è scalabile o non funziona correttamente. Sono necessarie competenze per la scrittura di istruzioni T-SQL, lo sviluppo di una soluzione Power BI o l'uso di soluzioni di terze parti per supportare i requisiti per i vari utenti di un'organizzazione IT.
+- L'analisi dei dati di monitoraggio in Operations Manager viene in genere eseguita utilizzando visualizzazioni predefinite fornite dai Management Pack a cui si accede dalla console di, dai report di SQL Server Reporting Services (SSRS) o da visualizzazioni personalizzate create dagli utenti finali. L'analisi ad hoc dei dati non è possibile. La creazione di report Operations Manager non è flessibile. Il data warehouse che fornisce la conservazione a lungo termine dei dati di monitoraggio non è scalabile o non funziona correttamente. Sono necessarie competenze per la scrittura di istruzioni T-SQL, lo sviluppo di una soluzione Power BI o l'uso di soluzioni di terze parti per supportare i requisiti per i vari utenti di un'organizzazione IT.
 
 - Gli avvisi nel Operations Manager non supportano espressioni complesse o includono la logica di correlazione. Per ridurre il rumore, gli avvisi vengono raggruppati per mostrare le relazioni tra di essi e per identificarne le cause.
 
@@ -181,7 +181,7 @@ Anche se una migrazione al cloud presenta numerose esigenze, include anche una s
 
 È anche possibile ottenere il monitoraggio olistico con una combinazione di [funzionalità di monitoraggio dell'infrastruttura](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) incluse in Azure stack. Queste funzionalità consentono di visualizzare lo stato e gli avvisi per un'area Azure Stack e il [servizio monitoraggio di Azure](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) in Azure stack, che fornisce metriche e log dell'infrastruttura di livello base per la maggior parte dei servizi.
 
-Se si è già investito in Operations Manager, usare il Management Pack Azure Stack per monitorare lo stato di disponibilità e integrità delle distribuzioni Azure Stack. Sono incluse le aree, i provider di risorse, gli aggiornamenti, le esecuzioni di aggiornamenti, le unità di scala, i nodi unità, i ruoli infrastruttura e le relative istanze (entità logiche costituite dalle risorse hardware). Usa le API REST del provider di risorse di integrità e aggiornamento per comunicare con Azure Stack. Per monitorare i server fisici e i dispositivi di archiviazione, usare l'Management Pack dei fornitori OEM (ad esempio, fornito da Lenovo, Hewlett Packard o dell). Operations Manager possibile monitorare in modo nativo i commutatori di rete per raccogliere statistiche di base tramite SNMP. Il monitoraggio dei carichi di lavoro del tenant è possibile con il Management Pack di Azure seguendo due passaggi di base. Configurare la sottoscrizione che si desidera monitorare e quindi aggiungere i monitoraggi per tale sottoscrizione.
+Se si è già investito in Operations Manager, usare il Management Pack Azure Stack per monitorare lo stato di disponibilità e integrità delle distribuzioni di Azure Stack, tra cui aree, provider di risorse, aggiornamenti, esecuzioni di aggiornamenti, unità di scala, nodi unità, infrastruttura i ruoli e le relative istanze (entità logiche che includono le risorse hardware). Questo Management Pack Usa le API REST del provider di risorse di integrità e aggiornamento per comunicare con Azure Stack. Per monitorare i server fisici e i dispositivi di archiviazione, usare l'Management Pack dei fornitori OEM (ad esempio, fornito da Lenovo, Hewlett Packard o dell). Operations Manager possibile monitorare in modo nativo i commutatori di rete per raccogliere statistiche di base tramite SNMP. Il monitoraggio dei carichi di lavoro del tenant è possibile con il Management Pack di Azure seguendo due passaggi di base. Configurare la sottoscrizione che si desidera monitorare e quindi aggiungere i monitoraggi per tale sottoscrizione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

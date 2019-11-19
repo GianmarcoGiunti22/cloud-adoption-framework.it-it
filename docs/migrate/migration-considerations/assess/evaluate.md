@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753505"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159881"
 ---
 # <a name="evaluate-workload-readiness"></a>Valutare l'idoneità dei carichi di lavoro
 
@@ -23,7 +23,7 @@ Questa attività è incentrata sulla valutazione dell'idoneità di un carico di 
 
 La maggior parte del contenuto che discute i principi nel Framework di adozione del cloud è indipendente dal cloud. Il processo di valutazione dell'idoneità tuttavia deve essere in gran parte specifico per ogni piattaforma cloud. Le indicazioni seguenti presuppongono l'intenzione di eseguire la migrazione in Azure, nonché l'uso di Azure Migrate (noto anche come Azure Site Recovery) per [le attività di replica](../migrate/replicate.md). Per strumenti alternativi, vedere le [opzioni di replica](../migrate/replicate-options.md).
 
-Questo articolo non ha l'obiettivo di illustrare tutte le attività di valutazione possibili. Si presuppone che per ogni ambiente e risultato di business siano definiti requisiti specifici. Per accelerare la creazione di tali requisiti, la parte restante di questo articolo condivide alcune attività comuni di valutazione dell'[infrastruttura](#common-infrastructure-evaluation-activities), dei [database](#common-database-evaluation-activities) e della [rete ](#common-network-evaluation-activities).
+Questo articolo non acquisisce tutte le attività di valutazione possibili. Si presuppone che per ogni ambiente e risultato di business siano definiti requisiti specifici. Per accelerare la creazione di tali requisiti, la parte restante di questo articolo condivide alcune attività comuni di valutazione dell'[infrastruttura](#common-infrastructure-evaluation-activities), dei [database](#common-database-evaluation-activities) e della [rete ](#common-network-evaluation-activities).
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Attività comuni di valutazione dell'infrastruttura
 

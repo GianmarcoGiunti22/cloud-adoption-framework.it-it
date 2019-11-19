@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564575"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159861"
 ---
 # <a name="decisions-that-affect-migration"></a>Decisioni che influiscono sulla migrazione
 
@@ -80,8 +80,8 @@ Spesso, le migrazioni si basano su un evento aziendale interessante, soggetto a 
 Prima di procedere, documentare i presupposti seguenti e condividerli con i team di strategia cloud e di adozione del cloud:
 
 - Risultati aziendali.
-- Ruoli. Questa operazione verrà documentata e perfezionata per i processi di migrazione relativi a *valutazione*, *migrazione*, *ottimizzazione*, *protezione e gestione*.
-- Definizione di completato. Questa operazione verrà documentata e perfezionata separatamente per i processi di migrazione relativi a *valutazione*, *migrazione*, *ottimizzazione*, *protezione e gestione*.
+- Ruoli, documentati e perfezionati per la *valutazione*, la *migrazione*, l' *ottimizzazione*e la *protezione e la gestione* dei processi di migrazione.
+- Definizione di completato, documentato e raffinato separatamente per i processi di migrazione di *valutazione*, *migrazione*, *ottimizzazione*e *sicurezza e gestione* .
 - Tipo di lavoro richiesto.
 - Portata del lavoro richiesto.
 - Tempistiche del lavoro richiesto.

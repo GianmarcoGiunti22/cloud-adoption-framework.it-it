@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222183"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160111"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivazioni e rischi aziendali della Baseline di identità
 
@@ -24,7 +24,7 @@ Questo articolo illustra i motivi per cui i clienti in genere adottano la discip
 
 ## <a name="identity-baseline-relevancy"></a>Pertinenza della linea di base di identità
 
-Le directory locali tradizionali sono progettate per consentire alle aziende di controllare accuratamente le autorizzazioni e i criteri per gli utenti, i gruppi e i ruoli all'interno delle reti interne e dei datacenter. Questo avviene per supportare le implementazioni di singoli tenant, con servizi applicabili solo all'interno dell'ambiente locale.
+Le directory locali tradizionali sono progettate per consentire alle aziende di controllare accuratamente le autorizzazioni e i criteri per gli utenti, i gruppi e i ruoli all'interno delle reti interne e dei datacenter. Queste directory supportano in genere le implementazioni a tenant singolo, con i servizi applicabili solo all'interno dell'ambiente locale.
 
 I servizi di gestione delle identità cloud espandono le funzionalità di autenticazione e controllo di accesso di un'organizzazione su Internet. Supportano il multitenant e possono essere usati per gestire gli utenti e i criteri di accesso tra le applicazioni e le distribuzioni cloud. Le piattaforme cloud pubbliche includono servizi di identità nativi del cloud che supportano attività di gestione e distribuzione e sono in grado di [variare i livelli di integrazione](../../decision-guides/identity/index.md) con le soluzioni di identità locali esistenti. Tutte queste caratteristiche possono rendere i criteri di identità cloud più complicati di quanto richiesto dalle tradizionali soluzioni locali.
 
@@ -32,7 +32,7 @@ L'importanza della disciplina Baseline di identità per la distribuzione cloud, 
 
 ## <a name="business-risk"></a>Rischio aziendale
 
-La disciplina Baseline di identità cerca di affrontare i rischi aziendali principali relativi ai servizi di gestione delle identità e al controllo di accesso. Collaborare con l'azienda per identificare questi rischi e monitorarne la rilevanza durante la pianificazione e l'implementazione delle distribuzioni cloud.
+La disciplina Baseline di identità cerca di affrontare i rischi aziendali principali relativi ai servizi di gestione delle identità e al controllo di accesso. La disciplina lavora con l'azienda per identificare questi rischi e monitorarne la pertinenza durante la pianificazione e l'implementazione delle distribuzioni cloud.
 
 I rischi si differenziano per l'organizzazione, ma i seguenti sono i rischi comuni correlati all'identità che è possibile usare come punto di partenza per le discussioni all'interno del team di governance del cloud:
 

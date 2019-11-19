@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753765"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160452"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffold Azure enterprise: governance prescrittiva per le sottoscrizioni
 
@@ -40,20 +40,20 @@ Quando si costruisce un edificio, viene usata un'impalcatura (in inglese scaffol
 
 Lo scaffold si basa su procedure raccolte attraverso le varie interazioni con i client di diverse dimensioni. Questi client variano da organizzazioni di piccole dimensioni che sviluppano soluzioni nel cloud a grandi aziende multinazionali e fornitori di software indipendenti che eseguono la migrazione di carichi di lavoro e sviluppano soluzioni native per il cloud. Il patibolo aziendale è "progettato" per essere flessibile per supportare i carichi di lavoro IT tradizionali e i carichi di lavoro agile, ad esempio gli sviluppatori che creano applicazioni SaaS (Software as a Service) basate sulle funzionalità della piattaforma Azure.
 
-Lo scaffold enterprise deve essere la base di ogni nuova sottoscrizione all'interno di Azure. Consente agli amministratori di verificare che i carichi di lavoro soddisfino i requisiti minimi di governance di un'organizzazione senza impedire che i gruppi e gli sviluppatori aziendali soddisfino i propri obiettivi. La nostra esperienza mostra che questo accelera notevolmente, invece di ostacolare, la crescita del cloud pubblico.
+L'impalcatura aziendale può fungere da base per ogni nuova sottoscrizione in Azure. Consente agli amministratori di verificare che i carichi di lavoro soddisfino i requisiti minimi di governance di un'organizzazione senza impedire che i gruppi e gli sviluppatori aziendali soddisfino i propri obiettivi. La nostra esperienza dimostra che questa operazione accelera molto, anziché ostacolare, la crescita del cloud pubblico.
 
 > [!NOTE]
 > Microsoft ha rilasciato in anteprima una nuova funzionalità denominata [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) che consentirà di creare pacchetti, gestire e distribuire immagini, modelli, criteri e script comuni tra le sottoscrizioni e i gruppi di gestione. Questa funzionalità fa da ponte tra lo scopo dello scaffold come modello di riferimento e la distribuzione di tale modello all'organizzazione.
 >
 L'immagine seguente mostra i componenti dello scaffold. Le fondamenta sono rappresentate da un saldo piano per la gerarchia di gestione e le sottoscrizioni. Le colonne sono i criteri di Resource Manager e saldi standard di denominazione. Il resto dello scaffold è rappresentato dalle principali funzionalità di Azure e dalle funzioni che garantiscono e connettono un ambiente protetto e gestibile.
 
-![Scaffold enterprise](../_images/reference/scaffoldv2.png)
+![Impalcature Enterprise](../_images/reference/scaffoldv2.png)
 
 ## <a name="define-your-hierarchy"></a>Definire la gerarchia
 
 Le fondamenta dello scaffold sono rappresentate dalla gerarchia e dalla relazione tra l'iscrizione ad Azure enterprise e le sottoscrizioni e i gruppi di risorse. L'iscrizione enterprise definisce la forma e l'uso dei servizi Azure all'interno di una società da un punto di vista contrattuale. All'interno del Enterprise Agreement è possibile suddividere ulteriormente l'ambiente in reparti, account, sottoscrizioni e gruppi di risorse in base alla struttura dell'organizzazione.
 
-![gerarchia](../_images/reference/agreement.png)
+![Hierarchy](../_images/reference/agreement.png)
 
 Una sottoscrizione Azure è l'unità di base che contiene tutte le risorse. Definisce anche diversi limiti all'interno di Azure, ad esempio il numero di memorie centrali, reti virtuali e altre risorse. I gruppi di risorse vengono usati per perfezionare ulteriormente il modello di sottoscrizione e abilitare un raggruppamento più naturale di risorse.
 
@@ -228,7 +228,7 @@ La raccolta e l'analisi dei dati di telemetria che forniscono informazioni detta
 
 Queste informazioni possono essere visualizzate e gestite a più livelli e vengono continuamente migliorate. Azure offre funzionalità di monitoraggio **condivise**, di **base**e **complete** delle risorse di Azure tramite i servizi descritti nella figura seguente.
 
-![monitoring](../_images/reference/monitoring.png)
+![Monitorare](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Funzionalità condivise
 
@@ -344,4 +344,4 @@ Azure offre sia funzionalità interne che funzionalità di terze parti provenien
 
 La governance è fondamentale per il successo di Azure. In questo articolo è descritta l'implementazione tecnica di uno scaffold enterprise, tuttavia sono illustrati solo il processo più ampio e le relazioni tra i componenti. La governance dei criteri scorre dall'alto verso il basso e dipende dai risultati che l'azienda desidera ottenere. Naturalmente, la creazione di un modello di governance per Azure include rappresentanti dell'IT, ma soprattutto deve prevedere una significativa rappresentanza di leader di gruppo aziendali e gestione di rischi e sicurezza. Fondamentalmente, uno scaffold enterprise consiste nella riduzione dei rischi aziendali per facilitare la missione e gli obiettivi dell'organizzazione.
 
-Ora che sono state acquisite informazioni sulla governance delle sottoscrizioni, è il momento di vedere l'applicazione pratica di questi consigli. Vedere [Examples of implementing Azure subscription governance](./azure-scaffold-examples.md) (Esempi di implementazione della governance delle sottoscrizioni di Azure).
+Ora che sono state acquisite informazioni sulla governance delle sottoscrizioni, è il momento di vedere l'applicazione pratica di questi consigli. Per ulteriori informazioni, vedere le [procedure consigliate per la preparazione di Azure](../ready/azure-best-practices/index.md).

@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565164"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160365"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Criticità aziendale nella gestione cloud
 
-In ogni azienda esiste un numero ridotto di carichi di lavoro troppo importanti per avere esito negativo. Sono considerati cruciali. Quando tali carichi di lavoro riscontrano interruzioni o riduzione delle prestazioni, l'impatto negativo sui ricavi e sulla redditività può essere percepito nell'intera azienda.
+In ogni azienda esiste un numero ridotto di carichi di lavoro troppo importanti per avere esito negativo. Questi carichi di lavoro sono considerati mission-critical. Quando tali carichi di lavoro riscontrano interruzioni o riduzione delle prestazioni, l'impatto negativo sui ricavi e sulla redditività può essere percepito nell'intera azienda.
 
 All'altra estremità dello spettro, alcuni carichi di lavoro possono passare mesi alla volta senza essere usati. Una riduzione delle prestazioni o delle interruzioni per questi carichi di lavoro non è auspicabile, ma l'effetto è isolato e limitato.
 
@@ -34,9 +34,9 @@ Il primo passaggio in qualsiasi sforzo di allineamento della criticità aziendal
 | --------- | --------- |
 | Cruciale |  Influisce sulla missione dell'azienda e potrebbe influire negativamente sulle istruzioni aziendali di profitto e perdita. |
 | Unità-critico | Influiscono sulla missione di una business unit specifica e sulle relative istruzioni di profitto e perdita. |
-| Alto | Potrebbe non ostacolare la missione, ma influisce sui processi di importanza elevata. È possibile quantificare le perdite misurabili in caso di interruzioni. |
-| Medio | L'effetto sui processi è probabilmente. Le perdite sono minime o incommensurabili, ma è probabile che siano presenti danni al marchio o alle perdite upstream. |
-| Basso | Un effetto sui processi aziendali non è misurabile. È probabile che non siano presenti danni al marchio e perdite a Monte. È probabile che l'effetto localizzato su un singolo team. |
+| Alte | Potrebbe non ostacolare la missione, ma influisce sui processi di importanza elevata. È possibile quantificare le perdite misurabili in caso di interruzioni. |
+| Media | L'effetto sui processi è probabilmente. Le perdite sono minime o incommensurabili, ma è probabile che siano presenti danni al marchio o alle perdite upstream. |
+| Basse | Un effetto sui processi aziendali non è misurabile. È probabile che non siano presenti danni al marchio e perdite a Monte. È probabile che l'effetto localizzato su un singolo team. |
 | Non supportato | Nessun proprietario aziendale, team o processo associato a questo carico di lavoro può giustificare eventuali investimenti nella gestione continuativa del carico di lavoro. |
 
 Spesso le aziende possono includere classificazioni di criticità aggiuntive specifiche per i processi aziendali, verticali o specifici del settore. Esempi di classificazioni aggiuntive includono:

@@ -9,20 +9,20 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564306"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160501"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro di eccellenza cloud
 
-L'agilità aziendale e tecnica sono gli obiettivi principali della maggior parte delle organizzazioni IT. Cloud Center of Excellence (CCoE) è una funzione che crea un equilibrio tra la velocità e la stabilità.
+L'agilità aziendale e tecnica sono gli obiettivi principali della maggior parte delle organizzazioni IT. Un centro cloud di eccellenza (CCoE) è una funzione che crea un equilibrio tra la velocità e la stabilità.
 
 ## <a name="function-structure"></a>Struttura Function
 
-CCoE richiede la collaborazione tra le funzionalità seguenti:
+Un modello CCoE richiede la collaborazione tra le funzionalità seguenti:
 
 - Adozione del cloud (in particolare architetti di soluzioni)
 - Strategia cloud (in particolare il programma e i Project Manager)
@@ -132,7 +132,7 @@ Inoltre, è consigliabile che gli stakeholder aziendali siano informati dello st
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Cloud Center of Excellence richiede sia le funzionalità della [piattaforma cloud](./cloud-platform.md) che le [funzionalità di automazione del cloud](./cloud-automation.md). Il passaggio successivo consiste nell'allineare le [funzionalità della piattaforma cloud](./cloud-platform.md).
+Un modello CCoE richiede le funzionalità della [piattaforma cloud](./cloud-platform.md) e di [automazione del cloud](./cloud-automation.md). Il passaggio successivo consiste nell'allineare le [funzionalità della piattaforma cloud](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Allineare le funzionalità della piattaforma cloud](./cloud-platform.md)

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753481"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159905"
 ---
 # <a name="balance-the-portfolio"></a>Bilanciare il portfolio
 
@@ -95,7 +95,7 @@ Per ridurre la complessità, è consigliabile seguire un approccio tradizionale 
   - Se un carico di lavoro non è strategico ma è compatibile con le moderne piattaforme di hosting di applicazioni basate sul cloud, potrebbe essere opportuno eseguire un refactoring secondario all'applicazione per distribuirla come app moderna. Questo può contribuire al risparmio complessivo grazie alla riduzione dei requisiti generali per le licenze IaaS e del sistema operativo della migrazione al cloud.
   - Se un carico di lavoro è un'applicazione di terze parti e i dati del carico di lavoro non sono pianificati per l'uso in un'innovazione downstream, potrebbe essere preferibile lasciare l'opzione di rehosting nel backlog.
 
-Queste domande non dovrebbero corrispondere all'analisi qualitativa completata per ogni carico di lavoro, ma sono destinate a condurre una conversazione che consente di risolvere la complessità di un portfolio sbilanciato.
+Queste domande non devono essere la portata dell'analisi qualitativa completata per ogni carico di lavoro, ma sono utili per condurre una conversazione sull'indirizzamento della complessità di un portfolio sbilanciato.
 
 ## <a name="migrate-process-changes"></a>Modifiche del processo di migrazione
 

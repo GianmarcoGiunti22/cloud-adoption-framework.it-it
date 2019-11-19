@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564029"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160513"
 ---
 # <a name="perimeter-networks"></a>Reti perimetrali
 
@@ -38,7 +38,7 @@ Le reti perimetrali usano le funzionalità e i servizi di Azure seguenti:
 > Le architetture di riferimento di Azure forniscono modelli di esempio che è possibile usare per implementare le proprie reti perimetrali:
 >
 > - [Implementare una rete perimetrale tra Azure e il data center locale](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-> - [Implementare una rete perimetrale tra Azure e Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [Implementare una rete perimetrale tra Azure e Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 I team IT e di sicurezza centrali in genere sono responsabili della definizione dei requisiti per il funzionamento delle reti perimetrali.
 

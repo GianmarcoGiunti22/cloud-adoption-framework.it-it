@@ -1,5 +1,5 @@
 ---
-title: 'Software Defined Networking: Reti perimetrali nel cloud'
+title: 'Software Defined Networking: cloud DMZ'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Questa architettura di rete consente un accesso limitato tra le reti locali e basate sul cloud.
 author: rotycenh
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6b96fbae9c3e31fc4c133ce6a19589324a86dd83
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023593"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160038"
 ---
-# <a name="software-defined-networking-cloud-dmz"></a>Software Defined Networking: Reti perimetrali nel cloud
+# <a name="software-defined-networking-cloud-dmz"></a>Software Defined Networking: cloud DMZ
 
 L'architettura di rete perimetrale nel cloud consente un accesso limitato fra la rete locale e quella basata sul cloud, usando una rete privata virtuale (VPN) per connettere le reti. Anche se un modello di rete perimetrale viene comunemente usato quando si vuole proteggere l'accesso esterno a una rete, l'architettura della rete perimetrale cloud descritta qui è progettata in modo specifico per proteggere l'accesso alla rete locale dalle risorse basate sul cloud e viceversa.
 
@@ -37,10 +37,10 @@ La distribuzione di una rete perimetrale Cloud include i presupposti seguenti:
 
 I team di adozione del cloud devono prendere in considerazione i seguenti problemi quando si esamina l'implementazione di un'architettura di rete virtuale DMZ cloud:
 
-- La connessione di reti locali a reti cloud aumenta la complessità dei requisiti di sicurezza. Anche se le connessioni tra le reti cloud e l'ambiente locale sono protette, è comunque necessario assicurarsi che le risorse cloud siano protette. Tutti gli indirizzi IP pubblici creati per accedere ai carichi di lavoro basati sul cloud devono essere protetti correttamente usando una rete perimetrale [pubblica](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) o un [firewall di Azure](https://docs.microsoft.com/azure/firewall).
+- La connessione di reti locali a reti cloud aumenta la complessità dei requisiti di sicurezza. Anche se le connessioni tra le reti cloud e l'ambiente locale sono protette, è comunque necessario assicurarsi che le risorse cloud siano protette. Tutti gli indirizzi IP pubblici creati per accedere ai carichi di lavoro basati sul cloud devono essere protetti correttamente usando una rete perimetrale [pubblica](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) o un [firewall di Azure](https://docs.microsoft.com/azure/firewall).
 - L'architettura di rete perimetrale nel cloud viene generalmente usata come tappa in attesa che la connettività venga ulteriormente protetta e i criteri di sicurezza tra le reti locale e cloud vengano allineati, consentendo una più ampia adozione di un'architettura di rete ibrida completa. Tuttavia, può anche essere applicato a distribuzioni isolate con esigenze di sicurezza, identità e connettività specifiche che l'approccio alla rete perimetrale cloud soddisfa.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Altre informazioni.
 
 Per ulteriori informazioni sull'implementazione di una rete perimetrale cloud in Azure, vedere:
 

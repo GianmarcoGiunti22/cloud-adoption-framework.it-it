@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240109"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159583"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuire un'area di destinazione della migrazione
 
@@ -65,7 +65,7 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 |Progettazione della sottoscrizione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)|
 |Gruppi di gestione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)         |
 |Gruppi di risorse|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)         |
-|Dati|N/D|[Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Dati|N/D|[Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-options.md)         |
 |Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../azure-best-practices/naming-and-tagging.md)         |
 |Gestione dei costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|

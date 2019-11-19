@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566124"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159850"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,17 +38,17 @@ Prima di definire i trigger per la correzione della conformità dei criteri, è 
 
 ### <a name="assign-cloud-governance-team-members"></a>Assegnare i membri del team di governance del cloud
 
-Il team di governance del cloud fornirà indicazioni continue sulla conformità dei criteri e gestirà i problemi relativi ai criteri che emergono quando si distribuiscono e si gestiscono le risorse cloud. Quando si compila questo team, invitare il personale dell'organizzazione a conoscere le aree coperte dalle istruzioni dei criteri definite e i rischi identificati.
+Il team di governance del cloud fornirà indicazioni continue sulla conformità dei criteri e gestirà i problemi relativi ai criteri che emergono quando si distribuiscono e si gestiscono le risorse cloud. Quando si compila questo team, invitare i membri del personale che hanno esperienza nelle aree coperte dalle istruzioni dei criteri definite e i rischi identificati.
 
-Per le distribuzioni di prova iniziale, questo può essere limitato a pochi amministratori di sistema responsabili della definizione delle nozioni di base della governance. Con la maturità dei processi di governance, esaminare regolarmente l'appartenenza del team di linee guida per assicurarsi che sia possibile risolvere correttamente nuovi rischi potenziali e requisiti dei criteri. È possibile identificare i membri del personale IT e del personale aziendale con esperienza o interesse per aree specifiche di governance e includerli nei team a un livello permanente o ad hoc in base alle esigenze.
+Per le distribuzioni di test iniziali, questo può essere limitato a pochi amministratori di sistema responsabili della definizione delle nozioni di base della governance. Con la maturità dei processi di governance, esaminare regolarmente l'appartenenza del team di linee guida per assicurarsi che sia possibile risolvere correttamente nuovi rischi potenziali e requisiti dei criteri. Identificare i membri del personale IT e del personale aziendale con esperienza o interesse per aree specifiche di governance e includerle nei team su base permanente o temporanea, se necessario.
 
 ### <a name="reviews-and-policy-iteration"></a>Revisioni e iterazione dei criteri
 
 Con la distribuzione di risorse e carichi di lavoro aggiuntivi, il team di governance del cloud dovrà garantire che i nuovi carichi di lavoro o gli asset siano conformi ai requisiti dei criteri. Valutare i nuovi requisiti dei team di sviluppo del carico di lavoro per garantire che le distribuzioni pianificate siano allineate alle guide di progettazione e aggiornare i criteri per supportare tali requisiti quando appropriato.
 
-Pianificare la valutazione di nuovi rischi potenziali e aggiornare le istruzioni di criteri e le guide di progettazione in base alle esigenze. Collaborare con i team IT e del carico di lavoro per valutare regolarmente le nuove funzionalità e i servizi di Azure. Pianificare anche i cicli di revisione regolari ognuno dei cinque disciplinari di governance per garantire che i criteri siano aggiornati e che siano soddisfatti.
+Pianificare la valutazione di nuovi rischi potenziali e aggiornare le istruzioni di criteri e le guide di progettazione in base alle esigenze. Collaborare con i team IT e del carico di lavoro per valutare regolarmente le nuove funzionalità e i servizi di Azure. Pianificare anche i cicli di revisione regolari ognuno dei cinque disciplinari di governance per garantire che i criteri siano correnti e conformi.
 
-### <a name="education"></a>Formazione
+### <a name="education"></a>Istruzione
 
 La conformità ai criteri richiede che il personale e gli sviluppatori IT comprendano i requisiti dei criteri che influiscono sulle proprie aree di responsabilità. Pianificare di riservare risorse per documentare le decisioni e i requisiti e formare tutti i team pertinenti sulle guide di progettazione che supportano i requisiti dei criteri.
 
@@ -79,15 +79,15 @@ Alcuni esempi di trigger di violazione e azioni:
 
 | Disciplina di governance cloud | Trigger di esempio | Azione di esempio |
 |-----------------------------|----------------|---------------|
-| Gestione costi | Spesa mensile per il cloud superiore di oltre il 20% rispetto al previsto. | Inviare una notifica al responsabile dell'unità di fatturazione per avviare una verifica sull'utilizzo delle risorse. |
-| Baseline di sicurezza | Rilevamento attività di accesso utente sospetta. | Avvisare il team di sicurezza IT e disattivare l'account utente sospetto. |
-| Coerenza delle risorse | Utilizzo della CPU per carico di lavoro superiore al 90%. | Informare il team operativo IT e ampliare le risorse aggiuntive per gestire il carico. |
+| Gestione dei costi | Spesa mensile per il cloud superiore di oltre il 20% rispetto al previsto. | Inviare una notifica al responsabile dell'unità di fatturazione che inizierà a esaminare l'utilizzo delle risorse. |
+| Baseline di sicurezza | Rilevare attività utente sospette. | Inviare una notifica al team di sicurezza IT e disabilitare l'account utente sospetto. |
+| Coerenza delle risorse | L'utilizzo della CPU per un carico di lavoro è superiore al 90%. | Inviare una notifica al team operativo IT e ridimensionare le risorse aggiuntive per gestire il carico. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automazione del monitoraggio e della conformità
 
 Dopo aver definito i trigger di violazione di conformità e le azioni, è possibile iniziare a pianificare il modo migliore per usare strumenti di registrazione e reporting e altre funzionalità della piattaforma cloud per automatizzare la strategia di monitoraggio e di conformità dei criteri.
 
-Per indicazioni sulla scelta del modello di monitoraggio migliore per la distribuzione, vedere la [Guida alle decisioni sulla registrazione e la creazione di report](../../decision-guides/logging-and-reporting/index.md) nel Framework di adozione cloud.
+Per informazioni sulla scelta del modello di monitoraggio migliore per la distribuzione, vedere la [Guida alla decisione relativa alla registrazione e alla creazione di report](../../decision-guides/logging-and-reporting/index.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
