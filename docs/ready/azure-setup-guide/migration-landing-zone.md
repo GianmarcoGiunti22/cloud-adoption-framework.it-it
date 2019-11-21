@@ -5,20 +5,20 @@ description: Informazioni su come distribuire una zona di destinazione della mig
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 59b57467eeae47b73fa24ce672d9e7e4f0ed4478
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159583"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251705"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuire un'area di destinazione della migrazione
 
-*Zona di destinazione della migrazione* è un termine usato per indicare un ambiente sottoposto a provisioning e preparato per ospitare carichi di lavoro in fase di migrazione da un ambiente locale ad Azure. Una zona di destinazione della migrazione è il risultato finale della Guida all'installazione di Azure. Questo articolo associa tutti gli argomenti relativi all'idoneità illustrati in questa guida e applica le decisioni alla distribuzione della prima zona di destinazione della migrazione.
+*Zona di destinazione della migrazione* è un termine usato per indicare un ambiente sottoposto a provisioning e preparato per ospitare carichi di lavoro in fase di migrazione da un ambiente locale ad Azure. A migration landing zone is the final deliverable of the Azure setup guide. Questo articolo associa tutti gli argomenti relativi all'idoneità illustrati in questa guida e applica le decisioni alla distribuzione della prima zona di destinazione della migrazione.
 
 Le sezioni seguenti descrivono una zona di destinazione comunemente usata per stabilire un ambiente adatto all'uso durante una migrazione. L'ambiente o la zona di destinazione descritti in questo articolo vengono acquisiti anche in un progetto di Azure. È possibile usare il progetto relativo alla zona di destinazione della migrazione di Cloud Adoption Framework per distribuire l'ambiente definito con un solo clic.
 
@@ -44,10 +44,10 @@ Prima di usare il progetto relativo alla zona di destinazione per la migrazione 
 
 Quando è stata definita questa zona di destinazione iniziale, sono stati usati i presupposti o i vincoli seguenti. Se i presupposti sono allineati ai vincoli, è possibile usare il progetto per creare la prima zona di destinazione. Il progetto può anche essere esteso per creare un progetto relativo alla zona di destinazione che soddisfi vincoli univoci.
 
-- **Limiti della sottoscrizione:** Questa operazione di adozione non prevede il superamento dei [limiti della sottoscrizione](https://docs.microsoft.com/azure/azure-subscription-service-limits). Due indicatori comuni sono il superamento di 25.000 macchine virtuali o 10.000 vCPU.
-- **Conformità:** In questa area di destinazione non sono necessari requisiti di conformità di terze parti.
-- **Complessità dell'architettura:** La complessità dell'architettura non richiede sottoscrizioni di produzione aggiuntive.
-- **Servizi condivisi:** In Azure non sono presenti servizi condivisi esistenti che richiedono che questa sottoscrizione venga trattata come una spoke in un'architettura hub-spoke.
+- **Subscription limits:** This adoption effort isn't expected to exceed [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits). Due indicatori comuni sono il superamento di 25.000 macchine virtuali o 10.000 vCPU.
+- **Compliance:** No third-party compliance requirements are needed in this landing zone.
+- **Architectural complexity:** Architectural complexity doesn't require additional production subscriptions.
+- **Shared services:** There are no existing shared services in Azure that require this subscription to be treated like a spoke in a hub and spoke architecture.
 
 Se questi presupposti sembrano allineati all'ambiente corrente, il progetto potrebbe essere un punto ideale per iniziare a realizzare la zona di destinazione.
 
@@ -65,7 +65,7 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 |Progettazione della sottoscrizione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)|
 |Gruppi di gestione|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)         |
 |Gruppi di risorse|N/D - Progettazione per una singola sottoscrizione di produzione.|[Ridimensionamento delle sottoscrizioni](../azure-best-practices/scaling-subscriptions.md)         |
-|Dati|N/D|[Scegliere l'opzione SQL Server corretta in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) e [informazioni aggiuntive sull'archivio dati di Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Dati|N/D|[Choose the correct SQL Server option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) and [Azure Data Store guidance](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Archiviazione|N/D|[Indicazioni per Archiviazione di Azure](../considerations/storage-options.md)         |
 |Standard di denominazione e assegnazione di tag|N/D|[Procedure consigliate di denominazione e assegnazione di tag](../azure-best-practices/naming-and-tagging.md)         |
 |Gestione dei costi|N/D|[Tracciamento dei costi](../azure-best-practices/track-costs.md)|
@@ -73,9 +73,9 @@ Le decisioni seguenti sono rappresentate nel progetto relativo alla zona di dest
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personalizzare o distribuire una zona di destinazione da questo progetto
 
-Scopri di più e Scarica un esempio di riferimento del Framework di adozione cloud migrazione del progetto di area di destinazione per la distribuzione o la personalizzazione dagli [esempi di progetti di Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
+Learn more and download a reference sample of the Cloud Adoption Framework migrate landing zone blueprint for deployment or customization from [Azure Blueprints samples](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Gli esempi di progetti sono disponibili anche nel portale. Per informazioni dettagliate su come creare un progetto, vedere [progetti di Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Gli esempi di progetti sono disponibili anche nel portale. For details of how to create a blueprint, see [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Per indicazioni sulla personalizzazione da apportare al progetto o alla zona di destinazione risultante, vedere gli articoli di [considerazioni sulla zona di destinazione](../considerations/index.md).
 
