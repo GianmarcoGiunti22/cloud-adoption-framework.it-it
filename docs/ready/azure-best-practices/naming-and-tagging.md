@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: bc568602c283fab5abba1d6ad91197e9f0f9ce8e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9caeca52ba0ab3a909b0f42ac6f016d44033a4ee
+ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564040"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086792"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Pronto: convenzioni di denominazione e assegnazione di tag consigliate
 
@@ -35,7 +35,7 @@ I nomi delle risorse possono essere difficili da modificare. Deve essere quindi 
 
 La strategia di applicazione di tag e di denominazione include dettagli aziendali e operativi come componenti di nomi delle risorse e di tag di metadati:
 
-- L'aspetto di questa strategia relativo all'azienda deve garantire che i tag e i nomi delle risorse includano le informazioni aziendali necessarie per identificare i team. Usare una risorsa insieme ai proprietari aziendali responsabili dei costi delle risorse.
+- L'aspetto di questa strategia relativo all'azienda deve garantire che i tag e i nomi delle risorse includano le informazioni aziendali necessarie per identificare i team. Usare una risorsa assieme ai proprietari aziendali responsabili dei costi delle risorse.
 - L'aspetto operativo garantisce che i nomi e i tag includano le informazioni usate dai team IT per identificare il carico di lavoro, l'applicazione, l'ambiente, la criticità e altre informazioni utili per la gestione delle risorse.
 
 ### <a name="resource-naming"></a>Denominazione delle risorse
@@ -52,7 +52,7 @@ Ad esempio, una rete virtuale ha un ambito di gruppo di risorse, il che signific
 
 Alcuni nomi di risorse, ad esempio i servizi PaaS con endpoint pubblici o etichette DNS di macchine virtuali, hanno ambiti globali, il che significa che devono essere univoci nell'intera piattaforma Azure.
 
-I nomi delle risorse hanno limiti di lunghezza. Quando si sviluppano le convenzioni di denominazione, è importante trovare un punto di equilibrio tra il contesto incorporato in un nome e i relativi ambito e lunghezza. Per altre informazioni sulle regole di denominazione relative ai caratteri consentiti, agli ambiti e alle lunghezze dei nomi per i tipi di risorse, vedere [Convenzioni di denominazione per le risorse di Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
+I nomi delle risorse hanno limiti di lunghezza. Quando si sviluppano le convenzioni di denominazione, è importante trovare un punto di equilibrio tra il contesto incorporato in un nome e i relativi ambito e lunghezza. Per altre informazioni sulle regole di denominazione relative ai caratteri consentiti, agli ambiti e alle lunghezze dei nomi per i tipi di risorse, vedere [Convenzioni di denominazione per le risorse di Azure](/azure/architecture/best-practices/resource-naming).
 
 #### <a name="recommended-naming-components"></a>Componenti di denominazione consigliati
 
@@ -60,13 +60,13 @@ Quando si definisce la convenzione di denominazione, identificare le informazion
 
 Fare in modo che i componenti di denominazione siano brevi per evitare di superare i limiti di lunghezza dei nomi delle risorse.
 
-| Componente di denominazione | Descrizione | Esempi |
+| Componente di denominazione | DESCRIZIONE | esempi |
 | --- | --- | --- |
 | Business unit | Divisione di livello principale della società che possiede la sottoscrizione o carico di lavoro a cui appartiene la risorsa. Nelle organizzazioni più piccole questo componente potrebbe rappresentare un singolo elemento organizzativo di livello principale dell'azienda. | *fin*, *mktg*, *product*, *it*, *corp* |
 | Tipo di sottoscrizione | Descrizione riepilogativa dello scopo della sottoscrizione che contiene la risorsa. Spesso suddivisa in base al tipo di ambiente di distribuzione o a carichi di lavoro specifici. | *prod,* s*hared, client* |
 | Nome di applicazione o di servizio | Nome dell'applicazione, del carico di lavoro o del servizio di cui fa parte la risorsa. | *navigator*, *emissions*, *sharepoint*, *hadoop* |
 | Ambiente di distribuzione | Fase del ciclo di vita di sviluppo per il carico di lavoro supportato dalla risorsa. | *prod, dev, qa, stage, test* |
-| Region | Area di Azure in cui è distribuita la risorsa. | *westus, eastus2, westeurope, usgovia* |
+| Area | Area di Azure in cui è distribuita la risorsa. | *westus, eastus2, westeurope, usgovia* |
 
 #### <a name="recommended-resource-type-prefixes"></a>Prefissi di tipo di risorsa consigliati
 
@@ -88,14 +88,14 @@ L'elenco seguente fornisce i prefissi dei tipi di risorse di Azure consigliati d
 | IP pubblico                           | pip-                 |
 | Servizio di bilanciamento del carico di Azure                 | lb-                  |
 | NIC                                 | nic-                 |
-| Azure Key Vault                     | KV                  |
+| insieme di credenziali chiave                     | KV                  |
 | Servizio Azure Kubernetes            | AKS                 |
 | Bus di servizio di Azure                   | sb-                  |
 | Code del bus di servizio di Azure            | sbq-                 |
 | App del Servizio app di Azure              | azapp-               |
 | App di Funzioni di Azure                | azfun-               |
 | Servizi cloud di Azure                | azcs-                |
-| Database SQL di Azure                  | sqldb-               |
+| database SQL di Azure                  | sqldb-               |
 | Azure Cosmos DB (noto precedentemente come Azure DocumentDB) | cosdb-               |
 | Cache Redis di Azure               | redis-               |
 | Database di Azure per MySQL            | mysql-               |
@@ -113,7 +113,7 @@ L'elenco seguente fornisce i prefissi dei tipi di risorse di Azure consigliati d
 | Azure HDInsight - R Server          | hdir-                |
 | Azure HDInsight - HBase             | hdihb-               |
 | Power BI Embedded                   | pbiemb               |
-| Analisi di flusso di Azure              | asa-                 |
+| Azure Stream Analytics              | asa-                 |
 | Data factory di Azure                  | df-                  |
 | Hub eventi di Azure                    | evh-                 |
 | Hub IoT Azure                       | aih-                 |
@@ -126,7 +126,7 @@ Quando si applicano tag di metadati alle risorse cloud, è possibile includere i
 
 La scelta dei tag da applicare alle risorse e dei tag obbligatori o facoltativi varia tra le organizzazioni. L'elenco seguente riporta alcuni esempi di tag comuni che includono contesto e informazioni importanti su una risorsa. Usare questo elenco come punto di partenza per definire le proprie convenzioni di assegnazione dei tag.
 
-| Nome del tag                  | Descrizione                                                                                                                                                                                                    | Chiave               | Valore di esempio                                   |
+| Nome del tag                  | DESCRIZIONE                                                                                                                                                                                                    | Chiave               | Valore di esempio                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
 | Nome dell'applicazione          | Nome dell'applicazione, del servizio o del carico di lavoro a cui è associata la risorsa.                                                                                                                                 | *ApplicationName* | *{app name}*                                    |
 | Nome del responsabile approvazione             | Persona responsabile dell'approvazione dei costi correlati a questa risorsa.                                                                                                                                               | *Approver*        | *{email}*                                       |
@@ -149,32 +149,32 @@ La sezione seguente fornisce esempi di schemi di denominazione per tipi di risor
 
 ### <a name="subscriptions"></a>Sottoscrizioni
 
-| Tipo di asset   | Scope                        | Format                                             | Esempi                                     |
+| Tipo di asset   | Ambito                        | Format                                             | esempi                                     |
 |--------------|------------------------------|----------------------------------------------------|----------------------------------------------|
 | Sottoscrizione | Contratto Enterprise/account | \<Business unit\>-\<Tipo di sottoscrizione\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
 
 ### <a name="resource-groups"></a>Gruppi di risorse
 
-| Tipo di asset     | Scope        | Format                                                     | Esempi                                                                            |
+| Tipo di asset     | Ambito        | Format                                                     | esempi                                                                            |
 |----------------|--------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Resource group | Sottoscrizione | RG-\<app o nome servizio\>-\<tipo di sottoscrizione\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 
 ### <a name="virtual-networking"></a>Reti virtuali
 
-| Tipo di asset               | Scope           | Format                                                                | Esempi                                                                                              |
+| Tipo di asset               | Ambito           | Format                                                                | esempi                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Rete virtuale di Azure          | Resource group  | vnet-\<Tipo di sottoscrizione\>-\<Area\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| Gateway virtuale di rete virtuale     | Rete virtuale | vnet-gw-v-\<Tipo di sottoscrizione\>-\<Area\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
+| Gateway virtuale di rete virtuale     | rete virtuale | vnet-gw-v-\<Tipo di sottoscrizione\>-\<Area\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
 | Gateway locale di rete virtuale       | Gateway virtuale | vnet-gw-l-\<Tipo di sottoscrizione\>-\<Area\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
 | Connessioni da sito a sito | Resource group  | cn-\<nome gateway locale\>-to-\<nome gateway virtuale\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Connessioni di rete virtuale         | Resource group  | cn-\<sottoscrizione1\>\<area1\>-to-\<sottoscrizione2\>\<area2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                     |
-| Subnet                   | Rete virtuale | snet-\<sottoscrizione\>-\<area secondaria\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
+| Subnet                   | rete virtuale | snet-\<sottoscrizione\>-\<area secondaria\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
 | Gruppo di sicurezza di rete   | Subnet o scheda di interfaccia di rete   | nsg-\<nome criterio o nome app\>-\<\#\#\#\>                             | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>                                  |
 | IP pubblico                | Resource group  | pip-\<nome macchina virtuale o nome app\>-\<Ambiente\>-\<area secondaria\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                                 |
 
 ### <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
 
-| Tipo di asset         | Scope          | Format                                                              | Esempi                                                                             |
+| Tipo di asset         | Ambito          | Format                                                              | esempi                                                                             |
 |--------------------|----------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | Macchine virtuali di Azure    | Resource group | vm\<nome criterio o nome app\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
 | Account di archiviazione di macchine virtuali | Globale         | stvm\<tipo di prestazioni\>\<nome app o nome prodotto\>\<area\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
@@ -184,33 +184,33 @@ La sezione seguente fornisce esempi di schemi di denominazione per tipi di risor
 
 ### <a name="paas-services"></a>Servizi PaaS
 
-| Tipo di asset     | Scope  | Format                                                              | Esempi                                                                                 |
+| Tipo di asset     | Ambito  | Format                                                              | esempi                                                                                 |
 |----------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Servizio app di Azure    | Globale | azapp-\<Nome app\>-\<Ambiente\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>azapp-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| servizio app di Azure    | Globale | azapp-\<Nome app\>-\<Ambiente\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>azapp-accountlookup-dev-001.azurewebsites.net</li></ul> |
 | App Funzioni di Azure   | Globale | azfun-\<Nome app\>-\<Ambiente\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>azfun-accountlookup-dev-001.azurewebsites.net</li></ul> |
 | Servizi cloud di Azure | Globale | azcs-\<Nome app\>-\<Ambiente\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>azcs-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Bus di servizio di Azure
 
-| Tipo di asset         | Scope       | Format                                                     | Esempi                           |
+| Tipo di asset         | Ambito       | Format                                                     | esempi                           |
 |--------------------|-------------|------------------------------------------------------------|------------------------------------|
 | Bus di servizio di Azure        | Globale      | sb-\<Nome app\>-\<Ambiente\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Code del bus di servizio di Azure | BUS DI SERVIZIO | sbq-\<descrittore query\>                                   | <ul><li>sbq-messagequery</li></ul>                   |
 
 ### <a name="databases"></a>Database
 
-| Tipo di asset                          | Scope              | Format                                | Esempi                                       |
+| Tipo di asset                          | Ambito              | Format                                | esempi                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
-| Database SQL di Azure                  | Globale             | sqldb-\<Nome app\>-\<Ambiente\>    | <ul><li>sqldb-navigator-prod </li><li>sqldb-emissions-dev</li></ul>       |
+| database SQL di Azure                  | Globale             | sqldb-\<Nome app\>-\<Ambiente\>    | <ul><li>sqldb-navigator-prod </li><li>sqldb-emissions-dev</li></ul>       |
 | Azure Cosmos DB (noto precedentemente come DocumentDB) | Globale             | cosdb-\<Nome app\>-\<Ambiente\>    | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
 | Cache Redis di Azure               | Globale             | redis-\<Nome app\>-\<Ambiente\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Database di Azure per MySQL            | Globale             | mysql-\<Nome app\>-\<Ambiente\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
 | Azure SQL Data Warehouse                  | Globale             | sqldw-\<Nome app\>-\<Ambiente\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
-| SQL Server Stretch Database         | Database SQL di Azure | sqlstrdb-\<Nome app\>-\<Ambiente\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
+| SQL Server Stretch Database         | database SQL di Azure | sqlstrdb-\<Nome app\>-\<Ambiente\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
 ### <a name="storage"></a>Archiviazione
 
-| Tipo di asset                              | Scope  | Format                                                                        | Esempi                                   |
+| Tipo di asset                              | Ambito  | Format                                                                        | esempi                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
 | Account di archiviazione di Azure - Uso generale     | Globale | st\<nome spazio di archiviazione\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
 | Account di archiviazione di Azure - Log di diagnostica. | Globale | stdiag\<prime 2 lettere del nome di sottoscrizione e numero\>\<area\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
@@ -218,15 +218,15 @@ La sezione seguente fornisce esempi di schemi di denominazione per tipi di risor
 
 ### <a name="ai--machine-learning"></a>Intelligenza artificiale e Machine Learning
 
-| Tipo di asset                       | Scope          | Format                            | Esempi                               |
+| Tipo di asset                       | Ambito          | Format                            | esempi                               |
 |----------------------------------|----------------|-----------------------------------|----------------------------------------|
 | Ricerca di Azure                     | Globale         | srch-\<Nome app\>-\<Ambiente\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
 | Servizi cognitivi di Azure               | Resource group | cs-\<Nome app\>-\<Ambiente\>   | <ul><li>cs-navigator-prod </li><li>cs-emissions-dev</li></ul>     |
 | Area di lavoro di Azure Machine Learning | Resource group | aml-\<Nome app\>-\<Ambiente\>  | <ul><li>aml-navigator-prod </li><li>aml-emissions-dev</li></ul>   |
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analisi
 
-| Tipo di asset                | Scope  | Format                             | Esempi                                 |
+| Tipo di asset                | Ambito  | Format                             | esempi                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
 | Data factory di Azure        | Globale | df-\<Nome app\>\<Ambiente\>     | <ul><li>df-navigator-prod </li><li>df-emissions-dev</li></ul>       |
 | Archiviazione di Azure Data Lake   | Globale | dls\<Nome app\>\<Ambiente\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
@@ -237,9 +237,9 @@ La sezione seguente fornisce esempi di schemi di denominazione per tipi di risor
 | Azure HDInsight - HBase         | Globale | hdihb-\<Nome app\>-\<Ambiente\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
 | Power BI Embedded         | Globale | pbiemb\<Nome app\>\<Ambiente\>  | <ul><li>pbiem-navigator-prod </li><li>pbiem-emissions-dev</li></ul> |
 
-### <a name="internet-of-things-iot"></a>Internet delle cose (IoT)
+### <a name="internet-of-things-iot"></a>Internet delle cose
 
-| Tipo di asset                         | Scope          | Format                             | Esempi                                 |
+| Tipo di asset                         | Ambito          | Format                             | esempi                                 |
 |------------------------------------|----------------|------------------------------------|------------------------------------------|
 | Analisi di flusso di Azure in IoT Edge | Resource group | asa-\<Nome app\>-\<Ambiente\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
 | Hub IoT Azure                      | Globale         | aih-\<Nome app\>-\<Ambiente\>   | <ul><li>aih-navigator-prod </li><li>aih-emissions-dev</li></ul>     |
