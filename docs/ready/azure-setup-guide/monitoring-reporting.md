@@ -5,17 +5,17 @@ description: Informazioni su come configurare il monitoraggio, la creazione di r
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548872"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251356"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitoraggio e creazione di report in Azure
 
@@ -98,12 +98,13 @@ Per altre informazioni, vedere [Documentazione di Integrità dei servizi di Azur
 
 # <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
-Azure Advisor è un consulente cloud personalizzato che semplifica l'applicazione e l'implementazione delle procedure consigliate per le distribuzioni di Azure. Analizza la configurazione delle risorse e i dati di telemetria sull'utilizzo e consiglia soluzioni utili per ottimizzare l'ambiente. I consigli sono suddivisi in quattro categorie.
+Azure Advisor è un consulente cloud personalizzato che semplifica l'applicazione e l'implementazione delle procedure consigliate per le distribuzioni di Azure. Analizza la configurazione delle risorse e i dati di telemetria sull'utilizzo e consiglia soluzioni utili per ottimizzare l'ambiente. Le raccomandazioni sono suddivise nelle categorie seguenti:
 
 - **Disponibilità elevata:** per migliorare la continuità delle applicazioni cruciali per l'azienda. Le raccomandazioni possono includere l'aggiunta di macchine virtuali a un set di disponibilità o l'aggiunta di endpoint con ridondanza geografica.
 - **Sicurezza:** per rilevare le minacce e le vulnerabilità che potrebbero portare a potenziali violazioni della sicurezza. Le raccomandazioni possono includere l'applicazione della crittografia dei dischi o l'abilitazione di gruppi di sicurezza di rete.
 - **Prestazioni:** per aumentare la velocità delle applicazioni. Le raccomandazioni possono includere il potenziamento delle prestazioni delle query SQL attraverso la creazione di indici o la riconfigurazione delle impostazioni di gestione del traffico.
 - **Costo:** per ottimizzare e ridurre la spesa complessiva di Azure. Le raccomandazioni possono includere il ridimensionamento o l'arresto delle macchine virtuali sottoutilizzate oppure il passaggio a prenotazioni di Azure per ridurre il costo totale di proprietà.
+- **Eccellenza operativa:** per migliorare l'efficienza e la gestibilità di processi e flussi di lavoro. Le raccomandazioni possono includere la configurazione e l'applicazione di regole di Criteri di Azure, la correzione di regole di avviso dei log non valide e la configurazione degli avvisi di integrità dei servizi di Azure.
 
 Le raccomandazioni in Advisor sono basate sulle risorse distribuite e sulle azioni intraprese in Azure. È possibile controllare regolarmente Advisor per ottenere le raccomandazioni più recenti.
 

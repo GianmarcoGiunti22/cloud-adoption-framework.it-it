@@ -5,17 +5,17 @@ description: Eseguire la migrazione delle risorse
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753571"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251827"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Eseguire la migrazione delle risorse (infrastruttura, app e dati)
 
@@ -265,7 +265,7 @@ Questi non sono gli unici strumenti disponibili. Nella community di gestione dei
 
 Quando si esegue la migrazione nelle tecnologie cloud, si presenta una grande opportunità per la configurazione di DevOps e CI/CD nell'organizzazione. Anche se l'organizzazione gestisce solo l'infrastruttura, quando si inizia a gestire quest'ultima come codice usando i modelli e le procedure di settore per DevOps, è possibile iniziare ad aumentare l'agilità attraverso le pipeline CI/CD consentendo quindi l'adattamento a modifica, crescita, rilascio e persino a scenari di ripristino più rapidi.
 
-[Azure DevOps](https://dev.azure.com) offre tutte le funzionalità necessarie e l'integrazione con Azure, in locale o persino in altri cloud. Per altre informazioni, [vedere](https://azure.microsoft.com/services/devops). Per un training guidato, vedere [CI and CD with Azure DevOps - Quickstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html) (Avvio rapido: CI e CD con Azure DevOps).
+Azure DevOps offre tutte le funzionalità necessarie e l'integrazione con Azure, in ambienti locali o anche in altri cloud. Per altre informazioni, vedere [Azure DevOps](https://azure.microsoft.com/services/devops). Per un training guidato, vedere [CI e CD con Azure DevOps - Avvio rapido](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 # <a name="cost-managementtabmanagecost"></a>[Gestione costi](#tab/ManageCost)
 

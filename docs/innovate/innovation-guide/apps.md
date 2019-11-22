@@ -5,17 +5,17 @@ description: Informazioni su come usare Azure per promuovere l'innovazione coinv
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 09d5828e7b90a7530158b7f031e4f6f25d4b1d96
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751565"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251928"
 ---
 ::: zone target="docs"
 
@@ -262,7 +262,7 @@ Per la modernizzazione del portfolio di applicazioni, Azure offre diversi serviz
 
 ### <a name="azure-container-instances"></a>Istanze di Azure Container
 
-È possibile eseguire contenitori Docker su richiesta in un ambiente di Azure gestito e serverless. Istanze di Azure Container è una soluzione adatta a qualsiasi scenario e funziona anche in contenitori isolati senza orchestrazione. Eseguendo i carichi di lavoro in Istanze di Azure Container, è possibile concentrarsi sulla progettazione e sulla creazione di applicazioni invece di gestire l'infrastruttura che le esegue.
+È possibile eseguire contenitori Docker su richiesta in un ambiente di Azure gestito e serverless. Istanze di Azure Container è una soluzione adatta a qualsiasi scenario e funziona anche in contenitori isolati senza orchestrazione. Eseguendo i carichi di lavoro in Istanze di Container, è possibile concentrarsi sulla progettazione e sulla creazione di applicazioni invece di gestire l'infrastruttura che le esegue.
 
 ### <a name="action"></a>Azione
 
