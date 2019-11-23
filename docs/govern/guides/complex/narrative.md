@@ -1,5 +1,5 @@
 ---
-title: 'Guida alla governance per le aziende complesse: Descrizione del supporto'
+title: 'Guida alla governance per le aziende complesse: Descrizione di supporto'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Questa descrizione stabilisce un caso d'uso per la governance durante un percorso di adozione del cloud di un'azienda complessa.
 author: BrianBlanchard
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/04/2019
 ms.locfileid: "71967664"
 ---
-# <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guida alla governance per le aziende complesse: Descrizione del supporto
+# <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guida alla governance per le aziende complesse: Descrizione di supporto
 
 La descrizione seguente stabilisce un caso d'uso per la [governance durante il percorso di adozione cloud di un'azienda complessa](./index.md). Prima di agire sulle raccomandazioni nella Guida, è importante comprendere i presupposti e i ragionamenti che si riflettono in questa descrizione. È quindi possibile allineare meglio la strategia di governance al percorso di adozione del cloud dell'organizzazione.
 
@@ -58,7 +58,7 @@ Sono previste le modifiche seguenti per gli anni successivi:
 - CIO vuole usare la migrazione cloud come funzione di forzatura per migliorare la coerenza e la stabilità tra le business unit e le aree geografiche. Tuttavia, lo stato futuro deve rispettare i requisiti di conformità esterni che richiederebbero una deviazione dagli approcci standard da parte di specifici team IT.
 - Se gli esperimenti iniziali dei team di sviluppo applicazioni e di business intelligence mostreranno indicatori di successo, ognuno dei due team intende rilasciare nel cloud soluzioni di produzione su scala ridotta nei prossimi 24 mesi.
 - Il CIO e il CFO hanno incaricato un architetto e il Vicepresidente Infrastrutture di creare un'analisi dei costi e uno studio di fattibilità. Queste iniziative consentiranno di determinare se l'azienda può e dovrebbe spostare 5.000 asset nel cloud nei 36 mesi successivi. Una migrazione corretta consentirebbe al CIO di eliminare due data center, riducendo i costi di oltre 100 milioni di dollari nel corso del piano quinquennale. Se tre o quattro data center possono ottenere risultati simili, il budget sarà di nuovo in attivo e il CIO disporrà di risorse per finanziare iniziative più innovative.
-    costi ![On-locali rispetto ai costi di Azure che dimostrano un ritorno di $100M USD nei prossimi cinque anni @ no__t-1
+    ![costi locali rispetto ai costi di Azure che dimostrano un ritorno di $100M USD nei prossimi cinque anni](../../../_images/govern/calculator-enterprise.png)
 - Oltre a questo risparmio sui costi, la società prevede di modificare la gestione di alcuni investimenti IT riposizionando le spese di capitale vincolate come una spesa operativa al suo interno. Questa modifica consentirà un maggiore controllo dei costi, che permetterà al reparto IT di accelerare altri progetti pianificati.
 
 ## <a name="next-steps"></a>Passaggi successivi

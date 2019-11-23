@@ -88,7 +88,7 @@ L'elenco seguente fornisce i prefissi dei tipi di risorse di Azure consigliati d
 | IP pubblico                           | pip-                 |
 | Servizio di bilanciamento del carico di Azure                 | lb-                  |
 | NIC                                 | nic-                 |
-| insieme di credenziali chiave                     | KV                  |
+| Azure Key Vault                     | KV                  |
 | Servizio Azure Kubernetes            | AKS                 |
 | Bus di servizio di Azure                   | sb-                  |
 | Code del bus di servizio di Azure            | sbq-                 |

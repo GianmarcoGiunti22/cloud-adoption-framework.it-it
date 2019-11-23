@@ -60,7 +60,7 @@ La tabella seguente illustra i requisiti di alcuni scenari di uso comune e i ser
 | È necessario l'accesso ai dati con bassa latenza costante e velocità effettiva elevata per supportare applicazioni scalabili e veloci. | [Cache Redis di Azure](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
 | È necessario un database relazionale MariaDB completamente gestito e scalabile con disponibilità elevata e sicurezza integrate senza costi aggiuntivi. | [Database di Azure per MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |
 
-## <a name="regional-availability"></a>Disponibilità a livello di area
+## <a name="regional-availability"></a>Disponibilità internazionale
 
 Azure consente di offrire servizi con la scalabilità necessaria per raggiungere clienti e partner,  _ovunque si trovino_. Un fattore chiave nella pianificazione della distribuzione cloud consiste nel determinare l'area di Azure che ospiterà le risorse dei carichi di lavoro.
 

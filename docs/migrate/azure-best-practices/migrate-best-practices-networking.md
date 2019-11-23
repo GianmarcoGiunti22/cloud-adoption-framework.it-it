@@ -20,7 +20,7 @@ ms.locfileid: "73753622"
 Durante la pianificazione e la progettazione per la migrazione, oltre alla migrazione stessa, uno degli aspetti più importanti è la progettazione e l'implementazione della rete di Azure. Questo articolo descrive le procedure consigliate per la rete durante la migrazione alle implementazioni IaaS e PaaS in Azure.
 
 > [!IMPORTANT]
-> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità mutano nel tempo. È possibile che non tutti i consigli siano applicabili alla distribuzione in uso. È pertanto necessario scegliere quelli che meglio si adattano alle proprie esigenze.
+> Le procedure consigliate e le opinioni descritte in questo articolo si basano sulle funzionalità dei servizi e della piattaforma di Azure disponibili al momento della redazione di questo documento. Caratteristiche e funzionalità variano nel tempo. È possibile che non tutti i consigli siano applicabili alla distribuzione in uso. È pertanto necessario scegliere quelli che meglio si adattano alle proprie esigenze.
 
 ## <a name="design-virtual-networks"></a>Progettare reti virtuali
 
@@ -46,7 +46,7 @@ Quando si creano le reti virtuali come parte della migrazione, è importante pia
 - NAT (Network Address Translation) non deve essere usato.
 - La sovrapposizione degli indirizzi può impedire la connessione delle reti e il corretto funzionamento del routing. Se le reti si sovrappongono, è necessario riprogettare la rete o usare Network Address Translation (NAT).
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Ottenere una panoramica](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) delle reti virtuali di Azure.
 - [Leggere](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) le domande frequenti sulla rete.
@@ -70,7 +70,7 @@ Valutare gli aspetti seguenti:
 ![Gestione del cambiamento](./media/migrate-best-practices-networking/hub-spoke.png)
 *Topologia hub-spoke*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni su](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) una topologia hub-spoke.
 - Ottenere raccomandazioni sulla rete per l'esecuzione di macchine virtuali [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) e [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) di Azure.
@@ -97,7 +97,7 @@ DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | VM front-end/di livello Web
 DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | VM livello app
 DEV-DB-EUS2 | 10.245.24.0/23 | 507 | VM database
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni sulla](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) progettazione delle subnet.
 - [Informazioni su come](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) una società fittizia (Contoso) ha preparato l'infrastruttura di rete per la migrazione.
@@ -117,7 +117,7 @@ Per impostazione predefinita, Azure aggiunge un server DNS quando si distribuisc
 
     ![Server DNS](./media/migrate-best-practices-networking/dns2.png) *Server DNS per una rete virtuale*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni sulla](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) risoluzione dei nomi quando si usa un proprio server DNS.
 - [Informazioni su](../../ready/azure-best-practices/naming-and-tagging.md) regole di denominazione e restrizioni per il DNS.
@@ -141,7 +141,7 @@ Le zone di disponibilità aumentano la disponibilità elevata per proteggere le 
 
     ![Servizio di bilanciamento del carico](./media/migrate-best-practices-networking/load-balancer.png) *Servizio di bilanciamento del carico*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Ottenere una panoramica](https://docs.microsoft.com/azure/availability-zones/az-overview) delle zone di disponibilità.
 
@@ -152,7 +152,7 @@ Per una corretta migrazione, è fondamentale connettere le reti aziendali locali
 - **VPN da sito a sito:** Viene stabilita una connessione da sito a sito tra il dispositivo VPN locale compatibile e un gateway VPN di Azure distribuito in una VNet. Qualsiasi risorsa locale autorizzata può accedere alle reti virtuali. Le comunicazioni da sito a sito vengono inviate tramite un tunnel crittografato via Internet.
 - **ExpressRoute di Azure:** Viene stabilita una connessione di Azure ExpressRoute tra la rete locale e Azure tramite un partner ExpressRoute. Questa connessione è privata e il traffico non viene inviato via Internet.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Altre informazioni](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) sulla rete cloud ibrida.
 
@@ -184,7 +184,7 @@ Per configurare una VPN da sito a sito, procedere nel modo seguente:
 ![VPN](./media/migrate-best-practices-networking/vpn.png)
 *VPN da sito a sito*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Esaminare](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) i dispositivi VPN locali compatibili.
 - [Ottenere una panoramica](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) dei gateway VPN.
@@ -203,7 +203,7 @@ Quando si crea un gateway VPN in Azure, è necessario usare una subnet speciale 
 - Quando si usa la subnet GatewaySubnet di Azure, non distribuire macchine virtuali o altri dispositivi, ad esempio il gateway applicazione, nella subnet del gateway.
 - Non assegnare un gruppo di sicurezza di rete (NSG) a questa subnet, in quanto verrebbe causata l'interruzione del funzionamento del gateway.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Usare questo strumento](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) per determinare lo spazio indirizzi IP.
 
@@ -230,7 +230,7 @@ Il servizio Azure ExpressRoute consente di estendere l'infrastruttura locale in 
 
 Per distribuire le connessioni ExpressRoute, in genere è necessario un provider di servizi ExpressRoute. Per iniziare rapidamente, in genere viene usata prima una VPN da sito a sito per stabilire la connettività tra il data center virtuale e le risorse locali e quindi viene eseguita la migrazione alla connessione ExpressRoute, dopo aver stabilito un'interconnessione fisica con il provider di servizi.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Leggere una panoramica](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) di ExpressRoute.
 - [Informazioni su](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) ExpressRoute Direct.
@@ -274,7 +274,7 @@ Per ottimizzare il routing per gli utenti di entrambi gli uffici, è necessario 
 ![VPN](./media/migrate-best-practices-networking/bgp2.png)
 *Connessione ottimizzata di community BGP*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni su come](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) ottimizzare il routing.
 
@@ -282,7 +282,7 @@ Per ottimizzare il routing per gli utenti di entrambi gli uffici, è necessario 
 
 La responsabilità per la protezione delle reti virtuali è condivisa tra Microsoft e il cliente. Microsoft offre molte delle funzionalità di rete, nonché i servizi che aiutano a proteggere le risorse. Quando si progetta la sicurezza per le reti virtuali, è consigliabile seguire alcune procedure consigliate, tra cui l'implementazione di una rete perimetrale, l'uso di filtri e gruppi di sicurezza, la protezione dell'accesso alle risorse e agli indirizzi IP e l'implementazione della protezione dagli attacchi.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Ottenere una panoramica](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) delle procedure consigliate per la sicurezza di rete.
 - [Informazioni su come](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security) progettare reti sicure.
@@ -304,7 +304,7 @@ La figura seguente illustra un esempio di una rete perimetrale con subnet singol
 ![VPN](./media/migrate-best-practices-networking/perimeter.png)
 *Distribuzione della rete perimetrale*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni sulla](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) distribuzione di una rete perimetrale tra Azure e il data center locale.
 
@@ -344,7 +344,7 @@ I tag di servizio eliminano le attività manuali dall'assegnazione di una regola
 - Il tag rappresenta il servizio, ma non istanze specifiche del servizio. Ad esempio, il tag rappresenta il servizio Database SQL di Azure, ma non un particolare server o database SQL.
 - Tutti i prefissi di indirizzo rappresentati da questo tag sono rappresentati anche dal tag **Internet**.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni sui](https://docs.microsoft.com/azure/virtual-network/security-overview) gruppi di sicurezza di rete.
 - [Esaminare](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) i tag di servizio disponibili per i gruppi di sicurezza di rete.
@@ -384,7 +384,7 @@ Allow-Database-BusinessLogic | Consentire il traffico dal gruppo di sicurezza de
 
 - Le regole che specificano un gruppo di sicurezza delle applicazioni come origine o destinazione vengono applicate solo alle interfacce di rete che sono membri del gruppo di sicurezza delle applicazioni. Se l'interfaccia di rete non è membro di un gruppo di sicurezza delle applicazioni, la regola non viene applicata all'interfaccia di rete, anche se il gruppo di sicurezza di rete è associato alla subnet.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni sui](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) gruppi di sicurezza delle applicazioni.
 
@@ -399,7 +399,7 @@ Gli endpoint del servizio di rete virtuale estendono lo spazio di indirizzi priv
 ![Endpoint del servizio](./media/migrate-best-practices-networking/endpoint.png)
 *Endpoint del servizio*
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni sugli](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) endpoint del servizio Rete virtuale.
 
@@ -415,7 +415,7 @@ Gli indirizzi IP pubblici in Azure possono essere associati a macchine virtuali,
   - Le porte di gestione remota standard come SSH (22) e RDP (3389) devono essere impostate su Nega, così come tutte le altre porte, tramite i gruppi di sicurezza di rete.
 - Una procedura consigliata consiste nel posizionare le macchine virtuali dietro un gateway applicazione o un servizio di bilanciamento del carico di Azure. Se è necessario l'accesso alle porte di gestione remota, è possibile usare l'accesso JIT alle macchine virtuali nel Centro sicurezza di Azure.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Indirizzi IP pubblici in Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
 - [Gestire l'accesso alle macchine virtuali con Just-in-Time](https://docs.microsoft.com/azure/security-center/security-center-just-in-time)
@@ -439,7 +439,7 @@ Firewall di Azure è un servizio di sicurezza di rete gestito basato sul cloud c
   - È possibile usare un tag FQDN per consentire il necessario passaggio del traffico in uscita attraverso il firewall.
 - Ad esempio, per consentire manualmente il passaggio del traffico di Windows Update attraverso il firewall, sarebbe necessario creare più regole dell'applicazione. Usando i tag FQDN, è sufficiente creare una regola dell'applicazione e includere il tag di Windows Update. Con questa regola, il traffico di rete verso gli endpoint di Microsoft Windows Update può attraversare il firewall.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Ottenere una panoramica](https://docs.microsoft.com/azure/firewall/overview) del Firewall di Azure.
 - [Informazioni sui](https://docs.microsoft.com/azure/firewall/fqdn-tags) tag FQDN.
@@ -457,7 +457,7 @@ Web application firewall (WAF) è una funzionalità del gateway applicazione Azu
 - È possibile personalizzare le regole e i gruppi di regole di WAF in base ai requisiti dell'app.
 - Come procedura consigliata, usare un Web application firewall per tutte le app esposte al Web, incluse le app in macchine virtuali di Azure o come un servizio app di Azure.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni su](https://docs.microsoft.com/azure/application-gateway/waf-overview) WAF.
 - [Esaminare](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) le limitazioni e le esclusioni di WAF.
@@ -476,7 +476,7 @@ Azure Network Watcher offre strumenti per monitorare le risorse e le comunicazio
   - I log dei flussi sono scritti in formato JSON.
   - e mostrano i flussi in ingresso e in uscita per ogni regola, l'interfaccia di rete (NIC) a cui si applica il flusso, informazioni a 5 tuple relative al flusso (indirizzo IP di origine/destinazione, porta di origine/destinazione e protocollo) e se il traffico è consentito o meno.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Ottenere una panoramica](https://docs.microsoft.com/azure/network-watcher) di Network Watcher.
 - [Informazioni](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview) sui log dei flussi dei gruppi di sicurezza di rete.
@@ -508,7 +508,7 @@ Firewall delle appliance virtuali di rete | Come Firewall di Azure, le farm di f
 - L'uso di un solo set di firewall per entrambi i tipi di traffico è un rischio per la sicurezza, perché non viene creato un perimetro di sicurezza tra i due set di traffico.
 - L'uso di livelli di firewall separati riduce la complessità del controllo delle regole di sicurezza e indica chiaramente la corrispondenza tra le regole e le richieste di rete in ingresso.
 
-**Altre informazioni**:
+**Altre informazioni:**
 
 - [Informazioni](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) sull'uso di appliance virtuali di rete in una rete virtuale di Azure.
 

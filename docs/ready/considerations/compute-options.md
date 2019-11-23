@@ -56,12 +56,12 @@ La tabella seguente illustra alcuni scenari di uso comune e i servizi di calcolo
 | Si vuole semplificare la distribuzione, la gestione e le operazioni di Kubernetes. | [Servizio Azure Kubernetes](https://azure.microsoft.com/services/kubernetes-service) |
 | Si vuole accelerare lo sviluppo di app con un'architettura serverless basata su eventi. | [Funzioni di Azure](https://azure.microsoft.com/services/functions) |
 | Si vuole sviluppare microservizi e orchestrare contenitori in Windows e Linux. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| Si vuole creare rapidamente app cloud per il Web e i dispositivi mobili con una piattaforma completamente gestita. | [Informazioni sul servizio app di Azure](https://azure.microsoft.com/services/app-service) |
+| Si vuole creare rapidamente app cloud per il Web e i dispositivi mobili con una piattaforma completamente gestita. | [servizio app di Azure](https://azure.microsoft.com/services/app-service) |
 | Si vuole includere le app in contenitori ed eseguire facilmente i contenitori con un unico comando. | [Istanze di Azure Container](https://azure.microsoft.com/services/container-instances) |
 | Si vuole ridimensionare la gestione delle risorse di calcolo e la pianificazione dei processi a livello del cloud con la possibilità di ridimensionamento fino a decine, centinaia o migliaia di macchine virtuali. | [Azure Batch](https://azure.microsoft.com/services/batch) |
 | Si vuole creare API e applicazioni cloud scalabili e a disponibilità elevata per concentrarsi sulle app anziché sull'hardware. | [Servizi cloud di Azure](https://azure.microsoft.com/services/cloud-services) |
 
-## <a name="regional-availability"></a>Disponibilità a livello di area
+## <a name="regional-availability"></a>Disponibilità internazionale
 
 Azure consente di offrire servizi al livello necessario per raggiungere i clienti e i partner,  _ovunque si trovino_. Un fattore chiave nella pianificazione della distribuzione cloud consiste nel determinare l'area di Azure che ospiterà le risorse del carico di lavoro.
 
