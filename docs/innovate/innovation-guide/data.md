@@ -70,7 +70,7 @@ Per creare un'istanza di Azure Data Catalog per l'organizzazione:
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[Share](#tab/Share) (Condividi)
+# <a name="sharetabshare"></a>[Condividi](#tab/Share)
 
 ## <a name="azure-data-share"></a>Condivisione dati di Azure
 
