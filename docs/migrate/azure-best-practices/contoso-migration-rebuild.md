@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566606"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681815"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ricompilare un'app locale in Azure
 
@@ -143,34 +143,45 @@ Gli amministratori di Contoso eseguono uno script di distribuzione per creare il
 
 Gli amministratori di Contoso effettuano il provisioning come indicato di seguito:
 
-1. aprono la cartella usando Visual Studio Code e passano alla directory **/deploy/K8S** , che contiene lo script **gen-AKS-ENV. ps1**.
+1. Aprono la cartella con Visual Studio Code e si spostano sulla directory **/deploy/k8s** che contiene lo script **gen-aks-env.ps1**.
+
 2. Eseguono lo script per creare il cluster Kubernetes gestito usando il servizio Azure Kubernetes e il Registro Azure Container.
-    ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks1.png)
+
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks1.png)
+
 3. Con il file aperto, il parametro $location viene aggiornato a **eastus2** e il file viene salvato.
-    ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks2.png)
+
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks2.png)
+
 4. In Visual Studio Code selezionano **Visualizza** > **Terminale integrato** per aprire il terminale integrato di Visual Studio Code.
-    ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks3.png)
+
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks3.png)
+
 5. Nel terminale integrato di PowerShell, Contoso accede ad Azure tramite il comando Connect-AzureRmAccount. [Altre informazioni](https://docs.microsoft.com/powershell/azure/get-started-azureps) per muovere i primi passi con PowerShell.
-    ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks4.png)
-6. Per autenticare l'interfaccia della riga di comando di Azure, eseguire il comando `az login` e seguire le istruzioni per l'autenticazione tramite il Web browser. [Altre informazioni](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
-    ![servizio Azure Kubernetes](./media/contoso-migration-rebuild/aks5.png)
+
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks4.png)
+
+6. Viene autenticata l'interfaccia della riga di comando di Azure eseguendo il comando **az login** e seguendo le istruzioni per l'autenticazione tramite browser Web. [Altre informazioni](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sull'accesso con l'interfaccia della riga di comando di Azure.
+
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks5.png)
+
 7. Contoso esegue il comando seguente, trasferendo il nome del gruppo di risorse ContosoRG, il nome del cluster servizio Azure Kubernetes smarthotel-servizio Azure Kubernetes-eus2 e il nome del nuovo registro.
 
-    ```PowerShell
-    .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-    ```
+   ```PowerShell
+   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
+   ```
 
-    ![servizio Azure Container](./media/contoso-migration-rebuild/aks6.png)
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure crea un altro gruppo di risorse che includono le risorse per il cluster servizio Azure Kubernetes.
 
-    ![servizio Azure Container](./media/contoso-migration-rebuild/aks7.png)
+   ![servizio Azure Container](./media/contoso-migration-rebuild/aks7.png)
 
 9. Dopo il completamento della distribuzione, Contoso installa lo strumento da riga di comando **kubectl**. Lo strumento è già installato nel CloudShell di Azure.
 
-    ```console
-    az aks install-cli
-    ```
+   ```console
+   az aks install-cli
+   ```
 
 10. Per verificare la connessione al cluster, Contoso esegue il comando **kubectl get nodes**. Il nodo è lo stesso nome della macchina virtuale del gruppo di risorse creato automaticamente.
 
@@ -416,11 +427,11 @@ Nel portale di Azure gli amministratori di Contoso effettuano il provisioning de
 
 1. Selezionano **App per le funzioni**.
 
-    ![Creare un'app per le funzioni](./media/contoso-migration-rebuild/function-app1.png)
+   ![Creare un'app per le funzioni](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Specificano un nome per l'app (**smarthotelpetchecker**). Inseriscono l'app nel gruppo di risorse di produzione **ContosoRG**, impostano la posizione di hosting su **Piano A consumo** e inseriscono l'app nell'area Stati Uniti orientali 2. Vengono creati un nuovo account di archiviazione e un'istanza di Application Insights per il monitoraggio.
 
-    ![Impostazioni dell'app per le funzioni](./media/contoso-migration-rebuild/function-app2.png)
+   ![Impostazioni dell'app per le funzioni](./media/contoso-migration-rebuild/function-app2.png)
 
 3. Dopo aver distribuito l'app, accedono al relativo indirizzo per verificare che sia stata creata in modo corretto.
 
@@ -430,9 +441,10 @@ Gli amministratori di Contoso creano due progetti diversi per il sito di front-e
 
 1. In Azure DevOps creano un progetto **SmartHotelFrontend**.
 
-    ![Progetto front-end](./media/contoso-migration-rebuild/function-app1.png)
+   ![Progetto front-end](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Importano il repository Git [SmartHotel360 front-end](https://github.com/Microsoft/SmartHotel360-public-web.git) nel nuovo progetto.
+
 3. Per l'app per le funzioni, creano un altro progetto Azure DevOps (SmartHotelPetChecker) e importano il repository Git [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) in questo progetto.
 
 ### <a name="configure-the-web-app"></a>Configurare l'app Web
@@ -572,14 +584,21 @@ Gli amministratori di Contoso distribuiscono l'app nel modo seguente.
 14. Dopo che la funzione è stata distribuita, viene visualizzata nel portale di Azure con lo stato **In esecuzione**.
 
     ![Distribuire la funzione](./media/contoso-migration-rebuild/function6.png)
-
+    
 15. Si passa all'app per verificare che l'app Pet Checker funzioni come previsto, in [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets).
+
 16. Selezionano l'avatar per caricare un'immagine.
+
     ![Distribuire la funzione](./media/contoso-migration-rebuild/function7.png)
+    
 17. La prima fotografia che si desidera controllare è quella di un cane di piccole dimensioni.
+
     ![Distribuire la funzione](./media/contoso-migration-rebuild/function8.png)
+    
 18. L'app restituisce un messaggio di accettazione.
+
     ![Distribuire la funzione](./media/contoso-migration-rebuild/function9.png)
+    
 
 ## <a name="review-the-deployment"></a>Esaminare la distribuzione
 
@@ -607,3 +626,14 @@ Al termine della migrazione delle risorse in Azure, Contoso deve rendere piename
 ## <a name="conclusion"></a>Conclusione
 
 In questo articolo Contoso ricompila l'app SmartHotel360 in Azure. Viene ricompilata l'app in locale della macchina virtuale front-end per l'app Web di Servizio app di Azure. Il back-end dell'app viene compilato usando microservizi distribuiti ai contenitori gestiti dal servizio Azure Kubernetes. Vengono migliorate le funzionalità delle app grazie a un'app per le foto di animali domestici.
+
+## <a name="suggested-skills"></a>Competenze suggerite
+
+Microsoft Learn è un nuovo approccio all'apprendimento. L'idoneità per le nuove competenze e responsabilità che derivano dall'adozione del cloud non è facile. Microsoft Learn offre un approccio più gratificante all'apprendimento pratico che consente di raggiungere più velocemente i propri obiettivi. Ottieni punti e livelli e Ottieni di più.
+
+Di seguito sono riportati alcuni esempi di percorsi di apprendimento personalizzati su Microsoft Learn allineati con l'app Contoso SmartHotel360 in Azure.
+
+[Distribuire un sito Web in Azure con app Azure servizio](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): le app Web in Azure consentono di pubblicare e gestire facilmente il sito Web senza dover usare i server, le risorse di archiviazione o gli asset di rete sottostanti. Sarà così possibile concentrarsi sulle funzionalità del sito Web, affidandosi alla potente piattaforma di Azure per fornire accesso sicuro al sito.
+
+[Elaborare e classificare immagini con i servizi cognitivi cognitivi](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)di Azure: Servizi cognitivi di Azure offre funzionalità predefinite per abilitare la funzionalità visione artificiale nelle applicazioni. Informazioni su come usare i servizi cognitivi cognitivi per rilevare visi, contrassegnare e classificare immagini e identificare oggetti.
+
