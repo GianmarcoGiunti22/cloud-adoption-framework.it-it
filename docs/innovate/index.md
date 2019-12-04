@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 96ca8aab7a1fb1e04180f12ac1753bd1b6857e92
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752127"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681776"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innovazione del cloud in Cloud Adoption Framework
 
@@ -117,8 +117,21 @@ Durante ogni iterazione, le soluzioni in via di sviluppo offrono ai team l'oppor
 
 Questo approccio si basa sulle metodologie snelle esistenti. Lo scopo è aiutare a creare un discorso incentrato sul cloud sull'adozione dei clienti e un modello scientifico per la creazione di valore di business. L'approccio allinea anche i servizi di Azure esistenti a processi decisionali gestibili. Questo allineamento può essere utile per individuare le opzioni tecniche appropriate per soddisfare specifiche esigenze dei clienti o ipotesi.
 
+## <a name="suggested-skills"></a>Competenze suggerite
+
+Microsoft Learn è un nuovo approccio all'apprendimento. Non è facile essere subito pronti ad assumersi le nuove responsabilità e competenze associate all'adozione del cloud. Microsoft Learn offre un approccio più gratificante all'apprendimento pratico che consente di raggiungere più velocemente i propri obiettivi. Conseguendo punti e livelli è possibile raggiungere traguardi sempre più impegnativi.
+
+Ecco un paio di esempi di percorsi di apprendimento specifici del ruolo disponibili in Microsoft Learn in linea con la sezione relativa all'innovazione di Cloud Adoption Framework.
+
+[Amministrare i contenitori in Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/): Istanze di Azure Container è un servizio semplice e immediato per l'esecuzione di contenitori in Azure. Questo percorso di apprendimento illustra come creare e gestire i contenitori e come usare Istanze di Azure Container per acquisire scalabilità elastica per Kubernetes.
+
+[Creare applicazioni serverless](https://docs.microsoft.com/learn/paths/create-serverless-applications/): la soluzione Funzioni di Azure consente la creazione di sistemi di calcolo su richiesta, basati su eventi, che possono essere attivati da vari eventi esterni. Verrà illustrato come sfruttare le funzioni per eseguire logica lato server e creare architetture serverless.
+
+Per scoprire altri percorsi di apprendimento, esplorare il [catalogo di Learn](/learn/browse). Usare il filtro **Ruoli** per allineare i percorsi di apprendimento a un ruolo specifico.
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 Il primo esercizio per l'innovazione nel cloud è:
 > [!div class="nextstepaction"]
 > [Creare consenso sul valore di business dell'innovazione](./business-value.md)
+
