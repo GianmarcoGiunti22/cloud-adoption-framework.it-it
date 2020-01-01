@@ -19,7 +19,7 @@ ms.locfileid: "73561615"
 
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivazioni: perché stiamo migrando al cloud?
 
-"Perché stiamo migrando al cloud?" è una domanda comune per gli stakeholder aziendali e tecnici. Se la risposta è "la nostra lavagna, o CIO, o dirigenti di livello C, ci ha comunicato di passare al cloud", è improbabile che l'azienda raggiunga i risultati desiderati.
+"Perché stiamo migrando al cloud?" è una domanda comune per gli stakeholder aziendali e tecnici. Se la risposta è "Il CIO, o la nostra board, ci ha comunicato di passare al cloud", è improbabile che l'azienda raggiunga i risultati desiderati.
 
 Questo articolo illustra alcune motivazioni alla base della migrazione nel cloud che possono contribuire a produrre risultati aziendali più efficaci. Queste opzioni consentono di facilitare una conversazione sulle motivazioni e, infine, sui risultati aziendali.
 
